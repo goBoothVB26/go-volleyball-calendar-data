@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T04:02:26",
+  "generated": "2026-07-14T10:04:16",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -670,11 +670,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-06-13T17:00:00",
@@ -700,11 +700,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-06-19T20:00:00",
@@ -745,11 +745,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-06-26T20:00:00",
@@ -790,11 +790,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-07-03T20:00:00",
@@ -834,7 +834,7 @@
       "end": "2026-07-05T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": null,
+      "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -850,11 +850,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-07T20:15:00",
@@ -1014,7 +1014,7 @@
       "end": "2026-07-12T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": null,
+      "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -1030,11 +1030,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-All_July_Sessions_@_College_Park-2026-07-13T00:00:00",
@@ -1119,12 +1119,12 @@
       "end": "2026-07-14T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-07-15T18:20:00",
@@ -1140,6 +1140,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-16T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-07-16T18:00:00",
+      "end": "2026-07-16T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-16T18:20:00",
@@ -1214,7 +1229,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 500.0
     },
     {
       "uid": "Volleyball_Life-SSOVA's_July_18th/19th_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-07-18T00:00:00",
@@ -1277,6 +1292,21 @@
       "price": 60.0
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-07-18T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-07-18T18:00:00",
+      "end": "2026-07-18T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park-2026-07-19T14:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "July 19th @ College Park",
@@ -1299,7 +1329,7 @@
       "end": "2026-07-19T15:30:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": null,
+      "description": "Instructor: Coach Trevor",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "Clinics/Training",
@@ -1315,11 +1345,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park_-_Men's_Height_Hitting_Clinic-2026-07-19T15:45:00",
@@ -1329,7 +1359,7 @@
       "end": "2026-07-19T17:15:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": null,
+      "description": "Instructor: Coach Trevor",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "Clinics/Training",
@@ -1359,12 +1389,12 @@
       "end": "2026-07-21T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-07-22T18:20:00",
@@ -1393,6 +1423,21 @@
       "url": "https://floridavolleyball.org/blog/event/usav-all-stars-championship/",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-23T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-07-23T18:00:00",
+      "end": "2026-07-23T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1469,7 +1514,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
+      "price": 650.0
     },
     {
       "uid": "NAGVA-Hotdish_\u2018N_Dig_2026-2026-07-25T00:00:00",
@@ -1484,7 +1529,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 450.0
     },
     {
       "uid": "Volleyball_Life-JAM_WITH_US_Lakefront_Sand_Volleyball_Tournament-2026-07-25T00:00:00",
@@ -1547,6 +1592,21 @@
       "price": 60.0
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-07-25T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-07-25T18:00:00",
+      "end": "2026-07-25T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2026-07-26T14:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "July 26th @ College Park",
@@ -1554,7 +1614,7 @@
       "end": "2026-07-26T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": null,
+      "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -1570,11 +1630,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-28T20:15:00",
@@ -1599,12 +1659,12 @@
       "end": "2026-07-28T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-07-29T18:20:00",
@@ -1620,6 +1680,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-30T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-07-30T18:00:00",
+      "end": "2026-07-30T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-30T18:20:00",
@@ -1694,7 +1769,7 @@
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 450.0
     },
     {
       "uid": "Volleyball_Life-Beast_Coast_Volleyball_Coed_4\u2019s__(One_girl_minimum)-2026-08-01T00:00:00",
@@ -1727,6 +1802,21 @@
       "price": 60.0
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-01T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-08-01T18:00:00",
+      "end": "2026-08-01T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-August_2nd_@_Dover_Shores-2026-08-02T13:30:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "August 2nd @ Dover Shores",
@@ -1734,7 +1824,7 @@
       "end": "2026-08-02T15:30:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": null,
+      "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -1750,11 +1840,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-04T20:15:00",
@@ -1764,12 +1854,12 @@
       "end": "2026-08-04T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-08-05T18:20:00",
@@ -1785,6 +1875,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-06T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-08-06T18:00:00",
+      "end": "2026-08-06T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-06T18:20:00",
@@ -1847,6 +1952,21 @@
       "price": 60.0
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-08T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-08-08T18:00:00",
+      "end": "2026-08-08T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-August_9th_@_Dover_Shores-2026-08-09T13:30:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "August 9th @ Dover Shores",
@@ -1854,7 +1974,7 @@
       "end": "2026-08-09T15:30:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": null,
+      "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -1870,11 +1990,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Women's",
-      "price": null
+      "price": 100.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-11T20:15:00",
@@ -1884,12 +2004,12 @@
       "end": "2026-08-11T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-08-12T18:20:00",
@@ -1905,6 +2025,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-13T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-08-13T18:00:00",
+      "end": "2026-08-13T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-13T18:20:00",
@@ -1949,7 +2084,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 525.0
     },
     {
       "uid": "Volley_Vortex-Beach_Spike-2026-08-15T00:00:00",
@@ -1997,6 +2132,21 @@
       "price": 60.0
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-15T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-08-15T18:00:00",
+      "end": "2026-08-15T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "YMCA_Central_Florida-Adult_Volleyball_League-2026-08-16T00:00:00",
       "club": "YMCA Central Florida",
       "title": "Adult Volleyball League",
@@ -2019,7 +2169,7 @@
       "end": "2026-08-16T15:30:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": null,
+      "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -2034,12 +2184,12 @@
       "end": "2026-08-18T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-08-19T18:20:00",
@@ -2055,6 +2205,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-20T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-08-20T18:00:00",
+      "end": "2026-08-20T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-20T18:20:00",
@@ -2117,6 +2282,21 @@
       "price": null
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-22T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-08-22T18:00:00",
+      "end": "2026-08-22T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-08-23T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -2154,7 +2334,7 @@
       "end": "2026-08-23T15:30:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": null,
+      "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -2170,11 +2350,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-25T20:15:00",
@@ -2184,12 +2364,12 @@
       "end": "2026-08-25T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
+      "price": 3.0
     },
     {
       "uid": "Out_Sports_League-Wednesdays_-_Recreational_(C/D)-2026-08-26T18:20:00",
@@ -2205,6 +2385,21 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-27T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-08-27T18:00:00",
+      "end": "2026-08-27T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-27T18:20:00",
@@ -2267,6 +2462,21 @@
       "price": null
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-29T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-08-29T18:00:00",
+      "end": "2026-08-29T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "YMCA_Central_Florida-Adult_Volleyball_League-2026-08-30T00:00:00",
       "club": "YMCA Central Florida",
       "title": "Adult Volleyball League",
@@ -2289,7 +2499,7 @@
       "end": "2026-08-30T15:30:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": null,
+      "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
       "skill_level": "Any Level",
       "gym_type": "League",
@@ -2305,11 +2515,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-09-01T20:15:00",
@@ -2319,11 +2529,26 @@
       "end": "2026-09-01T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-03T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-09-03T18:00:00",
+      "end": "2026-09-03T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2354,6 +2579,21 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
+      "price": 450.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-05T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-09-05T18:00:00",
+      "end": "2026-09-05T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2395,11 +2635,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-09-08T20:15:00",
@@ -2409,11 +2649,26 @@
       "end": "2026-09-08T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-10T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-09-10T18:00:00",
+      "end": "2026-09-10T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2444,7 +2699,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 250.0
     },
     {
       "uid": "NAGVA-Boston_Beantown_Classic_2026-2026-09-12T00:00:00",
@@ -2459,7 +2714,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 500.0
     },
     {
       "uid": "Volley_Vortex-Spiketember_Classic-2026-09-12T00:00:00",
@@ -2488,6 +2743,21 @@
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-12T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-09-12T18:00:00",
+      "end": "2026-09-12T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -2530,11 +2800,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-09-15T20:15:00",
@@ -2544,11 +2814,26 @@
       "end": "2026-09-15T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-17T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-09-17T18:00:00",
+      "end": "2026-09-17T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2594,7 +2879,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 550.0
     },
     {
       "uid": "NAGVA-Emerald_City_Cat_Fight_2026-2026-09-19T00:00:00",
@@ -2604,11 +2889,26 @@
       "end": null,
       "all_day": true,
       "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Director | Divisions\n\nDivisions: Tournament Cap | 56 | Open A/AA | 16 | BB | 16 | 16 | B | Women's | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 25, 2026 | September 5, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Divisions\n\nDivisions: Tournament Cap | 56 | Open A/AA | 16 | BB | 16 | 16 | B | Women's | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 25, 2026 | September 5, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "url": "https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
+      "price": 575.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-19T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-09-19T18:00:00",
+      "end": "2026-09-19T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2635,11 +2935,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-09-22T20:15:00",
@@ -2649,11 +2949,26 @@
       "end": "2026-09-22T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-24T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-09-24T18:00:00",
+      "end": "2026-09-24T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2668,6 +2983,21 @@
       "url": "https://www.gamepointevents.com/lake-howell-freshman-invitational",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-26T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-09-26T18:00:00",
+      "end": "2026-09-26T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -2695,11 +3025,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-09-29T20:15:00",
@@ -2709,11 +3039,26 @@
       "end": "2026-09-29T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-10-01T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-10-01T18:00:00",
+      "end": "2026-10-01T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2739,12 +3084,12 @@
       "end": null,
       "all_day": true,
       "location": "RYSE Energy StarCenter Multisport Farmers Branch | 2400 Pike St, Farmers Branch, TX 75234, USA | Dallas Premier Volleyball Club | 4452 Alpha Rd, Farmers Branch, TX 75244, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Josh Dossey | Benjamin Jones | Director | Divisions\n\nDivisions: Tournament Cap | 132 | A1 | 12 | BB | 42 | 42 | B | C | 18 | 18 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 2, 2026 at 7:00pm | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | September 17, 2026 | Addl. Player Fee | 600 | 650 | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-classic-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Josh Dossey | Benjamin Jones | Divisions\n\nDivisions: Tournament Cap | 132 | A1 | 12 | BB | 42 | 42 | B | C | 18 | 18 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 2, 2026 at 7:00pm | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | September 17, 2026 | Addl. Player Fee | 600 | 650 | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-classic-2026",
       "url": "https://www.nagva.org/tournaments-1/fall-classic-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
+      "price": 600.0
     },
     {
       "uid": "Volleyball_Life-Sand_Ballerz_Halloween_-_\"Spooky_Spike_Showdown\"_-_Sand_Volleyball_Tournament_Festival-2026-10-03T00:00:00",
@@ -2762,6 +3107,21 @@
       "price": null
     },
     {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-03T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-10-03T18:00:00",
+      "end": "2026-10-03T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-10-04T14:00:00",
       "club": "City of Sanford Adult Volleyball",
       "title": "Adult Volleyball Fall 2026",
@@ -2770,11 +3130,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-06T20:15:00",
@@ -2784,11 +3144,26 @@
       "end": "2026-10-06T22:30:00",
       "all_day": false,
       "location": "Jim Beech Recreation Center",
-      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-10-08T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-10-08T18:00:00",
+      "end": "2026-10-08T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2819,7 +3194,7 @@
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
+      "price": 525.0
     },
     {
       "uid": "Volleyball_Life-SSOVA's_October_10/11_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament_'26-2026-10-10T00:00:00",
@@ -2834,6 +3209,21 @@
       "skill_level": "Any Level",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-10T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-10-10T18:00:00",
+      "end": "2026-10-10T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "Any Level",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2860,11 +3250,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-17T00:00:00",
@@ -2894,7 +3284,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 450.0
     },
     {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-18T00:00:00",
@@ -2920,11 +3310,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-10-25T14:00:00",
@@ -2935,11 +3325,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "NAGVA-2026_Vegas_Baby!-2026-10-31T00:00:00",
@@ -2954,7 +3344,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 550.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-01T14:00:00",
@@ -2965,11 +3355,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "NAGVA-Legendary_&_New_Blow-Out_2026-2026-11-07T00:00:00",
@@ -2984,7 +3374,7 @@
       "skill_level": "Any Level",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 525.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-08T14:00:00",
@@ -2995,11 +3385,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-15T14:00:00",
@@ -3010,11 +3400,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00",
@@ -3029,7 +3419,7 @@
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
+      "price": 500.0
     },
     {
       "uid": "NAGVA-Caribbean_Cup_2026-2026-11-21T00:00:00",
@@ -3039,12 +3429,12 @@
       "end": null,
       "all_day": true,
       "location": "Coliseo Pedrin Zorrilla | CW7H+X64, Calle Nemesio R. Canales, San Juan, 00918, Puerto Rico | Borinken Coui Dome | 9W6W+3GV, PR-176, San Juan, 00926, Puerto Rico | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Director | Divisions\n\nDivisions: Tournament Cap | 60 | B | 30 | BB | 30 | 15 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 20, 2026, 5:00 AM to 9:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 15, 2026 | August 30, 2026 | October 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Divisions\n\nDivisions: Tournament Cap | 60 | B | 30 | BB | 30 | 15 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 20, 2026, 5:00 AM to 9:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 15, 2026 | August 30, 2026 | October 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "url": "https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
+      "price": 500.0
     },
     {
       "uid": "Volleyball_Life-SSOVA_Men's/Women's/Coed\u2019s_November_21/22_CLEARWATER_BEACH,_Beach_Volleyball_Tournament-2026-11-21T00:00:00",
@@ -3070,11 +3460,11 @@
       "all_day": false,
       "location": "Westside Community Center",
       "description": null,
-      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b",
+      "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 200.0
     },
     {
       "uid": "Volleyball_Life-AVP_Juniors_East_Coast_Championships_2026-2026-11-27T00:00:00",
@@ -3104,7 +3494,7 @@
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
+      "price": 450.0
     },
     {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_LOVB_Presents_-_The_Kickoff_Championships-2027-01-09T00:00:00",
