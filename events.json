@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T03:51:18",
+  "generated": "2026-07-14T04:02:26",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -689,7 +689,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-06-14T14:00:00",
@@ -719,7 +719,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-06-20T17:00:00",
@@ -734,7 +734,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-06-21T14:00:00",
@@ -764,7 +764,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-06-27T17:00:00",
@@ -779,7 +779,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-06-28T14:00:00",
@@ -809,7 +809,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-07-04T17:00:00",
@@ -824,7 +824,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_5th_@_College_Park-2026-07-05T14:00:00",
@@ -869,7 +869,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_USAV_BJNC_-_OFFICIALS_ONLY-2026-07-08T00:00:00",
@@ -911,10 +911,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-09T18:20:00",
@@ -926,10 +926,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-09T20:15:00",
@@ -944,7 +944,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-07-10T18:20:00",
@@ -956,10 +956,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-07-10T20:00:00",
@@ -974,7 +974,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-07-11T17:00:00",
@@ -989,7 +989,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_12th_@_College_Park-2026-07-12T00:00:00",
@@ -1109,7 +1109,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-07-14T20:15:00",
@@ -1136,10 +1136,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-16T18:20:00",
@@ -1151,10 +1151,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-16T20:15:00",
@@ -1169,7 +1169,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-07-17T18:20:00",
@@ -1181,10 +1181,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-07-17T20:00:00",
@@ -1199,7 +1199,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "NAGVA-Music_City_Challenge_2026-2026-07-18T00:00:00",
@@ -1274,7 +1274,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park-2026-07-19T14:00:00",
@@ -1349,7 +1349,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-07-21T20:15:00",
@@ -1376,25 +1376,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_USA_All-Star_Championships-2026-07-23T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 USA All-Star Championships",
-      "start": "2026-07-23T00:00:00",
-      "end": "2026-07-26T00:00:00",
-      "all_day": false,
-      "location": "Columbus, OH - Greater Columbus Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45344",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00",
@@ -1421,10 +1406,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-23T20:15:00",
@@ -1439,7 +1424,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-07-24T18:20:00",
@@ -1451,10 +1436,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-07-24T20:00:00",
@@ -1469,7 +1454,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "NAGVA-Austin_Summerfest_2026-2026-07-25T00:00:00",
@@ -1559,7 +1544,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2026-07-26T14:00:00",
@@ -1604,7 +1589,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-07-28T20:15:00",
@@ -1631,10 +1616,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-30T18:20:00",
@@ -1646,10 +1631,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-30T20:15:00",
@@ -1664,7 +1649,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-07-31T18:20:00",
@@ -1676,10 +1661,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "WPVC-Friday_Nights_at_WPVC-2026-07-31T20:00:00",
@@ -1694,7 +1679,7 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 8.0
     },
     {
       "uid": "NAGVA-XOXO_INVITATIONAL_2026-2026-08-01T00:00:00",
@@ -1739,7 +1724,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-August_2nd_@_Dover_Shores-2026-08-02T13:30:00",
@@ -1796,10 +1781,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-06T18:20:00",
@@ -1811,10 +1796,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-08-07T18:20:00",
@@ -1826,10 +1811,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00",
@@ -1859,7 +1844,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-August_9th_@_Dover_Shores-2026-08-09T13:30:00",
@@ -1916,10 +1901,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-13T18:20:00",
@@ -1931,10 +1916,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-08-14T18:20:00",
@@ -1946,10 +1931,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "NAGVA-Charm_City_Beach_Bash_2026-2026-08-15T00:00:00",
@@ -2009,7 +1994,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 60.0
     },
     {
       "uid": "YMCA_Central_Florida-Adult_Volleyball_League-2026-08-16T00:00:00",
@@ -2066,10 +2051,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-20T18:20:00",
@@ -2081,10 +2066,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-08-21T18:20:00",
@@ -2096,10 +2081,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-08-22T00:00:00",
@@ -2216,10 +2201,10 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Any Level",
+      "skill_level": "Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-08-27T18:20:00",
@@ -2231,10 +2216,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048669-thursdays---competitive-ab",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-08-28T18:20:00",
@@ -2246,10 +2231,10 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "Any Level",
+      "skill_level": "A/AA, B/BB, Recreation",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 70.0
     },
     {
       "uid": "Volleyball_Life-Rat_Lord_Fall_Bash-2026-08-29T00:00:00",
@@ -2619,7 +2604,7 @@
       "end": null,
       "all_day": true,
       "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Divisions\n\nDivisions: Tournament Cap | 56 | Open A/AA | 16 | BB | 16 | 16 | B | Women's | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 25, 2026 | September 5, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Director | Divisions\n\nDivisions: Tournament Cap | 56 | Open A/AA | 16 | BB | 16 | 16 | B | Women's | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 25, 2026 | September 5, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "url": "https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
@@ -2754,7 +2739,7 @@
       "end": null,
       "all_day": true,
       "location": "RYSE Energy StarCenter Multisport Farmers Branch | 2400 Pike St, Farmers Branch, TX 75234, USA | Dallas Premier Volleyball Club | 4452 Alpha Rd, Farmers Branch, TX 75244, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Josh Dossey | Benjamin Jones | Divisions\n\nDivisions: Tournament Cap | 132 | A1 | 12 | BB | 42 | 42 | B | C | 18 | 18 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 2, 2026 at 7:00pm | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | September 17, 2026 | Addl. Player Fee | 600 | 650 | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-classic-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Josh Dossey | Benjamin Jones | Director | Divisions\n\nDivisions: Tournament Cap | 132 | A1 | 12 | BB | 42 | 42 | B | C | 18 | 18 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 2, 2026 at 7:00pm | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | September 17, 2026 | Addl. Player Fee | 600 | 650 | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-classic-2026",
       "url": "https://www.nagva.org/tournaments-1/fall-classic-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -2897,21 +2882,6 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-26/27_Windy_City_Boys_Power_League-2026-10-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "26/27 Windy City Boys Power League",
-      "start": "2026-10-17T00:00:00",
-      "end": "2027-02-21T00:00:00",
-      "all_day": false,
-      "location": "Burr Ridge, IL - Various Sites",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46203",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
       "uid": "NAGVA-Crossroads_Classic-2026-10-17T00:00:00",
       "club": "NAGVA",
       "title": "Crossroads Classic",
@@ -3002,21 +2972,6 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-CANCELLED-2026-11-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "CANCELLED",
-      "start": "2026-11-02T00:00:00",
-      "end": "2026-11-02T00:00:00",
-      "all_day": false,
-      "location": "Edmond, OK - Volleyball anywhere",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46148",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "NAGVA-Legendary_&_New_Blow-Out_2026-2026-11-07T00:00:00",
       "club": "NAGVA",
       "title": "Legendary & New Blow-Out 2026",
@@ -3062,21 +3017,6 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Epic_USAV_Holiday_Playday-2026-11-21T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Epic USAV Holiday Playday",
-      "start": "2026-11-21T00:00:00",
-      "end": "2026-11-21T00:00:00",
-      "all_day": false,
-      "location": "Crown Point, IN - Epic Training Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46375",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00",
       "club": "NAGVA",
       "title": "2026 Sactown Throwdown",
@@ -3099,7 +3039,7 @@
       "end": null,
       "all_day": true,
       "location": "Coliseo Pedrin Zorrilla | CW7H+X64, Calle Nemesio R. Canales, San Juan, 00918, Puerto Rico | Borinken Coui Dome | 9W6W+3GV, PR-176, San Juan, 00926, Puerto Rico | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Divisions\n\nDivisions: Tournament Cap | 60 | B | 30 | BB | 30 | 15 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 20, 2026, 5:00 AM to 9:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 15, 2026 | August 30, 2026 | October 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Director | Divisions\n\nDivisions: Tournament Cap | 60 | B | 30 | BB | 30 | 15 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 20, 2026, 5:00 AM to 9:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 15, 2026 | August 30, 2026 | October 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "url": "https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -3152,111 +3092,6 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Winter_Classic_(Boys_&_Girls)-2026-11-28T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Winter Classic (Boys & Girls)",
-      "start": "2026-11-28T00:00:00",
-      "end": "2026-11-28T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46329",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_Tornados_Club_Kick-Off-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 Tornados Club Kick-Off",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": false,
-      "location": "Houston, TX - Texas Tornados Training Facility and FAST Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46031",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_Tournament-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 Tournament",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": false,
-      "location": "San Antonio, TX - TBD",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45927",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-26-27_Pre-Season_Power_Play-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "26-27 Pre-Season Power Play",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": false,
-      "location": "Cabot, AR - Game Time @ the Grounds",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45854",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ACA_#1-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ACA #1",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46330",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-First_Serve_Classic_(_11-14's_Sat_/_15-18's_Sun_)-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "First Serve Classic ( 11-14's Sat / 15-18's Sun )",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-06T00:00:00",
-      "all_day": false,
-      "location": "Ridgeland, MS - Infinity Volleyball Academy",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46030",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#1-2026-12-05T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #1",
-      "start": "2026-12-05T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46004",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "NAGVA-2026_Na_Hoa_Aloha_Volleyball_Invitational-2026-12-05T00:00:00",
       "club": "NAGVA",
       "title": "2026 Na Hoa Aloha Volleyball Invitational",
@@ -3269,531 +3104,6 @@
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#2-2026-12-06T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #2",
-      "start": "2026-12-06T00:00:00",
-      "end": "2026-12-06T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46005",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#1_(B&G)-2026-12-06T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #1 (B&G)",
-      "start": "2026-12-06T00:00:00",
-      "end": "2026-12-06T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46332",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_OVR_-_Mizuno_Boys_Holiday_Reindeer_Ruckus-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 OVR - Mizuno Boys Holiday Reindeer Ruckus",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "Columbus, OH - Polaris Place",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45432",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_OVR_Early_Bird_Extravaganza_10C-11C,_G12U-18U-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 OVR Early Bird Extravaganza 10C-11C, G12U-18U",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "Sandusky, OH - Cedar Point Sports Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45394",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_CHRVA_Boys_Chesapeake_Showdown-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 CHRVA Boys Chesapeake Showdown",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "Jessup, MD - Maryland Juniors Sports Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45833",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ACA_#2-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ACA #2",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46334",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Cowboy_Holiday_Ratings_Tournament_10-11s_13s-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Cowboy Holiday Ratings Tournament 10-11s 13s",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "Stillwater, OK - Stillwater High School Field House",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46107",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-EVA_Elite_Power_Play_#1-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "EVA Elite Power Play #1",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "Benton, AR - Benton River Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46351",
-      "skill_level": "A/AA",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Jingle_Bell_Jam_14s-17s_(6th_Annual)-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Jingle Bell Jam 14s-17s (6th Annual)",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "Tulsa, OK - Tulsa Ascension Sportsplex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46109",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#3-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #3",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46006",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Tournaments_Plus_1-2026-12-12T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Tournaments Plus 1",
-      "start": "2026-12-12T00:00:00",
-      "end": "2026-12-12T00:00:00",
-      "all_day": false,
-      "location": "Friendswood, TX - Friendswood Challenge Elite",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46314",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-27_Gateway_Boys_and_Girls_Winter_Kickoff-2026-12-13T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "27 Gateway Boys and Girls Winter Kickoff",
-      "start": "2026-12-13T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "Fenton, MO - St. Louis",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45638",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#4-2026-12-13T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #4",
-      "start": "2026-12-13T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46011",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#2_(B&G)-2026-12-13T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #2 (B&G)",
-      "start": "2026-12-13T00:00:00",
-      "end": "2026-12-13T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46336",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ADS_Snow_Globe_Classic-2026-12-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ADS Snow Globe Classic",
-      "start": "2026-12-19T00:00:00",
-      "end": "2026-12-19T00:00:00",
-      "all_day": false,
-      "location": "Converse, TX - ADS Sports Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46335",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-CenTex_Challenge-2026-12-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "CenTex Challenge",
-      "start": "2026-12-19T00:00:00",
-      "end": "2026-12-20T00:00:00",
-      "all_day": false,
-      "location": "Waco, TX - BASE/Extraco Arena & Waco Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45652",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#5-2026-12-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #5",
-      "start": "2026-12-19T00:00:00",
-      "end": "2026-12-19T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46007",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Victory_Sports_Winter_Classic-2026-12-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Victory Sports Winter Classic",
-      "start": "2026-12-19T00:00:00",
-      "end": "2026-12-20T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46338",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2026_PACE_Holiday_Hopper-2026-12-20T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2026 PACE Holiday Hopper",
-      "start": "2026-12-20T00:00:00",
-      "end": "2026-12-20T00:00:00",
-      "all_day": false,
-      "location": "Pittsford, NY - Multiple Sites",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45424",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#6-2026-12-20T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #6",
-      "start": "2026-12-20T00:00:00",
-      "end": "2026-12-20T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46008",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#3_(B&G)-2026-12-20T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #3 (B&G)",
-      "start": "2026-12-20T00:00:00",
-      "end": "2026-12-20T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46339",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#7-2026-12-27T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #7",
-      "start": "2026-12-27T00:00:00",
-      "end": "2026-12-27T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46009",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_B/CS_Blastoff:_11/12s,_13s,_14s-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 B/CS Blastoff: 11/12s, 13s, 14s",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-02T00:00:00",
-      "all_day": false,
-      "location": "Bryan, TX - Legends Event Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45653",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_USAV_Carolina_Kickoff-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 USAV Carolina Kickoff",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Rocky Mount, NC - Rocky Mount Event Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46366",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Winter_Warm-Up-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Winter Warm-Up",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Sandusky, OH - Cedar Point Sports Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45484",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-27_Gateway_Boys_HS_Regional_Championships-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "27 Gateway Boys HS Regional Championships",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "St. Louis, MO - St. Louis",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45649",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ACA_#3-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ACA #3",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-02T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46342",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ADS_New_Year_Showdown-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ADS New Year Showdown",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-02T00:00:00",
-      "all_day": false,
-      "location": "Converse, TX - ADS Sports Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46337",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Conway_Juniors_Power_League_#1-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Conway Juniors Power League #1",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-02T00:00:00",
-      "all_day": false,
-      "location": "Conway, AR - Conway Community Center & CJV Facility",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46492",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-EVA_New_Year_Kickoff_2027-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "EVA New Year Kickoff 2027",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Cabot, AR - Game Time at The Grounds",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46352",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-PVA01:_Jan_2-3_Charleston_Jan_Jam_12-18_Pwr/Open-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "PVA01: Jan 2-3 Charleston Jan Jam 12-18 Pwr/Open",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "North Charleston, SC - CACC & North Charleston Athletic Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46491",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Redlands_Rendezvous_2027_(10s-18s)-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Redlands Rendezvous 2027 (10s-18s)",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Oklahoma City, OK - Bennett Event Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46108",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Seven_Hills_Smash_2027-2027-01-02T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Seven Hills Smash 2027",
-      "start": "2027-01-02T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Lynchburg, VA - Liberty University",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46189",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_B/CS_Blastoff:_15s,_16s,_17/18s-2027-01-03T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 B/CS Blastoff: 15s, 16s, 17/18s",
-      "start": "2027-01-03T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Bryan, TX - Legends Event Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45675",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#5_(B&G)-2027-01-03T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #5 (B&G)",
-      "start": "2027-01-03T00:00:00",
-      "end": "2027-01-03T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46341",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -3827,291 +3137,6 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-17th_Annual_Hall_of_Fame_Classic-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "17th Annual Hall of Fame Classic",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Foley, AL - Foley Sports Event Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46523",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Badger_Region_Power_League-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Badger Region Power League",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-02-28T00:00:00",
-      "all_day": false,
-      "location": "Milwaukee, WI - Multiple Sites",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46325",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_OVR_Boys_&_Girls_National_Winterfest-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 OVR Boys & Girls National Winterfest",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Columbus, OH - Greater Columbus Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45588",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Quad_City_Showdown_at_The_Bend-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Quad City Showdown at The Bend",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Davenport, IA - Bend XPO Center & QC VB Factory",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45442",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Rochester_Boys_Can_Am-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Rochester Boys Can Am",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Rochester, NY - Multiple Sites",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45311",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Windy_City_PL_12s-18s_(Seeding_Event)-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Windy City PL 12s-18s (Seeding Event)",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-04-18T00:00:00",
-      "all_day": false,
-      "location": "Burr Ridge, IL - Various Sites",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46271",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-27_Gateway_League-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "27 Gateway League",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-24T00:00:00",
-      "all_day": false,
-      "location": "Fenton, MO - St. Louis",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45645",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ACA_#4-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ACA #4",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46343",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Hill_City_Hoorah-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Hill City Hoorah",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Lynchburg, VA - Hill City Sports Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46398",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-January_Jam_(_11-14's_Sat_/_15-18's_Sun_)-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "January Jam ( 11-14's Sat / 15-18's Sun )",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Ridgeland, MS - Infinity Volleyball Academy",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46084",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-LRJ_Power_League_#1-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "LRJ Power League #1",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Roland, AR - Roland Sports Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46526",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-LSC_Classic_#1-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "LSC Classic #1",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "Hewitt, TX - Legends Sports Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46180",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Premier_Winter_Blast_13s/14s/15s-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Premier Winter Blast 13s/14s/15s",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "NORMAN, OK - Premier Sportsplex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46112",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Score_OKC_Roundabout_16's-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Score OKC Roundabout 16's",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "Oklahoma City, OK - Score OKC",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46114",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Stingray_Winter_Splash_12's-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Stingray Winter Splash 12's",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "Oklahoma City, OK - Oklahoma City",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46111",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SVT's_Southern_Volleyball_Invitational-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SVT's Southern Volleyball Invitational",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Hoover, AL - Finley Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45594",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SVT's_Southern_Volleyball_Showdown-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SVT's Southern Volleyball Showdown",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Cullman, AL - The Omniplex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45595",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Tulsa_Attack_22nd_Annual_(10s-18s_and_BOYS)-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Tulsa Attack 22nd Annual (10s-18s and BOYS)",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Tulsa, OK - Tulsa Ascension Sportsplex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46110",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-UCO_Broncho_Invitational_14s-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "UCO Broncho Invitational 14s",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-09T00:00:00",
-      "all_day": false,
-      "location": "Edmond, OK - Hamilton Fieldhouse- UCO",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46115",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "USAV_Florida_Region-2027_Florida_USAV_Gold_Series-2027-01-09T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida USAV Gold Series",
@@ -4125,66 +3150,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 600.0
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-AES_TEST-2027-01-10T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "AES TEST",
-      "start": "2027-01-10T00:00:00",
-      "end": "2027-01-24T00:00:00",
-      "all_day": false,
-      "location": "Chicago, IL - TEST",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/34441",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Boom_goes_the_Dynamite_13s_&_14s-2027-01-10T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Boom goes the Dynamite 13s & 14s",
-      "start": "2027-01-10T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Edmond, OK - Score OKC",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46113",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#6_(B&G)-2027-01-10T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #6 (B&G)",
-      "start": "2027-01-10T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46344",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-UCO_Broncho_Invitational_12s-2027-01-10T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "UCO Broncho Invitational 12s",
-      "start": "2027-01-10T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Edmond, OK - Hamilton Fieldhouse- UCO",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46333",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
     },
     {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Florida_USA_MLK_Showcase_at_Wiregrass_Ranch-2027-01-16T00:00:00",
@@ -4232,332 +3197,17 @@
       "price": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-13s_IceBreaker_Drive-2027-01-16T00:00:00",
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tropical_Ice_Challenge_(12-18_Club)_-_Week_#3-2027-01-23T00:00:00",
       "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "13s IceBreaker Drive",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
+      "title": "2027 Tropical Ice Challenge (12-18 Club) - Week #3",
+      "start": "2027-01-23T00:00:00",
+      "end": "2027-01-24T00:00:00",
       "all_day": false,
-      "location": "Bethany, OK - The Cube",
+      "location": "Jacksonville, FL - JJVA",
       "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46122",
+      "url": "https://www.advancedeventsystems.com/events/46236",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Capital_City_Classic-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Capital City Classic",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Sun Prairie, WI - Madtown: 2950 Innovation Way Suite 100",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46480",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_City_of_Oaks_Challenge-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 City of Oaks Challenge",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-18T00:00:00",
-      "all_day": false,
-      "location": "Raleigh, NC - Raleigh Convention Center|Triangle Volleyball Club",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45430",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Matt_Hartner_Memorial_Classic-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Matt Hartner Memorial Classic",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-18T00:00:00",
-      "all_day": false,
-      "location": "Eugene, OR - Moshofsky Center, Bob Keefer Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45363",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_New_Orleans_Blastoff-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 New Orleans Blastoff",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-18T00:00:00",
-      "all_day": false,
-      "location": "New Orleans, LA - New Orleans Ernest N. Morial Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46054",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tornados_#1-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Tornados #1",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Houston, TX - Texas Tornados Training Facility",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46032",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Windy_City_Girl's_18's_National_Qualifier-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Windy City Girl's 18's National Qualifier",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-18T00:00:00",
-      "all_day": false,
-      "location": "Schaumburg, IL - Schaumburg Renaissance Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46204",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ACA_#5-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ACA #5",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46346",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ADS_Battle_of_the_Dome_#1-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ADS Battle of the Dome #1",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Converse, TX - ADS Sports Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46340",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Allons_I-10_Invitational-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Allons I-10 Invitational",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Lafayette, LA - Lafayette Renaissance Charter Academy High School",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46393",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Bison_Blast_13s-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Bison Blast 13s",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Shawnee, OK - OBU Green Campus Gym",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46121",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-EVA_Power_Play_#2-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "EVA Power Play #2",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Alexander, AR - Summerwood Sports Complex (EVA Facility)",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46353",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_in_the_Lou_#8-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley in the Lou #8",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "St Louis, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46010",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-OKWU_Wings_of_Glory_15s/16s_(pres_by_OKWU_VB/BVB)-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "OKWU Wings of Glory 15s/16s (pres by OKWU VB/BVB)",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Bartlesville, OK - Mueller Sports Center (OKWU Campus)",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46117",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Score_OKC_Roundabout_15s_Girls-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Score OKC Roundabout 15s Girls",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Edmond, OK - Score OKC",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46120",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Stars_Classic_14s-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Stars Classic 14s",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Oklahoma City, OK - Freede Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46118",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Storm_Showdown_12's-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Storm Showdown 12's",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Bethany, OK - Sawyer Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46119",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-Winter_Chill_12's-R1's_provided-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "Winter Chill 12's-R1's provided",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-16T00:00:00",
-      "all_day": false,
-      "location": "Oklahoma City, OK - Oklahoma Peak Volleyball Facility",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46116",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-ADS_VB_Developmental_League_#1-_Girls_and_Boys-2027-01-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "ADS VB Developmental League #1- Girls and Boys",
-      "start": "2027-01-17T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Converse, TX - ADS Sports Complex",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46345",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Women's",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-KE_Volley_In_the_Lou_#9-2027-01-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "KE Volley In the Lou #9",
-      "start": "2027-01-17T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Affton, MO - Center STL",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46012",
-      "skill_level": "Any Level",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#7_(B&G)-2027-01-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #7 (B&G)",
-      "start": "2027-01-17T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46347",
-      "skill_level": "Any Level",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-SO_TX_Developmental_League_#8_(B&G)-2027-01-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "SO TX Developmental League #8 (B&G)",
-      "start": "2027-01-17T00:00:00",
-      "end": "2027-01-17T00:00:00",
-      "all_day": false,
-      "location": "Universal City, TX - Victory Sports Centers",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46348",
-      "skill_level": "Any Level",
-      "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -4577,6 +3227,36 @@
       "price": 550.0
     },
     {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_USA_Lightning_Bolt_Bash_@_Wiregrass-2027-02-06T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 USA Lightning Bolt Bash @ Wiregrass",
+      "start": "2027-02-06T00:00:00",
+      "end": "2027-02-07T00:00:00",
+      "all_day": false,
+      "location": "Wesley Chapel,, FL - Wiregrass Ranch Sports Complex",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/45521",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_USA_Wellington_Classic_Powered_by_LOVB-2027-02-06T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 USA Wellington Classic Powered by LOVB",
+      "start": "2027-02-06T00:00:00",
+      "end": "2027-02-07T00:00:00",
+      "all_day": false,
+      "location": "Wellington, FL - Wellington Sports Academy",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/45543",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "USAV_Florida_Region-2027_Florida\u00a0Regional_18s_Qualifier-2027-02-20T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida\u00a0Regional 18s Qualifier",
@@ -4592,6 +3272,36 @@
       "price": 10.0
     },
     {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_Jax_Jam_Invitational-2027-02-27T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 JJVA Jax Jam Invitational",
+      "start": "2027-02-27T00:00:00",
+      "end": "2027-02-28T00:00:00",
+      "all_day": false,
+      "location": "Jacksonville, FL - JJVA",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46277",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_USA_Wellington_Open_Powered_by_LOVB-2027-02-27T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 USA Wellington Open Powered by LOVB",
+      "start": "2027-02-27T00:00:00",
+      "end": "2027-02-28T00:00:00",
+      "all_day": false,
+      "location": "Wellington, FL - Wellington Sports Academy",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46283",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "USAV_Florida_Region-2027_ASICS\u00a0Florida\u00a0Volleyball_Challenge-2027-03-26T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 ASICS\u00a0Florida\u00a0Volleyball Challenge",
@@ -4605,6 +3315,36 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 550.0
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_First_Coast_Festival-2027-04-17T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 JJVA First Coast Festival",
+      "start": "2027-04-17T00:00:00",
+      "end": "2027-04-18T00:00:00",
+      "all_day": false,
+      "location": "Jacksonville, FL - JJVA",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46312",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_Spring_Classic-2027-05-01T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 JJVA Spring Classic",
+      "start": "2027-05-01T00:00:00",
+      "end": "2027-05-02T00:00:00",
+      "all_day": false,
+      "location": "Jacksonville, FL - JJVA",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46322",
+      "skill_level": "Any Level",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "USAV_Florida_Region-2027_Molten_Boys_Southeastern_Championships-2027-06-05T00:00:00",
