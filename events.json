@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T14:56:43",
+  "generated": "2026-07-14T15:19:38",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -11,7 +11,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/south-florida-season-opener",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -26,7 +26,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 17's",
       "url": "https://www.gamepointevents.com/new-years-bash",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -41,7 +41,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/aau-deerfield-rock-and-rumble",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -56,7 +56,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/aau-january-jamboree-volleyball-tournament",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -71,7 +71,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/aau-deerfield-mlk-showcase",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -86,7 +86,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/aau-earlybirdbash-10-18",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -101,7 +101,7 @@
       "location": "Wesley Chapel, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/usa-fl-mlk-volleyball-tournament",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -116,7 +116,7 @@
       "location": "Ft. Myers, Fl",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/ft-meyers-invitational",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -131,7 +131,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/winter-warm-up-super-regional",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -146,7 +146,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/aau-chill-blast-grandprix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -161,7 +161,7 @@
       "location": "Wesley Chapel, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/usa-lightning-bolt-bash",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -176,7 +176,7 @@
       "location": "Wellinton,\u00a0 Florida",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/wellington-classic",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -206,7 +206,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-bash",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -221,7 +221,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/aau-presidents-day-tournament",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -236,7 +236,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/usa-deerfield-beach-presidents-day",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -251,7 +251,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-beach-winter-classic",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -266,7 +266,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/orlando-invitional-10-18",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -281,7 +281,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfiled-beach-series-1",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -296,7 +296,7 @@
       "location": "Wesley Chapel, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/aau-wiregrass-classic",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -311,7 +311,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 17's",
       "url": "https://www.gamepointevents.com/aau-spring-fling10-18u",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -326,7 +326,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/game-point-classic",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -341,7 +341,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-spring-break-challenge",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -356,7 +356,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.gamepointevents.com/aau-march-bash-tournament",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -371,7 +371,7 @@
       "location": "OCCC Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -386,7 +386,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-april-fools-festival",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -401,7 +401,7 @@
       "location": "Daytonan Beach, \u00a0Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/dayton-beach-bash-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -416,7 +416,7 @@
       "location": "Ft. Myers, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/ft-myers-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -431,7 +431,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -446,7 +446,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/aau-sunshinestate-games-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -461,7 +461,7 @@
       "location": "Gainesville, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/gator-invitational",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -476,7 +476,7 @@
       "location": "Deerfield Beach Florida",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/deerfield-series-championships",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -491,7 +491,7 @@
       "location": "Orlando, FL",
       "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
       "url": "https://floridavolleyball.org/blog/event/25th-annual-florida-region-awards-ceremony/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -506,7 +506,7 @@
       "location": "Orlando, Fl",
       "description": "15's - 18's",
       "url": "https://www.gamepointevents.com/aau-region-grand-prix-15-18",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -521,7 +521,7 @@
       "location": "Wesley Chapel, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/florida-state-championship-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -536,7 +536,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 14's",
       "url": "https://www.gamepointevents.com/aau-regional-grand-prix-10-14",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -551,7 +551,7 @@
       "location": "Deerfield Beach Florida",
       "description": "11's - 18's",
       "url": "https://www.sseventsinc.com/gator-invitational",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -566,7 +566,7 @@
       "location": "Ft. Pierce, Fl",
       "description": "12's - 18's",
       "url": "https://www.sseventsinc.com/ft-pierce-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -581,7 +581,7 @@
       "location": "Deerfield Beach Florida",
       "description": "11's - 18's",
       "url": "https://www.sseventsinc.com/aau-deerfield-pre-national",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -611,7 +611,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 18's",
       "url": "https://www.gamepointevents.com/copy-of-aau-nationals-warm-up-10-s-18-s",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -626,7 +626,7 @@
       "location": "Gainesville, Fl",
       "description": "10's - 18's",
       "url": "https://www.sseventsinc.com/aau-gator-open-grand-prix",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -641,7 +641,7 @@
       "location": "Orlando, Fl",
       "description": "13's - 18's",
       "url": "https://www.gamepointevents.com/aau-international-volleyball-championships",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -656,7 +656,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -671,7 +671,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -686,7 +686,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -701,7 +701,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -716,7 +716,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -731,7 +731,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -746,7 +746,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -761,7 +761,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -776,7 +776,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -791,8 +791,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -806,7 +806,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -821,7 +821,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -836,8 +836,8 @@
       "location": "College Park Neighborhood Center",
       "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -851,7 +851,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -866,8 +866,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -881,7 +881,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -896,8 +896,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -911,7 +911,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -941,7 +941,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -956,7 +956,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -971,7 +971,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -986,7 +986,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -1001,8 +1001,8 @@
       "location": "College Park Neighborhood Center",
       "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -1016,7 +1016,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -1031,8 +1031,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1046,7 +1046,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -1061,7 +1061,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1076,7 +1076,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -1091,8 +1091,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1106,7 +1106,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1121,7 +1121,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1151,7 +1151,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1166,7 +1166,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1181,7 +1181,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -1211,7 +1211,7 @@
       "location": "Gulfport Beach Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null
@@ -1226,7 +1226,7 @@
       "location": "Boxi Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -1241,7 +1241,7 @@
       "location": "Gulfport Beach Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -1256,7 +1256,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -1271,7 +1271,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1286,8 +1286,8 @@
       "location": "College Park Neighborhood Center",
       "description": null,
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
     },
@@ -1301,7 +1301,7 @@
       "location": "College Park Neighborhood Center",
       "description": "Instructor: Coach Trevor",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Women's",
       "price": 25.0
@@ -1316,7 +1316,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -1331,7 +1331,7 @@
       "location": "College Park Neighborhood Center",
       "description": "Instructor: Coach Trevor",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's",
       "price": 25.0
@@ -1346,8 +1346,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1361,7 +1361,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1376,7 +1376,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -1391,8 +1391,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1406,7 +1406,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1421,7 +1421,7 @@
       "location": "Columbus, OH",
       "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
       "url": "https://floridavolleyball.org/blog/event/usav-all-stars-championship/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -1436,7 +1436,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1466,7 +1466,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1481,7 +1481,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1496,7 +1496,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -1541,7 +1541,7 @@
       "location": "Tavares Sand Volleyball Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -1556,7 +1556,7 @@
       "location": "Trotters Park",
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -1586,7 +1586,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -1601,7 +1601,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1616,8 +1616,8 @@
       "location": "College Park Neighborhood Center",
       "description": "Instructor: Jason Davilla",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -1631,7 +1631,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -1646,8 +1646,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1661,7 +1661,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1676,7 +1676,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -1691,8 +1691,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1706,7 +1706,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1721,7 +1721,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1751,7 +1751,7 @@
       "location": "The Big House, Tavares, FL",
       "description": null,
       "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 5.0
@@ -1766,7 +1766,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1781,7 +1781,7 @@
       "location": "Winter Park Volleyball Club Summer Adult Open Gym",
       "description": "Summer Adult Open Gym",
       "url": "https://www.wpvc.org/programs/adults",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 8.0
@@ -1811,7 +1811,7 @@
       "location": "Kenly Park",
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Women's, Co-ed",
       "price": null
@@ -1826,7 +1826,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -1841,7 +1841,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1856,8 +1856,8 @@
       "location": "Dover Shores Community Center",
       "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -1871,7 +1871,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -1886,8 +1886,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1901,7 +1901,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -1916,8 +1916,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -1931,7 +1931,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1946,7 +1946,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -1976,7 +1976,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -1991,7 +1991,7 @@
       "location": "Frank DeLuca YMCA",
       "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2006,7 +2006,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -2021,7 +2021,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2036,8 +2036,8 @@
       "location": "Dover Shores Community Center",
       "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -2051,7 +2051,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPVdvbWVuJ3MgQWR1bHQgVm9sbGV5YmFsbCBTdW1tZXIyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Women's",
       "price": 100.0
@@ -2066,8 +2066,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2081,7 +2081,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -2096,8 +2096,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2111,7 +2111,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2126,7 +2126,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2156,7 +2156,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2186,7 +2186,7 @@
       "location": "Cady Way Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyvortex.volleyballlife.com/events",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2201,7 +2201,7 @@
       "location": "Cady Way Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2216,7 +2216,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 60.0
@@ -2231,7 +2231,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2246,7 +2246,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -2261,8 +2261,8 @@
       "location": "Dover Shores Community Center",
       "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -2276,8 +2276,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2291,7 +2291,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -2306,8 +2306,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2321,7 +2321,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2336,7 +2336,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2366,7 +2366,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2381,7 +2381,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2396,7 +2396,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/app/tournaments/5018502",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2411,7 +2411,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2426,7 +2426,7 @@
       "location": "Orlando, Fl",
       "description": "14's - 17's",
       "url": "https://www.gamepointevents.com/aau-nationals-warm-up",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2441,7 +2441,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -2456,8 +2456,8 @@
       "location": "Dover Shores Community Center",
       "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -2471,7 +2471,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -2486,8 +2486,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2501,7 +2501,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -2516,8 +2516,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2531,7 +2531,7 @@
       "location": "Englewood Neighborhood Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
-      "skill_level": "Recreation",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2546,7 +2546,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2576,7 +2576,7 @@
       "location": "Dover Shores Community Center",
       "description": "Summer 2026",
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048670-fridays---draftremix-league-abcd",
-      "skill_level": "A/AA, B/BB, Recreation",
+      "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
@@ -2591,7 +2591,7 @@
       "location": "Frank DeLuca YMCA",
       "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2606,7 +2606,7 @@
       "location": "Gulfport Beach Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null
@@ -2621,7 +2621,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2636,7 +2636,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -2651,8 +2651,8 @@
       "location": "Dover Shores Community Center",
       "description": "Instructor: Coach Khali",
       "url": "https://goadultsportsleague.leagueapps.com/classes/5077171-skills-training-workout---august-26?ngmp_2023_iframe_transition=1",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Co-ed",
       "price": 25.0
     },
@@ -2666,7 +2666,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -2681,8 +2681,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2696,7 +2696,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -2711,8 +2711,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2726,7 +2726,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2741,7 +2741,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2771,7 +2771,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2786,7 +2786,7 @@
       "location": "Orlando, Fl",
       "description": "14's - 17's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2801,7 +2801,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -2816,7 +2816,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -2831,8 +2831,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2846,7 +2846,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -2861,8 +2861,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -2876,7 +2876,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2891,7 +2891,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2936,7 +2936,7 @@
       "location": "Trotters Park",
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
       "url": "https://volleyvortex.volleyballlife.com/events",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2951,7 +2951,7 @@
       "location": "Trotters Park",
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2966,7 +2966,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -2981,7 +2981,7 @@
       "location": "Orlando, Fl",
       "description": "14's - 17's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -2996,7 +2996,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -3011,7 +3011,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3026,8 +3026,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3041,7 +3041,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -3056,8 +3056,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3071,7 +3071,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3086,7 +3086,7 @@
       "location": "Wesley Chapel, Fl",
       "description": "Varsity & JV",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3101,7 +3101,7 @@
       "location": "Orlando, Fl",
       "description": "Varsity",
       "url": "https://www.gamepointevents.com/lake-howell-volleyball-invitational",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3146,7 +3146,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3161,7 +3161,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -3176,7 +3176,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3191,8 +3191,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3206,7 +3206,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -3221,8 +3221,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3236,7 +3236,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3251,7 +3251,7 @@
       "location": "Orlando, Fl",
       "description": "JV",
       "url": "https://www.gamepointevents.com/lake-howell-freshman-invitational",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3266,7 +3266,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3281,7 +3281,7 @@
       "location": "Titusville Family Center",
       "description": null,
       "url": "https://ymcacf.org/programs/adultsports/volleyball/",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null
@@ -3296,7 +3296,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3311,8 +3311,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3326,7 +3326,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -3341,8 +3341,8 @@
       "location": "Cady Way Park",
       "description": "Come play grass with us at Cady Way Park on Mondays & Wednesdays\n\nFall 2026",
       "url": "https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up",
-      "skill_level": "Any Level",
-      "gym_type": "League",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 0.0
     },
@@ -3356,7 +3356,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3371,7 +3371,7 @@
       "location": "Orlando, Fl",
       "description": "Varsity",
       "url": "https://www.gamepointevents.com/bishop-moore-swing-for-the-cure",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3401,7 +3401,7 @@
       "location": "Hickory Point Recreational Facility",
       "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 2s/4s/6s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3416,7 +3416,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3431,7 +3431,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3446,7 +3446,7 @@
       "location": "Jim Beech Recreation Center",
       "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
       "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0
@@ -3461,7 +3461,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3476,7 +3476,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3506,7 +3506,7 @@
       "location": "Gulfport Beach Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null
@@ -3521,7 +3521,7 @@
       "location": "Goldenrod Community Park",
       "description": null,
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
@@ -3536,7 +3536,7 @@
       "location": "Orlando, Fl",
       "description": "14's - 17's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3551,7 +3551,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3566,7 +3566,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3596,7 +3596,7 @@
       "location": "Orlando, Fl",
       "description": "10's - 13's",
       "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3611,7 +3611,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3626,7 +3626,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3656,7 +3656,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3671,7 +3671,7 @@
       "location": "Elite Sports Center Annex | 415 E Grand Ave., South San Francisco, CA 94080, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Mark Salzer | Divisions\n\nDivisions: Tournament Cap | 30 | Legends B1 | 12 | Legends BB1 | 12 | 6 | C | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 5, 2026, 10:00 AM | Location | Seeding Party\n\nSeeding Party: Date/Time | November 6, 2026, 10:00 AM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 30, 2026 | Addl. Player Fee | 525 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
       "url": "https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 525.0
@@ -3686,7 +3686,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3701,7 +3701,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3746,7 +3746,7 @@
       "location": "Sand Key Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null
@@ -3761,7 +3761,7 @@
       "location": "Westside Community Center",
       "description": null,
       "url": "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b?filter=c2VhcmNoPUFkdWx0IFZvbGxleWJhbGwgRmFsbCAyMDI2",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
@@ -3776,7 +3776,7 @@
       "location": "Sheraton Sand Key",
       "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 1s/2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null
@@ -3806,7 +3806,7 @@
       "location": "Fort Lauderdale, FL - Broward County Convention Center",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/45552",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 200.0
@@ -3821,7 +3821,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46177",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 525.0
@@ -3851,7 +3851,7 @@
       "location": "Wesley Chapel,, FL - Wiregrass Ranch Sports Complex",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/45520",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 695.0
@@ -3866,7 +3866,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46206",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 725.0
@@ -3881,7 +3881,7 @@
       "location": "North Venice, FL - GSI Headquarters",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/45883",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 300.0
@@ -3896,7 +3896,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46236",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 525.0
@@ -3926,7 +3926,7 @@
       "location": "Wesley Chapel,, FL - Wiregrass Ranch Sports Complex",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/45521",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 495.0
@@ -3941,7 +3941,7 @@
       "location": "Wellington, FL - Wellington Sports Academy",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/45543",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 450.0
@@ -3971,7 +3971,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46277",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 500.0
@@ -3986,7 +3986,7 @@
       "location": "Wellington, FL - Wellington Sports Academy",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46283",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 450.0
@@ -4016,7 +4016,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46312",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 525.0
@@ -4031,7 +4031,7 @@
       "location": "Jacksonville, FL - JJVA",
       "description": null,
       "url": "https://www.advancedeventsystems.com/events/46322",
-      "skill_level": "Any Level",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 500.0
