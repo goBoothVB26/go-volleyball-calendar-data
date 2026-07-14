@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T03:41:53",
+  "generated": "2026-07-14T03:51:18",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -839,7 +839,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-07-05T14:00:00",
@@ -1019,7 +1019,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-07-12T14:00:00",
@@ -1138,21 +1138,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-16T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-07-16T18:00:00",
-      "end": "2026-07-16T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1292,21 +1277,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-07-18T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-07-18T18:00:00",
-      "end": "2026-07-18T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park-2026-07-19T14:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "July 19th @ College Park",
@@ -1319,7 +1289,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 5.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park_-_Women's_Height_Hitting_Clinic-2026-07-19T14:00:00",
@@ -1334,7 +1304,7 @@
       "skill_level": "Any Level",
       "gym_type": "Clinics/Training",
       "net_height": "Women's",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-07-19T14:00:00",
@@ -1364,7 +1334,7 @@
       "skill_level": "Any Level",
       "gym_type": "Clinics/Training",
       "net_height": "Men's",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-21T20:15:00",
@@ -1438,21 +1408,6 @@
       "url": "https://floridavolleyball.org/blog/event/usav-all-stars-championship/",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-23T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-07-23T18:00:00",
-      "end": "2026-07-23T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1607,21 +1562,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-07-25T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-07-25T18:00:00",
-      "end": "2026-07-25T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2026-07-26T14:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "July 26th @ College Park",
@@ -1634,7 +1574,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-07-26T14:00:00",
@@ -1693,21 +1633,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-30T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-07-30T18:00:00",
-      "end": "2026-07-30T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1781,7 +1706,7 @@
       "location": "Legacy VTC | 601 Gravois Bluffs Blvd G, Fenton, MO 63026, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Revilla | Sam Revilla | Richard Sucre | Divisions\n\nDivisions: Tournament Cap | 48 | B | 18 | BB | 12 | 12 | BB3 | Open A/AA | 6 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | June 14, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 15, 2026 | June 30, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @sam-revilla | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/xoxo-invitational-2026",
       "url": "https://www.nagva.org/tournaments-1/xoxo-invitational-2026",
-      "skill_level": "Open",
+      "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": null
@@ -1817,21 +1742,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-01T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-08-01T18:00:00",
-      "end": "2026-08-01T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-August_2nd_@_Dover_Shores-2026-08-02T13:30:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "August 2nd @ Dover Shores",
@@ -1844,7 +1754,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-08-02T14:00:00",
@@ -1888,21 +1798,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-06T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-08-06T18:00:00",
-      "end": "2026-08-06T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1967,21 +1862,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-08T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-08-08T18:00:00",
-      "end": "2026-08-08T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-August_9th_@_Dover_Shores-2026-08-09T13:30:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "August 9th @ Dover Shores",
@@ -1994,7 +1874,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Women's_Adult_Volleyball_Summer2026-2026-08-09T14:00:00",
@@ -2038,21 +1918,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-13T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-08-13T18:00:00",
-      "end": "2026-08-13T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -2147,21 +2012,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-15T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-08-15T18:00:00",
-      "end": "2026-08-15T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "YMCA_Central_Florida-Adult_Volleyball_League-2026-08-16T00:00:00",
       "club": "YMCA Central Florida",
       "title": "Adult Volleyball League",
@@ -2189,7 +2039,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-18T20:15:00",
@@ -2218,21 +2068,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-20T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-08-20T18:00:00",
-      "end": "2026-08-20T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -2297,21 +2132,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-22T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-08-22T18:00:00",
-      "end": "2026-08-22T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-08-23T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -2354,7 +2174,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-08-23T14:00:00",
@@ -2398,21 +2218,6 @@
       "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5048668-wednesdays---recreational-cd",
       "skill_level": "Any Level",
       "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-08-27T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-08-27T18:00:00",
-      "end": "2026-08-27T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -2477,21 +2282,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-29T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-08-29T18:00:00",
-      "end": "2026-08-29T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "YMCA_Central_Florida-Adult_Volleyball_League-2026-08-30T00:00:00",
       "club": "YMCA Central Florida",
       "title": "Adult Volleyball League",
@@ -2519,7 +2309,7 @@
       "skill_level": "Any Level",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": null
+      "price": 25.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-08-30T14:00:00",
@@ -2552,21 +2342,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-03T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-09-03T18:00:00",
-      "end": "2026-09-03T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-05T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club",
@@ -2591,24 +2366,9 @@
       "location": "Olentangy High School | 675 Lewis Center Rd, Lewis Center, OH 43035, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Jason Fallon | Jason Fallon | Divisions\n\nDivisions: Tournament Cap | 24 | B | 9 | BB | 9 | 6 | BB3 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | August 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 7, 2026 | August 4, 2026 | Addl. Player Fee | 450 | 500 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | jason-fallon-1 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/labor-of-love-volleyball-classic-33-",
       "url": "https://www.nagva.org/tournaments-1/labor-of-love-volleyball-classic-33-",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-05T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-09-05T18:00:00",
-      "end": "2026-09-05T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2669,21 +2429,6 @@
       "skill_level": "Any Level",
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-10T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-09-10T18:00:00",
-      "end": "2026-09-10T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2762,21 +2507,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-12T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-09-12T18:00:00",
-      "end": "2026-09-12T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-13T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club",
@@ -2837,21 +2567,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-17T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-09-17T18:00:00",
-      "end": "2026-09-17T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Florida_Gem_High_School_Tournament-2026-09-18T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Florida Gem High School Tournament",
@@ -2906,24 +2621,9 @@
       "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Divisions\n\nDivisions: Tournament Cap | 56 | Open A/AA | 16 | BB | 16 | 16 | B | Women's | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 25, 2026 | September 5, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "url": "https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
-      "skill_level": "Open",
+      "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-19T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-09-19T18:00:00",
-      "end": "2026-09-19T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -2972,21 +2672,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-09-24T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-09-24T18:00:00",
-      "end": "2026-09-24T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Lake_Howell_Invitational_JV-2026-09-25T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Lake Howell Invitational JV",
@@ -2998,21 +2683,6 @@
       "url": "https://www.gamepointevents.com/lake-howell-freshman-invitational",
       "skill_level": "Any Level",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-26T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-09-26T18:00:00",
-      "end": "2026-09-26T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -3062,21 +2732,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-10-01T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-10-01T18:00:00",
-      "end": "2026-10-01T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Bishope_Moore_Swing_For_The_Cure-2026-10-02T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Bishope Moore Swing For The Cure",
@@ -3122,21 +2777,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-03T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-10-03T18:00:00",
-      "end": "2026-10-03T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-10-04T14:00:00",
       "club": "City of Sanford Adult Volleyball",
       "title": "Adult Volleyball Fall 2026",
@@ -3167,21 +2807,6 @@
       "price": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-10-08T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
-      "start": "2026-10-08T18:00:00",
-      "end": "2026-10-08T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-10T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -3206,7 +2831,7 @@
       "location": "Olympus Sports Center | 3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | 42 | B | 14 | BB | 14 | 7 | Open A/AA | Womens | 7 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 31, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 8, 2026, 12:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | October 9, 2026, 12:00 PM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | Addl. Player Fee | 525 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-ball-12",
       "url": "https://www.nagva.org/tournaments-1/fall-ball-12",
-      "skill_level": "Open",
+      "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": null
@@ -3224,21 +2849,6 @@
       "skill_level": "Any Level",
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
-      "price": null
-    },
-    {
-      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-10T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Volleyball Court B",
-      "start": "2026-10-10T18:00:00",
-      "end": "2026-10-10T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "Any Level",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
       "price": null
     },
     {
@@ -3311,7 +2921,7 @@
       "location": "The Academy Volleyball Club | 6635 E 30th St ste b, Indianapolis, IN 46219, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Jordan Rosenberg | Jordan Rosenberg | Divisions\n\nDivisions: Tournament Cap | 48 | A1 | 12 | BB | 18 | 18 | B | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | September 26, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 8, 2026 | September 5, 2026 | September 26, 2026 | Addl. Player Fee | 450 | 500 | 550 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | JordanRosenberg83 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/crossroads-classic",
       "url": "https://www.nagva.org/tournaments-1/crossroads-classic",
-      "skill_level": "A/AA",
+      "skill_level": "A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": null
@@ -3656,7 +3266,7 @@
       "location": "Palama Settlement, Harry & Jeanette Weinberg Gymnasium | 810 N Vineyard Blvd, Honolulu, HI 96817, USA | 808 Athletic Club | 91-384 Komohana Pl, Kapolei, HI 96707, USA | Registration",
       "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | 42 | B | 14 | BB | 14 | 7 | Open A/AA | Womens | 7 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026 | Payment Deadlines\n\nRegistration: Date/Time | December 3, 2026, 1:00 AM | Location | Seeding Party\n\nSeeding Party: Date/Time | December 4, 2026, 1:00 AM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 30, 2026 | Addl. Player Fee | 450 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/2026-na-hoa-aloha-volleyball-invitational",
       "url": "https://www.nagva.org/tournaments-1/2026-na-hoa-aloha-volleyball-invitational",
-      "skill_level": "Open",
+      "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": null
