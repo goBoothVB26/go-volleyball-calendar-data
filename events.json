@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14T17:09:47",
+  "generated": "2026-07-15T16:52:19",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -1037,21 +1037,6 @@
       "price": 0.0
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-07-14T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null
-    },
-    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-14T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -1110,6 +1095,21 @@
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 70.0
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-07-15T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null
     },
     {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-16T18:00:00",
@@ -1194,7 +1194,7 @@
       "end": null,
       "all_day": true,
       "location": "TOA Sports Performance Center | 215 Gothic Ct, Franklin, TN 37067, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | James Johnson | Deneen Owen | Lew Smith Bronson Young | Divisions\n\nDivisions: Tournament Cap | 36 | B | 18 | BB | 9 | 9 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | June 11, 2026 | Payment Deadlines\n\nRegistration: Date/Time | July 17, 2026, 10:00 AM to 10:00 PM | Location | Play Dance Bar / Tribe Nashville 1519 Church St, Nashville, TN 37203, USA | Seeding Party\n\nSeeding Party: Date/Time | July 18, 2026, 10:00 AM | Location | Play Dance Bar / Tribe Nashville 1519 Church St, Nashville, TN 37203, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: May 15, 2026 | June 5, 2026 | June 26, 2026 | Addl. Player Fee | 500 | 550 | 600 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @VolleyballNashville | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/music-city-challenge-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | James Johnson | Deneen Owen | Lew Smith Bronson Young | Divisions\n\nDivisions: Tournament Cap | 36 | B | 18 | BB | 9 | 9 | BB3 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | June 11, 2026 | Payment Deadlines\n\nRegistration: Date/Time | July 17, 2026, 7:00 PM to 9:00 PM | Location | Play Dance Bar / Tribe Nashville 1519 Church St, Nashville, TN 37203, USA | Seeding Party\n\nSeeding Party: Date/Time | July 18, 2026, 7:00pm | Location | Play Dance Bar / Tribe Nashville 1519 Church St, Nashville, TN 37203, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: May 15, 2026 | June 5, 2026 | June 26, 2026 | Addl. Player Fee | 500 | 550 | 600 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @VolleyballNashville | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/music-city-challenge-2026",
       "url": "https://www.nagva.org/tournaments-1/music-city-challenge-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -1845,6 +1845,21 @@
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": null
+    },
+    {
+      "uid": "Top_Select_Volleyball_Academy-Top_Summer_Challenge_Indoor_Adult_Volleyball_Tournament-2026-08-02T08:00:00",
+      "club": "Top Select Volleyball Academy",
+      "title": "Top Summer Challenge Indoor Adult Volleyball Tournament",
+      "start": "2026-08-02T08:00:00",
+      "end": "2026-08-02T20:00:00",
+      "all_day": false,
+      "location": "Top Select Volleyball Academy",
+      "description": "Join us August 2nd and compete with the best\ud83d\udd25 Silver Division: 8:00am Gold Division: 3:00pm \u2705RSVP: (689) 212-4858 or DM",
+      "url": "https://form.jotform.com/261955259985073?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGns2eFsXa910Ao1LJAThawIuTZvievGSBO3yQqYqHqbg_kcHqSIA7yjqbFL74_aem_Gcy2XnTvYgbsnfeu3_ySxA&utm_id=97760_v0_s00_e0_tv3",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Co-ed",
+      "price": 300.0
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-August_2nd_@_Dover_Shores-2026-08-02T13:30:00",
@@ -3497,9 +3512,9 @@
       "price": 525.0
     },
     {
-      "uid": "Volleyball_Life-SSOVA's_October_10/11_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament_'26-2026-10-10T00:00:00",
+      "uid": "Volleyball_Life-SSOVA's_October_10/11_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-10-10T00:00:00",
       "club": "Volleyball Life",
-      "title": "SSOVA's October 10/11 GULFPORT Men's/Women's/Coed, Beach Volleyball Tournament '26",
+      "title": "SSOVA's October 10/11 GULFPORT Men's/Women's/Coed, Beach Volleyball Tournament",
       "start": "2026-10-10T00:00:00",
       "end": "2026-10-12T00:00:00",
       "all_day": true,
@@ -3615,6 +3630,21 @@
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": 200.0
+    },
+    {
+      "uid": "NAGVA-Windy_City_Open_2026-2026-10-24T00:00:00",
+      "club": "NAGVA",
+      "title": "Windy City Open 2026",
+      "start": "2026-10-24T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "Energy Volleyball Club | 1005 Commerce Ct, Bensenville, IL 60106, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Wesley Smith | Tim Martin | Divisions\n\nDivisions: Tournament Cap | 60 | A | 6 | BB | 12 | 18 | B | Legends B (35+) | 12 | 12 | C | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 24, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | TBD | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 30, 2026 | October 10, 2026 | Addl. Player Fee | 575 | 650 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/windy-city-open-2026",
+      "url": "https://www.nagva.org/tournaments-1/windy-city-open-2026",
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 575.0
     },
     {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-10-25T14:00:00",
@@ -3774,7 +3804,7 @@
       "end": "2026-11-30T00:00:00",
       "all_day": true,
       "location": "Sheraton Sand Key",
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 1s/2s",
+      "description": "Tournament \u00b7 Juniors \u00b7 Beach \u00b7 1s/2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
@@ -3954,11 +3984,11 @@
       "end": "2027-02-22T00:00:00",
       "all_day": true,
       "location": "Wiregrass Ranch Sports Campus, 3021 Sports Coast Way, Wesley Chapel, FL 33543",
-      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nEVENT PARKING:\nParking at Wiregrass Ranch Sports Campus will be $10 per day.\n\nREGISTRATION:\nTeam Entry Fees:\n- 2-Day Bid Divisions - $600*\u200b\n\u200b*The payment deadline is January 20, 2027 at 3PM. Payments made after that date will incur a late fee.\nTeams will be accepted on a first come, first served basis, after the following items have been completed:\n- Payment Received - Payment by check will not be recorded until check is received by mail\n- Housing Verified - THIS EVENT IS A STAY TO PLAY EVENT\nOnce a division has reached maximum capacity, there is no guarantee a team will be accepted into the event. Teams will be placed on a wait list and accepted on an as-needed basis. The Florida Region will contact the team if a space becomes available. Tournament staff reserves the right to modify the maximum number of teams per division based on demand and bid impact.\n\nREFUND POLICY:\nTeam Cancellation / Withdrawal Policy:\n- By January 20, 2027 at 3:00pm - 100% Refund*\n- After January 20, 2027 at 3:00pm - NO Refund\n\u200b*Refunds are less processing fees.\n\nSCHEDULE:\nWave times will be posted by the end of the day on February 27, 2027. The tournament schedule will be posted on SportWrench by 9am on the Thursday prior to the event.\nAM Wave (Day 1*)\n- TBD\nPM Wave (Day 1*)\n*IMPORTANT NOTE : Day 2 schedules are based on team performance on Day 1. The wave times listed below only apply to Day 1 of competition.\n\nATHLETE & COACH ENTRY:\nAthlete and Coach entry will begin at 6:45am.\n- Coaches will need to present their assigned QR code and a corresponding photo ID at the entrance.\n- Chaperones and parents cannot enter during the early access period.\nAccess for Spectators will begin at 7:00am.\n\nTHEME DAYS:\n- Saturday (2/20): TBD\n- Sunday (2/21): TBD\n\nHOUSING:\nThis is a stay-to-play event. All housing requirements must be met no later than January 21, 2026 at 3:00pm. After January 21, 2026 at 3:00pm, teams that are not compliant will be dropped and wait list teams will be given notice of entry.\nThe policy language below is being prepared in the form of frequently asked questions with corresponding answers to help clarify the requirements for participating teams.\nIMPORTANT NOTE: Team Travel Source is the official event housing partner for the Florida Region.  All questions on event hotels for Florida Region should first be directed to Team Travel Source.  If additional information is needed beyond what Team Travel can provide, please contact the Florida Region office.\nPhone:\u00a0 502-354-9103\nEmail: [email\u00a0protected]\n\nFL REGION BID INFORMATION:\nGirls Bids Available\n- National: TBD\n- American: TBD\n- Freedom: TBD\nNote: Bid availability is subject to change. Any team winning a JRQ bid will be required to accept the bid at the conclusion of the event and prior to accepting the respective medals and team award. All teams who earn a bid (National, American, or Freedom) or receive a trickle down bid (USA, Liberty, American) at this event must accept that \u2026",
+      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nVENUE POLICIES:\nParking For all events, WRSC will charge $10 per vehicle for parking . Parking payment will be required during events, and all vehicles must follow posted parking rules and designated parking areas. WRSC will be enforcing parking policies to help keep the campus safe, organized, and accessible. Vehicles that do not pay for parking, park illegally, block drive lanes, park in fire lanes, park on grass or sidewalks, or park in unauthorized areas may be subject to enforcement action, including towing at the owner\u2019s expense. Food and Beverage Meals, snacks, and drinks will be available through WRSC Food & Beverage, giving teams, families, spectators, officials, and staff convenient options while on campus. As part of this effort, outside food and drinks will not be permitted during events , unless approved in advance by WRSC.\n\nREGISTRATION:\nTeam Entry Fees:\n- 2-Day Bid Divisions - $600*\u200b\n\u200b*The payment deadline is January 20, 2027 at 3PM. Payments made after that date will incur a late fee.\nTeams will be accepted on a first come, first served basis, after the following items have been completed:\n- Payment Received - Payment by check will not be recorded until check is received by mail\n- Housing Verified - THIS EVENT IS A STAY TO PLAY EVENT\nOnce a division has reached maximum capacity, there is no guarantee a team will be accepted into the event. Teams will be placed on a wait list and accepted on an as-needed basis. The Florida Region will contact the team if a space becomes available. Tournament staff reserves the right to modify the maximum number of teams per division based on demand and bid impact.\n\nREFUND POLICY:\nTeam Cancellation / Withdrawal Policy:\n- By January 20, 2027 at 3:00pm - 100% Refund*\n- After January 20, 2027 at 3:00pm - NO Refund\n\u200b*Refunds are less processing fees.\n\nSCHEDULE:\nWave times will be posted by the end of the day on February 27, 2027. The tournament schedule will be posted on SportWrench by 9am on the Thursday prior to the event.\nAM Wave (Day 1*)\n- TBD\nPM Wave (Day 1*)\n*IMPORTANT NOTE : Day 2 schedules are based on team performance on Day 1. The wave times listed below only apply to Day 1 of competition.\n\nATHLETE & COACH ENTRY:\nAthlete and Coach entry will begin at 6:45am.\n- Coaches will need to present their assigned QR code and a corresponding photo ID at the entrance.\n- Chaperones and parents cannot enter during the early access period.\nAccess for Spectators will begin at 7:00am.\n\nTHEME DAYS:\n- Saturday (2/20): TBD\n- Sunday (2/21): TBD\n\nHOUSING:\nThis is a stay-to-play event. All housing requirements must be met no later than January 21, 2026 at 3:00pm. After January 21, 2026 at 3:00pm, teams that are not compliant will be dropped and wait list teams will be given notice of entry.\nThe policy language below is being prepared in the form of frequently asked questions with corresponding answers to help clarify the requirements for participating teams.\nIMPORTANT NOTE: Team Tra\u2026",
       "url": "https://floridavolleyball.org/blog/event/florida-regional-18s-qualifier/",
       "skill_level": "A/AA",
       "gym_type": "Tournament",
-      "net_height": "Women's",
+      "net_height": "Co-ed",
       "price": 10.0
     },
     {
