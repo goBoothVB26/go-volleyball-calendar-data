@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-15T20:43:09",
+  "generated": "2026-07-20T16:50:16",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -1082,21 +1082,6 @@
       "price": 70.0
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-07-15T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-16T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
@@ -1337,6 +1322,21 @@
       "price": 0.0
     },
     {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-07-20T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null
+    },
+    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-21T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -1397,6 +1397,21 @@
       "price": 70.0
     },
     {
+      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-22T19:30:00",
+      "club": "Game Point VBC",
+      "title": "Game Point Adult Open Gym",
+      "start": "2026-07-22T19:30:00",
+      "end": "2026-07-22T22:00:00",
+      "all_day": false,
+      "location": "Game Point VBC",
+      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
+      "url": null,
+      "skill_level": "A/AA",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": 8.0
+    },
+    {
       "uid": "USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00",
       "club": "USAV Florida Region",
       "title": "USAV All-Stars Championship",
@@ -1442,21 +1457,6 @@
       "price": 70.0
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-23T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-23T20:15:00",
-      "end": "2026-07-23T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0
-    },
-    {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-07-24T18:20:00",
       "club": "Out Sports League",
       "title": "Fridays - Draft/REMIX League (A/B/C/D)",
@@ -1494,7 +1494,7 @@
       "end": null,
       "all_day": true,
       "location": "Round Rock Sports Center | 2400 Chisholm Trail Rd, Round Rock, TX 78681, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Gonzales | MiCHAEL Segura | Bronson Young Lew Smith Richard Sucre Dalton Roberts Scott Kilburg Eric Nelson | Divisions\n\nDivisions: Tournament Cap | 96 | B | 36 | BB | 24 | 12 | BB3 | C | 12 | 12 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 13, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 11, 2026 | Addl. Player Fee | 650 [Payment opens on May 5th] | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/austin-summerfest-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Gonzales | Michael Segura | Bronson Young Lew Smith Richard Sucre Dalton Roberts Scott Kilburg Eric Nelson | Divisions\n\nDivisions: Tournament Cap | 96 | B | 36 | BB | 24 | 12 | BB3 | C | 12 | 12 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 13, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 11, 2026 | Addl. Player Fee | 650 [Payment opens on May 5th] | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/austin-summerfest-2026",
       "url": "https://www.nagva.org/tournaments-1/austin-summerfest-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -1509,7 +1509,7 @@
       "end": null,
       "all_day": true,
       "location": "Eden Prairie High School | 17185 Valley View Rd, Eden Prairie, MN 55346, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Jonathan Sloan | Divisions\n\nDivisions: Tournament Cap | 48 | B | BB | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: May 31, 2026 | July 4, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | . | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Jonathan Sloan | Divisions\n\nDivisions: Tournament Cap | 48 | B | 26 | BB | 11 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 7/24/2026; 7:-00pm - 9:00pm | Location | 515 Washington Ave S, Minneapolis, MN 55415, USA | Seeding Party\n\nSeeding Party: Date/Time | Sat, 7/25/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | CLOSING PARTY 7/26/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Tournament News\n\nPayment Deadlines: May 31, 2026 | July 4, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | . | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
       "url": "https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -1588,6 +1588,36 @@
       "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Volley_Vortex-Mini_Pop_Up_(_Summer)_Mini_Madness_'26-2026-07-26T00:00:00",
+      "club": "Volley Vortex",
+      "title": "Mini Pop Up ( Summer) Mini Madness '26",
+      "start": "2026-07-26T00:00:00",
+      "end": "2026-07-26T00:00:00",
+      "all_day": false,
+      "location": "Trotwood Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Volleyball_Life-Mini_Pop_Up_(_Summer)_Mini_Madness_'26-2026-07-26T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Mini Pop Up ( Summer) Mini Madness '26",
+      "start": "2026-07-26T00:00:00",
+      "end": "2026-07-27T00:00:00",
+      "all_day": true,
+      "location": "Trotwood Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null
     },
@@ -1802,6 +1832,21 @@
       "price": null
     },
     {
+      "uid": "Volleyball_Life-Pinellas_Men's_Open-2026-08-01T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Pinellas Men's Open",
+      "start": "2026-08-01T00:00:00",
+      "end": "2026-08-02T00:00:00",
+      "all_day": true,
+      "location": "City Courts at Pinellas Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-08-01T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Summer",
@@ -1990,6 +2035,51 @@
       "all_day": true,
       "location": "Frank DeLuca YMCA",
       "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Volleyball_Life-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Aug_8th,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
+      "club": "Volleyball Life",
+      "title": "SSOVA's GULFPORT CASH PAYOUT 4v4 Aug 8th, Beach Volleyball Tournament",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-08-09T00:00:00",
+      "all_day": true,
+      "location": "Gulfport Beach Courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Volleyball_Life-SSOVA's_Aug_8/9_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
+      "club": "Volleyball Life",
+      "title": "SSOVA's Aug 8/9 GULFPORT Men's/Women's/Coed, Beach Volleyball Tournament",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-08-10T00:00:00",
+      "all_day": true,
+      "location": "Gulfport Beach Courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's, Co-ed",
+      "price": null
+    },
+    {
+      "uid": "Volleyball_Life-CCVL_GRASH_BASH-2026-08-08T00:00:00",
+      "club": "Volleyball Life",
+      "title": "CCVL GRASH BASH",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-08-09T00:00:00",
+      "all_day": true,
+      "location": "Trotter Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
@@ -3497,6 +3587,21 @@
       "price": 525.0
     },
     {
+      "uid": "Volley_Vortex-Vortex_Showdown_-_Indoor_Tournament__'26-2026-10-10T00:00:00",
+      "club": "Volley Vortex",
+      "title": "Vortex Showdown - Indoor Tournament  '26",
+      "start": "2026-10-10T00:00:00",
+      "end": "2026-10-10T00:00:00",
+      "all_day": false,
+      "location": "Winter Park Volleyball Center",
+      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Volleyball_Life-SSOVA's_October_10/11_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-10-10T00:00:00",
       "club": "Volleyball Life",
       "title": "SSOVA's October 10/11 GULFPORT Men's/Women's/Coed, Beach Volleyball Tournament",
@@ -3557,6 +3662,36 @@
       "price": 200.0
     },
     {
+      "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-13T20:15:00",
+      "club": "Ocoee Open Gym Volleyball",
+      "title": "Open Gym Volleyball",
+      "start": "2026-10-13T20:15:00",
+      "end": "2026-10-13T22:30:00",
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Co-ed",
+      "price": 3.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-10-15T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-10-15T18:00:00",
+      "end": "2026-10-15T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
+    },
+    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-17T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -3585,6 +3720,21 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 450.0
+    },
+    {
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-17T18:00:00",
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-10-17T18:00:00",
+      "end": "2026-10-17T20:00:00",
+      "all_day": false,
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null
     },
     {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-18T00:00:00",
@@ -3752,21 +3902,6 @@
       "price": 500.0
     },
     {
-      "uid": "Volleyball_Life-SSOVA_Men's/Women's/Coed\u2019s_November_21/22_CLEARWATER_BEACH,_Beach_Volleyball_Tournament-2026-11-21T00:00:00",
-      "club": "Volleyball Life",
-      "title": "SSOVA Men's/Women's/Coed\u2019s November 21/22 CLEARWATER BEACH, Beach Volleyball Tournament",
-      "start": "2026-11-21T00:00:00",
-      "end": "2026-11-23T00:00:00",
-      "all_day": true,
-      "location": "Sand Key Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": null
-    },
-    {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-22T14:00:00",
       "club": "City of Sanford Adult Volleyball",
       "title": "Adult Volleyball Fall 2026",
@@ -3780,21 +3915,6 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 200.0
-    },
-    {
-      "uid": "Volleyball_Life-AVP_Juniors_East_Coast_Championships_2026-2026-11-27T00:00:00",
-      "club": "Volleyball Life",
-      "title": "AVP Juniors East Coast Championships 2026",
-      "start": "2026-11-27T00:00:00",
-      "end": "2026-11-30T00:00:00",
-      "all_day": true,
-      "location": "Sheraton Sand Key",
-      "description": "Tournament \u00b7 Juniors \u00b7 Beach \u00b7 1s/2s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=100",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null
     },
     {
       "uid": "NAGVA-2026_Na_Hoa_Aloha_Volleyball_Invitational-2026-12-05T00:00:00",
