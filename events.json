@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T18:06:04",
+  "generated": "2026-07-20T18:12:34",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -2290,22 +2290,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Jax_Scene_Beach_Coed_4s_August_8th-2026-08-08T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Jax Scene Beach Coed 4s August 8th",
-      "start": "2026-08-08T00:00:00",
-      "end": "2026-08-09T00:00:00",
-      "all_day": true,
-      "location": "Jax Scene courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Aug_8th,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
       "club": "Volleyball Life",
       "title": "SSOVA's GULFPORT CASH PAYOUT 4v4 Aug 8th, Beach Volleyball Tournament",
@@ -2314,6 +2298,22 @@
       "all_day": true,
       "location": "Gulfport Beach Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Rat Lord Back To School Bash",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-08-09T00:00:00",
+      "all_day": true,
+      "location": "Frank DeLuca YMCA",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
