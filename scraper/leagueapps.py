@@ -35,6 +35,68 @@ _EXTRA_SPACE_RE = re.compile(r"[ \t]+")
 _SPACE_BEFORE_NEWLINE_RE = re.compile(r" *\n *")
 _SPACE_BEFORE_PUNCT_RE = re.compile(r" +([.,;:!?])")
 
+# Program-metadata lines to scrub out of extracted descriptions (see
+# strip_program_metadata): the details sidebar repeats the Season /
+# Starts / Ends / Registration Dates / Location fields, the weekday
+# strip, and the time slot -- all of which the calendar card already
+# shows as structured event fields.
+_METADATA_LABEL_RE = re.compile(
+    r"^(season|starts|ends|registration dates|location)\s*:\s*(\S.*)?$",
+    re.IGNORECASE,
+)
+_MEMBERSHIP_LINE_RE = re.compile(r"^requires\b.*\bmembership\b.{0,20}$", re.IGNORECASE)
+_WEEKDAY_ROW_RE = re.compile(
+    r"^(mon|tue|wed|thu|fri|sat|sun)((\s|/|,)+(mon|tue|wed|thu|fri|sat|sun))+$",
+    re.IGNORECASE,
+)
+_TIME_RANGE_LINE_RE = re.compile(
+    r"^\d{1,2}(:\d{2})?\s*(am|pm)\s+to\s+\d{1,2}(:\d{2})?\s*(am|pm)$",
+    re.IGNORECASE,
+)
+
+
+def strip_program_metadata(text: Optional[str]) -> Optional[str]:
+    """Remove program-details sidebar noise from a flattened description.
+
+    When a program has no real prose write-up, the largest text block on
+    its detail page is the details sidebar itself, so the extracted
+    "description" is a raw dump of Season:/Starts:/Ends:/Registration
+    Dates:/Location: label-value pairs, the Mon..Sun weekday strip, the
+    time slot, and a "Requires ... Membership" note. All of that already
+    appears on the calendar card as structured fields (start, end,
+    location, ...), so those lines are dropped here. Anything else --
+    genuine prose, and the fees section ("Individual Fees" / "Free") --
+    is kept. A label line's value may sit on the same line after the
+    colon or on the following (possibly blank-separated) line; both
+    forms are consumed.
+    """
+    if not text:
+        return None
+    kept: list[str] = []
+    skip_value = False  # a bare label line was seen; its value line is next
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if not stripped:
+            if not skip_value:
+                kept.append(line)
+            continue
+        if skip_value:
+            skip_value = False
+            continue
+        label_match = _METADATA_LABEL_RE.match(stripped)
+        if label_match:
+            skip_value = label_match.group(2) is None  # bare label: value follows
+            continue
+        if (
+            _MEMBERSHIP_LINE_RE.match(stripped)
+            or _WEEKDAY_ROW_RE.match(stripped)
+            or _TIME_RANGE_LINE_RE.match(stripped)
+        ):
+            continue
+        kept.append(line)
+    result = _BLANK_LINES_RE.sub("\n\n", "\n".join(kept)).strip()
+    return result or None
+
 
 def flatten_rich_text(el) -> Optional[str]:
     """Flatten a rich-text HTML element into readable plain text: <br>
@@ -88,7 +150,7 @@ def extract_rich_description(soup) -> Optional[str]:
     best = max(candidates, key=lambda el: len(el.get_text(strip=True)))
     if len(best.get_text(strip=True)) < 200:
         return None
-    return flatten_rich_text(best)
+    return strip_program_metadata(flatten_rich_text(best))
 
 
 def parse_details(li) -> dict[str, str]:
