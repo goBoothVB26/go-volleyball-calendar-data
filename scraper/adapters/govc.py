@@ -27,7 +27,7 @@ from dateutil import parser as dateparser
 from .. import leagueapps
 from ..dateparse import coerce_upcoming_year
 from ..tagging import infer_gym_type
-from ..fetch import fetch_static
+from ..fetch import fetch_rendered, fetch_static
 from ..models import Event
 from .base import ClubAdapter
 
@@ -101,16 +101,44 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         return events
 
     def _detail_soup(self, url: str):
-        """Fetch (once) and memoize a program's detail page, with the
-        iframe-transition param that yields server-rendered content.
-        Returns None if the fetch fails."""
+        """Fetch (once) and memoize a program's detail page.
+        Returns None if every fetch strategy fails."""
         if url not in self._detail_soups:
-            detail_url = url + ("&" if "?" in url else "?") + "ngmp_2023_iframe_transition=1"
-            try:
-                self._detail_soups[url] = fetch_static(detail_url)
-            except Exception:
-                self._detail_soups[url] = None
+            self._detail_soups[url] = self._fetch_detail(url)
         return self._detail_soups[url]
+
+    # Server-rendered program content: the monolith's module divs, or the
+    # React page's rich-text container. A response with neither is the
+    # empty React shell (content arrives via client-side JS), which is
+    # useless to every extractor that reads the detail page.
+    _CONTENT_SELECTORS = ('div.mod', 'div[class*="StyledHTML__StylesContainer"]')
+
+    def _fetch_detail(self, url: str):
+        """Fetch a program detail page, working around the site's newer
+        `/app/...` links (e.g. /app/tournaments/5018478): those serve a
+        React shell whose content only exists after client-side render,
+        so fetch_static gets an empty page. The same program is still
+        served fully rendered at the old monolith path (the URL minus
+        `/app`) with the iframe-transition param, so that's tried first,
+        then the URL as given; a static response only counts if it
+        actually contains program content. Last resort: headless
+        Chromium on the original URL, waiting for the React content."""
+        candidates = []
+        if "/app/" in url:
+            candidates.append(url.replace("/app/", "/", 1))
+        candidates.append(url)
+        for candidate in candidates:
+            static_url = candidate + ("&" if "?" in candidate else "?") + "ngmp_2023_iframe_transition=1"
+            try:
+                soup = fetch_static(static_url)
+            except Exception:
+                continue
+            if any(soup.select_one(sel) for sel in self._CONTENT_SELECTORS):
+                return soup
+        try:
+            return fetch_rendered(url, wait_selector=", ".join(self._CONTENT_SELECTORS))
+        except Exception:
+            return None
 
     def _scrape_full_description(self, url: str) -> Optional[str]:
         """Full rich description from the program's detail page via the
