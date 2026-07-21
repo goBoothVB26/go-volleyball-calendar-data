@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Volleyball Schedule Scraper//
+NAME:Ocoee Coed League
+X-WR-CALNAME:Ocoee Coed League
+BEGIN:VEVENT
+SUMMARY:[Ocoee Coed League] Co-Ed Volleyball League (season dates TBD)
+DTSTART;TZID=America/New_York:20260721T183000
+UID:ocoee_coed_league-season-tbd-placeholder
+DESCRIPTION:The Co-ed Volleyball League will feature a 7-game regular seas
+ on and playoffs for qualifying teams. Games are played on Tuesday nights a
+ t 6:30 pm\, 7:30 pm\, and 8:30 pm. Upcoming league season dates to be anno
+ unced. Games are played at Jim Beech Recreation Center. Players must be at
+  least 18 years old to participate in this league. Volleyball Participatio
+ n Waiver Required. If interested\, don't hesitate to email Alex Gonzalez o
+ r call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Particip
+ ation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicpl
+ us.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and
+  Recreation Leisure Services: 407-905-3180\n\nMore info: https://www.ocoee
+ .org/171/Adult-Programs
+LOCATION:Jim Beech Recreation Center
+URL:https://www.ocoee.org/171/Adult-Programs
+END:VEVENT
+END:VCALENDAR

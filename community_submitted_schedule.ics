@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Volleyball Schedule Scraper//
+NAME:Community Submitted
+X-WR-CALNAME:Community Submitted
+BEGIN:VEVENT
+SUMMARY:[Top Select Volleyball Academy] Top Summer Challenge Indoor Adult 
+ Volleyball Tournament
+DTSTART;TZID=America/New_York:20260802T080000
+DTEND;TZID=America/New_York:20260802T200000
+UID:Top_Select_Volleyball_Academy-Top_Summer_Challenge_Indoor_Adult_Volley
+ ball_Tournament-2026-08-02T08:00:00
+DESCRIPTION:Join us August 2nd and compete with the best🔥 Silver Divisi
+ on: 8:00am Gold Division: 3:00pm ✅RSVP: (689) 212-4858 or DM\n\nMore inf
+ o: https://form.jotform.com/261955259985073?utm_source=ig&utm_medium=socia
+ l&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE
+ 5NzQzMzkyNDU5AAGns2eFsXa910Ao1LJAThawIuTZvievGSBO3yQqYqHqbg_kcHqSIA7yjqbFL
+ 74_aem_Gcy2XnTvYgbsnfeu3_ySxA&utm_id=97760_v0_s00_e0_tv3
+LOCATION:Top Select Volleyball Academy
+URL:https://form.jotform.com/261955259985073?utm_source=ig&utm_medium=soci
+ al&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2Nj
+ E5NzQzMzkyNDU5AAGns2eFsXa910Ao1LJAThawIuTZvievGSBO3yQqYqHqbg_kcHqSIA7yjqbF
+ L74_aem_Gcy2XnTvYgbsnfeu3_ySxA&utm_id=97760_v0_s00_e0_tv3
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Game Point VBC] Game Point Adult Open Gym
+DTSTART;TZID=America/New_York:20260722T193000
+DTEND;TZID=America/New_York:20260722T220000
+UID:Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-22T19:30:00
+DESCRIPTION:Competitive volleyball - Teams are preferred\, but we try to a
+ ccommodate single players too.  Must RSVP Via text to Edgar at 321-287-717
+ 4.
+LOCATION:Game Point VBC
+END:VEVENT
+END:VCALENDAR

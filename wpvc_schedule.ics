@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Volleyball Schedule Scraper//
+NAME:WPVC
+X-WR-CALNAME:WPVC
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260619T200000
+DTEND;TZID=America/New_York:20260619T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-06-19T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260626T200000
+DTEND;TZID=America/New_York:20260626T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-06-26T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260703T200000
+DTEND;TZID=America/New_York:20260703T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-07-03T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260710T200000
+DTEND;TZID=America/New_York:20260710T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-07-10T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260717T200000
+DTEND;TZID=America/New_York:20260717T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-07-17T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260724T200000
+DTEND;TZID=America/New_York:20260724T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-07-24T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20260731T200000
+DTEND;TZID=America/New_York:20260731T223000
+UID:WPVC-Friday_Nights_at_WPVC-2026-07-31T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
+END:VCALENDAR
