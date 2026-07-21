@@ -1,0 +1,2514 @@
+<!-- Greater Orlando Volleyball — "Our Events" carousel ONLY (no
+     community calendar below). GENERATED from squarespace_calendar.html
+     with CAROUSEL_ONLY flipped to true — do not hand-edit; regenerate
+     from the main file instead.
+     Paste this entire file into a Squarespace CODE block (not Embed).
+     ONE thing to edit: set EVENTS_URL below to the public URL of your
+     events.json (the raw.githubusercontent.com link). -->
+
+<style>
+  .vbcal {
+    font-family: inherit; max-width: 100%;
+    /* Constant padding/radius in BOTH themes so toggling dark mode
+       (which colors this container) never shifts the layout. */
+    padding: 16px; border-radius: var(--vb-radius-xl);
+    transition: background-color 0.25s;
+  }
+
+  /* ============== EDIT LOOK & FEEL HERE ==============
+     Every color, size, corner, and shadow the widget uses.
+     Change a value and save -- nothing else needs touching. */
+  .vbcal, .vbcal-overlay {
+    /* Brand colors */
+    --vb-brand: #0057b8;          /* GOVB blue: headings, buttons, ribbons */
+    --vb-brand-soft: #eaf2fb;     /* light blue button hover fill */
+    --vb-accent: #FFC425;         /* yellow: filter highlights */
+    --vb-accent-fill: #FFF8E1;    /* faded yellow: selected filter fill */
+
+    /* Text sizes */
+    --vb-heading-size: 34px;      /* Our Events / Community Calendar */
+    --vb-month-size: 24px;        /* "July 2026" toolbar title */
+    --vb-card-title-size: 13px;   /* carousel card event titles */
+    --vb-modal-title-size: 18px;  /* popup event title */
+
+    /* Shape & depth */
+    --vb-radius: 8px;             /* buttons, filters, day cells */
+    --vb-radius-lg: 12px;         /* carousel cards */
+    --vb-radius-xl: 14px;         /* popups, dark-mode panel */
+    --vb-card-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+    --vb-card-shadow-hover: 0 8px 20px 5px rgba(0,0,0,0.13), 0 3px 5px rgba(0,0,0,0.08);
+    --vb-modal-shadow: 0 18px 50px 10px rgba(0,0,0,0.37);
+    --vb-overlay-blur: 18px;      /* liquid-glass blur behind popups */
+    --vb-overlay-saturate: 170%;  /* color pop through the glass */
+
+    /* Dark mode palette */
+    --vb-dark-bg: #14171c;        /* page-panel background */
+    --vb-dark-surface: #1b2027;   /* cards, day cells, popups */
+    --vb-dark-border: #2a3038;
+    --vb-dark-text: #e6e6e6;
+    --vb-dark-muted: #98a0aa;
+    --vb-dark-brand: #FFC425;     /* GOVB accents invert to yellow on dark */
+    --vb-dark-accent: #0057b8;    /* filter highlights invert to blue on dark */
+  }
+  /* Everything uses the Squarespace site's own fonts, including form
+     controls and buttons (which browsers otherwise give a system font). */
+  .vbcal button, .vbcal select, .vbcal input,
+  .vbcal-overlay button, .vbcal-overlay input { font-family: inherit; }
+  .vbcal-overlay { font-family: inherit; }
+  /* ============================================================ */
+
+  /* Theme toggle: slider switch. Bright sky-blue track in light mode;
+     midnight hues in dark. The sun crossfades into the moon as the
+     knob slides across. */
+  .vb-theme-btn {
+    position: relative; width: 58px; height: 30px; padding: 0;
+    border: 0; border-radius: 15px; cursor: pointer;
+    background: linear-gradient(90deg, #9EDCFF, #5DB8F0);
+    transition: background 0.3s;
+  }
+  .vb-theme-btn .vb-knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: 50%; background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: left 0.3s, background 0.3s;
+  }
+  .vb-theme-btn .vb-knob span {
+    /* Dead-center the emoji in the knob: absolute-center transform
+       instead of flex, so the glyph's own baseline metrics (emoji
+       fonts vary) can't push it off-center */
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; height: auto;
+    font-size: 14px; line-height: 1;
+    transition: opacity 0.3s;
+  }
+  .vb-theme-btn .vb-sun { opacity: 1; }
+  .vb-theme-btn .vb-moon { opacity: 0; }
+  .vb-dark .vb-theme-btn {
+    background: linear-gradient(90deg, #3A2A66, #55397C);
+  }
+  .vb-dark .vb-theme-btn .vb-knob { left: 31px; background: #10131a; }
+  .vb-dark .vb-theme-btn .vb-sun { opacity: 0; }
+  .vb-dark .vb-theme-btn .vb-moon { opacity: 1; }
+
+  /* Filter bar: labels above the selects */
+  .vbcal-filters {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+    margin-bottom: 12px;
+  }
+  .vbcal-filter { display: flex; flex-direction: column; }
+  .vbcal-filter label {
+    font-size: 11.5px; font-weight: 500; color: #5f6a75; text-align: center;
+    margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+
+  /* Mobile: filters collapse behind a Show Filters button */
+  .vbcal-filter-toggle { display: none; text-align: center; margin-bottom: 10px; }
+
+  /* Consolidated layout (both devices): the date lives in the heading
+     ("Community Calendar | Jul 26") and the toolbar's own date title is
+     retired. On desktop the filters are moved (by JS) into the toolbar
+     row between the nav arrows and the Month/List buttons; on mobile
+     the Show/Hide Filters button takes that center spot instead. */
+  .vb-title-date::before { content: " | "; }
+  .vbcal-toolbar h3 { display: none; }
+  @media (min-width: 768px) {
+    /* (row alignment comes from the global .vbcal-toolbar rule in the
+       uniform-controls block further down) */
+    .vbcal-toolbar > div:first-child,
+    .vbcal-toolbar > div:last-child { flex: 0 0 auto; }
+    .vbcal-toolbar .vbcal-filters {
+      flex: 1 1 0; margin-bottom: 0; align-items: flex-end;
+      flex-wrap: nowrap; min-width: 0; gap: 8px;
+    }
+    /* All five filters share the row equally and shrink as needed so
+       nothing ever wraps to a second line */
+    .vbcal-toolbar .vbcal-filter { flex: 1 1 0; min-width: 0; }
+    .vbcal-toolbar .vb-dd { width: 100%; }
+    .vbcal-toolbar .vb-dd-field {
+      min-width: 0; width: 100%; box-sizing: border-box;
+      padding: 10px 28px 10px 12px;
+    }
+  }
+  .vbcal-filters select {
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+    padding: 10px 34px 10px 14px; border: 1px solid #b8bdc4;
+    border-radius: var(--vb-radius-lg);
+    font-size: 14px; background-color: #fff; color: #222; min-width: 150px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+    transition: background-color 0.12s, border-color 0.12s, box-shadow 0.12s;
+  }
+  .vbcal-filters select:hover { background-color: #f5f6f7; border-color: var(--vb-accent); }
+  /* While the dropdown is open/focused: the border itself turns
+     yellow -- no browser focus outline, no extra ring */
+  .vbcal-filters select:focus,
+  .vbcal-filters select:focus-visible {
+    outline: none; border-color: var(--vb-accent);
+  }
+  .vbcal-filters select.sel {
+    border-color: var(--vb-accent); background-color: var(--vb-accent-fill);
+    box-shadow: 0 0 0 2px rgba(255, 196, 37, 0.35);
+  }
+  /* linear-gradient forces Chrome to keep the yellow on the selected
+     option even while the OS focus highlight sits on it */
+  .vbcal-filters select option:checked {
+    background: var(--vb-accent) linear-gradient(var(--vb-accent-fill), var(--vb-accent-fill)); color: #222;
+  }
+  .vbcal-filters select option:hover { background: #ececec; }
+  /* Custom dropdowns (Vuetify-style field + floating menu). The native
+     selects stay hidden underneath as the state holders. */
+  .vbcal-filter { position: relative; }
+  .vb-dd-field {
+    padding: 10px 34px 10px 14px; border: 1px solid #b8bdc4;
+    border-radius: var(--vb-radius-lg);
+    font-size: 14px; background-color: #fff; color: #222; min-width: 150px;
+    cursor: pointer; user-select: none; -webkit-user-select: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+    transition: background-color 0.12s, border-color 0.12s, box-shadow 0.12s;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .vb-dd-field:hover { background-color: #f5f6f7; border-color: var(--vb-accent); }
+  .vb-dd.open .vb-dd-field { border-color: var(--vb-accent); }
+  .vb-dd-field.sel {
+    border-color: var(--vb-accent); background-color: var(--vb-accent-fill);
+    box-shadow: 0 0 0 2px rgba(255, 196, 37, 0.35);
+  }
+  .vb-dd-menu {
+    display: none; position: absolute; top: calc(100% + 6px); left: 0;
+    min-width: 100%; z-index: 600;
+    /* Liquid glass: translucent pane with heavy blur + saturation so
+       the calendar shows through, a top sheen, and a hairline edge.
+       Browsers without backdrop-filter fall back to the near-solid tint. */
+    background:
+      linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.12) 40%),
+      rgba(255,255,255,0.62);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
+    backdrop-filter: blur(16px) saturate(170%);
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: var(--vb-radius-lg);
+    /* inset white pair = light catching the lip of the glass */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.10),
+                inset 6px 6px 0 -6px rgba(255,255,255,0.7),
+                inset 0 0 8px 1px rgba(255,255,255,0.35);
+    padding: 6px 0; max-height: 280px; overflow-y: auto;
+  }
+  .vb-dd.open .vb-dd-menu { display: block; }
+  .vb-dd-item {
+    padding: 9px 16px; cursor: pointer; font-size: 14px; color: #222;
+    white-space: nowrap; transition: background 0.1s;
+  }
+  .vb-dd-item:hover { background: rgba(60,70,85,0.10); }
+  .vb-dd-item.selected { background: rgba(255,196,37,0.28); font-weight: 600; }
+
+  /* Press feedback: everything tappable compresses slightly while held
+     (the same subtle squish iOS uses on home-screen icons). Android
+     devices additionally get a short vibration via buzz() in the JS. */
+  .vbcal-btn:active, .vb-dd-field:active, .vb-dd-item:active,
+  .vbcal-chip:active, .vbcal-item:active, .vb-bm:active,
+  .vbcar-chev:active, .vb-week-chev:active,
+  .vbcal-modal .btn:active, .vbcal-modal .close:active, .vb-share:active, .vb-share-car:active {
+    transform: scale(0.96);
+    transition: transform 0.08s;
+  }
+  .vbcal-day.busy:active { transform: scale(0.98); transition: transform 0.08s; }
+
+  .vbcal-count { text-align: center; font-size: 13px; color: #666; margin-bottom: 10px; }
+  /* Get-notified call to action after the count: GOVB blue, inverting
+     to GOVB yellow in dark mode like other brand accents */
+  .vbcal-count .vb-count-cta { color: var(--vb-brand); font-weight: 600; }
+  .vb-dark .vbcal-count .vb-count-cta { color: var(--vb-dark-brand); }
+
+  /* Toolbar: three equal columns so the date stays truly centered no
+     matter how wide the left/right button groups are */
+  .vbcal-toolbar {
+    display: flex; align-items: center;
+    margin-bottom: 8px; gap: 6px;
+  }
+  .vbcal-toolbar > div:first-child {
+    flex: 1 1 0; display: flex; justify-content: flex-start;
+  }
+  .vbcal-toolbar > div:last-child {
+    flex: 1 1 0; display: flex; justify-content: flex-end;
+  }
+  .vbcal-toolbar h3 {
+    flex: 1 1 0; text-align: center; white-space: nowrap;
+    margin: 0; font-size: var(--vb-month-size); font-weight: 700; color: var(--vb-brand);
+  }
+  .vbcal-btn {
+    padding: 8px 18px; margin-left: 6px; cursor: pointer;
+    border: 1px solid var(--vb-brand); background: transparent; color: var(--vb-brand);
+    border-radius: var(--vb-radius-lg); font-size: 13.5px; font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: background 0.15s, color 0.15s;
+  }
+  .vbcal-btn:hover { background: var(--vb-brand-soft); }
+  .vbcal-btn.active { background: var(--vb-brand); color: #fff; }
+  .vbcal-btn.nav { padding: 8px 14px; font-weight: bold; }
+
+  /* Month grid */
+  .vbcal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  .vbcal-dow { text-align: center; font-size: 12px; font-weight: bold; padding: 4px 0; color: #555; }
+  .vbcal-day {
+    background: #fff; border: 1px solid #ececec; border-radius: var(--vb-radius);
+    min-height: 86px; padding: 4px; font-size: 12px; overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .vbcal-day.other { background: #f3f3f3; opacity: 0.28; }
+  .vbcal-day .num { font-size: 11px; color: #888; margin-bottom: 2px; }
+  .vbcal-day.today {
+    border: 4px solid var(--vb-brand);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.14);  /* +3px lift vs regular cells */
+  }
+  .vbcal-day.today .num { color: var(--vb-brand); font-weight: bold; }
+  .vbcal-chip {
+    display: block; width: 100%; text-align: left; border: 0; cursor: pointer;
+    border-radius: 5px; padding: 2px 5px; margin-bottom: 2px;
+    font-size: 11px; line-height: 1.25; color: #fff;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    transition: box-shadow 0.15s, padding 0.15s;
+  }
+  /* Hovering a chip lets the title wrap onto extra lines -- growing
+     only vertically, inside the day cell, so the grid never reflows
+     horizontally. A little extra padding tallens the click target. */
+  .vbcal-chip:hover {
+    white-space: normal;
+    padding-top: 4px; padding-bottom: 4px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.28);
+  }
+
+  /* Week zoom: entered by tapping a day with 3+ events */
+  .vbcal-day.busy { cursor: pointer; }
+  .vbcal-week .vbcal-day { min-height: 240px; cursor: default; }
+  .vbcal-week .vbcal-day .num { font-size: 13px; margin-bottom: 5px; }
+  .vbcal-week .vbcal-chip {
+    white-space: normal; font-size: 13px; line-height: 1.3;
+    padding: 6px 8px; margin-bottom: 5px; border-radius: 6px;
+  }
+  .vb-week-row { display: flex; align-items: stretch; }
+  .vb-week-row .vbcal-week { flex: 1; min-width: 0; }
+  .vb-week-chev {
+    flex: 0 0 26px; border: 0; background: none; cursor: pointer;
+    font-size: 18px; color: #555; padding: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .vb-week-chev:hover { color: var(--vb-brand); }
+  .vb-dark .vb-week-chev { color: var(--vb-dark-muted); }
+  .vb-dark .vb-week-chev:hover { color: var(--vb-dark-brand); }
+
+  /* Light mode: yellow fill, black text; inverts to outlined while pressed */
+  .vbcal-btn.vb-back-btn {
+    background: var(--vb-accent); border-color: var(--vb-accent); color: #1a1a1a;
+  }
+  .vbcal-btn.vb-back-btn:hover { background: #e6ad0f; border-color: var(--vb-accent); }
+  .vbcal-btn.vb-back-btn:active {
+    background: transparent; border-color: var(--vb-accent); color: var(--vb-accent);
+  }
+  /* Dark mode: outlined yellow; fills yellow while pressed.
+     (.vbcal-btn.vb-back-btn keeps these stronger than the generic
+     .vb-dark .vbcal-btn rule that would otherwise repaint it blue.) */
+  .vb-dark .vbcal-btn.vb-back-btn {
+    background: transparent; border-color: var(--vb-accent); color: var(--vb-accent);
+  }
+  .vb-dark .vbcal-btn.vb-back-btn:hover { background: rgba(255, 196, 37, 0.12); }
+  .vb-dark .vbcal-btn.vb-back-btn:active {
+    background: var(--vb-accent); border-color: var(--vb-accent); color: #1a1a1a;
+  }
+
+  /* Past events fade throughout (grid chips, week zoom, list rows
+     and their date headers) */
+  .vbcal-chip.pastev, .vbcal-item.pastev, .vbcal-datehdr.pastev { opacity: 0.60; }
+
+  /* List view: its own scroll pane (~a week visible), starts at today */
+  .vbcal-list {
+    display: none; position: relative;
+    max-height: 480px; overflow-y: auto; padding-right: 6px;
+    scrollbar-width: thin;
+  }
+  .vbcal-datehdr { font-weight: bold; font-size: 14px; margin: 14px 0 6px; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  .vbcal-datehdr.today {
+    color: var(--vb-brand);
+    border-bottom: 4px solid var(--vb-brand);
+  }
+  .vbcal-item {
+    display: flex; gap: 8px; align-items: baseline; padding: 6px 4px;
+    border-radius: var(--vb-radius); cursor: pointer; font-size: 14px;
+  }
+  .vbcal-item:hover { background: #f2f6fb; }
+  .vbcal-dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 10px; align-self: center; }
+  .vbcal-item .t { color: #666; font-size: 12px; flex: 0 0 110px; }
+
+  /* Detail modal (moved to <body> at runtime so no page section can
+     create a stacking context above it) */
+  .vbcal-overlay {
+    display: none; position: fixed; inset: 0; z-index: 2147483000;
+    align-items: center; justify-content: center;
+  }
+  /* Liquid glass lives on a ::before layer BEHIND the card -- putting
+     backdrop-filter on the overlay itself pulled the card's text into
+     the filtered GPU layer and made it render fuzzy on desktop. The
+     glass: heavy blur with boosted saturation so the page's colors
+     bloom through, a faint luminous tint, and a radial "wet" sheen. */
+  .vbcal-overlay::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.22), rgba(255,255,255,0.05) 55%),
+      rgba(30, 40, 60, 0.18);
+    -webkit-backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(1.04);
+    backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(1.04);
+  }
+  /* Dark mode glass: same treatment, tinted toward the dark palette */
+  .vbcal-overlay.vb-dark::before {
+    background:
+      radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.07), rgba(255,255,255,0.015) 55%),
+      rgba(8, 10, 16, 0.38);
+    -webkit-backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(0.92);
+    backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(0.92);
+  }
+  /* Desktop: the background glass runs at half intensity (half the
+     blur, softer tint); the dropdown glass keeps full strength */
+  @media (min-width: 768px) {
+    .vbcal-overlay::before {
+      background:
+        radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.11), rgba(255,255,255,0.025) 55%),
+        rgba(30, 40, 60, 0.09);
+      -webkit-backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(1.02);
+      backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(1.02);
+    }
+    .vbcal-overlay.vb-dark::before {
+      background:
+        radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.035), rgba(255,255,255,0.008) 55%),
+        rgba(8, 10, 16, 0.19);
+      -webkit-backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(0.96);
+      backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(0.96);
+    }
+  }
+
+  /* TRUE liquid glass (Chromium only): the SVG displacement filter is
+     appended to the backdrop chain, warping the page through the glass
+     like rippled water. body.vb-warp is added by JS only on Chromium;
+     Safari/Firefox never match these rules and keep the plain blur
+     above as their fallback. */
+  body.vb-warp .vbcal-overlay::before {
+    backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(1.04) url(#vbGlassWarp);
+  }
+  body.vb-warp .vbcal-overlay.vb-dark::before {
+    backdrop-filter: blur(var(--vb-overlay-blur)) saturate(var(--vb-overlay-saturate)) brightness(0.92) url(#vbGlassWarp);
+  }
+  @media (min-width: 768px) {
+    body.vb-warp .vbcal-overlay::before {
+      backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(1.02) url(#vbGlassWarp);
+    }
+    body.vb-warp .vbcal-overlay.vb-dark::before {
+      backdrop-filter: blur(calc(var(--vb-overlay-blur) / 2)) saturate(var(--vb-overlay-saturate)) brightness(0.96) url(#vbGlassWarp);
+    }
+  }
+  .vbcal-modal { position: relative; }  /* paints above the glass layer */
+  .vbcal-modal {
+    background: #fff; color: #222; border-radius: var(--vb-radius-xl); padding: 20px;
+    box-shadow: var(--vb-modal-shadow);
+    border-left: 6px solid transparent;
+    /* border-box so the 20px padding + ribbon border stay INSIDE the
+       width -- without it the card overflowed the screen on phones.
+       16px of backdrop stays visible on each side. */
+    box-sizing: border-box;
+    max-width: 480px; width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
+    overscroll-behavior: contain;  /* card scroll never chains to the page */
+    font-size: 14px; font-family: inherit;
+  }
+  .vbcal-modal h4 {
+    margin: 0 24px 8px 0; color: #222;
+    font-size: var(--vb-modal-title-size); font-weight: 700;
+  }
+  .vbcal-modal .clubline { color: #666; }
+  /* Club logo in the popup header: sits left of the title/club lines.
+     Hidden automatically (via onerror in the JS) when the image is
+     missing, so unlisted clubs look exactly as before. */
+  .vbcal-modal .headrow { display: flex; gap: 14px; align-items: stretch; }
+  .vbcal-modal .headrow .headtext { min-width: 0; flex: 1; }
+  /* The logo column stretches to match the full height of the info
+     column beside it (title, club, date/time, location, tags). */
+  .vbcal-logo {
+    width: 84px; flex: 0 0 84px; align-self: stretch;
+    height: auto; object-fit: contain;
+    border-radius: var(--vb-radius); background: transparent;
+    padding: 5px; box-sizing: border-box;
+  }
+  @media (max-width: 480px) { .vbcal-logo { width: 64px; flex: 0 0 64px; } }
+  .vbcal-modal .when { color: #333; }
+  /* Both buttons get an identical fixed box with flex-centered content
+     so they align perfectly regardless of font-glyph metrics (the ×
+     character) vs an SVG icon's own natural box. */
+  .vbcal-modal .close {
+    float: right; border: 0; background: none; cursor: pointer; color: #888;
+    width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+    font-size: 27px; line-height: 1; padding: 0;
+    border-radius: 50%; transition: background 0.15s;
+  }
+  /* Darkening circle: hover hints "this is clickable"; pressing darkens
+     further, visualizing the click (composes with the press-squish). */
+  .vbcal-modal .close:hover { background: rgba(0,0,0,0.08); }
+  .vbcal-modal .close:active { background: rgba(0,0,0,0.16); }
+  .vbcal-overlay.vb-dark .vbcal-modal .close:hover { background: rgba(255,255,255,0.10); }
+  .vbcal-overlay.vb-dark .vbcal-modal .close:active { background: rgba(255,255,255,0.18); }
+  /* Share button sits immediately left of the close X (close is float:right
+     and comes first in the markup, so this floats to its left automatically) */
+  .vb-share {
+    float: right; border: 0; background: none; cursor: pointer; color: #888;
+    width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+    padding: 0; margin-right: 6px;
+    border-radius: 50%; transition: background 0.15s;
+  }
+  .vb-share svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .vb-share:hover { color: var(--vb-brand); background: rgba(0,0,0,0.08); }
+  .vb-share:active { background: rgba(0,0,0,0.16); }
+  .vb-share.copied { color: #2e7d32; }
+  .vbcal-overlay.vb-dark .vb-share:hover { color: var(--vb-dark-brand); background: rgba(255,255,255,0.10); }
+  .vbcal-overlay.vb-dark .vb-share:active { background: rgba(255,255,255,0.18); }
+  .vbcal-overlay.vb-dark .vb-share.copied { color: #6fcf77; }
+  .vbcal-modal .loc a { color: var(--vb-brand); text-decoration: underline; }
+  .vbcal-tagrow { margin: 8px 0; }
+  .vbcal-tag {
+    display: inline-block; background: #eef3fa; color: var(--vb-brand);
+    border-radius: 10px; padding: 2px 9px; font-size: 12px; margin: 0 4px 4px 0;
+  }
+  .vbcal-modal .desc { white-space: pre-wrap; color: #444; font-size: 13px; margin-top: 8px; }
+  .vbcal-modal .desc a { color: var(--vb-brand); text-decoration: underline; }
+  .vbcal-overlay.vb-dark .vbcal-modal .desc a { color: var(--vb-dark-brand); }
+  .vbcal-modal .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 12px; margin-right: 8px; padding: 0 15px;
+    /* Fixed height + border-box so the bordered .alt variant and the
+       icon-bearing Connect Me <button> come out EXACTLY equal; middle
+       vertical-align keeps the two centered on each other on the same
+       line (a <button> and an <a> baseline-align differently otherwise). */
+    height: 38px; box-sizing: border-box; vertical-align: middle;
+    background: var(--vb-brand); color: #fff; border: 0;
+    border-radius: var(--vb-radius); text-decoration: none; cursor: pointer;
+    font-size: 14px; font-weight: 500; line-height: 1; transition: background 0.15s;
+  }
+  .vbcal-modal .btn:hover { background: #00458f; }
+  .vbcal-modal .btn.alt { background: #fff; color: var(--vb-brand); border: 1px solid var(--vb-brand); }
+  .vbcal-modal .btn.alt:hover { background: var(--vb-brand-soft); }
+  /* Connect Me: bookmark glyph inside the button, drawn in the button's
+     text color; fills in once reminders are set */
+  .vb-remind-btn svg {
+    width: 15px; height: 15px; flex: 0 0 15px;
+    fill: none; stroke: currentColor; stroke-width: 2;
+  }
+  .vb-remind-btn.on svg { fill: currentColor; }
+
+  /* GOVB upcoming-events carousel */
+  .vbcar { margin-bottom: 22px; }
+  .vbcar-head { position: relative; text-align: center; margin-bottom: 8px; }
+  .vbcar-head .vb-theme-btn, .vbcal-section-title .vb-theme-btn {
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+  }
+  .vbcar-head .vb-theme-btn:hover, .vbcal-section-title .vb-theme-btn:hover {
+    transform: translateY(-50%);
+  }
+  .vbcar-head h3 { margin: 0; font-size: var(--vb-heading-size); color: var(--vb-brand); }
+
+  /* Slide-group layout: chevrons flank the track (Volleyball Life style) */
+  .vbcar-body { display: flex; align-items: stretch; }
+  .vbcar-chev {
+    flex: 0 0 28px; border: 0; background: none; cursor: pointer;
+    font-size: 18px; color: #555; padding: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .vbcar-chev:hover { color: var(--vb-brand); }
+  .vbcar-chev.disabled { color: #ccc; cursor: default; pointer-events: none; }
+  .vbcal-section-title {
+    position: relative;  /* anchors the theme slider when it moves here */
+    text-align: center; margin: 26px 0 12px;
+    font-size: var(--vb-heading-size); color: var(--vb-brand);
+  }
+  .vbcar-track {
+    flex: 1; display: flex; align-items: stretch; gap: 10px;
+    /* Enough top/bottom padding that the hover lift (translateY(-4px))
+       and its shadow stay inside the scroll clip instead of being cut
+       off at the tray edge */
+    overflow-x: auto; padding: 12px 2px 14px;
+    scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
+  }
+  /* Card styling modeled on Volleyball Life's event cards: title up
+     top with a floating bookmark, date line, muted caption lines, then
+     a divider and footer row. */
+  .vbcar-card {
+    flex: 0 0 240px; text-align: left; cursor: pointer;
+    display: flex; flex-direction: column;
+    background: #fff; border: 1px solid var(--vb-dark-text);
+    border-left: 4px solid var(--vb-brand);
+    border-radius: var(--vb-radius-lg); padding: 14px 14px 10px; font-size: 13px;
+    box-shadow: var(--vb-card-shadow);
+    transition: box-shadow 0.18s, transform 0.18s, background-color 0.15s;
+  }
+  /* Hover/press focus tint, INVERSE to the theme: light mode darkens
+     the card ~12% toward black, dark mode lightens it ~12% toward
+     white, so the card under the cursor visibly stands out either way.
+     Same tint on press, composing with the press-squish. */
+  .vbcar-card:hover {
+    box-shadow: var(--vb-card-shadow-hover);
+    transform: translateY(-4px) scale(1.018);
+    background: #e0e0e0;  /* #fff darkened 12% */
+  }
+  .vbcar-card:active {
+    /* press-squish overrides the hover lift while the finger is down */
+    transform: translateY(-1px) scale(0.97);
+    transition: transform 0.08s;
+    background: #e0e0e0;
+  }
+  .vbcar-card.past { opacity: 0.55; border-left-color: #9e9e9e; }
+  .vbcar-card .t {
+    font-weight: 700; line-height: 1.3; margin-right: 22px; font-size: var(--vb-card-title-size);
+  }
+  .vbcar-card .d { margin-top: 3px; font-size: 12.5px; color: #333; }
+  .vbcar-card .m { color: #757575; font-size: 12px; margin-top: 2px; }
+  .vbcar-card hr {
+    border: 0; border-top: 1px solid #e0e0e0;
+    margin: 10px 0 6px; width: 100%; margin-top: auto; padding-top: 10px;
+  }
+  /* Right padding clears the corner logo so the time text never runs
+     underneath it */
+  .vbcar-card .f { color: #444; font-size: 12px; padding-right: 40px; }
+  .vbcar-empty { color: #888; font-size: 13px; }
+
+  /* Bookmark (mailing-list) icon: a fixed circular box so the
+     darkening-circle hover/press feedback renders centered around the
+     glyph. top/right compensate for the larger box vs the old 2px
+     padding, keeping the icon itself in the same visual spot. */
+  .vbcar-card { position: relative; }
+  .vb-bm {
+    position: absolute; top: 2px; right: 2px; cursor: pointer;
+    background: none; border: 0; padding: 0; line-height: 0;
+    width: 28px; height: 28px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; transition: background 0.15s;
+  }
+  /* Darkening circle: hover hints "clickable"; pressing darkens further,
+     visualizing the click (composes with the press-squish). */
+  .vb-bm:hover { background: rgba(0,0,0,0.08); }
+  .vb-bm:active { background: rgba(0,0,0,0.16); }
+  .vb-dark .vb-bm:hover { background: rgba(255,255,255,0.10); }
+  .vb-dark .vb-bm:active { background: rgba(255,255,255,0.18); }
+  .vb-bm svg { width: 18px; height: 18px; fill: none; stroke: #9e9e9e; stroke-width: 2; }
+  .vb-bm.on svg { fill: var(--vb-brand); stroke: var(--vb-brand); }
+
+  /* Share icon: one instance, always in the footer row before the time
+     text (share icon, then time, on the left; the GOVB logo stays
+     pinned at the far right). The old top-right corner placement
+     clipped under longer titles on every screen size, not just mobile,
+     so it lives only here now on all devices. */
+  .vb-share-car {
+    cursor: pointer; background: none; border: 0; padding: 0; line-height: 0;
+    width: 26px; height: 26px; flex: 0 0 26px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 50%; transition: background 0.15s;
+  }
+  .vb-share-car:hover { background: rgba(0,0,0,0.08); }
+  .vb-share-car:active { background: rgba(0,0,0,0.16); }
+  .vb-dark .vb-share-car:hover { background: rgba(255,255,255,0.10); }
+  .vb-dark .vb-share-car:active { background: rgba(255,255,255,0.18); }
+  .vb-share-car svg {
+    width: 18px; height: 18px; fill: none; stroke: #9e9e9e;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .vb-share-car:hover svg { stroke: var(--vb-brand); }
+  .vb-share-car.copied svg { stroke: #2e7d32; }
+  .vb-dark .vb-share-car.copied svg { stroke: #6fcf77; }
+  .vbcar-card .f { display: flex; align-items: center; gap: 6px; }
+
+  /* GOVB corner mark: every carousel card is a GOVB event (this
+     carousel only ever shows CAROUSEL_CLUB), so a fixed brand logo
+     sits bottom-right, vertically centered on the time line ".f" via
+     the matching bottom offset below. */
+  .vbcar-logo {
+    position: absolute; right: 10px; bottom: 4px;  /* nudge to taste to fine-tune vs the time text */
+    width: 30px; height: 30px; object-fit: contain;
+    pointer-events: none;  /* purely decorative -- clicks pass through to the card */
+  }
+  /* Light mode shows the normal (dark-colored) logo; dark mode swaps
+     to the white silhouette variant so it's visible against the dark
+     card. Both images occupy the same spot; only one is ever shown. */
+  .vbcar-logo-dark { display: none; }
+  .vb-dark .vbcar-logo-light { display: none; }
+  .vb-dark .vbcar-logo-dark { display: block; }
+
+  /* Toast: small auto-dismissing confirmation (e.g. "already signed
+     up"), centered near the bottom of the screen, above everything
+     including the modal overlay. Liquid glass like the popup/dropdown
+     panes (translucent tint + blur + saturate + a sheen highlight),
+     themed for light/dark -- values are hardcoded rather than reusing
+     --vb-overlay-blur etc. since the toast is appended to <body>
+     directly, outside the .vbcal/.vbcal-overlay elements those custom
+     properties are declared on, so it wouldn't inherit them anyway. */
+  .vb-toast {
+    position: fixed; left: 50%; bottom: 28px; z-index: 2147483100;
+    transform: translate(-50%, 12px); max-width: calc(100% - 32px);
+    /* Same GOVB-blue / GOVB-yellow pairing (and 600 weight) as the
+       filter count line's "Connect Me" CTA and the filled bookmark
+       icon -- hardcoded hex since the toast lives outside .vbcal's
+       custom-property scope (see comment above). */
+    color: #0057b8; font-size: 15.1px; font-weight: 600;
+    padding: 12.3px 20.2px; border-radius: 999px;
+    text-align: center;
+    background:
+      linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.12) 60%),
+      rgba(255,255,255,0.62);
+    -webkit-backdrop-filter: blur(18px) saturate(170%);
+    backdrop-filter: blur(18px) saturate(170%);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.32), 0 3px 10px rgba(0,0,0,0.22);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s;
+  }
+  /* Only the toast's own footprint is unclickable while it's shown --
+     it absorbs clicks landing on it (nothing behind that exact spot is
+     reachable), but everything else on the page stays fully usable. */
+  .vb-toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  body.vb-dark-page .vb-toast {
+    color: #FFC425;
+    background:
+      linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.02) 60%),
+      rgba(20,23,28,0.66);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    border-color: rgba(255,255,255,0.12);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.55), 0 3px 10px rgba(0,0,0,0.4);
+  }
+
+  /* Signup popup */
+  /* Inline signup: expands inside the event popup under the buttons */
+  .vb-inline-signup {
+    margin-top: 14px; padding-top: 12px;
+    border-top: 1px solid #e6e6e6;
+  }
+  .vbcal-overlay.vb-dark .vb-inline-signup { border-top-color: var(--vb-dark-border); }
+  .vb-signup h4 { margin: 0 0 6px; font-size: 18px; color: #222; }
+  .vb-signup p { margin: 0 0 12px; color: #555; font-size: 13px; }
+  .vb-signup input[type="email"] {
+    width: 100%; padding: 9px 10px; border: 1px solid #d5d5d5; border-radius: var(--vb-radius);
+    font-size: 14px; box-sizing: border-box; margin-bottom: 10px;
+  }
+  .vb-signup .actions { text-align: right; }
+  .vb-signup .msg { font-size: 15px; margin-top: 8px; }
+  .vb-signup .msg.ok { color: #2e7d32; }
+  .vb-signup .msg.err { color: #c62828; }
+  .vb-signup .vb-signup-note { color: var(--vb-brand); font-size: 13px; }
+  .vbcal-overlay.vb-dark .vb-signup .vb-signup-note { color: var(--vb-dark-brand); }
+
+  @media (max-width: 767px) {
+    /* No horizontal inset on phones -- the container padding (kept for
+       the dark-mode panel look on desktop) was squeezing the layout.
+       Corners stay rounded to match desktop. */
+    .vbcal { padding: 8px 0; border-radius: var(--vb-radius-xl); }
+    /* keep the theme slider off the screen edge */
+    .vbcar-head .vb-theme-btn, .vbcal-section-title .vb-theme-btn { right: 6px; }
+    /* thinner today highlight on small cells */
+    .vbcal-day.today { border-width: 2px; }
+    .vbcal-datehdr.today { border-bottom-width: 2px; }
+    /* Week zoom: readable fixed-width day columns with side scrolling
+       (the 7-across squeeze made chip text wrap unreadably) */
+    .vbcal-week {
+      grid-template-columns: repeat(7, 170px);
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+    }
+    /* Edge fade overlays: appear (fade in) only WHILE the week strip is
+       actively scrolling, on the side new content arrives from, then
+       fade back out ~0.2s after movement stops. Overlay divs are used
+       instead of CSS masks because mask-image can't animate. */
+    .vb-week-row { position: relative; }
+    .vb-wk-fade {
+      position: absolute; top: 0; bottom: 8px; width: 34px;
+      pointer-events: none; opacity: 0; transition: opacity 0.25s; z-index: 3;
+    }
+    .vb-wk-fade.show { opacity: 1; }
+    /* 26px offsets clear the flanking week chevrons */
+    .vb-wk-fade.l { left: 26px; background: linear-gradient(to right, rgba(255,255,255,0.88), rgba(255,255,255,0)); }
+    .vb-wk-fade.r { right: 26px; background: linear-gradient(to left, rgba(255,255,255,0.88), rgba(255,255,255,0)); }
+    .vb-dark .vb-wk-fade.l { background: linear-gradient(to right, rgba(20,23,28,0.88), rgba(20,23,28,0)); }
+    .vb-dark .vb-wk-fade.r { background: linear-gradient(to left, rgba(20,23,28,0.88), rgba(20,23,28,0)); }
+    /* Two filters per row (Club falls to its own row as the 5th) */
+    .vbcal-filter { flex: 1 1 45%; max-width: 48%; }
+    .vbcal-filter:last-child { max-width: 100%; }
+    .vbcal-filters select { width: 100%; }
+    .vb-dd { width: 100%; }
+    .vb-dd-field {
+      min-width: 0; width: 100%; box-sizing: border-box;
+      padding: 9px 30px 9px 12px; font-size: 13.5px;
+    }
+    .vbcal-filter-toggle { display: block; }
+    .vbcal-filters { display: none; }
+    .vbcal-filters.open { display: flex; }
+    .vbcar-card { flex: 0 0 190px; }
+    .vbcar-chev { display: none; }  /* touch scrolling on phones */
+    /* Inset the carousel 4px from each screen edge */
+    .vbcar-body { padding: 0 4px; }
+    /* Nudge the Month/List buttons in from the right edge */
+    .vbcal-toolbar > div:last-child { padding-right: 8px; }
+    .vbcal-toolbar > div:first-child { padding-left: 8px; }
+    /* Show/Hide Filters sits in the toolbar's center column (the date
+       moved up into the heading, which shrinks a bit to fit one line) */
+    .vbcal-section-title { font-size: 26px; }
+    .vbcal-toolbar .vbcal-filter-toggle {
+      flex: 1 1 0; margin-bottom: 0; min-width: 0;
+      display: flex; justify-content: center;
+    }
+    .vbcal-toolbar .vbcal-filter-toggle .vbcal-btn { margin-left: 0; }
+    /* Opened filter panel drops in below the toolbar */
+    .vbcal-filters.open { margin: 10px 0 12px; }
+  }
+
+  /* Uniform control row: every button and filter field shares one
+     height, text size, and weight on all devices (placed after the
+     media queries so it wins over their per-device paddings). */
+  .vbcal-btn, .vb-dd-field {
+    height: 40px; box-sizing: border-box;
+    display: inline-flex; align-items: center;
+    font-size: 14px; font-weight: 600;
+  }
+  .vbcal-btn { justify-content: center; }  /* label centered in the button */
+  .vbcal-btn.nav { font-weight: 600; }
+  /* Everything in the toolbar row centers on the shared control line
+     (the filter labels ride above without pushing fields off-center) */
+  .vbcal-toolbar { align-items: flex-end; }
+  .vbcal-toolbar .vbcal-btn, .vbcal-toolbar .vb-dd-field { margin-bottom: 0; }
+  .vb-dd-text {
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+
+  /* Carousel-only mode (CAROUSEL_ONLY = true): the entire Community
+     Calendar section is hidden; only the "Our Events" carousel renders.
+     The hidden elements stay in the DOM so all shared code (filters
+     state, render(), deep links) keeps working untouched. */
+  .vb-carousel-only .vbcal-section-title,
+  .vb-carousel-only .vbcal-filter-toggle,
+  .vb-carousel-only .vbcal-filters,
+  .vb-carousel-only .vbcal-count,
+  .vb-carousel-only .vbcal-toolbar,
+  .vb-carousel-only #vb-grid,
+  .vb-carousel-only #vb-list { display: none !important; }
+  .vb-carousel-only .vbcar { margin-bottom: 0; }
+
+  /* "Click for the Community Calendar" link button: bottom-left under
+     the carousel, ONLY in carousel-only mode (the full calendar page
+     has the calendar right below, so the link would be redundant).
+     Left inset matches the track's edge (28px chevron column). */
+  .vb-cal-link-wrap { display: none; }
+  .vb-carousel-only .vb-cal-link-wrap {
+    display: block; text-align: left; margin: 10px 0 0 28px;
+  }
+  .vb-cal-link-btn {
+    display: inline-block; padding: 9px 20px; cursor: pointer;
+    background: var(--vb-brand); color: #fff; text-decoration: none;
+    border-radius: var(--vb-radius-lg); font-size: 14px; font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+  .vb-cal-link-btn:hover {
+    background: #00458f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22); transform: translateY(-1px);
+  }
+  .vb-cal-link-btn:active { transform: scale(0.96); transition: transform 0.08s; }
+  .vb-dark .vb-cal-link-btn {
+    background: var(--vb-accent); color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .vb-dark .vb-cal-link-btn:hover { background: #e6ad0f; }
+  @media (max-width: 767px) {
+    /* chevrons are hidden on phones, so align to the cards' 4px inset */
+    .vb-carousel-only .vb-cal-link-wrap { margin-left: 4px; }
+  }
+
+  /* ===================== DARK MODE ===================== */
+  .vbcal.vb-dark {
+    background: var(--vb-dark-bg); color: var(--vb-dark-text);
+  }
+  .vb-dark .vbcal-filter label { color: #aab2bd; }
+  .vb-dark .vbcal-filters select {
+    background-color: #1f242c; color: var(--vb-dark-text); border-color: #363d47;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23aab2bd' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  }
+  .vb-dark .vbcal-count { color: var(--vb-dark-muted); }
+  .vb-dark .vbcar-head h3, .vb-dark .vbcal-section-title, .vb-dark .vbcal-toolbar h3 { color: var(--vb-dark-brand); }
+  .vb-dark .vbcal-filters select:hover { background-color: #262c35; border-color: var(--vb-dark-accent); }
+  .vb-dark .vb-dd-field {
+    background-color: #1f242c; color: var(--vb-dark-text); border-color: #363d47;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23aab2bd' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  }
+  .vb-dark .vb-dd-field:hover { background-color: #262c35; border-color: var(--vb-dark-accent); }
+  .vb-dark .vb-dd.open .vb-dd-field { border-color: var(--vb-dark-accent); }
+  .vb-dark .vb-dd-field.sel {
+    border-color: var(--vb-dark-accent); background-color: #16283e;
+    box-shadow: 0 0 0 2px rgba(0, 87, 184, 0.45);
+  }
+  .vb-dark .vb-dd-menu {
+    background:
+      linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.02) 40%),
+      rgba(24, 29, 37, 0.66);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5),
+                inset 6px 6px 0 -6px rgba(255,255,255,0.35),
+                inset 0 0 8px 1px rgba(255,255,255,0.14);
+  }
+  /* Chromium-only displacement warp for the dropdown glass (see the
+     overlay's body.vb-warp comment) */
+  body.vb-warp .vb-dd-menu {
+    backdrop-filter: blur(16px) saturate(170%) url(#vbGlassWarp);
+  }
+  body.vb-warp .vb-dark .vb-dd-menu {
+    backdrop-filter: blur(16px) saturate(160%) url(#vbGlassWarp);
+  }
+  .vb-dark .vb-dd-item { color: var(--vb-dark-text); }
+  .vb-dark .vb-dd-item:hover { background: rgba(255,255,255,0.08); }
+  .vb-dark .vb-dd-item.selected { background: rgba(0,87,184,0.32); }
+  .vb-dark .vbcal-filters select.sel {
+    border-color: var(--vb-dark-accent); background-color: #16283e;
+    box-shadow: 0 0 0 2px rgba(0, 87, 184, 0.45);
+  }
+  .vb-dark .vbcal-filters select:focus,
+  .vb-dark .vbcal-filters select:focus-visible {
+    outline: none; border-color: var(--vb-dark-accent);
+  }
+  .vb-dark .vbcal-btn { background: transparent; color: var(--vb-accent); border-color: var(--vb-accent); }
+  .vb-dark .vbcal-btn:hover { background: rgba(255, 196, 37, 0.12); }
+  .vb-dark .vbcal-btn.active { background: var(--vb-accent); color: #1a1a1a; }
+  .vb-dark .vbcal-dow { color: #aab2bd; }
+  .vb-dark .vbcal-day {
+    background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  }
+  .vb-dark .vbcal-day.other { background: #171b21; }
+  .vb-dark .vbcal-day .num { color: #808a95; }
+  .vb-dark .vbcal-day.today {
+    border-color: var(--vb-accent);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+  }
+  .vb-dark .vbcal-day.today .num { color: var(--vb-accent); }
+  .vb-dark .vbcal-datehdr { border-bottom-color: #363d47; }
+  .vb-dark .vbcal-datehdr.today { color: var(--vb-accent); border-bottom-color: var(--vb-accent); }
+  .vb-dark .vbcal-item:hover { background: #1f2733; }
+  .vb-dark .vbcal-item .t { color: var(--vb-dark-muted); }
+  .vb-dark .vbcar-card {
+    background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
+    border-left-color: var(--vb-brand);  /* ribbon stays GOVB blue */
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  /* Inverse of light mode's darkening: dark cards LIGHTEN ~12% toward
+     white on hover/press (#1b2027 -> #363b41) */
+  .vb-dark .vbcar-card:hover { background: #363b41; }
+  .vb-dark .vbcar-card:active { background: #363b41; }
+  .vb-dark .vbcar-card.past { border-left-color: #5a6470; }
+  .vb-dark .vbcar-card .d { color: #d6dce2; }
+  .vb-dark .vbcar-card .m { color: var(--vb-dark-muted); }
+  .vb-dark .vbcar-card .f { color: #c2c9d1; }
+  .vb-dark .vbcar-card hr { border-top-color: var(--vb-dark-border); }
+  /* Themed scrollbars: carousel track and the list pane (WebKit + Firefox) */
+  .vbcar-track, .vbcal-list { scrollbar-color: #c4c9cf #f0f1f3; scrollbar-width: thin; }
+  .vbcar-track::-webkit-scrollbar { height: 8px; }
+  .vbcal-list::-webkit-scrollbar { width: 8px; }
+  .vbcar-track::-webkit-scrollbar-track,
+  .vbcal-list::-webkit-scrollbar-track { background: #f0f1f3; border-radius: 4px; }
+  .vbcar-track::-webkit-scrollbar-thumb,
+  .vbcal-list::-webkit-scrollbar-thumb { background: #c4c9cf; border-radius: 4px; }
+  .vb-dark .vbcar-track, .vb-dark .vbcal-list { scrollbar-color: #3a4149 var(--vb-dark-bg); }
+  .vb-dark .vbcar-track::-webkit-scrollbar-track,
+  .vb-dark .vbcal-list::-webkit-scrollbar-track { background: var(--vb-dark-bg); }
+  .vb-dark .vbcar-track::-webkit-scrollbar-thumb,
+  .vb-dark .vbcal-list::-webkit-scrollbar-thumb { background: #3a4149; }
+  .vb-dark .vbcar-track::-webkit-scrollbar-thumb:hover,
+  .vb-dark .vbcal-list::-webkit-scrollbar-thumb:hover { background: #4a525c; }
+
+  /* Filter dropdown panes scroll with the same themed scrollbar shape,
+     but fully translucent (glassy): the liquid-glass pane shows through
+     both the track's faint tint and the frosted thumb */
+  .vb-dd-menu { scrollbar-color: rgba(110,120,135,0.45) rgba(255,255,255,0.10); scrollbar-width: thin; }
+  .vb-dd-menu::-webkit-scrollbar { width: 8px; }
+  .vb-dd-menu::-webkit-scrollbar-track { background: rgba(255,255,255,0.10); border-radius: 4px; }
+  .vb-dd-menu::-webkit-scrollbar-thumb {
+    background: rgba(110,120,135,0.45); border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.35);  /* frosted edge */
+  }
+  .vb-dd-menu::-webkit-scrollbar-thumb:hover { background: rgba(110,120,135,0.65); }
+  .vb-dark .vb-dd-menu { scrollbar-color: rgba(255,255,255,0.28) rgba(255,255,255,0.05); }
+  .vb-dark .vb-dd-menu::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+  .vb-dark .vb-dd-menu::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.28); border: 1px solid rgba(255,255,255,0.15);
+  }
+  .vb-dark .vb-dd-menu::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.40); }
+  .vb-dark .vbcar-chev { color: var(--vb-dark-muted); }
+  .vb-dark .vbcar-chev:hover { color: var(--vb-dark-brand); }
+  .vb-dark .vbcar-chev.disabled { color: #3a4149; }
+  .vb-dark .vb-bm svg { stroke: #6b7480; }
+  .vb-dark .vb-share-car svg { stroke: #6b7480; }
+  .vb-dark .vb-share-car:hover svg { stroke: var(--vb-dark-brand); }
+  .vb-dark .vb-bm.on svg { fill: var(--vb-accent); stroke: var(--vb-accent); }
+  .vbcal-overlay.vb-dark .vbcal-modal { background: var(--vb-dark-surface); color: var(--vb-dark-text); }
+  .vbcal-overlay.vb-dark .vbcal-modal h4,
+  .vbcal-overlay.vb-dark .vb-signup h4 { color: #f0f2f5; }
+  .vbcal-overlay.vb-dark .vbcal-modal .clubline { color: var(--vb-dark-muted); }
+  /* In dark mode the logo gets a white plate so dark-colored logos with
+     transparent backgrounds stay legible on the dark modal */
+  .vbcal-overlay.vb-dark .vbcal-logo {
+    background: #fff; border: 1px solid var(--vb-dark-border);
+  }
+  .vbcal-overlay.vb-dark .vbcal-modal .when { color: #d6dce2; }
+  .vbcal-overlay.vb-dark .vbcal-modal .close { color: var(--vb-dark-muted); }
+  .vbcal-overlay.vb-dark .vb-share { color: var(--vb-dark-muted); }
+  .vbcal-overlay.vb-dark .vbcal-modal .desc { color: #b8bfc7; }
+  .vbcal-overlay.vb-dark .vbcal-modal .loc a { color: var(--vb-dark-brand); }
+  .vbcal-overlay.vb-dark .vbcal-tag { background: rgba(255, 196, 37, 0.14); color: var(--vb-accent); }
+  .vbcal-overlay.vb-dark .vbcal-modal .btn {
+    background: var(--vb-accent); color: #1a1a1a;
+  }
+  .vbcal-overlay.vb-dark .vbcal-modal .btn:hover { background: #e6ad0f; }
+  .vbcal-overlay.vb-dark .vbcal-modal .btn.alt {
+    background: var(--vb-dark-surface); color: var(--vb-accent); border-color: var(--vb-accent);
+  }
+  .vbcal-overlay.vb-dark .vbcal-modal .btn.alt:hover { background: rgba(255, 196, 37, 0.12); }
+  .vbcal-overlay.vb-dark .vb-signup p { color: #aab2bd; }
+  .vbcal-overlay.vb-dark .vb-signup input[type="email"] {
+    background: #12161c; color: var(--vb-dark-text); border-color: #363d47;
+  }
+  .vbcal-overlay.vb-dark .vbcal-btn { background: transparent; color: var(--vb-accent); border-color: var(--vb-accent); }
+</style>
+
+<div class="vbcal" id="vbcal">
+  <div class="vbcar" id="vb-carousel" style="display:none">
+    <div class="vbcar-head">
+      <h3>Our Events</h3>
+      <button class="vb-theme-btn" id="vb-theme" aria-label="Toggle dark mode"><span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span></button>
+    </div>
+    <div class="vbcar-body">
+      <button class="vbcar-chev" id="vbcar-prev" aria-label="Scroll back">&#10094;</button>
+      <div class="vbcar-track" id="vbcar-track"></div>
+      <button class="vbcar-chev" id="vbcar-next" aria-label="Scroll forward">&#10095;</button>
+    </div>
+    <!-- Only shown in carousel-only mode (the full page already HAS the
+         calendar right below, so no link needed there) -->
+    <div class="vb-cal-link-wrap">
+      <a class="vb-cal-link-btn" href="https://www.govolleyball.org/calendar">To Community Calendar</a>
+    </div>
+  </div>
+
+  <h3 class="vbcal-section-title">Community Calendar<span class="vb-title-date" id="vb-title2"></span></h3>
+
+  <div class="vbcal-filter-toggle">
+    <button class="vbcal-btn" id="vb-toggle-filters">Show Filters</button>
+  </div>
+  <div class="vbcal-filters" id="vb-filters">
+    <div class="vbcal-filter">
+      <label for="vb-f-gym">Gym Type</label>
+      <select id="vb-f-gym"><option value="">All</option></select>
+    </div>
+    <div class="vbcal-filter">
+      <label for="vb-f-skill">Skill Level</label>
+      <select id="vb-f-skill"><option value="">All</option></select>
+    </div>
+    <div class="vbcal-filter">
+      <label for="vb-f-net">Net Height</label>
+      <select id="vb-f-net"><option value="">All</option></select>
+    </div>
+    <div class="vbcal-filter">
+      <label for="vb-f-price">Price</label>
+      <select id="vb-f-price"><option value="">Any</option></select>
+    </div>
+    <div class="vbcal-filter">
+      <label for="vb-f-club">Club</label>
+      <select id="vb-f-club"><option value="">All</option></select>
+    </div>
+    <div class="vbcal-filter">
+      <label for="vb-f-loc">Location</label>
+      <select id="vb-f-loc"><option value="">All</option></select>
+    </div>
+  </div>
+  <div class="vbcal-count" id="vb-count"></div>
+
+  <div class="vbcal-toolbar">
+    <div>
+      <button class="vbcal-btn nav" id="vb-prev">&#8249;</button>
+      <button class="vbcal-btn nav" id="vb-next">&#8250;</button>
+      <button class="vbcal-btn vb-back-btn" id="vb-week-back" style="display:none">&#8249; Back</button>
+    </div>
+    <h3 id="vb-title"></h3>
+    <div>
+      <button class="vbcal-btn" id="vb-view-month">Month</button>
+      <button class="vbcal-btn" id="vb-view-list">List</button>
+    </div>
+  </div>
+
+  <div id="vb-grid"></div>
+  <div class="vbcal-list" id="vb-list"></div>
+
+  <!-- Liquid-glass displacement filter: turbulence noise warps whatever
+       shows through the glass, like rippled water. Referenced from
+       backdrop-filter on Chromium only (see body.vb-warp rules). -->
+  <svg style="display:none" aria-hidden="true">
+    <filter id="vbGlassWarp">
+      <feTurbulence type="turbulence" baseFrequency="0.0005" numOctaves="2" result="turbulence"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="6"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <div class="vbcal-overlay" id="vb-overlay">
+    <div class="vbcal-modal" id="vb-modal"></div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  // ======================================================================
+  var EVENTS_URL = "https://raw.githubusercontent.com/goBoothVB26/go-volleyball-calendar-data/main/events.json";
+
+  // Club featured in the card carousel above the calendar. The carousel
+  // shows events from CAROUSEL_DAYS_BACK days ago through
+  // CAROUSEL_DAYS_AHEAD days from now, scrolled so the next upcoming
+  // event starts front and center.
+  var CAROUSEL_CLUB = "Greater Orlando Volleyball Club";
+  var CAROUSEL_DAYS_BACK = 7;
+  var CAROUSEL_DAYS_AHEAD = 31;
+
+  // Club pre-selected in the Club filter on page load ("" = All).
+  var DEFAULT_CLUB = "";
+
+  // true = show ONLY the "Our Events" carousel (with full popups,
+  // signups, sharing, theming); the Community Calendar section below it
+  // is hidden. Used by website/carousel_only.html -- a generated copy
+  // of this file with this flag flipped -- for pasting the carousel
+  // alone onto other pages.
+  var CAROUSEL_ONLY = true;
+
+  // Pin a color per club here (any CSS color). Clubs not listed get
+  // DEFAULT_COLOR.
+  var CLUB_COLORS = {
+    "Greater Orlando Volleyball Club": "#0057b8",  // GOVB brand blue
+    "WPVC": "#FF7518",                              // pumpkin orange
+    "Out Sports League": "#6A0DAD",                 // rich purple
+    "Big House Open Gym": "#B22222",                // brick red
+    "YMCA Central Florida": "#757575",              // gray
+    "USAV Florida Region": "#1E3A8A",               // deep royal blue
+    "NAGVA": "#9575CD",                             // lavender
+    "Volley Vortex": "#00C853",                     // electric green
+    "AES Adult Volleyball (USAV, Florida)": "#F5EBD8",  // cream
+    // neighborhood / city / community centers: tan
+    "Goldenrod Community Park": "#B08D57",
+    "City of Sanford Adult Volleyball": "#B08D57",
+    "Ocoee Coed League": "#B08D57",
+    "Ocoee Open Gym Volleyball": "#B08D57",
+    "Meadow Woods Recreation Center": "#B08D57",
+    // Community-submitted orgs
+    "Top Select Volleyball Academy": "#FFF44F",     // bright lemon yellow
+  };
+  var DEFAULT_COLOR = "#64B5F6";                    // light blue
+
+  // Club logos shown in the event detail popup. Save each image into
+  // the logos/ folder of your go-volleyball-calendar-data GitHub repo
+  // (png/jpg/svg all fine; roughly square looks best) and list its raw
+  // URL here. Clubs not listed -- or whose image fails to load -- just
+  // show no logo, falling back to the colored ribbon as before.
+  var LOGO_BASE = "https://raw.githubusercontent.com/goBoothVB26/go-volleyball-calendar-data/main/logos/";
+  var CLUB_LOGOS = {
+    "Greater Orlando Volleyball Club": LOGO_BASE + "govb.png",
+    "WPVC": LOGO_BASE + "wpvc.png",
+    "Out Sports League": LOGO_BASE + "outsports.png",
+    "Big House Open Gym": LOGO_BASE + "bighouse.png",
+    "YMCA Central Florida": LOGO_BASE + "ymca.png",
+    "USAV Florida Region": LOGO_BASE + "usav-florida.png",
+    "NAGVA": LOGO_BASE + "nagva.png",
+    "Volley Vortex": LOGO_BASE + "volleyvortex.png",
+    "AES Adult Volleyball (USAV, Florida)": LOGO_BASE + "aes.png",
+    "Goldenrod Community Park": LOGO_BASE + "goldenrod.png",
+    "City of Sanford Adult Volleyball": LOGO_BASE + "sanford.png",
+    "Ocoee Coed League": LOGO_BASE + "ocoee.png",
+    "Ocoee Open Gym Volleyball": LOGO_BASE + "ocoee.png",
+    // Orange County Parks logo, shared across the county community
+    // centers (same file Goldenrod uses)
+    "Meadow Woods Recreation Center": LOGO_BASE + "goldenrod.png",
+    "Volleyball Life": LOGO_BASE + "volleyballlife.png",
+    // Community-submitted orgs (club = the form's Organization field)
+    "Top Select Volleyball Academy": LOGO_BASE + "tsva.png",
+  };
+
+  // Every carousel card is a CAROUSEL_CLUB (GOVB) event by definition,
+  // so its corner mark is just that one club's logo, resolved once.
+  // The corner mark sits directly on the card (no white backing plate
+  // like the popup logo has), so a white silhouette variant is used in
+  // dark mode instead -- otherwise a dark logo vanishes into a dark
+  // card. Generate it with scripts/make_logo_white.py.
+  var CAROUSEL_LOGO = CLUB_LOGOS[CAROUSEL_CLUB] || "";
+  var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO ? CAROUSEL_LOGO.replace(/\.(png|jpg|jpeg|svg)$/i, "-white.$1") : "";
+
+  // Bracketed prefix shown before every event title, e.g.
+  // "[GOVB] August 9th @ Dover Shores". Clubs not listed get an
+  // auto-acronym built from their name's initials.
+  var CLUB_ACRONYMS = {
+    "Greater Orlando Volleyball Club": "GOVB",
+    "Game Point Volleyball Club": "GPV",
+    "WPVC": "WPVC",
+    "Out Sports League": "OUT",
+    "AES Adult Volleyball (USAV, Florida)": "AES",
+    "NAGVA": "NAGVA",
+    "Big House Open Gym": "BIG HOUSE",
+    "City of Sanford Adult Volleyball": "SANFORD",
+    "Volley Vortex": "VORTEX",
+    "Goldenrod Community Park": "GOLDENROD",
+    "YMCA Central Florida": "YMCA",
+    "Volleyball Life": "VBL",
+    "Ocoee Coed League": "OCOEE",
+    "Ocoee Open Gym Volleyball": "OCOEE",
+    "Meadow Woods Recreation Center": "MEADOW WOODS",
+    "USAV Florida Region": "USAV FL",
+    "Top Select Volleyball Academy": "TSVA",
+  };
+  // Near-duplicate club names (mostly from the community form's free-
+  // text Organization field) collapse into ONE Club filter value.
+  // Explicit aliases first; then a generic rule merges names that only
+  // differ by filler words like "Volleyball"/"VBC"/"Club"/"Academy"
+  // ("Game Point VBC" and "Game Point Volleyball" are both really
+  // "Game Point Volleyball Club").
+  var CLUB_ALIASES = {
+    "Game Point Volleyball": "Game Point Volleyball Club",
+    "Game Point VBC": "Game Point Volleyball Club",
+    "Game Point": "Game Point Volleyball Club",
+    "GPV": "Game Point Volleyball Club",
+  };
+  function clubKey(name) {
+    return name.toLowerCase().replace(/[^a-z0-9 ]+/g, " ")
+      .replace(/\b(volleyball|volley|vbc|vb|club|academy)\b/g, " ")
+      .replace(/\s+/g, " ").trim();
+  }
+  var _clubCanonByKey = (function () {
+    var m = {};
+    // Canonical spellings: alias targets + every configured club name
+    var known = {};
+    for (var a in CLUB_ALIASES) known[CLUB_ALIASES[a]] = true;
+    [CLUB_COLORS, CLUB_LOGOS, CLUB_ACRONYMS].forEach(function (cfg) {
+      for (var k in cfg) if (!CLUB_ALIASES[k]) known[k] = true;
+    });
+    for (var name in known) {
+      var key = clubKey(name);
+      // Longest spelling wins as the canonical display name
+      if (!m[key] || name.length > m[key].length) m[key] = name;
+    }
+    return m;
+  })();
+  function canonClub(name) {
+    if (!name) return name;
+    if (CLUB_ALIASES[name]) return CLUB_ALIASES[name];
+    return _clubCanonByKey[clubKey(name)] || name;
+  }
+
+  function clubTag(club) {
+    if (CLUB_ACRONYMS[club]) return CLUB_ACRONYMS[club];
+    return club.split(/\s+/).map(function (w) { return w.charAt(0); })
+               .join("").toUpperCase().slice(0, 5);
+  }
+  function titled(ev) { return "[" + clubTag(ev.club) + "] " + ev.title; }
+
+  // "Sign up for Notifications" endpoint: your Google Apps Script web
+  // app URL (see website/notifications_apps_script.js for setup).
+  // Leave as-is until deployed -- the bookmark icons stay hidden until
+  // this is a real URL.
+  var NOTIFY_ENDPOINT = "https://script.google.com/macros/s/AKfycbyJVe_q9kPKQqVkkcM5Qdy61RqRcYXrzC7lq6MwtZDJOtZnb5aWkRfUs9MHFm9oOTGiSw/exec";
+  // ======================================================================
+  var MONTHS = ["January","February","March","April","May","June","July",
+                "August","September","October","November","December"];
+  var DOWS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+  var allEvents = [], clubColors = {}, current = new Date();
+  current = new Date(current.getFullYear(), current.getMonth(), 1);
+  var view = "month";  // month view is the default on every device
+  var weekFocus = null;      // week-zoom anchor (Sunday), entered from busy days
+  var weekTappedKey = null;  // the tapped day, centered on entry (mobile)
+
+  function $(id) { return document.getElementById(id); }
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function dkey(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+  function parseDT(s) {
+    var m = s.split(/[-T:]/);
+    return new Date(+m[0], +m[1] - 1, +m[2], +(m[3] || 0), +(m[4] || 0));
+  }
+  function fmtTime(d) {
+    var h = d.getHours(), m = d.getMinutes(), ap = h >= 12 ? "pm" : "am";
+    h = h % 12 || 12;
+    return h + (m ? ":" + pad(m) : "") + ap;
+  }
+  function esc(s) { return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+  // Black or white text depending on the chip background's brightness
+  function textOn(bg) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(bg);
+    if (!m) return "#fff";
+    var n = parseInt(m[1], 16),
+        lum = 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+    return lum > 150 ? "#1a1a1a" : "#fff";
+  }
+
+  function priceMatch(ev, sel) {
+    if (!sel) return true;  // Any
+    var unpriced = ev.price === null || ev.price === undefined;
+    if (sel === "none") return unpriced;
+    if (unpriced) return false;  // specific ranges need an actual price
+    var parts = sel.split("-"), lo = +parts[0], hi = parts[1] === "" ? Infinity : +parts[1];
+    return ev.price >= lo && ev.price <= hi;
+  }
+
+  // net_height and skill_level may hold multiple comma-joined values
+  // ("Men's, Women's, Co-ed"; "Open, A/AA, B/BB")
+  function splitVals(s) {
+    return s ? s.split(",").map(function (v) { return v.trim(); }) : [];
+  }
+  function netValues(ev) { return splitVals(ev.net_height); }
+  function skillValues(ev) { return splitVals(ev.skill_level); }
+
+  function getSel() {
+    return {
+      g: $("vb-f-gym").value, s: $("vb-f-skill").value, n: $("vb-f-net").value,
+      p: $("vb-f-price").value, c: $("vb-f-club").value, l: $("vb-f-loc").value,
+    };
+  }
+
+  // Exact skill matching: an event matches a selected level only if it
+  // genuinely carries that tag (an event can carry several specific
+  // buckets at once, e.g. "A/AA, B/BB" -- that still matches either
+  // selection). "Open" is a competitive division (no skill cap), not a
+  // synonym for "everyone welcome", so it must NOT also surface casual
+  // "All Levels" events -- same for A/AA and B/BB. This mirrors exactly
+  // what the tag bubbles on the card show, so filters never surface an
+  // event whose visible tags don't actually say so.
+  function skillMatch(ev, want) {
+    if (!want) return true;
+    return skillValues(ev).indexOf(want) >= 0;
+  }
+
+  // Exact net-height matching, mirroring skillMatch above: an event
+  // only matches a selection if it genuinely carries that tag. The
+  // scraper (scraper/tagging.py) already decides the real values --
+  // e.g. unstated events are tagged "Men's, Co-ed" by default, and
+  // Women's is added ONLY when explicitly stated -- so the filter must
+  // not add its own guesses on top of that.
+  function netMatch(ev, want) {
+    if (!want) return true;
+    return netValues(ev).indexOf(want) >= 0;
+  }
+
+  // "City, ST" parsed out of the event's free-form location string --
+  // the SAME ev.location the popup's Google Maps directions link uses.
+  // Formats vary wildly by source ("123 Main St, Orlando, FL 32801",
+  // "1400 Gaston Foster Rd Orlando FL 32812" with no commas at all,
+  // "Orlando, Florida"), so this is token-based rather than comma-based:
+  // find the state token anywhere in the string (2-letter abbreviation
+  // or full state name), then walk backwards collecting city words until
+  // a street suffix, a number, or a separator is hit. Returns [] when no
+  // city/state can be found -- such events simply never match a specific
+  // location selection.
+  var STATE_NAMES = {
+    alabama:"AL", alaska:"AK", arizona:"AZ", arkansas:"AR", california:"CA",
+    colorado:"CO", connecticut:"CT", delaware:"DE", florida:"FL", georgia:"GA",
+    hawaii:"HI", idaho:"ID", illinois:"IL", indiana:"IN", iowa:"IA",
+    kansas:"KS", kentucky:"KY", louisiana:"LA", maine:"ME", maryland:"MD",
+    massachusetts:"MA", michigan:"MI", minnesota:"MN", mississippi:"MS",
+    missouri:"MO", montana:"MT", nebraska:"NE", nevada:"NV", ohio:"OH",
+    oklahoma:"OK", oregon:"OR", pennsylvania:"PA", tennessee:"TN",
+    texas:"TX", utah:"UT", vermont:"VT", virginia:"VA", washington:"WA",
+    wisconsin:"WI", wyoming:"WY",
+  };
+  var STATE_ABBRS = (function () {
+    var s = {};
+    for (var k in STATE_NAMES) s[STATE_NAMES[k]] = true;
+    ["NH", "NJ", "NM", "NY", "NC", "ND", "RI", "SC", "SD", "WV"].forEach(function (a) { s[a] = true; });
+    return s;
+  })();
+  var STREET_SUFFIX_RE = /^(rd|road|st|street|ave|avenue|blvd|boulevard|dr|drive|ln|lane|way|ct|court|cir|circle|pkwy|parkway|hwy|highway|trl|trail|ter|terrace|pl|place|loop|sr)\.?$/i;
+
+  // Many sources publish ONLY a venue name ("Dover Shores Community
+  // Center", "Cady Way Park") with no city anywhere in the text -- the
+  // Maps directions link works because Google geocodes the venue name,
+  // but the filter can't. This map pins every known venue to its real
+  // city (case-insensitive substring match against the location).
+  var VENUE_CITY = {
+    "boxi park": "Orlando, FL",
+    "cady way park": "Winter Park, FL",
+    "city courts at pinellas park": "Pinellas Park, FL",
+    "college park neighborhood center": "Orlando, FL",
+    "dover shores community center": "Orlando, FL",
+    "englewood neighborhood center": "Orlando, FL",
+    "frank deluca ymca": "Ocala, FL",
+    "game point vbc": "Orlando, FL",
+    "goldenrod community park": "Orlando, FL",
+    "greenacres freedom park": "Greenacres, FL",
+    "gulfport beach courts": "Gulfport, FL",
+    "jim beech recreation center": "Ocoee, FL",
+    "meadow woods recreation center": "Orlando, FL",
+    "newberry sand courts": "Newberry, FL",
+    "jacksonville beach fishing pier": "Jacksonville Beach, FL",
+    "tavares sand volleyball courts": "Tavares, FL",
+    "the big house": "Tavares, FL",
+    "titusville family center": "Titusville, FL",
+    "trotters park": "Orlando, FL",
+    "trotwood park": "Winter Springs, FL",
+    "upham beach park": "St. Pete Beach, FL",
+    "westside community center": "Sanford, FL",
+    "winter park volleyball": "Winter Park, FL",
+    "orange county convention center": "Orlando, FL",
+    "occc": "Orlando, FL",
+  };
+
+  var _csCache = {};
+  function cityState(ev) {
+    var loc = ev.location || "";
+    if (_csCache.hasOwnProperty(loc)) return _csCache[loc];
+    var out = [];
+    function add(v) {
+      // Skip a candidate that merely wraps a city we already have with
+      // extra venue words ("Occc Orlando, FL" when the venue map already
+      // said "Orlando, FL").
+      for (var x = 0; x < out.length; x++) {
+        if (v !== out[x] && v.length > out[x].length &&
+            v.slice(-(out[x].length + 1)) === " " + out[x]) return;
+      }
+      if (out.indexOf(v) < 0) out.push(v);
+    }
+
+    var lower = loc.toLowerCase();
+    for (var key in VENUE_CITY) {
+      if (lower.indexOf(key) >= 0) add(VENUE_CITY[key]);
+    }
+
+    // Address parse for locations that DO carry a city/state -- finds
+    // every state token (2-letter abbreviation like "FL"/"Fl", or full
+    // name like "Florida") and walks backwards collecting city words,
+    // so multi-venue strings tag every city they mention.
+    var raw = loc.replace(/ /g, " ").replace(/\s*[,;]\s*|\s+[-–|]\s+/g, " | ");
+    var tokens = raw.split(/\s+/).filter(Boolean);
+    for (var i = tokens.length - 1; i > 0; i--) {
+      var t = tokens[i].replace(/\.$/, ""), abbr = null;
+      if (/^[A-Z]{2}$/.test(t) && STATE_ABBRS[t]) abbr = t;
+      // "Fl" is a common sloppy spelling of FL; other mixed-case pairs
+      // ("Ct", "Dr", "La") are street suffixes/words, never states.
+      else if (t === "Fl") abbr = "FL";
+      else if (STATE_NAMES[t.toLowerCase()]) abbr = STATE_NAMES[t.toLowerCase()];
+      if (!abbr) continue;
+      // Walk backwards collecting city words (max 3), stopping at a
+      // separator, a number (street address / zip), or a street suffix.
+      // A street suffix only counts as a stop when a street NUMBER also
+      // exists earlier in the same segment -- otherwise "St." is part of
+      // a city name like "St. Cloud", not the end of "Main St". A comma
+      // directly between city and state ("Orlando, FL") is normal
+      // punctuation, not a boundary, so that one separator is skipped.
+      var words = [], start = i - 1;
+      if (tokens[start] === "|") start--;
+      for (var j = start; j >= 0 && words.length < 3; j--) {
+        var w = tokens[j];
+        if (w === "|" || /\d/.test(w)) break;
+        if (STREET_SUFFIX_RE.test(w)) {
+          var isStreet = false;
+          for (var k = j - 1; k >= 0 && tokens[k] !== "|"; k--) {
+            if (/\d/.test(tokens[k])) { isStreet = true; break; }
+          }
+          if (isStreet) break;
+        }
+        if (!/^[A-Za-z][A-Za-z.'\-]*$/.test(w)) break;
+        words.unshift(w);
+      }
+      if (words.length) {
+        var city = words.join(" ").toLowerCase()
+          .replace(/(^|[\s\-'])[a-z]/g, function (ch) { return ch.toUpperCase(); });
+        add(city + ", " + abbr);
+        i = j + 1;  // resume the scan left of this city
+      }
+    }
+    _csCache[loc] = out;
+    return out;
+  }
+
+  // Location dropdown ordering: "Orlando, FL" pinned first, then the
+  // rest of Florida alphabetically, then out-of-state cities
+  // alphabetically.
+  function locSort(a, b) {
+    function rank(v) {
+      if (v === "Orlando, FL") return 0;
+      return /, FL$/.test(v) ? 1 : 2;
+    }
+    var ra = rank(a), rb = rank(b);
+    if (ra !== rb) return ra - rb;
+    return a < b ? -1 : a > b ? 1 : 0;
+  }
+
+  function locMatch(ev, want) {
+    if (!want) return true;
+    return cityState(ev).indexOf(want) >= 0;
+  }
+
+  // Does this event match the selection, optionally ignoring one facet?
+  // (Ignoring lets each dropdown compute which of its own options are
+  // still relevant given every OTHER filter.)
+  function matchesSel(ev, sel, skip) {
+    if (skip !== "g" && sel.g && (ev.gym_type || "") !== sel.g) return false;
+    if (skip !== "s" && !skillMatch(ev, sel.s)) return false;
+    if (skip !== "n" && !netMatch(ev, sel.n)) return false;
+    if (skip !== "c" && sel.c && ev.club !== sel.c) return false;
+    if (skip !== "l" && !locMatch(ev, sel.l)) return false;
+    if (skip !== "p" && !priceMatch(ev, sel.p)) return false;
+    return true;
+  }
+
+  function filtered() {
+    var sel = getSel();
+    return allEvents.filter(function (ev) { return matchesSel(ev, sel, null); });
+  }
+
+  // ---- Faceted dropdowns: options reflect the other filters ----
+  var SKILL_ORDER = ["Open", "A/AA", "B/BB", "New Players", "All Levels"];
+  var NET_ORDER = ["Men's", "Women's", "Co-ed"];
+  var PRICE_OPTIONS = [
+    ["0-10", "Under $10"], ["10-25", "$10 – $25"],
+    ["25-100", "$25 – $100"], ["100-", "Over $100"],
+    ["none", "TBD/See Site"],
+  ];
+
+  function setOptions(id, current, pairs, allLabel) {
+    var el = $(id);
+    el.innerHTML = "";
+    var all = document.createElement("option");
+    all.value = ""; all.textContent = allLabel;
+    el.appendChild(all);
+    pairs.forEach(function (p) {
+      var o = document.createElement("option");
+      o.value = p[0]; o.textContent = p[1];
+      el.appendChild(o);
+    });
+    el.value = current;
+    if (el.value !== current) el.value = "";  // safety net
+  }
+
+  function rebuildValueFacet(id, key, extractor, order) {
+    var sel = getSel(), current = sel[key];
+    var present = {};
+    allEvents.forEach(function (ev) {
+      if (!matchesSel(ev, sel, key)) return;
+      extractor(ev).forEach(function (v) { if (v) present[v] = true; });
+    });
+    if (current) present[current] = true;  // keep the active choice visible
+    var values;
+    if (typeof order === "function") values = Object.keys(present).sort(order);
+    else if (order) values = order.filter(function (v) { return present[v]; })
+      .concat(Object.keys(present).filter(function (v) { return order.indexOf(v) < 0; }).sort());
+    else values = Object.keys(present).sort();
+    setOptions(id, current, values.map(function (v) { return [v, v]; }), "All");
+  }
+
+  // ---- Custom dropdowns over the hidden native selects ----
+  var DD = {};
+  function initDD(id) {
+    var sel = $(id);
+    sel.style.display = "none";
+    var wrap = document.createElement("div");
+    wrap.className = "vb-dd";
+    wrap.innerHTML = '<div class="vb-dd-field"><span class="vb-dd-text"></span></div><div class="vb-dd-menu"></div>';
+    sel.parentNode.appendChild(wrap);
+    wrap.querySelector(".vb-dd-field").onclick = function (e) {
+      e.stopPropagation();
+      var wasOpen = wrap.className.indexOf("open") >= 0;
+      closeAllDD(null);
+      wrap.className = wasOpen ? "vb-dd" : "vb-dd open";
+    };
+    DD[id] = wrap;
+  }
+  function syncDD(id) {
+    var sel = $(id), wrap = DD[id];
+    if (!wrap) return;
+    var menu = wrap.querySelector(".vb-dd-menu");
+    menu.innerHTML = "";
+    Array.prototype.forEach.call(sel.options, function (o) {
+      var item = document.createElement("div");
+      item.className = "vb-dd-item" + (o.value === sel.value ? " selected" : "");
+      item.textContent = o.textContent;
+      item.onclick = function (e) {
+        e.stopPropagation();
+        sel.value = o.value;
+        closeAllDD(null);
+        render();
+      };
+      menu.appendChild(item);
+    });
+    var chosen = sel.options[sel.selectedIndex];
+    wrap.querySelector(".vb-dd-text").textContent = chosen ? chosen.textContent : "";
+    wrap.querySelector(".vb-dd-field").className = "vb-dd-field" + (sel.value ? " sel" : "");
+  }
+  function closeAllDD(except) {
+    for (var k in DD) if (DD[k] !== except) DD[k].className = "vb-dd";
+  }
+  document.addEventListener("click", function () { closeAllDD(null); });
+
+  function rebuildFilters() {
+    var sel = getSel();
+    rebuildValueFacet("vb-f-gym", "g", function (ev) { return ev.gym_type ? [ev.gym_type] : []; }, null);
+    rebuildValueFacet("vb-f-skill", "s", skillValues, SKILL_ORDER);
+    rebuildValueFacet("vb-f-net", "n", netValues, NET_ORDER);
+    rebuildValueFacet("vb-f-club", "c", function (ev) { return [ev.club]; }, null);
+    rebuildValueFacet("vb-f-loc", "l", cityState, locSort);
+
+    var pricePairs = PRICE_OPTIONS.filter(function (opt) {
+      if (opt[0] === sel.p) return true;
+      return allEvents.some(function (ev) {
+        return matchesSel(ev, sel, "p") && priceMatch(ev, opt[0]);
+      });
+    });
+    setOptions("vb-f-price", sel.p, pricePairs, "Any");
+
+    // Highlight filters that have an active selection + refresh the
+    // custom dropdowns to match the rebuilt options
+    ["vb-f-gym", "vb-f-skill", "vb-f-net", "vb-f-price", "vb-f-club", "vb-f-loc"].forEach(function (id) {
+      $(id).className = $(id).value ? "sel" : "";
+      syncDD(id);
+    });
+  }
+
+  function eventDays(ev) {
+    var days = [], d = new Date(ev._start.getFullYear(), ev._start.getMonth(), ev._start.getDate());
+    var last = ev._end ? new Date(ev._end.getFullYear(), ev._end.getMonth(), ev._end.getDate()) : d;
+    if (ev.all_day && ev._end) last.setDate(last.getDate() - 1);
+    if (last < d) last = d;
+    var guard = 0;
+    while (d <= last && guard++ < 62) { days.push(dkey(d)); d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1); }
+    return days;
+  }
+
+  function byDay(evs) {
+    var map = {};
+    evs.forEach(function (ev) {
+      eventDays(ev).forEach(function (k) { (map[k] = map[k] || []).push(ev); });
+    });
+    return map;
+  }
+
+  function render() {
+    rebuildFilters();
+    var evs = filtered();
+    $("vb-count").innerHTML = evs.length + " event" + (evs.length === 1 ? " matches" : "s match") + " your filters." +
+      ' <span class="vb-count-cta">Open one and tap Connect Me &#128278;</span>';
+    var titleText = MONTHS[current.getMonth()].slice(0, 3) + " " + String(current.getFullYear()).slice(-2);
+    $("vb-title").textContent = titleText;
+    $("vb-title2").textContent = titleText;  // desktop: shown beside "Community Calendar"
+    $("vb-view-month").className = "vbcal-btn" + (view === "month" ? " active" : "");
+    $("vb-view-list").className = "vbcal-btn" + (view === "list" ? " active" : "");
+    $("vb-grid").style.display = view === "month" ? "" : "none";
+    $("vb-list").style.display = view === "list" ? "block" : "none";
+    var zoomed = view === "month" && weekFocus;
+    $("vb-prev").style.display = zoomed ? "none" : "";
+    $("vb-next").style.display = zoomed ? "none" : "";
+    $("vb-week-back").style.display = zoomed ? "" : "none";
+    $("vb-view-month").style.display = zoomed ? "none" : "";
+    if (view === "month") {
+      if (weekFocus) renderWeek(evs); else renderGrid(evs);
+    } else renderList(evs);
+  }
+
+  function renderGrid(evs) {
+    var map = byDay(evs), todayKey = dkey(new Date());
+    var first = new Date(current.getFullYear(), current.getMonth(), 1);
+    var start = new Date(first); start.setDate(1 - first.getDay());
+    var html = '<div class="vbcal-grid">';
+    DOWS.forEach(function (d) { html += '<div class="vbcal-dow">' + d + "</div>"; });
+    for (var i = 0; i < 42; i++) {
+      var d = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
+      var k = dkey(d), inMonth = d.getMonth() === current.getMonth();
+      // Tapping any day zooms into its week (no minimum event count)
+      html += '<div class="vbcal-day busy' + (inMonth ? "" : " other") + (k === todayKey ? " today" : "") +
+              '" data-daykey="' + k + '">';
+      html += '<div class="num">' + d.getDate() + "</div>";
+      (map[k] || []).forEach(function (ev) {
+        html += '<button class="vbcal-chip' + (k < todayKey ? " pastev" : "") +
+                '" style="background:' + clubColors[ev.club] +
+                ';color:' + textOn(clubColors[ev.club]) +
+                '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+                (ev.all_day ? "" : fmtTime(ev._start) + " ") + esc(titled(ev)) + "</button>";
+      });
+      html += "</div>";
+    }
+    $("vb-grid").innerHTML = html + "</div>";
+  }
+
+  function renderWeek(evs) {
+    var map = byDay(evs), todayKey = dkey(new Date());
+    var html = '<div class="vb-week-row">';
+    html += '<button class="vb-week-chev" id="vb-wk-prev" aria-label="Previous week">&#10094;</button>';
+    html += '<div class="vbcal-grid vbcal-week">';
+    DOWS.forEach(function (d) { html += '<div class="vbcal-dow">' + d + "</div>"; });
+    for (var i = 0; i < 7; i++) {
+      var d = new Date(weekFocus.getFullYear(), weekFocus.getMonth(), weekFocus.getDate() + i);
+      var k = dkey(d), inMonth = d.getMonth() === current.getMonth();
+      html += '<div class="vbcal-day' + (inMonth ? "" : " other") + (k === todayKey ? " today" : "") +
+              '" data-daykey="' + k + '">';
+      html += '<div class="num">' + MONTHS[d.getMonth()].slice(0, 3) + " " + d.getDate() + "</div>";
+      (map[k] || []).forEach(function (ev) {
+        html += '<button class="vbcal-chip' + (k < todayKey ? " pastev" : "") +
+                '" style="background:' + clubColors[ev.club] +
+                ';color:' + textOn(clubColors[ev.club]) +
+                '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+                (ev.all_day ? "" : fmtTime(ev._start) + " ") + esc(titled(ev)) + "</button>";
+      });
+      html += "</div>";
+    }
+    html += "</div>";
+    html += '<button class="vb-week-chev" id="vb-wk-next" aria-label="Next week">&#10095;</button>';
+    $("vb-grid").innerHTML = html + "</div>";
+    $("vb-wk-prev").onclick = function () { monthStep(-1); };
+    $("vb-wk-next").onclick = function () { monthStep(1); };
+
+    // Mobile: start scrolled to the tapped day (centered) and fade the
+    // scroll edges toward whichever side has more content.
+    var wk = $("vb-grid").querySelector(".vbcal-week");
+    if (wk && window.matchMedia("(max-width: 767px)").matches) {
+      if (weekTappedKey) {
+        var cell = wk.querySelector('[data-daykey="' + weekTappedKey + '"]');
+        if (cell) {
+          // Center via live rects: offsetLeft measures from the cell's
+          // offsetParent (not necessarily the scroller), which left the
+          // tapped day sitting slightly off-center. Align the cell's
+          // midpoint to the scroller's midpoint instead.
+          var wkRect = wk.getBoundingClientRect();
+          var cRect = cell.getBoundingClientRect();
+          wk.scrollLeft += (cRect.left + cRect.width / 2) - (wkRect.left + wkRect.width / 2);
+        }
+        weekTappedKey = null;
+      }
+      // Edge fade appears only DURING movement, on the side new content
+      // arrives from, and fades away ~0.2s after scrolling stops. Ends
+      // never fade. Overlay divs (animatable opacity) do the fading.
+      var row = $("vb-grid").querySelector(".vb-week-row");
+      var fadeL = document.createElement("div"); fadeL.className = "vb-wk-fade l";
+      var fadeR = document.createElement("div"); fadeR.className = "vb-wk-fade r";
+      row.appendChild(fadeL); row.appendChild(fadeR);
+      var lastSL = wk.scrollLeft, fadeTimer = null;
+      wk.addEventListener("scroll", function () {
+        var delta = wk.scrollLeft - lastSL;
+        lastSL = wk.scrollLeft;
+        var atStart = wk.scrollLeft <= 2;
+        var atEnd = wk.scrollLeft + wk.clientWidth >= wk.scrollWidth - 2;
+        if (delta > 1) {
+          fadeR.className = "vb-wk-fade r" + (atEnd ? "" : " show");
+          fadeL.className = "vb-wk-fade l";
+        } else if (delta < -1) {
+          fadeL.className = "vb-wk-fade l" + (atStart ? "" : " show");
+          fadeR.className = "vb-wk-fade r";
+        }
+        clearTimeout(fadeTimer);
+        fadeTimer = setTimeout(function () {
+          fadeL.className = "vb-wk-fade l";
+          fadeR.className = "vb-wk-fade r";
+        }, 200);
+      }, { passive: true });
+    }
+  }
+
+  function renderList(evs) {
+    var mStart = new Date(current.getFullYear(), current.getMonth(), 1);
+    var mEnd = new Date(current.getFullYear(), current.getMonth() + 1, 1);
+    var todayKey = dkey(new Date());
+    var map = byDay(evs), keys = Object.keys(map).sort(), html = "";
+    keys.forEach(function (k) {
+      var p = k.split("-"), d = new Date(+p[0], +p[1] - 1, +p[2]);
+      if (d < mStart || d >= mEnd) return;
+      var isPast = k < todayKey;
+      html += '<div class="vbcal-datehdr' + (k === todayKey ? " today" : "") + (isPast ? " pastev" : "") +
+              '" data-daykey="' + k + '">' +
+              (k === todayKey ? "Today | " : "") +
+              DOWS[d.getDay()] + ", " + MONTHS[d.getMonth()] + " " + d.getDate() + "</div>";
+      map[k].forEach(function (ev) {
+        html += '<div class="vbcal-item' + (isPast ? " pastev" : "") +
+                '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+                '<span class="vbcal-dot" style="background:' + clubColors[ev.club] + '"></span>' +
+                '<span class="t">' + (ev.all_day ? "All day" : fmtTime(ev._start) + (ev._end ? " – " + fmtTime(ev._end) : "")) + "</span>" +
+                "<span>" + esc(titled(ev)) +
+                " <small style='color:#888'>" +
+                (ev.gym_type ? "· " + esc(ev.gym_type) + " " : "") +
+                "· " + esc(ev.club) + "</small></span></div>";
+      });
+    });
+    var list = $("vb-list");
+    list.innerHTML = html || "<p style='text-align:center;color:#888'>No events this month match your filters.</p>";
+
+    // Open scrolled to today (past days sit above, reachable by
+    // scrolling up); months without today start at the top.
+    var todayHdr = list.querySelector('[data-daykey="' + todayKey + '"]');
+    if (todayHdr) {
+      list.scrollTop = Math.max(0, todayHdr.offsetTop - 4);
+    } else {
+      // future days only? or a past month? land on the first future day
+      var firstFuture = null;
+      Array.prototype.some.call(list.querySelectorAll("[data-daykey]"), function (el) {
+        if (el.getAttribute("data-daykey") > todayKey) { firstFuture = el; return true; }
+        return false;
+      });
+      list.scrollTop = firstFuture ? Math.max(0, firstFuture.offsetTop - 4) : 0;
+    }
+  }
+
+  // "Add to Google Calendar" template link
+  function gcalUrl(ev) {
+    function fmtDate(d) { return "" + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()); }
+    function fmtDT(d) { return fmtDate(d) + "T" + pad(d.getHours()) + pad(d.getMinutes()) + "00"; }
+    var dates;
+    if (ev.all_day) {
+      var endD = ev._end || new Date(ev._start.getFullYear(), ev._start.getMonth(), ev._start.getDate() + 1);
+      dates = fmtDate(ev._start) + "/" + fmtDate(endD);           // all-day: end exclusive
+    } else {
+      var endT = ev._end || new Date(ev._start.getTime() + 60 * 60 * 1000);
+      dates = fmtDT(ev._start) + "/" + fmtDT(endT);
+    }
+    var details = (ev.description ? ev.description + "\n\n" : "") + (ev.url ? "More info: " + ev.url : "");
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+           "&text=" + encodeURIComponent(titled(ev)) +
+           "&dates=" + dates +
+           "&ctz=America/New_York" +
+           (ev.location ? "&location=" + encodeURIComponent(ev.location) : "") +
+           (details ? "&details=" + encodeURIComponent(details.slice(0, 1500)) : "");
+  }
+
+  function mapsUrl(location) {
+    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location);
+  }
+
+  // Shareable link back to THIS event: the calendar page's own URL with
+  // ?event=<uid> appended. Opening that link re-loads the calendar and
+  // (see the deep-link check in init()) automatically opens this same
+  // event's popup, so a shared link is actually useful to whoever
+  // receives it, not just a link to the bare calendar.
+  function shareUrl(ev) {
+    var base = location.origin + location.pathname;
+    return base + "?event=" + encodeURIComponent(ev.uid);
+  }
+
+  // Small auto-dismissing toast, e.g. for "you're already signed up".
+  // Reuses one element/timer across calls so rapid repeat taps just
+  // restart the 6s clock instead of stacking toasts. Also dismisses
+  // early the moment the user scrolls away, whether that's the main
+  // page, the carousel track, or a scrollable popup -- a capture-phase
+  // listener on window catches scroll from any of those, since plain
+  // (non-window) scroll events don't bubble but ARE seen by capturing
+  // ancestors.
+  var _toastTimer = null, _toastScrollHandler = null;
+  function showToast(message) {
+    var t = $("vb-toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "vb-toast";
+      t.className = "vb-toast";
+      document.body.appendChild(t);
+    }
+    t.textContent = message;
+    // Reflow before adding "show" so the fade-in transition always
+    // plays, even on a rapid second call that reuses the element.
+    t.classList.remove("show");
+    void t.offsetWidth;
+    t.classList.add("show");
+
+    clearTimeout(_toastTimer);
+    if (_toastScrollHandler) window.removeEventListener("scroll", _toastScrollHandler, true);
+
+    var onScroll;
+    var dismiss = function () {
+      t.classList.remove("show");
+      clearTimeout(_toastTimer);
+      window.removeEventListener("scroll", onScroll, true);
+      _toastScrollHandler = null;
+    };
+    // A brief lag after scrolling starts (rather than vanishing on the
+    // very first pixel of movement) so a small accidental nudge doesn't
+    // instantly kill it -- only a genuine scroll-away dismisses early.
+    onScroll = function () { setTimeout(dismiss, 350); };
+    _toastTimer = setTimeout(dismiss, 6000);
+    _toastScrollHandler = onScroll;
+    window.addEventListener("scroll", onScroll, { capture: true, passive: true, once: true });
+  }
+
+  // Native share sheet (iOS/Android "share drawer", desktop share
+  // panel where supported) with a clipboard-copy fallback for browsers
+  // that don't implement the Web Share API (most desktop browsers).
+  function shareEvent(ev, btn) {
+    var url = shareUrl(ev);
+    var text = titled(ev) + " — " +
+      MONTHS[ev._start.getMonth()] + " " + ev._start.getDate() +
+      (ev.all_day ? "" : " · " + fmtTime(ev._start)) +
+      (ev.location ? " @ " + ev.location : "");
+
+    if (navigator.share) {
+      navigator.share({ title: titled(ev), text: text, url: url }).catch(function () {});
+      return;
+    }
+    // Fallback: copy the link and flash a quick confirmation on the button
+    var copyText = text + "\n" + url;
+    var done = function () {
+      if (!btn) return;
+      var original = btn.getAttribute("aria-label");
+      btn.classList.add("copied");
+      btn.setAttribute("aria-label", "Link copied!");
+      setTimeout(function () {
+        btn.classList.remove("copied");
+        btn.setAttribute("aria-label", original);
+      }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(copyText).then(done).catch(function () {});
+    } else {
+      // Ancient-browser fallback: a hidden textarea + execCommand
+      var ta = document.createElement("textarea");
+      ta.value = copyText;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  }
+
+  // Turn emails, URLs, and phone numbers in (already-escaped)
+  // description text into clickable links. Emails and URLs are pulled
+  // out first via \u0000 placeholders so the phone pass can't touch
+  // digits inside them.
+  var _EMAIL_RE = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
+  var _URL_RE = /\b(?:https?:\/\/|www\.)[^\s<>"']+/gi;
+  var _PHONE_RE = /(?:\+?1[\s.\-]?)?(?:\(\d{3}\)\s?|\d{3}[\s.\-])\d{3}[\s.\-]\d{4}\b/g;
+  function linkifyContacts(text) {
+    var links = [];
+    function stash(html) {
+      links.push(html);
+      return "\u0000" + (links.length - 1) + "\u0000";
+    }
+    text = text.replace(_EMAIL_RE, function (m) {
+      return stash('<a href="mailto:' + m + '">' + m + "</a>");
+    });
+    text = text.replace(_URL_RE, function (m) {
+      // trailing sentence punctuation isn't part of the URL
+      var trail = "";
+      var t = m.replace(/[.,;:!?)]+$/, function (p) { trail = p; return ""; });
+      var href = /^www\./i.test(t) ? "https://" + t : t;
+      return stash('<a href="' + href + '" target="_blank" rel="noopener">' + t + "</a>") + trail;
+    });
+    text = text.replace(_PHONE_RE, function (m) {
+      var tel = m.replace(/[^\d+]/g, "");
+      return '<a href="tel:' + tel + '">' + m + "</a>";
+    });
+    return text.replace(/\u0000(\d+)\u0000/g, function (_, i) { return links[+i]; });
+  }
+
+  // Filter tags for an event, shared by the popup card and the reminder
+  // email (sent along in the signup payload).
+  //
+  // Skill bubbles mirror the scraper's tagging EXACTLY -- no expansion.
+  // The scraper (scraper/tagging.py) already enforces the real rule: an
+  // event either carries specific skill buckets (Open, A/AA, B/BB,
+  // combined as needed) OR is tagged "All Levels" exclusively when only
+  // catch-all phrasing ("all skill levels", "new players", etc.) is
+  // found -- never both. So the card just displays whatever the data
+  // says, one bubble per bucket.
+  //
+  // Net height bubbles ALSO mirror the scraper exactly -- no expansion.
+  // The scraper already decides who's welcome: unstated events are
+  // tagged "Men's, Co-ed" by default, and Women's is added only when
+  // explicitly stated, so an unstated event correctly shows Men's +
+  // Co-ed bubbles and never an unearned Women's bubble. (NET_ORDER is
+  // declared once, further up, and reused here.)
+  function eventTags(ev) {
+    var tags = [];
+    if (ev.gym_type) tags.push(ev.gym_type);
+
+    skillValues(ev).forEach(function (s) { tags.push("Skill: " + s); });
+
+    var nets = netValues(ev);
+    NET_ORDER.forEach(function (n) {
+      if (nets.indexOf(n) >= 0) tags.push(n);
+    });
+
+    if (ev.price === 0) tags.push("Free");
+    else if (ev.price !== null && ev.price !== undefined) tags.push("$" + ev.price);
+    else tags.push("Price TBD/See Site");
+    return tags;
+  }
+
+  function openModal(ev) {
+    var tags = eventTags(ev);
+    var when = MONTHS[ev._start.getMonth()] + " " + ev._start.getDate() +
+               (ev.all_day ? " (all day)" : " · " + fmtTime(ev._start) + (ev._end ? " – " + fmtTime(ev._end) : ""));
+    // Per-event image from the source site (e.g. Volleyball Life host
+    // avatars) wins over the club-level logo when present
+    var logoUrl = ev.image || CLUB_LOGOS[ev.club];
+    var logoImg = logoUrl
+      ? '<img class="vbcal-logo" src="' + logoUrl + '" alt="" ' +
+        'onerror="this.style.display=\'none\'">'
+      : "";
+    var on = bookmarks()[ev.uid];
+    // Events before today take no reminder signups and no calendar
+    // adds -- their popup offers only More info / Register.
+    var remindBtn = "";
+    if (!isPastEvent(ev)) {
+      remindBtn = notificationsEnabled()
+        ? '<button class="btn vb-remind-btn' + (on ? " on" : "") + '" data-bm-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+          '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>' +
+          (on ? "Connected" : "Connect Me") + "</button>"
+        : '<a class="btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Google Calendar</a>';
+    }
+    var html = '<button class="close" id="vb-close">&times;</button>' +
+               '<button class="vb-share" data-share-uid="' + ev.uid.replace(/"/g, "&quot;") + '" title="Share this event" aria-label="Share this event">' +
+               '<svg viewBox="0 0 24 24"><path d="M12 3v11.5M8 7l4-4 4 4M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>' +
+               '</button>' +
+               '<div class="headrow">' + logoImg +
+               '<div class="headtext">' +
+               "<h4>" + esc(titled(ev)) + "</h4>" +
+               '<div class="clubline">' + esc(ev.club) + "</div>" +
+               '<div class="when">' + when + "</div>" +
+               (ev.location
+                 ? '<div class="loc" style="margin-top:4px">&#128205; <a href="' + mapsUrl(ev.location) +
+                   '" target="_blank" rel="noopener">' + esc(ev.location) + "</a></div>"
+                 : "") +
+               '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
+               "</div></div>" +
+               (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 1200)) + "</div>" : "") +
+               remindBtn +
+               (ev.url ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>' : "") +
+               // Inline signup section: hidden until Connect Me is
+               // pressed, then the popup expands to reveal it
+               (notificationsEnabled() && !isPastEvent(ev)
+                 ? '<div class="vb-signup vb-inline-signup" id="vb-inline-signup" style="display:none">' +
+                   '<p id="vb-signup-event">Enter your email and we\'ll send you reminders before &ldquo;' + esc(ev.title) + '&rdquo; starts.</p>' +
+                   '<input type="email" id="vb-signup-email" placeholder="you@email.com" autocomplete="email">' +
+                   '<div class="actions"><button class="vbcal-btn" id="vb-signup-submit">Get Notified</button></div>' +
+                   '<div class="msg" id="vb-signup-msg"></div>' +
+                   // Only appears after a successful signup, matching
+                   // the confirmation email's wording exactly.
+                   '<p class="vb-signup-note" id="vb-signup-note" style="display:none">Note: this sets up' +
+                   ' email reminders only &mdash; it does not register you for the event. Be sure to' +
+                   ' register separately if the event requires it.</p>' +
+                   "</div>"
+                 : "");
+    var modal = $("vb-modal");
+    modal.innerHTML = html;
+    modal.style.borderLeftColor = clubColors[ev.club] || DEFAULT_COLOR;
+    $("vb-overlay").style.display = "flex";
+    lockPageScroll();
+    // Pixel-snap the card via margins: flex centering can land it on a
+    // half-pixel, which blurs text on standard-DPI screens. Margins are
+    // used (NOT transform) because any transform promotes the card to a
+    // GPU layer, where text loses subpixel antialiasing and looks fuzzy
+    // on desktop regardless of position.
+    modal.style.transform = "none";
+    modal.style.marginLeft = "";
+    modal.style.marginTop = "";
+    var r = modal.getBoundingClientRect();
+    var dx = Math.round(r.left) - r.left, dy = Math.round(r.top) - r.top;
+    if (dx) modal.style.marginLeft = dx + "px";
+    if (dy) modal.style.marginTop = dy + "px";
+    $("vb-close").onclick = closeModal;
+    if (notificationsEnabled() && !isPastEvent(ev)) {
+      signupEvent = ev;
+      $("vb-signup-submit").onclick = submitSignup;
+    }
+  }
+  function closeModal() {
+    $("vb-overlay").style.display = "none";
+    unlockPageScroll();
+  }
+
+  // Mobile: freeze the page behind an open popup so the only thing
+  // that scrolls is the popup's own content. position:fixed is the
+  // technique iOS Safari actually honors; the scroll position is
+  // saved and restored on close.
+  var _scrollLockY = -1;
+  function lockPageScroll() {
+    if (_scrollLockY >= 0 || !window.matchMedia("(max-width: 767px)").matches) return;
+    _scrollLockY = window.scrollY || document.documentElement.scrollTop || 0;
+    var b = document.body;
+    b.style.position = "fixed";
+    b.style.top = -_scrollLockY + "px";
+    b.style.left = "0"; b.style.right = "0"; b.style.width = "100%";
+    b.style.overflow = "hidden";
+  }
+  function unlockPageScroll() {
+    if (_scrollLockY < 0) return;
+    var b = document.body;
+    b.style.position = ""; b.style.top = ""; b.style.left = "";
+    b.style.right = ""; b.style.width = ""; b.style.overflow = "";
+    // Restore INSTANTLY: the site's scroll-behavior:smooth would
+    // otherwise animate from the top back down to the saved spot
+    // (visible as a scroll-to-top-then-jump on close).
+    var root = document.documentElement;
+    var prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo({ top: _scrollLockY, left: 0, behavior: "instant" });
+    root.style.scrollBehavior = prev;
+    _scrollLockY = -1;
+  }
+
+  // ---- Sign up for Notifications (inline section in the popup) ----
+  var signupEvent = null;
+
+  // Expand the popup's signup section (opening the popup first if the
+  // click came from a carousel bookmark).
+  // An event is past only once its day (or last day) is before TODAY --
+  // events happening today still take signups all day
+  function isPastEvent(ev) {
+    var last = ev._end || ev._start;
+    var todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0);
+    return last < todayStart;
+  }
+
+  function openSignup(ev) {
+    if (isPastEvent(ev)) return;  // no reminders for past events
+    var section = $("vb-inline-signup");
+    if (!section || signupEvent !== ev) {
+      openModal(ev);
+      section = $("vb-inline-signup");
+    }
+    if (!section) return;
+    section.style.display = "block";
+    $("vb-signup-email").value = localStorage.getItem("vbcalEmail") || "";
+    $("vb-signup-msg").textContent = "";
+    $("vb-signup-msg").className = "msg";
+    // The "this doesn't register you" note only appears after a
+    // successful signup (see submitSignup) -- hide it on a fresh open.
+    var note = $("vb-signup-note");
+    if (note) note.style.display = "none";
+    // The signup section sits near the bottom of the popup, below the
+    // description/tags -- scroll it into view so opening it from a
+    // carousel bookmark is visibly obvious, not just an off-screen
+    // change the visitor has to notice by scrolling themselves.
+    section.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    $("vb-signup-email").focus();
+  }
+
+  function submitSignup() {
+    var email = $("vb-signup-email").value.trim();
+    var msg = $("vb-signup-msg");
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      msg.textContent = "Please enter a valid email address.";
+      msg.className = "msg err";
+      return;
+    }
+    var ev = signupEvent;
+    fetch(NOTIFY_ENDPOINT, {
+      method: "POST",
+      mode: "no-cors",  // Apps Script web apps don't send CORS headers
+      headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify({
+        email: email, uid: ev.uid, title: titled(ev),  // "[GOVB] Title" so emails carry the club prefix too
+        start: ev.start, club: ev.club, url: ev.url || "",
+        // Extra card data so the reminder email can render the same
+        // event card the calendar shows (tags, ribbon color, logo...)
+        extra: {
+          location: ev.location || "",
+          end: ev.end || "",
+          tags: eventTags(ev),
+          color: clubColors[ev.club] || DEFAULT_COLOR,
+          logo: ev.image || CLUB_LOGOS[ev.club] || "",
+        },
+      }),
+    }).catch(function () {});  // fire-and-forget
+
+    localStorage.setItem("vbcalEmail", email);
+    var bm = bookmarks();
+    bm[ev.uid] = true;
+    localStorage.setItem("vbcalBookmarks", JSON.stringify(bm));
+
+    msg.textContent = "You will be notified! Opening Google Calendar…";
+    msg.className = "msg ok";
+    // Flip any visible icons/buttons for this event to the "set" state
+    var sel = '[data-bm-uid="' + ev.uid.replace(/"/g, '\\"') + '"]';
+    Array.prototype.forEach.call(document.querySelectorAll(sel), function (el) {
+      el.className += el.className.indexOf(" on") < 0 ? " on" : "";
+      if (el.className.indexOf("vb-remind-btn") >= 0) {
+        el.innerHTML = el.innerHTML.replace("Connect Me", "Connected");
+      }
+    });
+    // This note only appears once someone has actually signed up,
+    // matching the confirmation email's wording exactly.
+    var note = $("vb-signup-note");
+    if (note) note.style.display = "block";
+    // Hand off to the Add-to-Google-Calendar flow (same user gesture,
+    // so popup blockers allow it)
+    window.open(gcalUrl(ev), "_blank", "noopener");
+  }
+
+  // "Sun Jul 19th" style date, like Volleyball Life's cards
+  function fmtCardDate(d) {
+    var day = d.getDate(), suffix = "th";
+    if (day % 10 === 1 && day !== 11) suffix = "st";
+    else if (day % 10 === 2 && day !== 12) suffix = "nd";
+    else if (day % 10 === 3 && day !== 13) suffix = "rd";
+    return DOWS[d.getDay()] + " " + MONTHS[d.getMonth()].slice(0, 3) + " " + day + suffix;
+  }
+
+  function notificationsEnabled() {
+    return NOTIFY_ENDPOINT.indexOf("http") === 0;
+  }
+  function bookmarks() {
+    try { return JSON.parse(localStorage.getItem("vbcalBookmarks") || "{}"); }
+    catch (e) { return {}; }
+  }
+  // Corner bookmark on carousel cards. (The event popup uses the
+  // combined "Connect Me" button instead -- see openModal.)
+  function bookmarkIcon(uid) {
+    if (!notificationsEnabled()) return "";
+    var on = bookmarks()[uid];
+    return '<button class="vb-bm' + (on ? " on" : "") +
+           '" data-bm-uid="' + uid.replace(/"/g, "&quot;") + '" title="Sign up for Notifications">' +
+           '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg></button>';
+  }
+  // Corner share icon on carousel cards -- sits left of the bookmark
+  // slot at a fixed position regardless of whether the bookmark itself
+  // is rendered, so its placement never shifts around. Lives in the
+  // footer row (see renderCarousel) on every device -- the old top-
+  // right corner spot clipped under longer titles even on desktop.
+  function shareIconCar(uid) {
+    return '<button class="vb-share-car" data-share-uid="' + uid.replace(/"/g, "&quot;") +
+           '" title="Share this event" aria-label="Share this event">' +
+           '<svg viewBox="0 0 24 24"><path d="M12 3v11.5M8 7l4-4 4 4M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>';
+  }
+
+  function renderCarousel() {
+    var now = new Date();
+    var windowStart = new Date(now.getFullYear(), now.getMonth(), now.getDate() - CAROUSEL_DAYS_BACK);
+    var windowEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate() + CAROUSEL_DAYS_AHEAD + 1);
+
+    var shown = allEvents.filter(function (ev) {
+      return ev.club === CAROUSEL_CLUB &&
+             (ev._end || ev._start) >= windowStart && ev._start < windowEnd;
+    }).sort(function (a, b) { return a._start - b._start; });
+
+    if (!shown.length) return;  // keep the carousel hidden
+
+    var firstUpcoming = -1, html = "";
+    shown.forEach(function (ev, i) {
+      var isPast = (ev._end || ev._start) < now;
+      if (!isPast && firstUpcoming < 0) firstUpcoming = i;
+      var dateText = fmtCardDate(ev._start);
+      if (ev.all_day && ev._end) {
+        var lastDay = new Date(ev._end.getFullYear(), ev._end.getMonth(), ev._end.getDate() - 1);
+        if (lastDay > ev._start) dateText += " - " + fmtCardDate(lastDay);
+      }
+      var timeText = ev.all_day ? "All day" : fmtTime(ev._start) + (ev._end ? " – " + fmtTime(ev._end) : "");
+      var tagLine = [ev.gym_type, ev.skill_level].filter(Boolean).join(" · ");
+      html += '<div class="vbcar-card' + (isPast ? " past" : "") +
+              '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '" role="button" tabindex="0">' +
+              (isPastEvent(ev) ? "" : bookmarkIcon(ev.uid)) +  // reminders allowed through today
+              '<div class="t">' + esc(ev.title) + "</div>" +
+              '<div class="d">' + esc(dateText) + "</div>" +
+              (ev.location ? '<div class="m">' + esc(ev.location) + "</div>" : "") +
+              (tagLine ? '<div class="m">' + esc(tagLine) + "</div>" : "") +
+              (CAROUSEL_LOGO
+                ? '<img class="vbcar-logo vbcar-logo-light" src="' + CAROUSEL_LOGO + '" alt="" onerror="this.style.display=\'none\'">' +
+                  '<img class="vbcar-logo vbcar-logo-dark" src="' + CAROUSEL_LOGO_DARK + '" alt="" onerror="this.style.display=\'none\'">'
+                : "") +
+              "<hr>" +
+              '<div class="f">' + shareIconCar(ev.uid) +
+              '<span class="ftime">' + esc(timeText) + "</span></div></div>";
+    });
+    var track = $("vbcar-track");
+    track.innerHTML = html;
+    $("vb-carousel").style.display = "";
+    $("vbcar-prev").onclick = function () { track.scrollBy({ left: -480 }); };
+    $("vbcar-next").onclick = function () { track.scrollBy({ left: 480 }); };
+
+    // Dim the chevrons at either end of the track
+    function updateChevrons() {
+      var atStart = track.scrollLeft <= 2;
+      var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+      $("vbcar-prev").className = "vbcar-chev" + (atStart ? " disabled" : "");
+      $("vbcar-next").className = "vbcar-chev" + (atEnd ? " disabled" : "");
+    }
+    track.onscroll = updateChevrons;
+
+    // Start scrolled to the next upcoming event (past-week cards sit to
+    // the left, reachable by scrolling back).
+    if (firstUpcoming > 0) {
+      var card = track.children[firstUpcoming];
+      track.scrollLeft = Math.max(0, card.offsetLeft - track.offsetLeft);
+    }
+    updateChevrons();
+  }
+
+  function init(data) {
+    allEvents = data.events.map(function (ev) {
+      ev.club = canonClub(ev.club);
+      ev._start = parseDT(ev.start);
+      ev._end = ev.end ? parseDT(ev.end) : null;
+      return ev;
+    });
+    var clubs = [];
+    allEvents.forEach(function (ev) {
+      if (clubs.indexOf(ev.club) < 0) clubs.push(ev.club);
+    });
+    clubs.sort().forEach(function (c) { clubColors[c] = CLUB_COLORS[c] || DEFAULT_COLOR; });
+
+    ["vb-f-gym", "vb-f-skill", "vb-f-net", "vb-f-price", "vb-f-club", "vb-f-loc"].forEach(function (id) {
+      $(id).onchange = render;
+      initDD(id);
+    });
+    if (DEFAULT_CLUB && clubs.indexOf(DEFAULT_CLUB) >= 0) {
+      // rebuildFilters (inside render) repopulates options while keeping
+      // the current selection, so seed the club select directly.
+      var o = document.createElement("option");
+      o.value = DEFAULT_CLUB; o.textContent = DEFAULT_CLUB;
+      $("vb-f-club").appendChild(o);
+      $("vb-f-club").value = DEFAULT_CLUB;
+    }
+    renderCarousel();
+    if ($("vb-carousel").style.display === "none") {
+      document.querySelector(".vbcal-section-title").appendChild($("vb-theme"));
+    }
+
+    // Deep link from a shared event: ?event=<uid> in the URL jumps the
+    // calendar to that event's month and opens its popup automatically,
+    // so a link someone shares is actually useful to whoever opens it.
+    var sharedUid = new URLSearchParams(location.search).get("event");
+    var sharedEv = sharedUid && allEvents.filter(function (x) { return x.uid === sharedUid; })[0];
+    if (sharedEv) current = new Date(sharedEv._start.getFullYear(), sharedEv._start.getMonth(), 1);
+
+    render();
+    if (sharedEv) openModal(sharedEv);
+  }
+
+  // Haptic feedback on selections: a short 10ms tick on devices that
+  // expose the Vibration API (Android). iOS never exposes vibration to
+  // web pages, so iPhone users get the visual press-squish (CSS :active
+  // rules) instead. One delegated touch listener covers every tappable
+  // element in the widget.
+  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vbcal-chip, " +
+    ".vbcal-item, .vb-bm, .vbcar-card, .vbcar-chev, .vb-week-chev, " +
+    ".vbcal-day.busy, .vbcal-modal .btn, .vbcal-modal .close, .vb-theme-btn, .vb-share, .vb-share-car";
+  document.addEventListener("touchstart", function (e) {
+    if (!navigator.vibrate) return;
+    if (e.target.closest && e.target.closest(BUZZ_TARGETS)) navigator.vibrate(10);
+  }, { passive: true });
+
+  document.addEventListener("click", function (e) {
+    var shareEl = e.target.closest ? e.target.closest("[data-share-uid]") : null;
+    if (shareEl) {
+      var shareUid = shareEl.getAttribute("data-share-uid");
+      var shareEv = allEvents.filter(function (x) { return x.uid === shareUid; })[0];
+      if (shareEv) shareEvent(shareEv, shareEl);
+      return;  // don't also close the popup
+    }
+    var bmEl = e.target.closest ? e.target.closest("[data-bm-uid]") : null;
+    if (bmEl) {
+      var bmUid = bmEl.getAttribute("data-bm-uid");
+      var bmEv = allEvents.filter(function (x) { return x.uid === bmUid; })[0];
+      if (bmEv) {
+        // Already signed up for this event -- whether tapped from the
+        // carousel's corner bookmark icon or the popup's "Connected"
+        // button, show a confirmation toast instead of (re)opening the
+        // email signup form.
+        var isBookmarkControl = bmEl.classList.contains("vb-bm") || bmEl.classList.contains("vb-remind-btn");
+        if (isBookmarkControl && bookmarks()[bmUid]) {
+          showToast("You're already signed up! You'll receive reminders for this event.");
+        } else {
+          openSignup(bmEv);
+        }
+      }
+      return;  // don't also open the event modal
+    }
+    var el = e.target.closest ? e.target.closest("[data-uid]") : null;
+    if (el) {
+      var uid = el.getAttribute("data-uid");
+      var ev = allEvents.filter(function (x) { return x.uid === uid; })[0];
+      if (ev) openModal(ev);
+      return;
+    }
+    var dayEl = e.target.closest ? e.target.closest(".vbcal-day.busy[data-daykey]") : null;
+    if (dayEl) {
+      var p = dayEl.getAttribute("data-daykey").split("-");
+      var tapped = new Date(+p[0], +p[1] - 1, +p[2]);
+      weekFocus = new Date(tapped.getFullYear(), tapped.getMonth(), tapped.getDate() - tapped.getDay());
+      weekTappedKey = dayEl.getAttribute("data-daykey");
+      render();
+    }
+    if (e.target === $("vb-overlay")) closeModal();
+  });
+
+  // Desktop: filters sit inside the toolbar row (between the nav arrows
+  // and the Month/List buttons). Mobile: back above the calendar behind
+  // the Show Filters toggle. Re-homed live on resize/rotation.
+  (function () {
+    var mqDesk = window.matchMedia("(min-width: 768px)");
+    var toolbar = document.querySelector(".vbcal-toolbar");
+    var count = $("vb-count");
+    function homeFilters() {
+      var f = $("vb-filters");
+      var tog = document.querySelector(".vbcal-filter-toggle");
+      if (mqDesk.matches) {
+        toolbar.insertBefore(f, toolbar.lastElementChild);
+        count.parentNode.insertBefore(tog, count);  // toggle back home (hidden)
+      } else {
+        // Show/Hide Filters takes the toolbar's center column; the
+        // filter panel itself opens below the toolbar row
+        toolbar.insertBefore(tog, toolbar.lastElementChild);
+        toolbar.parentNode.insertBefore(f, $("vb-grid"));
+      }
+    }
+    if (mqDesk.addEventListener) mqDesk.addEventListener("change", homeFilters);
+    homeFilters();
+  })();
+
+  function monthStep(delta) {
+    if (weekFocus && view === "month") {
+      // While zoomed, the arrows/swipes step a week at a time
+      weekFocus = new Date(weekFocus.getFullYear(), weekFocus.getMonth(), weekFocus.getDate() + delta * 7);
+      current = new Date(weekFocus.getFullYear(), weekFocus.getMonth(), 1);
+    } else {
+      current = new Date(current.getFullYear(), current.getMonth() + delta, 1);
+    }
+    render();
+  }
+  $("vb-prev").onclick = function () { monthStep(-1); };
+  $("vb-next").onclick = function () { monthStep(1); };
+  $("vb-week-back").onclick = function () { weekFocus = null; render(); };
+
+  // Touch gestures on the calendar (grid or list):
+  //  - swipe left/right changes month (or week while zoomed)
+  //  - pinch-in while zoomed into a week closes the zoom
+  ["vb-grid", "vb-list"].forEach(function (id) {
+    var el = $(id), sx = 0, sy = 0, pinchStart = 0, pinchLast = 0, pinching = false;
+    function dist(t) {
+      var dx = t[0].clientX - t[1].clientX, dy = t[0].clientY - t[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+    var weekScrollStart = 0;
+    el.addEventListener("touchstart", function (e) {
+      if (e.touches.length === 2) {
+        pinching = true;
+        pinchStart = pinchLast = dist(e.touches);
+      } else if (e.touches.length === 1 && !pinching) {
+        sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+        var wk = el.querySelector(".vbcal-week");
+        weekScrollStart = wk ? wk.scrollLeft : 0;
+      }
+    }, { passive: true });
+    el.addEventListener("touchmove", function (e) {
+      if (pinching && e.touches.length === 2) pinchLast = dist(e.touches);
+    }, { passive: true });
+    el.addEventListener("touchend", function (e) {
+      if (pinching) {
+        if (e.touches.length === 0) {
+          // fingers lifted: pinch-in (zoom out) closes the week zoom
+          if (weekFocus && pinchStart > 0 && pinchLast < pinchStart * 0.75) {
+            weekFocus = null;
+            render();
+          }
+          pinching = false; pinchStart = pinchLast = 0;
+        }
+        return;  // never treat a pinch as a swipe
+      }
+      var dx = e.changedTouches[0].clientX - sx;
+      var dy = e.changedTouches[0].clientY - sy;
+      // If the gesture scrolled the week's own columns, it wasn't a
+      // week-change swipe.
+      var wk = el.querySelector(".vbcal-week");
+      if (wk && Math.abs(wk.scrollLeft - weekScrollStart) > 10) return;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        monthStep(dx < 0 ? 1 : -1);  // swipe left -> forward
+      }
+    }, { passive: true });
+  });
+  $("vb-view-month").onclick = function () { view = "month"; weekFocus = null; render(); };
+  $("vb-view-list").onclick = function () { view = "list"; weekFocus = null; render(); };
+  $("vb-toggle-filters").onclick = function () {
+    var f = $("vb-filters"), open = f.className.indexOf("open") >= 0;
+    f.className = open ? "vbcal-filters" : "vbcal-filters open";
+    this.textContent = open ? "Show Filters" : "Hide Filters";
+    this.className = "vbcal-btn" + (open ? "" : " active");
+  };
+
+  // ---- Light / dark mode ----
+  function applyTheme(dark) {
+    var targets = [$("vbcal"), $("vb-overlay")];
+    targets.forEach(function (el) {
+      var base = el.className.replace(/\s*vb-dark/g, "");
+      el.className = dark ? base + " vb-dark" : base;
+    });
+    // Also flag the page body so site-wide dark styles (added in
+    // Squarespace Design -> Custom CSS) can darken the rest of the page.
+    document.body.classList.toggle("vb-dark-page", dark);
+  }
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  // A manual theme choice is kept in localStorage (so it survives quick
+  // tab closes/app-switches, e.g. on mobile) but EXPIRES 5 minutes after
+  // the last time any tab was actively using the site -- storedTheme()
+  // checks that on every read and self-clears once stale, so a choice
+  // from days ago never overrides a fresh visit's device setting, while
+  // a choice from moments ago (reopening a just-closed tab) still holds.
+  // The timestamp is refreshed on load and periodically while a tab
+  // stays open, so a long active session never expires out from under
+  // someone mid-use.
+  var THEME_TTL_MS = 5 * 60 * 1000;
+  function storedTheme() {
+    var stored = localStorage.getItem("vbcalTheme");
+    var ts = +localStorage.getItem("vbcalThemeTS") || 0;
+    if (stored && Date.now() - ts > THEME_TTL_MS) {
+      localStorage.removeItem("vbcalTheme");
+      localStorage.removeItem("vbcalThemeTS");
+      return null;
+    }
+    return stored;
+  }
+  function touchThemeTS() {
+    if (localStorage.getItem("vbcalTheme")) localStorage.setItem("vbcalThemeTS", String(Date.now()));
+  }
+  function currentDark() {
+    var stored = storedTheme();
+    return stored ? stored === "dark" : prefersDark();
+  }
+  $("vb-theme").onclick = function () {
+    var dark = !currentDark();
+    localStorage.setItem("vbcalTheme", dark ? "dark" : "light");
+    localStorage.setItem("vbcalThemeTS", String(Date.now()));
+    applyTheme(dark);
+  };
+  applyTheme(currentDark());
+  touchThemeTS();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) touchThemeTS(); });
+  setInterval(touchThemeTS, 60000);
+
+  // True liquid-glass warp (SVG filter in backdrop-filter) renders only
+  // in Chromium; flag the body so the CSS opts in there. Safari and
+  // Firefox never get the class and keep the plain blur fallback.
+  if (window.chrome) document.body.classList.add("vb-warp");
+
+  // Carousel-only mode: hide the whole Community Calendar section
+  if (CAROUSEL_ONLY) $("vbcal").classList.add("vb-carousel-only");
+
+  // Follow live device-theme changes for visitors who haven't chosen
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    var onChange = function (e) {
+      if (!storedTheme()) applyTheme(e.matches);
+    };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+  }
+
+  // Move the modal overlay to <body>: Squarespace sections use CSS
+  // transforms, which trap position:fixed elements inside them and let
+  // later sections stack above the popup while scrolling.
+  document.body.appendChild($("vb-overlay"));
+
+  fetch(EVENTS_URL)
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(init)
+    .catch(function (err) {
+      $("vb-count").textContent = "Could not load events (" + err.message + "). Check EVENTS_URL.";
+    });
+})();
+</script>

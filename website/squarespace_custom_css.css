@@ -1,0 +1,41 @@
+/* GOVB site-wide Custom CSS — paste into Squarespace: Design ->
+ * Custom CSS. Versioned copy of what lives (or should live) in the
+ * site's Custom CSS panel, so it's tracked alongside the widgets.
+ *
+ * Two sections:
+ *  1. Native Squarespace button theming (GOVB blue, inverting to GOVB
+ *     yellow in dark mode) — matches the calendar widgets' buttons.
+ *  2. NOTE: your existing body.vb-dark-page page-darkening rules
+ *     (backgrounds, text, links) also belong in the same Custom CSS
+ *     panel — keep those; this file only adds the button theming.
+ *
+ * Dark mode activates on pages that set body.vb-dark-page — i.e. pages
+ * carrying the calendar widget, a form page, the theme toggle widget,
+ * or the theme sync snippet.
+ */
+
+/* GOVB-themed native Squarespace buttons (matches the calendar's scheme) */
+.sqs-block-button-element,
+.sqs-button-element--primary {
+  background: #0057b8 !important;
+  border-color: #0057b8 !important;
+  color: #fff !important;
+  transition: background 0.15s;
+}
+.sqs-block-button-element:hover,
+.sqs-button-element--primary:hover {
+  background: #00458f !important;
+}
+
+/* Dark mode: invert to GOVB yellow with dark text, same as the
+   calendar's buttons */
+body.vb-dark-page .sqs-block-button-element,
+body.vb-dark-page .sqs-button-element--primary {
+  background: #FFC425 !important;
+  border-color: #FFC425 !important;
+  color: #1a1a1a !important;
+}
+body.vb-dark-page .sqs-block-button-element:hover,
+body.vb-dark-page .sqs-button-element--primary:hover {
+  background: #e6ad0f !important;
+}

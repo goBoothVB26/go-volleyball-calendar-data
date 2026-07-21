@@ -1,0 +1,69 @@
+<!-- Dark-mode continuity for THIS page (no visible toggle here -- it just
+     honors whatever theme was chosen elsewhere on the site). Paste this
+     into its own CODE block near the top of any page's content where
+     you want the page to darken along with the calendar page's choice.
+     No Code Injection / plan upgrade required -- this is a normal
+     Code block, same as the calendar widget and the Submit button.
+
+     Since your Squarespace plan doesn't include sitewide Code
+     Injection, this has to be pasted individually onto each page you
+     want it on (the calendar page already has its own copy built in
+     and needs nothing extra). It reads the SAME localStorage key
+     ("vbcalTheme") the calendar's toggle already writes to, so no
+     matter where the visitor switched themes, this page picks it up.
+
+     The choice EXPIRES 5 minutes after the last time any tab was
+     actively using the site (see storedTheme() below), so a choice
+     from days ago never overrides a fresh visit's device setting,
+     while reopening a tab closed moments ago still honors it. -->
+<script>
+(function () {
+  var THEME_TTL_MS = 5 * 60 * 1000;
+
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function storedTheme() {
+    var stored = localStorage.getItem("vbcalTheme");
+    var ts = +localStorage.getItem("vbcalThemeTS") || 0;
+    if (stored && Date.now() - ts > THEME_TTL_MS) {
+      localStorage.removeItem("vbcalTheme");
+      localStorage.removeItem("vbcalThemeTS");
+      return null;
+    }
+    return stored;
+  }
+  function touchThemeTS() {
+    if (localStorage.getItem("vbcalTheme")) localStorage.setItem("vbcalThemeTS", String(Date.now()));
+  }
+  function currentDark() {
+    var stored = storedTheme();
+    return stored ? stored === "dark" : prefersDark();
+  }
+  function apply(dark) {
+    document.body.classList.toggle("vb-dark-page", dark);
+  }
+
+  apply(currentDark());
+  touchThemeTS();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) touchThemeTS(); });
+  setInterval(touchThemeTS, 60000);
+
+  // Follow live device-theme changes for visitors who haven't chosen
+  // (or whose choice has since expired)
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    var onChange = function (e) {
+      if (!storedTheme()) apply(e.matches);
+    };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+  }
+
+  // If the visitor toggles theme in another open tab, this page
+  // updates instantly too (same-tab navigation always re-runs this
+  // script fresh, so it's already correct then regardless).
+  window.addEventListener("storage", function (e) {
+    if (e.key === "vbcalTheme") apply(currentDark());
+  });
+})();
+</script>
