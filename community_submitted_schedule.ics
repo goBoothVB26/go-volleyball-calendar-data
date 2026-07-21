@@ -32,4 +32,14 @@ DESCRIPTION:Competitive volleyball - Teams are preferred\, but we try to a
  4.
 LOCATION:Game Point VBC
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] Men's indoor league
+DTSTART;TZID=America/New_York:20260830T110000
+DTEND;TZID=America/New_York:20260830T140000
+UID:Volley_Vortex-Men's_indoor_league-2026-08-30T11:00:00
+DESCRIPTION:Men's indoor league\; social & competitive division\,\n\nMore 
+ info: www.app.leaguelinq.com/volley-vortex
+LOCATION:The Well Activity Center
+URL:www.app.leaguelinq.com/volley-vortex
+END:VEVENT
 END:VCALENDAR
