@@ -1,0 +1,89 @@
+<!-- Standalone light/dark toggle -- paste into a CODE block on any page
+     (e.g. the Submit an Event page) where you want visitors to be able
+     to switch themes directly, not just on the calendar page. It reads
+     and writes the SAME localStorage key ("vbcalTheme") as the
+     calendar's toggle, so flipping it here or there stays in sync
+     everywhere (paired with website/site_theme_sync.js in Code
+     Injection -> Header, which is what actually makes every other page
+     honor the choice). The choice EXPIRES 5 minutes after the last
+     time any tab was actively using the site -- see storedTheme()
+     below -- so a choice from days ago never overrides a fresh visit's
+     device setting, while reopening a tab closed moments ago still
+     honors it. Looks and behaves identically to the calendar's slider:
+     sun/moon crossfade, sky-blue <-> midnight-purple track. -->
+
+<style>
+  .vb-standalone-theme-wrap { text-align: center; margin: 10px 0; }
+  .vb-theme-btn {
+    position: relative; width: 58px; height: 30px; padding: 0;
+    border: 0; border-radius: 15px; cursor: pointer;
+    background: linear-gradient(90deg, #9EDCFF, #5DB8F0);
+    transition: background 0.3s;
+  }
+  .vb-theme-btn .vb-knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: 50%; background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: left 0.3s, background 0.3s;
+  }
+  .vb-theme-btn .vb-knob span {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; line-height: 1;
+    transition: opacity 0.3s;
+  }
+  .vb-theme-btn .vb-sun { opacity: 1; }
+  .vb-theme-btn .vb-moon { opacity: 0; }
+  body.vb-dark-page .vb-theme-btn {
+    background: linear-gradient(90deg, #3A2A66, #55397C);
+  }
+  body.vb-dark-page .vb-theme-btn .vb-knob { left: 31px; background: #10131a; }
+  body.vb-dark-page .vb-theme-btn .vb-sun { opacity: 0; }
+  body.vb-dark-page .vb-theme-btn .vb-moon { opacity: 1; }
+</style>
+
+<div class="vb-standalone-theme-wrap">
+  <button class="vb-theme-btn" id="vb-standalone-theme" aria-label="Toggle dark mode">
+    <span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span>
+  </button>
+</div>
+
+<script>
+(function () {
+  var THEME_TTL_MS = 5 * 60 * 1000;
+
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function storedTheme() {
+    var stored = localStorage.getItem("vbcalTheme");
+    var ts = +localStorage.getItem("vbcalThemeTS") || 0;
+    if (stored && Date.now() - ts > THEME_TTL_MS) {
+      localStorage.removeItem("vbcalTheme");
+      localStorage.removeItem("vbcalThemeTS");
+      return null;
+    }
+    return stored;
+  }
+  function touchThemeTS() {
+    if (localStorage.getItem("vbcalTheme")) localStorage.setItem("vbcalThemeTS", String(Date.now()));
+  }
+  function currentDark() {
+    var stored = storedTheme();
+    return stored ? stored === "dark" : prefersDark();
+  }
+  function apply(dark) {
+    document.body.classList.toggle("vb-dark-page", dark);
+  }
+  document.getElementById("vb-standalone-theme").onclick = function () {
+    var dark = !currentDark();
+    localStorage.setItem("vbcalTheme", dark ? "dark" : "light");
+    localStorage.setItem("vbcalThemeTS", String(Date.now()));
+    apply(dark);
+  };
+  apply(currentDark());  // in case site_theme_sync.js isn't installed sitewide yet
+  touchThemeTS();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) touchThemeTS(); });
+  setInterval(touchThemeTS, 60000);
+})();
+</script>
