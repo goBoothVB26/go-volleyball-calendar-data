@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T18:02:24",
+  "generated": "2026-07-22T23:37:04",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -2553,7 +2553,7 @@
       "end": null,
       "all_day": true,
       "location": "Eden Prairie High School | 17185 Valley View Rd, Eden Prairie, MN 55346, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Jonathan Sloan | Divisions\n\nDivisions: Tournament Cap | 48 | B | 26 | BB | 11 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 7/24/2026; 7:-00pm - 9:00pm | Location | 515 Washington Ave S, Minneapolis, MN 55415, USA | Seeding Party\n\nSeeding Party: Date/Time | Sat, 7/25/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | CLOSING PARTY 7/26/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Tournament News\n\nPayment Deadlines: May 31, 2026 | July 4, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | . | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Divisions\n\nDivisions: Tournament Cap | 48 | B | 26 | BB | 11 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 7/24/2026; 7:-00pm - 9:00pm | Location | 515 Washington Ave S, Minneapolis, MN 55415, USA | Seeding Party\n\nSeeding Party: Date/Time | Sat, 7/25/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | CLOSING PARTY 7/26/2026; 7:00pm - 10:00pm | Location | 830 Hennepin Ave, Minneapolis, MN 55403, USA | Tournament News\n\nPayment Deadlines: May 31, 2026 | July 4, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | . | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
       "url": "https://www.nagva.org/tournaments-1/hotdish-%E2%80%98n-dig-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -2569,7 +2569,7 @@
       "end": null,
       "all_day": true,
       "location": "Round Rock Sports Center | 2400 Chisholm Trail Rd, Round Rock, TX 78681, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Gonzales | Michael Segura | Bronson Young Lew Smith Richard Sucre Dalton Roberts Scott Kilburg Eric Nelson | Divisions\n\nDivisions: Tournament Cap | 96 | B | 36 | BB | 24 | 12 | BB3 | C | 12 | 12 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 13, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 11, 2026 | Addl. Player Fee | 650 [Payment opens on May 5th] | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/austin-summerfest-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Gonzales | Michael Segura | Divisions\n\nDivisions: Tournament Cap | 96 | B | 36 | BB | 24 | 12 | BB3 | C | 12 | 12 | Women's | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 13, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 11, 2026 | Addl. Player Fee | 650 [Payment opens on May 5th] | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/austin-summerfest-2026",
       "url": "https://www.nagva.org/tournaments-1/austin-summerfest-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -2591,7 +2591,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Copa_Del_Sur_-_El_Mundial_'26-2026-07-25T00:00:00",
@@ -2607,7 +2607,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c077d714-e419-4348-9d17-0e1c15a5836c.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_July_25_2026-2026-07-25T00:00:00",
@@ -2623,7 +2623,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/ab3221b1-a752-4a72-a4e8-3f26ba1f5a2e.webp"
     },
     {
       "uid": "Volleyball_Life-PBOVA_-__Men's_and_Women's_-_Duo_Duels-2026-07-25T00:00:00",
@@ -2687,7 +2687,7 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/4449525d-0147-4023-badf-a04e61d522a6.jpg"
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Summer_Bash_Coed_Tournament_(B/BB)-2026-07-25T09:00:00",
@@ -3033,7 +3033,7 @@
       "end": null,
       "all_day": true,
       "location": "Legacy VTC | 601 Gravois Bluffs Blvd G, Fenton, MO 63026, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Revilla | Sam Revilla | Richard Sucre | Divisions\n\nDivisions: Tournament Cap | 48 | B | 18 | BB | 12 | 12 | BB3 | Open A/AA | 6 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | June 14, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 15, 2026 | June 30, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @sam-revilla | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/xoxo-invitational-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Sam Revilla | Sam Revilla | Divisions\n\nDivisions: Tournament Cap | 48 | B | 18 | BB | 12 | 12 | BB3 | Open A/AA | 6 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | June 14, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 15, 2026 | June 30, 2026 | Addl. Player Fee | 450 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @sam-revilla | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/xoxo-invitational-2026",
       "url": "https://www.nagva.org/tournaments-1/xoxo-invitational-2026",
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
@@ -3609,7 +3609,7 @@
       "end": null,
       "all_day": true,
       "location": "Virginia Beach Sports Center | 1045 19th St, Virginia Beach, VA 23451, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Raymond Corbin | Raymond Corbin | Keyeon Pitts | Divisions\n\nDivisions: Tournament Cap | 72 | B | 0 | BB | 0 | 0 | C | ModA1 | 0 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | August 13, 2026, 10:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 21, 2026 | July 12, 2026 | August 9, 2026 | Addl. Player Fee | 525 | 600 | 625 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/charm-city-beach-bash-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Raymond Corbin | Raymond Corbin | Divisions\n\nDivisions: Tournament Cap | 72 | B | 0 | BB | 0 | 0 | C | ModA1 | 0 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | August 13, 2026, 10:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 21, 2026 | July 12, 2026 | August 9, 2026 | Addl. Player Fee | 525 | 600 | 625 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/charm-city-beach-bash-2026",
       "url": "https://www.nagva.org/tournaments-1/charm-city-beach-bash-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
