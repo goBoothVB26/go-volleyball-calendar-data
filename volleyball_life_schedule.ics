@@ -219,20 +219,6 @@ URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] SSOVA's GULFPORT CASH PAYOUT 4v4 Aug 8th\, Beach
-  Volleyball Tournament
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260809
-UID:Volleyball_Life-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Aug_8th\,_Beach_Volle
- yball_Tournament-2026-08-08T00:00:00
-DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://voll
- eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
- -81.3789269&dist=200
-LOCATION:Gulfport Beach Courts
-URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
- l=28.5383832,-81.3789269&dist=200
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Rat Lord Back To School Bash
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260809
@@ -241,6 +227,20 @@ DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
  tps://volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28
  .5383832\,-81.3789269&dist=200
 LOCATION:Frank DeLuca YMCA
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Adult Beach Volleyball Clinic: Sat\, Aug. 8th 20
+ 26
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+UID:Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat\,_Aug._8th_2026-202
+ 6-08-08T00:00:00
+DESCRIPTION:Clinic · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,-81.
+ 3789269&dist=200
+LOCATION:The Pit: Frost Park\, Dania Beach\, Fl
 URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
