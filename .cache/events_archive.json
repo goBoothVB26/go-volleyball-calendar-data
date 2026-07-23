@@ -2426,6 +2426,24 @@
       "price": 1.0,
       "image": null,
       "uid": "USAV_Florida_Region-2026_Florida_Adult_Regional_Championships-2026-05-16T00:00:00"
+    },
+    {
+      "club": "USAV Florida Region",
+      "title": "USAV All-Stars Championship",
+      "start": "2026-07-23T00:00:00",
+      "end": "2026-07-27T00:00:00",
+      "location": "Columbus, OH",
+      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
+      "url": "https://floridavolleyball.org/blog/event/usav-all-stars-championship/",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00"
     }
   ],
   "community_submitted": [

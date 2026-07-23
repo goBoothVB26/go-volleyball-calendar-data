@@ -4,17 +4,6 @@ PRODID:-//Volleyball Schedule Scraper//
 NAME:AES Adult Volleyball (USAV\, Florida)
 X-WR-CALNAME:AES Adult Volleyball (USAV\, Florida)
 BEGIN:VEVENT
-SUMMARY:[AES Adult Volleyball (USAV\, Florida)] 2027 LOVB Presents - The K
- ickoff Championships
-DTSTART;TZID=America/New_York:20270109T000000
-DTEND;TZID=America/New_York:20270110T000000
-UID:AES_Adult_Volleyball_(USAV\,_Florida)-2027_LOVB_Presents_-_The_Kickoff
- _Championships-2027-01-09T00:00:00
-DESCRIPTION:More info: https://www.advancedeventsystems.com/events/45552
-LOCATION:Fort Lauderdale\, FL - Broward County Convention Center
-URL:https://www.advancedeventsystems.com/events/45552
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[AES Adult Volleyball (USAV\, Florida)] 2027 Tropical Ice Challeng
  e (12-18USA\, 12O & 18O)
 DTSTART;TZID=America/New_York:20270109T000000
@@ -24,5 +13,16 @@ UID:AES_Adult_Volleyball_(USAV\,_Florida)-2027_Tropical_Ice_Challenge_(12-
 DESCRIPTION:More info: https://www.advancedeventsystems.com/events/46177
 LOCATION:Jacksonville\, FL - JJVA
 URL:https://www.advancedeventsystems.com/events/46177
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[AES Adult Volleyball (USAV\, Florida)] 2027 LOVB Presents - The K
+ ickoff Championship
+DTSTART;TZID=America/New_York:20270109T000000
+DTEND;TZID=America/New_York:20270110T000000
+UID:AES_Adult_Volleyball_(USAV\,_Florida)-2027_LOVB_Presents_-_The_Kickoff
+ _Championship-2027-01-09T00:00:00
+DESCRIPTION:More info: https://www.advancedeventsystems.com/events/45552
+LOCATION:Fort Lauderdale\, FL - Broward County Convention Center
+URL:https://www.advancedeventsystems.com/events/45552
 END:VEVENT
 END:VCALENDAR

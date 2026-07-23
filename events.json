@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-22T23:37:04",
+  "generated": "2026-07-23T10:41:09",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -2434,22 +2434,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-07-22T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-22T19:30:00",
       "club": "Game Point VBC",
       "title": "Game Point Adult Open Gym",
@@ -2511,6 +2495,22 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-07-23T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -2591,7 +2591,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
     },
     {
       "uid": "Volleyball_Life-Copa_Del_Sur_-_El_Mundial_'26-2026-07-25T00:00:00",
@@ -2623,7 +2623,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/ab3221b1-a752-4a72-a4e8-3f26ba1f5a2e.webp"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-PBOVA_-__Men's_and_Women's_-_Duo_Duels-2026-07-25T00:00:00",
@@ -3346,22 +3346,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Rat Lord Back To School Bash",
-      "start": "2026-08-08T00:00:00",
-      "end": "2026-08-09T00:00:00",
-      "all_day": true,
-      "location": "Frank DeLuca YMCA",
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-Beast_Coast_Volleyball_x_Future_Stars_Volleyball_Training_Revco_Indoor_4s-2026-08-08T00:00:00",
       "club": "Volleyball Life",
       "title": "Beast Coast Volleyball x Future Stars Volleyball Training Revco Indoor 4s",
@@ -3374,6 +3358,22 @@
       "skill_level": "All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Jax_Scene_Beach_Coed_4s_August_8th-2026-08-08T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Jax Scene Beach Coed 4s August 8th",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-08-09T00:00:00",
+      "all_day": true,
+      "location": "Jax Scene courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Co-ed",
       "price": null,
       "image": null
     },
@@ -5490,6 +5490,38 @@
       "image": null
     },
     {
+      "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-20T20:15:00",
+      "club": "Ocoee Open Gym Volleyball",
+      "title": "Open Gym Volleyball",
+      "start": "2026-10-20T20:15:00",
+      "end": "2026-10-20T22:30:00",
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Co-ed",
+      "price": 3.0,
+      "image": null
+    },
+    {
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-21T18:00:00",
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time (Cancelled)",
+      "start": "2026-10-21T18:00:00",
+      "end": "2026-10-21T20:00:00",
+      "all_day": false,
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "NAGVA-Windy_City_Open_2026-2026-10-24T00:00:00",
       "club": "NAGVA",
       "title": "Windy City Open 2026",
@@ -5666,22 +5698,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_LOVB_Presents_-_The_Kickoff_Championships-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 LOVB Presents - The Kickoff Championships",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Fort Lauderdale, FL - Broward County Convention Center",
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/45552",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 200.0,
-      "image": null
-    },
-    {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tropical_Ice_Challenge_(12-18USA,_12O_&_18O)-2027-01-09T00:00:00",
       "club": "AES Adult Volleyball (USAV, Florida)",
       "title": "2027 Tropical Ice Challenge (12-18USA, 12O & 18O)",
@@ -5695,6 +5711,22 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 525.0,
+      "image": null
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_LOVB_Presents_-_The_Kickoff_Championship-2027-01-09T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 LOVB Presents - The Kickoff Championship",
+      "start": "2027-01-09T00:00:00",
+      "end": "2027-01-10T00:00:00",
+      "all_day": false,
+      "location": "Fort Lauderdale, FL - Broward County Convention Center",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/45552",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 200.0,
       "image": null
     },
     {

@@ -191,18 +191,6 @@ URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Rat Lord Back To School Bash
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260809
-UID:Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00
-DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
- tps://volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28
- .5383832\,-81.3789269&dist=200
-LOCATION:Frank DeLuca YMCA
-URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
- l=28.5383832,-81.3789269&dist=200
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] First Coast Volleyball Jax Beach Series presente
  d by Mayo Clinic Orthopedics and Sports Medicine July 25-26 '26
 DTSTART;VALUE=DATE:20260725
@@ -240,6 +228,18 @@ DESCRIPTION:Tournament · Adults · Indoor · 4s\n\nMore info: https://vol
  leyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\
  ,-81.3789269&dist=200
 LOCATION:Future Stars Volleyball Training
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Jax Scene Beach Coed 4s August 8th
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+UID:Volleyball_Life-Jax_Scene_Beach_Coed_4s_August_8th-2026-08-08T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Jax Scene courts
 URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT

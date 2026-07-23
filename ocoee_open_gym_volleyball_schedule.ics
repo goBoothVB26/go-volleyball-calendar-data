@@ -237,4 +237,22 @@ DESCRIPTION:Join us every Tuesday night from 8:15 pm to 10:30 pm for open
 LOCATION:Jim Beech Recreation Center
 URL:https://www.ocoee.org/171/Adult-Programs
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Ocoee Open Gym Volleyball] Open Gym Volleyball
+DTSTART;TZID=America/New_York:20261020T201500
+DTEND;TZID=America/New_York:20261020T223000
+UID:Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-20T20:15:00
+DESCRIPTION:Join us every Tuesday night from 8:15 pm to 10:30 pm for open 
+ gym volleyball. Our open gym format allows players of all skill levels to 
+ enjoy open court time - no teams\, no rosters\, no pressure . Whether you
+ ’re new to the sport\, working on technique\, or looking for regular vol
+ leyball fun with others\, our gym is ready for you. All participants must 
+ have an active daily or annual membership. Register for open gym volleybal
+ l .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.re
+ c1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a
+ 01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=\n\nMore info: htt
+ ps://www.ocoee.org/171/Adult-Programs
+LOCATION:Jim Beech Recreation Center
+URL:https://www.ocoee.org/171/Adult-Programs
+END:VEVENT
 END:VCALENDAR
