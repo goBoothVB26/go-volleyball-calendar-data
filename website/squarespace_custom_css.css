@@ -129,6 +129,36 @@ body.vb-dark-page .sqs-block:not(.code-block) h6 {
   color: #e6e6e6 !important;
 }
 
+/* Homepage 2.0 (the page being built to eventually replace the
+   homepage) ONLY: headings there use GOVB blue in light mode / GOVB
+   yellow in dark mode, instead of the sitewide plain off-white above.
+   Scoped with the page's own Squarespace-assigned class -- the
+   Custom CSS panel is sitewide, so a page-specific class is the only
+   way to limit a rule to one page. Found via DevTools:
+     [...document.body.classList].filter(c => c.startsWith("collection-"))
+   NOTE: if this page is later promoted to actually BE the homepage
+   via Settings -> made the homepage (rather than rebuilt at a new
+   URL), Squarespace keeps the same underlying page/collection, so
+   this class -- and this rule -- should keep working unchanged. If a
+   brand new page gets built instead, re-run the DevTools check above
+   on the new page and swap the class below. */
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h1,
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h2,
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h3,
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h4,
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h5,
+body.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h6 {
+  color: #0057b8 !important;
+}
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h1,
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h2,
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h3,
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h4,
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h5,
+body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block) h6 {
+  color: #FFC425 !important;
+}
+
 /* ===========================================================
  * Blog theming (native Squarespace 7.1 Blog Page)
  * ===========================================================
