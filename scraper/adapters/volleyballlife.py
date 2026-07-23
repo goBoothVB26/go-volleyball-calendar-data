@@ -1,21 +1,38 @@
 """Adapter for Volleyball Life (https://volleyballlife.com/events).
 
 Same Vuetify SPA card markup as Volley Vortex (it's the same underlying
-platform), so this uses `fetch_rendered` with the same `.v-card` selectors.
-The schedule URL already filters to Adults / Orlando, FL / 200mi via query
-params, so unlike Volley Vortex there's no need for a per-event category
-split here -- everything returned is adult.
+platform), so this uses a rendered fetch with the same `.v-card`
+selectors. The schedule URL already filters to Adults / Orlando, FL /
+200mi via query params, so unlike Volley Vortex there's no need for a
+per-event category split here -- everything returned is adult.
+
+Per-event URLs: confirmed by inspecting the live DOM that cards have NO
+`<a href>` anywhere -- clicking one drives client-side routing with no
+URL change, not a real link. The only place a per-event identifier
+exists is the page's own backend call to
+`https://api-v8.volleyballlife.com/tournament/summaries?...` (confirmed
+via the browser's Network tab), whose JSON includes each event's `id`,
+and `https://volleyballlife.com/event/{id}` was confirmed (by loading
+it directly) to be the real per-event detail page.
+Rather than reconstruct that API call ourselves -- which would risk
+silently dropping the geo-filter query params `schedule_url` relies on
+-- this drives the page directly and listens for the SAME response the
+page itself triggers when loading `schedule_url`, so whatever
+filtering the frontend actually applies is exactly what we see.
 """
 
 import re
 from datetime import datetime, timedelta
 
+from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
+from .. import fetch
 from ..dateparse import coerce_upcoming_year
-from ..fetch import fetch_rendered
 from ..models import Event
 from .base import ClubAdapter
+
+SUMMARIES_API_MARKER = "api-v8.volleyballlife.com/tournament/summaries"
 
 
 class VolleyballLifeAdapter(ClubAdapter):
@@ -27,7 +44,7 @@ class VolleyballLifeAdapter(ClubAdapter):
     )
 
     def scrape(self) -> list[Event]:
-        soup = fetch_rendered(self.schedule_url, wait_selector=".text-subtitle-2")
+        soup, event_id_by_title = self._fetch_page_and_ids()
         events: list[Event] = []
 
         for card in soup.select(".v-card"):
@@ -41,16 +58,8 @@ class VolleyballLifeAdapter(ClubAdapter):
             location = caption_els[0].get_text(strip=True)
             type_line = caption_els[1].get_text(strip=True) if len(caption_els) > 1 else ""
 
-            # Prefer a per-event link when the card carries one; fall back
-            # to the listing page otherwise.
-            url = self.schedule_url
-            link_el = card.select_one("a[href]")
-            if link_el:
-                href = link_el["href"]
-                if href.startswith("/"):
-                    href = "https://volleyballlife.com" + href
-                if href.startswith("http"):
-                    url = href
+            event_id = event_id_by_title.get(title)
+            url = f"https://volleyballlife.com/event/{event_id}" if event_id else self.schedule_url
 
             start, end = self._parse_date_range(date_el.get_text(strip=True))
             if start is None:
@@ -77,6 +86,45 @@ class VolleyballLifeAdapter(ClubAdapter):
             )
 
         return events
+
+    def _fetch_page_and_ids(self) -> tuple[BeautifulSoup, dict[str, int]]:
+        """Render schedule_url, capturing the page's own call to the
+        summaries API along the way so real per-event URLs can be built.
+
+        The listener is attached before navigation so it can't miss the
+        request. Matching JSON events back to rendered cards is done by
+        exact title text -- the UI renders each event's `name` field
+        directly as the card title, so they should always agree. If two
+        upcoming events ever share an identical title, the later one in
+        the API response wins; that's a rare, low-stakes edge case (the
+        card would just fall back to the listing-page URL if it lost the
+        title match entirely, same as before this fix)."""
+        event_id_by_title: dict[str, int] = {}
+
+        def on_response(response) -> None:
+            if SUMMARIES_API_MARKER not in response.url:
+                return
+            try:
+                for item in response.json():
+                    name, event_id = item.get("name"), item.get("id")
+                    if name and event_id:
+                        event_id_by_title[name] = event_id
+            except Exception:
+                pass  # malformed/unexpected response shape -- fall back to listing-page URLs
+
+        page = fetch.new_page(user_agent=fetch.USER_AGENT)
+        page.on("response", on_response)
+        try:
+            page.goto(self.schedule_url, timeout=30000)
+            # See fetch.fetch_rendered's docstring: a loading-skeleton
+            # card can match this selector before real data populates it.
+            page.wait_for_selector(".text-subtitle-2", timeout=30000)
+            page.wait_for_timeout(3000)
+            html = page.content()
+        finally:
+            page.close()
+
+        return BeautifulSoup(html, "lxml"), event_id_by_title
 
     @staticmethod
     def _card_image(card) -> str | None:
