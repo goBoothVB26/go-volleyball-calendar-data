@@ -61,11 +61,12 @@ body.vb-dark-page .sqs-button-element--primary:hover {
  *   --vb-dark-text: #e6e6e6      body text
  *   --vb-dark-brand: #FFC425     links (GOVB yellow, matches buttons)
  *
- * After pasting, check the site with the toggle on. Squarespace often
- * sets an explicit background color per PAGE SECTION (Site Styles),
- * which can sit on top of and hide the body background rule below --
- * if any section still shows white/light, right-click it -> Inspect,
- * find its wrapper class, and add that class to the first rule here.
+ * After pasting, check the site with the toggle on. If any section
+ * STILL shows white/light: right-click it -> Inspect, find the class
+ * on the element that's actually painted white (Squarespace 7.1 often
+ * nests a couple of layers deep -- the section, then a background
+ * div inside it), and add that class to the rules below alongside
+ * .page-section / .section-background.
  *
  * SCOPING: text/link color rules below are deliberately scoped to
  * ".sqs-block:not(.code-block)" -- native Squarespace content blocks
@@ -76,15 +77,24 @@ body.vb-dark-page .sqs-button-element--primary:hover {
  * !important). A blanket "color everything e6e6e6" rule would have
  * overridden that -- e.g. flattening the calendar's muted timestamps
  * and brand-colored headings to one color, and turning the "To
- * Community Calendar" button's dark text yellow-on-yellow. Only the
- * background-color rule applies to the outer page chrome (body,
- * #siteWrapper, #page, .Main-content), which never overlaps with the
- * widgets' own internal, more specific backgrounds.
+ * Community Calendar" button's dark text yellow-on-yellow.
  */
-body.vb-dark-page,
-body.vb-dark-page #siteWrapper,
-body.vb-dark-page #page,
-body.vb-dark-page .Main-content {
+/* Outer page chrome: body + Fluid Engine section backgrounds. 7.1
+   paints each section's background via a --sectionBackgroundColor CSS
+   variable (usually set inline per-section from Site Styles), read by
+   a nested .section-background layer -- so both the CSS variable
+   AND the rendered background-color need overriding here. */
+body.vb-dark-page {
+  background-color: #14171c !important;
+}
+body.vb-dark-page .page-section,
+body.vb-dark-page section[data-section-theme] {
+  --sectionBackgroundColor: #14171c !important;
+}
+body.vb-dark-page .page-section,
+body.vb-dark-page section[data-section-theme],
+body.vb-dark-page .section-background,
+body.vb-dark-page .content-wrapper {
   background-color: #14171c !important;
 }
 body.vb-dark-page .sqs-block:not(.code-block) p,
