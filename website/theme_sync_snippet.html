@@ -40,8 +40,40 @@
     var stored = storedTheme();
     return stored ? stored === "dark" : prefersDark();
   }
+
+  // Flips headings by their ACTUAL current color rather than forcing
+  // one fixed color on all of them: GOVB blue <-> GOVB yellow, black
+  // <-> white, anything else left untouched. Colors are captured once
+  // (lazily, on the first call) before this function ever overrides
+  // anything, so the captured value is always each heading's true
+  // native/light-mode color regardless of dark/light state at capture
+  // time. Skips headings inside a Code block (.code-block) -- the
+  // calendar widget and other custom widgets already manage their own
+  // full dark-mode color hierarchy internally.
+  var vbHeadingColors = null;
+  function vbFlipHeadings(dark) {
+    var BLUE = "rgb(0, 87, 184)", YELLOW = "rgb(255, 196, 37)",
+        BLACK = "rgb(0, 0, 0)", WHITE = "rgb(255, 255, 255)";
+    var INVERT = {};
+    INVERT[BLUE] = YELLOW; INVERT[YELLOW] = BLUE;
+    INVERT[BLACK] = WHITE; INVERT[WHITE] = BLACK;
+    if (!vbHeadingColors) {
+      vbHeadingColors = [];
+      Array.prototype.forEach.call(document.querySelectorAll("h1, h2, h3, h4, h5, h6"), function (el) {
+        if (el.closest(".code-block")) return;
+        vbHeadingColors.push([el, getComputedStyle(el).color]);
+      });
+    }
+    vbHeadingColors.forEach(function (pair) {
+      var el = pair[0], target = INVERT[pair[1]];
+      if (dark && target) el.style.setProperty("color", target, "important");
+      else el.style.removeProperty("color");
+    });
+  }
+
   function apply(dark) {
     document.body.classList.toggle("vb-dark-page", dark);
+    vbFlipHeadings(dark);
   }
 
   apply(currentDark());

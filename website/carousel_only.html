@@ -2431,6 +2431,37 @@
   };
 
   // ---- Light / dark mode ----
+  // Flips OTHER page headings (this widget's own h3s are handled by
+  // the .vb-dark rules above -- this is for native Squarespace content
+  // elsewhere on the page) by their ACTUAL current color rather than
+  // forcing one fixed color on all of them: GOVB blue <-> GOVB yellow,
+  // black <-> white, anything else left untouched. Colors are captured
+  // once (lazily, on the first call) before this function ever
+  // overrides anything, so the captured value is always each heading's
+  // true native/light-mode color regardless of dark/light state at
+  // capture time. Skips headings inside a Code block (.code-block) --
+  // this widget and any other custom widget on the page manage their
+  // own full dark-mode color hierarchy internally.
+  var vbHeadingColors = null;
+  function vbFlipHeadings(dark) {
+    var BLUE = "rgb(0, 87, 184)", YELLOW = "rgb(255, 196, 37)",
+        BLACK = "rgb(0, 0, 0)", WHITE = "rgb(255, 255, 255)";
+    var INVERT = {};
+    INVERT[BLUE] = YELLOW; INVERT[YELLOW] = BLUE;
+    INVERT[BLACK] = WHITE; INVERT[WHITE] = BLACK;
+    if (!vbHeadingColors) {
+      vbHeadingColors = [];
+      Array.prototype.forEach.call(document.querySelectorAll("h1, h2, h3, h4, h5, h6"), function (el) {
+        if (el.closest(".code-block")) return;
+        vbHeadingColors.push([el, getComputedStyle(el).color]);
+      });
+    }
+    vbHeadingColors.forEach(function (pair) {
+      var el = pair[0], target = INVERT[pair[1]];
+      if (dark && target) el.style.setProperty("color", target, "important");
+      else el.style.removeProperty("color");
+    });
+  }
   function applyTheme(dark) {
     var targets = [$("vbcal"), $("vb-overlay")];
     targets.forEach(function (el) {
@@ -2440,6 +2471,7 @@
     // Also flag the page body so site-wide dark styles (added in
     // Squarespace Design -> Custom CSS) can darken the rest of the page.
     document.body.classList.toggle("vb-dark-page", dark);
+    vbFlipHeadings(dark);
   }
   function prefersDark() {
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
