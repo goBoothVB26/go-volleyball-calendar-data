@@ -4563,7 +4563,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/ab3221b1-a752-4a72-a4e8-3f26ba1f5a2e.webp",
+      "image": null,
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_July_25_2026-2026-07-25T00:00:00"
     },
     {
@@ -4766,21 +4766,21 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Summer on Kappa Doubles",
+      "title": "Beast Coast Volleyball x Future Stars Volleyball Training Revco Indoor 4s",
       "start": "2026-08-08T00:00:00",
       "end": "2026-08-09T00:00:00",
-      "location": "Eckerd College",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/4s",
+      "location": "Future Stars Volleyball Training",
+      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 4s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "skill_level": "All Levels",
-      "gym_type": "Tournament",
+      "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-Summer_on_Kappa_Doubles-2026-08-08T00:00:00"
+      "uid": "Volleyball_Life-Beast_Coast_Volleyball_x_Future_Stars_Volleyball_Training_Revco_Indoor_4s-2026-08-08T00:00:00"
     }
   ],
   "ocoee_coed_league": [
