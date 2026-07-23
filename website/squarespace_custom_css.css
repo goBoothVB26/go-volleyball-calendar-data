@@ -111,6 +111,20 @@ body.vb-dark-page .section-border {
 body.vb-dark-page .sqs-block:not(.code-block) {
   color: #e6e6e6 !important;
 }
+/* Headings need a direct rule, not just inheritance: Squarespace's
+   own "Heading Font" typography applies its OWN color directly to
+   h1-h6 (not just inherited from a parent), so the wrapper rule above
+   never reaches them. Safe to target directly here -- unlike the old
+   broad "a" rule, h1-h6 are never button elements, so there's no
+   equivalent of the yellow-on-yellow conflict to worry about. */
+body.vb-dark-page .sqs-block:not(.code-block) h1,
+body.vb-dark-page .sqs-block:not(.code-block) h2,
+body.vb-dark-page .sqs-block:not(.code-block) h3,
+body.vb-dark-page .sqs-block:not(.code-block) h4,
+body.vb-dark-page .sqs-block:not(.code-block) h5,
+body.vb-dark-page .sqs-block:not(.code-block) h6 {
+  color: #e6e6e6 !important;
+}
 
 /* ===========================================================
  * Blog theming (native Squarespace 7.1 Blog Page)
