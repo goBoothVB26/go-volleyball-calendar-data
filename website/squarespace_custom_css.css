@@ -61,12 +61,33 @@ body.vb-dark-page .sqs-button-element--primary:hover {
  *   --vb-dark-text: #e6e6e6      body text
  *   --vb-dark-brand: #FFC425     links (GOVB yellow, matches buttons)
  *
- * After pasting, check the site with the toggle on. If any section
- * STILL shows white/light: right-click it -> Inspect, find the class
- * on the element that's actually painted white (Squarespace 7.1 often
- * nests a couple of layers deep -- the section, then a background
- * div inside it), and add that class to the rules below alongside
- * .page-section / .section-background.
+ * CONFIRMED via a live DOM walk (getComputedStyle up the ancestor chain
+ * from the widget): on this site, <body> is the ONLY element painting a
+ * background at all -- .content-wrapper, .content, the Fluid Engine
+ * section wrappers, etc. are all transparent. So there's no nested
+ * section-background layer to chase here.
+ *
+ * The reason body.vb-dark-page { ... !important } alone didn't win:
+ * <body> carries a large set of Squarespace-generated classes (visible
+ * in that DOM walk -- things like "sqs-seven-one" and
+ * "collection-<hash>"), and Squarespace's own generated Site Styles CSS
+ * sets the page background using one of those classes (e.g.
+ * "body.collection-<hash> { background-color: ... }"). That's the SAME
+ * specificity as "body.vb-dark-page" (one class + the body type), and
+ * Site Styles CSS loads after this Custom CSS panel -- so on an exact
+ * specificity tie, its rule wins the cascade regardless of !important
+ * on either side (a tie is broken by load order, not by which side has
+ * !important -- both have it in this rule, only the LOSING side's
+ * !important is invisible in the rendered result). The fix is a
+ * genuinely higher-specificity selector, not just !important again:
+ * chaining .sqs-seven-one (a class Squarespace puts on <body> on every
+ * 7.1 page, not page-specific like the collection hash) pushes this
+ * rule to two classes, unambiguously ahead of their one-class rule.
+ *
+ * If this STILL doesn't apply: reopen DevTools -> Elements -> select
+ * <body> -> Styles panel -> find background-color. It lists every
+ * matching rule with the losing ones struck through; whichever is
+ * struck-through here needs its class added alongside .sqs-seven-one.
  *
  * SCOPING: text/link color rules below are deliberately scoped to
  * ".sqs-block:not(.code-block)" -- native Squarespace content blocks
@@ -79,22 +100,8 @@ body.vb-dark-page .sqs-button-element--primary:hover {
  * and brand-colored headings to one color, and turning the "To
  * Community Calendar" button's dark text yellow-on-yellow.
  */
-/* Outer page chrome: body + Fluid Engine section backgrounds. 7.1
-   paints each section's background via a --sectionBackgroundColor CSS
-   variable (usually set inline per-section from Site Styles), read by
-   a nested .section-background layer -- so both the CSS variable
-   AND the rendered background-color need overriding here. */
-body.vb-dark-page {
-  background-color: #14171c !important;
-}
-body.vb-dark-page .page-section,
-body.vb-dark-page section[data-section-theme] {
-  --sectionBackgroundColor: #14171c !important;
-}
-body.vb-dark-page .page-section,
-body.vb-dark-page section[data-section-theme],
-body.vb-dark-page .section-background,
-body.vb-dark-page .content-wrapper {
+body.vb-dark-page,
+body.vb-dark-page.sqs-seven-one {
   background-color: #14171c !important;
 }
 body.vb-dark-page .sqs-block:not(.code-block) p,
