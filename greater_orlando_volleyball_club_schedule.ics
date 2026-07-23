@@ -15,14 +15,14 @@ DESCRIPTION:Summer Bash Tournament Details\n\nTournament Details\n\n- Date
  goes from 9am to 6pm \n- Two division tournament will be split 9am - 6pm 
  and 12pm - 9pm\n\n- Location: Dover Shores Community Center\n- 8 Player Ma
  x Roster\n- Iron Middles Allowed\nTRUE COED FORMAT - 3 Men + 3 Women on th
- e court at all times\n\nCome hang & have a good day\n\n- Free entry for an
- yone to come watch\n- Snacks and drinks provided for everyone \n- Lunch p
- rovided for players\n\nEntry & Prizes\n\n- $250 registration per team \n-
-  $500 cash prize for winner (subject to change with registration numbers)
-  \n- Individual awards for group stage\n- Finals MVP award\n\nHow to Regi
- ster\n\n- Team captains sign up your full team to secure your spot.\n- Spo
- ts are limited and will fill quickly.\n\nSummer 2026\n\nMore info: https:/
- /goadultsportsleague.leagueapps.com/app/tournaments/5018478
+ e court at all times\nCome hang & have a good day\n\n- Free entry for anyo
+ ne to come watch\n- Snacks and drinks provided for everyone \n- Lunch pro
+ vided for players\nEntry & Prizes\n\n- $250 registration per team \n- $50
+ 0 cash prize for winner (subject to change with registration numbers) \n-
+  Individual awards for group stage\n- Finals MVP award\nHow to Register\n\
+ n- Team captains sign up your full team to secure your spot.\n- Spots are 
+ limited and will fill quickly.\n\nSummer 2026\n\nMore info: https://goadul
+ tsportsleague.leagueapps.com/app/tournaments/5018478
 LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/app/tournaments/5018478
 END:VEVENT
@@ -787,5 +787,38 @@ DESCRIPTION:Instructor: Coach Trevor\n\nMore info: https://goadultsportsle
 LOCATION:College Park Neighborhood Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5064765-skills-trai
  ning-workout---july-26?ngmp_2023_iframe_transition=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Queens of the Court
+DTSTART;TZID=America/New_York:20260919T090000
+DTEND;TZID=America/New_York:20260919T170000
+UID:Greater_Orlando_Volleyball_Club-Queens_of_the_Court-2026-09-19T09:00:0
+ 0
+DESCRIPTION:Queens of the Court\nLadies\, you asked for it — it's back. 
+ Queens of the Court is Greater Orlando Volleyball's next women's tournamen
+ t\, one full Saturday of volleyball built entirely around you. Real divisi
+ ons\, real competition\, and a gym full of women who play the way you do. 
+ Grab your team and come take the crown.\n\nTournament Details\n- Date: Sat
+ urday\, September 19\, 2026\n- Time: 9:00 AM – 6:00 PM\n- Location: Dove
+ r Shores Community Center\n- 8 Player Max Roster\n- Iron Middles Allowed\n
+ \nTournament Format\n- 6 women on the court at all times\n- Pool play into
+  single elimination\n- Teams self-ref through bracket play\; semifinals an
+ d finals are officiated\n- Format depends on final team count — we'll co
+ nfirm the schedule once registration closes\nEntry & Prizes\n- $250 regist
+ ration per team\n- Entry covers champion prizes\, event shirts\, snacks an
+ d drinks\, and player lunch\n- Register by September 5 to guarantee your e
+ vent shirt\n- Individual awards for group stage\n- Finals MVP award\n- Reg
+ istrations support GOVB's adult volleyball programming across Orlando — 
+ we're a 501(c)(3) nonprofit\n\nCome hang & have a good day\n- Free entry f
+ or anyone to come watch\n- Snacks and drinks provided for everyone\n- Lunc
+ h provided for players\n\nDon't have a team yet?\nCome to Women's Open Gym
+  on Sundays in August — August 2\, 9\, 16\, and 23. That's where teams g
+ et built. Show up\, play\, find your six\, and register before spots fill.
+ \n\nHow to Register\n- Team captains sign up your full team to secure your
+  spot.\n- Register by September 5 to guarantee shirts for your roster.\n- 
+ Spots are limited and will fill quickly.\n\nMore info: https://goadultspor
+ tsleague.leagueapps.com/app/tournaments/5093604
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/app/tournaments/5093604
 END:VEVENT
 END:VCALENDAR

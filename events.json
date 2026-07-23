@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T10:41:09",
+  "generated": "2026-07-23T18:28:22",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -2697,7 +2697,7 @@
       "end": "2026-07-25T18:00:00",
       "all_day": false,
       "location": "Dover Shores Community Center",
-      "description": "Summer Bash Tournament Details\n\nTournament Details\n\n- Date: July 25, 2026\n- Time: 9:00 AM \u2013 9:00 PM\u00a0 - One division tournament goes from 9am to 6pm\u00a0\n- Two division tournament will be split 9am - 6pm and 12pm - 9pm\n\n- Location: Dover Shores Community Center\n- 8 Player Max Roster\n- Iron Middles Allowed\nTRUE COED FORMAT - 3 Men + 3 Women on the court at all times\n\nCome hang & have a good day\n\n- Free entry for anyone to come watch\n- Snacks and drinks provided for everyone\u00a0\n- Lunch provided for players\n\nEntry & Prizes\n\n- $250 registration per team\u00a0\n- $500 cash prize for winner (subject to change with registration numbers)\u00a0\n- Individual awards for group stage\n- Finals MVP award\n\nHow to Register\n\n- Team captains sign up your full team to secure your spot.\n- Spots are limited and will fill quickly.\n\nSummer 2026",
+      "description": "Summer Bash Tournament Details\n\nTournament Details\n\n- Date: July 25, 2026\n- Time: 9:00 AM \u2013 9:00 PM\u00a0 - One division tournament goes from 9am to 6pm\u00a0\n- Two division tournament will be split 9am - 6pm and 12pm - 9pm\n\n- Location: Dover Shores Community Center\n- 8 Player Max Roster\n- Iron Middles Allowed\nTRUE COED FORMAT - 3 Men + 3 Women on the court at all times\nCome hang & have a good day\n\n- Free entry for anyone to come watch\n- Snacks and drinks provided for everyone\u00a0\n- Lunch provided for players\nEntry & Prizes\n\n- $250 registration per team\u00a0\n- $500 cash prize for winner (subject to change with registration numbers)\u00a0\n- Individual awards for group stage\n- Finals MVP award\nHow to Register\n\n- Team captains sign up your full team to secure your spot.\n- Spots are limited and will fill quickly.\n\nSummer 2026",
       "url": "https://goadultsportsleague.leagueapps.com/app/tournaments/5018478",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -3362,18 +3362,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Jax_Scene_Beach_Coed_4s_August_8th-2026-08-08T00:00:00",
+      "uid": "Volleyball_Life-SSOVA's_Aug_8/9_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
       "club": "Volleyball Life",
-      "title": "Jax Scene Beach Coed 4s August 8th",
+      "title": "SSOVA's Aug 8/9 GULFPORT Men's/Women's/Coed, Beach Volleyball Tournament",
       "start": "2026-08-08T00:00:00",
-      "end": "2026-08-09T00:00:00",
+      "end": "2026-08-10T00:00:00",
       "all_day": true,
-      "location": "Jax Scene courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
+      "location": "Gulfport Beach Courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Co-ed",
+      "net_height": "Men's, Women's, Co-ed",
       "price": null,
       "image": null
     },
@@ -4751,6 +4751,22 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 575.0,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-Queens_of_the_Court-2026-09-19T09:00:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Queens of the Court",
+      "start": "2026-09-19T09:00:00",
+      "end": "2026-09-19T17:00:00",
+      "all_day": false,
+      "location": "Dover Shores Community Center",
+      "description": "Queens of the Court\nLadies, you asked for it \u2014 it's back. Queens of the Court is Greater Orlando Volleyball's next women's tournament, one full Saturday of volleyball built entirely around you. Real divisions, real competition, and a gym full of women who play the way you do. Grab your team and come take the crown.\n\nTournament Details\n- Date: Saturday, September 19, 2026\n- Time: 9:00 AM \u2013 6:00 PM\n- Location: Dover Shores Community Center\n- 8 Player Max Roster\n- Iron Middles Allowed\n\nTournament Format\n- 6 women on the court at all times\n- Pool play into single elimination\n- Teams self-ref through bracket play; semifinals and finals are officiated\n- Format depends on final team count \u2014 we'll confirm the schedule once registration closes\nEntry & Prizes\n- $250 registration per team\n- Entry covers champion prizes, event shirts, snacks and drinks, and player lunch\n- Register by September 5 to guarantee your event shirt\n- Individual awards for group stage\n- Finals MVP award\n- Registrations support GOVB's adult volleyball programming across Orlando \u2014 we're a 501(c)(3) nonprofit\n\nCome hang & have a good day\n- Free entry for anyone to come watch\n- Snacks and drinks provided for everyone\n- Lunch provided for players\n\nDon't have a team yet?\nCome to Women's Open Gym on Sundays in August \u2014 August 2, 9, 16, and 23. That's where teams get built. Show up, play, find your six, and register before spots fill.\n\nHow to Register\n- Team captains sign up your full team to secure your spot.\n- Register by September 5 to guarantee shirts for your roster.\n- Spots are limited and will fill quickly.",
+      "url": "https://goadultsportsleague.leagueapps.com/app/tournaments/5093604",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Women's",
+      "price": 250.0,
       "image": null
     },
     {
