@@ -81,7 +81,7 @@ site changes layout and an adapter's selectors need updating.
 | --- | --- |
 | `scraper/` | The scraper package: adapters, cache, tagging, iCal/JSON export |
 | `.github/workflows/update-calendar.yml` | The 6-hourly scrape-and-commit workflow (also runnable manually from the Actions tab) |
-| `website/` | Squarespace embed snippets: calendar widget, carousel, theme toggle, submit-event + volunteer pages, Apps Scripts |
+| `website/` | Squarespace embed snippets: calendar widget, carousel, theme toggle, submit-event + volunteer + blog pages, Apps Scripts |
 | `logos/` | Club logos referenced by the website (`logos_local_backup/` holds the originals) |
 | `scripts/` | Logo prep tools (transparency, white variants) |
 | `archive/` | Retired local-run tooling from before the scraper moved into this repo (see `MIGRATION.md`) |
