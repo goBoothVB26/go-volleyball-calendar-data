@@ -111,26 +111,15 @@ body.vb-dark-page .section-border {
 body.vb-dark-page .sqs-block:not(.code-block) {
   color: #e6e6e6 !important;
 }
-/* Headings need a direct rule, not just inheritance: Squarespace's
-   own "Heading Font" typography applies its OWN color directly to
-   h1-h6 (not just inherited from a parent), so the wrapper rule above
-   never reaches them. Safe to target directly here -- unlike the old
-   broad "a" rule, h1-h6 are never button elements, so there's no
-   equivalent of the yellow-on-yellow conflict to worry about.
-
-   Color: GOVB yellow, not the generic off-white -- this is the same
-   blue-in-light/yellow-in-dark brand inversion already used
-   everywhere else (buttons above, the calendar widget's own section
-   titles, the blog theming below), so headings stay "branded" instead
-   of looking like plain body text. */
-body.vb-dark-page .sqs-block:not(.code-block) h1,
-body.vb-dark-page .sqs-block:not(.code-block) h2,
-body.vb-dark-page .sqs-block:not(.code-block) h3,
-body.vb-dark-page .sqs-block:not(.code-block) h4,
-body.vb-dark-page .sqs-block:not(.code-block) h5,
-body.vb-dark-page .sqs-block:not(.code-block) h6 {
-  color: #FFC425 !important;
-}
+/* Headings (h1-h6) are deliberately NOT styled here. Which color a
+   heading should invert TO depends on what color it already IS
+   (GOVB blue -> GOVB yellow, black -> white, and vice versa) -- CSS
+   has no way to branch on an element's own current color, so that
+   logic lives in JS instead: see vbFlipHeadings() in
+   squarespace_calendar.html / carousel_only.html /
+   theme_toggle_widget.html / theme_sync_snippet.html (wherever
+   body.vb-dark-page gets toggled), which reads each heading's real
+   computed color and maps it to its inverse at runtime. */
 
 /* ===========================================================
  * Blog theming (native Squarespace 7.1 Blog Page)
