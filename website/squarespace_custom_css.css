@@ -116,14 +116,20 @@ body.vb-dark-page .sqs-block:not(.code-block) {
    h1-h6 (not just inherited from a parent), so the wrapper rule above
    never reaches them. Safe to target directly here -- unlike the old
    broad "a" rule, h1-h6 are never button elements, so there's no
-   equivalent of the yellow-on-yellow conflict to worry about. */
+   equivalent of the yellow-on-yellow conflict to worry about.
+
+   Color: GOVB yellow, not the generic off-white -- this is the same
+   blue-in-light/yellow-in-dark brand inversion already used
+   everywhere else (buttons above, the calendar widget's own section
+   titles, the blog theming below), so headings stay "branded" instead
+   of looking like plain body text. */
 body.vb-dark-page .sqs-block:not(.code-block) h1,
 body.vb-dark-page .sqs-block:not(.code-block) h2,
 body.vb-dark-page .sqs-block:not(.code-block) h3,
 body.vb-dark-page .sqs-block:not(.code-block) h4,
 body.vb-dark-page .sqs-block:not(.code-block) h5,
 body.vb-dark-page .sqs-block:not(.code-block) h6 {
-  color: #e6e6e6 !important;
+  color: #FFC425 !important;
 }
 
 /* ===========================================================
