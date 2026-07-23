@@ -104,17 +104,6 @@ body.vb-dark-page,
 body.vb-dark-page.sqs-seven-one {
   background-color: #14171c !important;
 }
-/* CONFIRMED via a full-page DOM scan (getComputedStyle on every element
-   under <body>): each Fluid Engine section paints its own background on
-   a SIBLING div (.section-background, plus a .section-border layer),
-   not on an ancestor of the section's content -- so it's invisible to a
-   parent-chain walk from inside the content, and body's own background
-   never shows through it. These need their own override, separate from
-   the body fix above. */
-body.vb-dark-page .section-background,
-body.vb-dark-page .section-border {
-  background-color: #14171c !important;
-}
 body.vb-dark-page .sqs-block:not(.code-block) p,
 body.vb-dark-page .sqs-block:not(.code-block) li,
 body.vb-dark-page .sqs-block:not(.code-block) span,
