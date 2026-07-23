@@ -2,12 +2,14 @@
  * Custom CSS. Versioned copy of what lives (or should live) in the
  * site's Custom CSS panel, so it's tracked alongside the widgets.
  *
- * Two sections:
+ * Three sections:
  *  1. Native Squarespace button theming (GOVB blue, inverting to GOVB
  *     yellow in dark mode) — matches the calendar widgets' buttons.
  *  2. NOTE: your existing body.vb-dark-page page-darkening rules
  *     (backgrounds, text, links) also belong in the same Custom CSS
  *     panel — keep those; this file only adds the button theming.
+ *  3. Blog Page theming (list + post views) — light mode only, see
+ *     that section's own header comment for why.
  *
  * Dark mode activates on pages that set body.vb-dark-page — i.e. pages
  * carrying the calendar widget, a form page, the theme toggle widget,
@@ -38,4 +40,112 @@ body.vb-dark-page .sqs-button-element--primary {
 body.vb-dark-page .sqs-block-button-element:hover,
 body.vb-dark-page .sqs-button-element--primary:hover {
   background: #e6ad0f !important;
+}
+
+/* ===========================================================
+ * Blog theming (native Squarespace 7.1 Blog Page)
+ * ===========================================================
+ * Themes the Blog Page's LIST view (post cards) and individual POST
+ * view to match the calendar/form pages: GOVB blue headings, yellow
+ * tag pills, same card shadow/radius language as the carousel cards.
+ *
+ * LIGHT MODE ONLY: a Blog Page's list/post template chrome is
+ * rendered by Squarespace itself, not a page-level Code block (unlike
+ * the Volunteer/Submit pages), so it can only be reached with Custom
+ * CSS -- the dark-mode toggle script needs sitewide Code Injection,
+ * which isn't available on this plan. If that plan limit changes
+ * later, a matching body.vb-dark-page block can be added here plus
+ * the sitewide script from theme_sync_snippet.html moved into Code
+ * Injection -> Header.
+ *
+ * TEMPLATE NOTE: Squarespace 7.1 template families render the native
+ * Blog Page's list view with one of two markup patterns. This covers
+ * BOTH, so exactly one set will actually match your template and the
+ * other is simply inert (targets elements that don't exist on your
+ * page -- harmless). If cards still look unstyled after pasting this:
+ * right-click a post card -> Inspect -> find the repeated class name
+ * wrapping each card/title/excerpt, and match rules below to it.
+ */
+
+/* --- Blog LIST view: post title, excerpt, meta, tags, "read more" --- */
+.blog-item-wrapper .entry-title, .blog-item-wrapper .entry-title a,
+.summary-item .summary-title, .summary-item .summary-title-link,
+article.blog-item .blog-title, article.blog-item .blog-title a {
+  color: #0057b8 !important;
+  font-weight: 700 !important;
+}
+.blog-item-wrapper .entry-title a:hover,
+.summary-item .summary-title-link:hover,
+article.blog-item .blog-title a:hover {
+  color: #00458f !important;
+}
+.blog-item-wrapper .blog-meta-item, .blog-item-wrapper .blog-meta-item a,
+.summary-item .summary-metadata-item, .summary-item .summary-metadata-item a,
+article.blog-item .blog-meta .blog-meta-item {
+  color: #5f6a75 !important;
+  font-size: 12.5px !important;
+}
+.blog-item-wrapper .excerpt, .blog-item-wrapper .blog-excerpt,
+.summary-item .summary-excerpt {
+  color: #333 !important;
+}
+.blog-item-wrapper .blog-more-link, .blog-item-wrapper a.more-link,
+.summary-item .summary-read-more-link {
+  color: #0057b8 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+.blog-item-wrapper .blog-more-link:hover, .blog-item-wrapper a.more-link:hover,
+.summary-item .summary-read-more-link:hover {
+  text-decoration: underline !important;
+}
+/* Tag / category pills: GOVB yellow, matching the calendar's filter
+   highlights (--vb-accent) */
+.blog-item-wrapper .blog-meta-item--tags a, .blog-item-wrapper .blog-meta-item--categories a,
+.summary-item .summary-metadata-item--tags a, .summary-item .summary-metadata-item--categories a,
+article.blog-item .tags a, article.blog-item .categories a {
+  background: #FFF8E1 !important;
+  color: #7a5c00 !important;
+  border-radius: 8px !important;
+  padding: 2px 8px !important;
+  font-size: 11.5px !important;
+  text-decoration: none !important;
+  margin: 0 4px 4px 0 !important;
+  display: inline-block !important;
+}
+/* Thumbnail corners, matching the carousel cards' --vb-radius-lg */
+.blog-item-wrapper .image-wrapper img, .blog-item-wrapper .summary-thumbnail img,
+.summary-item .summary-thumbnail-container img,
+article.blog-item .blog-image img {
+  border-radius: 12px !important;
+}
+
+/* --- Blog POST view: title, meta, body typography, tags --- */
+.blog-item .blog-title, .blog-item h1.entry-title, .blog-item h1.blog-title {
+  color: #0057b8 !important;
+}
+.blog-item .blog-meta, .blog-item .blog-meta-item {
+  color: #5f6a75 !important;
+}
+.blog-item .sqs-block-content p, .blog-item .sqs-block-content li {
+  line-height: 1.7 !important;
+}
+.blog-item .sqs-block-content blockquote {
+  border-left: 3px solid #FFC425 !important;
+  padding-left: 14px !important;
+  color: #444 !important;
+}
+.blog-item .tags a, .blog-item .categories a {
+  background: #FFF8E1 !important;
+  color: #7a5c00 !important;
+  border-radius: 8px !important;
+  padding: 2px 8px !important;
+  font-size: 11.5px !important;
+  text-decoration: none !important;
+}
+
+/* Pagination controls (Older Posts / Newer Posts) */
+.blog-pagination a, .pagination a {
+  color: #0057b8 !important;
+  font-weight: 600 !important;
 }
