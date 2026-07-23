@@ -118,15 +118,27 @@ body.vb-dark-page .sqs-block:not(.code-block) {
    broad "a" rule, h1-h6 are never button elements, so there's no
    equivalent of the yellow-on-yellow conflict to worry about.
 
-   Plain off-white, matching regular text -- no blue/yellow or
-   black/white brand-color flipping is attempted here. */
+   GOVB blue in light mode, GOVB yellow in dark mode -- the same
+   brand inversion already used everywhere else on the site (buttons
+   above, the calendar widget's own section titles, the blog theming
+   below). Applies in BOTH modes (the light-mode rule isn't scoped to
+   body.vb-dark-page), overriding whatever color Squarespace's Heading
+   Font setting would otherwise use. */
+.sqs-block:not(.code-block) h1,
+.sqs-block:not(.code-block) h2,
+.sqs-block:not(.code-block) h3,
+.sqs-block:not(.code-block) h4,
+.sqs-block:not(.code-block) h5,
+.sqs-block:not(.code-block) h6 {
+  color: #0057b8 !important;
+}
 body.vb-dark-page .sqs-block:not(.code-block) h1,
 body.vb-dark-page .sqs-block:not(.code-block) h2,
 body.vb-dark-page .sqs-block:not(.code-block) h3,
 body.vb-dark-page .sqs-block:not(.code-block) h4,
 body.vb-dark-page .sqs-block:not(.code-block) h5,
 body.vb-dark-page .sqs-block:not(.code-block) h6 {
-  color: #e6e6e6 !important;
+  color: #FFC425 !important;
 }
 
 /* ===========================================================
