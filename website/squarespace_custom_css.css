@@ -1,19 +1,13 @@
 /* GOVB site-wide Custom CSS — paste into Squarespace: Design ->
- * Custom CSS. This file is the SINGLE SOURCE OF TRUTH for the site's
- * Custom CSS panel: always paste the WHOLE file in as a full replace,
- * never a partial section, so nothing here can be silently lost.
- * (Earlier versions of this file only had section 1 below and relied
- * on page-darkening rules that lived ONLY in the live panel, untracked
- * -- pasting a "just add the new part" update over that wiped them and
- * broke dark mode sitewide. Section 2 below fixes that for good by
- * actually capturing those rules here.)
+ * Custom CSS. Versioned copy of what lives (or should live) in the
+ * site's Custom CSS panel, so it's tracked alongside the widgets.
  *
  * Three sections:
  *  1. Native Squarespace button theming (GOVB blue, inverting to GOVB
  *     yellow in dark mode) — matches the calendar widgets' buttons.
- *  2. Dark mode: page-wide rules (background, text, links) — see that
- *     section's own header comment; this is a RECONSTRUCTION, not a
- *     byte-for-byte restore of what was live before.
+ *  2. NOTE: your existing body.vb-dark-page page-darkening rules
+ *     (backgrounds, text, links) also belong in the same Custom CSS
+ *     panel — keep those; this file only adds the button theming.
  *  3. Blog Page theming (list + post views) — light mode only, see
  *     that section's own header comment for why.
  *
@@ -46,80 +40,6 @@ body.vb-dark-page .sqs-button-element--primary {
 body.vb-dark-page .sqs-block-button-element:hover,
 body.vb-dark-page .sqs-button-element--primary:hover {
   background: #e6ad0f !important;
-}
-
-/* ===========================================================
- * Dark mode: page-wide rules (background, text, links)
- * ===========================================================
- * RECONSTRUCTED, not restored: these rules previously existed only in
- * the live Custom CSS panel and were never captured in this repo, so
- * there's no way to recover their exact original values. This rebuilds
- * them using the SAME dark palette already defined in
- * squarespace_calendar.html's --vb-dark-* variables, so it reads as
- * one consistent theme with the calendar widget and buttons above:
- *   --vb-dark-bg: #14171c        page background
- *   --vb-dark-text: #e6e6e6      body text
- *   --vb-dark-brand: #FFC425     links (GOVB yellow, matches buttons)
- *
- * CONFIRMED via a live DOM walk (getComputedStyle up the ancestor chain
- * from the widget): on this site, <body> is the ONLY element painting a
- * background at all -- .content-wrapper, .content, the Fluid Engine
- * section wrappers, etc. are all transparent. So there's no nested
- * section-background layer to chase here.
- *
- * The reason body.vb-dark-page { ... !important } alone didn't win:
- * <body> carries a large set of Squarespace-generated classes (visible
- * in that DOM walk -- things like "sqs-seven-one" and
- * "collection-<hash>"), and Squarespace's own generated Site Styles CSS
- * sets the page background using one of those classes (e.g.
- * "body.collection-<hash> { background-color: ... }"). That's the SAME
- * specificity as "body.vb-dark-page" (one class + the body type), and
- * Site Styles CSS loads after this Custom CSS panel -- so on an exact
- * specificity tie, its rule wins the cascade regardless of !important
- * on either side (a tie is broken by load order, not by which side has
- * !important -- both have it in this rule, only the LOSING side's
- * !important is invisible in the rendered result). The fix is a
- * genuinely higher-specificity selector, not just !important again:
- * chaining .sqs-seven-one (a class Squarespace puts on <body> on every
- * 7.1 page, not page-specific like the collection hash) pushes this
- * rule to two classes, unambiguously ahead of their one-class rule.
- *
- * If this STILL doesn't apply: reopen DevTools -> Elements -> select
- * <body> -> Styles panel -> find background-color. It lists every
- * matching rule with the losing ones struck through; whichever is
- * struck-through here needs its class added alongside .sqs-seven-one.
- *
- * SCOPING: text/link color rules below are deliberately scoped to
- * ".sqs-block:not(.code-block)" -- native Squarespace content blocks
- * (Text, Image, ...) only, EXCLUDING Code blocks. Every custom widget
- * in this repo (calendar, buttons, forms) is explicitly documented as
- * living in a Code block and already manages its own full dark-mode
- * color hierarchy internally (muted/brand/text variants, none of it
- * !important). A blanket "color everything e6e6e6" rule would have
- * overridden that -- e.g. flattening the calendar's muted timestamps
- * and brand-colored headings to one color, and turning the "To
- * Community Calendar" button's dark text yellow-on-yellow.
- */
-body.vb-dark-page,
-body.vb-dark-page.sqs-seven-one {
-  background-color: #14171c !important;
-}
-body.vb-dark-page .sqs-block:not(.code-block) p,
-body.vb-dark-page .sqs-block:not(.code-block) li,
-body.vb-dark-page .sqs-block:not(.code-block) span,
-body.vb-dark-page .sqs-block:not(.code-block) h1,
-body.vb-dark-page .sqs-block:not(.code-block) h2,
-body.vb-dark-page .sqs-block:not(.code-block) h3,
-body.vb-dark-page .sqs-block:not(.code-block) h4,
-body.vb-dark-page .sqs-block:not(.code-block) h5,
-body.vb-dark-page .sqs-block:not(.code-block) h6 {
-  color: #e6e6e6 !important;
-}
-body.vb-dark-page .sqs-block:not(.code-block) a {
-  color: #FFC425 !important;
-}
-body.vb-dark-page .sqs-block:not(.code-block) a:hover {
-  color: #ffd35c !important;
 }
 
 /* ===========================================================
