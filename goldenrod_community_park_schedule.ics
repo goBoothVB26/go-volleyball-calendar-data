@@ -311,4 +311,16 @@ DESCRIPTION:More info: https://www.calendarwiz.com/mobile.html?crd=goldenr
 LOCATION:Goldenrod Community Park
 URL:https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Goldenrod Community Park] Adult Member Time: Volleyball Ct. A  Ba
+ sketball Ct B
+DTSTART;TZID=America/New_York:20261022T180000
+DTEND;TZID=America/New_York:20261022T200000
+UID:Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketba
+ ll_Ct_B-2026-10-22T18:00:00
+DESCRIPTION:More info: https://www.calendarwiz.com/mobile.html?crd=goldenr
+ odcommunitypark
+LOCATION:Goldenrod Community Park
+URL:https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark
+END:VEVENT
 END:VCALENDAR

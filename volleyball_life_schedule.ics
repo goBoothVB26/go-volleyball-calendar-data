@@ -192,18 +192,6 @@ LOCATION:Gulfport Beach
 URL:https://volleyballlife.com/event/40352
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Jax Scene Coed 4s Grass August 8th
-DTSTART;VALUE=DATE:20260808
-DTEND;VALUE=DATE:20260809
-UID:Volleyball_Life-Jax_Scene_Coed_4s_Grass_August_8th-2026-08-08T00:00:00
-DESCRIPTION:Tournament · Adults · Beach/Grass · 4s\n\nMore info: https:
- //volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.538
- 3832\,-81.3789269&dist=200
-LOCATION:Jax Scene courts
-URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
- l=28.5383832,-81.3789269&dist=200
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Beast Coast Volleyball x Future Stars Volleyball
   Training Revco Indoor 4s
 DTSTART;VALUE=DATE:20260808
@@ -214,6 +202,20 @@ DESCRIPTION:Tournament · Adults · Indoor · 4s\n\nMore info: https://vol
  leyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\
  ,-81.3789269&dist=200
 LOCATION:Future Stars Volleyball Training
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA's Aug 8/9 GULFPORT Men's/Women's/Coed\, Be
+ ach Volleyball Tournament
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260810
+UID:Volleyball_Life-SSOVA's_Aug_8/9_GULFPORT_Men's/Women's/Coed\,_Beach_Vo
+ lleyball_Tournament-2026-08-08T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Gulfport Beach Courts
 URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
