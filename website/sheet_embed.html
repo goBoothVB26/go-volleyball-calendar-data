@@ -2,26 +2,32 @@
      tab bar to switch between sheets -- paste this whole file into its
      own Squarespace CODE block.
 
-     SETUP for adding another sheet:
-       1. File -> Share -> Publish to web -> Embed tab -> pick the
-          SHEET you want (Named Ranges do NOT appear in this dropdown,
-          only whole sheet tabs do) -> Publish -> copy the
-          <iframe src="..."> URL.
-       2. Crop it to just the range you want by hand-appending
-          &range=A1:J22 to the END of that URL (adjust the cell range
-          to taste). Confirmed working by testing the URL directly in
-          a browser tab before adding it here. If a bare range like
-          that doesn't crop it for a given sheet, try prefixing the
-          sheet name instead: &range=SheetName!A1:J22
+     SETUP for adding another sheet (this spreadsheet has "Entire
+     document" published -- File -> Share -> Publish to web -- so
+     every sheet is reachable through the SAME published document ID
+     below by just swapping the gid; the Embed dialog's per-sheet
+     dropdown doesn't reliably refresh its code box when you change
+     selections, so this sidesteps it entirely):
+       1. Click the sheet tab you want in the actual spreadsheet (not
+          the Publish dialog) and read its gid from the browser
+          address bar: ...edit?gid=XXXXXXX#gid=XXXXXXX.
+       2. Build its URL from the pattern already used below:
+          https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=YOUR_GID&single=true&widget=true&headers=false&range=YOUR_RANGE
+          (swap only gid and range; single/widget/headers stay as-is).
+          If a bare range like A1:J22 doesn't crop a given sheet, try
+          prefixing the sheet name instead: SheetName!A1:J22
        3. Duplicate one .vb-sheet-tab button and one .vb-sheet-pane
           block below, give both the SAME new data-vb-sheet-tab /
-          data-vb-sheet-pane key, and drop the new src in.
+          data-vb-sheet-pane key, and drop the new src in (remember to
+          HTML-escape & as &amp; inside the src attribute).
        4. Set that pane's iframe height to roughly (row count * 21px)
           -- Google's default row height -- then nudge it in the
           browser once it's live until there's no extra scrollbar/gap.
           (Exact pixel-perfect sizing depends on your sheet's actual
           row/column sizes, which vary per sheet, so this always needs
-          a quick visual check after publishing.)
+          a quick visual check after publishing. Current sheets below
+          are all sized 18% larger than the raw row-count estimate, to
+          match the site's requested sizing.)
 
      LIMITATION: same as the Google Form embeds elsewhere on this site
      -- the sheet itself renders inside a cross-origin Google iframe
@@ -68,16 +74,52 @@
 <div class="vb-sheet-embed">
   <div class="vb-sheet-tabs">
     <button class="vb-sheet-tab active" data-vb-sheet-tab="rules">Rules</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="score-entry">Score Entry</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="standings">Standings</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="schedule">Schedule</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="pools-games">Pools &amp; Games Schedules</button>
   </div>
 
   <div class="vb-sheet-card">
     <div class="vb-sheet-pane active" data-vb-sheet-pane="rules">
-      <!-- Height 614px = 520px base + 18% -->
+      <!-- Height 614px = 520px base (22 rows * 21px) + 18% -->
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1317376277&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:J22"
         style="height: 614px;"
         loading="lazy"
         title="Rules"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="score-entry">
+      <!-- Height 595px = 504px base (24 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A2:K25"
+        style="height: 595px;"
+        loading="lazy"
+        title="Score Entry"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="standings">
+      <!-- Height 496px = 420px base (20 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N20"
+        style="height: 496px;"
+        loading="lazy"
+        title="Standings"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="schedule">
+      <!-- Height 1115px = 945px base (45 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=516909284&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:F45"
+        style="height: 1115px;"
+        loading="lazy"
+        title="Schedule"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="pools-games">
+      <!-- Height 743px = 630px base (30 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=668924726&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:F30"
+        style="height: 743px;"
+        loading="lazy"
+        title="Pools & Games Schedules"></iframe>
     </div>
   </div>
 </div>
