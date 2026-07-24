@@ -3,11 +3,16 @@
      own Squarespace CODE block.
 
      SETUP for adding another sheet:
-       1. In the Google Sheet, select the range you want shown, then
-          Data -> Named ranges, give it a name.
-       2. File -> Share -> Publish to web -> Embed tab -> pick that
-          named range from the dropdown (not "Entire Document") ->
-          Publish -> copy the <iframe src="..."> URL.
+       1. File -> Share -> Publish to web -> Embed tab -> pick the
+          SHEET you want (Named Ranges do NOT appear in this dropdown,
+          only whole sheet tabs do) -> Publish -> copy the
+          <iframe src="..."> URL.
+       2. Crop it to just the range you want by hand-appending
+          &range=A1:J22 to the END of that URL (adjust the cell range
+          to taste). Confirmed working by testing the URL directly in
+          a browser tab before adding it here. If a bare range like
+          that doesn't crop it for a given sheet, try prefixing the
+          sheet name instead: &range=SheetName!A1:J22
        3. Duplicate one .vb-sheet-tab button and one .vb-sheet-pane
           block below, give both the SAME new data-vb-sheet-tab /
           data-vb-sheet-pane key, and drop the new src in.
@@ -69,7 +74,7 @@
     <div class="vb-sheet-pane active" data-vb-sheet-pane="rules">
       <!-- Height 614px = 520px base + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1317376277&amp;single=true&amp;widget=true&amp;headers=false"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1317376277&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:J22"
         style="height: 614px;"
         loading="lazy"
         title="Rules"></iframe>
