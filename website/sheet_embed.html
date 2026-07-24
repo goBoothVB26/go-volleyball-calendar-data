@@ -25,7 +25,7 @@
      (background, tab bar) supports dark mode. -->
 
 <style>
-  .vb-sheet-embed { max-width: 900px; margin: 0 auto; }
+  .vb-sheet-embed { max-width: 1062px; margin: 0 auto; }  /* 900px + 18% */
 
   .vb-sheet-tabs {
     display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
@@ -67,9 +67,10 @@
 
   <div class="vb-sheet-card">
     <div class="vb-sheet-pane active" data-vb-sheet-pane="rules">
+      <!-- Height 614px = 520px base + 18% -->
       <iframe
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1317376277&amp;single=true&amp;widget=true&amp;headers=false"
-        style="height: 520px;"
+        style="height: 614px;"
         loading="lazy"
         title="Rules"></iframe>
     </div>
