@@ -12,8 +12,10 @@
           the Publish dialog) and read its gid from the browser
           address bar: ...edit?gid=XXXXXXX#gid=XXXXXXX.
        2. Build its URL from the pattern already used below:
-          https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=YOUR_GID&single=true&widget=true&headers=false&range=YOUR_RANGE
-          (swap only gid and range; single/widget/headers stay as-is).
+          https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=YOUR_GID&single=true&widget=true&headers=false&range=YOUR_RANGE&chrome=false
+          (swap only gid and range; single/widget/headers/chrome stay
+          as-is -- chrome=false hides Google's gray title/sheet-name
+          bar above the grid).
           If a bare range like A1:J22 doesn't crop a given sheet, try
           prefixing the sheet name instead: SheetName!A1:J22
        3. Duplicate one .vb-sheet-tab button and one .vb-sheet-pane
@@ -92,7 +94,7 @@
     <div class="vb-sheet-pane" data-vb-sheet-pane="score-entry">
       <!-- Height 719px = 609px base (29 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A2:K30"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A2:K30&amp;chrome=false"
         style="height: 719px;"
         loading="lazy"
         title="Score Entry"></iframe>
@@ -100,7 +102,7 @@
     <div class="vb-sheet-pane" data-vb-sheet-pane="standings">
       <!-- Height 620px = 525px base (25 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N25"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N25&amp;chrome=false"
         style="height: 620px;"
         loading="lazy"
         title="Standings"></iframe>
@@ -108,7 +110,7 @@
     <div class="vb-sheet-pane" data-vb-sheet-pane="schedule">
       <!-- Height 694px = 588px base (28 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=516909284&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N28"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=516909284&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N28&amp;chrome=false"
         style="height: 694px;"
         loading="lazy"
         title="Schedule"></iframe>
@@ -116,7 +118,7 @@
     <div class="vb-sheet-pane" data-vb-sheet-pane="pools-games">
       <!-- Height 743px = 630px base (30 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=668924726&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:F30"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTG32v2jr3SNftyIyJL2v94dmDsALDUqMscRm8gsTnAcMHaluAm5GN_fB6kor48xIBLTRdwNxJtVmTV/pubhtml?gid=668924726&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:F30&amp;chrome=false"
         style="height: 743px;"
         loading="lazy"
         title="Pools & Games Schedules"></iframe>
