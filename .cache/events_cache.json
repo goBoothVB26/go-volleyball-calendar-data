@@ -4527,7 +4527,7 @@
       "gym_type": "Tournament",
       "net_height": "Women's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/f8f489fa-e3af-4c34-b590-f057462f263e.png",
       "uid": "Volleyball_Life-Beast_Coast_Volleyball_Coed_4\u2019s__(One_girl_minimum)-2026-08-01T00:00:00"
     },
     {
@@ -4563,7 +4563,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png",
+      "image": null,
       "uid": "Volleyball_Life-SSOVA_CHAMPIONSHIPS_Men's/Women's/Coed\u2019s_St._Pete_Beach,_Beach_Volleyball_Tournament-2026-08-01T00:00:00"
     },
     {
