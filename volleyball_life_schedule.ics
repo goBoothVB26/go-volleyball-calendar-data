@@ -299,4 +299,18 @@ LOCATION:Future Stars Volleyball Training
 URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA's August 15/16 Men's/Women's/Coed’s ST P
+ ETE BEACH\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260817
+UID:Volleyball_Life-SSOVA's_August_15/16_Men's/Women's/Coed’s_ST_PETE_BE
+ ACH\,_Beach_Volleyball_Tournament-2026-08-15T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Crabby Bill's
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
 END:VCALENDAR

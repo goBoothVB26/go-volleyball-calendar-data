@@ -448,4 +448,15 @@ DESCRIPTION:More info: https://www.calendarwiz.com/calendars/calendar.php?
 LOCATION:Meadow Woods Recreation Center
 URL:https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Meadow Woods Recreation Center] Adult Volleyball Member Time
+DTSTART;TZID=America/New_York:20261024T180000
+DTEND;TZID=America/New_York:20261024T200000
+UID:Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-24
+ T18:00:00
+DESCRIPTION:More info: https://www.calendarwiz.com/calendars/calendar.php?
+ crd=meadowwoods&
+LOCATION:Meadow Woods Recreation Center
+URL:https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&
+END:VEVENT
 END:VCALENDAR

@@ -323,4 +323,14 @@ DESCRIPTION:More info: https://www.calendarwiz.com/mobile.html?crd=goldenr
 LOCATION:Goldenrod Community Park
 URL:https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Goldenrod Community Park] Adult Volleyball Court B
+DTSTART;TZID=America/New_York:20261024T180000
+DTEND;TZID=America/New_York:20261024T200000
+UID:Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-10-24T18:00:00
+DESCRIPTION:More info: https://www.calendarwiz.com/mobile.html?crd=goldenr
+ odcommunitypark
+LOCATION:Goldenrod Community Park
+URL:https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark
+END:VEVENT
 END:VCALENDAR
