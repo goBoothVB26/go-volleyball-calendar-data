@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T19:05:12",
+  "generated": "2026-07-27T23:46:07",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -4559,6 +4559,22 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 450.0,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-Grass_Nationals_Qualifier_'26-2026-09-05T09:00:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Grass Nationals Qualifier '26",
+      "start": "2026-09-05T09:00:00",
+      "end": "2026-09-05T17:00:00",
+      "all_day": false,
+      "location": "Barnett Park",
+      "description": "AVP Grass Nationals Qualifier '26\nThis is it. Your shot. Your stage. Your ticket to Nationals.\n\nOne tournament. Four divisions. A trip to Gainesville on the line. This is where champions get made and where the real ones separate themselves from the pack. Elite grass volleyball, stacked competition, and a straight shot to AVP Grass Nationals for whoever walks off the court on top.\n\nShow up ready to compete, because only the best team in each division is walking away sponsored to Nationals. No shortcuts. No easy pools. Just you, the grass, and everything on the line.\n\nTournament Details\n- Date: September 5th\n- Time: 9:00 AM \u2013 5:00 PM\n- Location: Barnett Park\n- 3v3 Format\n\nDivisions\n- Men's 3s \u2014 B/BB\n- Men's 3s \u2014 A/AA\n- Women's 3s \u2014 B/BB\n- Women's 3s \u2014 A/AA\n\nCompetition Format\nTeams will be grouped within their division and placed into pools to ensure competitive matchups throughout the day. Top finishers earn qualifying points/spots toward AVP Nationals. The goal is simple: give every team meaningful reps against opponents at or near their level, on the road to Nationals.\n\nEntry & Prizes\n- $150 per team\n- Qualifying spots toward AVP Nationals\n- The winning team in each division will be sponsored to compete at the 2026 AVP Grass Nationals in Gainesville, FL on October 24th \u2014 entry fee, lodging, jersey, and food and snacks covered\n\nWho This Is For\nThis isn't for everyone. This is for the teams who eat, sleep, and breathe the grind \u2014 the ones chasing Nationals and refusing to settle for anything less. If you're hungry, if you're ready to compete against the best, and if you're not afraid to leave it all on the court for a shot at Gainesville \u2014 this is your tournament. Show up. Compete. Earn it.\n\nHow to Register\n- Team captains sign up your trio and select your division to secure your spot.\n- Spots are limited and will fill quickly.\nQuestions - Reach out to grassevents@govolleyball.org\u00a0\n- DM us on\u00a0Instragram @greaterorlandovolleyball",
+      "url": "https://goadultsportsleague.leagueapps.com/app/tournaments/5097968",
+      "skill_level": "A/AA, B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's",
+      "price": 150.0,
       "image": null
     },
     {
