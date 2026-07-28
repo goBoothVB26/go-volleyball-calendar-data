@@ -16,6 +16,15 @@ Subprogram pages (e.g. Open Gym class detail) use a different
 The date comes from the `.program-name` text (e.g. "July 5th @
 College Park"), the time and location come from the 2nd and 3rd
 `<em>` tags inside `.col-4` of that row.
+
+Some subprogram pages (e.g. Open Gym) group their rows under
+`header.program-cat-header` banners naming the session's net height
+("Women's Net Height", "Men's Net Height") -- these headers are
+siblings of the `.program-row` divs they precede, not ancestors, so
+each row's net height is whatever category header last appeared
+before it in document order (a plain `.program-cat-header` like
+"Completed" names no net height, leaving it for the usual
+title/description keyword inference).
 """
 
 import re
@@ -26,7 +35,7 @@ from dateutil import parser as dateparser
 
 from .. import leagueapps
 from ..dateparse import coerce_upcoming_year
-from ..tagging import infer_gym_type
+from ..tagging import infer_gym_type, infer_net_heights
 from ..fetch import fetch_rendered, fetch_static
 from ..models import Event
 from .base import ClubAdapter
@@ -319,6 +328,12 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         the location is the last em that isn't the time and isn't the
         season date-range ('Jul 1 - Sep 30'). Some rows carry extra ems
         (e.g. a notes line), so fixed indexes mis-assign fields.
+
+        Rows are walked alongside `header.program-cat-header` banners in
+        document order (both matched in one pass, since the headers are
+        siblings of the rows they group, not ancestors) so each row picks
+        up whichever category header last appeared before it, e.g.
+        "Women's Net Height" -> net_height="Women's".
         """
         events: list[Event] = []
         year = datetime.now().year
@@ -330,7 +345,16 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         # Workout" -> Clinics/Training).
         gym_type = infer_gym_type(program_title) if program_title else None
 
-        for row in soup.select("div.program-row"):
+        category_net_height: Optional[str] = None
+        for el in soup.find_all(class_=lambda c: c and ("program-cat-header" in c or "program-row" in c)):
+            classes = el.get("class") or []
+            if "program-cat-header" in classes:
+                cat_name_el = el.select_one(".program-cat-name")
+                category_text = cat_name_el.get_text(strip=True) if cat_name_el else ""
+                category_net_height = infer_net_heights(category_text)
+                continue
+
+            row = el
             name_el = row.select_one(".program-name")
             if not name_el:
                 continue
@@ -387,6 +411,7 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
                     url=url,
                     price=price,
                     gym_type=gym_type,
+                    net_height=category_net_height,
                 )
             )
 
