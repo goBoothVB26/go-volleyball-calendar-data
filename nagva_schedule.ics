@@ -247,11 +247,11 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Josh
  n: Date/Time | October 2\, 2026 at 7:00pm | Location | TBD | Seeding Party
  \n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/
  Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines:
-  July 31\, 2026 | September 17\, 2026 | Addl. Player Fee | 600 | 650 | 0 |
-  Payment Details\n\nPayment Details: Personal Check | Cashier's Check | fa
- lse | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.
- nagva.org/tournaments-1/fall-classic-2026\n\nMore info: https://www.nagva.
- org/tournaments-1/fall-classic-2026
+  August 31\, 2026 | September 17\, 2026 | Addl. Player Fee | 600 | 650 | 0
+  | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | 
+ false | false | Payment Link | Venmo | Facilities\n\nMore info: https://ww
+ w.nagva.org/tournaments-1/fall-classic-2026\n\nMore info: https://www.nagv
+ a.org/tournaments-1/fall-classic-2026
 LOCATION:RYSE Energy StarCenter Multisport Farmers Branch | 2400 Pike St\,
   Farmers Branch\, TX 75234\, USA | Dallas Premier Volleyball Club | 4452 A
  lpha Rd\, Farmers Branch\, TX 75244\, USA | Registration
@@ -395,18 +395,18 @@ DTSTART;VALUE=DATE:20261121
 UID:NAGVA-Caribbean_Cup_2026-2026-11-21T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Feli
  x Roman Hernandez | Felix Roman Hernandez | Divisions\n\nDivisions: Tourna
- ment Cap | 60 | B | 30 | BB | 30 | 15 | BB3 | Waitlist Priority | Teams wi
- ll be confirmed as they pay\, and the divisional caps will be changed acco
- rdingly. The caps shown on this page are subject to change at ANY time. | 
- Waitlist Date | October 15\, 2026 | Payment Deadlines\n\nRegistration: Dat
- e/Time | November 20\, 2026\, 5:00 AM to 9:00 PM | Location | Seeding Part
- y\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet
- /Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines
- : July 15\, 2026 | August 30\, 2026 | October 15\, 2026 | Addl. Player Fee
-  | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Che
- ck | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n
- \nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026\n\nMor
- e info: https://www.nagva.org/tournaments-1/caribbean-cup-2026
+ ment Cap | 60 | B | 30 | BB | 30 | 15 | A1 | Waitlist Priority | Teams wil
+ l be confirmed as they pay\, and the divisional caps will be changed accor
+ dingly. The caps shown on this page are subject to change at ANY time. | W
+ aitlist Date | October 15\, 2026 | Payment Deadlines\n\nRegistration: Date
+ /Time | November 20\, 2026\, 5:00 AM to 9:00 PM | Location | Seeding Party
+ \n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/
+ Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines:
+  July 15\, 2026 | August 30\, 2026 | October 15\, 2026 | Addl. Player Fee 
+ | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Chec
+ k | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\
+ nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026\n\nMore
+  info: https://www.nagva.org/tournaments-1/caribbean-cup-2026
 LOCATION:Coliseo Pedrin Zorrilla | CW7H+X64\, Calle Nemesio R. Canales\, S
  an Juan\, 00918\, Puerto Rico | Borinken Coui Dome | 9W6W+3GV\, PR-176\, S
  an Juan\, 00926\, Puerto Rico | Registration
@@ -2083,5 +2083,26 @@ LOCATION:SF Elite Annex | 415 E Grand Ave.\, South San Francisco\, CA 9408
  Francisco\, CA 94080\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/san-francisco-red%2C-white-%26-blu
  e-ball-xxv--
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] Splash Revival
+DTSTART;VALUE=DATE:20260926
+UID:NAGVA-Splash_Revival-2026-09-26T00:00:00
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Alex
+  Glime | Jimmy Schultz | Divisions\n\nDivisions: Tournament Cap | 36 | B |
+  18 | BB | 12 | 6 | BB3 | Waitlist Priority | Teams will be confirmed as t
+ hey pay\, and the divisional caps will be changed accordingly. The caps sh
+ own on this page are subject to change at ANY time. | Waitlist Date | Paym
+ ent Deadlines\n\nRegistration: Date/Time | Location | TBD | Seeding Party\
+ n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/A
+ wards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: 
+ August 31\, 2026 | September 12\, 2026 | Addl. Player Fee | 450 | 550 | 50
+  | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | 
+ Payment Link | Venmo | @james-schultziv | Facilities\n\nMore info: https:/
+ /www.nagva.org/tournaments-1/splash-revival\n\nMore info: https://www.nagv
+ a.org/tournaments-1/splash-revival
+LOCATION:JustAGame Fieldhouse Reedsburg | 1501 N Viking Dr\, Reedsburg\, W
+ I 53959\, USA | Registration
+URL:https://www.nagva.org/tournaments-1/splash-revival
 END:VEVENT
 END:VCALENDAR
