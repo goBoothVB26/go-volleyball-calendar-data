@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T18:04:43",
+  "generated": "2026-07-29T23:41:02",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -3071,7 +3071,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/6b3c70ff-b0b3-4526-a75d-2c3758195587.jpg"
     },
     {
       "uid": "Volleyball_Life-SSOVA_CHAMPIONSHIPS_Men's/Women's/Coed\u2019s_St._Pete_Beach,_Beach_Volleyball_Tournament-2026-08-01T00:00:00",
@@ -3119,7 +3119,23 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/5a4f5ccc-83ba-4f75-ada9-a941954278ed.jpeg"
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Short_King_of_the_Beach_Clinic_-_Naples_FL-2026-08-01T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Short King of the Beach Clinic - Naples FL",
+      "start": "2026-08-01T00:00:00",
+      "end": "2026-08-02T00:00:00",
+      "all_day": true,
+      "location": "Lowdermilk Park Naples",
+      "description": "Clinic \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40012",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Summer-2026-08-01T17:00:00",
@@ -3819,22 +3835,6 @@
       "location": "Cady Way Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyvortex.volleyballlife.com/events",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volleyball_Life-Grass_Fest_Doubles-2026-08-15T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Grass Fest Doubles",
-      "start": "2026-08-15T00:00:00",
-      "end": "2026-08-17T00:00:00",
-      "all_day": true,
-      "location": "UCF Memory Mall",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40433",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
