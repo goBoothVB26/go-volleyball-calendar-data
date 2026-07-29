@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T23:37:25",
+  "generated": "2026-07-29T11:14:33",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -1918,7 +1918,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -2126,7 +2126,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -2494,7 +2494,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -2834,22 +2834,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-07-28T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-28T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -2946,6 +2930,22 @@
       "image": null
     },
     {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-07-29T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-30T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
@@ -2974,7 +2974,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -3087,7 +3087,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
     },
     {
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._1st_2026-2026-08-01T00:00:00",
@@ -3374,7 +3374,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -3774,7 +3774,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -3819,6 +3819,22 @@
       "location": "Cady Way Park",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
       "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Grass_Fest_Doubles-2026-08-15T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Grass Fest Doubles",
+      "start": "2026-08-15T00:00:00",
+      "end": "2026-08-17T00:00:00",
+      "all_day": true,
+      "location": "UCF Memory Mall",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s",
+      "url": "https://volleyballlife.com/event/40433",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
@@ -4046,7 +4062,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {
@@ -4334,7 +4350,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null
     },
     {

@@ -901,7 +901,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null,
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-09T18:20:00"
     },
@@ -937,7 +937,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null,
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-16T18:20:00"
     },
@@ -991,7 +991,7 @@
       "skill_level": "A/AA, B/BB",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
-      "price": 70.0,
+      "price": 40.0,
       "image": null,
       "uid": "Out_Sports_League-Thursdays_-_Competitive_(A/B)-2026-07-23T18:20:00"
     },
@@ -2673,6 +2673,24 @@
       "price": null,
       "image": "https://vblimages.blob.core.windows.net/images/f455fe8b-3139-4a67-842d-bdad524ac5eb.png",
       "uid": "Volleyball_Life-Mini_Pop_Up_(_Summer)_Mini_Madness_'26-2026-07-26T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "Sand Coed 4's Social League - Wednesdays, Summer 2026",
+      "start": "2026-07-29T00:00:00",
+      "end": "2026-09-17T00:00:00",
+      "location": "Newberry Sand Courts at Jimmy Durden Park",
+      "description": "League \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/39830",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": "https://vblimages.blob.core.windows.net/images/61842910-af9f-451e-988b-8a5d99d23fe0.jpg",
+      "uid": "Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays,_Summer_2026-2026-07-29T00:00:00"
     }
   ],
   "ocoee_coed_league": [
