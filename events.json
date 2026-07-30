@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T23:41:02",
+  "generated": "2026-07-30T10:40:50",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -2930,22 +2930,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-07-29T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-30T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
@@ -2975,6 +2959,22 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-07-30T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -6191,6 +6191,38 @@
       "gym_type": "Open Gym",
       "net_height": "Women's",
       "price": 65.0,
+      "image": null
+    },
+    {
+      "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-27T20:15:00",
+      "club": "Ocoee Open Gym Volleyball",
+      "title": "Open Gym Volleyball",
+      "start": "2026-10-27T20:15:00",
+      "end": "2026-10-27T22:30:00",
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nAnnual court pass available for $35.\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Co-ed",
+      "price": 3.0,
+      "image": null
+    },
+    {
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-28T18:00:00",
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time (Cancelled)",
+      "start": "2026-10-28T18:00:00",
+      "end": "2026-10-28T20:00:00",
+      "all_day": false,
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
       "image": null
     },
     {
