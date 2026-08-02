@@ -4923,7 +4923,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/2378284e-39d3-492b-8f7c-b1a7b9128b68.png",
+      "image": null,
       "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00"
     },
     {
@@ -4941,7 +4941,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/bf50786f-29d5-4b2f-a7d1-321902194d32.png",
+      "image": null,
       "uid": "Volleyball_Life-Summer_on_Kappa_Doubles-2026-08-08T00:00:00"
     },
     {
@@ -4977,7 +4977,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/e9be4716-8ea2-48ad-89b5-747a41ab69d5.jpeg",
       "uid": "Volleyball_Life-Jax_Scene_Coed_4s_Grass_August_8th-2026-08-08T00:00:00"
     },
     {
