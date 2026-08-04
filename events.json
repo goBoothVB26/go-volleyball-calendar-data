@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-03T23:53:38",
+  "generated": "2026-08-04T11:15:17",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -3301,7 +3301,7 @@
       "uid": "ocoee_coed_league-season-tbd-placeholder",
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-03T18:30:00",
+      "start": "2026-08-04T18:30:00",
       "end": null,
       "all_day": false,
       "location": "Jim Beech Recreation Center",
@@ -4194,17 +4194,17 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Grass_Dragon_M4\u2019s_W3\u2019s-2026-08-22T00:00:00",
+      "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._22nd_2026-2026-08-22T00:00:00",
       "club": "Volleyball Life",
-      "title": "Grass Dragon M4\u2019s W3\u2019s",
+      "title": "Adult Beach Volleyball Clinic: Sat, Aug. 22nd 2026",
       "start": "2026-08-22T00:00:00",
       "end": "2026-08-23T00:00:00",
       "all_day": true,
-      "location": "Turtle Run Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/40166",
+      "location": "The Pit: Frost Park, Dania Beach, Fl",
+      "description": "Clinic \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40188",
       "skill_level": "All Levels",
-      "gym_type": "Tournament",
+      "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
