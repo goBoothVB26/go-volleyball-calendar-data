@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05T19:10:00",
+  "generated": "2026-08-05T23:35:18",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -3471,7 +3471,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-SSOVA's_Aug_8/9_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
@@ -3487,7 +3487,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00",
@@ -3503,7 +3503,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/2378284e-39d3-492b-8f7c-b1a7b9128b68.png"
     },
     {
       "uid": "Volleyball_Life-Summer_on_Kappa_Doubles-2026-08-08T00:00:00",
@@ -3519,7 +3519,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/bf50786f-29d5-4b2f-a7d1-321902194d32.png"
     },
     {
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._8th_2026-2026-08-08T00:00:00",
@@ -3551,7 +3551,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/e9be4716-8ea2-48ad-89b5-747a41ab69d5.jpeg"
     },
     {
       "uid": "Volleyball_Life-CCVL_GRASH_BASH-2026-08-08T00:00:00",
@@ -4290,17 +4290,17 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Grass_Dragon_M4\u2019s_W3\u2019s-2026-08-22T00:00:00",
+      "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._22nd_2026-2026-08-22T00:00:00",
       "club": "Volleyball Life",
-      "title": "Grass Dragon M4\u2019s W3\u2019s",
+      "title": "Adult Beach Volleyball Clinic: Sat, Aug. 22nd 2026",
       "start": "2026-08-22T00:00:00",
       "end": "2026-08-23T00:00:00",
       "all_day": true,
-      "location": "Turtle Run Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/40166",
+      "location": "The Pit: Frost Park, Dania Beach, Fl",
+      "description": "Clinic \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40188",
       "skill_level": "All Levels",
-      "gym_type": "Tournament",
+      "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
@@ -5049,7 +5049,7 @@
       "end": null,
       "all_day": true,
       "location": "Polideportivo Revolucion | C. Nueva Escocia 1537, Providencia 2a. Secc, 44638 Guadalajara, Jal., Mexico | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Steven Acosta | Steven Acosta | Divisions\n\nDivisions: Tournament Cap | 36 | B | 18 | BB3 | 18 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 7, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 8, 2026 | Addl. Player Fee | 250 (MXN) | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | https://venmo.com/u/Sacosta | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/guadalajara-nagva-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Steven Acosta | Steven Acosta | Divisions\n\nDivisions: Tournament Cap | 36 | B | 18 | BB3 | 18 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 7, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 9/11/2026 | Location | C. Miguel Lerdo de Tejada 2170, Col Americana, Americana, 44150 Guadalajara, Jal., Mexico | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 8, 2026 | Addl. Player Fee | 250 (MXN) | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | https://venmo.com/u/Sacosta | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/guadalajara-nagva-2026",
       "url": "https://www.nagva.org/tournaments-1/guadalajara-nagva-2026",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
@@ -6639,6 +6639,22 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 200.0,
+      "image": null
+    },
+    {
+      "uid": "NAGVA-Golden_and_Green_Apple-2026-11-14T00:00:00",
+      "club": "NAGVA",
+      "title": "Golden and Green Apple",
+      "start": "2026-11-14T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "Bayard Rustin Education Complex | 351 W 18th St, New York, NY 10011, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Joshua Christensen | Andrew Dowdye | Divisions\n\nDivisions: Tournament Cap | 16 | Legends B1 | 8 | C | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: November 2, 2026 | Addl. Player Fee | 500 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/goldn-and-green-apple",
+      "url": "https://www.nagva.org/tournaments-1/goldn-and-green-apple",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 500.0,
       "image": null
     },
     {
