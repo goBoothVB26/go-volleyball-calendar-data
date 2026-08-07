@@ -5103,7 +5103,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png",
+      "image": null,
       "uid": "Volleyball_Life-SSOVA's_Aug_8/9_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-08-08T00:00:00"
     },
     {
@@ -5121,7 +5121,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/2378284e-39d3-492b-8f7c-b1a7b9128b68.png",
       "uid": "Volleyball_Life-Rat_Lord_Back_To_School_Bash-2026-08-08T00:00:00"
     },
     {
@@ -5139,7 +5139,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/bf50786f-29d5-4b2f-a7d1-321902194d32.png",
       "uid": "Volleyball_Life-Summer_on_Kappa_Doubles-2026-08-08T00:00:00"
     },
     {
@@ -5157,7 +5157,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/ab3221b1-a752-4a72-a4e8-3f26ba1f5a2e.webp",
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._8th_2026-2026-08-08T00:00:00"
     },
     {
@@ -5211,7 +5211,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/f8f489fa-e3af-4c34-b590-f057462f263e.png",
+      "image": null,
       "uid": "Volleyball_Life-Beast_Coast_Volleyball_x_Future_Stars_Volleyball_Training_Revco_Indoor_4s-2026-08-08T00:00:00"
     },
     {
@@ -5342,24 +5342,6 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "SSOVA's August 22/23 Men's/Women's/Coed\u2019s ST PETE BEACH, Beach Volleyball Tournament",
-      "start": "2026-08-22T00:00:00",
-      "end": "2026-08-24T00:00:00",
-      "location": "Upham Beach Park- St. Pete Beach",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/event/33570",
-      "category": null,
-      "all_day": true,
-      "stable_id": null,
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": null,
-      "image": null,
-      "uid": "Volleyball_Life-SSOVA's_August_22/23_Men's/Women's/Coed\u2019s_ST_PETE_BEACH,_Beach_Volleyball_Tournament-2026-08-22T00:00:00"
-    },
-    {
-      "club": "Volleyball Life",
       "title": "Adult Beach Volleyball Clinic: Sat, Aug. 22nd 2026",
       "start": "2026-08-22T00:00:00",
       "end": "2026-08-23T00:00:00",
@@ -5375,6 +5357,24 @@
       "price": null,
       "image": null,
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._22nd_2026-2026-08-22T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "CHARITY VETERANS SSOVA 4's Men's/Women's/Coed\u2019s Vet Sport's Gulfport, Beach Volleyball Tournament",
+      "start": "2026-08-08T00:00:00",
+      "end": "2026-11-09T00:00:00",
+      "location": "Gulfport Beach Courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Volleyball_Life-CHARITY_VETERANS_SSOVA_4's_Men's/Women's/Coed\u2019s_Vet_Sport's_Gulfport,_Beach_Volleyball_Tournament-2026-08-08T00:00:00"
     }
   ],
   "ocoee_coed_league": [
