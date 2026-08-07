@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T16:42:34",
+  "generated": "2026-08-07T22:07:55",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -1817,12 +1817,12 @@
       "end": "2026-07-05T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": "Instructor: Jason Davilla",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
-      "gym_type": "Clinics/Training",
+      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": 25.0,
+      "price": 5.0,
       "image": null
     },
     {
@@ -2009,12 +2009,12 @@
       "end": "2026-07-12T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": "Instructor: Jason Davilla",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
-      "gym_type": "Clinics/Training",
+      "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": 25.0,
+      "price": 5.0,
       "image": null
     },
     {
@@ -2793,12 +2793,12 @@
       "end": "2026-07-26T17:00:00",
       "all_day": false,
       "location": "College Park Neighborhood Center",
-      "description": "Instructor: Jason Davilla",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5064765-skills-training-workout---july-26?ngmp_2023_iframe_transition=1",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
-      "gym_type": "Clinics/Training",
-      "net_height": "Men's, Co-ed",
-      "price": 25.0,
+      "gym_type": "Open Gym",
+      "net_height": "Men's",
+      "price": 5.0,
       "image": null
     },
     {
@@ -3519,7 +3519,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/bf50786f-29d5-4b2f-a7d1-321902194d32.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._8th_2026-2026-08-08T00:00:00",
@@ -3535,7 +3535,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/ab3221b1-a752-4a72-a4e8-3f26ba1f5a2e.webp"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Jax_Scene_Coed_4s_Grass_August_8th-2026-08-08T00:00:00",
@@ -3583,7 +3583,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/f8f489fa-e3af-4c34-b590-f057462f263e.png"
     },
     {
       "uid": "Volleyball_Life-Beach_Culture_Open_2026-2026-08-08T00:00:00",
@@ -3593,27 +3593,11 @@
       "end": "2026-08-10T00:00:00",
       "all_day": true,
       "location": "Upham Beach, St. Pete Beach, FL",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 1s/2s",
       "url": "https://volleyballlife.com/event/40432",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volleyball_Life-CHARITY_VETERANS_SSOVA_4's_Men's/Women's/Coed\u2019s_Vet_Sport's_Gulfport,_Beach_Volleyball_Tournament-2026-08-08T00:00:00",
-      "club": "Volleyball Life",
-      "title": "CHARITY VETERANS SSOVA 4's Men's/Women's/Coed\u2019s Vet Sport's Gulfport, Beach Volleyball Tournament",
-      "start": "2026-08-08T00:00:00",
-      "end": "2026-11-09T00:00:00",
-      "all_day": true,
-      "location": "Gulfport Beach Courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
       "price": null,
       "image": null
     },
@@ -4290,18 +4274,34 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat,_Aug._22nd_2026-2026-08-22T00:00:00",
+      "uid": "Volleyball_Life-SBVA_Dinosaur_+_Coed_+_Juniors_Tournament-2026-08-22T00:00:00",
       "club": "Volleyball Life",
-      "title": "Adult Beach Volleyball Clinic: Sat, Aug. 22nd 2026",
+      "title": "SBVA Dinosaur + Coed + Juniors Tournament",
       "start": "2026-08-22T00:00:00",
       "end": "2026-08-23T00:00:00",
       "all_day": true,
-      "location": "The Pit: Frost Park, Dania Beach, Fl",
-      "description": "Clinic \u00b7 Adults \u00b7 Beach \u00b7 1s",
-      "url": "https://volleyballlife.com/event/40188",
+      "location": "Rita Crockett Beach Sports Academy",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/event/40704",
       "skill_level": "All Levels",
-      "gym_type": "Clinics/Training",
-      "net_height": "Men's, Co-ed",
+      "gym_type": "Tournament",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-SSOVA's_August_22/23_Men's/Women's/Coed\u2019s_ST_PETE_BEACH,_Beach_Volleyball_Tournament-2026-08-22T00:00:00",
+      "club": "Volleyball Life",
+      "title": "SSOVA's August 22/23 Men's/Women's/Coed\u2019s ST PETE BEACH, Beach Volleyball Tournament",
+      "start": "2026-08-22T00:00:00",
+      "end": "2026-08-24T00:00:00",
+      "all_day": true,
+      "location": "Upham Beach Park- St. Pete Beach",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/event/33570",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's, Co-ed",
       "price": null,
       "image": null
     },
