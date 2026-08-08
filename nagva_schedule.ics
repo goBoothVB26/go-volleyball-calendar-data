@@ -106,7 +106,7 @@ DTSTART;VALUE=DATE:20260815
 UID:NAGVA-Charm_City_Beach_Bash_2026-2026-08-15T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Raym
  ond Corbin | Raymond Corbin | Divisions\n\nDivisions: Tournament Cap | 72 
- | B | 0 | BB | 0 | 0 | C | ModA1 | 0 | Waitlist Priority | Teams will be c
+ | B | 0 | BB | 0 | C | 0 | ModA1 | 0 | Waitlist Priority | Teams will be c
  onfirmed as they pay\, and the divisional caps will be changed accordingly
  . The caps shown on this page are subject to change at ANY time. | Waitlis
  t Date | July 15\, 2026 | Payment Deadlines\n\nRegistration: Date/Time | A
@@ -128,7 +128,7 @@ DTSTART;VALUE=DATE:20260905
 UID:NAGVA-Labor_of_Love_Volleyball_Classic_33-2026-09-05T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Jaso
  n Fallon | Jason Fallon | Divisions\n\nDivisions: Tournament Cap | 24 | B 
- | 9 | BB | 9 | 6 | BB3 | Waitlist Priority | Divisional Caps will not be c
+ | 9 | BB | 9 | BB3 | 6 | Waitlist Priority | Divisional Caps will not be c
  hanged until [WAITLIST DATE BELOW]. If a division does not fill by that da
  te\, waitlisted teams from other divisions will be confirmed for the tourn
  ament in the displayed waitlist order. | Waitlist Date | August 4\, 2026 |
@@ -175,7 +175,7 @@ DTSTART;VALUE=DATE:20260912
 UID:NAGVA-Boston_Beantown_Classic_2026-2026-09-12T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Marc
   Fernandez | Marc Fernandez | Divisions\n\nDivisions: Tournament Cap | 36 
- | B | 15 | BB | 15 | 6 | BB3 | Waitlist Priority | Teams will be confirmed
+ | B | 15 | BB | 15 | BB3 | 6 | Waitlist Priority | Teams will be confirmed
   as they pay\, and the divisional caps will be changed accordingly. The ca
  ps shown on this page are subject to change at ANY time. | Waitlist Date |
   Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n
@@ -197,10 +197,10 @@ DTSTART;VALUE=DATE:20260919
 UID:NAGVA-Steel_City_Classic_2026-2026-09-19T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Mich
  ael Immen | Michael Immen | Divisions\n\nDivisions: Tournament Cap | 30 | 
- B | 10 | BB | 10 | 5 | BB3 | C | 5 | Waitlist Priority | Teams will be con
+ B | 12 | BB | 10 | BB3 | 5 | C | 5 | Waitlist Priority | Teams will be con
  firmed as they pay\, and the divisional caps will be changed accordingly. 
  The caps shown on this page are subject to change at ANY time. | Waitlist 
- Date | September 8\, 2026 | Payment Deadlines\n\nRegistration: Date/Time |
+ Date | September 7\, 2026 | Payment Deadlines\n\nRegistration: Date/Time |
   September 18\, 2026\, 10:00 AM to 10:00 PM | Location | 5801 Lounge 5801 
  Ellsworth Ave\, Pittsburgh\, PA 15232\, USA | Seeding Party\n\nSeeding Par
  ty: Date/Time | September 19\, 2026\, 10:00 AM to 10:00 PM | Location | Ha
@@ -222,7 +222,7 @@ DTSTART;VALUE=DATE:20260919
 UID:NAGVA-Emerald_City_Cat_Fight_2026-2026-09-19T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Bron
  son Young | Bronson Young | Divisions\n\nDivisions: Tournament Cap | 69 | 
- Open A/AA | 16 | BB | 21 | 20 | B | Women's | 12 | Waitlist Priority | Tea
+ Open A/AA | 16 | BB | 21 | B | 20 | Women's | 12 | Waitlist Priority | Tea
  ms will be confirmed as they pay\, and the divisional caps will be changed
   accordingly. The caps shown on this page are subject to change at ANY tim
  e. | Waitlist Date | August 22\, 2026 | Payment Deadlines\n\nRegistration:
@@ -237,7 +237,8 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Bron
  merald-city-cat-fight-2026
 LOCATION:Academy Sports Center | 2810 Lincoln Way\, Lynnwood\, WA 98087\, 
  USA | Shorecrest High School | 15343 25th Ave NE\, Shoreline\, WA 98155\, 
- USA | Registration
+ USA | Shoreline Community College | 16101 Greenwood Ave N\, Shoreline\, WA
+  98133\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026
 END:VEVENT
 BEGIN:VEVENT
@@ -246,7 +247,7 @@ DTSTART;VALUE=DATE:20261003
 UID:NAGVA-Fall_Classic_2026-2026-10-03T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Josh
   Dossey | Benjamin Jones | Divisions\n\nDivisions: Tournament Cap | 132 | 
- A1 | 12 | BB | 42 | 42 | B | C | 18 | 18 | Women's | Waitlist Priority | T
+ A1 | 12 | BB | 42 | B | 42 | C | Women's | 18 | 18 | Waitlist Priority | T
  eams will be confirmed as they pay\, and the divisional caps will be chang
  ed accordingly. The caps shown on this page are subject to change at ANY t
  ime. | Waitlist Date | August 15\, 2026 | Payment Deadlines\n\nRegistratio
@@ -269,7 +270,7 @@ DTSTART;VALUE=DATE:20261010
 UID:NAGVA-Fall_Ball_12-2026-10-10T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Rich
  ard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | 42 | 
- B | 14 | BB | 14 | 7 | Open A/AA | Womens | 7 | Waitlist Priority | Teams 
+ B | 14 | BB | 14 | Open A/AA | 7 | Womens | 7 | Waitlist Priority | Teams 
  will be confirmed as they pay\, and the divisional caps will be changed ac
  cordingly. The caps shown on this page are subject to change at ANY time. 
  | Waitlist Date | July 31\, 2026 | Payment Deadlines\n\nRegistration: Date
@@ -291,7 +292,7 @@ DTSTART;VALUE=DATE:20261017
 UID:NAGVA-Crossroads_Classic-2026-10-17T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Jord
  an Rosenberg | Jordan Rosenberg | Divisions\n\nDivisions: Tournament Cap |
-  48 | A1 | 12 | BB | 18 | 18 | B | Waitlist Priority | Divisional Caps wil
+  48 | A1 | 12 | BB | 18 | B | 18 | Waitlist Priority | Divisional Caps wil
  l not be changed until [WAITLIST DATE BELOW]. If a division does not fill 
  by that date\, waitlisted teams from other divisions will be confirmed for
   the tournament in the displayed waitlist order. | Waitlist Date | Septemb
@@ -314,7 +315,7 @@ DTSTART;VALUE=DATE:20261024
 UID:NAGVA-Windy_City_Open_2026-2026-10-24T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Wesl
  ey Smith | Tim Martin | Divisions\n\nDivisions: Tournament Cap | 60 | A | 
- 6 | BB | 12 | 18 | B | Legends B (35+) | 12 | 12 | C | Waitlist Priority |
+ 6 | BB | 12 | B | 18 | Legends B (35+) | C | 12 | 12 | Waitlist Priority |
   Teams will be confirmed as they pay\, and the divisional caps will be cha
  nged accordingly. The caps shown on this page are subject to change at ANY
   time. | Waitlist Date | September 24\, 2026 | Payment Deadlines\n\nRegist
@@ -336,7 +337,7 @@ DTSTART;VALUE=DATE:20261031
 UID:NAGVA-2026_Vegas_Baby!-2026-10-31T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Balt
  azar Delgado | Baltazar Delgado | Divisions\n\nDivisions: Tournament Cap |
-  66 | A1 | 12 | BB | 30 | 24 | B | Waitlist Priority | Teams will be confi
+  66 | A1 | 12 | BB | 30 | B | 24 | Waitlist Priority | Teams will be confi
  rmed as they pay\, and the divisional caps will be changed accordingly. Th
  e caps shown on this page are subject to change at ANY time. | Waitlist Da
  te | October 1\, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Loc
@@ -357,7 +358,7 @@ DTSTART;VALUE=DATE:20261107
 UID:NAGVA-Legendary_&_New_Blow-Out_2026-2026-11-07T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Rich
  ard Sucre | Mark Salzer | Divisions\n\nDivisions: Tournament Cap | 30 | Le
- gends B1 | 12 | Legends BB1 | 12 | 6 | C | Waitlist Priority | Teams will 
+ gends B1 | 12 | Legends BB1 | 12 | C | 6 | Waitlist Priority | Teams will 
  be confirmed as they pay\, and the divisional caps will be changed accordi
  ngly. The caps shown on this page are subject to change at ANY time. | Wai
  tlist Date | September 30\, 2026 | Payment Deadlines\n\nRegistration: Date
@@ -379,7 +380,7 @@ DTSTART;VALUE=DATE:20261121
 UID:NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Gord
  on Li | Karl Vinge | Divisions\n\nDivisions: Tournament Cap | 78 | B | 28 
- | BB | 26 | 12 | BB3 | Women's | 12 | Waitlist Priority | Teams will be co
+ | BB | 26 | BB3 | 12 | Women's | 12 | Waitlist Priority | Teams will be co
  nfirmed as they pay\, and the divisional caps will be changed accordingly.
   The caps shown on this page are subject to change at ANY time. | Waitlist
   Date | September 25\, 2026 | Payment Deadlines\n\nRegistration: Date/Time
@@ -401,7 +402,7 @@ DTSTART;VALUE=DATE:20261121
 UID:NAGVA-Caribbean_Cup_2026-2026-11-21T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Feli
  x Roman Hernandez | Felix Roman Hernandez | Divisions\n\nDivisions: Tourna
- ment Cap | 60 | B | 30 | BB | 30 | 15 | A1 | Waitlist Priority | Teams wil
+ ment Cap | 60 | B | 30 | BB | 30 | A1 | 15 | Waitlist Priority | Teams wil
  l be confirmed as they pay\, and the divisional caps will be changed accor
  dingly. The caps shown on this page are subject to change at ANY time. | W
  aitlist Date | October 15\, 2026 | Payment Deadlines\n\nRegistration: Date
@@ -424,7 +425,7 @@ DTSTART;VALUE=DATE:20261205
 UID:NAGVA-2026_Na_Hoa_Aloha_Volleyball_Invitational-2026-12-05T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Rich
  ard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | 42 | 
- B | 14 | BB | 14 | 7 | Open A/AA | Womens | 7 | Waitlist Priority | Teams 
+ B | 14 | BB | 14 | Open A/AA | 7 | Womens | 7 | Waitlist Priority | Teams 
  will be confirmed as they pay\, and the divisional caps will be changed ac
  cordingly. The caps shown on this page are subject to change at ANY time. 
  | Waitlist Date | September 30\, 2026 | Payment Deadlines\n\nRegistration:
@@ -2096,17 +2097,20 @@ DTSTART;VALUE=DATE:20260926
 UID:NAGVA-Splash_Revival-2026-09-26T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Alex
   Glime | Jimmy Schultz | Divisions\n\nDivisions: Tournament Cap | 36 | B |
-  18 | BB | 12 | 6 | BB3 | Waitlist Priority | Teams will be confirmed as t
+  18 | BB | 12 | BB3 | 6 | Waitlist Priority | Teams will be confirmed as t
  hey pay\, and the divisional caps will be changed accordingly. The caps sh
  own on this page are subject to change at ANY time. | Waitlist Date | Paym
- ent Deadlines\n\nRegistration: Date/Time | Location | TBD | Seeding Party\
- n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/A
- wards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: 
- August 31\, 2026 | September 12\, 2026 | Addl. Player Fee | 450 | 550 | 50
-  | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | 
- Payment Link | Venmo | @james-schultziv | Facilities\n\nMore info: https:/
- /www.nagva.org/tournaments-1/splash-revival\n\nMore info: https://www.nagv
- a.org/tournaments-1/splash-revival
+ ent Deadlines\n\nRegistration: Date/Time | 9/25/2026 7:00p - 10:00p @ Redd
+ 's Piano Bar | Location | 1305 Kalahari Dr\, Wisconsin Dells\, WI 53965\, 
+ USA | Seeding Party\n\nSeeding Party: Date/Time | 9/26/2027 7:00p - 9:00p 
+ @ Kalahari Waterpark Resort Swim-Up Bar | Location | 1305 Kalahari Dr\, Ba
+ raboo\, WI 53913\, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Dat
+ e/Time | Location | Tournament News\n\nPayment Deadlines: August 31\, 2026
+  | September 12\, 2026 | Addl. Player Fee | 450 | 550 | 50 | Payment Detai
+ ls\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | V
+ enmo | @james-schultziv | Facilities\n\nMore info: https://www.nagva.org/t
+ ournaments-1/splash-revival\n\nMore info: https://www.nagva.org/tournament
+ s-1/splash-revival
 LOCATION:JustAGame Fieldhouse Reedsburg | 1501 N Viking Dr\, Reedsburg\, W
  I 53959\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/splash-revival
@@ -2139,22 +2143,23 @@ DTSTART;VALUE=DATE:20270116
 UID:NAGVA-LAVO_Sin_City_Classic_2027-2027-01-16T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Ray 
  Robles | Michael Waters | Divisions\n\nDivisions: Tournament Cap | 108 | A
- 3 | 12 | BB | 30 | 24 | B | C | 12 | 12 | Legends B | Waitlist Priority | 
- Teams will be confirmed as they pay\, and the divisional caps will be chan
- ged accordingly. The caps shown on this page are subject to change at ANY 
- time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | Jan
- uary 15\, 2027\, 6-900pm\, Horseshoe Casino | Location | 3645 Las Vegas Bl
- vd S\, Las Vegas\, NV 89109\, USA | Seeding Party\n\nSeeding Party: Date/T
- ime | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time |
-  Location | Tournament News\n\nPayment Deadlines: September 15\, 2026 | No
- vember 16\, 2026 | January 16\, 2027 | Addl. Player Fee | 550 | 600 | 650 
- | 70 | Payment Details\n\nPayment Details: Personal Check | Cashier's Chec
- k | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/
- tournaments-1/lavo-sin-city-classic-2027\n\nMore info: https://www.nagva.o
- rg/tournaments-1/lavo-sin-city-classic-2027
+ 3 | 12 | BB | 30 | B | 24 | C | Legends B | 12 | 12 | Womens | 12 | Waitli
+ st Priority | Teams will be confirmed as they pay\, and the divisional cap
+ s will be changed accordingly. The caps shown on this page are subject to 
+ change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: D
+ ate/Time | January 15\, 2027\, 6-900pm\, Horseshoe Casino | Location | 364
+ 5 Las Vegas Blvd S\, Las Vegas\, NV 89109\, USA | Seeding Party\n\nSeeding
+  Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Part
+ y: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 
+ 15\, 2026 | November 15\, 2026 | January 15\, 2027 | Addl. Player Fee | 55
+ 0 | 600 | 650 | 70 | Payment Details\n\nPayment Details: Personal Check | 
+ Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMor
+ e info: https://www.nagva.org/tournaments-1/lavo-sin-city-classic-2027\n\n
+ More info: https://www.nagva.org/tournaments-1/lavo-sin-city-classic-2027
 LOCATION:It's All Volleyball | 530 E Pamalyn Ave\, Las Vegas\, NV 89119\, 
  USA | Vegas United Volleyball Club | 3055 S Valley View Blvd\, Las Vegas\,
-  NV 89102\, USA | Registration
+  NV 89102\, USA | Vegas Aces Volleyball | 123 Pancho Via Dr\, Henderson\, 
+ NV 89012\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/lavo-sin-city-classic-2027
 END:VEVENT
 BEGIN:VEVENT

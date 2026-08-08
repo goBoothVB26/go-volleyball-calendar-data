@@ -401,4 +401,108 @@ DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
 LOCATION:Upham Beach Park- St. Pete Beach
 URL:https://volleyballlife.com/event/33570
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Adult Beach Volleyball Clinic: Sat\, Aug. 22nd 2
+ 026
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+UID:Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat\,_Aug._22nd_2026-20
+ 26-08-22T00:00:00
+DESCRIPTION:Clinic · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/40188
+LOCATION:The Pit: Frost Park\, Dania Beach\, Fl
+URL:https://volleyballlife.com/event/40188
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Grass Dragon M4’s W3’s
+DTSTART;VALUE=DATE:20260822
+DTEND;VALUE=DATE:20260823
+UID:Volleyball_Life-Grass_Dragon_M4’s_W3’s-2026-08-22T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyballlife.com/event/40166
+LOCATION:Turtle Run Park
+URL:https://volleyballlife.com/event/40166
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA's GULFPORT CASH PAYOUT 4v4 Aug 29th\, Beac
+ h Volleyball Tournament
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+UID:Volleyball_Life-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Aug_29th\,_Beach_Voll
+ eyball_Tournament-2026-08-29T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://voll
+ eyballlife.com/event/40355
+LOCATION:Gulfport Beach Courts
+URL:https://volleyballlife.com/event/40355
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA's August 29/30th GULFPORT Men's/Women's/Co
+ ed\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260831
+UID:Volleyball_Life-SSOVA's_August_29/30th_GULFPORT_Men's/Women's/Coed\,_B
+ each_Volleyball_Tournament-2026-08-29T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Gulfport Beach Courts
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] PBOVA COED SUMMER CLASH
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+UID:Volleyball_Life-PBOVA_COED_SUMMER_CLASH-2026-08-29T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/event/40419
+LOCATION:Greenacres Freedom Park Beach Courts
+URL:https://volleyballlife.com/event/40419
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Rat Lord Fall Bash
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+UID:Volleyball_Life-Rat_Lord_Fall_Bash-2026-08-29T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
+ tps://volleyballlife.com/event/39908
+LOCATION:Frank DeLuca YMCA
+URL:https://volleyballlife.com/event/39908
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Jax Scene Rotating Coed Pairs
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+UID:Volleyball_Life-Jax_Scene_Rotating_Coed_Pairs-2026-08-29T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Jax Scene courts
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA Men's/Women's/Coed’s September 5/6 ST PE
+ TE BEACH\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260907
+UID:Volleyball_Life-SSOVA_Men's/Women's/Coed’s_September_5/6_ST_PETE_BEA
+ CH\,_Beach_Volleyball_Tournament-2026-09-05T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/event/33581
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://volleyballlife.com/event/33581
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SSOVA's September 12/13 Men's/Women's/Coed’s T
+ REASURE ISLAND\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260914
+UID:Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed’s_TREASUR
+ E_ISLAND\,_Beach_Volleyball_Tournament-2026-09-12T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s/4s\n\nMore info: https://v
+ olleyballlife.com/event/33583
+LOCATION:Bilmar Beach Resort
+URL:https://volleyballlife.com/event/33583
+END:VEVENT
 END:VCALENDAR
