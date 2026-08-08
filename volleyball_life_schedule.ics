@@ -402,18 +402,6 @@ LOCATION:Upham Beach Park- St. Pete Beach
 URL:https://volleyballlife.com/event/33570
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Adult Beach Volleyball Clinic: Sat\, Aug. 22nd 2
- 026
-DTSTART;VALUE=DATE:20260822
-DTEND;VALUE=DATE:20260823
-UID:Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat\,_Aug._22nd_2026-20
- 26-08-22T00:00:00
-DESCRIPTION:Clinic · Adults · Beach · 1s\n\nMore info: https://volleyba
- lllife.com/event/40188
-LOCATION:The Pit: Frost Park\, Dania Beach\, Fl
-URL:https://volleyballlife.com/event/40188
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Grass Dragon M4’s W3’s
 DTSTART;VALUE=DATE:20260822
 DTEND;VALUE=DATE:20260823
@@ -504,5 +492,17 @@ DESCRIPTION:Tournament · Adults · Beach · 2s/4s\n\nMore info: https://v
  olleyballlife.com/event/33583
 LOCATION:Bilmar Beach Resort
 URL:https://volleyballlife.com/event/33583
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Adult Beach Volleyball Clinic: Sat\, Aug. 15th 2
+ 026
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260823
+UID:Volleyball_Life-Adult_Beach_Volleyball_Clinic:_Sat\,_Aug._15th_2026-20
+ 26-08-15T00:00:00
+DESCRIPTION:Clinic · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/40188
+LOCATION:The Pit: Frost Park\, Dania Beach\, Fl
+URL:https://volleyballlife.com/event/40188
 END:VEVENT
 END:VCALENDAR
