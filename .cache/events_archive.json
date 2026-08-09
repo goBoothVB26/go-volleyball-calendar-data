@@ -3291,7 +3291,7 @@
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-08T18:30:00",
+      "start": "2026-08-09T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
@@ -4197,6 +4197,24 @@
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-2026-08-09T13:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Aug 9 @ Dover Shores Community Center",
+      "start": "2026-08-09T15:30:00",
+      "end": "2026-08-09T17:45:00",
+      "location": "Dover Shores Community Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's",
+      "price": 7.0,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-2026-08-09T15:30:00"
     }
   ]
 }
