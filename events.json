@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-09T21:21:36",
+  "generated": "2026-08-10T06:25:27",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -3714,22 +3714,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-09T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-08-10T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -3743,6 +3727,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-08-10T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -5218,18 +5218,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Jax_Indoor_Coed_4s-2026-09-12T00:00:00",
+      "uid": "Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed\u2019s_TREASURE_ISLAND,_Beach_Volleyball_Tournament-2026-09-12T00:00:00",
       "club": "Volleyball Life",
-      "title": "Jax Indoor Coed 4s",
+      "title": "SSOVA's September 12/13 Men's/Women's/Coed\u2019s TREASURE ISLAND, Beach Volleyball Tournament",
       "start": "2026-09-12T00:00:00",
-      "end": "2026-09-13T00:00:00",
+      "end": "2026-09-14T00:00:00",
       "all_day": true,
-      "location": "The Net",
-      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 4s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "location": "Bilmar Beach Resort",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
+      "url": "https://volleyballlife.com/event/33583",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Co-ed",
+      "net_height": "Men's, Women's, Co-ed",
       "price": null,
       "image": null
     },
@@ -6850,6 +6850,22 @@
       "image": null
     },
     {
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-11-08T13:00:00",
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time",
+      "start": "2026-11-08T13:00:00",
+      "end": "2026-11-08T15:00:00",
+      "all_day": false,
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-08T14:00:00",
       "club": "City of Sanford Adult Volleyball",
       "title": "Adult Volleyball Fall 2026",
@@ -7231,6 +7247,22 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 550.0,
+      "image": null
+    },
+    {
+      "uid": "NAGVA-Heart_of_America_Classic_'26-2027-04-03T00:00:00",
+      "club": "NAGVA",
+      "title": "Heart of America Classic '26",
+      "start": "2027-04-03T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "MAVS Volleyball | 16501 W 116th St, Lenexa, KS 66219, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Jsaquan Alexander-Riley | Brandon Morgan | Divisions\n\nDivisions: Tournament Cap | 36 | B | 12 | BB | 12 | Mod A3 | 6 | Women's | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: February 2, 2027 | March 2, 2027 | March 21, 2027 | Addl. Player Fee | 450 | 500 | 550 | 60 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @Jsaquan-Alexander | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/heart-of-america-classic-'26",
+      "url": "https://www.nagva.org/tournaments-1/heart-of-america-classic-'26",
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Women's",
+      "price": 450.0,
       "image": null
     },
     {

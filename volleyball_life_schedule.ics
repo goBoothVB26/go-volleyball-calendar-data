@@ -494,15 +494,15 @@ LOCATION:The Pit: Frost Park\, Dania Beach\, Fl
 URL:https://volleyballlife.com/event/40188
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Jax Indoor Coed 4s
+SUMMARY:[Volleyball Life] SSOVA's September 12/13 Men's/Women's/Coed’s T
+ REASURE ISLAND\, Beach Volleyball Tournament
 DTSTART;VALUE=DATE:20260912
-DTEND;VALUE=DATE:20260913
-UID:Volleyball_Life-Jax_Indoor_Coed_4s-2026-09-12T00:00:00
-DESCRIPTION:Tournament · Adults · Indoor · 4s\n\nMore info: https://vol
- leyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\
- ,-81.3789269&dist=200
-LOCATION:The Net
-URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
- l=28.5383832,-81.3789269&dist=200
+DTEND;VALUE=DATE:20260914
+UID:Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed’s_TREASUR
+ E_ISLAND\,_Beach_Volleyball_Tournament-2026-09-12T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s/4s\n\nMore info: https://v
+ olleyballlife.com/event/33583
+LOCATION:Bilmar Beach Resort
+URL:https://volleyballlife.com/event/33583
 END:VEVENT
 END:VCALENDAR
