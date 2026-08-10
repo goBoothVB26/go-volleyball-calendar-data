@@ -5198,21 +5198,21 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Spiketember Classic",
+      "title": "SSOVA's September 12/13 Men's/Women's/Coed\u2019s TREASURE ISLAND, Beach Volleyball Tournament",
       "start": "2026-09-12T00:00:00",
-      "end": "2026-09-13T00:00:00",
-      "location": "Trotters Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/35464",
+      "end": "2026-09-14T00:00:00",
+      "location": "Bilmar Beach Resort",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
+      "url": "https://volleyballlife.com/event/33583",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
+      "net_height": "Men's, Women's, Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-Spiketember_Classic-2026-09-12T00:00:00"
+      "uid": "Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed\u2019s_TREASURE_ISLAND,_Beach_Volleyball_Tournament-2026-09-12T00:00:00"
     }
   ],
   "ocoee_coed_league": [
