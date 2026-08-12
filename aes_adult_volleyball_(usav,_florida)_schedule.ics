@@ -134,4 +134,14 @@ DESCRIPTION:More info: https://www.advancedeventsystems.com/events/46322
 LOCATION:Jacksonville\, FL - JJVA
 URL:https://www.advancedeventsystems.com/events/46322
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[AES Adult Volleyball (USAV\, Florida)] 2027 Sunshine Classic
+DTSTART;TZID=America/New_York:20270319T000000
+DTEND;TZID=America/New_York:20270321T000000
+UID:AES_Adult_Volleyball_(USAV\,_Florida)-2027_Sunshine_Classic-2027-03-19
+ T00:00:00
+DESCRIPTION:More info: https://www.advancedeventsystems.com/events/46976
+LOCATION:Orlando\, FL - Orange County Convention Center - West Concourse
+URL:https://www.advancedeventsystems.com/events/46976
+END:VEVENT
 END:VCALENDAR

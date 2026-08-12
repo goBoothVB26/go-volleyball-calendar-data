@@ -1770,6 +1770,24 @@
       "price": 500.0,
       "image": null,
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_Spring_Classic-2027-05-01T00:00:00"
+    },
+    {
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 Sunshine Classic",
+      "start": "2027-03-19T00:00:00",
+      "end": "2027-03-21T00:00:00",
+      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46976",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 925.0,
+      "image": null,
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00"
     }
   ],
   "nagva": [
