@@ -3251,24 +3251,6 @@
     },
     {
       "club": "NAGVA",
-      "title": "Battle of the Alamo 2026",
-      "start": "2026-12-19T00:00:00",
-      "end": null,
-      "location": "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 72 | 12 | 18 | 36 | Women's | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 17, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | December 2, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
-      "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
-      "category": null,
-      "all_day": true,
-      "stable_id": null,
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 550.0,
-      "image": null,
-      "uid": "NAGVA-Battle_of_the_Alamo_2026-2026-12-19T00:00:00"
-    },
-    {
-      "club": "NAGVA",
       "title": "LAVO Sin City Classic 2027",
       "start": "2027-01-16T00:00:00",
       "end": null,
@@ -3302,6 +3284,24 @@
       "price": 450.0,
       "image": null,
       "uid": "NAGVA-Heart_of_America_Classic_'26-2027-04-03T00:00:00"
+    },
+    {
+      "club": "NAGVA",
+      "title": "Battle of the Alamo 2026",
+      "start": "2026-12-18T00:00:00",
+      "end": null,
+      "location": "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 72 | 12 | 18 | 36 | Women's | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 17, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | December 2, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+      "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Women's",
+      "price": 550.0,
+      "image": null,
+      "uid": "NAGVA-Battle_of_the_Alamo_2026-2026-12-18T00:00:00"
     }
   ],
   "big_house_open_gym": [

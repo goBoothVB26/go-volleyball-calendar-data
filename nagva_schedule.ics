@@ -2164,28 +2164,6 @@ URL:https://www.nagva.org/tournaments-1/2026-na-hoa-aloha-volleyball-invit
  ational
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[NAGVA] Battle of the Alamo 2026
-DTSTART;VALUE=DATE:20261219
-UID:NAGVA-Battle_of_the_Alamo_2026-2026-12-19T00:00:00
-DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Bria
- n Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 
- | BB | B | 72 | 12 | 18 | 36 | Women's | 6 | Waitlist Priority | Teams wil
- l be confirmed as they pay\, and the divisional caps will be changed accor
- dingly. The caps shown on this page are subject to change at ANY time. | W
- aitlist Date | December 17\, 2026 | Payment Deadlines\n\nRegistration: Dat
- e/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location |
-  Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tour
- nament News\n\nPayment Deadlines: October 5\, 2026 | November 4\, 2026 | D
- ecember 2\, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Detai
- ls\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | V
- enmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org
- /tournaments-1/battle-of-the-alamo-2026\n\nMore info: https://www.nagva.or
- g/tournaments-1/battle-of-the-alamo-2026
-LOCATION:Mission Concepcion Sports Complex | 714 E Theo Ave\, San Antonio\
- , TX 78210\, USA | Registration
-URL:https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[NAGVA] LAVO Sin City Classic 2027
 DTSTART;VALUE=DATE:20270116
 UID:NAGVA-LAVO_Sin_City_Classic_2027-2027-01-16T00:00:00
@@ -2231,5 +2209,27 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Jsaq
 LOCATION:MAVS Volleyball | 16501 W 116th St\, Lenexa\, KS 66219\, USA | Re
  gistration
 URL:https://www.nagva.org/tournaments-1/heart-of-america-classic-'26
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] Battle of the Alamo 2026
+DTSTART;VALUE=DATE:20261218
+UID:NAGVA-Battle_of_the_Alamo_2026-2026-12-18T00:00:00
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Bria
+ n Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 
+ | BB | B | 72 | 12 | 18 | 36 | Women's | 6 | Waitlist Priority | Teams wil
+ l be confirmed as they pay\, and the divisional caps will be changed accor
+ dingly. The caps shown on this page are subject to change at ANY time. | W
+ aitlist Date | December 17\, 2026 | Payment Deadlines\n\nRegistration: Dat
+ e/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location |
+  Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tour
+ nament News\n\nPayment Deadlines: October 5\, 2026 | November 4\, 2026 | D
+ ecember 2\, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Detai
+ ls\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | V
+ enmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org
+ /tournaments-1/battle-of-the-alamo-2026\n\nMore info: https://www.nagva.or
+ g/tournaments-1/battle-of-the-alamo-2026
+LOCATION:Mission Concepcion Sports Complex | 714 E Theo Ave\, San Antonio\
+ , TX 78210\, USA | Registration
+URL:https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026
 END:VEVENT
 END:VCALENDAR
