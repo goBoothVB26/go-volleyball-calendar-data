@@ -25,16 +25,6 @@ LOCATION:Cady Way Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Spiketember Classic
-DTSTART;TZID=America/New_York:20260912T000000
-DTEND;TZID=America/New_York:20260912T000000
-UID:Volley_Vortex-Spiketember_Classic-2026-09-12T00:00:00
-DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
- eyvortex.volleyballlife.com/events
-LOCATION:Trotters Park
-URL:https://volleyvortex.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volley Vortex] Vortex Showdown - Indoor Tournament  '26
 DTSTART;TZID=America/New_York:20261010T000000
 DTEND;TZID=America/New_York:20261010T000000

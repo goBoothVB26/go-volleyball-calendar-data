@@ -4045,24 +4045,6 @@
     },
     {
       "club": "Volley Vortex",
-      "title": "Spiketember Classic",
-      "start": "2026-09-12T00:00:00",
-      "end": "2026-09-12T00:00:00",
-      "location": "Trotters Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyvortex.volleyballlife.com/events",
-      "category": "adult",
-      "all_day": false,
-      "stable_id": null,
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null,
-      "uid": "Volley_Vortex-Spiketember_Classic-2026-09-12T00:00:00"
-    },
-    {
-      "club": "Volley Vortex",
       "title": "Vortex Showdown - Indoor Tournament  '26",
       "start": "2026-10-10T00:00:00",
       "end": "2026-10-10T00:00:00",
@@ -4690,6 +4672,24 @@
       "price": null,
       "image": null,
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-11-07T18:00:00"
+    },
+    {
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
+      "start": "2026-11-12T18:00:00",
+      "end": "2026-11-12T20:00:00",
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-11-12T18:00:00"
     }
   ],
   "ymca_central_florida": [
@@ -5391,7 +5391,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/f455fe8b-3139-4a67-842d-bdad524ac5eb.png",
+      "image": null,
       "uid": "Volleyball_Life-Beach_Spike-2026-08-15T00:00:00"
     },
     {
@@ -5594,28 +5594,28 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "SSOVA's September 12/13 Men's/Women's/Coed\u2019s TREASURE ISLAND, Beach Volleyball Tournament",
-      "start": "2026-09-12T00:00:00",
-      "end": "2026-09-14T00:00:00",
-      "location": "Bilmar Beach Resort",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
-      "url": "https://volleyballlife.com/event/33583",
+      "title": "Women's QOB Tournament Aug 15, 2026",
+      "start": "2026-08-15T00:00:00",
+      "end": "2026-08-16T00:00:00",
+      "location": "Gulfport Beach",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40435",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
+      "net_height": "Women's",
       "price": null,
-      "image": null,
-      "uid": "Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed\u2019s_TREASURE_ISLAND,_Beach_Volleyball_Tournament-2026-09-12T00:00:00"
+      "image": "https://vblimages.blob.core.windows.net/images/4449525d-0147-4023-badf-a04e61d522a6.jpg",
+      "uid": "Volleyball_Life-Women's_QOB_Tournament_Aug_15,_2026-2026-08-15T00:00:00"
     }
   ],
   "ocoee_coed_league": [
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-13T18:30:00",
+      "start": "2026-08-14T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
