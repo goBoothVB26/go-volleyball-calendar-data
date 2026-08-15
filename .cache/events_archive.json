@@ -2329,6 +2329,24 @@
       "price": 450.0,
       "image": null,
       "uid": "NAGVA-XOXO_INVITATIONAL_2026-2026-08-01T00:00:00"
+    },
+    {
+      "club": "NAGVA",
+      "title": "Charm City Beach Bash 2026",
+      "start": "2026-08-15T00:00:00",
+      "end": null,
+      "location": "Virginia Beach Sports Center | 1045 19th St, Virginia Beach, VA 23451, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Raymond Corbin | Raymond Corbin | Divisions\n\nDivisions: Tournament Cap | B | BB | C | 72 | 0 | 0 | 0 | ModA1 | 0 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | August 13, 2026, 10:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: June 21, 2026 | July 12, 2026 | August 9, 2026 | Addl. Player Fee | 525 | 600 | 625 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/charm-city-beach-bash-2026",
+      "url": "https://www.nagva.org/tournaments-1/charm-city-beach-bash-2026",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 525.0,
+      "image": null,
+      "uid": "NAGVA-Charm_City_Beach_Bash_2026-2026-08-15T00:00:00"
     }
   ],
   "big_house_open_gym": [
