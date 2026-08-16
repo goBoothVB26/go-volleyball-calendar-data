@@ -1827,18 +1827,21 @@ DTSTART;VALUE=DATE:20260912
 UID:NAGVA-Boston_Beantown_Classic_2026-2026-09-12T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Marc
   Fernandez | Marc Fernandez | Divisions\n\nDivisions: Tournament Cap | B |
-  BB | BB3 | 36 | 15 | 15 | 6 | Waitlist Priority | Teams will be confirmed
-  as they pay\, and the divisional caps will be changed accordingly. The ca
- ps shown on this page are subject to change at ANY time. | Waitlist Date |
-  Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n
- \nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Aw
- ards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: J
- uly 19\, 2026 | August 2\, 2026 | August 16\, 2026 | Addl. Player Fee | 50
- 0 | 550 | 600 | 70 | Payment Details\n\nPayment Details: Personal Check | 
- Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMor
- e info: https://www.nagva.org/tournaments-1/boston-beantown-classic-2026\n
- \nMore info: https://www.nagva.org/tournaments-1/boston-beantown-classic-2
- 026
+  BB | BB3 | 36 | 23 | 9 | 4 | Waitlist Priority | Teams will be confirmed 
+ as they pay\, and the divisional caps will be changed accordingly. The cap
+ s shown on this page are subject to change at ANY time. | Waitlist Date | 
+ Payment Deadlines\n\nRegistration: Date/Time | 9/11/2026 7pm - 10pm @ Cath
+ edral Station | Location | 1222 Washington St\, Boston\, MA 02118\, USA | 
+ Seeding Party\n\nSeeding Party: Date/Time | 9/12/2026 8pm - "Late" @ Remna
+ nt Satellite | Location | 877 Cambridge St\, Cambridge\, MA 02141\, USA | 
+ Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | 9/13/2026 7pm -1
+ 0pm CLOSING PARTY @ Jacques Cabaret | Location | 79 Broadway St\, Boston\,
+  MA 02116\, USA | Tournament News\n\nPayment Deadlines: July 19\, 2026 | A
+ ugust 2\, 2026 | August 16\, 2026 | Addl. Player Fee | 500 | 550 | 600 | 7
+ 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check |
+  false | false | Payment Link | Venmo | Facilities\n\nMore info: https://w
+ ww.nagva.org/tournaments-1/boston-beantown-classic-2026\n\nMore info: http
+ s://www.nagva.org/tournaments-1/boston-beantown-classic-2026
 LOCATION:War Memorial Recreational Center | 1640 Cambridge St\, Cambridge\
  , MA 02138\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/boston-beantown-classic-2026
@@ -1899,20 +1902,20 @@ DTSTART;VALUE=DATE:20260926
 UID:NAGVA-Splash_Revival-2026-09-26T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Alex
   Glime | Jimmy Schultz | Divisions\n\nDivisions: Tournament Cap | B | BB |
-  BB3 | 36 | 18 | 12 | 6 | Waitlist Priority | Teams will be confirmed as t
- hey pay\, and the divisional caps will be changed accordingly. The caps sh
- own on this page are subject to change at ANY time. | Waitlist Date | Paym
- ent Deadlines\n\nRegistration: Date/Time | 9/25/2026 7:00p - 10:00p @ Redd
- 's Piano Bar | Location | 1305 Kalahari Dr\, Wisconsin Dells\, WI 53965\, 
- USA | Seeding Party\n\nSeeding Party: Date/Time | 9/26/2027 7:00p - 9:00p 
- @ Kalahari Waterpark Resort Swim-Up Bar | Location | 1305 Kalahari Dr\, Ba
- raboo\, WI 53913\, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Dat
- e/Time | Location | Tournament News\n\nPayment Deadlines: August 31\, 2026
-  | September 12\, 2026 | Addl. Player Fee | 450 | 550 | 50 | Payment Detai
- ls\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | V
- enmo | @james-schultziv | Facilities\n\nMore info: https://www.nagva.org/t
- ournaments-1/splash-revival\n\nMore info: https://www.nagva.org/tournament
- s-1/splash-revival
+  BB3 | 36 | 15 | 9 | 6 | Women's | 6 | Waitlist Priority | Teams will be c
+ onfirmed as they pay\, and the divisional caps will be changed accordingly
+ . The caps shown on this page are subject to change at ANY time. | Waitlis
+ t Date | Payment Deadlines\n\nRegistration: Date/Time | 9/25/2026 7:00p - 
+ 10:00p @ Redd's Piano Bar | Location | 1305 Kalahari Dr\, Wisconsin Dells\
+ , WI 53965\, USA | Seeding Party\n\nSeeding Party: Date/Time | 9/26/2027 7
+ :00p - 9:00p @ Kalahari Waterpark Resort Swim-Up Bar | Location | 1305 Kal
+ ahari Dr\, Baraboo\, WI 53913\, USA | Banquet/Awards Party\n\nBanquet/Awar
+ ds Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: Aug
+ ust 31\, 2026 | September 12\, 2026 | Addl. Player Fee | 450 | 550 | 50 | 
+ Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Pay
+ ment Link | Venmo | @james-schultziv | Facilities\n\nMore info: https://ww
+ w.nagva.org/tournaments-1/splash-revival\n\nMore info: https://www.nagva.o
+ rg/tournaments-1/splash-revival
 LOCATION:JustAGame Fieldhouse Reedsburg | 1501 N Viking Dr\, Reedsburg\, W
  I 53959\, USA | Registration
 URL:https://www.nagva.org/tournaments-1/splash-revival
@@ -2231,5 +2234,33 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Jsaq
 LOCATION:MAVS Volleyball | 16501 W 116th St\, Lenexa\, KS 66219\, USA | Re
  gistration
 URL:https://www.nagva.org/tournaments-1/heart-of-america-classic-'26
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] Mardi Gras Classic Volleyball Tournament 2026
+DTSTART;VALUE=DATE:20270116
+UID:NAGVA-Mardi_Gras_Classic_Volleyball_Tournament_2026-2027-01-16T00:00:0
+ 0
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Jerr
+ y Traigle | Jerry Traigle | Divisions\n\nDivisions: Tournament Cap | A1 | 
+ BB3 | BB | 60 | 9 | 9 | 18 | B | 24 | Waitlist Priority | Teams will be co
+ nfirmed as they pay\, and the divisional caps will be changed accordingly.
+  The caps shown on this page are subject to change at ANY time. | Waitlist
+  Date | October 30\, 2026 | Payment Deadlines\n\nRegistration: Date/Time |
+  1/15/2027\; 7:00pm @ Bourbon Pub (upstairs) | Location | 801 Bourbon St\,
+  New Orleans\, LA 70116\, USA | Seeding Party\n\nSeeding Party: Date/Time 
+ | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Awa
+ rds at the conclusion of play at Alario Center | Location | Tournament New
+ s\n\nPayment Deadlines: September 18\, 2026 | November 20\, 2026 | January
+  5\, 2027 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nP
+ ayment Details: Personal Check | Cashier's Check | false | false | Payment
+  Link | Venmo | @Jerry-Traigle     please include team name\, division and
+  captain's email address | Facilities\n\nMore info: https://www.nagva.org/
+ tournaments-1/mardi-gras-classic-volleyball-tournament-2026\n\nMore info: 
+ https://www.nagva.org/tournaments-1/mardi-gras-classic-volleyball-tourname
+ nt-2026
+LOCATION:Alario Center | 2000 Segnette Blvd\, Westwego\, LA 70094\, USA | 
+ Registration
+URL:https://www.nagva.org/tournaments-1/mardi-gras-classic-volleyball-tour
+ nament-2026
 END:VEVENT
 END:VCALENDAR
