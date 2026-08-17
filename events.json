@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T20:13:14",
+  "generated": "2026-08-17T02:57:32",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -345,7 +345,7 @@
       "end": null,
       "all_day": true,
       "location": "MN Select Volleyball Center | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Divisions\n\nDivisions: Tournament Cap | 38 Teams | B | TBG | BB | TBD | Waitlist Priority | Teams will be confirmed as they pay, and divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | 2025-07-05 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | NAGVA is proud to partner with United and Delta in getting its Members flight discounts ranging from 2-10% on plane tickets to\u00a0all NAGVA tournaments. To take part in the discounts: United: Look under Advanced Search and enter the following Offer Code in the \"Promotions and certificates\" box: ZQ6A323940 Delta Air Lines is pleased to offer special discounts for North American Gay Volleyball Association. Please click here to book your flights! You may also call Delta Meeting Network\u00ae at 1.800.328.1111* Monday\u2013Friday, 7:00 a.m. \u2013 7:30 p.m. (CT) and refer to Meeting Event Code NM4QE *Please note there is not a service fee for reservations booked and ticketed via our reservation 800 number. Teams are only confirmed after registering on the NAGVA site and paying the tournament fees. | Tournament News\n\nPayment Deadlines: May 31, 2025 | July 5, 2025 | Addl. Player Fee | $450.00 | $550.00 | $65.00 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-'n-dig-2025",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Marlon Monreal-Caponi | Brian VanderWaal | Bronson Young Lew Smith | Divisions\n\nDivisions: Tournament Cap | B | BB | 38 Teams | TBG | TBD | Waitlist Priority | Teams will be confirmed as they pay, and divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | 2025-07-05 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | NAGVA is proud to partner with United and Delta in getting its Members flight discounts ranging from 2-10% on plane tickets to\u00a0all NAGVA tournaments. To take part in the discounts: United: Look under Advanced Search and enter the following Offer Code in the \"Promotions and certificates\" box: ZQ6A323940 Delta Air Lines is pleased to offer special discounts for North American Gay Volleyball Association. Please click here to book your flights! You may also call Delta Meeting Network\u00ae at 1.800.328.1111* Monday\u2013Friday, 7:00 a.m. \u2013 7:30 p.m. (CT) and refer to Meeting Event Code NM4QE *Please note there is not a service fee for reservations booked and ticketed via our reservation 800 number. Teams are only confirmed after registering on the NAGVA site and paying the tournament fees. | Tournament News\n\nPayment Deadlines: May 31, 2025 | July 5, 2025 | Addl. Player Fee | $450.00 | $550.00 | $65.00 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/hotdish-'n-dig-2025",
       "url": "https://www.nagva.org/tournaments-1/hotdish-'n-dig-2025",
       "skill_level": "A/AA, B/BB",
       "gym_type": "Tournament",
@@ -4098,22 +4098,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-16T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-08-17T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -4127,6 +4111,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-08-17T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -7047,6 +7047,22 @@
       "title": "Adult Volleyball Member Time",
       "start": "2026-11-14T18:00:00",
       "end": "2026-11-14T20:00:00",
+      "all_day": false,
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-11-15T13:00:00",
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time",
+      "start": "2026-11-15T13:00:00",
+      "end": "2026-11-15T15:00:00",
       "all_day": false,
       "location": "Meadow Woods Recreation Center",
       "description": null,
