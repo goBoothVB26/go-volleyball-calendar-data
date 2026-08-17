@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T14:22:01",
+  "generated": "2026-08-17T20:18:04",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-06T00:00:00",
@@ -4706,22 +4706,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Rat_Lord_Fall_Bash-2026-08-29T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Rat Lord Fall Bash",
-      "start": "2026-08-29T00:00:00",
-      "end": "2026-08-30T00:00:00",
-      "all_day": true,
-      "location": "Frank DeLuca YMCA",
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
-      "url": "https://volleyballlife.com/event/39908",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-Jax_Scene_Rotating_Coed_Pairs-2026-08-29T00:00:00",
       "club": "Volleyball Life",
       "title": "Jax Scene Rotating Coed Pairs",
@@ -5467,6 +5451,22 @@
       "location": "Orlando, Fl",
       "description": "Varsity",
       "url": "https://www.gamepointevents.com/lake-howell-volleyball-invitational",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-First_Coast_Volleyball_Jax_Beach_Series_Sept_19-20_'26-2026-09-19T00:00:00",
+      "club": "Volleyball Life",
+      "title": "First Coast Volleyball Jax Beach Series Sept 19-20 '26",
+      "start": "2026-09-19T00:00:00",
+      "end": "2026-09-21T00:00:00",
+      "all_day": true,
+      "location": "South of Jacksonville Beach Fishing Pier",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/event/34548",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",

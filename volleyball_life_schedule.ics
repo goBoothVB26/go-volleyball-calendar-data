@@ -448,16 +448,6 @@ LOCATION:Greenacres Freedom Park Beach Courts
 URL:https://volleyballlife.com/event/40419
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Rat Lord Fall Bash
-DTSTART;VALUE=DATE:20260829
-DTEND;VALUE=DATE:20260830
-UID:Volleyball_Life-Rat_Lord_Fall_Bash-2026-08-29T00:00:00
-DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
- tps://volleyballlife.com/event/39908
-LOCATION:Frank DeLuca YMCA
-URL:https://volleyballlife.com/event/39908
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Jax Scene Rotating Coed Pairs
 DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260830
@@ -563,5 +553,17 @@ DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
  olleyballlife.com/event/40800
 LOCATION:Trotter Park
 URL:https://volleyballlife.com/event/40800
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] First Coast Volleyball Jax Beach Series Sept 19-
+ 20 '26
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260921
+UID:Volleyball_Life-First_Coast_Volleyball_Jax_Beach_Series_Sept_19-20_'26
+ -2026-09-19T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://volleyballlife.com/event/34548
+LOCATION:South of Jacksonville Beach Fishing Pier
+URL:https://volleyballlife.com/event/34548
 END:VEVENT
 END:VCALENDAR
