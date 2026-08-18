@@ -3543,7 +3543,7 @@
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-17T18:30:00",
+      "start": "2026-08-18T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
@@ -3631,6 +3631,24 @@
       "price": 3.0,
       "image": null,
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-11T20:15:00"
+    },
+    {
+      "club": "Ocoee Open Gym Volleyball",
+      "title": "Open Gym Volleyball",
+      "start": "2026-08-18T20:15:00",
+      "end": "2026-08-18T22:30:00",
+      "location": "Jim Beech Recreation Center",
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open court time - no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily or annual membership. Register for open gym volleyball .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Co-ed",
+      "price": 3.0,
+      "image": null,
+      "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-18T20:15:00"
     }
   ],
   "usav_florida_region": [
