@@ -73,27 +73,6 @@
   .vb-sheet-pane { display: none; }
   .vb-sheet-pane.active { display: block; }
   .vb-sheet-pane iframe { display: block; width: 100%; border: 0; }
-
-  @media (max-width: 767px) {
-    /* Google's own embed shrinks font/cell size to fit whatever width
-       the iframe gets, rather than just letting it overflow -- so on a
-       phone's narrow viewport every sheet rendered tiny and "smashed"
-       instead of just needing a scroll. Forcing each pane back to
-       roughly its real content width (columns * ~100px, Google's
-       default column width) stops that shrink; the .vb-sheet-pane
-       wrapper scrolls horizontally so mobile users pan across at full,
-       readable size instead. Per-pane widths are a starting estimate
-       like the heights above -- nudge visually once live if a sheet's
-       columns run notably wider/narrower than the ~100px default. */
-    .vb-sheet-pane { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .vb-sheet-pane iframe { max-width: none; }
-    [data-vb-sheet-pane="rules-info"] iframe { width: 900px; }   /* I: 9 cols */
-    [data-vb-sheet-pane="schedule"] iframe { width: 700px; }     /* G: 7 cols */
-    [data-vb-sheet-pane="pools-games"] iframe { width: 700px; }  /* G: 7 cols */
-    [data-vb-sheet-pane="standings"] iframe { width: 1400px; }   /* N: 14 cols */
-    [data-vb-sheet-pane="score-entry"] iframe { width: 1200px; } /* L: 12 cols */
-    [data-vb-sheet-pane="playoffs"] iframe { width: 900px; }     /* I: 9 cols */
-  }
 </style>
 
 <div class="vb-sheet-embed">
