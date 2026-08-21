@@ -1,0 +1,155 @@
+<!-- Embedded Google Sheet for the 2nd Annual Benefit Tournament, cropped
+     to a specific range per tab, with a tab bar to switch between sheets
+     -- paste this whole file into its own Squarespace CODE block.
+     Duplicate of website/sheet_embed.html (the COED SummerBash widget),
+     pointed at this tournament's own spreadsheet.
+
+     SETUP for adding another sheet (this spreadsheet has "Entire
+     document" published -- File -> Share -> Publish to web -- so
+     every sheet is reachable through the SAME published document ID
+     below by just swapping the gid; the Embed dialog's per-sheet
+     dropdown doesn't reliably refresh its code box when you change
+     selections, so this sidesteps it entirely):
+       1. Click the sheet tab you want in the actual spreadsheet (not
+          the Publish dialog) and read its gid from the browser
+          address bar: ...edit?gid=XXXXXXX#gid=XXXXXXX.
+       2. Build its URL from the pattern already used below:
+          https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=YOUR_GID&single=true&widget=true&headers=false&range=YOUR_RANGE&chrome=false
+          (swap only gid and range; single/widget/headers/chrome stay
+          as-is -- chrome=false hides Google's gray title/sheet-name
+          bar above the grid).
+          If a bare range like A1:I60 doesn't crop a given sheet, try
+          prefixing the sheet name instead: SheetName!A1:I60
+       3. Duplicate one .vb-sheet-tab button and one .vb-sheet-pane
+          block below, give both the SAME new data-vb-sheet-tab /
+          data-vb-sheet-pane key, and drop the new src in (remember to
+          HTML-escape & as &amp; inside the src attribute).
+       4. Set that pane's iframe height to roughly (row count * 21px)
+          -- Google's default row height -- then nudge it in the
+          browser once it's live until there's no extra scrollbar/gap.
+          (Exact pixel-perfect sizing depends on your sheet's actual
+          row/column sizes, which vary per sheet, so this always needs
+          a quick visual check after publishing. Current sheets below
+          are all sized 18% larger than the raw row-count estimate, to
+          match the site's requested sizing.)
+
+     LIMITATION: same as the Google Form embeds elsewhere on this site
+     -- the sheet itself renders inside a cross-origin Google iframe
+     this page can't reach into or restyle, so it stays white/light
+     regardless of the page's theme. Only the card frame around it
+     (background, tab bar) supports dark mode. -->
+
+<style>
+  .vb-sheet-embed { max-width: 1062px; margin: 0 auto; }  /* 900px + 18% */
+
+  .vb-sheet-tabs {
+    display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+    margin-bottom: 10px;
+  }
+  .vb-sheet-tab {
+    padding: 8px 18px; cursor: pointer;
+    border: 1px solid #0057b8; background: transparent; color: #0057b8;
+    border-radius: 10px; font-size: 14px; font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+  }
+  .vb-sheet-tab:hover { background: #eaf2fb; }
+  .vb-sheet-tab.active { background: #0057b8; color: #fff; }
+  .vb-sheet-tab.active:hover { background: #00458f; }
+  body.vb-dark-page .vb-sheet-tab { border-color: #FFC425; color: #FFC425; }
+  body.vb-dark-page .vb-sheet-tab:hover { background: rgba(255, 196, 37, 0.12); }
+  body.vb-dark-page .vb-sheet-tab.active { background: #FFC425; color: #1a1a1a; }
+  body.vb-dark-page .vb-sheet-tab.active:hover { background: #e6ad0f; }
+
+  .vb-sheet-card {
+    border-radius: 14px; overflow: hidden;
+    background: #fff; border: 1px solid #ececec;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+  }
+  body.vb-dark-page .vb-sheet-card {
+    border-color: #2a3038;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .vb-sheet-pane { display: none; }
+  .vb-sheet-pane.active { display: block; }
+  .vb-sheet-pane iframe { display: block; width: 100%; border: 0; }
+</style>
+
+<div class="vb-sheet-embed">
+  <div class="vb-sheet-tabs">
+    <button class="vb-sheet-tab active" data-vb-sheet-tab="rules-info">Rules &amp; Info</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="schedule">Schedule</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="pools-games">Pools &amp; Games Schedule</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="standings">Standings</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="score-entry">Score Entry</button>
+    <button class="vb-sheet-tab" data-vb-sheet-tab="playoffs">Playoffs</button>
+  </div>
+
+  <div class="vb-sheet-card">
+    <div class="vb-sheet-pane active" data-vb-sheet-pane="rules-info">
+      <!-- Height 1487px = 1260px base (60 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1317376277&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:I60&amp;chrome=false"
+        style="height: 1487px;"
+        loading="lazy"
+        title="Rules & Info"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="schedule">
+      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=336687168&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:G15&amp;chrome=false"
+        style="height: 372px;"
+        loading="lazy"
+        title="Schedule"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="pools-games">
+      <!-- Height 743px = 630px base (30 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=668924726&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:G30&amp;chrome=false"
+        style="height: 743px;"
+        loading="lazy"
+        title="Pools & Games Schedule"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="standings">
+      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N15&amp;chrome=false"
+        style="height: 372px;"
+        loading="lazy"
+        title="Standings"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="score-entry">
+      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:L15&amp;chrome=false"
+        style="height: 372px;"
+        loading="lazy"
+        title="Score Entry"></iframe>
+    </div>
+    <div class="vb-sheet-pane" data-vb-sheet-pane="playoffs">
+      <!-- Height 1239px = 1050px base (50 rows * 21px) + 18% -->
+      <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=154767549&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:I50&amp;chrome=false"
+        style="height: 1239px;"
+        loading="lazy"
+        title="Playoffs"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll("[data-vb-sheet-tab]");
+  var panes = document.querySelectorAll("[data-vb-sheet-pane]");
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var key = tab.getAttribute("data-vb-sheet-tab");
+      tabs.forEach(function (t) { t.classList.remove("active"); });
+      panes.forEach(function (p) { p.classList.remove("active"); });
+      tab.classList.add("active");
+      var pane = document.querySelector('[data-vb-sheet-pane="' + key + '"]');
+      if (pane) pane.classList.add("active");
+    });
+  });
+})();
+</script>
