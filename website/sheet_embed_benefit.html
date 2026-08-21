@@ -73,27 +73,6 @@
   .vb-sheet-pane { display: none; }
   .vb-sheet-pane.active { display: block; }
   .vb-sheet-pane iframe { display: block; width: 100%; border: 0; }
-
-  @media (max-width: 767px) {
-    /* Google's own embed shrinks font/cell size to fit whatever width
-       the iframe gets, rather than just letting it overflow -- so on a
-       phone's narrow viewport every sheet rendered tiny and "smashed"
-       instead of just needing a scroll. Forcing each pane back to
-       roughly its real content width (columns * ~100px, Google's
-       default column width) stops that shrink; the .vb-sheet-pane
-       wrapper scrolls horizontally so mobile users pan across at full,
-       readable size instead. Per-pane widths are a starting estimate
-       like the heights above -- nudge visually once live if a sheet's
-       columns run notably wider/narrower than the ~100px default. */
-    .vb-sheet-pane { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .vb-sheet-pane iframe { max-width: none; }
-    [data-vb-sheet-pane="rules-info"] iframe { width: 900px; }   /* I: 9 cols */
-    [data-vb-sheet-pane="schedule"] iframe { width: 700px; }     /* G: 7 cols */
-    [data-vb-sheet-pane="pools-games"] iframe { width: 700px; }  /* G: 7 cols */
-    [data-vb-sheet-pane="standings"] iframe { width: 1400px; }   /* N: 14 cols */
-    [data-vb-sheet-pane="score-entry"] iframe { width: 1200px; } /* L: 12 cols */
-    [data-vb-sheet-pane="playoffs"] iframe { width: 900px; }     /* I: 9 cols */
-  }
 </style>
 
 <div class="vb-sheet-embed">
@@ -116,10 +95,10 @@
         title="Rules & Info"></iframe>
     </div>
     <div class="vb-sheet-pane" data-vb-sheet-pane="schedule">
-      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <!-- Height 545px = 462px base (22 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1336687168&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:G15&amp;chrome=false"
-        style="height: 372px;"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1336687168&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:G22&amp;chrome=false"
+        style="height: 545px;"
         loading="lazy"
         title="Schedule"></iframe>
     </div>
@@ -132,18 +111,18 @@
         title="Pools & Games Schedule"></iframe>
     </div>
     <div class="vb-sheet-pane" data-vb-sheet-pane="standings">
-      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <!-- Height 545px = 462px base (22 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N15&amp;chrome=false"
-        style="height: 372px;"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1069635270&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:N22&amp;chrome=false"
+        style="height: 545px;"
         loading="lazy"
         title="Standings"></iframe>
     </div>
     <div class="vb-sheet-pane" data-vb-sheet-pane="score-entry">
-      <!-- Height 372px = 315px base (15 rows * 21px) + 18% -->
+      <!-- Height 545px = 462px base (22 rows * 21px) + 18% -->
       <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:L15&amp;chrome=false"
-        style="height: 372px;"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWv8MkSDZ37YF-MoFjfUHIn1zSpe27DKwi1N6_VRySfYY99akFC8losiY7YwwiB4Bzrbzp-Z7NiQau/pubhtml?gid=1813611744&amp;single=true&amp;widget=true&amp;headers=false&amp;range=A1:L22&amp;chrome=false"
+        style="height: 545px;"
         loading="lazy"
         title="Score Entry"></iframe>
     </div>
