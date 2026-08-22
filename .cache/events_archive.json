@@ -5223,6 +5223,24 @@
       "price": 0.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-08-19T18:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "2nd Annual Benefit Tournament",
+      "start": "2026-08-22T09:00:00",
+      "end": "2026-08-22T18:00:00",
+      "location": "Dover Shores Community Center",
+      "description": "2nd Annual Benefit Tournament\nLast year, our community came together and raised over $3,000 for the Dover Shores Community Center. We're back at it again \u2014 and this year, every dollar goes toward two causes: launching a youth volleyball program at DSCC and helping Rollins Club Volleyball fund their season.\n\nWays to Give\n- Play in the tournament \u2014 register your team and compete all day.\n- Eat at Southern Fowl \u2014 grab a meal any time on tournament day, save your receipts, and let them know you're with Greater Orlando Volleyball.\n- Buy a shirt \u2014 orders must be placed by August 11.\n- Shop the on-site vendors at Dover Shores \u2014 $1 from every order goes to the cause.\n- Donate before the event \u2014 and check whether your employer offers donation matching to double your impact.\n- Donate at the event \u2014 any donation over $5 earns you a free snack pass.\n\nTournament Details\n- Date: August 22, 2026\n- Time: 9:00 AM \u2013 9:00 PM\n- Location: Dover Shores Community Center\n- Roster: 8 players max\n- Iron middles allowed\n- Pool play + playoffs guaranteed\n\nDivisions\n- GOLD Division \u2014 morning session\n- SILVER Division \u2014 evening session\n- 8 teams max per division\n- If we don't get 6+ teams in each division, we'll collapse divisions for pool play and run separate GOLD and SILVER brackets for the playoffs.\n\nEntry & Prizes\n- $300 per team | $100 from every entry donated directly to the causes\n- Individual awards for the group stage\n- Finals MVP award\n- Both division winners receive free enrollment in their next tournament\n\nHow to Register\nTeam captains, sign up your full team to secure your spot. Spots are limited and will fill quickly.\n\nSummer 2026",
+      "url": "https://goadultsportsleague.leagueapps.com/app/tournaments/5018502",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "A/AA, B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 300.0,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-2nd_Annual_Benefit_Tournament-2026-08-22T09:00:00"
     }
   ]
 }

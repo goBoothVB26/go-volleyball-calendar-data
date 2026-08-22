@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22T08:20:26",
+  "generated": "2026-08-22T14:14:54",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -2146,22 +2146,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-07T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-07T20:15:00",
-      "end": "2026-07-07T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-07-08T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -2207,22 +2191,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-09T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-09T20:15:00",
-      "end": "2026-07-09T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -2338,22 +2306,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-14T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-14T20:15:00",
-      "end": "2026-07-14T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-07-15T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -2415,22 +2367,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-16T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-16T20:15:00",
-      "end": "2026-07-16T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -2639,22 +2575,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-21T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-21T20:15:00",
-      "end": "2026-07-21T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -3122,22 +3042,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-28T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-28T20:15:00",
-      "end": "2026-07-28T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-07-28T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -3247,22 +3151,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-07-30T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-07-30T20:15:00",
-      "end": "2026-07-30T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -3586,22 +3474,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-04T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-04T20:15:00",
-      "end": "2026-08-04T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-04T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -3695,22 +3567,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-06T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-06T20:15:00",
-      "end": "2026-08-06T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -4018,22 +3874,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-11T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-11T20:15:00",
-      "end": "2026-08-11T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-11T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -4127,22 +3967,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-13T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-13T20:15:00",
-      "end": "2026-08-13T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -4402,22 +4226,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-18T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-18T20:15:00",
-      "end": "2026-08-18T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-18T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -4511,22 +4319,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 40.0,
-      "image": null
-    },
-    {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-20T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-20T20:15:00",
-      "end": "2026-08-20T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
       "image": null
     },
     {
@@ -4802,22 +4594,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-25T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-25T20:15:00",
-      "end": "2026-08-25T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-08-25T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -4914,22 +4690,6 @@
       "image": null
     },
     {
-      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-08-27T20:15:00",
-      "club": "Big House Open Gym",
-      "title": "Big House Open Gym",
-      "start": "2026-08-27T20:15:00",
-      "end": "2026-08-27T22:15:00",
-      "all_day": false,
-      "location": "The Big House, Tavares, FL",
-      "description": null,
-      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": 5.0,
-      "image": null
-    },
-    {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-08-28T18:20:00",
       "club": "Out Sports League",
       "title": "Fridays - Draft/REMIX League (A/B/C/D)",
@@ -4959,7 +4719,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
     },
     {
       "uid": "Volleyball_Life-SSOVA's_August_29/30th_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-08-29T00:00:00",
@@ -5023,7 +4783,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/4124d206-e60e-4a7c-9e5c-d88fc35cbf63.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-OVP_Waterside-2026-08-29T00:00:00",
