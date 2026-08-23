@@ -595,4 +595,16 @@ DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
 LOCATION:Trotter Park
 URL:https://volleyballlife.com/event/40800
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] GNBV National Recruiting Showcase Florida Sep 20
+ 26
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+UID:Volleyball_Life-GNBV_National_Recruiting_Showcase_Florida_Sep_2026-202
+ 6-09-13T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 1s/2s\n\nMore info:
+  https://volleyballlife.com/event/32238
+LOCATION:Hickory Point Beach Sand Volleyball Complex
+URL:https://volleyballlife.com/event/32238
+END:VEVENT
 END:VCALENDAR
