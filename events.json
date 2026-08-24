@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T20:14:24",
+  "generated": "2026-08-24T03:00:00",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -4770,22 +4770,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-08-23T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-08-24T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -4799,6 +4783,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-08-24T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -5234,22 +5234,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Labor_of_Love_Volleyball_Classic_33-2026-09-05T00:00:00",
-      "club": "NAGVA",
-      "title": "Labor of Love Volleyball Classic 33",
-      "start": "2026-09-05T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Olentangy High School | 675 Lewis Center Rd, Lewis Center, OH 43035, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Jason Fallon | Jason Fallon | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 24 | 9 | 9 | 6 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | August 4, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 6, 2026 | August 3, 2026 | Addl. Player Fee | 450 | 500 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | jason-fallon-1 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/labor-of-love-volleyball-classic-33-",
-      "url": "https://www.nagva.org/tournaments-1/labor-of-love-volleyball-classic-33-",
-      "skill_level": "A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 450.0,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-SSOVA_Men's/Women's/Coed\u2019s_September_5/6_ST_PETE_BEACH,_Beach_Volleyball_Tournament-2026-09-05T00:00:00",
       "club": "Volleyball Life",
       "title": "SSOVA Men's/Women's/Coed\u2019s September 5/6 ST PETE BEACH, Beach Volleyball Tournament",
@@ -5535,38 +5519,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Guadalajara_NAGVA_2026-2026-09-12T00:00:00",
-      "club": "NAGVA",
-      "title": "Guadalajara NAGVA 2026",
-      "start": "2026-09-12T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Polideportivo Revolucion | C. Nueva Escocia 1537, Providencia 2a. Secc, 44638 Guadalajara, Jal., Mexico | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Steven Acosta | Steven Acosta | Divisions\n\nDivisions: Tournament Cap | B | BB3 | 36 | 18 | 18 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 7, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 9/11/2026, 6:00pm @ Peligro al Fondo | Location | C. Miguel Lerdo de Tejada 2170, Col Americana, Americana, 44150 Guadalajara, Jal., Mexico | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 7, 2026 | Addl. Player Fee | 250 (MXN) | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | https://venmo.com/u/Sacosta | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/guadalajara-nagva-2026",
-      "url": "https://www.nagva.org/tournaments-1/guadalajara-nagva-2026",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 250.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Boston_Beantown_Classic_2026-2026-09-12T00:00:00",
-      "club": "NAGVA",
-      "title": "Boston Beantown Classic 2026",
-      "start": "2026-09-12T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "War Memorial Recreational Center | 1640 Cambridge St, Cambridge, MA 02138, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Marc Fernandez | Marc Fernandez | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 36 | 23 | 9 | 4 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | 9/11/2026 7pm - 10pm @ Cathedral Station | Location | 1222 Washington St, Boston, MA 02118, USA | Seeding Party\n\nSeeding Party: Date/Time | 9/12/2026 8pm - \"Late\" @ Remnant Satellite | Location | 877 Cambridge St, Cambridge, MA 02141, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | 9/13/2026 7pm -10pm CLOSING PARTY @ Jacques Cabaret | Location | 79 Broadway St, Boston, MA 02116, USA | Tournament News\n\nPayment Deadlines: July 18, 2026 | August 1, 2026 | August 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 70 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/boston-beantown-classic-2026",
-      "url": "https://www.nagva.org/tournaments-1/boston-beantown-classic-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 500.0,
       "image": null
     },
     {
@@ -5874,38 +5826,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Steel_City_Classic_2026-2026-09-19T00:00:00",
-      "club": "NAGVA",
-      "title": "Steel City Classic 2026",
-      "start": "2026-09-19T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "All American Field House | 1 Racquet Ln, Monroeville, PA 15146, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Michael Immen | Michael Immen | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 30 | 12 | 10 | 5 | C | 5 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 7, 2026 | Payment Deadlines\n\nRegistration: Date/Time | September 18, 2026, 10:00 AM to 10:00 PM | Location | 5801 Lounge 5801 Ellsworth Ave, Pittsburgh, PA 15232, USA | Seeding Party\n\nSeeding Party: Date/Time | September 19, 2026, 10:00 AM to 10:00 PM | Location | Hazelwood Brewing co. 5007 Lytle St. Pittsburgh, PA 15207 | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 31, 2026 | August 31, 2026 | Addl. Player Fee | 550 | 575 | 55 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @Michael-Joseph-115 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/steel-city-classic-2026",
-      "url": "https://www.nagva.org/tournaments-1/steel-city-classic-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 550.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Emerald_City_Cat_Fight_2026-2026-09-19T00:00:00",
-      "club": "NAGVA",
-      "title": "Emerald City Cat Fight 2026",
-      "start": "2026-09-19T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Shoreline Community College | 16101 Greenwood Ave N, Shoreline, WA 98133, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Divisions\n\nDivisions: Tournament Cap | Open A/AA | BB | B | 69 | 15 | 30 | 15 | Women's | 9 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Sept. 18: 6:30-9:00 | Location | 912 12th Ave, Seattle, WA 98122, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 24, 2026 | September 4, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
-      "url": "https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
-      "skill_level": "Open, A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 575.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Queens_of_the_Court-2026-09-19T09:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Queens of the Court",
@@ -6114,22 +6034,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Splash_Revival-2026-09-26T00:00:00",
-      "club": "NAGVA",
-      "title": "Splash Revival",
-      "start": "2026-09-26T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "JustAGame Fieldhouse Reedsburg | 1501 N Viking Dr, Reedsburg, WI 53959, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Alex Glime | Jimmy Schultz | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 36 | 15 | 9 | 6 | Women's | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | 9/25/2026 7:00p - 10:00p @ Redd's Piano Bar | Location | 1305 Kalahari Dr, Wisconsin Dells, WI 53965, USA | Seeding Party\n\nSeeding Party: Date/Time | 9/26/2027 7:00p - 9:00p @ Kalahari Waterpark Resort Swim-Up Bar | Location | 1305 Kalahari Dr, Baraboo, WI 53913, USA | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 31, 2026 | September 12, 2026 | Addl. Player Fee | 450 | 550 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @james-schultziv | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/splash-revival",
-      "url": "https://www.nagva.org/tournaments-1/splash-revival",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 450.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -6322,22 +6226,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Fall_Classic_2026-2026-10-03T00:00:00",
-      "club": "NAGVA",
-      "title": "Fall Classic 2026",
-      "start": "2026-10-03T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "RYSE Energy StarCenter Multisport Farmers Branch | 2400 Pike St, Farmers Branch, TX 75234, USA | Dallas Premier Volleyball Club | 4452 Alpha Rd, Farmers Branch, TX 75244, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Josh Dossey | Benjamin Jones | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 132 | 12 | 42 | 42 | C | 18 | Women's | 18 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 2, 2026 at 7:00pm | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 31, 2026 | September 17, 2026 | Addl. Player Fee | 600 | 650 | 0 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-classic-2026",
-      "url": "https://www.nagva.org/tournaments-1/fall-classic-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 600.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-10-03T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -6495,22 +6383,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Fall_Ball_12-2026-10-10T00:00:00",
-      "club": "NAGVA",
-      "title": "Fall Ball 12",
-      "start": "2026-10-10T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Olympus Sports Center | 3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | B | BB | Open A/AA | 42 | 14 | 14 | 7 | Womens | 7 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 31, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 8, 2026, 12:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | October 9, 2026, 12:00 PM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 15, 2026 | September 26, 2026 | Addl. Player Fee | 525 | 600 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-ball-12",
-      "url": "https://www.nagva.org/tournaments-1/fall-ball-12",
-      "skill_level": "Open, A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 525.0,
       "image": null
     },
     {
@@ -6706,22 +6578,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Crossroads_Classic-2026-10-17T00:00:00",
-      "club": "NAGVA",
-      "title": "Crossroads Classic",
-      "start": "2026-10-17T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "The Academy Volleyball Club | 6635 E 30th St ste b, Indianapolis, IN 46219, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Jordan Rosenberg | Jordan Rosenberg | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 48 | 12 | 18 | 18 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | September 26, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 8, 2026 | September 5, 2026 | September 26, 2026 | Addl. Player Fee | 450 | 500 | 550 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | JordanRosenberg83 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/crossroads-classic",
-      "url": "https://www.nagva.org/tournaments-1/crossroads-classic",
-      "skill_level": "A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 450.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-10-17T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -6882,38 +6738,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-LAVO_Legends_2026-2026-10-24T00:00:00",
-      "club": "NAGVA",
-      "title": "LAVO Legends 2026",
-      "start": "2026-10-24T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "College of the Desert | 43500 Monterey Ave, Palm Desert, CA 92260, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Ray Robles | Michael Waters | Divisions\n\nDivisions: Tournament Cap | Legends B1 | Legends BB1 | 18 | 9 | 9 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | 10/23/2026 @ 7:00pm (Hunters PalmSprings) | Location | 302 E Arenas Rd, Palm Springs, CA 92262, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 31, 2026 | October 23, 2026 | Addl. Player Fee | 550 | 600 | 70 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/lavo-legends-2026",
-      "url": "https://www.nagva.org/tournaments-1/lavo-legends-2026",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 550.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Windy_City_Open_2026-2026-10-24T00:00:00",
-      "club": "NAGVA",
-      "title": "Windy City Open 2026",
-      "start": "2026-10-24T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Energy Volleyball Club | 1005 Commerce Ct, Bensenville, IL 60106, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Wesley Smith | Tim Martin | Divisions\n\nDivisions: Tournament Cap | A | BB | B | 60 | 6 | 12 | 18 | Legends B (35+) | 12 | C | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 24, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | TBD | Seeding Party\n\nSeeding Party: Date/Time | Location | TBD | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 30, 2026 | October 10, 2026 | Addl. Player Fee | 575 | 650 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/windy-city-open-2026",
-      "url": "https://www.nagva.org/tournaments-1/windy-city-open-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 575.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-10-24T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -7058,22 +6882,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-2026_Vegas_Baby!-2026-10-31T00:00:00",
-      "club": "NAGVA",
-      "title": "2026 Vegas Baby!",
-      "start": "2026-10-31T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Baltazar Delgado | Baltazar Delgado | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 66 | 12 | 30 | 24 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 1, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 30, 2026 | September 30, 2026 | Addl. Player Fee | 550 | 650 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @cavovb | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/2026-vegas-baby!",
-      "url": "https://www.nagva.org/tournaments-1/2026-vegas-baby!",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 550.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-10-31T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -7199,22 +7007,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Legendary_&_New_Blow-Out_2026-2026-11-07T00:00:00",
-      "club": "NAGVA",
-      "title": "Legendary & New Blow-Out 2026",
-      "start": "2026-11-07T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Elite Sports Center Annex | 415 E Grand Ave., South San Francisco, CA 94080, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Mark Salzer | Divisions\n\nDivisions: Tournament Cap | Legends B1 | Legends BB1 | C | 30 | 12 | 12 | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 5, 2026, 10:00 AM | Location | Seeding Party\n\nSeeding Party: Date/Time | November 6, 2026, 10:00 AM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 30, 2026 | Addl. Player Fee | 525 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
-      "url": "https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 525.0,
       "image": null
     },
     {
@@ -7346,22 +7138,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-Golden_&_Green_Apple_2026-2026-11-14T00:00:00",
-      "club": "NAGVA",
-      "title": "Golden & Green Apple 2026",
-      "start": "2026-11-14T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Bayard Rustin Education Complex | 351 W 18th St, New York, NY 10011, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Joshua Christensen | Andrew Dowdye | Divisions\n\nDivisions: Tournament Cap | Legends B1 | C | 16 | 8 | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 1, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: November 1, 2026 | Addl. Player Fee | 500 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/golden-%26-green-apple-2026",
-      "url": "https://www.nagva.org/tournaments-1/golden-%26-green-apple-2026",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 500.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-11-14T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -7490,38 +7266,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00",
-      "club": "NAGVA",
-      "title": "2026 Sactown Throwdown",
-      "start": "2026-11-21T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Capital Sports Center | 5209 Luce Ave, McClellan Park, CA 95652, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Gordon Li | Karl Vinge | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 78 | 28 | 26 | 12 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 25, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 24, 2026 | September 25, 2026 | November 6, 2026 | Addl. Player Fee | 500 | 550 | 600 | 60 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @Karl-Vinge-1 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/2026-sactown-throwdown",
-      "url": "https://www.nagva.org/tournaments-1/2026-sactown-throwdown",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 500.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Caribbean_Cup_2026-2026-11-21T00:00:00",
-      "club": "NAGVA",
-      "title": "Caribbean Cup 2026",
-      "start": "2026-11-21T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Borinken Coui Dome | 9W6W+3GV, PR-176, San Juan, 00926, Puerto Rico | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Divisions\n\nDivisions: Tournament Cap | B | BB | A1 | 36 | 12 | 18 | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026 | Payment Deadlines\n\nRegistration: Date/Time | November 20, 2026, 6:00 PM to 9:00 PM @ El Colmado | Location | 365 C. Tetu\u00e1n, San Juan, 00901, Puerto Rico | Seeding Party\n\nSeeding Party: Date/Time | November 21, 2026, 6:00pm - 2:00am @ La Sombrilla Rosa | Location | 154 C. de San Sebasti\u00e1n, San Juan, 00901, Puerto Rico | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | November 22, 2026, 6:00pm @ Meet Macarena | Location | 247 Av. Eleanor Roosevelt, San Juan, 00918, Puerto Rico | Tournament News\n\nPayment Deadlines: July 15, 2026 | August 30, 2026 | October 15, 2026 | Addl. Player Fee | 500 | 550 | 600 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
-      "url": "https://www.nagva.org/tournaments-1/caribbean-cup-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 500.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-11-21T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -7570,6 +7314,22 @@
       "image": null
     },
     {
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-11-22T13:00:00",
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time",
+      "start": "2026-11-22T13:00:00",
+      "end": "2026-11-22T15:00:00",
+      "all_day": false,
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "City_of_Sanford_Adult_Volleyball-Adult_Volleyball_Fall_2026-2026-11-22T14:00:00",
       "club": "City of Sanford Adult Volleyball",
       "title": "Adult Volleyball Fall 2026",
@@ -7586,38 +7346,6 @@
       "image": null
     },
     {
-      "uid": "NAGVA-2026_Na_Hoa_Aloha_Volleyball_Invitational-2026-12-05T00:00:00",
-      "club": "NAGVA",
-      "title": "2026 Na Hoa Aloha Volleyball Invitational",
-      "start": "2026-12-05T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Palama Settlement, Harry & Jeanette Weinberg Gymnasium | 810 N Vineyard Blvd, Honolulu, HI 96817, USA | 808 Athletic Club | 91-384 Komohana Pl, Kapolei, HI 96707, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Divisions\n\nDivisions: Tournament Cap | B | BB | Open A/AA | 42 | 14 | 14 | 7 | Womens | 7 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026 | Payment Deadlines\n\nRegistration: Date/Time | December 3, 2026, 1:00 AM | Location | Seeding Party\n\nSeeding Party: Date/Time | December 4, 2026, 1:00 AM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 30, 2026 | Addl. Player Fee | 450 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/2026-na-hoa-aloha-volleyball-invitational",
-      "url": "https://www.nagva.org/tournaments-1/2026-na-hoa-aloha-volleyball-invitational",
-      "skill_level": "Open, A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 450.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Battle_of_the_Alamo_2026-2026-12-18T00:00:00",
-      "club": "NAGVA",
-      "title": "Battle of the Alamo 2026",
-      "start": "2026-12-18T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 72 | 12 | 18 | 30 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 3, 2026 | December 1, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
-      "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 550.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-2027_Florida_USAV_Gold_Series-2027-01-09T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida USAV Gold Series",
@@ -7631,38 +7359,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": 600.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-LAVO_Sin_City_Classic_2027-2027-01-16T00:00:00",
-      "club": "NAGVA",
-      "title": "LAVO Sin City Classic 2027",
-      "start": "2027-01-16T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA | Vegas United Volleyball Club | 3055 S Valley View Blvd, Las Vegas, NV 89102, USA | Vegas Aces Volleyball | 123 Pancho Via Dr, Henderson, NV 89012, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Ray Robles | Michael Waters | Divisions\n\nDivisions: Tournament Cap | A3 | BB | B | 108 | 12 | 30 | 24 | C | 12 | Legends B | 12 | Womens | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | January 15, 2027, 6-900pm, Horseshoe Casino | Location | 3645 Las Vegas Blvd S, Las Vegas, NV 89109, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: September 15, 2026 | November 15, 2026 | January 15, 2027 | Addl. Player Fee | 550 | 600 | 650 | 70 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/lavo-sin-city-classic-2027",
-      "url": "https://www.nagva.org/tournaments-1/lavo-sin-city-classic-2027",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 550.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Mardi_Gras_Classic_Volleyball_Tournament_2027-2027-01-16T00:00:00",
-      "club": "NAGVA",
-      "title": "Mardi Gras Classic Volleyball Tournament 2027",
-      "start": "2027-01-16T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "Alario Center | 2000 Segnette Blvd, Westwego, LA 70094, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Jerry Traigle | Jerry Traigle | Divisions\n\nDivisions: Tournament Cap | A1 | BB3 | BB | 60 | 9 | 9 | 18 | B | 24 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 30, 2026 | Payment Deadlines\n\nRegistration: Date/Time | 1/15/2027; 7:00pm @ Bourbon Pub (upstairs) | Location | 801 Bourbon St, New Orleans, LA 70116, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Awards at the conclusion of play at Alario Center | Location | Tournament News\n\nPayment Deadlines: September 18, 2026 | November 20, 2026 | January 5, 2027 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @Jerry-Traigle     please include team name, division and captain's email address | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/mardi-gras-classic-volleyball-tournament-2026",
-      "url": "https://www.nagva.org/tournaments-1/mardi-gras-classic-volleyball-tournament-2026",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's",
-      "price": 550.0,
       "image": null
     },
     {
@@ -7711,22 +7407,6 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 550.0,
-      "image": null
-    },
-    {
-      "uid": "NAGVA-Heart_of_America_Classic_'27-2027-04-03T00:00:00",
-      "club": "NAGVA",
-      "title": "Heart of America Classic '27",
-      "start": "2027-04-03T00:00:00",
-      "end": null,
-      "all_day": true,
-      "location": "MAVS Volleyball | 16501 W 116th St, Lenexa, KS 66219, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Jsaquan Alexander-Riley | Brandon Morgan | Divisions\n\nDivisions: Tournament Cap | B | BB | Mod A3 | 36 | 12 | 12 | 6 | Women's | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: February 1, 2027 | March 1, 2027 | March 21, 2027 | Addl. Player Fee | 450 | 500 | 550 | 60 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @Jsaquan-Alexander         please include team name, division and captain's email address in the memo section when paying | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/heart-of-america-classic-'26",
-      "url": "https://www.nagva.org/tournaments-1/heart-of-america-classic-'26",
-      "skill_level": "B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": 450.0,
       "image": null
     },
     {
