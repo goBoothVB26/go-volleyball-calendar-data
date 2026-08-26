@@ -83,4 +83,14 @@ DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
 LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
 URL:https://www.wpvc.org/programs/adults
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Friday Nights at WPVC
+DTSTART;TZID=America/New_York:20270626T200000
+DTEND;TZID=America/New_York:20270626T223000
+UID:WPVC-Friday_Nights_at_WPVC-2027-06-26T20:00:00
+DESCRIPTION:Summer Adult Open Gym\n\nMore info: https://www.wpvc.org/progr
+ ams/adults
+LOCATION:Winter Park Volleyball Club Summer Adult Open Gym
+URL:https://www.wpvc.org/programs/adults
+END:VEVENT
 END:VCALENDAR
