@@ -1657,4 +1657,30 @@ DESCRIPTION:AVP Grass Nationals Qualifier '26\nThis is it. Your shot. Your
 LOCATION:Barnett Park
 URL:https://goadultsportsleague.leagueapps.com/app/tournaments/5097968
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Aug 30 @ Dover Shores Community 
+ Center
+DTSTART;TZID=America/New_York:20260830T130000
+DTEND;TZID=America/New_York:20260830T153000
+UID:Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center
+ -2026-08-30T13:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Aug 30 @ Dover Shores Community 
+ Center
+DTSTART;TZID=America/New_York:20260830T153000
+DTEND;TZID=America/New_York:20260830T174500
+UID:Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center
+ -2026-08-30T15:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR

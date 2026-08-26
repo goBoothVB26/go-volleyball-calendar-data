@@ -8029,7 +8029,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": 5.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2026-07-26T14:00:00"
@@ -8407,7 +8407,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-2026-08-02T13:00:00"
@@ -8425,7 +8425,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-2026-08-09T13:00:00"
@@ -8443,7 +8443,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_16_@_Dover_Shores_Community_Center-2026-08-16T13:00:00"
@@ -8461,7 +8461,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_23_@_Dover_Shores_Community_Center-2026-08-23T13:00:00"
@@ -8479,7 +8479,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-2026-08-02T15:30:00"
@@ -8497,7 +8497,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-2026-08-09T15:30:00"
@@ -8515,7 +8515,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_16_@_Dover_Shores_Community_Center-2026-08-16T15:30:00"
@@ -8533,7 +8533,7 @@
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": 7.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Aug_23_@_Dover_Shores_Community_Center-2026-08-23T15:30:00"
@@ -8699,6 +8699,42 @@
       "price": 150.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Nationals_Qualifier_'26-2026-09-05T09:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Aug 30 @ Dover Shores Community Center",
+      "start": "2026-08-30T13:00:00",
+      "end": "2026-08-30T15:30:00",
+      "location": "Dover Shores Community Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Women's",
+      "price": null,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center-2026-08-30T13:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Aug 30 @ Dover Shores Community Center",
+      "start": "2026-08-30T15:30:00",
+      "end": "2026-08-30T17:45:00",
+      "location": "Dover Shores Community Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's",
+      "price": null,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center-2026-08-30T15:30:00"
     }
   ]
 }
