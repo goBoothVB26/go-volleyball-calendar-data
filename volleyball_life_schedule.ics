@@ -596,15 +596,17 @@ LOCATION:Trotter Park
 URL:https://volleyballlife.com/event/40800
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] GNBV National Recruiting Showcase Florida Sep 20
- 26
+SUMMARY:[Volleyball Life] OTOWN RevCo Rumble: SUNDAY- RevCo Doubles in OPE
+ N\, AA and A. RevCo Quads (2F/2M) in BB.
 DTSTART;VALUE=DATE:20260913
 DTEND;VALUE=DATE:20260914
-UID:Volleyball_Life-GNBV_National_Recruiting_Showcase_Florida_Sep_2026-202
- 6-09-13T00:00:00
-DESCRIPTION:Tournament · Adults & Juniors · Beach · 1s/2s\n\nMore info:
-  https://volleyballlife.com/event/32238
-LOCATION:Hickory Point Beach Sand Volleyball Complex
-URL:https://volleyballlife.com/event/32238
+UID:Volleyball_Life-OTOWN_RevCo_Rumble:_SUNDAY-_RevCo_Doubles_in_OPEN\,_AA
+ _and_A._RevCo_Quads_(2F/2M)_in_BB.-2026-09-13T00:00:00
+DESCRIPTION:Tournament · Adults · Beach/Grass · 2s/4s\n\nMore info: htt
+ ps://volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.
+ 5383832\,-81.3789269&dist=200
+LOCATION:Avalon Park
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
 END:VEVENT
 END:VCALENDAR
