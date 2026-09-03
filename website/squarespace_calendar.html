@@ -1154,12 +1154,10 @@
 
   // Every carousel card is a CAROUSEL_CLUB (GOVB) event by definition,
   // so its corner mark is just that one club's logo, resolved once.
-  // The corner mark sits directly on the card (no white backing plate
-  // like the popup logo has), so a white silhouette variant is used in
-  // dark mode instead -- otherwise a dark logo vanishes into a dark
-  // card. Generate it with scripts/make_logo_white.py.
+  // Same image file for both light and dark mode -- no separate white
+  // silhouette variant.
   var CAROUSEL_LOGO = CLUB_LOGOS[CAROUSEL_CLUB] || "";
-  var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO ? CAROUSEL_LOGO.replace(/\.(png|jpg|jpeg|svg)$/i, "-white.$1") : "";
+  var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO;
 
   // Bracketed prefix shown before every event title, e.g.
   // "[GOVB] August 9th @ Dover Shores". Clubs not listed get an
