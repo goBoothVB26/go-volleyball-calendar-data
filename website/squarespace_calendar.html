@@ -1,7 +1,9 @@
 <!-- Greater Orlando Volleyball — filterable community calendar.
      Paste this entire file into a Squarespace CODE block (not Embed).
      ONE thing to edit: set EVENTS_URL below to the public URL of your
-     events.json (the raw.githubusercontent.com link). -->
+     events.json (the jsDelivr link -- see the comment above EVENTS_URL
+     further down for why jsDelivr instead of a raw.githubusercontent.com
+     link). -->
 
 <style>
   .vbcal {
@@ -1064,7 +1066,14 @@
 <script>
 (function () {
   // ======================================================================
-  var EVENTS_URL = "https://raw.githubusercontent.com/goBoothVB26/go-volleyball-calendar-data/main/events.json";
+  // jsDelivr (not raw.githubusercontent.com) -- same GitHub file, but
+  // served through a real global CDN with gzip/brotli and proper cache
+  // headers instead of raw.githubusercontent.com's flat 5-minute TTL
+  // and uncompressed responses. The scheduled workflow purges this
+  // file's jsDelivr cache right after every commit (see
+  // .github/workflows/update-calendar.yml), so this is never more
+  // stale than the raw URL was.
+  var EVENTS_URL = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/events.json";
 
   // Club featured in the card carousel above the calendar. The carousel
   // shows events from CAROUSEL_DAYS_BACK days ago through
@@ -1112,7 +1121,10 @@
   // (png/jpg/svg all fine; roughly square looks best) and list its raw
   // URL here. Clubs not listed -- or whose image fails to load -- just
   // show no logo, falling back to the colored ribbon as before.
-  var LOGO_BASE = "https://raw.githubusercontent.com/goBoothVB26/go-volleyball-calendar-data/main/logos/";
+  // jsDelivr, not raw.githubusercontent.com -- see the EVENTS_URL
+  // comment above. Logos change rarely, so the longer CDN cache here
+  // is pure upside with no staleness concern.
+  var LOGO_BASE = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/";
   var CLUB_LOGOS = {
     "Greater Orlando Volleyball Club": LOGO_BASE + "govb.png",
     "WPVC": LOGO_BASE + "wpvc.png",
