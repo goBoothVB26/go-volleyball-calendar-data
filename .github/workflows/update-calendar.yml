@@ -60,3 +60,14 @@ jobs:
             git pull --rebase
           done
           git push
+
+      - name: Purge jsDelivr cache for events.json
+        # The website reads events.json through jsDelivr (a real CDN,
+        # unlike raw.githubusercontent.com) for speed -- but jsDelivr
+        # caches branch content far longer than a few minutes, so
+        # without this the live site could show stale events for hours
+        # after every update above. This purges just that one file
+        # right away; a transient failure here shouldn't fail the whole
+        # scheduled run since the data commit itself already succeeded.
+        continue-on-error: true
+        run: curl -sS "https://purge.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/events.json"
