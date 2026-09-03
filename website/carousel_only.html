@@ -1129,7 +1129,12 @@
   // is pure upside with no staleness concern.
   var LOGO_BASE = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/";
   var CLUB_LOGOS = {
-    "Greater Orlando Volleyball Club": LOGO_BASE + "govb.png",
+    // govc_logo_icon.png (and its identical govc_logo_icon-white.png
+    // twin, so the light/dark carousel swap still resolves) is used
+    // singularly for both light and dark mode -- unlike govb.png's
+    // black-on-transparent original, this new icon reads fine on both
+    // backgrounds as-is, so no separate white silhouette variant.
+    "Greater Orlando Volleyball Club": LOGO_BASE + "govc_logo_icon.png",
     "WPVC": LOGO_BASE + "wpvc.png",
     "Out Sports League": LOGO_BASE + "outsports.png",
     "Big House Open Gym": LOGO_BASE + "bighouse.png",
