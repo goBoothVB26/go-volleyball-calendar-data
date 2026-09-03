@@ -3101,6 +3101,24 @@
       "price": 5.0,
       "image": null,
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-09-01T20:15:00"
+    },
+    {
+      "club": "Big House Open Gym",
+      "title": "Big House Open Gym",
+      "start": "2026-09-03T20:15:00",
+      "end": "2026-09-03T22:15:00",
+      "location": "The Big House, Tavares, FL",
+      "description": null,
+      "url": "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": 5.0,
+      "image": null,
+      "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-09-03T20:15:00"
     }
   ],
   "city_of_sanford_adult_volleyball": [
@@ -3609,6 +3627,24 @@
       "price": null,
       "image": null,
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-08-29T18:00:00"
+    },
+    {
+      "club": "Goldenrod Community Park",
+      "title": "Adult Member Time: Volleyball (NEW)",
+      "start": "2026-09-03T18:00:00",
+      "end": "2026-09-03T20:00:00",
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_(NEW)-2026-09-03T18:00:00"
     }
   ],
   "ymca_central_florida": [],
@@ -4389,7 +4425,7 @@
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-09-02T18:30:00",
+      "start": "2026-09-03T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
