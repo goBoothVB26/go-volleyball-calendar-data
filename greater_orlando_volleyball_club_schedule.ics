@@ -1664,4 +1664,16 @@ LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5150535-skills-trai
  ning-workout---september-26
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] July 5th @ College Park
+DTSTART;TZID=America/New_York:20270705T140000
+DTEND;TZID=America/New_York:20270705T170000
+UID:Greater_Orlando_Volleyball_Club-July_5th_@_College_Park-2027-07-05T14:
+ 00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:College Park Neighborhood Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
