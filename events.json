@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T06:29:29",
+  "generated": "2026-09-05T11:30:48",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5711,7 +5711,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
     },
     {
       "uid": "Volleyball_Life-Jax_Indoor_Coed_4s-2026-09-12T00:00:00",
@@ -5759,7 +5759,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Women's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/ad307f77-9113-4151-b779-455f5bcb6105.png"
+      "image": null
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-12T17:00:00",
