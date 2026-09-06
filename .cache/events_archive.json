@@ -791,6 +791,24 @@
       "price": null,
       "image": null,
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-05T00:00:00"
+    },
+    {
+      "club": "Game Point Volleyball",
+      "title": "Mini Club",
+      "start": "2026-09-06T00:00:00",
+      "end": null,
+      "location": "Orlando, Fl",
+      "description": "14's - 17's",
+      "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Game_Point_Volleyball-Mini_Club-2026-09-06T00:00:00"
     }
   ],
   "wpvc": [
