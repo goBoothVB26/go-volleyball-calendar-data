@@ -1,0 +1,201 @@
+<!-- Dark-mode-aware Google Doc embed. Paste this ENTIRE file into a
+     single Squarespace CODE block (not Embed). Combines three things
+     in one block since this plan doesn't have sitewide Code Injection:
+       1. Theme sync -- reads the same "vbcalTheme" localStorage key the
+          calendar page's toggle writes to, so this page opens already
+          matching whatever theme was last chosen anywhere on the site.
+          That choice expires 5 minutes after the last active tab (see
+          storedTheme() below), so a choice from days ago never
+          overrides a fresh visit's device setting, while reopening a
+          tab closed moments ago still honors it.
+       2. A toggle switch, positioned exactly like the calendar's: fixed
+          to the right edge of the heading row, vertically centered.
+       3. The Google Doc, embedded in an iframe with a themed card
+          frame around it.
+
+     TWO things to edit below: DOC_URL (if the document's published
+     link ever changes) and the <h2> heading text.
+
+     SETUP for the source doc: File -> Share -> Publish to web ->
+     Publish -- this generates the .../document/d/e/2PACX-.../pub link
+     DOC_URL needs (NOT the normal .../edit link, which can't be
+     embedded and requires sign-in). The published doc auto-updates
+     whenever the source is edited and re-published, and is viewable by
+     anyone with the link.
+
+     Cross-origin limitation: the card FRAME around the document (this
+     page's background, heading, border) fully supports dark mode. The
+     DOCUMENT ITSELF renders inside a cross-origin Google iframe this
+     page can't reach into or restyle, so it stays white/light
+     regardless of the page's theme -- same limitation as the Google
+     Form/Sheet embeds elsewhere on this site.
+
+     Height: Google gives no reliable way for the document to report
+     its real height back to this page, so HEIGHT below is a fixed
+     starting estimate -- nudge it visually once live until there's no
+     extra scrollbar/gap (longer documents need a bigger number). -->
+
+<style>
+  .vb-doc-page {
+    max-width: 720px; margin: 0 auto; padding: 16px;
+    font-family: inherit;
+    --vb-brand: #0057b8;
+    --vb-accent: #FFC425;
+    --vb-dark-bg: #14171c;
+    --vb-dark-surface: #1b2027;
+    --vb-dark-border: #2a3038;
+    --vb-dark-text: #e6e6e6;
+    --vb-dark-brand: #FFC425;
+  }
+
+  /* Heading row: title centered, toggle pinned to the right edge and
+     vertically centered -- identical pattern/positioning to the
+     calendar's .vbcar-head toggle on desktop. */
+  .vb-doc-head { position: relative; text-align: center; margin-bottom: 18px; }
+  .vb-doc-head h2 {
+    margin: 0; font-size: 28px; font-weight: 700; color: var(--vb-brand);
+  }
+  body.vb-dark-page .vb-doc-head h2 { color: var(--vb-dark-brand); }
+
+  /* Card frame around the iframe */
+  .vb-doc-card {
+    border-radius: 14px; padding: 4px;
+    background: #fff; border: 1px solid #ececec;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+    transition: background-color 0.25s, border-color 0.25s;
+  }
+  body.vb-dark-page .vb-doc-card {
+    background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .vb-doc-frame-wrap {
+    border-radius: 11px; overflow: hidden;
+    /* No inner scroll container here on purpose: nesting a scrollable
+       div around a cross-origin iframe breaks mouse-wheel/touch
+       scrolling (the wheel event gets swallowed at the iframe boundary
+       instead of chaining to the div, since the iframe has nothing of
+       its own to scroll). Instead the iframe is just tall enough that
+       the PAGE scrolls through the whole document normally -- the
+       standard, reliable way to embed a published Google Doc. */
+  }
+  .vb-doc-frame-wrap iframe {
+    display: block; width: 100%; border: 0;
+    height: 1000px;  /* starting estimate -- see comment above */
+  }
+
+  /* Theme toggle: identical slider look/behavior to the calendar's */
+  .vb-theme-btn {
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    width: 58px; height: 30px; padding: 0;
+    border: 0; border-radius: 15px; cursor: pointer;
+    background: linear-gradient(90deg, #9EDCFF, #5DB8F0);
+    transition: background 0.3s;
+  }
+  .vb-theme-btn:hover { transform: translateY(-50%); }
+  .vb-theme-btn .vb-knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: 50%; background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: left 0.3s, background 0.3s;
+  }
+  .vb-theme-btn .vb-knob span {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; line-height: 1;
+    transition: opacity 0.3s;
+  }
+  .vb-theme-btn .vb-sun { opacity: 1; }
+  .vb-theme-btn .vb-moon { opacity: 0; }
+  body.vb-dark-page .vb-theme-btn { background: linear-gradient(90deg, #3A2A66, #55397C); }
+  body.vb-dark-page .vb-theme-btn .vb-knob { left: 31px; background: #10131a; }
+  body.vb-dark-page .vb-theme-btn .vb-sun { opacity: 0; }
+  body.vb-dark-page .vb-theme-btn .vb-moon { opacity: 1; }
+  .vb-theme-btn:active .vb-knob { transform: scale(0.94); }
+
+  @media (max-width: 767px) {
+    .vb-doc-page { padding: 8px; }
+    /* Same fix as the calendar's mobile toggle: keep it pinned to the
+       heading row (never pushed into normal document flow) but nudge
+       it a few px in from the screen edge, and give the heading right
+       padding so the title text can't run underneath/behind it. */
+    .vb-theme-btn { right: 6px; }
+    .vb-doc-head h2 { font-size: 22px; padding-right: 64px; }
+  }
+</style>
+
+<div class="vb-doc-page">
+  <div class="vb-doc-head">
+    <h2>Document</h2>
+    <button class="vb-theme-btn" id="vb-doc-theme" aria-label="Toggle dark mode">
+      <span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span>
+    </button>
+  </div>
+
+  <div class="vb-doc-card">
+    <div class="vb-doc-frame-wrap">
+      <iframe id="vb-doc-iframe" src="" loading="lazy" title="Document"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vS5hshaop5z5xUJWQyHblRH18ZARTQcjr9EYKgDkjiu-_FxhuzXnZaT5r7D4OkdYveFLEdzzBvGGib6/pub";
+  // ======================================================================
+
+  document.getElementById("vb-doc-iframe").src = DOC_URL + "?embedded=true";
+
+  // The choice EXPIRES 5 minutes after the last time any tab was
+  // actively using the site (see storedTheme()), so a choice from days
+  // ago never overrides a fresh visit's device setting, while
+  // reopening a tab closed moments ago still honors it.
+  var THEME_TTL_MS = 5 * 60 * 1000;
+
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function storedTheme() {
+    var stored = localStorage.getItem("vbcalTheme");
+    var ts = +localStorage.getItem("vbcalThemeTS") || 0;
+    if (stored && Date.now() - ts > THEME_TTL_MS) {
+      localStorage.removeItem("vbcalTheme");
+      localStorage.removeItem("vbcalThemeTS");
+      return null;
+    }
+    return stored;
+  }
+  function touchThemeTS() {
+    if (localStorage.getItem("vbcalTheme")) localStorage.setItem("vbcalThemeTS", String(Date.now()));
+  }
+  function currentDark() {
+    var stored = storedTheme();
+    return stored ? stored === "dark" : prefersDark();
+  }
+  function apply(dark) {
+    document.body.classList.toggle("vb-dark-page", dark);
+  }
+
+  document.getElementById("vb-doc-theme").onclick = function () {
+    var dark = !currentDark();
+    localStorage.setItem("vbcalTheme", dark ? "dark" : "light");
+    localStorage.setItem("vbcalThemeTS", String(Date.now()));
+    apply(dark);
+  };
+
+  apply(currentDark());
+  touchThemeTS();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) touchThemeTS(); });
+  setInterval(touchThemeTS, 60000);
+
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    var onChange = function (e) {
+      if (!storedTheme()) apply(e.matches);
+    };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+  }
+  window.addEventListener("storage", function (e) {
+    if (e.key === "vbcalTheme") apply(currentDark());
+  });
+})();
+</script>
