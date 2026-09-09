@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T12:37:05",
+  "generated": "2026-09-09T17:28:22",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5698,22 +5698,6 @@
       "image": "https://vblimages.blob.core.windows.net/images/BVNE-ParentBrandBY.png"
     },
     {
-      "uid": "Volleyball_Life-SSOVA's_September_12/13_Men's/Women's/Coed\u2019s_TREASURE_ISLAND,_Beach_Volleyball_Tournament-2026-09-12T00:00:00",
-      "club": "Volleyball Life",
-      "title": "SSOVA's September 12/13 Men's/Women's/Coed\u2019s TREASURE ISLAND, Beach Volleyball Tournament",
-      "start": "2026-09-12T00:00:00",
-      "end": "2026-09-14T00:00:00",
-      "all_day": true,
-      "location": "Bilmar Beach Resort",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
-      "url": "https://volleyballlife.com/event/33583",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
-    },
-    {
       "uid": "Volleyball_Life-Jax_Indoor_Coed_4s-2026-09-12T00:00:00",
       "club": "Volleyball Life",
       "title": "Jax Indoor Coed 4s",
@@ -5727,7 +5711,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/e9be4716-8ea2-48ad-89b5-747a41ab69d5.jpeg"
     },
     {
       "uid": "Volleyball_Life-College_vs_College_Showdown_-_CCVL_x_Volleyvortex_x_GatorGrassvb-2026-09-12T00:00:00",
@@ -6639,6 +6623,22 @@
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays,_Fall_2026-2026-09-30T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Sand Coed 4's Social League - Wednesdays, Fall 2026",
+      "start": "2026-09-30T00:00:00",
+      "end": "2026-11-19T00:00:00",
+      "all_day": true,
+      "location": "Newberry Sand Courts at Jimmy Durden Park",
+      "description": "League \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40960",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
