@@ -1704,4 +1704,52 @@ LOCATION:Barnett Park
 URL:https://goadultsportsleague.leagueapps.com/events/5157017-national-vol
  leyball-day-grass-volleyball-potluck-and-bbq
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/20
+DTSTART;TZID=America/New_York:20260920T130000
+DTEND;TZID=America/New_York:20260920T180000
+UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_9/20-2026-09-20
+ T13:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155534-womens-club-tryouts---920
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155534-womens-cl
+ ub-tryouts---920
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/27
+DTSTART;TZID=America/New_York:20260927T130000
+DTEND;TZID=America/New_York:20260927T180000
+UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_9/27-2026-09-27
+ T13:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155540-womens-club-tryouts---927
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155540-womens-cl
+ ub-tryouts---927
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/20
+DTSTART;TZID=America/New_York:20260920T130000
+DTEND;TZID=America/New_York:20260920T180000
+UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_9/20-2026-09-20T1
+ 3:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155541-mens-club-tryouts---920
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155541-mens-club
+ -tryouts---920
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/27
+DTSTART;TZID=America/New_York:20260927T130000
+DTEND;TZID=America/New_York:20260927T180000
+UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_9/27-2026-09-27T1
+ 3:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155542-mens-club-tryouts---927
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155542-mens-club
+ -tryouts---927
+END:VEVENT
 END:VCALENDAR
