@@ -480,7 +480,7 @@
     display: inline-flex; align-items: center; gap: 6px;
     margin-top: 12px; margin-right: 8px; padding: 0 15px;
     /* Fixed height + border-box so the bordered .alt variant and the
-       icon-bearing Connect Me <button> come out EXACTLY equal; middle
+       icon-bearing More Info / Register <button> come out EXACTLY equal; middle
        vertical-align keeps the two centered on each other on the same
        line (a <button> and an <a> baseline-align differently otherwise). */
     height: 38px; box-sizing: border-box; vertical-align: middle;
@@ -491,8 +491,8 @@
   .vbcal-modal .btn:hover { background: #00458f; }
   .vbcal-modal .btn.alt { background: #fff; color: var(--vb-brand); border: 1px solid var(--vb-brand); }
   .vbcal-modal .btn.alt:hover { background: var(--vb-brand-soft); }
-  /* Connect Me: bookmark glyph inside the button, drawn in the button's
-     text color; fills in once reminders are set */
+  /* More Info / Register: bookmark glyph inside the button, drawn in
+     the button's text color; fills in once reminders are set */
   .vb-remind-btn svg {
     width: 15px; height: 15px; flex: 0 0 15px;
     fill: none; stroke: currentColor; stroke-width: 2;
@@ -647,7 +647,7 @@
     position: fixed; left: 50%; bottom: 28px; z-index: 2147483100;
     transform: translate(-50%, 12px); max-width: calc(100% - 32px);
     /* Same GOVB-blue / GOVB-yellow pairing (and 600 weight) as the
-       filter count line's "Connect Me" CTA and the filled bookmark
+       filter count line's "More Info / Register" CTA and the filled bookmark
        icon -- hardcoded hex since the toast lives outside .vbcal's
        custom-property scope (see comment above). */
     color: #0057b8; font-size: 15.1px; font-weight: 600;
@@ -1616,7 +1616,7 @@
     rebuildFilters();
     var evs = filtered();
     $("vb-count").innerHTML = evs.length + " event" + (evs.length === 1 ? " matches" : "s match") + " your filters." +
-      ' <span class="vb-count-cta">Open one and tap Connect Me &#128278;</span>';
+      ' <span class="vb-count-cta">Open one and tap More Info / Register &#128278;</span>';
     var titleText = MONTHS[current.getMonth()].slice(0, 3) + " " + String(current.getFullYear()).slice(-2);
     $("vb-title").textContent = titleText;
     $("vb-title2").textContent = titleText;  // desktop: shown beside "Community Calendar"
@@ -1971,15 +1971,25 @@
       : "";
     var on = bookmarks()[ev.uid];
     // Events before today take no reminder signups and no calendar
-    // adds -- their popup offers only More info / Register.
+    // adds. Notifications-disabled is the same story (there's no
+    // endpoint for the merged flow below to submit to) -- both fall
+    // back to a plain link straight to the event's own page instead of
+    // the expandable "More Info / Register" -> "Register" flow.
+    var mergedFlow = !isPastEvent(ev) && notificationsEnabled();
     var remindBtn = "";
-    if (!isPastEvent(ev)) {
-      remindBtn = notificationsEnabled()
-        ? '<button class="btn vb-remind-btn' + (on ? " on" : "") + '" data-bm-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
-          '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>' +
-          (on ? "Connected" : "Connect Me") + "</button>"
-        : '<a class="btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Google Calendar</a>';
+    if (mergedFlow) {
+      // "More Info / Register" expands the inline signup section below;
+      // its submit button ("Register") sends the email AND redirects to
+      // this event's own registration link -- see submitSignup().
+      remindBtn = '<button class="btn vb-remind-btn' + (on ? " on" : "") + '" data-bm-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+        '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>' +
+        (on ? "Connected" : "More Info / Register") + "</button>";
+    } else if (!isPastEvent(ev)) {
+      remindBtn = '<a class="btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Google Calendar</a>';
     }
+    var plainInfoLink = !mergedFlow && ev.url
+      ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>'
+      : "";
     var html = '<button class="close" id="vb-close">&times;</button>' +
                '<button class="vb-share" data-share-uid="' + ev.uid.replace(/"/g, "&quot;") + '" title="Share this event" aria-label="Share this event">' +
                '<svg viewBox="0 0 24 24"><path d="M12 3v11.5M8 7l4-4 4 4M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>' +
@@ -1996,21 +2006,24 @@
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
                "</div></div>" +
                (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 1200)) + "</div>" : "") +
-               remindBtn +
-               (ev.url ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>' : "") +
-               // Inline signup section: hidden until Connect Me is
-               // pressed, then the popup expands to reveal it
-               (notificationsEnabled() && !isPastEvent(ev)
+               remindBtn + plainInfoLink +
+               // Inline signup section: hidden until "More Info /
+               // Register" is pressed, then the popup expands to reveal it
+               (mergedFlow
                  ? '<div class="vb-signup vb-inline-signup" id="vb-inline-signup" style="display:none">' +
                    '<p id="vb-signup-event">Enter your email and we\'ll send you reminders before &ldquo;' + esc(ev.title) + '&rdquo; starts.</p>' +
                    '<input type="email" id="vb-signup-email" placeholder="you@email.com" autocomplete="email">' +
-                   '<div class="actions"><button class="vbcal-btn" id="vb-signup-submit">Get Notified</button></div>' +
+                   '<div class="actions"><button class="vbcal-btn" id="vb-signup-submit">Register</button></div>' +
                    '<div class="msg" id="vb-signup-msg"></div>' +
-                   // Only appears after a successful signup, matching
-                   // the confirmation email's wording exactly.
-                   '<p class="vb-signup-note" id="vb-signup-note" style="display:none">Note: this sets up' +
-                   ' email reminders only &mdash; it does not register you for the event. Be sure to' +
-                   ' register separately if the event requires it.</p>' +
+                   // Only appears after a successful signup. Unlike the
+                   // reminder email's note (still accurate on its own,
+                   // sent later with no redirect -- see
+                   // notifications_apps_script.js), this one reflects
+                   // that clicking Register ALSO opens the event's own
+                   // page immediately, via submitSignup().
+                   '<p class="vb-signup-note" id="vb-signup-note" style="display:none">Note: this also opens' +
+                   ' the event&rsquo;s registration page in a new tab &mdash; check that it loaded, since' +
+                   ' email reminders alone don&rsquo;t reserve your spot.</p>' +
                    "</div>"
                  : "");
     var modal = $("vb-modal");
@@ -2031,7 +2044,7 @@
     if (dx) modal.style.marginLeft = dx + "px";
     if (dy) modal.style.marginTop = dy + "px";
     $("vb-close").onclick = closeModal;
-    if (notificationsEnabled() && !isPastEvent(ev)) {
+    if (mergedFlow) {
       signupEvent = ev;
       $("vb-signup-submit").onclick = submitSignup;
     }
@@ -2142,23 +2155,25 @@
     bm[ev.uid] = true;
     localStorage.setItem("vbcalBookmarks", JSON.stringify(bm));
 
-    msg.textContent = "You will be notified! Opening Google Calendar…";
+    msg.textContent = "You're signed up! Opening the event's registration page…";
     msg.className = "msg ok";
     // Flip any visible icons/buttons for this event to the "set" state
     var sel = '[data-bm-uid="' + ev.uid.replace(/"/g, '\\"') + '"]';
     Array.prototype.forEach.call(document.querySelectorAll(sel), function (el) {
       el.className += el.className.indexOf(" on") < 0 ? " on" : "";
       if (el.className.indexOf("vb-remind-btn") >= 0) {
-        el.innerHTML = el.innerHTML.replace("Connect Me", "Connected");
+        el.innerHTML = el.innerHTML.replace("More Info / Register", "Connected");
       }
     });
-    // This note only appears once someone has actually signed up,
-    // matching the confirmation email's wording exactly.
+    // This note only appears once someone has actually signed up (see
+    // its own comment above, in openModal, for why its wording no
+    // longer needs to match the reminder email's).
     var note = $("vb-signup-note");
     if (note) note.style.display = "block";
-    // Hand off to the Add-to-Google-Calendar flow (same user gesture,
-    // so popup blockers allow it)
-    window.open(gcalUrl(ev), "_blank", "noopener");
+    // Redirect to the event's own page/registration link (same user
+    // gesture, so popup blockers allow it) -- falls back to adding the
+    // event to Google Calendar on the rare event with no url at all.
+    window.open(ev.url || gcalUrl(ev), "_blank", "noopener");
   }
 
   // "Sun Jul 19th" style date, like Volleyball Life's cards
@@ -2178,7 +2193,7 @@
     catch (e) { return {}; }
   }
   // Corner bookmark on carousel cards. (The event popup uses the
-  // combined "Connect Me" button instead -- see openModal.)
+  // combined "More Info / Register" button instead -- see openModal.)
   function bookmarkIcon(uid) {
     if (!notificationsEnabled()) return "";
     var on = bookmarks()[uid];
