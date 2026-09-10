@@ -1,9 +1,10 @@
 """Adapter for Greater Orlando Volleyball Club (LeagueApps-hosted).
 
-Aggregates three separate program-listing pages on the same site --
+Aggregates four separate program-listing pages on the same site --
 tournaments (single/multi-day events), leagues (weekly recurring
-series), and classes (long-running weekly recurring sessions) -- into
-one combined set of events. The site's outer pages are a React shell
+series), classes (long-running weekly recurring sessions), and club
+teams (one-off dated tryout sessions) -- into one combined set of
+events. The site's outer pages are a React shell
 that embeds the actual program listing in an iframe pointing at
 LeagueApps' older server-rendered "monolith" markup (same `<li
 id="baseevent-...">` structure as Out Sports League); appending
@@ -54,6 +55,12 @@ LIST_PAGE_URLS = [
 # Any new class added to the site is picked up automatically without
 # code changes.
 CLASSES_PAGE_URL = f"{BASE_URL}/classes?ngmp_2023_iframe_transition=1"
+
+# Club teams list page (tryouts) -- scraped to auto-discover each
+# tryout group's own detail page, e.g. "Greater Orlando Volleyball Club
+# Tryouts". See _scrape_club_teams() for why these need their own
+# parser instead of the standard baseevent li one.
+CLUB_TEAMS_PAGE_URL = f"{BASE_URL}/clubteams?ngmp_2023_iframe_transition=1"
 
 # A clock-time range like "2:00PM to 5:00PM" (the session's time slot).
 _TIME_RANGE_RE = re.compile(r"\d{1,2}(:\d{2})?\s*(am|pm)\s+to\s+\d", re.IGNORECASE)
@@ -107,6 +114,7 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         events: list[Event] = []
         events.extend(self._scrape_list_pages())
         events.extend(self._scrape_classes())
+        events.extend(self._scrape_club_teams())
         return events
 
     def _detail_soup(self, url: str):
@@ -284,6 +292,81 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
                 events.extend(self._scrape_subprogram_detail(detail_url, program_title))
 
         return events
+
+    # ------------------------------------------------------------------
+    # Club teams (tryouts): auto-discover groups, then dated sessions
+    # ------------------------------------------------------------------
+
+    def _scrape_club_teams(self) -> list[Event]:
+        """Auto-discover tryout groups from the club teams list page
+        (e.g. "Greater Orlando Volleyball Club Tryouts"), then fetch
+        each group's own detail page, which lists its individual dated
+        sessions (e.g. "Women's Club Tryouts - 9/20") as standard
+        baseevent li markup.
+
+        Despite the standard markup, these rows are NOT run through the
+        normal _parse_baseevent_li(): some sessions carry a "Starts" /
+        "Ends" pair spanning a full week (e.g. Starts Sep 20, Ends
+        Sep 27) even though the title names one specific date and a
+        SEPARATE sibling li already covers the other end of that range
+        as its own session. Expanding Starts..Ends across matching
+        weekdays (as leagues/tournaments correctly do) would duplicate
+        that sibling's date under the wrong title. _parse_club_team_session()
+        instead trusts "Starts" alone as the session's one real date.
+        """
+        events: list[Event] = []
+        soup = fetch_static(CLUB_TEAMS_PAGE_URL)
+
+        for li in soup.select('li[id^="baseevent-"]'):
+            title_el = li.select_one("h2 a")
+            if not title_el:
+                continue
+            href = title_el["href"]
+            detail_url = (BASE_URL + href) if href.startswith("/") else href
+            detail_url += "?ngmp_2023_iframe_transition=1"
+
+            detail_soup = fetch_static(detail_url)
+            for session_li in detail_soup.select('li[id^="baseevent-"]'):
+                events.extend(self._parse_club_team_session(session_li))
+
+        return events
+
+    def _parse_club_team_session(self, li) -> list[Event]:
+        """One tryout session li -> a single-day Event dated by its
+        "Starts" field (see _scrape_club_teams() for why "Ends" isn't
+        used to expand this into multiple dates)."""
+        title_el = li.select_one("h2 a")
+        if not title_el:
+            return []
+        title = title_el.get_text(strip=True)
+
+        details = leagueapps.parse_details(li)
+        start_date = leagueapps.parse_date(details.get("starts"))
+        if start_date is None:
+            return []
+
+        start_time, end_time = leagueapps.parse_time_range(li)
+        price = leagueapps.parse_fee(li)
+
+        location_el = li.select_one("dd.program-list-location a")
+        location = location_el.get_text(strip=True) if location_el else None
+
+        url = title_el["href"]
+        if url.startswith("/"):
+            url = BASE_URL + url
+
+        day = start_date.date()
+        return [
+            Event(
+                club=self.club_name,
+                title=title,
+                start=datetime.combine(day, start_time) if start_time else datetime.combine(day, datetime.min.time()),
+                end=datetime.combine(day, end_time) if end_time else None,
+                location=location,
+                url=url,
+                price=price,
+            )
+        ]
 
     def _scrape_detail_venue(self, url: str) -> tuple[Optional[str], Optional[str]]:
         """(venue, description) from a detail page whose description
