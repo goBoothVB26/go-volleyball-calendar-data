@@ -8,7 +8,7 @@ per-club defaults.
 
 Values are deliberately small fixed vocabularies so the filter UI stays
 clean:
-  gym_type:    Open Gym | League | Clinics/Training | Tournament
+  gym_type:    Open Gym | League | Clinics/Training | Tournament | Tryouts
   net_height:  Men's | Women's | Co-ed
   skill_level: AA | A | BB | B | Open | Beginner | Intermediate |
                Advanced | All Levels
@@ -73,6 +73,7 @@ MANUAL_OVERRIDES: list[tuple[str, str, str, object]] = [
 
 _GYM_TYPE_RULES = [
     ("Open Gym", re.compile(r"\bopen\s+(gym|play)\b|\bpick[\s-]?up\b", re.I)),
+    ("Tryouts", re.compile(r"\btryouts?\b", re.I)),
     ("Clinics/Training", re.compile(r"\b(clinic|class|classes|training|skills?|lesson|camp|workout)\b", re.I)),
     ("Tournament", re.compile(r"\b(tournament|championship|qualifier|challenge|series|invitational|classic|fest)\b", re.I)),
     ("League", re.compile(r"\bleagues?\b", re.I)),
