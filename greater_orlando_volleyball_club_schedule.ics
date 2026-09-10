@@ -1686,4 +1686,22 @@ LOCATION:College Park Neighborhood Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
  summer-series?ngmp_2023_iframe_transition=1
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] National Volleyball Day Grass Vo
+ lleyball\, Potluck and BBQ!
+DTSTART;TZID=America/New_York:20260923T160000
+DTEND;TZID=America/New_York:20260923T220000
+UID:Greater_Orlando_Volleyball_Club-National_Volleyball_Day_Grass_Volleyba
+ ll\,_Potluck_and_BBQ!-2026-09-23T16:00:00
+DESCRIPTION:We reserved some space\, we're gonna grill some burgers and do
+ gs\, and we're gonna bring something to share and celebrate National Volle
+ yball Day! \n\n$5 to help cover the cost of the rental + food provided.
+ \n\nWe'll be in the back football field at Barnett Park past the softball/
+ baseball fields on the path.\n\nMore info: https://goadultsportsleague.lea
+ gueapps.com/events/5157017-national-volleyball-day-grass-volleyball-potluc
+ k-and-bbq
+LOCATION:Barnett Park
+URL:https://goadultsportsleague.leagueapps.com/events/5157017-national-vol
+ leyball-day-grass-volleyball-potluck-and-bbq
+END:VEVENT
 END:VCALENDAR
