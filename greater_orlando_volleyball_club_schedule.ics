@@ -1752,4 +1752,16 @@ LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/clubteams/5155542-mens-club
  -tryouts---927
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] July 12th @ College Park
+DTSTART;TZID=America/New_York:20270712T140000
+DTEND;TZID=America/New_York:20270712T170000
+UID:Greater_Orlando_Volleyball_Club-July_12th_@_College_Park-2027-07-12T14
+ :00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:College Park Neighborhood Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR

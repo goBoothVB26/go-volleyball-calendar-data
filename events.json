@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T22:05:56",
+  "generated": "2026-09-11T06:49:22",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5602,22 +5602,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-09-10T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-09-10T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -5631,6 +5615,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 5.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-09-11T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -8146,6 +8146,22 @@
       "image": null
     },
     {
+      "uid": "NAGVA-Louisville_LAVA_Classic_XVI-2026-12-05T00:00:00",
+      "club": "NAGVA",
+      "title": "Louisville LAVA Classic XVI",
+      "start": "2026-12-05T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "Union Volleyball Club, The Koetter Center | 4795 Keystone Blvd, Jeffersonville, IN 47130, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | John McEwen | John McEwen | Divisions\n\nDivisions: Tournament Cap | B | BB | BB3 | 40 | 15 | 15 | 10 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | Addl. Player Fee | 475 | 550 | 65 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @John-McEwen12 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/louisville-lava-classic-xvi",
+      "url": "https://www.nagva.org/tournaments-1/louisville-lava-classic-xvi",
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 475.0,
+      "image": null
+    },
+    {
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-12-05T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Volleyball Court B",
@@ -8463,6 +8479,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 8.0,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-July_12th_@_College_Park-2027-07-12T14:00:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "July 12th @ College Park",
+      "start": "2027-07-12T14:00:00",
+      "end": "2027-07-12T17:00:00",
+      "all_day": false,
+      "location": "College Park Neighborhood Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": 5.0,
       "image": null
     }
   ]
