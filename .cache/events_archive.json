@@ -3843,6 +3843,24 @@
       "price": null,
       "image": null,
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-09-10T18:00:00"
+    },
+    {
+      "club": "Goldenrod Community Park",
+      "title": "Adult Volleyball Court B",
+      "start": "2026-09-12T18:00:00",
+      "end": "2026-09-12T20:00:00",
+      "location": "Goldenrod Community Park",
+      "description": null,
+      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-09-12T18:00:00"
     }
   ],
   "ymca_central_florida": [
@@ -4840,7 +4858,7 @@
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-09-11T18:30:00",
+      "start": "2026-09-12T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
@@ -5510,6 +5528,24 @@
       "price": null,
       "image": null,
       "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-09-09T18:00:00"
+    },
+    {
+      "club": "Meadow Woods Recreation Center",
+      "title": "Adult Volleyball Member Time",
+      "start": "2026-09-12T18:00:00",
+      "end": "2026-09-12T20:00:00",
+      "location": "Meadow Woods Recreation Center",
+      "description": null,
+      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-09-12T18:00:00"
     }
   ],
   "greater_orlando_volleyball_club": [
@@ -6556,6 +6592,24 @@
       "price": 0.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-09-09T18:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Saturday Indoor Volleyball League - Fall '26",
+      "start": "2026-09-12T17:00:00",
+      "end": "2026-09-12T21:00:00",
+      "location": "Dover Shores Community Center",
+      "description": "Welcome to Greater Orlando Volleyball\u2019s Fall Indoor League\n\nWe\u2019re back for another season of indoor league play at Dover Shores \u2014 built for intermediate+ players who want real competition with that social GOVB energy.\n\nLeague Format\n- 6v6 teams (coed optional)\n- Rosters: 7+, no cap\u00a0 (we recommend 8)\n- At least four sets each week\n- Sets played to 21, 21, 15 \u00a0(50-minute matches)\n- USAV rules with refs (teams provide officials)\n\nPrice\n- $70 early bird, $75 regular, $80 late\n- Payment plans available\n\nLeague Perks\n- League t-shirt (Week 2/3, sponsorship dependent)\n- Championship shirts + medals\n- End of season party\u00a0\n\nSeason Schedule\n- September 12\u00a0 - Week 1\n- November 21 - Championship Week\n\n- September: \u00a012, 19, 26\n- October: 3, 10, 17,\n- November:\u00a0 7, 14\n\nDivisions\n- One coed division\n- Men\u2019s height net\n- Intermediate level required\n\nFree Agents\nWe suggest that those interested in playing without a team come to the Open Gym + Team Practice session. Our league generally fills up quickly and we rarely have a full spot for free agent teams.\u00a0\n\nWe also have open gyms in August that would also be a great place to make friends and build teams. You can find those sessions here:\u00a0https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series\n\nSubs\n- Outside subs: Must be invited + pay the single-day fee. No Execptions\n- League players can sub freely (Penalties apply for missing Referee assignments)\n- No subs on Championship Week\n\nSee you on the court.\nGreater Orlando Volleyball\n\nFall 2026",
+      "url": "https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5094328-saturday-indoor-volleyball-league---fall-26",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "B/BB",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": 70.0,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-12T17:00:00"
     }
   ]
 }
