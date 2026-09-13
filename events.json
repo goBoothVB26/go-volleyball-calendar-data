@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T12:58:10",
+  "generated": "2026-09-13T17:11:39",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -7058,18 +7058,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Beast_Coast_Volleyball_-_Monster_Smash_Reverse_Coed_Grass_4\u2019s-2026-10-10T00:00:00",
+      "uid": "Volleyball_Life-First_Coast_Volleyball_St_Augustine_Beach_Series_Oct_10-11_'26-2026-10-10T00:00:00",
       "club": "Volleyball Life",
-      "title": "Beast Coast Volleyball - Monster Smash Reverse Coed Grass 4\u2019s",
+      "title": "First Coast Volleyball St Augustine Beach Series Oct 10-11 '26",
       "start": "2026-10-10T00:00:00",
-      "end": "2026-10-11T00:00:00",
+      "end": "2026-10-12T00:00:00",
       "all_day": true,
-      "location": "Kenly Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/40630",
+      "location": "St Augustine Pier",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Co-ed",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
