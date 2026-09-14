@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14T14:34:52",
+  "generated": "2026-09-14T22:54:49",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6088,8 +6088,8 @@
       "start": "2026-09-19T00:00:00",
       "end": null,
       "all_day": true,
-      "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Shoreline Community College | 16101 Greenwood Ave N, Shoreline, WA 98133, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Lew Smith Dalton Roberts Jacob Fess | Divisions\n\nDivisions: Tournament Cap | Open A/AA | BB | B | 69 | 15 | 30 | 15 | Women's | 9 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Sept. 18: 6:30-9:00 | Location | 912 12th Ave, Seattle, WA 98122, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 24, 2026 | September 4, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
+      "location": "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Bronson Young | Bronson Young | Lew Smith Dalton Roberts Jacob Fess | Divisions\n\nDivisions: Tournament Cap | Open A/AA | BB | B | 69 | 15 | 30 | 15 | Women's | 9 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | August 22, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Sept. 18: 6:00-9:00 | Location | 912 12th Ave, Seattle, WA 98122, USA | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: July 24, 2026 | September 4, 2026 | Addl. Player Fee | 575 | 650 | 80 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @bronsonhdyoung | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "url": "https://www.nagva.org/tournaments-1/emerald-city-cat-fight-2026",
       "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
@@ -7058,18 +7058,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Beast_Coast_Volleyball_-_Monster_Smash_Reverse_Coed_Grass_4\u2019s-2026-10-10T00:00:00",
+      "uid": "Volleyball_Life-M/W_Grass_Doubles_&_Triples-2026-10-10T00:00:00",
       "club": "Volleyball Life",
-      "title": "Beast Coast Volleyball - Monster Smash Reverse Coed Grass 4\u2019s",
+      "title": "M/W Grass Doubles & Triples",
       "start": "2026-10-10T00:00:00",
-      "end": "2026-10-11T00:00:00",
+      "end": "2026-10-12T00:00:00",
       "all_day": true,
-      "location": "Kenly Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/40630",
+      "location": "Trotters Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/3s",
+      "url": "https://volleyballlife.com/event/41629",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Co-ed",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
