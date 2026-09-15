@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T13:01:53",
+  "generated": "2026-09-15T17:53:00",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6546,6 +6546,22 @@
       "image": null
     },
     {
+      "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00",
+      "club": "Volleyball Life",
+      "title": "PBOVA QUADS GRASS TOURNAMENT",
+      "start": "2026-09-26T00:00:00",
+      "end": "2026-09-27T00:00:00",
+      "all_day": true,
+      "location": "Greenacres Grass Field",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/event/41648",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Saturday Indoor Volleyball League - Fall '26",
@@ -7051,22 +7067,6 @@
       "location": "Winter Park Volleyball Center",
       "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
       "url": "https://volleyvortex.volleyballlife.com/events",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volleyball_Life-M/W_Grass_Doubles_&_Triples-2026-10-10T00:00:00",
-      "club": "Volleyball Life",
-      "title": "M/W Grass Doubles & Triples",
-      "start": "2026-10-10T00:00:00",
-      "end": "2026-10-12T00:00:00",
-      "all_day": true,
-      "location": "Trotters Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/3s",
-      "url": "https://volleyballlife.com/event/41629",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",

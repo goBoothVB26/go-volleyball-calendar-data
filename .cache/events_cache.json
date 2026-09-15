@@ -7304,12 +7304,12 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "M/W Grass Doubles & Triples",
-      "start": "2026-10-10T00:00:00",
-      "end": "2026-10-12T00:00:00",
-      "location": "Trotters Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/3s",
-      "url": "https://volleyballlife.com/event/41629",
+      "title": "PBOVA QUADS GRASS TOURNAMENT",
+      "start": "2026-09-26T00:00:00",
+      "end": "2026-09-27T00:00:00",
+      "location": "Greenacres Grass Field",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/event/41648",
       "category": null,
       "all_day": true,
       "stable_id": null,
@@ -7318,7 +7318,7 @@
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-M/W_Grass_Doubles_&_Triples-2026-10-10T00:00:00"
+      "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00"
     }
   ],
   "ocoee_coed_league": [
