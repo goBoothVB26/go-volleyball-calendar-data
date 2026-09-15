@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T17:53:00",
+  "generated": "2026-09-15T22:35:49",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5983,22 +5983,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
-      "image": null
-    },
-    {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-09-16T18:00:00",
-      "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time",
-      "start": "2026-09-16T18:00:00",
-      "end": "2026-09-16T20:00:00",
-      "all_day": false,
-      "location": "Meadow Woods Recreation Center",
-      "description": null,
-      "url": "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null,
       "image": null
     },
     {
