@@ -655,20 +655,6 @@ LOCATION:SunWest Park
 URL:https://volleyballlife.com/event/41148
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] 2026 USA Volleyball Men's Beach Collegiate East 
- Coast Challenge
-DTSTART;VALUE=DATE:20260925
-DTEND;VALUE=DATE:20260928
-UID:Volleyball_Life-2026_USA_Volleyball_Men's_Beach_Collegiate_East_Coast_
- Challenge-2026-09-25T00:00:00
-DESCRIPTION:Tournament · Adults · Beach · 1s/2s\n\nMore info: https://v
- olleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.538383
- 2\,-81.3789269&dist=200
-LOCATION:Rita Crocket Beach Sports Academy
-URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
- l=28.5383832,-81.3789269&dist=200
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Battle For Boxi
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260928
@@ -792,5 +778,19 @@ DESCRIPTION:Tournament · Adults · Grass · 2s/3s\n\nMore info: https://v
  olleyballlife.com/event/41629
 LOCATION:Trotters Park
 URL:https://volleyballlife.com/event/41629
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] First Coast Volleyball St Augustine Beach Series
+  Oct 10-11 '26
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261012
+UID:Volleyball_Life-First_Coast_Volleyball_St_Augustine_Beach_Series_Oct_1
+ 0-11_'26-2026-10-10T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28
+ .5383832\,-81.3789269&dist=200
+LOCATION:St Augustine Pier
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
 END:VEVENT
 END:VCALENDAR
