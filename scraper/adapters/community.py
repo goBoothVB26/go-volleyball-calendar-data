@@ -153,7 +153,10 @@ class CommunityEventsAdapter(ClubAdapter):
             print("[Community Submitted] COMMUNITY_FEED_URL not set -- skipping", file=sys.stderr)
             return []
 
-        response = requests.get(COMMUNITY_FEED_URL, timeout=30)
+        # Apps Script web apps can have slow cold starts (observed a
+        # 30s read timeout in production), so this gets more headroom
+        # than a typical request.
+        response = requests.get(COMMUNITY_FEED_URL, timeout=60)
         response.raise_for_status()
         rows = response.json().get("values", [])
         if len(rows) < 2:
