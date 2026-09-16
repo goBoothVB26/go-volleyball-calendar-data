@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16T12:58:13",
+  "generated": "2026-09-16T16:18:57",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -2722,22 +2722,6 @@
       "image": null
     },
     {
-      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-22T19:30:00",
-      "club": "Game Point VBC",
-      "title": "Game Point Adult Open Gym",
-      "start": "2026-07-22T19:30:00",
-      "end": "2026-07-22T22:00:00",
-      "all_day": false,
-      "location": "Game Point VBC",
-      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
-      "url": null,
-      "skill_level": "A/AA",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00",
       "club": "USAV Florida Region",
       "title": "USAV All-Stars Championship",
@@ -3471,22 +3455,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Top_Select_Volleyball_Academy-Top_Summer_Challenge_Indoor_Adult_Volleyball_Tournament-2026-08-02T08:00:00",
-      "club": "Top Select Volleyball Academy",
-      "title": "Top Summer Challenge Indoor Adult Volleyball Tournament",
-      "start": "2026-08-02T08:00:00",
-      "end": "2026-08-02T20:00:00",
-      "all_day": false,
-      "location": "Top Select Volleyball Academy",
-      "description": "Join us August 2nd and compete with the best\ud83d\udd25 Silver Division: 8:00am Gold Division: 3:00pm \u2705RSVP: (689) 212-4858 or DM",
-      "url": "https://form.jotform.com/261955259985073?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGns2eFsXa910Ao1LJAThawIuTZvievGSBO3yQqYqHqbg_kcHqSIA7yjqbFL74_aem_Gcy2XnTvYgbsnfeu3_ySxA&utm_id=97760_v0_s00_e0_tv3",
-      "skill_level": "A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 300.0,
       "image": null
     },
     {
@@ -5058,22 +5026,6 @@
       "image": null
     },
     {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-08-30T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-08-30T11:00:00",
-      "end": "2026-08-30T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center-2026-08-30T13:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Aug 30 @ Dover Shores Community Center",
@@ -6098,22 +6050,6 @@
       "image": "https://vblimages.blob.core.windows.net/images/8e0d1a3c-9b91-4d44-991c-d35c3af0613f.jpeg"
     },
     {
-      "uid": "Volleyball_Life-AA_Women\u2019s_&_AA_Men\u2019s_Tournament_\u2014_Central_Florida-2026-09-19T00:00:00",
-      "club": "Volleyball Life",
-      "title": "AA Women\u2019s & AA Men\u2019s Tournament \u2014 Central Florida",
-      "start": "2026-09-19T00:00:00",
-      "end": "2026-09-20T00:00:00",
-      "all_day": true,
-      "location": "Dr. P. Phillips Community Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40942",
-      "skill_level": "A/AA",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/981d26a9-7efc-40f3-887c-62b04327a948.PNG"
-    },
-    {
       "uid": "Volleyball_Life-Copa_Del_Sur_-_September_Slam-2026-09-19T00:00:00",
       "club": "Volleyball Life",
       "title": "Copa Del Sur - September Slam",
@@ -6345,12 +6281,12 @@
       "end": "2026-09-23T22:00:00",
       "all_day": false,
       "location": "Barnett Park",
-      "description": "We reserved some space, we're gonna grill some burgers and dogs, and we're gonna bring something to share and celebrate National Volleyball Day!\u00a0\n\n$5 to help cover the cost of the rental +\u00a0food provided.\n\nWe'll be in the back football field at Barnett Park past the softball/baseball fields on the path.",
+      "description": "Minimum age:\n18 years old\n\nAge as of:\n2026-09-23 00:00:00.0\n\nIndividual Fees\n\nFree",
       "url": "https://goadultsportsleague.leagueapps.com/events/5157017-national-volleyball-day-grass-volleyball-potluck-and-bbq",
       "skill_level": "All Levels",
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
-      "price": 5.0,
+      "price": 0.0,
       "image": null
     },
     {
@@ -6447,7 +6383,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/9a3220ae-983b-47a7-972c-6f73e6630902.png"
     },
     {
       "uid": "NAGVA-Splash_Revival-2026-09-26T00:00:00",
@@ -7051,6 +6987,22 @@
       "location": "Winter Park Volleyball Center",
       "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
       "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-M/W_Grass_Doubles_&_Triples-2026-10-10T00:00:00",
+      "club": "Volleyball Life",
+      "title": "M/W Grass Doubles & Triples",
+      "start": "2026-10-10T00:00:00",
+      "end": "2026-10-12T00:00:00",
+      "all_day": true,
+      "location": "Trotters Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/3s",
+      "url": "https://volleyballlife.com/event/41629",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
