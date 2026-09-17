@@ -2008,7 +2008,7 @@
                  : "") +
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
                "</div></div>" +
-               (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 1200)) + "</div>" : "") +
+               (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 5000)) + "</div>" : "") +
                remindBtn + plainInfoLink +
                // Inline signup section: hidden until "More Info /
                // Register" is pressed, then the popup expands to reveal it
