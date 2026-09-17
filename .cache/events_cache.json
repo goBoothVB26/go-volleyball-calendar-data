@@ -7916,21 +7916,21 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "SSOVA Men's/Women's/Coed\u2019s October ST PETE BEACH, Beach Volleyball Tournament",
+      "title": "First Coast Volleyball St Augustine Beach Series Oct 10-11 '26",
       "start": "2026-10-10T00:00:00",
       "end": "2026-10-12T00:00:00",
-      "location": "Upham Beach Park- St. Pete Beach",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "location": "St Augustine Pier",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Beach \u00b7 2s",
       "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Women's, Co-ed",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-SSOVA_Men's/Women's/Coed\u2019s_October_ST_PETE_BEACH,_Beach_Volleyball_Tournament-2026-10-10T00:00:00"
+      "uid": "Volleyball_Life-First_Coast_Volleyball_St_Augustine_Beach_Series_Oct_10-11_'26-2026-10-10T00:00:00"
     }
   ],
   "ocoee_coed_league": [
