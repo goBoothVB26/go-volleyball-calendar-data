@@ -592,7 +592,7 @@
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
-    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones: Setter to zone 1, Opposite to zone 2, Middle to zone 3, Outside to zone 4, Libero to zone 5, the other Outside to zone 6 -- the same 6 spots every rotation (5-1 only; 4-2/6-2 have no single setter/opposite pair, so they release to the net at their own column instead).",
+    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones: the active setter to zone 1, whoever fills the Opposite's job to zone 2, Middle to zone 3, Outside to zone 4, Libero to zone 5, the other Outside to zone 6 -- the same 6 spots every rotation. In 4-2/6-2 (no real Opposite) the non-setting setter takes zone 2 instead -- in 6-2 that's literally the front-row setter who's \"hitting\" this rotation.",
   };
 
   var SUB_OPTIONS = [
@@ -733,24 +733,40 @@
       dsEl.style.display = "none";
     }
 
-    // 5-1 base defense (Release mode only): a real, fixed functional
-    // layout -- regardless of which rotational zone a role currently
-    // occupies, everyone switches to the SAME 6 physical zones every
-    // time: Setter -> zone 1, Opposite -> zone 2, Middle -> zone 3,
-    // Outside -> zone 4, Libero -> zone 5, the other Outside -> zone
-    // 6. This reuses the exact SERVE_POS landmarks (base defense
-    // zones are the same physical spots as the serving grid, just
-    // assigned by role instead of by rotation), which is what
-    // actually produces real switching -- the same 6 spots every
-    // rotation, with different roles animating into each one. Scoped
-    // to 5-1 only, since 4-2/6-2 have two setters and no Opposite, so
-    // this exact mapping doesn't translate -- they keep the
-    // generic "release to the net at your own column" behavior above.
-    if (currentMode === "release" && currentSystem === "5-1") {
+    // Base defense (Release mode, all 3 systems): a real, fixed
+    // functional layout -- regardless of which rotational zone a role
+    // currently occupies, everyone switches to the SAME 6 physical
+    // zones every time: the active setter -> zone 1, whoever fills
+    // the Opposite's role -> zone 2, the front-row Middle -> zone 3,
+    // the front-row Outside -> zone 4, the Libero -> zone 5, the
+    // other Outside -> zone 6. Reuses the exact SERVE_POS landmarks
+    // (base defense zones are the same physical spots as the serving
+    // grid, just assigned by role instead of by rotation), which is
+    // what actually produces real switching -- the same 6 spots every
+    // rotation, with different roles animating into each one.
+    //
+    // 5-1 has a real Opposite role for zone 2. 4-2/6-2 have no
+    // Opposite -- two setters instead -- so "whoever fills the
+    // Opposite's role" there is simply the OTHER setter (the one
+    // without the "setting"/"penetrating" badge): in 6-2 that's the
+    // front-row setter who's "hitting" this rotation, i.e. actually
+    // playing the pin-attacker/opposite job for real; in 4-2 it's the
+    // non-setting back-row setter, standardized into the same slot so
+    // the rule and the resulting switching animation stay consistent
+    // across all three systems.
+    if (currentMode === "release") {
       var frontMiddleRole = null;
       for (var fmi = 0; fmi < 6; fmi++) {
         if (roleClass(roles[fmi]) === "MB" && FRONT_ROW[fmi]) frontMiddleRole = roles[fmi];
       }
+      var primarySetterRole = null, secondarySetterRole = null;
+      sys.setterRoles.forEach(function (sRole) {
+        var sIsFront = FRONT_ROW[roles.indexOf(sRole)];
+        var sBadge = sys.setterBadge(sIsFront);
+        if (sBadge === "setting" || sBadge === "penetrating") primarySetterRole = sRole;
+        else secondarySetterRole = sRole;
+      });
+      var opposingRole = roles.indexOf("Opp") >= 0 ? "Opp" : secondarySetterRole;
       var placeBase = function (role, zoneIdx) {
         if (!role || !playerEls[role]) return;
         var target = SERVE_POS[zoneIdx];
@@ -762,8 +778,8 @@
         // role to a new, fixed zone, so the label needs to match.
         playerEls[role].querySelector(".pos").textContent = "P" + (zoneIdx + 1);
       };
-      placeBase("S", 0);
-      placeBase("Opp", 1);
+      placeBase(primarySetterRole, 0);
+      placeBase(opposingRole, 1);
       placeBase(frontMiddleRole, 2);
       placeBase(frontOHRole, 3);
       if (liberoActive) placeBase("Libero", 4);
