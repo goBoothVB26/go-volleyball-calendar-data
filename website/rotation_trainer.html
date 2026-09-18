@@ -516,19 +516,50 @@
     return { x: x, y: y };
   }
 
+  // RELEASE: where everyone runs to once the ball is live (served, or
+  // passed off the serve-receive shape above) -- the "everyone is
+  // free to move" moment real teams call the switch. Only the players
+  // with an active job at the net actually relocate:
+  //   - Whichever setter is "setting" or "penetrating" this rotation
+  //     (per sys.setterBadge) sprints to the same physical target
+  //     spot near the net every time, regardless of which column they
+  //     started in.
+  //   - A "hitting" setter (the 6-2's off-setter) becomes a 3rd
+  //     attacker, releasing to the net at their own column, same as
+  //     any other front-row hitter.
+  //   - Every other front-row role (MB/OH/Opp) releases to the net at
+  //     their own column to approach and attack.
+  //   - Everyone else -- a non-setting back-row setter (4-2), and
+  //     every back-row MB/OH/Opp -- holds their base defensive
+  //     position, which this widget treats as the same spot they'd
+  //     already be in for serve receive (reuses receivePos()).
+  function releasePos(idx, role, isFront, badge) {
+    var cls = roleClass(role);
+    var cellX = SERVE_POS[idx].x;
+    if (cls === "S") {
+      if (badge === "setting" || badge === "penetrating") return { x: 68, y: 8 };
+      if (badge === "hitting") return { x: cellX, y: 8 };
+      return receivePos(idx, role, isFront);
+    }
+    if (isFront) return { x: cellX, y: cls === "MB" ? 6 : 9 };
+    return receivePos(idx, role, isFront);
+  }
+
   var currentSystem = "5-1";
   var currentRotation = 0; // 0-5
-  var currentMode = "serve"; // "serve" | "receive"
+  var currentMode = "serve"; // "serve" | "receive" | "release"
   var currentSubMode = "libero"; // "none" | "libero" | "ds"
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
 
   var MODES = [
     { key: "serve", label: "Serving" },
     { key: "receive", label: "Serve Receive" },
+    { key: "release", label: "Release" },
   ];
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
+    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact). Front-row hitters release to the net for their approach, the active setter sprints to the same target spot every time, and everyone else holds their base defensive position.",
   };
 
   var SUB_OPTIONS = [
@@ -601,14 +632,17 @@
       var role = roles[idx];
       var el = playerEls[role];
       var isFront = !!FRONT_ROW[idx];
-      var pos = currentMode === "serve" ? SERVE_POS[idx] : receivePos(idx, role, isFront);
+      var isSetter = sys.setterRoles.indexOf(role) >= 0;
+      var badge = isSetter ? sys.setterBadge(isFront) : "";
+      var pos;
+      if (currentMode === "serve") pos = SERVE_POS[idx];
+      else if (currentMode === "release") pos = releasePos(idx, role, isFront, badge);
+      else pos = receivePos(idx, role, isFront);
       posByRole[role] = pos;
       el.style.left = pos.x + "%";
       el.style.top = pos.y + "%";
       el.style.display = "";
       el.querySelector(".pos").textContent = "P" + (idx + 1);
-      var isSetter = sys.setterRoles.indexOf(role) >= 0;
-      var badge = isSetter ? sys.setterBadge(isFront) : "";
       el.classList.toggle("setting", badge === "setting" || badge === "penetrating");
       el.querySelector(".badge").textContent = badge;
       var cls = roleClass(role);
