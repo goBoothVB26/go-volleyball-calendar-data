@@ -48,7 +48,12 @@
      themselves. "DS Sub" adds a Defensive Specialist (a distinct teal
      circle) on top of the Libero: whichever outside hitter is
      currently back row (same 3-apart guarantee) is shown as the DS
-     instead, taking over that OH's exact passing spot.
+     instead, taking over that OH's exact passing spot. In real play a
+     DS can just as easily cover a weak-passing opposite (5-1 only)
+     instead of an outside hitter -- this widget always shows it on
+     the outside hitter for simplicity, but either is a legitimate
+     real-world target (never the setter, who has to stay on to run
+     the offense).
 
      Libero vs. DS, per real substitution rules: the Libero wears a
      different-colored jersey, gets unlimited free swaps that don't
@@ -487,7 +492,7 @@
   var SUB_CAPTIONS = {
     none: "No specialist substitutions &mdash; the starting lineup plays every rotation as-is, including back-row defense.",
     libero: "The Libero is a back-row defense/passing specialist (distinct jersey) who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row. Libero swaps are unlimited and free &mdash; they don't count against a team's substitution limit &mdash; but the Libero can never attack the ball above net height.",
-    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; here, the outside hitter &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
+    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; shown here on the outside hitter, though a DS can just as easily cover the opposite instead (5-1 only, never the setter) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
   };
 
   function rotationState(systemKey, rotationIndex) {
