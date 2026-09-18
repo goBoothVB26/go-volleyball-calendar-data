@@ -73,12 +73,15 @@
      or 3 current passers -- sorted left to right, every adjacent pair
      is a seam, so there's always at least 1. A row of "Cover Seam"
      button(s) beneath the court lets you pick one; the two passers on
-     either side of it animate inward to close the gap. A translucent
+     either side of it animate inward to close the gap. A square
      "error margin" zone sits BEHIND the player circles (z-index below
-     them), centered on and sized to each seam's actual current gap --
-     amber/red while open, green once its button is active -- so
-     covering a seam visibly shrinks its own zone rather than just
-     moving the players.
+     them), centered on and sized to each seam's actual current gap,
+     tinted with whichever of its two bordering passers is more
+     specialized/responsible (Libero beats DS beats plain OH, reusing
+     that passer's own .vb-rot-role-* color) rather than a generic
+     red/green -- opacity, not hue, marks open vs. covered, so
+     covering a seam visibly shrinks and deepens its own zone rather
+     than just moving the players.
 
      Rotation model: each system has a fixed 6-role "starting lineup"
      (array index 0..5 = court positions P1..P6, where P1 = back-right,
@@ -181,10 +184,19 @@
   }
   body.vb-dark-page .vb-rot-mode-caption { color: #999; }
 
+  /* Reserve enough height for each caption's longest possible text
+     (measured directly) so switching toggles never reflows/moves the
+     court below -- a fixed slot per caption, not a shared one, since
+     they hold very different amounts of text. */
+  #vb-rot-sub-caption { min-height: 116px; }
+  #vb-rot-mode-caption { min-height: 78px; }
+  #vb-rot-seam-caption { min-height: 40px; }
+
   /* Court */
   .vb-rot-court-wrap {
     background: #fff; border: 1px solid #ececec; border-radius: 14px;
-    padding: 16px; box-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+    padding: 16px; margin-bottom: 22px;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
     transition: background-color 0.25s, border-color 0.25s;
   }
   body.vb-dark-page .vb-rot-court-wrap {
@@ -214,6 +226,21 @@
   }
   body.vb-dark-page .vb-rot-attack-line { border-top-color: rgba(255,255,255,0.22); }
 
+  /* Standard volleyball zone numbers (1-6), faded into the court
+     background behind everything else. Fixed physical landmarks --
+     unlike the P1-P6 labels that float above whichever role/circle
+     currently occupies a zone, these never move. */
+  .vb-rot-zone-num {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 44px; font-weight: 800; font-family: inherit;
+    color: rgba(0, 45, 130, 0.16);
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+  }
+  body.vb-dark-page .vb-rot-zone-num { color: rgba(110, 160, 255, 0.18); }
+
   .vb-rot-player {
     position: absolute;
     width: 54px; height: 54px; margin-left: -27px; margin-top: -27px;
@@ -226,26 +253,25 @@
   }
 
   /* Seam "error margin" zone -- sits behind the player circles,
-     centered on and sized to a seam's current passing gap. */
+     centered on and sized to a seam's current passing gap. A flat
+     square tinted with the responsible passer's own role color (via
+     the shared .vb-rot-role-* classes below), not a generic
+     red/green -- so a Libero-bordered seam reads pink, a DS-bordered
+     one teal, an OH-only one green, etc. Opacity (not hue) marks
+     open vs. covered. */
   .vb-rot-seam-zone {
     position: absolute;
     height: 40px;
     transform: translate(-50%, -50%);
-    border-radius: 999px;
+    border-radius: 6px;
     pointer-events: none;
     z-index: 1;
-    background: radial-gradient(ellipse at center, rgba(220, 38, 38, 0.30) 0%, rgba(220, 38, 38, 0.12) 55%, rgba(220, 38, 38, 0) 80%);
-    transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), width 0.6s cubic-bezier(.4,0,.2,1), background 0.3s;
+    opacity: 0.24;
+    transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), width 0.6s cubic-bezier(.4,0,.2,1), opacity 0.3s;
   }
-  .vb-rot-seam-zone.covered {
-    background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.28) 0%, rgba(34, 197, 94, 0.10) 55%, rgba(34, 197, 94, 0) 80%);
-  }
-  body.vb-dark-page .vb-rot-seam-zone {
-    background: radial-gradient(ellipse at center, rgba(248, 113, 113, 0.34) 0%, rgba(248, 113, 113, 0.14) 55%, rgba(248, 113, 113, 0) 80%);
-  }
-  body.vb-dark-page .vb-rot-seam-zone.covered {
-    background: radial-gradient(ellipse at center, rgba(74, 222, 128, 0.32) 0%, rgba(74, 222, 128, 0.12) 55%, rgba(74, 222, 128, 0) 80%);
-  }
+  .vb-rot-seam-zone.covered { opacity: 0.55; }
+  body.vb-dark-page .vb-rot-seam-zone { opacity: 0.32; }
+  body.vb-dark-page .vb-rot-seam-zone.covered { opacity: 0.68; }
   .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-accent), 0 2px 6px rgba(0,0,0,0.3); }
   body.vb-dark-page .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-dark-brand), 0 2px 6px rgba(0,0,0,0.3); }
 
@@ -342,6 +368,10 @@
     .vb-rot-player { width: 42px; height: 42px; margin-left: -21px; margin-top: -21px; font-size: 11px; }
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
     .vb-rot-seam-zone { height: 30px; }
+    .vb-rot-zone-num { font-size: 32px; }
+    #vb-rot-sub-caption { min-height: 153px; }
+    #vb-rot-mode-caption { min-height: 134px; }
+    #vb-rot-seam-caption { min-height: 59px; }
   }
 </style>
 
@@ -367,6 +397,12 @@
     <div class="vb-rot-net">NET</div>
     <div class="vb-rot-court-surface" id="vb-rot-court">
       <div class="vb-rot-attack-line"></div>
+      <div class="vb-rot-zone-num" style="left:83%;top:80%;">1</div>
+      <div class="vb-rot-zone-num" style="left:83%;top:20%;">2</div>
+      <div class="vb-rot-zone-num" style="left:50%;top:20%;">3</div>
+      <div class="vb-rot-zone-num" style="left:17%;top:20%;">4</div>
+      <div class="vb-rot-zone-num" style="left:17%;top:80%;">5</div>
+      <div class="vb-rot-zone-num" style="left:50%;top:80%;">6</div>
     </div>
   </div>
 
@@ -498,7 +534,9 @@
     } else if (cls === "S") {
       y = isFront ? 10 : 40;
     } else if (cls === "Opp") {
-      y = isFront ? 12 : 55;
+      // Deepest player on the court when back row -- well behind
+      // every passer, clear of the whole receiving pattern.
+      y = isFront ? 12 : 92;
     } else { // OH -- the passer
       y = isFront ? 26 : 68;
       if (!isFront) {
@@ -511,19 +549,50 @@
     return { x: x, y: y };
   }
 
+  // RELEASE: where everyone runs to once the ball is live (served, or
+  // passed off the serve-receive shape above) -- the "everyone is
+  // free to move" moment real teams call the switch. Only the players
+  // with an active job at the net actually relocate:
+  //   - Whichever setter is "setting" or "penetrating" this rotation
+  //     (per sys.setterBadge) sprints to the same physical target
+  //     spot near the net every time, regardless of which column they
+  //     started in.
+  //   - A "hitting" setter (the 6-2's off-setter) becomes a 3rd
+  //     attacker, releasing to the net at their own column, same as
+  //     any other front-row hitter.
+  //   - Every other front-row role (MB/OH/Opp) releases to the net at
+  //     their own column to approach and attack.
+  //   - Everyone else -- a non-setting back-row setter (4-2), and
+  //     every back-row MB/OH/Opp -- holds their base defensive
+  //     position, which this widget treats as the same spot they'd
+  //     already be in for serve receive (reuses receivePos()).
+  function releasePos(idx, role, isFront, badge) {
+    var cls = roleClass(role);
+    var cellX = SERVE_POS[idx].x;
+    if (cls === "S") {
+      if (badge === "setting" || badge === "penetrating") return { x: 68, y: 8 };
+      if (badge === "hitting") return { x: cellX, y: 8 };
+      return receivePos(idx, role, isFront);
+    }
+    if (isFront) return { x: cellX, y: cls === "MB" ? 6 : 9 };
+    return receivePos(idx, role, isFront);
+  }
+
   var currentSystem = "5-1";
   var currentRotation = 0; // 0-5
-  var currentMode = "serve"; // "serve" | "receive"
+  var currentMode = "serve"; // "serve" | "receive" | "release"
   var currentSubMode = "libero"; // "none" | "libero" | "ds"
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
 
   var MODES = [
     { key: "serve", label: "Serving" },
     { key: "receive", label: "Serve Receive" },
+    { key: "release", label: "Release" },
   ];
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
+    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones: Setter to zone 1, Opposite to zone 2, Middle to zone 3, Outside to zone 4, Libero to zone 5, the other Outside to zone 6 -- the same 6 spots every rotation (5-1 only; 4-2/6-2 have no single setter/opposite pair, so they release to the net at their own column instead).",
   };
 
   var SUB_OPTIONS = [
@@ -596,14 +665,17 @@
       var role = roles[idx];
       var el = playerEls[role];
       var isFront = !!FRONT_ROW[idx];
-      var pos = currentMode === "serve" ? SERVE_POS[idx] : receivePos(idx, role, isFront);
+      var isSetter = sys.setterRoles.indexOf(role) >= 0;
+      var badge = isSetter ? sys.setterBadge(isFront) : "";
+      var pos;
+      if (currentMode === "serve") pos = SERVE_POS[idx];
+      else if (currentMode === "release") pos = releasePos(idx, role, isFront, badge);
+      else pos = receivePos(idx, role, isFront);
       posByRole[role] = pos;
       el.style.left = pos.x + "%";
       el.style.top = pos.y + "%";
       el.style.display = "";
       el.querySelector(".pos").textContent = "P" + (idx + 1);
-      var isSetter = sys.setterRoles.indexOf(role) >= 0;
-      var badge = isSetter ? sys.setterBadge(isFront) : "";
       el.classList.toggle("setting", badge === "setting" || badge === "penetrating");
       el.querySelector(".badge").textContent = badge;
       var cls = roleClass(role);
@@ -661,20 +733,65 @@
       dsEl.style.display = "none";
     }
 
+    // 5-1 base defense (Release mode only): a real, fixed functional
+    // layout -- regardless of which rotational zone a role currently
+    // occupies, everyone switches to the SAME 6 physical zones every
+    // time: Setter -> zone 1, Opposite -> zone 2, Middle -> zone 3,
+    // Outside -> zone 4, Libero -> zone 5, the other Outside -> zone
+    // 6. This reuses the exact SERVE_POS landmarks (base defense
+    // zones are the same physical spots as the serving grid, just
+    // assigned by role instead of by rotation), which is what
+    // actually produces real switching -- the same 6 spots every
+    // rotation, with different roles animating into each one. Scoped
+    // to 5-1 only, since 4-2/6-2 have two setters and no Opposite, so
+    // this exact mapping doesn't translate -- they keep the
+    // generic "release to the net at your own column" behavior above.
+    if (currentMode === "release" && currentSystem === "5-1") {
+      var frontMiddleRole = null;
+      for (var fmi = 0; fmi < 6; fmi++) {
+        if (roleClass(roles[fmi]) === "MB" && FRONT_ROW[fmi]) frontMiddleRole = roles[fmi];
+      }
+      var placeBase = function (role, zoneIdx) {
+        if (!role || !playerEls[role]) return;
+        var target = SERVE_POS[zoneIdx];
+        posByRole[role] = target;
+        playerEls[role].style.left = target.x + "%";
+        playerEls[role].style.top = target.y + "%";
+        // Overwrite the floating P# label too -- it was set from this
+        // rotation's SERVING zone above, but base defense moves every
+        // role to a new, fixed zone, so the label needs to match.
+        playerEls[role].querySelector(".pos").textContent = "P" + (zoneIdx + 1);
+      };
+      placeBase("S", 0);
+      placeBase("Opp", 1);
+      placeBase(frontMiddleRole, 2);
+      placeBase(frontOHRole, 3);
+      if (liberoActive) placeBase("Libero", 4);
+      else placeBase(backMiddleRole, 4);
+      if (dsActive) placeBase("DS", 5);
+      else placeBase(backOHRole, 5);
+    }
+
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
     // The passers are always the front-row OH, the back-row OH (or its
     // DS stand-in), and the Libero if active -- 2 or 3 total, sorted
-    // left to right, giving 1 or 2 adjacent-pair seams.
+    // left to right, giving 1 or 2 adjacent-pair seams. Each passer
+    // carries its role class ("OH"/"DS"/"L") so a seam's zone can be
+    // tinted with whichever bordering passer is the more specialized
+    // (and typically more responsible) one: Libero beats DS beats OH.
     currentSeams = [];
     if (currentMode === "receive") {
       var passers = [];
-      if (frontOHIdx >= 0) passers.push({ el: playerEls[frontOHRole], x: posByRole[frontOHRole].x, y: posByRole[frontOHRole].y });
-      if (dsActive) passers.push({ el: dsEl, x: posByRole["DS"].x, y: posByRole["DS"].y });
-      else if (backOHIdx >= 0) passers.push({ el: playerEls[backOHRole], x: posByRole[backOHRole].x, y: posByRole[backOHRole].y });
-      if (liberoActive) passers.push({ el: liberoEl, x: posByRole["Libero"].x, y: posByRole["Libero"].y });
+      if (frontOHIdx >= 0) passers.push({ el: playerEls[frontOHRole], x: posByRole[frontOHRole].x, y: posByRole[frontOHRole].y, cls: "OH" });
+      if (dsActive) passers.push({ el: dsEl, x: posByRole["DS"].x, y: posByRole["DS"].y, cls: "DS" });
+      else if (backOHIdx >= 0) passers.push({ el: playerEls[backOHRole], x: posByRole[backOHRole].x, y: posByRole[backOHRole].y, cls: "OH" });
+      if (liberoActive) passers.push({ el: liberoEl, x: posByRole["Libero"].x, y: posByRole["Libero"].y, cls: "L" });
       passers.sort(function (a, b) { return a.x - b.x; });
+      var seamPriority = { L: 3, DS: 2, OH: 1 };
       for (var s = 0; s < passers.length - 1; s++) {
-        currentSeams.push({ leftEl: passers[s].el, rightEl: passers[s + 1].el, leftX: passers[s].x, rightX: passers[s + 1].x, y: (passers[s].y + passers[s + 1].y) / 2 });
+        var left = passers[s], right = passers[s + 1];
+        var colorCls = seamPriority[left.cls] >= seamPriority[right.cls] ? left.cls : right.cls;
+        currentSeams.push({ leftEl: left.el, rightEl: right.el, leftX: left.x, rightX: right.x, y: (left.y + right.y) / 2, colorCls: colorCls });
       }
     }
     if (currentSeamIndex !== null && currentSeamIndex >= currentSeams.length) currentSeamIndex = null;
@@ -702,7 +819,7 @@
       zoneEl.style.top = seam.y + "%";
       zoneEl.style.width = Math.min(70, Math.max(rightX - leftX, 6) + 8) + "%";
       zoneEl.style.display = "";
-      zoneEl.classList.toggle("covered", si === currentSeamIndex);
+      zoneEl.className = "vb-rot-seam-zone vb-rot-role-" + seam.colorCls + (si === currentSeamIndex ? " covered" : "");
     }
     for (var zi = currentSeams.length; zi < seamZoneEls.length; zi++) {
       seamZoneEls[zi].style.display = "none";
