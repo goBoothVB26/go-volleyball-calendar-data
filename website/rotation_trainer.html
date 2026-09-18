@@ -73,12 +73,15 @@
      or 3 current passers -- sorted left to right, every adjacent pair
      is a seam, so there's always at least 1. A row of "Cover Seam"
      button(s) beneath the court lets you pick one; the two passers on
-     either side of it animate inward to close the gap. A translucent
+     either side of it animate inward to close the gap. A square
      "error margin" zone sits BEHIND the player circles (z-index below
-     them), centered on and sized to each seam's actual current gap --
-     amber/red while open, green once its button is active -- so
-     covering a seam visibly shrinks its own zone rather than just
-     moving the players.
+     them), centered on and sized to each seam's actual current gap,
+     tinted with whichever of its two bordering passers is more
+     specialized/responsible (Libero beats DS beats plain OH, reusing
+     that passer's own .vb-rot-role-* color) rather than a generic
+     red/green -- opacity, not hue, marks open vs. covered, so
+     covering a seam visibly shrinks and deepens its own zone rather
+     than just moving the players.
 
      Rotation model: each system has a fixed 6-role "starting lineup"
      (array index 0..5 = court positions P1..P6, where P1 = back-right,
@@ -226,26 +229,25 @@
   }
 
   /* Seam "error margin" zone -- sits behind the player circles,
-     centered on and sized to a seam's current passing gap. */
+     centered on and sized to a seam's current passing gap. A flat
+     square tinted with the responsible passer's own role color (via
+     the shared .vb-rot-role-* classes below), not a generic
+     red/green -- so a Libero-bordered seam reads pink, a DS-bordered
+     one teal, an OH-only one green, etc. Opacity (not hue) marks
+     open vs. covered. */
   .vb-rot-seam-zone {
     position: absolute;
     height: 40px;
     transform: translate(-50%, -50%);
-    border-radius: 999px;
+    border-radius: 6px;
     pointer-events: none;
     z-index: 1;
-    background: radial-gradient(ellipse at center, rgba(220, 38, 38, 0.30) 0%, rgba(220, 38, 38, 0.12) 55%, rgba(220, 38, 38, 0) 80%);
-    transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), width 0.6s cubic-bezier(.4,0,.2,1), background 0.3s;
+    opacity: 0.24;
+    transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), width 0.6s cubic-bezier(.4,0,.2,1), opacity 0.3s;
   }
-  .vb-rot-seam-zone.covered {
-    background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.28) 0%, rgba(34, 197, 94, 0.10) 55%, rgba(34, 197, 94, 0) 80%);
-  }
-  body.vb-dark-page .vb-rot-seam-zone {
-    background: radial-gradient(ellipse at center, rgba(248, 113, 113, 0.34) 0%, rgba(248, 113, 113, 0.14) 55%, rgba(248, 113, 113, 0) 80%);
-  }
-  body.vb-dark-page .vb-rot-seam-zone.covered {
-    background: radial-gradient(ellipse at center, rgba(74, 222, 128, 0.32) 0%, rgba(74, 222, 128, 0.12) 55%, rgba(74, 222, 128, 0) 80%);
-  }
+  .vb-rot-seam-zone.covered { opacity: 0.55; }
+  body.vb-dark-page .vb-rot-seam-zone { opacity: 0.32; }
+  body.vb-dark-page .vb-rot-seam-zone.covered { opacity: 0.68; }
   .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-accent), 0 2px 6px rgba(0,0,0,0.3); }
   body.vb-dark-page .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-dark-brand), 0 2px 6px rgba(0,0,0,0.3); }
 
@@ -664,17 +666,23 @@
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
     // The passers are always the front-row OH, the back-row OH (or its
     // DS stand-in), and the Libero if active -- 2 or 3 total, sorted
-    // left to right, giving 1 or 2 adjacent-pair seams.
+    // left to right, giving 1 or 2 adjacent-pair seams. Each passer
+    // carries its role class ("OH"/"DS"/"L") so a seam's zone can be
+    // tinted with whichever bordering passer is the more specialized
+    // (and typically more responsible) one: Libero beats DS beats OH.
     currentSeams = [];
     if (currentMode === "receive") {
       var passers = [];
-      if (frontOHIdx >= 0) passers.push({ el: playerEls[frontOHRole], x: posByRole[frontOHRole].x, y: posByRole[frontOHRole].y });
-      if (dsActive) passers.push({ el: dsEl, x: posByRole["DS"].x, y: posByRole["DS"].y });
-      else if (backOHIdx >= 0) passers.push({ el: playerEls[backOHRole], x: posByRole[backOHRole].x, y: posByRole[backOHRole].y });
-      if (liberoActive) passers.push({ el: liberoEl, x: posByRole["Libero"].x, y: posByRole["Libero"].y });
+      if (frontOHIdx >= 0) passers.push({ el: playerEls[frontOHRole], x: posByRole[frontOHRole].x, y: posByRole[frontOHRole].y, cls: "OH" });
+      if (dsActive) passers.push({ el: dsEl, x: posByRole["DS"].x, y: posByRole["DS"].y, cls: "DS" });
+      else if (backOHIdx >= 0) passers.push({ el: playerEls[backOHRole], x: posByRole[backOHRole].x, y: posByRole[backOHRole].y, cls: "OH" });
+      if (liberoActive) passers.push({ el: liberoEl, x: posByRole["Libero"].x, y: posByRole["Libero"].y, cls: "L" });
       passers.sort(function (a, b) { return a.x - b.x; });
+      var seamPriority = { L: 3, DS: 2, OH: 1 };
       for (var s = 0; s < passers.length - 1; s++) {
-        currentSeams.push({ leftEl: passers[s].el, rightEl: passers[s + 1].el, leftX: passers[s].x, rightX: passers[s + 1].x, y: (passers[s].y + passers[s + 1].y) / 2 });
+        var left = passers[s], right = passers[s + 1];
+        var colorCls = seamPriority[left.cls] >= seamPriority[right.cls] ? left.cls : right.cls;
+        currentSeams.push({ leftEl: left.el, rightEl: right.el, leftX: left.x, rightX: right.x, y: (left.y + right.y) / 2, colorCls: colorCls });
       }
     }
     if (currentSeamIndex !== null && currentSeamIndex >= currentSeams.length) currentSeamIndex = null;
@@ -702,7 +710,7 @@
       zoneEl.style.top = seam.y + "%";
       zoneEl.style.width = Math.min(70, Math.max(rightX - leftX, 6) + 8) + "%";
       zoneEl.style.display = "";
-      zoneEl.classList.toggle("covered", si === currentSeamIndex);
+      zoneEl.className = "vb-rot-seam-zone vb-rot-role-" + seam.colorCls + (si === currentSeamIndex ? " covered" : "");
     }
     for (var zi = currentSeams.length; zi < seamZoneEls.length; zi++) {
       seamZoneEls[zi].style.display = "none";
