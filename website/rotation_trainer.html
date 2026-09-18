@@ -500,7 +500,9 @@
     } else if (cls === "S") {
       y = isFront ? 10 : 40;
     } else if (cls === "Opp") {
-      y = isFront ? 12 : 55;
+      // Deepest player on the court when back row -- well behind
+      // every passer, clear of the whole receiving pattern.
+      y = isFront ? 12 : 92;
     } else { // OH -- the passer
       y = isFront ? 26 : 68;
       if (!isFront) {
