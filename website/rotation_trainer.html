@@ -7,27 +7,53 @@
      Purely educational, no scoring/streaks/leaderboards by design --
      an interactive court diagram that steps through all 6 rotations
      for the 4-2, 6-2, and 5-1 offensive systems, showing where each
-     role stands and which setter is actively setting (or penetrating
-     from the back row to do so).
+     role stands (as an animated circle on a half-court background)
+     and which setter is actively setting (or penetrating from the
+     back row to do so). A Serving / Serve Receive toggle switches
+     between two position models:
+
+       - SERVING: the strict "overlap rule" formation -- front row
+         must be closer to the net than the matching back-row player
+         in the same column, and left-to-right order must hold within
+         each row. This is a hard rule with one correct shape, so it's
+         drawn as an even 2x3 grid.
+       - SERVE RECEIVE: a widely-taught default shape -- outside
+         hitters (plus whichever third back-row player) spread into a
+         passing arc, the setter releases/hides toward the net, and
+         the middles + opposite clear out of the passing lanes near
+         the net or just behind it. Real teams add lateral hide spots
+         and rotation-specific tweaks on top of this general shape;
+         this widget teaches the underlying concept, not one exact
+         team's playbook.
+
+     Both position sets are pure functions of (role type, front/back
+     row, zone column) with no per-rotation special-casing, so they
+     apply correctly to all 3 systems x 6 rotations without needing 18
+     hand-authored diagrams -- and the specific numbers were chosen so
+     max(front-row depth) < min(back-row depth) and the three column
+     x-positions never cross, which means the overlap rule can never
+     be violated no matter which role lands in which zone.
 
      Rotation model: each system has a fixed 6-role "starting lineup"
-     (array index 0..5 = court positions P1..P6, where P1 = back-right/
-     server, P2 = front-right, P3 = front-middle, P4 = front-left,
-     P5 = back-left, P6 = back-middle). Rotation N is just that array
-     rotated left by N -- since winning a serve rotates every player
-     one position clockwise (P2's occupant becomes the new P1, etc.),
-     which is exactly a left-rotation of the position array. Verified
-     against real volleyball rules before shipping: every one of the
-     18 states (3 systems x 6 rotations) has exactly one active
-     setter, correct opposite-role pairing (setters/outsides/middles
-     each split exactly 3 positions apart), and the right front-row
-     hitter counts per system (4-2 always 2, 6-2 always 3, 5-1
-     alternates 2/3 depending on where the setter is).
+     (array index 0..5 = court positions P1..P6, where P1 = back-right,
+     P2 = front-right, P3 = front-middle, P4 = front-left, P5 = back-
+     left, P6 = back-middle). Rotation N is that array rotated left by
+     N -- since winning a serve rotates every player one position
+     clockwise (P2's occupant becomes the new P1, etc.), which is
+     exactly a left-rotation of the position array. Verified against
+     real volleyball rules before shipping: every one of the 18 states
+     (3 systems x 6 rotations) has exactly one active setter, correct
+     opposite-role pairing (setters/outsides/middles each split
+     exactly 3 positions apart), and the right front-row hitter counts
+     per system (4-2 always 2, 6-2 always 3, 5-1 alternates 2/3
+     depending on where the setter is).
 
      PLEASE SANITY-CHECK THE VOLLEYBALL MECHANICS before publishing --
-     written from general knowledge of these systems, not sourced from
-     an official rulebook, and you'll know immediately if anything
-     here doesn't match how GOVB actually teaches these systems. -->
+     written from general knowledge of these systems plus web research
+     on serve-receive conventions, not sourced from an official
+     rulebook or one specific team's diagrams, and you'll know
+     immediately if anything here doesn't match how GOVB actually
+     teaches these systems. -->
 
 <style>
   .vb-rot-page {
@@ -77,7 +103,7 @@
   /* System description card */
   .vb-rot-info {
     background: #f4f7fb; border: 1px solid #e2e8f0; border-radius: 12px;
-    padding: 14px 16px; margin-bottom: 20px; font-size: 13.5px; line-height: 1.6; color: #333;
+    padding: 14px 16px; margin-bottom: 16px; font-size: 13.5px; line-height: 1.6; color: #333;
     transition: background-color 0.25s, border-color 0.25s;
   }
   .vb-rot-info b { color: var(--vb-brand); }
@@ -85,6 +111,27 @@
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border); color: var(--vb-dark-text);
   }
   body.vb-dark-page .vb-rot-info b { color: var(--vb-dark-brand); }
+
+  /* Serve / Serve-receive mode toggle */
+  .vb-rot-mode-toggle {
+    display: flex; gap: 6px; justify-content: center; margin-bottom: 8px;
+  }
+  .vb-rot-mode-btn {
+    padding: 7px 16px; cursor: pointer;
+    border: 1px solid #c7d2de; background: #fff; color: #444;
+    border-radius: 999px; font-size: 13px; font-weight: 600;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .vb-rot-mode-btn:hover { border-color: var(--vb-brand); }
+  .vb-rot-mode-btn.active { background: var(--vb-accent); border-color: var(--vb-accent); color: #1a1a1a; }
+  body.vb-dark-page .vb-rot-mode-btn { background: var(--vb-dark-surface); border-color: var(--vb-dark-border); color: var(--vb-dark-text); }
+  body.vb-dark-page .vb-rot-mode-btn.active { background: var(--vb-dark-brand); border-color: var(--vb-dark-brand); color: #1a1a1a; }
+
+  .vb-rot-mode-caption {
+    text-align: center; font-size: 12.5px; color: #666; max-width: 520px;
+    margin: 0 auto 16px; line-height: 1.5;
+  }
+  body.vb-dark-page .vb-rot-mode-caption { color: #999; }
 
   /* Court */
   .vb-rot-court-wrap {
@@ -98,29 +145,51 @@
   }
   .vb-rot-net {
     text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.15em;
-    color: #fff; background: #333; border-radius: 6px; padding: 4px 0; margin-bottom: 10px;
+    color: #fff; background: #333; border-radius: 6px; padding: 4px 0; margin-bottom: 12px;
   }
   body.vb-dark-page .vb-rot-net { background: #000; color: var(--vb-dark-brand); }
 
-  .vb-rot-court {
-    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
+  .vb-rot-court-surface {
+    position: relative;
+    width: 100%; max-width: 380px; margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    background: #eaf4ff;
+    border: 3px solid #2c3e50;
+    border-radius: 6px;
+    overflow: visible;
   }
-  .vb-rot-cell {
-    position: relative; border-radius: 10px; padding: 10px 6px 8px;
-    text-align: center; color: #fff; min-height: 84px;
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    transition: box-shadow 0.2s;
+  body.vb-dark-page .vb-rot-court-surface { background: #232b36; border-color: #55606e; }
+
+  .vb-rot-attack-line {
+    position: absolute; left: 0; right: 0; top: 33%;
+    border-top: 2px dashed rgba(0,0,0,0.22);
   }
-  .vb-rot-cell .pos { position: absolute; top: 5px; left: 7px; font-size: 10px; font-weight: 700; opacity: 0.75; }
-  .vb-rot-cell .role { font-size: 16px; font-weight: 700; }
-  .vb-rot-cell .role-full { font-size: 10.5px; opacity: 0.9; margin-top: 1px; }
-  .vb-rot-cell .badge {
-    margin-top: 6px; font-size: 9.5px; font-weight: 700; letter-spacing: 0.03em;
-    background: rgba(0,0,0,0.25); border-radius: 999px; padding: 2px 8px;
+  body.vb-dark-page .vb-rot-attack-line { border-top-color: rgba(255,255,255,0.22); }
+
+  .vb-rot-player {
+    position: absolute;
+    width: 54px; height: 54px; margin-left: -27px; margin-top: -27px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 13px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), box-shadow 0.2s;
   }
-  .vb-rot-cell.setting { box-shadow: 0 0 0 3px var(--vb-accent); }
-  body.vb-dark-page .vb-rot-cell.setting { box-shadow: 0 0 0 3px var(--vb-dark-brand); }
+  .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-accent), 0 2px 6px rgba(0,0,0,0.3); }
+  body.vb-dark-page .vb-rot-player.setting { box-shadow: 0 0 0 3px var(--vb-dark-brand), 0 2px 6px rgba(0,0,0,0.3); }
+
+  .vb-rot-player .pos {
+    position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+    font-size: 9px; font-weight: 700; color: #666; white-space: nowrap;
+  }
+  body.vb-dark-page .vb-rot-player .pos { color: #9aa4b0; }
+
+  .vb-rot-player .badge {
+    position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
+    font-size: 9px; font-weight: 700; letter-spacing: 0.02em; white-space: nowrap;
+    background: rgba(0,0,0,0.6); color: #fff; border-radius: 999px; padding: 2px 7px;
+  }
+  .vb-rot-player .badge:empty { display: none; }
 
   .vb-rot-role-S { background: var(--vb-role-s); }
   .vb-rot-role-Opp { background: var(--vb-role-opp); }
@@ -129,7 +198,7 @@
 
   /* Controls */
   .vb-rot-controls {
-    display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 18px;
+    display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 22px;
   }
   .vb-rot-nav-btn {
     padding: 8px 18px; border-radius: 10px; border: 0; cursor: pointer;
@@ -160,6 +229,8 @@
   body.vb-dark-page .vb-rot-legend { color: #aaa; }
   .vb-rot-legend span { display: inline-flex; align-items: center; gap: 5px; }
   .vb-rot-legend i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  .vb-rot-legend-note { text-align: center; font-size: 11.5px; color: #888; margin-top: 6px; }
+  body.vb-dark-page .vb-rot-legend-note { color: #777; }
 
   /* Theme toggle: identical slider look/behavior to the calendar's */
   .vb-theme-btn {
@@ -195,8 +266,8 @@
     .vb-theme-btn { right: 6px; }
     .vb-rot-head h2 { font-size: 22px; padding-right: 64px; }
     .vb-rot-tabs { flex-wrap: wrap; }
-    .vb-rot-cell { min-height: 72px; }
-    .vb-rot-cell .role { font-size: 14px; }
+    .vb-rot-player { width: 42px; height: 42px; margin-left: -21px; margin-top: -21px; font-size: 11px; }
+    .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
   }
 </style>
 
@@ -207,14 +278,19 @@
       <span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span>
     </button>
   </div>
-  <p class="vb-rot-intro">See how a team's 6 players move through the rotation order under three common offensive systems, and which setter is actually setting each time.</p>
+  <p class="vb-rot-intro">See how a team's 6 players move through the rotation order under three common offensive systems, where they line up for serving vs. serve receive, and which setter is actually setting each time.</p>
 
   <div class="vb-rot-tabs" id="vb-rot-tabs"></div>
   <div class="vb-rot-info" id="vb-rot-info"></div>
 
+  <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
+  <p class="vb-rot-mode-caption" id="vb-rot-mode-caption"></p>
+
   <div class="vb-rot-court-wrap">
     <div class="vb-rot-net">NET</div>
-    <div class="vb-rot-court" id="vb-rot-court"></div>
+    <div class="vb-rot-court-surface" id="vb-rot-court">
+      <div class="vb-rot-attack-line"></div>
+    </div>
   </div>
 
   <div class="vb-rot-controls">
@@ -225,6 +301,7 @@
   <div class="vb-rot-dots" id="vb-rot-dots"></div>
 
   <div class="vb-rot-legend" id="vb-rot-legend"></div>
+  <p class="vb-rot-legend-note">Ringed circle = actively setting this rotation.</p>
 </div>
 
 <script>
@@ -232,9 +309,9 @@
   // ======================================================================
   // Rotation data model
   //
-  // Court position indices 0..5 = P1..P6 (P1 back-right/server, P2
-  // front-right, P3 front-middle, P4 front-left, P5 back-left, P6
-  // back-middle). FRONT_ROW = indices 1,2,3 (P2,P3,P4).
+  // Court position indices 0..5 = P1..P6 (P1 back-right, P2 front-right,
+  // P3 front-middle, P4 front-left, P5 back-left, P6 back-middle).
+  // FRONT_ROW = indices 1,2,3 (P2,P3,P4).
   //
   // Each system's startingLineup is ONE valid arrangement satisfying the
   // real rule that role partners (the two setters, the two outsides, the
@@ -285,19 +362,135 @@
     },
   };
 
+  // ----------------------------------------------------------------------
+  // Court coordinates (percent of the court box, x: 0=left sideline,
+  // 100=right sideline; y: 0=net, 100=endline).
+  //
+  // SERVE: the overlap-rule formation. Front row sits at y=20, back row
+  // at y=80 -- always closer to the net -- and the 3 columns sit at
+  // x=17/50/83 left-to-right, so column and row order can never cross.
+  // ----------------------------------------------------------------------
+  var SERVE_POS = {
+    0: { x: 83, y: 80 }, // P1
+    1: { x: 83, y: 20 }, // P2
+    2: { x: 50, y: 20 }, // P3
+    3: { x: 17, y: 20 }, // P4
+    4: { x: 17, y: 80 }, // P5
+    5: { x: 50, y: 80 }, // P6
+  };
+
+  function zoneColumn(idx) {
+    var x = SERVE_POS[idx].x;
+    if (x < 33) return "left";
+    if (x > 67) return "right";
+    return "mid";
+  }
+
+  // SERVE RECEIVE: a role-based default shape, not tied to any one
+  // specific rotation, so it applies correctly no matter which zone a
+  // role ends up in:
+  //   - Middles never pass -- crowd the net front row, tuck just behind
+  //     the attack line back row, ready to release into the offense.
+  //   - The setter never passes -- stands at the net front row (no
+  //     hiding needed), or creeps up toward the front of their zone
+  //     back row to shorten the sprint in to set.
+  //   - The Opposite (5-1 only) never passes -- stays off the net,
+  //     ready to transition into an attack approach.
+  //   - Outside hitters ALWAYS pass. Front row they hang back slightly
+  //     off the net; back row they spread wide toward their own
+  //     sideline (or hold the middle-back spot), forming the classic
+  //     3-player passing arc across the back row.
+  //
+  // Every front-row y (max 26) is less than every back-row y (min 38),
+  // and the only lateral shift (back-row OH toward its sideline) only
+  // ever pushes a wing position further from center while the middle
+  // column stays put -- so left < mid < right always holds too. That
+  // means this shape can never violate the overlap rule, regardless of
+  // which role lands in which zone.
+  function receivePos(idx, role, isFront) {
+    var cls = roleClass(role);
+    var cellX = SERVE_POS[idx].x;
+    var x = cellX, y;
+
+    if (cls === "MB") {
+      y = isFront ? 6 : 38;
+    } else if (cls === "S") {
+      y = isFront ? 10 : 40;
+    } else if (cls === "Opp") {
+      y = isFront ? 12 : 55;
+    } else { // OH -- the passer
+      y = isFront ? 26 : 68;
+      if (!isFront) {
+        var col = zoneColumn(idx);
+        if (col === "left") x = 6;
+        else if (col === "right") x = 94;
+        else x = 50;
+      }
+    }
+    return { x: x, y: y };
+  }
+
   var currentSystem = "4-2";
   var currentRotation = 0; // 0-5
+  var currentMode = "serve"; // "serve" | "receive"
+
+  var MODES = [
+    { key: "serve", label: "Serving" },
+    { key: "receive", label: "Serve Receive" },
+  ];
+  var MODE_CAPTIONS = {
+    serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
+    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
+  };
 
   function rotationState(systemKey, rotationIndex) {
     var lineup = SYSTEMS[systemKey].startingLineup;
     return lineup.slice(rotationIndex).concat(lineup.slice(0, rotationIndex));
   }
 
+  var playerEls = {};
+  var lastSystem = null;
+
+  function ensurePlayers() {
+    if (currentSystem === lastSystem) return;
+    lastSystem = currentSystem;
+    var court = document.getElementById("vb-rot-court");
+    // Keep the attack-line, drop any previously-built player circles.
+    var old = court.querySelectorAll(".vb-rot-player");
+    for (var k = 0; k < old.length; k++) old[k].parentNode.removeChild(old[k]);
+    playerEls = {};
+    SYSTEMS[currentSystem].startingLineup.forEach(function (role) {
+      var el = document.createElement("div");
+      el.className = "vb-rot-player vb-rot-role-" + roleClass(role);
+      el.title = ROLE_LABELS[role];
+      el.innerHTML = '<span class="pos"></span><span class="role">' + role + '</span><span class="badge"></span>';
+      court.appendChild(el);
+      playerEls[role] = el;
+    });
+  }
+
+  function positionPlayers() {
+    var sys = SYSTEMS[currentSystem];
+    var roles = rotationState(currentSystem, currentRotation); // roles[idx] = role at zone idx
+    for (var idx = 0; idx < 6; idx++) {
+      var role = roles[idx];
+      var el = playerEls[role];
+      var isFront = !!FRONT_ROW[idx];
+      var pos = currentMode === "serve" ? SERVE_POS[idx] : receivePos(idx, role, isFront);
+      el.style.left = pos.x + "%";
+      el.style.top = pos.y + "%";
+      el.querySelector(".pos").textContent = "P" + (idx + 1);
+      var isSetter = sys.setterRoles.indexOf(role) >= 0;
+      var badge = isSetter ? sys.setterBadge(isFront) : "";
+      el.classList.toggle("setting", badge === "setting" || badge === "penetrating");
+      el.querySelector(".badge").textContent = badge;
+    }
+  }
+
   function render() {
     var sys = SYSTEMS[currentSystem];
-    var roles = rotationState(currentSystem, currentRotation);
 
-    // Tabs
+    // System tabs
     var tabsHtml = "";
     Object.keys(SYSTEMS).forEach(function (key) {
       tabsHtml += '<button class="vb-rot-tab' + (key === currentSystem ? " active" : "") +
@@ -308,27 +501,21 @@
     // Info card
     document.getElementById("vb-rot-info").innerHTML = sys.info;
 
-    // Court
-    var order = [3, 2, 1, 4, 5, 0]; // display order: P4,P3,P2 (front) then P5,P6,P1 (back)
-    var courtHtml = "";
-    order.forEach(function (idx) {
-      var role = roles[idx];
-      var isFront = !!FRONT_ROW[idx];
-      var isSetter = sys.setterRoles.indexOf(role) >= 0;
-      var badge = isSetter ? sys.setterBadge(isFront) : "";
-      courtHtml += '<div class="vb-rot-cell vb-rot-role-' + roleClass(role) + (badge === "setting" || badge === "penetrating" ? " setting" : "") + '">' +
-        '<span class="pos">P' + (idx + 1) + "</span>" +
-        '<span class="role">' + role + "</span>" +
-        '<span class="role-full">' + ROLE_LABELS[role] + "</span>" +
-        (badge ? '<span class="badge">' + badge + "</span>" : "") +
-        "</div>";
+    // Mode toggle
+    var modeHtml = "";
+    MODES.forEach(function (m) {
+      modeHtml += '<button class="vb-rot-mode-btn' + (m.key === currentMode ? " active" : "") +
+        '" data-mode="' + m.key + '">' + m.label + "</button>";
     });
-    document.getElementById("vb-rot-court").innerHTML = courtHtml;
+    document.getElementById("vb-rot-mode-toggle").innerHTML = modeHtml;
+    document.getElementById("vb-rot-mode-caption").innerHTML = MODE_CAPTIONS[currentMode];
+
+    // Court
+    ensurePlayers();
+    positionPlayers();
 
     // Counter + dots
     document.getElementById("vb-rot-counter").textContent = "Rotation " + (currentRotation + 1) + " of 6";
-    document.getElementById("vb-rot-prev").disabled = false;
-    document.getElementById("vb-rot-next").disabled = false;
     var dotsHtml = "";
     for (var i = 0; i < 6; i++) {
       dotsHtml += '<button class="vb-rot-dot' + (i === currentRotation ? " active" : "") + '" data-rot="' + i + '" aria-label="Rotation ' + (i + 1) + '"></button>';
@@ -342,15 +529,22 @@
       '<span><i class="vb-rot-role-OH"></i>Outside</span>' +
       '<span><i class="vb-rot-role-MB"></i>Middle</span>';
 
-    bindRowControls();
+    bindControls();
   }
 
-  function bindRowControls() {
+  function bindControls() {
     var tabs = document.querySelectorAll(".vb-rot-tab");
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].onclick = function () {
         currentSystem = this.getAttribute("data-system");
         currentRotation = 0;
+        render();
+      };
+    }
+    var modeBtns = document.querySelectorAll(".vb-rot-mode-btn");
+    for (var m = 0; m < modeBtns.length; m++) {
+      modeBtns[m].onclick = function () {
+        currentMode = this.getAttribute("data-mode");
         render();
       };
     }
