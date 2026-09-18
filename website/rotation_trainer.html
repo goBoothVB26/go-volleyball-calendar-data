@@ -218,6 +218,21 @@
   }
   body.vb-dark-page .vb-rot-attack-line { border-top-color: rgba(255,255,255,0.22); }
 
+  /* Standard volleyball zone numbers (1-6), faded into the court
+     background behind everything else. Fixed physical landmarks --
+     unlike the P1-P6 labels that float above whichever role/circle
+     currently occupies a zone, these never move. */
+  .vb-rot-zone-num {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 44px; font-weight: 800; font-family: inherit;
+    color: rgba(0, 45, 130, 0.16);
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+  }
+  body.vb-dark-page .vb-rot-zone-num { color: rgba(110, 160, 255, 0.18); }
+
   .vb-rot-player {
     position: absolute;
     width: 54px; height: 54px; margin-left: -27px; margin-top: -27px;
@@ -345,6 +360,7 @@
     .vb-rot-player { width: 42px; height: 42px; margin-left: -21px; margin-top: -21px; font-size: 11px; }
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
     .vb-rot-seam-zone { height: 30px; }
+    .vb-rot-zone-num { font-size: 32px; }
   }
 </style>
 
@@ -370,6 +386,12 @@
     <div class="vb-rot-net">NET</div>
     <div class="vb-rot-court-surface" id="vb-rot-court">
       <div class="vb-rot-attack-line"></div>
+      <div class="vb-rot-zone-num" style="left:83%;top:80%;">1</div>
+      <div class="vb-rot-zone-num" style="left:83%;top:20%;">2</div>
+      <div class="vb-rot-zone-num" style="left:50%;top:20%;">3</div>
+      <div class="vb-rot-zone-num" style="left:17%;top:20%;">4</div>
+      <div class="vb-rot-zone-num" style="left:17%;top:80%;">5</div>
+      <div class="vb-rot-zone-num" style="left:50%;top:80%;">6</div>
     </div>
   </div>
 
@@ -559,7 +581,7 @@
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
-    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact). Front-row hitters release to the net for their approach, the active setter sprints to the same target spot every time, and everyone else holds their base defensive position.",
+    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones: Setter to zone 1, Opposite to zone 2, Middle to zone 3, Outside to zone 4, Libero to zone 5, the other Outside to zone 6 -- the same 6 spots every rotation (5-1 only; 4-2/6-2 have no single setter/opposite pair, so they release to the net at their own column instead).",
   };
 
   var SUB_OPTIONS = [
@@ -698,6 +720,45 @@
       dsEl.classList.remove("setting");
     } else {
       dsEl.style.display = "none";
+    }
+
+    // 5-1 base defense (Release mode only): a real, fixed functional
+    // layout -- regardless of which rotational zone a role currently
+    // occupies, everyone switches to the SAME 6 physical zones every
+    // time: Setter -> zone 1, Opposite -> zone 2, Middle -> zone 3,
+    // Outside -> zone 4, Libero -> zone 5, the other Outside -> zone
+    // 6. This reuses the exact SERVE_POS landmarks (base defense
+    // zones are the same physical spots as the serving grid, just
+    // assigned by role instead of by rotation), which is what
+    // actually produces real switching -- the same 6 spots every
+    // rotation, with different roles animating into each one. Scoped
+    // to 5-1 only, since 4-2/6-2 have two setters and no Opposite, so
+    // this exact mapping doesn't translate -- they keep the
+    // generic "release to the net at your own column" behavior above.
+    if (currentMode === "release" && currentSystem === "5-1") {
+      var frontMiddleRole = null;
+      for (var fmi = 0; fmi < 6; fmi++) {
+        if (roleClass(roles[fmi]) === "MB" && FRONT_ROW[fmi]) frontMiddleRole = roles[fmi];
+      }
+      var placeBase = function (role, zoneIdx) {
+        if (!role || !playerEls[role]) return;
+        var target = SERVE_POS[zoneIdx];
+        posByRole[role] = target;
+        playerEls[role].style.left = target.x + "%";
+        playerEls[role].style.top = target.y + "%";
+        // Overwrite the floating P# label too -- it was set from this
+        // rotation's SERVING zone above, but base defense moves every
+        // role to a new, fixed zone, so the label needs to match.
+        playerEls[role].querySelector(".pos").textContent = "P" + (zoneIdx + 1);
+      };
+      placeBase("S", 0);
+      placeBase("Opp", 1);
+      placeBase(frontMiddleRole, 2);
+      placeBase(frontOHRole, 3);
+      if (liberoActive) placeBase("Libero", 4);
+      else placeBase(backMiddleRole, 4);
+      if (dsActive) placeBase("DS", 5);
+      else placeBase(backOHRole, 5);
     }
 
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
