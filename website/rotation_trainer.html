@@ -522,9 +522,11 @@
     } else { // OH -- the passer
       y = isFront ? 26 : 68;
       if (!isFront) {
+        // In from the sideline, not glued to it -- a real wing passer
+        // still needs room to move toward a tight serve.
         var col = zoneColumn(idx);
-        if (col === "left") x = 6;
-        else if (col === "right") x = 94;
+        if (col === "left") x = 15;
+        else if (col === "right") x = 85;
         else x = 50;
       }
     }
@@ -711,6 +713,9 @@
     // puts there), capped at a sane max depth so the diagram doesn't
     // drag them all the way toward the endline even when a very deep
     // partner (like the Opposite) would technically still allow it.
+    // The cap (62) sits just short of the standard back-row passer
+    // depth (68) -- a front-row passer can get nearly as deep as a
+    // back-row one, just never past it.
     if (currentMode === "receive" && frontOHIdx >= 0) {
       var COLUMN_PAIR = { 0: 1, 1: 0, 2: 5, 3: 4, 4: 3, 5: 2 };
       var pairedBackIdx = COLUMN_PAIR[frontOHIdx];
@@ -719,7 +724,7 @@
       if (pairedBackIdx === backMiddleIdx && liberoActive) backPartnerY = posByRole["Libero"].y;
       else if (pairedBackIdx === backOHIdx && dsActive) backPartnerY = posByRole["DS"].y;
       else backPartnerY = posByRole[pairedBackRole].y;
-      var maxFrontOHDepth = 55;
+      var maxFrontOHDepth = 62;
       var safetyMargin = 6;
       var frontOHY = Math.min(maxFrontOHDepth, backPartnerY - safetyMargin);
       posByRole[frontOHRole].y = frontOHY;
