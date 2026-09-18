@@ -665,32 +665,6 @@
       dsEl.style.display = "none";
     }
 
-    // One-off hand placement for 5-1 Rotation 2 (Serve Receive) only,
-    // per explicit request -- not a general rule for other rotations.
-    // At this rotation: OH1@P1, MB1@P2, Opp@P3, OH2@P4, MB2(->Libero
-    // if active)@P5, S@P6. The setter tucks in tight just behind the
-    // Opposite and out to the right almost to the Middle; the Libero
-    // (if active) shifts to just left of back-row center; OH2 drops
-    // straight down its own column. Checked legal: front row order
-    // OH2(17) < Opp(50) < MB1(83) is untouched; back row order
-    // Libero(46) < S(78) < OH1(94) holds; every front/back column
-    // pair holds too (OH2 50 < Libero 68, Opp 12 < S 15, MB1 6 < OH1
-    // 68).
-    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 1) {
-      posByRole["S"].y = 15;
-      posByRole["S"].x = 78;
-      playerEls["S"].style.top = "15%";
-      playerEls["S"].style.left = "78%";
-
-      posByRole["OH2"].y = 50;
-      playerEls["OH2"].style.top = "50%";
-
-      if (liberoActive) {
-        posByRole["Libero"].x = 46;
-        liberoEl.style.left = "46%";
-      }
-    }
-
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
     // The passers are always the front-row OH, the back-row OH (or its
     // DS stand-in), and the Libero if active -- 2 or 3 total, sorted
