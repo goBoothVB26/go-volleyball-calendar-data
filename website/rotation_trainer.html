@@ -20,13 +20,14 @@
          drawn as an even 2x3 grid.
        - SERVE RECEIVE: a widely-taught default shape -- outside
          hitters (plus whichever third back-row player) spread into a
-         passing arc, a back-row setter tucks behind the nearest OH to
-         hide before releasing to the net, the middles clear out near
-         the net, and the Opposite drops to the deepest spot on the
-         court, well behind every passer. Real teams add their own
-         rotation-specific tweaks on top of this general shape; this
-         widget teaches the underlying concept, not one exact team's
-         playbook.
+         passing arc, pulling back near the attack line or deeper
+         whether they're front or back row, a back-row setter tucks
+         behind the nearest OH to hide before releasing to the net,
+         the middles clear out near the net, and the Opposite drops to
+         the deepest spot on the court, well behind every passer. Real
+         teams add their own rotation-specific tweaks on top of this
+         general shape; this widget teaches the underlying concept,
+         not one exact team's playbook.
 
      Both position sets are pure functions of (role type, front/back
      row, zone column) with no per-rotation special-casing, so they
@@ -486,20 +487,25 @@
   //     front row, or drops all the way to the deepest spot on the
   //     court when back row (deeper than every other passer, out of
   //     everyone's way), ready to transition into an attack approach.
-  //   - Outside hitters ALWAYS pass. Front row they hang back slightly
-  //     off the net; back row they spread wide toward their own
-  //     sideline (or hold the middle-back spot), forming the classic
-  //     3-player passing arc across the back row.
+  //   - Outside hitters ALWAYS pass. Back row they spread wide toward
+  //     their own sideline (or hold the middle-back spot), forming the
+  //     classic 3-player passing arc across the back row. Front row
+  //     they're a real passer too, not just hanging off the net --
+  //     positionPlayers() below pulls them back as deep as legally
+  //     possible (see "Front-row OH depth"), so this base function
+  //     only returns a shallow y=26 as the pre-adjustment default.
   //
-  // Every front-row y (max 26) is less than every back-row y (min 38),
-  // and the only lateral shift (back-row OH toward its sideline) only
-  // ever pushes a wing position further from center while the middle
-  // column stays put -- so left < mid < right always holds too. That
-  // means this shape can never violate the overlap rule, regardless of
-  // which role lands in which zone. (The Opposite's extra depth and
-  // the setter's hiding nudge only ever move a role further from the
-  // net or sideways within its own column's safe range, so neither
-  // touches this guarantee either.)
+  // The base y values from this function alone keep front-row max
+  // (26) less than back-row min (38), and the only lateral shift
+  // (back-row OH toward its sideline) only ever pushes a wing position
+  // further from center while the middle column stays put -- so
+  // left < mid < right always holds too. That's the foundation the
+  // overlap guarantee builds on. Every adjustment layered on top in
+  // positionPlayers() (the Opposite's extra depth, the setter's hiding
+  // nudge, and the front-row OH's deeper pull) is proven safe
+  // individually where it's applied, either by staying within a
+  // column's safe range or by direct construction against whatever it
+  // must stay in front of -- see the comments at each one.
   function receivePos(idx, role, isFront) {
     var cls = roleClass(role);
     var cellX = SERVE_POS[idx].x;
@@ -537,7 +543,7 @@
   ];
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
-    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter tucks behind the nearest one to hide before releasing to the net, the middles clear out near the net, and the Opposite drops to the deepest spot on the court, well behind every passer.",
+    receive: "A common serve-receive shape: outside hitters form a passing arc, pulling back near the attack line (or deeper) whether front or back row, while the setter tucks behind the nearest one to hide before releasing to the net, the middles clear out near the net, and the Opposite drops to the deepest spot on the court, well behind every passer.",
   };
 
   var SUB_OPTIONS = [
@@ -694,6 +700,30 @@
       dsEl.classList.remove("setting");
     } else {
       dsEl.style.display = "none";
+    }
+
+    // Front-row OH depth (Serve Receive only): a real front-row
+    // passer stands much deeper than "just off the net" -- near or
+    // past the attack line -- so pull them back as far as legally
+    // possible while staying strictly closer to the net than whoever
+    // occupies their column-paired back-row zone (the middle/Libero,
+    // the setter, the Opposite, or the other OH -- whichever rotation
+    // puts there), capped at a sane max depth so the diagram doesn't
+    // drag them all the way toward the endline even when a very deep
+    // partner (like the Opposite) would technically still allow it.
+    if (currentMode === "receive" && frontOHIdx >= 0) {
+      var COLUMN_PAIR = { 0: 1, 1: 0, 2: 5, 3: 4, 4: 3, 5: 2 };
+      var pairedBackIdx = COLUMN_PAIR[frontOHIdx];
+      var pairedBackRole = roles[pairedBackIdx];
+      var backPartnerY;
+      if (pairedBackIdx === backMiddleIdx && liberoActive) backPartnerY = posByRole["Libero"].y;
+      else if (pairedBackIdx === backOHIdx && dsActive) backPartnerY = posByRole["DS"].y;
+      else backPartnerY = posByRole[pairedBackRole].y;
+      var maxFrontOHDepth = 55;
+      var safetyMargin = 6;
+      var frontOHY = Math.min(maxFrontOHDepth, backPartnerY - safetyMargin);
+      posByRole[frontOHRole].y = frontOHY;
+      playerEls[frontOHRole].style.top = frontOHY + "%";
     }
 
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
