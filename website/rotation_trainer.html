@@ -184,6 +184,14 @@
   }
   body.vb-dark-page .vb-rot-mode-caption { color: #999; }
 
+  /* Reserve enough height for each caption's longest possible text
+     (measured directly) so switching toggles never reflows/moves the
+     court below -- a fixed slot per caption, not a shared one, since
+     they hold very different amounts of text. */
+  #vb-rot-sub-caption { min-height: 116px; }
+  #vb-rot-mode-caption { min-height: 78px; }
+  #vb-rot-seam-caption { min-height: 40px; }
+
   /* Court */
   .vb-rot-court-wrap {
     background: #fff; border: 1px solid #ececec; border-radius: 14px;
@@ -361,6 +369,9 @@
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
     .vb-rot-seam-zone { height: 30px; }
     .vb-rot-zone-num { font-size: 32px; }
+    #vb-rot-sub-caption { min-height: 153px; }
+    #vb-rot-mode-caption { min-height: 134px; }
+    #vb-rot-seam-caption { min-height: 59px; }
   }
 </style>
 
