@@ -46,15 +46,9 @@
      passing arc. "No Subs" turns this off entirely -- everyone stays
      on court the whole rotation and plays back-row defense
      themselves. "DS Sub" adds a Defensive Specialist (a distinct teal
-     circle) on top of the Libero, covering whichever back-row pin
-     hitter is weakest at passing -- teams use a DS for either an
-     outside hitter OR the opposite (5-1 only), never the setter. The
-     Opposite/Setter pair also sits 3 rotation-slots apart, so on
-     rotations where the Opposite (not the Setter) is back row, the DS
-     covers the Opposite instead of the back-row outside hitter --
-     always exactly one DS-eligible target, and it always gets a
-     passer's spot on the court (never the Opposite's normal off-net
-     "doesn't pass" position).
+     circle) on top of the Libero: whichever outside hitter is
+     currently back row (same 3-apart guarantee) is shown as the DS
+     instead, taking over that OH's exact passing spot.
 
      Libero vs. DS, per real substitution rules: the Libero wears a
      different-colored jersey, gets unlimited free swaps that don't
@@ -493,7 +487,7 @@
   var SUB_CAPTIONS = {
     none: "No specialist substitutions &mdash; the starting lineup plays every rotation as-is, including back-row defense.",
     libero: "The Libero is a back-row defense/passing specialist (distinct jersey) who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row. Libero swaps are unlimited and free &mdash; they don't count against a team's substitution limit &mdash; but the Libero can never attack the ball above net height.",
-    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; an outside hitter, or the opposite in 5-1 (never the setter, who has to stay on to run the offense) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
+    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; here, the outside hitter &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
   };
 
   function rotationState(systemKey, rotationIndex) {
@@ -538,7 +532,6 @@
     var roles = rotationState(currentSystem, currentRotation); // roles[idx] = role at zone idx
     var backMiddleIdx = -1, backMiddleRole = null;
     var backOHIdx = -1, backOHRole = null;
-    var backOppIdx = -1, backOppRole = null;
     for (var idx = 0; idx < 6; idx++) {
       var role = roles[idx];
       var el = playerEls[role];
@@ -559,9 +552,6 @@
       } else if (cls === "OH" && !isFront) {
         backOHIdx = idx;
         backOHRole = role;
-      } else if (cls === "Opp" && !isFront) {
-        backOppIdx = idx;
-        backOppRole = role;
       }
     }
 
@@ -585,30 +575,20 @@
       liberoEl.style.display = "none";
     }
 
-    // DS substitution ("ds" mode only, on top of the Libero): teams
-    // use a DS for either a weak-passing outside hitter OR a weak-
-    // passing opposite (5-1 only) -- never for the active setter, who
-    // has to stay on to run the offense. The Opposite/Setter pair sits
-    // 3 rotation-slots apart just like every other pair, so on the
-    // rotations where the Opposite (not the Setter) is back row, that
-    // takes priority for the single DS; otherwise it falls back to
-    // whichever outside hitter is back row (the only candidate in
-    // 4-2/6-2, which have no Opposite role at all). The DS passes like
-    // an outside hitter regardless of which role it's covering -- pass
-    // a stand-in OH role name to receivePos() so a covered Opposite
-    // gets a passer's spot instead of the Opposite's normal off-net
-    // "doesn't pass" position.
+    // DS substitution ("ds" mode only, on top of the Libero): an
+    // outside hitter pair always has exactly one back-row member too.
+    // DS takes over that exact spot -- same position formula the back
+    // row OH already used -- so it just reuses receivePos()/SERVE_POS
+    // directly with the real OH role, no stand-in needed.
     var dsEl = playerEls["DS"];
-    var dsTargetIdx = backOppIdx >= 0 ? backOppIdx : backOHIdx;
-    var dsTargetRole = backOppIdx >= 0 ? backOppRole : backOHRole;
-    var dsActive = currentSubMode === "ds" && dsTargetIdx >= 0;
+    var dsActive = currentSubMode === "ds" && backOHIdx >= 0;
     if (dsActive) {
-      playerEls[dsTargetRole].style.display = "none";
-      var dsPos = currentMode === "serve" ? SERVE_POS[dsTargetIdx] : receivePos(dsTargetIdx, "OH1", false);
+      playerEls[backOHRole].style.display = "none";
+      var dsPos = currentMode === "serve" ? SERVE_POS[backOHIdx] : receivePos(backOHIdx, backOHRole, false);
       dsEl.style.left = dsPos.x + "%";
       dsEl.style.top = dsPos.y + "%";
       dsEl.style.display = "";
-      dsEl.querySelector(".pos").textContent = "P" + (dsTargetIdx + 1);
+      dsEl.querySelector(".pos").textContent = "P" + (backOHIdx + 1);
       dsEl.querySelector(".badge").textContent = "";
       dsEl.classList.remove("setting");
     } else {
