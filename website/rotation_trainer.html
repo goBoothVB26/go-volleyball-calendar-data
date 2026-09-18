@@ -123,13 +123,15 @@
     --vb-role-ds: #0e9aab;
   }
 
-  .vb-rot-head { position: relative; text-align: center; margin-bottom: 6px; }
+  .vb-rot-head { text-align: center; margin-bottom: 6px; }
   .vb-rot-head h2 {
     margin: 0; font-size: 28px; font-weight: 700; color: var(--vb-brand);
   }
   body.vb-dark-page .vb-rot-head h2 { color: var(--vb-dark-brand); }
 
-  /* System tabs */
+  /* System tabs (shares its row with the dark-mode toggle, so the
+     title above stays perfectly centered on its own) */
+  .vb-rot-tabs-row { position: relative; }
   .vb-rot-tabs {
     display: flex; gap: 8px; justify-content: center; margin-bottom: 14px;
   }
@@ -357,7 +359,8 @@
   @media (max-width: 767px) {
     .vb-rot-page { padding: 8px; }
     .vb-theme-btn { right: 6px; }
-    .vb-rot-head h2 { font-size: 22px; padding-right: 64px; }
+    .vb-rot-head h2 { font-size: 22px; }
+    .vb-rot-tabs-row { padding-right: 64px; }
     .vb-rot-tabs { flex-wrap: wrap; }
     .vb-rot-player { width: 42px; height: 42px; margin-left: -21px; margin-top: -21px; font-size: 11px; }
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
@@ -372,11 +375,13 @@
 <div class="vb-rot-page">
   <div class="vb-rot-head">
     <h2>Rotation Trainer</h2>
+  </div>
+  <div class="vb-rot-tabs-row">
+    <div class="vb-rot-tabs" id="vb-rot-tabs"></div>
     <button class="vb-theme-btn" id="vb-rot-theme" aria-label="Toggle dark mode">
       <span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span>
     </button>
   </div>
-  <div class="vb-rot-tabs" id="vb-rot-tabs"></div>
   <div class="vb-rot-info" id="vb-rot-info"></div>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-sub-toggle"></div>
