@@ -845,6 +845,42 @@
       "price": null,
       "image": null,
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-13T00:00:00"
+    },
+    {
+      "club": "Game Point Volleyball",
+      "title": "Florida Gem High School Tournament",
+      "start": "2026-09-18T00:00:00",
+      "end": "2026-09-19T00:00:00",
+      "location": "Wesley Chapel, Fl",
+      "description": "Varsity & JV",
+      "url": "https://www.gamepointevents.com/copy-of-tournament-calendar-2026",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Game_Point_Volleyball-Florida_Gem_High_School_Tournament-2026-09-18T00:00:00"
+    },
+    {
+      "club": "Game Point Volleyball",
+      "title": "Lake Howell Invitational Varsity",
+      "start": "2026-09-18T00:00:00",
+      "end": "2026-09-19T00:00:00",
+      "location": "Orlando, Fl",
+      "description": "Varsity",
+      "url": "https://www.gamepointevents.com/lake-howell-volleyball-invitational",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Game_Point_Volleyball-Lake_Howell_Invitational_Varsity-2026-09-18T00:00:00"
     }
   ],
   "wpvc": [
