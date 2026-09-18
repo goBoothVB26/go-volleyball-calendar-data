@@ -35,18 +35,31 @@
      x-positions never cross, which means the overlap rule can never
      be violated no matter which role lands in which zone.
 
-     Libero + Iron Middles toggle: by default (Libero Sub), whichever
-     middle blocker is currently back row is shown as the Libero
-     instead (a distinct pink circle) -- the standard real-world
-     pattern, since a middle pair is always exactly 3 rotation-slots
-     apart and therefore always has exactly one front, one back, so
-     there's always exactly one Libero substitution active. The Libero
-     is treated as a passer in serve receive (like an outside hitter),
-     matching the classic "2 outsides + libero" passing arc. Flipping
-     to "Iron Middles" turns this off -- both middles stay on court
-     the whole rotation and play back-row defense themselves, with no
-     Libero shown, matching teams that don't substitute their
-     middles.
+     Substitution toggle (3 options): by default ("Libero Sub"),
+     whichever middle blocker is currently back row is shown as the
+     Libero instead (a distinct pink circle) -- the standard
+     real-world pattern, since a middle pair is always exactly 3
+     rotation-slots apart and therefore always has exactly one front,
+     one back, so there's always exactly one Libero substitution
+     active. The Libero is treated as a passer in serve receive (like
+     an outside hitter), matching the classic "2 outsides + libero"
+     passing arc. "No Subs" turns this off entirely -- everyone stays
+     on court the whole rotation and plays back-row defense
+     themselves. "DS Sub" adds a Defensive Specialist (a distinct teal
+     circle) on top of the Libero: whichever outside hitter is
+     currently back row (same 3-apart guarantee) is shown as the DS
+     instead, taking over that OH's exact passing spot.
+
+     Libero vs. DS, per real substitution rules: the Libero wears a
+     different-colored jersey, gets unlimited free swaps that don't
+     count against a team's substitution limit, but can never attack
+     the ball above net height. A DS is an ordinary substitute (no
+     jersey/attack restriction) that DOES count against the team's
+     normal substitution limit every time it swaps in or out (15/set
+     in NCAA Division I and USAV club play, 18/set in NCAA Division
+     II/III and NFHS high school) -- which is why teams use it more
+     sparingly than the libero, and why it's modeled here as an
+     addition on top of the Libero rather than a replacement for it.
 
      Rotation model: each system has a fixed 6-role "starting lineup"
      (array index 0..5 = court positions P1..P6, where P1 = back-right,
@@ -85,6 +98,7 @@
     --vb-role-oh: #1a9c6b;
     --vb-role-mb: #7b4fd1;
     --vb-role-l: #e64980;
+    --vb-role-ds: #0e9aab;
   }
 
   .vb-rot-head { position: relative; text-align: center; margin-bottom: 6px; }
@@ -129,7 +143,7 @@
 
   /* Serve / Serve-receive mode toggle */
   .vb-rot-mode-toggle {
-    display: flex; gap: 6px; justify-content: center; margin-bottom: 8px;
+    display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 8px;
   }
   .vb-rot-mode-btn {
     padding: 7px 16px; cursor: pointer;
@@ -211,6 +225,7 @@
   .vb-rot-role-OH { background: var(--vb-role-oh); }
   .vb-rot-role-MB { background: var(--vb-role-mb); }
   .vb-rot-role-L { background: var(--vb-role-l); }
+  .vb-rot-role-DS { background: var(--vb-role-ds); }
 
   /* Controls */
   .vb-rot-controls {
@@ -299,8 +314,8 @@
   <div class="vb-rot-tabs" id="vb-rot-tabs"></div>
   <div class="vb-rot-info" id="vb-rot-info"></div>
 
-  <div class="vb-rot-mode-toggle" id="vb-rot-iron-toggle"></div>
-  <p class="vb-rot-mode-caption" id="vb-rot-iron-caption"></p>
+  <div class="vb-rot-mode-toggle" id="vb-rot-sub-toggle"></div>
+  <p class="vb-rot-mode-caption" id="vb-rot-sub-caption"></p>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
   <p class="vb-rot-mode-caption" id="vb-rot-mode-caption"></p>
@@ -453,7 +468,7 @@
   var currentSystem = "5-1";
   var currentRotation = 0; // 0-5
   var currentMode = "serve"; // "serve" | "receive"
-  var currentIronMiddles = false; // false = Libero subs for the back-row middle (default)
+  var currentSubMode = "libero"; // "none" | "libero" | "ds"
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -464,13 +479,15 @@
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
   };
 
-  var IRON_OPTIONS = [
-    { key: false, label: "Libero Sub" },
-    { key: true, label: "No Libero Sub" },
+  var SUB_OPTIONS = [
+    { key: "none", label: "No Subs" },
+    { key: "libero", label: "Libero Sub" },
+    { key: "ds", label: "DS Sub" },
   ];
-  var IRON_CAPTIONS = {
-    false: "The Libero is a back-row defense/passing specialist who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row.",
-    true: "No libero substitution &mdash; the middle blockers stay on the court through all 6 rotations, passing and playing back-row defense themselves.",
+  var SUB_CAPTIONS = {
+    none: "No specialist substitutions &mdash; the starting lineup plays every rotation as-is, including back-row defense.",
+    libero: "The Libero is a back-row defense/passing specialist (distinct jersey) who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row. Libero swaps are unlimited and free &mdash; they don't count against a team's substitution limit &mdash; but the Libero can never attack the ball above net height.",
+    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; here, the outside hitter &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
   };
 
   function rotationState(systemKey, rotationIndex) {
@@ -500,17 +517,21 @@
     SYSTEMS[currentSystem].startingLineup.forEach(function (role) {
       addPlayer(role, roleClass(role), role, ROLE_LABELS[role]);
     });
-    // One persistent Libero circle -- a middle pair always has exactly
-    // one back-row member (they sit 3 rotation-slots apart), so there
-    // is always exactly one Libero substitution active when not in
-    // Iron Middles mode. It just slides to whichever zone that is.
+    // One persistent Libero circle and one persistent DS circle -- a
+    // middle pair (and, separately, an outside hitter pair) always has
+    // exactly one back-row member (they sit 3 rotation-slots apart),
+    // so there's always exactly one of each substitution active when
+    // that mode is selected. Each one just slides to whichever zone
+    // its back-row teammate currently occupies.
     addPlayer("Libero", "L", "L", "Libero");
+    addPlayer("DS", "DS", "DS", "Defensive Specialist");
   }
 
   function positionPlayers() {
     var sys = SYSTEMS[currentSystem];
     var roles = rotationState(currentSystem, currentRotation); // roles[idx] = role at zone idx
     var backMiddleIdx = -1, backMiddleRole = null;
+    var backOHIdx = -1, backOHRole = null;
     for (var idx = 0; idx < 6; idx++) {
       var role = roles[idx];
       var el = playerEls[role];
@@ -524,16 +545,22 @@
       var badge = isSetter ? sys.setterBadge(isFront) : "";
       el.classList.toggle("setting", badge === "setting" || badge === "penetrating");
       el.querySelector(".badge").textContent = badge;
-      if (roleClass(role) === "MB" && !isFront) {
+      var cls = roleClass(role);
+      if (cls === "MB" && !isFront) {
         backMiddleIdx = idx;
         backMiddleRole = role;
+      } else if (cls === "OH" && !isFront) {
+        backOHIdx = idx;
+        backOHRole = role;
       }
     }
 
-    // Libero substitution: a middle pair always has exactly one
-    // back-row member, so backMiddleIdx is always found here.
+    // Libero substitution ("libero" or "ds" mode): a middle pair
+    // always has exactly one back-row member, so backMiddleIdx is
+    // always found here.
     var liberoEl = playerEls["Libero"];
-    if (!currentIronMiddles && backMiddleIdx >= 0) {
+    var liberoActive = (currentSubMode === "libero" || currentSubMode === "ds") && backMiddleIdx >= 0;
+    if (liberoActive) {
       playerEls[backMiddleRole].style.display = "none";
       // The Libero passes like an outside hitter -- pass a stand-in
       // OH role name purely to select that branch of receivePos().
@@ -546,6 +573,26 @@
       liberoEl.classList.remove("setting");
     } else {
       liberoEl.style.display = "none";
+    }
+
+    // DS substitution ("ds" mode only, on top of the Libero): an
+    // outside hitter pair always has exactly one back-row member too.
+    // DS takes over that exact spot -- same position formula the back
+    // row OH already used -- so it just reuses receivePos()/SERVE_POS
+    // directly with the real OH role, no stand-in needed.
+    var dsEl = playerEls["DS"];
+    var dsActive = currentSubMode === "ds" && backOHIdx >= 0;
+    if (dsActive) {
+      playerEls[backOHRole].style.display = "none";
+      var dsPos = currentMode === "serve" ? SERVE_POS[backOHIdx] : receivePos(backOHIdx, backOHRole, false);
+      dsEl.style.left = dsPos.x + "%";
+      dsEl.style.top = dsPos.y + "%";
+      dsEl.style.display = "";
+      dsEl.querySelector(".pos").textContent = "P" + (backOHIdx + 1);
+      dsEl.querySelector(".badge").textContent = "";
+      dsEl.classList.remove("setting");
+    } else {
+      dsEl.style.display = "none";
     }
   }
 
@@ -572,14 +619,14 @@
     document.getElementById("vb-rot-mode-toggle").innerHTML = modeHtml;
     document.getElementById("vb-rot-mode-caption").innerHTML = MODE_CAPTIONS[currentMode];
 
-    // Libero / Iron Middles toggle
-    var ironHtml = "";
-    IRON_OPTIONS.forEach(function (opt) {
-      ironHtml += '<button class="vb-rot-mode-btn' + (opt.key === currentIronMiddles ? " active" : "") +
-        '" data-iron="' + opt.key + '">' + opt.label + "</button>";
+    // Libero / DS substitution toggle
+    var subHtml = "";
+    SUB_OPTIONS.forEach(function (opt) {
+      subHtml += '<button class="vb-rot-mode-btn' + (opt.key === currentSubMode ? " active" : "") +
+        '" data-sub="' + opt.key + '">' + opt.label + "</button>";
     });
-    document.getElementById("vb-rot-iron-toggle").innerHTML = ironHtml;
-    document.getElementById("vb-rot-iron-caption").innerHTML = IRON_CAPTIONS[currentIronMiddles];
+    document.getElementById("vb-rot-sub-toggle").innerHTML = subHtml;
+    document.getElementById("vb-rot-sub-caption").innerHTML = SUB_CAPTIONS[currentSubMode];
 
     // Court
     ensurePlayers();
@@ -593,13 +640,14 @@
     }
     document.getElementById("vb-rot-dots").innerHTML = dotsHtml;
 
-    // Legend (role colors -- Libero only shown when subbing is active)
+    // Legend (role colors -- Libero/DS only shown when subbing is active)
     document.getElementById("vb-rot-legend").innerHTML =
       '<span><i class="vb-rot-role-S"></i>Setter</span>' +
       (currentSystem === "5-1" ? '<span><i class="vb-rot-role-Opp"></i>Opposite</span>' : "") +
       '<span><i class="vb-rot-role-OH"></i>Outside</span>' +
       '<span><i class="vb-rot-role-MB"></i>Middle</span>' +
-      (currentIronMiddles ? "" : '<span><i class="vb-rot-role-L"></i>Libero</span>');
+      (currentSubMode === "none" ? "" : '<span><i class="vb-rot-role-L"></i>Libero</span>') +
+      (currentSubMode === "ds" ? '<span><i class="vb-rot-role-DS"></i>DS</span>' : "");
 
     bindControls();
   }
@@ -620,10 +668,10 @@
         render();
       };
     }
-    var ironBtns = document.querySelectorAll("#vb-rot-iron-toggle .vb-rot-mode-btn");
-    for (var n = 0; n < ironBtns.length; n++) {
-      ironBtns[n].onclick = function () {
-        currentIronMiddles = this.getAttribute("data-iron") === "true";
+    var subBtns = document.querySelectorAll("#vb-rot-sub-toggle .vb-rot-mode-btn");
+    for (var n = 0; n < subBtns.length; n++) {
+      subBtns[n].onclick = function () {
+        currentSubMode = this.getAttribute("data-sub");
         render();
       };
     }
