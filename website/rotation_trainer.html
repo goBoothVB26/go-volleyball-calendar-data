@@ -6,11 +6,12 @@
 
      Purely educational, no scoring/streaks/leaderboards by design --
      an interactive court diagram that steps through all 6 rotations
-     for the 4-2, 6-2, and 5-1 offensive systems, showing where each
-     role stands (as an animated circle on a half-court background)
-     and which setter is actively setting (or penetrating from the
-     back row to do so). A Serving / Serve Receive toggle switches
-     between two position models:
+     for the 5-1, 6-2, and 4-2 offensive systems (5-1 first/default,
+     as the most commonly taught system), showing where each role
+     stands (as an animated circle on a half-court background) and
+     which setter is actively setting (or penetrating from the back
+     row to do so). A Serving / Serve Receive toggle switches between
+     two position models:
 
        - SERVING: the strict "overlap rule" formation -- front row
          must be closer to the net than the matching back-row player
@@ -33,6 +34,19 @@
      max(front-row depth) < min(back-row depth) and the three column
      x-positions never cross, which means the overlap rule can never
      be violated no matter which role lands in which zone.
+
+     Libero + Iron Middles toggle: by default (Libero Sub), whichever
+     middle blocker is currently back row is shown as the Libero
+     instead (a distinct pink circle) -- the standard real-world
+     pattern, since a middle pair is always exactly 3 rotation-slots
+     apart and therefore always has exactly one front, one back, so
+     there's always exactly one Libero substitution active. The Libero
+     is treated as a passer in serve receive (like an outside hitter),
+     matching the classic "2 outsides + libero" passing arc. Flipping
+     to "Iron Middles" turns this off -- both middles stay on court
+     the whole rotation and play back-row defense themselves, with no
+     Libero shown, matching teams that don't substitute their
+     middles.
 
      Rotation model: each system has a fixed 6-role "starting lineup"
      (array index 0..5 = court positions P1..P6, where P1 = back-right,
@@ -70,6 +84,7 @@
     --vb-role-opp: #d9622b;
     --vb-role-oh: #1a9c6b;
     --vb-role-mb: #7b4fd1;
+    --vb-role-l: #e64980;
   }
 
   .vb-rot-head { position: relative; text-align: center; margin-bottom: 6px; }
@@ -195,6 +210,7 @@
   .vb-rot-role-Opp { background: var(--vb-role-opp); }
   .vb-rot-role-OH { background: var(--vb-role-oh); }
   .vb-rot-role-MB { background: var(--vb-role-mb); }
+  .vb-rot-role-L { background: var(--vb-role-l); }
 
   /* Controls */
   .vb-rot-controls {
@@ -286,6 +302,9 @@
   <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
   <p class="vb-rot-mode-caption" id="vb-rot-mode-caption"></p>
 
+  <div class="vb-rot-mode-toggle" id="vb-rot-iron-toggle"></div>
+  <p class="vb-rot-mode-caption" id="vb-rot-iron-caption"></p>
+
   <div class="vb-rot-court-wrap">
     <div class="vb-rot-net">NET</div>
     <div class="vb-rot-court-surface" id="vb-rot-court">
@@ -334,14 +353,14 @@
   }
 
   var SYSTEMS = {
-    "4-2": {
-      label: "4-2",
-      startingLineup: ["S1", "OH1", "MB1", "S2", "OH2", "MB2"],
-      setterRoles: ["S1", "S2"],
-      // Whichever setter is FRONT ROW sets from the net directly; the
-      // back-row setter just plays normal back-row defense.
-      setterBadge: function (isFront) { return isFront ? "setting" : ""; },
-      info: "<b>4-2 &mdash; the simplest system.</b> 2 setters, positioned opposite each other so one is always in the front row. The front-row setter sets right where they stand; the back-row setter just plays defense. Easiest to learn, but always caps you at 2 front-row attackers since one front-row spot is used by the setter.",
+    "5-1": {
+      label: "5-1",
+      startingLineup: ["S", "OH1", "MB1", "Opp", "OH2", "MB2"],
+      setterRoles: ["S"],
+      // The one setter always sets -- from the net when front row, or
+      // penetrating forward when back row.
+      setterBadge: function (isFront) { return isFront ? "setting" : "penetrating"; },
+      info: "<b>5-1 &mdash; one setter, every rotation.</b> A single setter runs the whole offense, front row or back (penetrating when back row). The Opposite hits opposite the setter in the rotation. Because only one player ever sets, the team's sets stay the most consistent -- the trade-off is alternating between 3 front-row hitters (setter back row) and only 2 (setter front row).",
     },
     "6-2": {
       label: "6-2",
@@ -352,13 +371,14 @@
       setterBadge: function (isFront) { return isFront ? "hitting" : "penetrating"; },
       info: "<b>6-2 &mdash; maximum attackers, more running.</b> Same 2-setter personnel as 4-2, but the back-row setter sprints forward to set (\"penetrates\") every time, freeing the front-row setter to hit instead. Always gives you 3 front-row attackers, at the cost of needing a setter who can reliably run in and set from off the net.",
     },
-    "5-1": {
-      startingLineup: ["S", "OH1", "MB1", "Opp", "OH2", "MB2"],
-      setterRoles: ["S"],
-      // The one setter always sets -- from the net when front row, or
-      // penetrating forward when back row.
-      setterBadge: function (isFront) { return isFront ? "setting" : "penetrating"; },
-      info: "<b>5-1 &mdash; one setter, every rotation.</b> A single setter runs the whole offense, front row or back (penetrating when back row). The Opposite hits opposite the setter in the rotation. Because only one player ever sets, the team's sets stay the most consistent -- the trade-off is alternating between 3 front-row hitters (setter back row) and only 2 (setter front row).",
+    "4-2": {
+      label: "4-2",
+      startingLineup: ["S1", "OH1", "MB1", "S2", "OH2", "MB2"],
+      setterRoles: ["S1", "S2"],
+      // Whichever setter is FRONT ROW sets from the net directly; the
+      // back-row setter just plays normal back-row defense.
+      setterBadge: function (isFront) { return isFront ? "setting" : ""; },
+      info: "<b>4-2 &mdash; the simplest system.</b> 2 setters, positioned opposite each other so one is always in the front row. The front-row setter sets right where they stand; the back-row setter just plays defense. Easiest to learn, but always caps you at 2 front-row attackers since one front-row spot is used by the setter.",
     },
   };
 
@@ -430,9 +450,10 @@
     return { x: x, y: y };
   }
 
-  var currentSystem = "4-2";
+  var currentSystem = "5-1";
   var currentRotation = 0; // 0-5
   var currentMode = "serve"; // "serve" | "receive"
+  var currentIronMiddles = false; // false = Libero subs for the back-row middle (default)
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -441,6 +462,15 @@
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
     receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
+  };
+
+  var IRON_OPTIONS = [
+    { key: false, label: "Libero Sub" },
+    { key: true, label: "Iron Middles" },
+  ];
+  var IRON_CAPTIONS = {
+    false: "The Libero is a back-row defense/passing specialist who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row.",
+    true: "No libero substitution &mdash; the middle blockers stay on the court through all 6 rotations, passing and playing back-row defense themselves.",
   };
 
   function rotationState(systemKey, rotationIndex) {
@@ -459,19 +489,28 @@
     var old = court.querySelectorAll(".vb-rot-player");
     for (var k = 0; k < old.length; k++) old[k].parentNode.removeChild(old[k]);
     playerEls = {};
-    SYSTEMS[currentSystem].startingLineup.forEach(function (role) {
+    function addPlayer(key, cls, label, title) {
       var el = document.createElement("div");
-      el.className = "vb-rot-player vb-rot-role-" + roleClass(role);
-      el.title = ROLE_LABELS[role];
-      el.innerHTML = '<span class="pos"></span><span class="role">' + role + '</span><span class="badge"></span>';
+      el.className = "vb-rot-player vb-rot-role-" + cls;
+      el.title = title;
+      el.innerHTML = '<span class="pos"></span><span class="role">' + label + '</span><span class="badge"></span>';
       court.appendChild(el);
-      playerEls[role] = el;
+      playerEls[key] = el;
+    }
+    SYSTEMS[currentSystem].startingLineup.forEach(function (role) {
+      addPlayer(role, roleClass(role), role, ROLE_LABELS[role]);
     });
+    // One persistent Libero circle -- a middle pair always has exactly
+    // one back-row member (they sit 3 rotation-slots apart), so there
+    // is always exactly one Libero substitution active when not in
+    // Iron Middles mode. It just slides to whichever zone that is.
+    addPlayer("Libero", "L", "L", "Libero");
   }
 
   function positionPlayers() {
     var sys = SYSTEMS[currentSystem];
     var roles = rotationState(currentSystem, currentRotation); // roles[idx] = role at zone idx
+    var backMiddleIdx = -1, backMiddleRole = null;
     for (var idx = 0; idx < 6; idx++) {
       var role = roles[idx];
       var el = playerEls[role];
@@ -479,11 +518,34 @@
       var pos = currentMode === "serve" ? SERVE_POS[idx] : receivePos(idx, role, isFront);
       el.style.left = pos.x + "%";
       el.style.top = pos.y + "%";
+      el.style.display = "";
       el.querySelector(".pos").textContent = "P" + (idx + 1);
       var isSetter = sys.setterRoles.indexOf(role) >= 0;
       var badge = isSetter ? sys.setterBadge(isFront) : "";
       el.classList.toggle("setting", badge === "setting" || badge === "penetrating");
       el.querySelector(".badge").textContent = badge;
+      if (roleClass(role) === "MB" && !isFront) {
+        backMiddleIdx = idx;
+        backMiddleRole = role;
+      }
+    }
+
+    // Libero substitution: a middle pair always has exactly one
+    // back-row member, so backMiddleIdx is always found here.
+    var liberoEl = playerEls["Libero"];
+    if (!currentIronMiddles && backMiddleIdx >= 0) {
+      playerEls[backMiddleRole].style.display = "none";
+      // The Libero passes like an outside hitter -- pass a stand-in
+      // OH role name purely to select that branch of receivePos().
+      var liberoPos = currentMode === "serve" ? SERVE_POS[backMiddleIdx] : receivePos(backMiddleIdx, "OH1", false);
+      liberoEl.style.left = liberoPos.x + "%";
+      liberoEl.style.top = liberoPos.y + "%";
+      liberoEl.style.display = "";
+      liberoEl.querySelector(".pos").textContent = "P" + (backMiddleIdx + 1);
+      liberoEl.querySelector(".badge").textContent = "";
+      liberoEl.classList.remove("setting");
+    } else {
+      liberoEl.style.display = "none";
     }
   }
 
@@ -510,6 +572,15 @@
     document.getElementById("vb-rot-mode-toggle").innerHTML = modeHtml;
     document.getElementById("vb-rot-mode-caption").innerHTML = MODE_CAPTIONS[currentMode];
 
+    // Libero / Iron Middles toggle
+    var ironHtml = "";
+    IRON_OPTIONS.forEach(function (opt) {
+      ironHtml += '<button class="vb-rot-mode-btn' + (opt.key === currentIronMiddles ? " active" : "") +
+        '" data-iron="' + opt.key + '">' + opt.label + "</button>";
+    });
+    document.getElementById("vb-rot-iron-toggle").innerHTML = ironHtml;
+    document.getElementById("vb-rot-iron-caption").innerHTML = IRON_CAPTIONS[currentIronMiddles];
+
     // Court
     ensurePlayers();
     positionPlayers();
@@ -522,12 +593,13 @@
     }
     document.getElementById("vb-rot-dots").innerHTML = dotsHtml;
 
-    // Legend (role colors only -- shown once, doesn't change per system)
+    // Legend (role colors -- Libero only shown when subbing is active)
     document.getElementById("vb-rot-legend").innerHTML =
       '<span><i class="vb-rot-role-S"></i>Setter</span>' +
       (currentSystem === "5-1" ? '<span><i class="vb-rot-role-Opp"></i>Opposite</span>' : "") +
       '<span><i class="vb-rot-role-OH"></i>Outside</span>' +
-      '<span><i class="vb-rot-role-MB"></i>Middle</span>';
+      '<span><i class="vb-rot-role-MB"></i>Middle</span>' +
+      (currentIronMiddles ? "" : '<span><i class="vb-rot-role-L"></i>Libero</span>');
 
     bindControls();
   }
@@ -541,10 +613,17 @@
         render();
       };
     }
-    var modeBtns = document.querySelectorAll(".vb-rot-mode-btn");
+    var modeBtns = document.querySelectorAll("#vb-rot-mode-toggle .vb-rot-mode-btn");
     for (var m = 0; m < modeBtns.length; m++) {
       modeBtns[m].onclick = function () {
         currentMode = this.getAttribute("data-mode");
+        render();
+      };
+    }
+    var ironBtns = document.querySelectorAll("#vb-rot-iron-toggle .vb-rot-mode-btn");
+    for (var n = 0; n < ironBtns.length; n++) {
+      ironBtns[n].onclick = function () {
+        currentIronMiddles = this.getAttribute("data-iron") === "true";
         render();
       };
     }
