@@ -476,20 +476,28 @@
   //     the attack line back row, ready to release into the offense.
   //   - The setter never passes -- stands at the net front row (no
   //     hiding needed), or creeps up toward the front of their zone
-  //     back row to shorten the sprint in to set.
-  //   - The Opposite (5-1 only) never passes -- stays off the net,
-  //     ready to transition into an attack approach.
-  //   - Outside hitters ALWAYS pass. Front row they hang back slightly
-  //     off the net; back row they spread wide toward their own
-  //     sideline (or hold the middle-back spot), forming the classic
-  //     3-player passing arc across the back row.
+  //     back row to shorten the sprint in to set. When back row,
+  //     positionPlayers() also tucks them laterally toward the
+  //     back-row OH (screening from the server) -- see that function.
+  //   - The Opposite (5-1 only) never passes -- stays off the net when
+  //     front row, or drops to the deepest spot on the court when back
+  //     row -- behind every other passer, clear of the whole pattern.
+  //   - Outside hitters ALWAYS pass. Back row they spread toward their
+  //     own side (not glued to the sideline) or hold the middle-back
+  //     spot, forming the classic 3-player passing arc. Front row
+  //     they're a real passer too, not just hanging off the net --
+  //     positionPlayers() pulls them back to nearly the same depth as
+  //     whoever they're paired with across the net (see "Front-row OH
+  //     depth" below), so the shallow y=26 here is only the
+  //     pre-adjustment default.
   //
-  // Every front-row y (max 26) is less than every back-row y (min 38),
-  // and the only lateral shift (back-row OH toward its sideline) only
-  // ever pushes a wing position further from center while the middle
-  // column stays put -- so left < mid < right always holds too. That
-  // means this shape can never violate the overlap rule, regardless of
-  // which role lands in which zone.
+  // The base y values from this function alone keep front-row max (26)
+  // less than back-row min (38), and the only lateral shift (back-row
+  // OH toward its own side) only ever pushes a wing position further
+  // from center while the middle column stays put -- so left < mid <
+  // right always holds too. Every adjustment layered on top in
+  // positionPlayers() is proven safe individually where it's applied --
+  // see the comments at each one.
   function receivePos(idx, role, isFront) {
     var cls = roleClass(role);
     var cellX = SERVE_POS[idx].x;
@@ -500,13 +508,17 @@
     } else if (cls === "S") {
       y = isFront ? 10 : 40;
     } else if (cls === "Opp") {
-      y = isFront ? 12 : 55;
+      // Deepest player on the court when back row -- behind every
+      // passer, clear of the whole receiving pattern.
+      y = isFront ? 12 : 92;
     } else { // OH -- the passer
       y = isFront ? 26 : 68;
       if (!isFront) {
+        // In from the sideline, not glued to it -- still clearly
+        // toward their own side, but with room to move.
         var col = zoneColumn(idx);
-        if (col === "left") x = 6;
-        else if (col === "right") x = 94;
+        if (col === "left") x = 20;
+        else if (col === "right") x = 80;
         else x = 50;
       }
     }
@@ -593,6 +605,7 @@
     var backMiddleIdx = -1, backMiddleRole = null;
     var backOHIdx = -1, backOHRole = null;
     var frontOHIdx = -1, frontOHRole = null;
+    var backSetterIdx = -1, backSetterRole = null;
     var posByRole = {};
     for (var idx = 0; idx < 6; idx++) {
       var role = roles[idx];
@@ -618,7 +631,27 @@
       } else if (cls === "OH" && isFront) {
         frontOHIdx = idx;
         frontOHRole = role;
+      } else if (cls === "S" && !isFront) {
+        backSetterIdx = idx;
+        backSetterRole = role;
       }
+    }
+
+    // Setter hiding (Serve Receive only): when the setter is back
+    // row, tuck them a fixed, bounded distance toward whichever side
+    // the back-row OH is on, using that OH as a screen from the
+    // server. The nudge (14%) is inside a cell's ~16.5%-wide safe
+    // range, so it can never cross into a neighboring column and can
+    // never break the overlap rule -- and it's big enough that even
+    // when the front-row OH also lands close to this same setter
+    // (see "Front-row OH depth" below), the two circles don't visually
+    // touch.
+    if (currentMode === "receive" && backSetterIdx >= 0 && backOHIdx >= 0) {
+      var hideX = posByRole[backSetterRole].x;
+      var hideTowardX = posByRole[backOHRole].x;
+      var hiddenX = hideTowardX > hideX ? hideX + 14 : hideX - 14;
+      posByRole[backSetterRole].x = hiddenX;
+      playerEls[backSetterRole].style.left = hiddenX + "%";
     }
 
     // Libero substitution ("libero" or "ds" mode): a middle pair
@@ -661,6 +694,44 @@
       dsEl.classList.remove("setting");
     } else {
       dsEl.style.display = "none";
+    }
+
+    // Front-row OH depth (Serve Receive only): a real front-row
+    // passer stands much deeper than "just off the net" -- pull them
+    // back roughly halfway between that shallow default (26) and
+    // whoever occupies their column-paired back-row zone this
+    // rotation (the middle/Libero, the setter, the Opposite, or the
+    // other OH). A literal midpoint, rather than crowding right up to
+    // the partner, scales naturally: modest when the partner is close
+    // (a middle or the setter), dramatic when it's the deep Opposite
+    // -- and never stacks two circles almost on top of each other
+    // when the partner happens to be the other OH. Always strictly
+    // between 26 and backPartnerY by construction (every possible
+    // partner's y is > 26), so this is legal with no cap needed.
+    if (currentMode === "receive" && frontOHIdx >= 0) {
+      var COLUMN_PAIR = { 0: 1, 1: 0, 2: 5, 3: 4, 4: 3, 5: 2 };
+      var pairedBackIdx = COLUMN_PAIR[frontOHIdx];
+      var pairedBackRole = roles[pairedBackIdx];
+      var backPartnerY;
+      if (pairedBackIdx === backMiddleIdx && liberoActive) backPartnerY = posByRole["Libero"].y;
+      else if (pairedBackIdx === backOHIdx && dsActive) backPartnerY = posByRole["DS"].y;
+      else backPartnerY = posByRole[pairedBackRole].y;
+      var frontOHY = (26 + backPartnerY) / 2;
+      posByRole[frontOHRole].y = frontOHY;
+      playerEls[frontOHRole].style.top = frontOHY + "%";
+      // The partner only gets a lateral shift of its own when it's the
+      // Libero/DS or the hiding setter -- a raw middle or a plain OH
+      // partner sits at the exact same x as this front-row OH, and a
+      // small y-gap there would stack the two circles. Nudge the
+      // front-row OH sideways (safely within its column's buffer) only
+      // in that specific case, leaving the realistic depth untouched.
+      if (Math.abs(posByRole[pairedBackRole].x - posByRole[frontOHRole].x) < 1) {
+        var frontOHX = posByRole[frontOHRole].x;
+        var nudgedX = frontOHX < 50 ? frontOHX + 14 : frontOHX - 14;
+        if (frontOHX === 50) nudgedX = 64;
+        posByRole[frontOHRole].x = nudgedX;
+        playerEls[frontOHRole].style.left = nudgedX + "%";
+      }
     }
 
     // ---- Seams (Serve Receive only): gaps between adjacent passers.
