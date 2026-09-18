@@ -20,13 +20,12 @@
          drawn as an even 2x3 grid.
        - SERVE RECEIVE: a widely-taught default shape -- outside
          hitters (plus whichever third back-row player) spread into a
-         passing arc, a back-row setter tucks behind the nearest OH to
-         hide before releasing to the net, the middles clear out near
-         the net, and the Opposite drops to the deepest spot on the
-         court, well behind every passer. Real teams add their own
-         rotation-specific tweaks on top of this general shape; this
-         widget teaches the underlying concept, not one exact team's
-         playbook.
+         passing arc, the setter releases/hides toward the net, and
+         the middles + opposite clear out of the passing lanes near
+         the net or just behind it. Real teams add lateral hide spots
+         and rotation-specific tweaks on top of this general shape;
+         this widget teaches the underlying concept, not one exact
+         team's playbook.
 
      Both position sets are pure functions of (role type, front/back
      row, zone column) with no per-rotation special-casing, so they
@@ -477,15 +476,9 @@
   //     the attack line back row, ready to release into the offense.
   //   - The setter never passes -- stands at the net front row (no
   //     hiding needed), or creeps up toward the front of their zone
-  //     back row to shorten the sprint in to set. When back row,
-  //     positionPlayers() also tucks them laterally toward whichever
-  //     side the back-row OH is on (using that OH as a screen from the
-  //     server) -- see the "Setter hiding" block below, since that
-  //     needs to know where another role's circle currently is.
-  //   - The Opposite (5-1 only) never passes -- stays off the net when
-  //     front row, or drops all the way to the deepest spot on the
-  //     court when back row (deeper than every other passer, out of
-  //     everyone's way), ready to transition into an attack approach.
+  //     back row to shorten the sprint in to set.
+  //   - The Opposite (5-1 only) never passes -- stays off the net,
+  //     ready to transition into an attack approach.
   //   - Outside hitters ALWAYS pass. Front row they hang back slightly
   //     off the net; back row they spread wide toward their own
   //     sideline (or hold the middle-back spot), forming the classic
@@ -496,10 +489,7 @@
   // ever pushes a wing position further from center while the middle
   // column stays put -- so left < mid < right always holds too. That
   // means this shape can never violate the overlap rule, regardless of
-  // which role lands in which zone. (The Opposite's extra depth and
-  // the setter's hiding nudge only ever move a role further from the
-  // net or sideways within its own column's safe range, so neither
-  // touches this guarantee either.)
+  // which role lands in which zone.
   function receivePos(idx, role, isFront) {
     var cls = roleClass(role);
     var cellX = SERVE_POS[idx].x;
@@ -510,9 +500,7 @@
     } else if (cls === "S") {
       y = isFront ? 10 : 40;
     } else if (cls === "Opp") {
-      // Deepest player on the court when back row -- behind every
-      // passer, clear of the whole receiving pattern.
-      y = isFront ? 12 : 92;
+      y = isFront ? 12 : 55;
     } else { // OH -- the passer
       y = isFront ? 26 : 68;
       if (!isFront) {
@@ -537,7 +525,7 @@
   ];
   var MODE_CAPTIONS = {
     serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
-    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter tucks behind the nearest one to hide before releasing to the net, the middles clear out near the net, and the Opposite drops to the deepest spot on the court, well behind every passer.",
+    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
   };
 
   var SUB_OPTIONS = [
@@ -605,7 +593,6 @@
     var backMiddleIdx = -1, backMiddleRole = null;
     var backOHIdx = -1, backOHRole = null;
     var frontOHIdx = -1, frontOHRole = null;
-    var backSetterIdx = -1, backSetterRole = null;
     var posByRole = {};
     for (var idx = 0; idx < 6; idx++) {
       var role = roles[idx];
@@ -631,27 +618,7 @@
       } else if (cls === "OH" && isFront) {
         frontOHIdx = idx;
         frontOHRole = role;
-      } else if (cls === "S" && !isFront) {
-        backSetterIdx = idx;
-        backSetterRole = role;
       }
-    }
-
-    // Setter hiding (Serve Receive only): when the setter is back
-    // row, tuck them a fixed, bounded distance toward whichever side
-    // the back-row OH is on, using that OH as a screen from the
-    // server -- a widely-taught real tactic. The nudge (12%) is well
-    // inside a cell's ~16%-wide safe range (see receivePos() above),
-    // so it can never cross into a neighboring column and can never
-    // break the overlap rule, regardless of which columns the setter
-    // and that OH actually land in this rotation.
-    if (currentMode === "receive" && backSetterIdx >= 0 && backOHIdx >= 0) {
-      var hideEl = playerEls[backSetterRole];
-      var hideX = posByRole[backSetterRole].x;
-      var hideTowardX = posByRole[backOHRole].x;
-      var hideNudge = 12;
-      var hiddenX = hideTowardX > hideX ? hideX + hideNudge : hideX - hideNudge;
-      hideEl.style.left = hiddenX + "%";
     }
 
     // Libero substitution ("libero" or "ds" mode): a middle pair
