@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T12:11:29",
+  "generated": "2026-09-19T16:57:23",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -2722,22 +2722,6 @@
       "image": null
     },
     {
-      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-22T19:30:00",
-      "club": "Game Point VBC",
-      "title": "Game Point Adult Open Gym",
-      "start": "2026-07-22T19:30:00",
-      "end": "2026-07-22T22:00:00",
-      "all_day": false,
-      "location": "Game Point VBC",
-      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
-      "url": null,
-      "skill_level": "A/AA",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00",
       "club": "USAV Florida Region",
       "title": "USAV All-Stars Championship",
@@ -3218,22 +3202,6 @@
       "image": null
     },
     {
-      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-07-29T19:30:00",
-      "club": "Game Point VBC",
-      "title": "Game Point Adult Open Gym",
-      "start": "2026-07-29T19:30:00",
-      "end": "2026-07-29T22:00:00",
-      "all_day": false,
-      "location": "Game Point VBC",
-      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
-      "url": null,
-      "skill_level": "A/AA",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Ct._A__Basketball_Ct_B-2026-07-30T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Member Time: Volleyball Ct. A  Basketball Ct B",
@@ -3490,22 +3458,6 @@
       "image": null
     },
     {
-      "uid": "Top_Select_Volleyball_Academy-Top_Summer_Challenge_Indoor_Adult_Volleyball_Tournament-2026-08-02T08:00:00",
-      "club": "Top Select Volleyball Academy",
-      "title": "Top Summer Challenge Indoor Adult Volleyball Tournament",
-      "start": "2026-08-02T08:00:00",
-      "end": "2026-08-02T20:00:00",
-      "all_day": false,
-      "location": "Top Select Volleyball Academy",
-      "description": "Join us August 2nd and compete with the best\ud83d\udd25 Silver Division: 8:00am Gold Division: 3:00pm \u2705RSVP: (689) 212-4858 or DM",
-      "url": "https://form.jotform.com/261955259985073?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGns2eFsXa910Ao1LJAThawIuTZvievGSBO3yQqYqHqbg_kcHqSIA7yjqbFL74_aem_Gcy2XnTvYgbsnfeu3_ySxA&utm_id=97760_v0_s00_e0_tv3",
-      "skill_level": "A/AA, B/BB",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 300.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-2026-08-02T13:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Aug 2 @ Dover Shores Community Center",
@@ -3679,22 +3631,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
-      "image": null
-    },
-    {
-      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-08-05T19:30:00",
-      "club": "Game Point VBC",
-      "title": "Game Point Adult Open Gym",
-      "start": "2026-08-05T19:30:00",
-      "end": "2026-08-05T22:00:00",
-      "all_day": false,
-      "location": "Game Point VBC",
-      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
-      "url": null,
-      "skill_level": "A/AA",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -4127,22 +4063,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
-      "image": null
-    },
-    {
-      "uid": "Game_Point_VBC-Game_Point_Adult_Open_Gym-2026-08-12T19:30:00",
-      "club": "Game Point VBC",
-      "title": "Game Point Adult Open Gym",
-      "start": "2026-08-12T19:30:00",
-      "end": "2026-08-12T22:00:00",
-      "all_day": false,
-      "location": "Game Point VBC",
-      "description": "Competitive volleyball - Teams are preferred, but we try to accommodate single players too.  Must RSVP Via text to Edgar at 321-287-7174.",
-      "url": null,
-      "skill_level": "A/AA",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -5106,22 +5026,6 @@
       "image": null
     },
     {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-08-30T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-08-30T11:00:00",
-      "end": "2026-08-30T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Aug_30_@_Dover_Shores_Community_Center-2026-08-30T13:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Aug 30 @ Dover Shores Community Center",
@@ -5314,22 +5218,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-04T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-04T20:00:00",
-      "end": "2026-09-04T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-05T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club",
@@ -5455,22 +5343,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-09-06T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-09-06T11:00:00",
-      "end": "2026-09-06T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -5698,22 +5570,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-11T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-11T20:00:00",
-      "end": "2026-09-11T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-12T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club",
@@ -5920,22 +5776,6 @@
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": "https://vblimages.blob.core.windows.net/images/ad307f77-9113-4151-b779-455f5bcb6105.png"
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-09-13T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-09-13T11:00:00",
-      "end": "2026-09-13T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
-      "image": null
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-(W)_September_13_@_Dover_Shores_Community_Center-2026-09-13T13:00:00",
@@ -6146,22 +5986,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-18T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-18T20:00:00",
-      "end": "2026-09-18T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Steel_City_Classic_2026-2026-09-19T00:00:00",
       "club": "NAGVA",
       "title": "Steel City Classic 2026",
@@ -6319,22 +6143,6 @@
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-09-20T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-09-20T11:00:00",
-      "end": "2026-09-20T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -6562,22 +6370,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-25T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-25T20:00:00",
-      "end": "2026-09-25T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Splash_Revival-2026-09-26T00:00:00",
       "club": "NAGVA",
       "title": "Splash Revival",
@@ -6655,7 +6447,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00",
@@ -6671,7 +6463,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png"
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
@@ -6719,22 +6511,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-09-27T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-09-27T11:00:00",
-      "end": "2026-09-27T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -6994,22 +6770,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-02T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-02T20:00:00",
-      "end": "2026-10-02T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Fall_Classic_2026-2026-10-03T00:00:00",
       "club": "NAGVA",
       "title": "Fall Classic 2026",
@@ -7138,22 +6898,6 @@
       "image": null
     },
     {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-10-04T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-10-04T11:00:00",
-      "end": "2026-10-04T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
-      "image": null
-    },
-    {
       "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-04T13:00:00",
       "club": "Meadow Woods Recreation Center",
       "title": "Adult Volleyball Member Time",
@@ -7279,22 +7023,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 50.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-09T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-09T20:00:00",
-      "end": "2026-10-09T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -7490,22 +7218,6 @@
       "image": null
     },
     {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-10-11T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-10-11T11:00:00",
-      "end": "2026-10-11T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
-      "image": null
-    },
-    {
       "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-11T13:00:00",
       "club": "Meadow Woods Recreation Center",
       "title": "Adult Volleyball Member Time",
@@ -7634,22 +7346,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-16T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-16T20:00:00",
-      "end": "2026-10-16T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-17T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -7743,22 +7439,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-10-18T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-10-18T11:00:00",
-      "end": "2026-10-18T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -7890,22 +7570,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-23T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-23T20:00:00",
-      "end": "2026-10-23T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-LAVO_Legends_2026-2026-10-24T00:00:00",
       "club": "NAGVA",
       "title": "LAVO Legends 2026",
@@ -7999,22 +7663,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-10-25T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-10-25T11:00:00",
-      "end": "2026-10-25T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -8146,22 +7794,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-30T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-30T20:00:00",
-      "end": "2026-10-30T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-2026_Vegas_Baby!-2026-10-31T00:00:00",
       "club": "NAGVA",
       "title": "2026 Vegas Baby!",
@@ -8239,22 +7871,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volley_Vortex-Men's_indoor_league-2026-11-01T11:00:00",
-      "club": "Volley Vortex",
-      "title": "Men's indoor league",
-      "start": "2026-11-01T11:00:00",
-      "end": "2026-11-01T14:00:00",
-      "all_day": false,
-      "location": "The Well Activity Center",
-      "description": "Men's indoor league; social & competitive division,",
-      "url": "https://www.app.leaguelinq.com/volley-vortex",
-      "skill_level": "A/AA",
-      "gym_type": "League",
-      "net_height": "Men's",
-      "price": 55.0,
       "image": null
     },
     {
@@ -8383,22 +7999,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 50.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-06T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-06T20:00:00",
-      "end": "2026-11-06T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -8610,22 +8210,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-13T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-13T20:00:00",
-      "end": "2026-11-13T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Golden_&_Green_Apple_2026-2026-11-14T00:00:00",
       "club": "NAGVA",
       "title": "Golden & Green Apple 2026",
@@ -8834,22 +8418,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-20T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-20T20:00:00",
-      "end": "2026-11-20T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00",
       "club": "NAGVA",
       "title": "2026 Sactown Throwdown",
@@ -9026,22 +8594,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-27T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-27T20:00:00",
-      "end": "2026-11-27T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-11-28T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Coed Team Open Gym",
@@ -9151,22 +8703,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-04T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-04T20:00:00",
-      "end": "2026-12-04T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -9298,22 +8834,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-11T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-11T20:00:00",
-      "end": "2026-12-11T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-12-12T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Volleyball Court B",
@@ -9423,54 +8943,6 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 550.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-18T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-18T20:00:00",
-      "end": "2026-12-18T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-25T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-25T20:00:00",
-      "end": "2026-12-25T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2027-01-01T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2027-01-01T20:00:00",
-      "end": "2027-01-01T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
