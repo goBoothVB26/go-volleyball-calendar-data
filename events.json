@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T06:51:57",
+  "generated": "2026-09-19T12:11:29",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6655,7 +6655,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
     },
     {
       "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00",
@@ -6671,7 +6671,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png"
+      "image": null
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
@@ -9417,7 +9417,7 @@
       "end": null,
       "all_day": true,
       "location": "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Side Out Courts | 2015 SW Loop 410, Suite 103, San Antonio, TX 78227, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 3, 2026 | December 1, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | December 2, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51 | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
