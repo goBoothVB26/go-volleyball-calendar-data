@@ -1,10 +1,10 @@
-/* GOVB site-wide Custom CSS — paste into Squarespace: Design ->
+/* GOVC site-wide Custom CSS — paste into Squarespace: Design ->
  * Custom CSS. This file is the SINGLE SOURCE OF TRUTH for the site's
  * Custom CSS panel: always paste the WHOLE file in as a full replace,
  * never a partial section, so nothing here can be silently lost.
  *
  * Three sections:
- *  1. Native Squarespace button theming (GOVB blue, inverting to GOVB
+ *  1. Native Squarespace button theming (GOVC blue, inverting to GOVC
  *     yellow in dark mode) — matches the calendar widgets' buttons.
  *  2. Dark mode: page-wide rules (background + a safe text-color
  *     fallback) — see that section's own header comment for the full
@@ -17,7 +17,7 @@
  * or the theme sync snippet.
  */
 
-/* GOVB-themed native Squarespace buttons (matches the calendar's scheme) */
+/* GOVC-themed native Squarespace buttons (matches the calendar's scheme) */
 .sqs-block-button-element,
 .sqs-button-element--primary {
   background: #0057b8 !important;
@@ -30,7 +30,7 @@
   background: #00458f !important;
 }
 
-/* Dark mode: invert to GOVB yellow with dark text, same as the
+/* Dark mode: invert to GOVC yellow with dark text, same as the
    calendar's buttons */
 body.vb-dark-page .sqs-block-button-element,
 body.vb-dark-page .sqs-button-element--primary {
@@ -130,7 +130,7 @@ body.vb-dark-page .sqs-block:not(.code-block) h6 {
 }
 
 /* Homepage 2.0 (the page being built to eventually replace the
-   homepage) ONLY: headings there use GOVB blue in light mode / GOVB
+   homepage) ONLY: headings there use GOVC blue in light mode / GOVC
    yellow in dark mode, instead of the sitewide plain off-white above.
    Scoped with the page's own Squarespace-assigned class -- the
    Custom CSS panel is sitewide, so a page-specific class is the only
@@ -163,7 +163,7 @@ body.vb-dark-page.collection-6a5e67a30e86cb575352b8fa .sqs-block:not(.code-block
  * Blog theming (native Squarespace 7.1 Blog Page)
  * ===========================================================
  * Themes the Blog Page's LIST view (post cards) and individual POST
- * view to match the calendar/form pages: GOVB blue headings, yellow
+ * view to match the calendar/form pages: GOVC blue headings, yellow
  * tag pills, same card shadow/radius language as the carousel cards.
  *
  * LIGHT MODE ONLY: a Blog Page's list/post template chrome is
@@ -216,7 +216,7 @@ article.blog-item .blog-meta .blog-meta-item {
 .summary-item .summary-read-more-link:hover {
   text-decoration: underline !important;
 }
-/* Tag / category pills: GOVB yellow, matching the calendar's filter
+/* Tag / category pills: GOVC yellow, matching the calendar's filter
    highlights (--vb-accent) */
 .blog-item-wrapper .blog-meta-item--tags a, .blog-item-wrapper .blog-meta-item--categories a,
 .summary-item .summary-metadata-item--tags a, .summary-item .summary-metadata-item--categories a,

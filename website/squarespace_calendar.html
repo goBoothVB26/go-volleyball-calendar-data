@@ -19,7 +19,7 @@
      Change a value and save -- nothing else needs touching. */
   .vbcal, .vbcal-overlay {
     /* Brand colors */
-    --vb-brand: #0057b8;          /* GOVB blue: headings, buttons, ribbons */
+    --vb-brand: #0057b8;          /* GOVC blue: headings, buttons, ribbons */
     --vb-brand-soft: #eaf2fb;     /* light blue button hover fill */
     --vb-accent: #FFC425;         /* yellow: filter highlights */
     --vb-accent-fill: #FFF8E1;    /* faded yellow: selected filter fill */
@@ -46,7 +46,7 @@
     --vb-dark-border: #2a3038;
     --vb-dark-text: #e6e6e6;
     --vb-dark-muted: #98a0aa;
-    --vb-dark-brand: #FFC425;     /* GOVB accents invert to yellow on dark */
+    --vb-dark-brand: #FFC425;     /* GOVC accents invert to yellow on dark */
     --vb-dark-accent: #0057b8;    /* filter highlights invert to blue on dark */
   }
   /* Everything uses the Squarespace site's own fonts, including form
@@ -215,8 +215,8 @@
   .vbcal-day.busy:active { transform: scale(0.98); transition: transform 0.08s; }
 
   .vbcal-count { text-align: center; font-size: 13px; color: #666; margin-bottom: 10px; }
-  /* Get-notified call to action after the count: GOVB blue, inverting
-     to GOVB yellow in dark mode like other brand accents */
+  /* Get-notified call to action after the count: GOVC blue, inverting
+     to GOVC yellow in dark mode like other brand accents */
   .vbcal-count .vb-count-cta { color: var(--vb-brand); font-weight: 600; }
   .vb-dark .vbcal-count .vb-count-cta { color: var(--vb-dark-brand); }
 
@@ -499,7 +499,7 @@
   }
   .vb-remind-btn.on svg { fill: currentColor; }
 
-  /* GOVB upcoming-events carousel */
+  /* GOVC upcoming-events carousel */
   .vbcar { margin-bottom: 22px; }
   .vbcar-head { position: relative; text-align: center; margin-bottom: 8px; }
   .vbcar-head .vb-theme-btn, .vbcal-section-title .vb-theme-btn {
@@ -596,7 +596,7 @@
   .vb-bm.on svg { fill: var(--vb-brand); stroke: var(--vb-brand); }
 
   /* Share icon: one instance, always in the footer row before the time
-     text (share icon, then time, on the left; the GOVB logo stays
+     text (share icon, then time, on the left; the GOVC logo stays
      pinned at the far right). The old top-right corner placement
      clipped under longer titles on every screen size, not just mobile,
      so it lives only here now on all devices. */
@@ -619,7 +619,7 @@
   .vb-dark .vb-share-car.copied svg { stroke: #6fcf77; }
   .vbcar-card .f { display: flex; align-items: center; gap: 6px; }
 
-  /* GOVB corner mark: every carousel card is a GOVB event (this
+  /* GOVC corner mark: every carousel card is a GOVC event (this
      carousel only ever shows CAROUSEL_CLUB), so a fixed brand logo
      sits bottom-right, vertically centered on the time line ".f" via
      the matching bottom offset below. */
@@ -646,7 +646,7 @@
   .vb-toast {
     position: fixed; left: 50%; bottom: 28px; z-index: 2147483100;
     transform: translate(-50%, 12px); max-width: calc(100% - 32px);
-    /* Same GOVB-blue / GOVB-yellow pairing (and 600 weight) as the
+    /* Same GOVC-blue / GOVC-yellow pairing (and 600 weight) as the
        filter count line's "More Info / Register" CTA and the filled bookmark
        icon -- hardcoded hex since the toast lives outside .vbcal's
        custom-property scope (see comment above). */
@@ -897,7 +897,7 @@
   .vb-dark .vbcal-item .t { color: var(--vb-dark-muted); }
   .vb-dark .vbcar-card {
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
-    border-left-color: var(--vb-brand);  /* ribbon stays GOVB blue */
+    border-left-color: var(--vb-brand);  /* ribbon stays GOVC blue */
     box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
   }
   /* Inverse of light mode's darkening: dark cards LIGHTEN ~12% toward
@@ -1096,7 +1096,7 @@
   // Pin a color per club here (any CSS color). Clubs not listed get
   // DEFAULT_COLOR.
   var CLUB_COLORS = {
-    "Greater Orlando Volleyball Club": "#0057b8",  // GOVB brand blue
+    "Greater Orlando Volleyball Club": "#0057b8",  // GOVC brand blue
     "WPVC": "#FF7518",                              // pumpkin orange
     "Out Sports League": "#6A0DAD",                 // rich purple
     "Big House Open Gym": "#B22222",                // brick red
@@ -1152,7 +1152,7 @@
     "Top Select Volleyball Academy": LOGO_BASE + "tsva.png",
   };
 
-  // Every carousel card is a CAROUSEL_CLUB (GOVB) event by definition,
+  // Every carousel card is a CAROUSEL_CLUB (GOVC) event by definition,
   // so its corner mark is just that one club's logo, resolved once.
   // Same image file for both light and dark mode -- no separate white
   // silhouette variant.
@@ -1160,10 +1160,10 @@
   var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO;
 
   // Bracketed prefix shown before every event title, e.g.
-  // "[GOVB] August 9th @ Dover Shores". Clubs not listed get an
+  // "[GOVC] August 9th @ Dover Shores". Clubs not listed get an
   // auto-acronym built from their name's initials.
   var CLUB_ACRONYMS = {
-    "Greater Orlando Volleyball Club": "GOVB",
+    "Greater Orlando Volleyball Club": "GOVC",
     "Game Point Volleyball Club": "GPV",
     "WPVC": "WPVC",
     "Out Sports League": "OUT",
@@ -2136,7 +2136,7 @@
       mode: "no-cors",  // Apps Script web apps don't send CORS headers
       headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({
-        email: email, uid: ev.uid, title: titled(ev),  // "[GOVB] Title" so emails carry the club prefix too
+        email: email, uid: ev.uid, title: titled(ev),  // "[GOVC] Title" so emails carry the club prefix too
         start: ev.start, club: ev.club, url: ev.url || "",
         // Extra card data so the reminder email can render the same
         // event card the calendar shows (tags, ribbon color, logo...)

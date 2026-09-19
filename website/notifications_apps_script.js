@@ -230,7 +230,7 @@ function buildInviteIcs(title, start, end, location, url, uid, email, sequence) 
   var ics = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//GOVB Community Calendar//EN",
+    "PRODID:-//GOVC Community Calendar//EN",
     "METHOD:REQUEST",
     "BEGIN:VEVENT",
     "UID:" + icsEsc(uid || title) + "@govb-calendar",
@@ -240,7 +240,7 @@ function buildInviteIcs(title, start, end, location, url, uid, email, sequence) 
     "SUMMARY:" + icsEsc(title),
     location ? "LOCATION:" + icsEsc(location) : null,
     url ? "DESCRIPTION:" + icsEsc("Details / registration: " + url) : null,
-    "ORGANIZER;CN=GOVB Community Calendar:mailto:" + organizer,
+    "ORGANIZER;CN=GOVC Community Calendar:mailto:" + organizer,
     "ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE:mailto:" + email,
     "SEQUENCE:" + (sequence || 0),
     "STATUS:CONFIRMED",
@@ -317,11 +317,11 @@ function buildEventCardEmail(title, club, url, whenText, introHtml, extra) {
         "</td>" +
       "</tr></table>" +
 
-      // Sign-off: GOVB logo to the left of (and level with) the two lines
+      // Sign-off: GOVC logo to the left of (and level with) the two lines
       '<table cellpadding="0" cellspacing="0" style="margin-top:18px;"><tr>' +
         '<td valign="middle" style="padding-right:10px;">' +
           '<img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/govc_logo_icon.png"' +
-          ' width="44" alt="GOVB" style="display:block; max-width:44px; height:auto;"></td>' +
+          ' width="44" alt="GOVC" style="display:block; max-width:44px; height:auto;"></td>' +
         '<td valign="middle" style="font-family:Arial,Helvetica,sans-serif; font-size:14px;' +
         ' color:#222; line-height:1.5;">See you on the court,<br>' +
         "Your Greater Orlando Community Member</td>" +
