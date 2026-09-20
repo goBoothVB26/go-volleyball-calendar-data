@@ -7803,7 +7803,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png",
       "uid": "Volleyball_Life-OVP_Waterside-2026-09-26T00:00:00"
     },
     {
@@ -7911,7 +7911,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png",
+      "image": null,
       "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00"
     },
     {
