@@ -25,14 +25,24 @@ LOCATION:Cady Way Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Vortex Showdown - Indoor Tournament  '26
-DTSTART;TZID=America/New_York:20261010T000000
-DTEND;TZID=America/New_York:20261010T000000
-UID:Volley_Vortex-Vortex_Showdown_-_Indoor_Tournament__'26-2026-10-10T00:0
- 0:00
-DESCRIPTION:Tournament · Adults · Indoor · 6s\n\nMore info: https://vol
- leyvortex.volleyballlife.com/events
-LOCATION:Winter Park Volleyball Center
+SUMMARY:[Volley Vortex] Love in Volley
+DTSTART;TZID=America/New_York:20270220T202600
+DTEND;TZID=America/New_York:20270220T202600
+UID:Volley_Vortex-Love_in_Volley-2027-02-20T20:26:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyvortex.volleyballlife.com/events
+LOCATION:Trotters Park
+URL:https://volleyvortex.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] 4s Grass Tournament: Spring Slamdown '27
+DTSTART;TZID=America/New_York:20270424T202600
+DTEND;TZID=America/New_York:20270424T202600
+UID:Volley_Vortex-4s_Grass_Tournament:_Spring_Slamdown_'27-2027-04-24T20:2
+ 6:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyvortex.volleyballlife.com/events
+LOCATION:Trotters Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 END:VCALENDAR

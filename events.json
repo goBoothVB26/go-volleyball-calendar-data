@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T17:09:45",
+  "generated": "2026-09-20T22:05:05",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6655,7 +6655,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00",
@@ -6671,7 +6671,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png"
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
@@ -7330,22 +7330,6 @@
       "image": null
     },
     {
-      "uid": "Volley_Vortex-Vortex_Showdown_-_Indoor_Tournament__'26-2026-10-10T00:00:00",
-      "club": "Volley Vortex",
-      "title": "Vortex Showdown - Indoor Tournament  '26",
-      "start": "2026-10-10T00:00:00",
-      "end": "2026-10-10T00:00:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Center",
-      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
-      "url": "https://volleyvortex.volleyballlife.com/events",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-M/W_Grass_Doubles_&_Triples-2026-10-10T00:00:00",
       "club": "Volleyball Life",
       "title": "M/W Grass Doubles & Triples",
@@ -7394,22 +7378,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Vortex_Showdown_-_Indoor_Tournament__'26-2026-10-10T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Vortex Showdown - Indoor Tournament  '26",
-      "start": "2026-10-10T00:00:00",
-      "end": "2026-10-11T00:00:00",
-      "all_day": true,
-      "location": "Winter Park Volleyball Center",
-      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
-      "url": "https://volleyballlife.com/event/39172",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-PreFUDS_Coed_4s_Tournament-2026-10-10T00:00:00",
       "club": "Volleyball Life",
       "title": "PreFUDS Coed 4s Tournament",
@@ -7419,6 +7387,22 @@
       "location": "Gulfport Volleyball Courts",
       "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
       "url": "https://volleyballlife.com/event/41631",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Beast_Coast_Volleyball_-_Monster_Smash_Reverse_Coed_Grass_4\u2019s-2026-10-10T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Beast Coast Volleyball - Monster Smash Reverse Coed Grass 4\u2019s",
+      "start": "2026-10-10T00:00:00",
+      "end": "2026-10-11T00:00:00",
+      "all_day": true,
+      "location": "Kenly Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/event/40630",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Co-ed",
@@ -9586,6 +9570,22 @@
       "image": null
     },
     {
+      "uid": "Volley_Vortex-Love_in_Volley-2027-02-20T20:26:00",
+      "club": "Volley Vortex",
+      "title": "Love in Volley",
+      "start": "2027-02-20T20:26:00",
+      "end": "2027-02-20T20:26:00",
+      "all_day": false,
+      "location": "Trotters Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "NAGVA-Oak_City_Challenge_2027-2027-03-06T00:00:00",
       "club": "NAGVA",
       "title": "Oak City Challenge 2027",
@@ -9631,6 +9631,22 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 450.0,
+      "image": null
+    },
+    {
+      "uid": "Volley_Vortex-4s_Grass_Tournament:_Spring_Slamdown_'27-2027-04-24T20:26:00",
+      "club": "Volley Vortex",
+      "title": "4s Grass Tournament: Spring Slamdown '27",
+      "start": "2027-04-24T20:26:00",
+      "end": "2027-04-24T20:26:00",
+      "all_day": false,
+      "location": "Trotters Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
       "image": null
     },
     {
