@@ -858,12 +858,14 @@
     // in front of (nearer the net than) the back-row OH1 (68) and the
     // Libero, same trick as Rotation 2. Opp kept squared to the Zone
     // 2 label's x but pushed further right toward the sideline (90,
-    // just short of the clip-safe max so it stays fully on court).
-    // The Libero (subbing MB1) pulled off the OH1/seam-zone line and
-    // squared to the Zone 1 label (83,80). OH1 untouched. Checked:
-    // every new x/y stays within the 7.1-92.9 clip-safe range, and
-    // every pairwise distance among the 6 circles clears the
-    // ~14-wide overlap threshold.
+    // just short of the clip-safe max so it stays fully on court),
+    // and pulled up closer to the 10-foot line (y=26, short of the
+    // attack line's own y=33 but well off the net). The Libero
+    // (subbing MB1) pulled off the Zone 1 label and leveled to sit on
+    // the same horizontal plane as OH1 (y=68), keeping its x=83.
+    // OH1 untouched. Checked: every new x/y stays within the
+    // 7.1-92.9 clip-safe range, and every pairwise distance among the
+    // 6 circles clears the ~14-wide overlap threshold.
     if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 2) {
       if (playerEls["MB2"]) {
         posByRole["MB2"] = { x: 8, y: 8 };
@@ -881,14 +883,14 @@
         playerEls["OH2"].style.top = "64%";
       }
       if (playerEls["Opp"]) {
-        posByRole["Opp"] = { x: 90, y: 12 };
+        posByRole["Opp"] = { x: 90, y: 26 };
         playerEls["Opp"].style.left = "90%";
-        playerEls["Opp"].style.top = "12%";
+        playerEls["Opp"].style.top = "26%";
       }
       if (playerEls["Libero"]) {
-        posByRole["Libero"] = { x: 83, y: 80 };
+        posByRole["Libero"] = { x: 83, y: 68 };
         playerEls["Libero"].style.left = "83%";
-        playerEls["Libero"].style.top = "80%";
+        playerEls["Libero"].style.top = "68%";
       }
     }
 
