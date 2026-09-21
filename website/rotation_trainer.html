@@ -733,23 +733,35 @@
     // Hand-placed adjustments (Serve Receive only), one rotation at a
     // time per explicit request -- not general rules.
     //
-    // 5-1 Rotation 1: OH1 (front row, P2) pulled deeper and left, off
-    // the sideline and toward the zone-1 depth, with the setter (back
-    // row, P1, penetrating) kept behind OH1 and offset to OH1's
-    // right. Checked legal: OH1(68,50) is still left of and shallower
-    // than S(82,60) -- the P2/P1 column pair (front must stay closer
-    // to net than back) and the back-row x order (OH2 6 < L 50 <
-    // S 82) both still hold; front-row x order (Opp 17 < MB1 50 <
-    // OH1 68) is untouched too.
+    // 5-1 Rotation 1: OH1 and S shifted right, S adjacent to the
+    // right sideline (94) with OH1 kept left of and shallower than
+    // it (80,50); MB1 and Opp pushed toward the left sideline, with
+    // Opp pushed deeper than MB1 (which stays net-crowded) so their
+    // circles don't overlap. Checked legal: front-row x order
+    // Opp(6) < MB1(15) < OH1(80); back-row x order OH2(6) < L(50) <
+    // S(94); column pairs Opp(30)<OH2(68), MB1(6)<L(68),
+    // OH1(50)<S(60) all hold; nearest same-side pairs (Opp/MB1,
+    // OH1/S) both sit at least ~17 apart, clear of the ~14-wide
+    // circle-overlap threshold.
     if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 0) {
+      if (playerEls["Opp"]) {
+        posByRole["Opp"] = { x: 6, y: 30 };
+        playerEls["Opp"].style.left = "6%";
+        playerEls["Opp"].style.top = "30%";
+      }
+      if (playerEls["MB1"]) {
+        posByRole["MB1"] = { x: 15, y: 6 };
+        playerEls["MB1"].style.left = "15%";
+        playerEls["MB1"].style.top = "6%";
+      }
       if (playerEls["OH1"]) {
-        posByRole["OH1"] = { x: 68, y: 50 };
-        playerEls["OH1"].style.left = "68%";
+        posByRole["OH1"] = { x: 80, y: 50 };
+        playerEls["OH1"].style.left = "80%";
         playerEls["OH1"].style.top = "50%";
       }
       if (playerEls["S"]) {
-        posByRole["S"] = { x: 82, y: 60 };
-        playerEls["S"].style.left = "82%";
+        posByRole["S"] = { x: 94, y: 60 };
+        playerEls["S"].style.left = "94%";
         playerEls["S"].style.top = "60%";
       }
     }
