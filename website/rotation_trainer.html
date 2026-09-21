@@ -183,10 +183,22 @@
   /* Reserve enough height for each caption's longest possible text
      (measured directly) so switching toggles never reflows/moves the
      court below -- a fixed slot per caption, not a shared one, since
-     they hold very different amounts of text. */
+     they hold very different amounts of text. Suppressed while a
+     caption is collapsed (see .vb-rot-caption-collapsed) so hiding it
+     actually reclaims the space instead of leaving a blank gap. */
   #vb-rot-sub-caption { min-height: 116px; }
   #vb-rot-mode-caption { min-height: 78px; }
   #vb-rot-seam-caption { min-height: 40px; }
+  .vb-rot-caption-collapsed { display: none !important; }
+
+  .vb-rot-caption-toggle {
+    display: block; margin: 0 auto 10px; padding: 2px 4px;
+    background: none; border: none; cursor: pointer;
+    font-size: 12px; font-weight: 600; color: var(--vb-brand);
+    text-decoration: underline; text-align: center;
+  }
+  .vb-rot-caption-toggle:hover { opacity: 0.75; }
+  body.vb-dark-page .vb-rot-caption-toggle { color: var(--vb-dark-brand); }
 
   /* Court */
   .vb-rot-court-wrap {
@@ -385,6 +397,7 @@
   <div class="vb-rot-info" id="vb-rot-info"></div>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-sub-toggle"></div>
+  <button class="vb-rot-caption-toggle" id="vb-rot-sub-caption-toggle" type="button"></button>
   <p class="vb-rot-mode-caption" id="vb-rot-sub-caption"></p>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
@@ -580,6 +593,7 @@
   var currentMode = "serve"; // "serve" | "receive" | "release"
   var currentSubMode = "libero"; // "none" | "libero" | "ds"
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
+  var subCaptionVisible = false; // collapsed by default to keep the sub-toggle row compact
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -600,7 +614,7 @@
   var SUB_CAPTIONS = {
     none: "No specialist substitutions &mdash; the starting lineup plays every rotation as-is, including back-row defense.",
     libero: "The Libero is a back-row defense/passing specialist (distinct jersey) who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row. Libero swaps are unlimited and free &mdash; they don't count against a team's substitution limit &mdash; but the Libero can never attack the ball above net height.",
-    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; shown here on the outside hitter, though a DS can just as easily cover the opposite instead (5-1 only, never the setter) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
+    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a back-row passer &mdash; shown here on the outside hitter, though a DS can just as easily cover the opposite instead (5-1 only, never the setter) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
   };
 
   function rotationState(systemKey, rotationIndex) {
@@ -1171,6 +1185,8 @@
     });
     document.getElementById("vb-rot-sub-toggle").innerHTML = subHtml;
     document.getElementById("vb-rot-sub-caption").innerHTML = SUB_CAPTIONS[currentSubMode];
+    document.getElementById("vb-rot-sub-caption").classList.toggle("vb-rot-caption-collapsed", !subCaptionVisible);
+    document.getElementById("vb-rot-sub-caption-toggle").textContent = subCaptionVisible ? "Hide description" : "Show description";
 
     // Court
     ensurePlayers();
@@ -1242,6 +1258,10 @@
         render();
       };
     }
+    document.getElementById("vb-rot-sub-caption-toggle").onclick = function () {
+      subCaptionVisible = !subCaptionVisible;
+      render();
+    };
     var seamBtns = document.querySelectorAll("#vb-rot-seam-toggle .vb-rot-mode-btn");
     for (var q = 0; q < seamBtns.length; q++) {
       seamBtns[q].onclick = function () {
