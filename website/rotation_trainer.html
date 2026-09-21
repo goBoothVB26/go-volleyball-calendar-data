@@ -730,6 +730,55 @@
       dsEl.style.display = "none";
     }
 
+    // Hand-placed adjustments (Serve Receive only), one rotation at a
+    // time per explicit request -- not general rules.
+    //
+    // Rotation 1 (5-1 and 6-2 share this exact zone mapping -- P1/P4
+    // are the two setter-slot roles in both: S/Opp in 5-1, S1/S2 in
+    // 6-2 -- so the same hand-placed layout applies to both, using
+    // whichever role actually occupies each zone this system, per
+    // explicit confirmation that P4's occupant (Opp, or the sitting
+    // front-row setter in 6-2) gets identical treatment): OH1 and the
+    // P1 setter shifted right, P1 adjacent to the right sideline (94)
+    // with OH1 kept left of and shallower than it (80,50); MB1 and
+    // the P4 role pushed toward the left sideline, with P4 pushed
+    // deeper than MB1 (which stays net-crowded) so their circles
+    // don't overlap. OH2 shifted right from the standard sideline
+    // shift (6) to line up with the zone-5 label (17). Checked legal:
+    // front-row x order P4(6) < MB1(15) < OH1(80); back-row x order
+    // OH2(17) < L(50) < P1(94); column pairs P4(30)<OH2(68),
+    // MB1(6)<L(68), OH1(50)<P1(60) all hold; nearest same-side pairs
+    // (P4/MB1, OH1/P1, OH2/P4) are all well clear of the ~14-wide
+    // circle-overlap threshold.
+    if (currentMode === "receive" && (currentSystem === "5-1" || currentSystem === "6-2") && currentRotation === 0) {
+      var p1Role = roles[0], p4Role = roles[3];
+      if (playerEls[p4Role]) {
+        posByRole[p4Role] = { x: 6, y: 30 };
+        playerEls[p4Role].style.left = "6%";
+        playerEls[p4Role].style.top = "30%";
+      }
+      if (playerEls["MB1"]) {
+        posByRole["MB1"] = { x: 15, y: 6 };
+        playerEls["MB1"].style.left = "15%";
+        playerEls["MB1"].style.top = "6%";
+      }
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 80, y: 50 };
+        playerEls["OH1"].style.left = "80%";
+        playerEls["OH1"].style.top = "50%";
+      }
+      if (playerEls[p1Role]) {
+        posByRole[p1Role] = { x: 94, y: 60 };
+        playerEls[p1Role].style.left = "94%";
+        playerEls[p1Role].style.top = "60%";
+      }
+      if (playerEls["OH2"]) {
+        posByRole["OH2"] = { x: 17, y: 68 };
+        playerEls["OH2"].style.left = "17%";
+        playerEls["OH2"].style.top = "68%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
