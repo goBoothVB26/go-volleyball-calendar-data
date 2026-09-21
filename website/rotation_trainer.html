@@ -183,10 +183,9 @@
   /* Reserve enough height for each caption's longest possible text
      (measured directly) so switching toggles never reflows/moves the
      court below -- a fixed slot per caption, not a shared one, since
-     they hold very different amounts of text. Suppressed while a
-     caption is collapsed (see .vb-rot-caption-collapsed) so hiding it
-     actually reclaims the space instead of leaving a blank gap. */
-  #vb-rot-sub-caption { min-height: 116px; }
+     they hold very different amounts of text. The sub-mode caption is
+     exempt: it now sits behind a show/hide button, so its height
+     tracks its own content instead of reserving a fixed slot. */
   #vb-rot-mode-caption { min-height: 78px; }
   #vb-rot-seam-caption { min-height: 40px; }
   .vb-rot-caption-collapsed { display: none !important; }
@@ -378,7 +377,6 @@
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
     .vb-rot-seam-zone { height: 30px; }
     .vb-rot-zone-num { font-size: 32px; }
-    #vb-rot-sub-caption { min-height: 153px; }
     #vb-rot-mode-caption { min-height: 134px; }
     #vb-rot-seam-caption { min-height: 59px; }
   }
