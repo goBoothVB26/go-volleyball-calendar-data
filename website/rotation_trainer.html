@@ -989,6 +989,44 @@
       }
     }
 
+    // Rotation 6, 5-1 only (Serve Receive): MB1 (the only visible
+    // Middle here -- MB2 is subbed out by the Libero) pushed into the
+    // net/left-sideline corner (8,8, the clip-safe minimum on both
+    // axes, same trick as Rotation 3). OH1 dropped from its front-row
+    // default (50,26) down to Zone 5's x (17) but held at y=64 --
+    // above (nearer the net than) the horizontal plane OH2 and the
+    // Libero share (68), same trick used in Rotations 2, 4 and 5. Opp
+    // shifted to sit between the Zone 5 (17) and Zone 6 (50) labels
+    // (x=34, the midpoint) while staying deep (y=92, its own default
+    // depth, already clip-safe). The Libero (subbing MB2) moved from
+    // its default sideline spot (94, itself a clip risk) to
+    // vertically align with the Zone 1 label (83), same depth (68).
+    // S and OH2 are untouched. Checked: every x/y here stays within
+    // the 7.1-92.9 clip-safe range, and every pairwise distance among
+    // the 6 circles clears the ~14-wide circle-overlap threshold.
+    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 5) {
+      if (playerEls["MB1"]) {
+        posByRole["MB1"] = { x: 8, y: 8 };
+        playerEls["MB1"].style.left = "8%";
+        playerEls["MB1"].style.top = "8%";
+      }
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 17, y: 64 };
+        playerEls["OH1"].style.left = "17%";
+        playerEls["OH1"].style.top = "64%";
+      }
+      if (playerEls["Opp"]) {
+        posByRole["Opp"] = { x: 34, y: 92 };
+        playerEls["Opp"].style.left = "34%";
+        playerEls["Opp"].style.top = "92%";
+      }
+      if (playerEls["Libero"]) {
+        posByRole["Libero"] = { x: 83, y: 68 };
+        playerEls["Libero"].style.left = "83%";
+        playerEls["Libero"].style.top = "68%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
