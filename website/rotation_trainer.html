@@ -845,6 +845,45 @@
       }
     }
 
+    // Rotation 3, 5-1 only (Serve Receive): S and OH2 swap (a legal
+    // post-serve-contact swap since receive isn't the overlap-rule
+    // moment -- the two diagonal players cross to their real jobs
+    // once the ball is live). MB2 pushed into the net/left-sideline
+    // corner (8,8, the clip-safe minimum on both axes), with S
+    // dropped into OH2's old front-row spot but pulled over to sit
+    // just below MB2 in the same column (8,24) instead of staying at
+    // OH2's original x -- a 16-wide gap, clear of the ~14-wide
+    // circle-overlap threshold. OH2 takes S's old back-row spot
+    // (17,40). Opp kept squared to the Zone 2 label's x but pushed
+    // further right toward the sideline (90, just short of the
+    // clip-safe max so it stays fully on court). OH1 and the Libero
+    // (subbing MB1) are untouched. Checked: every new x/y stays
+    // within the 7.1-92.9 clip-safe range, and every pairwise
+    // distance among the 6 circles clears the ~14-wide overlap
+    // threshold.
+    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 2) {
+      if (playerEls["MB2"]) {
+        posByRole["MB2"] = { x: 8, y: 8 };
+        playerEls["MB2"].style.left = "8%";
+        playerEls["MB2"].style.top = "8%";
+      }
+      if (playerEls["S"]) {
+        posByRole["S"] = { x: 8, y: 24 };
+        playerEls["S"].style.left = "8%";
+        playerEls["S"].style.top = "24%";
+      }
+      if (playerEls["OH2"]) {
+        posByRole["OH2"] = { x: 17, y: 40 };
+        playerEls["OH2"].style.left = "17%";
+        playerEls["OH2"].style.top = "40%";
+      }
+      if (playerEls["Opp"]) {
+        posByRole["Opp"] = { x: 90, y: 12 };
+        playerEls["Opp"].style.left = "90%";
+        playerEls["Opp"].style.top = "12%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
