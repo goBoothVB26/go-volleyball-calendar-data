@@ -897,6 +897,44 @@
       }
     }
 
+    // Rotation 4 (5-1 and 6-2 share this exact zone mapping, same as
+    // Rotations 1-3 -- P1/P4 are the two setter-slot roles in both:
+    // Opp/S in 5-1, S2/S1 in 6-2): OH1 moved into Zone 5, leveled to
+    // the same horizontal plane as the Libero (y=68). OH2 moved into
+    // Zone 1, held slightly above the Libero's plane (y=64, closer to
+    // the net). The P1 role shifted to sit evenly between the Zone 6
+    // (50) and Zone 1 (83) labels (x=67 the midpoint) while staying
+    // deep near the baseline (y=92, its own default depth, already
+    // clip-safe). MB2's default front-row y=6 nudged to 8 to clear
+    // the top-edge clip the unmodified default was producing (same
+    // clip-safe minimum used throughout). Checked: every x/y here
+    // stays within the 7.1-92.9 clip-safe range, and every pairwise
+    // distance among the 6 circles clears the ~14-wide circle-overlap
+    // threshold.
+    if (currentMode === "receive" && (currentSystem === "5-1" || currentSystem === "6-2") && currentRotation === 3) {
+      var p1Role4 = roles[0];
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 17, y: 68 };
+        playerEls["OH1"].style.left = "17%";
+        playerEls["OH1"].style.top = "68%";
+      }
+      if (playerEls["OH2"]) {
+        posByRole["OH2"] = { x: 83, y: 64 };
+        playerEls["OH2"].style.left = "83%";
+        playerEls["OH2"].style.top = "64%";
+      }
+      if (playerEls[p1Role4]) {
+        posByRole[p1Role4] = { x: 67, y: 92 };
+        playerEls[p1Role4].style.left = "67%";
+        playerEls[p1Role4].style.top = "92%";
+      }
+      if (playerEls["MB2"]) {
+        posByRole["MB2"] = { x: 50, y: 8 };
+        playerEls["MB2"].style.left = "50%";
+        playerEls["MB2"].style.top = "8%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
