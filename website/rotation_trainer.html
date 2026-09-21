@@ -935,6 +935,50 @@
       }
     }
 
+    // Rotation 5, 5-1 only (Serve Receive): Opp shifted to sit
+    // between the Zone 1 (83) and Zone 6 (50) labels (x=67 the
+    // midpoint) while staying deep (y=92, its own default depth,
+    // already clip-safe). OH2 brought in from its default sideline
+    // spot (94, itself a clip risk) to vertically align with the
+    // Zone 1 label (83), same depth (68). Libero moved from its
+    // default (6) to vertically align with the Zone 6 label (50),
+    // same depth (68). OH1 dropped from its front-row default (26)
+    // down toward Zone 5's x (17, already its column) but held at
+    // y=64 -- above (nearer the net than) the horizontal plane OH2
+    // and the Libero now share (68), same trick used in Rotations 2
+    // and 4. MB2's default front-row y=6 nudged to 8 to clear the
+    // top-edge clip the unmodified default was producing. Checked:
+    // every x/y here stays within the 7.1-92.9 clip-safe range, and
+    // every pairwise distance among the 6 circles clears the
+    // ~14-wide circle-overlap threshold.
+    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 4) {
+      if (playerEls["MB2"]) {
+        posByRole["MB2"] = { x: 83, y: 8 };
+        playerEls["MB2"].style.left = "83%";
+        playerEls["MB2"].style.top = "8%";
+      }
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 17, y: 64 };
+        playerEls["OH1"].style.left = "17%";
+        playerEls["OH1"].style.top = "64%";
+      }
+      if (playerEls["OH2"]) {
+        posByRole["OH2"] = { x: 83, y: 68 };
+        playerEls["OH2"].style.left = "83%";
+        playerEls["OH2"].style.top = "68%";
+      }
+      if (playerEls["Libero"]) {
+        posByRole["Libero"] = { x: 50, y: 68 };
+        playerEls["Libero"].style.left = "50%";
+        playerEls["Libero"].style.top = "68%";
+      }
+      if (playerEls["Opp"]) {
+        posByRole["Opp"] = { x: 67, y: 92 };
+        playerEls["Opp"].style.left = "67%";
+        playerEls["Opp"].style.top = "92%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
