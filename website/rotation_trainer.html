@@ -801,14 +801,16 @@
     // substitution spot to sit at the Zone 6 label (50,80) -- receive
     // is a suggested shape, not the serve-contact overlap rule, so
     // freeing it from its column is fine as long as it stays clear of
-    // every other circle. OH2 dropped toward Zone 5, nudged left
-    // toward the sideline (10) and pulled up a smidge to y=64 so it
-    // sits in front of (nearer the net than) both the Libero (80) and
-    // OH1's default back-row spot (68). Front-row x order OH2 n/a
-    // (moved out of the front-row shape by request) / P3 role(83) <
-    // MB1(92) still holds; nearest pairs (P3/P6, P6/MB1, OH2/Libero,
-    // OH2/OH1) all clear the ~14-wide circle-overlap threshold, and
-    // every x/y stays within the 7.1-92.9 clip-safe range.
+    // every other circle. OH2 dropped toward Zone 5, vertically
+    // aligned to the Zone 5 label (17) and pulled up a smidge to
+    // y=64 so it sits in front of (nearer the net than) both the
+    // Libero (80) and OH1, which is likewise vertically aligned to
+    // the Zone 1 label (83) at its default depth (68). Front-row x
+    // order OH2 n/a (moved out of the front-row shape by request) /
+    // P3 role(83) < MB1(92) still holds; nearest pairs (P3/P6,
+    // P6/MB1, OH2/Libero, OH2/OH1) all clear the ~14-wide
+    // circle-overlap threshold, and every x/y stays within the
+    // 7.1-92.9 clip-safe range.
     if (currentMode === "receive" && (currentSystem === "5-1" || currentSystem === "6-2") && currentRotation === 1) {
       var p3Role = roles[2], p6Role = roles[5];
       if (playerEls["MB1"]) {
@@ -832,9 +834,14 @@
         playerEls["Libero"].style.top = "80%";
       }
       if (playerEls["OH2"]) {
-        posByRole["OH2"] = { x: 10, y: 64 };
-        playerEls["OH2"].style.left = "10%";
+        posByRole["OH2"] = { x: 17, y: 64 };
+        playerEls["OH2"].style.left = "17%";
         playerEls["OH2"].style.top = "64%";
+      }
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 83, y: 68 };
+        playerEls["OH1"].style.left = "83%";
+        playerEls["OH1"].style.top = "68%";
       }
     }
 
