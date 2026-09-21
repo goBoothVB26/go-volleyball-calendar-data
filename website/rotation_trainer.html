@@ -730,6 +730,30 @@
       dsEl.style.display = "none";
     }
 
+    // Hand-placed adjustments (Serve Receive only), one rotation at a
+    // time per explicit request -- not general rules.
+    //
+    // 5-1 Rotation 1: OH1 (front row, P2) pulled deeper and left, off
+    // the sideline and toward the zone-1 depth, with the setter (back
+    // row, P1, penetrating) kept behind OH1 and offset to OH1's
+    // right. Checked legal: OH1(68,50) is still left of and shallower
+    // than S(82,60) -- the P2/P1 column pair (front must stay closer
+    // to net than back) and the back-row x order (OH2 6 < L 50 <
+    // S 82) both still hold; front-row x order (Opp 17 < MB1 50 <
+    // OH1 68) is untouched too.
+    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 0) {
+      if (playerEls["OH1"]) {
+        posByRole["OH1"] = { x: 68, y: 50 };
+        playerEls["OH1"].style.left = "68%";
+        playerEls["OH1"].style.top = "50%";
+      }
+      if (playerEls["S"]) {
+        posByRole["S"] = { x: 82, y: 60 };
+        playerEls["S"].style.left = "82%";
+        playerEls["S"].style.top = "60%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
