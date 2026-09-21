@@ -897,27 +897,28 @@
       }
     }
 
-    // Rotation 4, 5-1 only (Serve Receive): OH1 moved directly into
-    // Zone 5 (17,80), OH2 moved down into Zone 1 (83,80) -- both
-    // pulled off their front-row defaults into the deep corners. Opp
-    // shifted to sit evenly between the Zone 6 (50) and Zone 1 (83)
-    // labels (x=67 the midpoint) while staying deep near the baseline
-    // (y=92, its own default depth, already clip-safe). MB2's default
-    // front-row y=6 nudged to 8 to clear the top-edge clip the
-    // unmodified default was producing (same clip-safe minimum used
-    // throughout). Checked: every x/y here stays within the
-    // 7.1-92.9 clip-safe range, and every pairwise distance among the
-    // 6 circles clears the ~14-wide circle-overlap threshold.
+    // Rotation 4, 5-1 only (Serve Receive): OH1 moved into Zone 5,
+    // leveled to the same horizontal plane as the Libero (y=68). OH2
+    // moved into Zone 1, held slightly above the Libero's plane
+    // (y=64, closer to the net). Opp shifted to sit evenly between
+    // the Zone 6 (50) and Zone 1 (83) labels (x=67 the midpoint)
+    // while staying deep near the baseline (y=92, its own default
+    // depth, already clip-safe). MB2's default front-row y=6 nudged
+    // to 8 to clear the top-edge clip the unmodified default was
+    // producing (same clip-safe minimum used throughout). Checked:
+    // every x/y here stays within the 7.1-92.9 clip-safe range, and
+    // every pairwise distance among the 6 circles clears the
+    // ~14-wide circle-overlap threshold.
     if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 3) {
       if (playerEls["OH1"]) {
-        posByRole["OH1"] = { x: 17, y: 80 };
+        posByRole["OH1"] = { x: 17, y: 68 };
         playerEls["OH1"].style.left = "17%";
-        playerEls["OH1"].style.top = "80%";
+        playerEls["OH1"].style.top = "68%";
       }
       if (playerEls["OH2"]) {
-        posByRole["OH2"] = { x: 83, y: 80 };
+        posByRole["OH2"] = { x: 83, y: 64 };
         playerEls["OH2"].style.left = "83%";
-        playerEls["OH2"].style.top = "80%";
+        playerEls["OH2"].style.top = "64%";
       }
       if (playerEls["Opp"]) {
         posByRole["Opp"] = { x: 67, y: 92 };
