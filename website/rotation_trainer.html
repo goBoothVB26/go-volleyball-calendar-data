@@ -1042,24 +1042,28 @@
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
-    // zones every time: the active setter -> zone 1, whoever fills
-    // the Opposite's role -> zone 2, the front-row Middle -> zone 3,
-    // the front-row Outside -> zone 4, the Libero -> zone 5, the
-    // other Outside -> zone 6. Reuses the exact SERVE_POS landmarks
-    // (base defense zones are the same physical spots as the serving
-    // grid, just assigned by role instead of by rotation), which is
-    // what actually produces real switching -- the same 6 spots every
-    // rotation, with different roles animating into each one.
+    // zones every time: the setter/opposing-role pair splits between
+    // zone 1 (the back-row landmark) and zone 2 (the front-row
+    // landmark) based on which of the two is ACTUALLY back row this
+    // rotation -- not "the setter always gets zone 1" -- since the
+    // active setter is front row in some rotations and back row in
+    // others. The front-row Middle -> zone 3, the front-row Outside
+    // -> zone 4, the Libero -> zone 5, the other Outside -> zone 6.
+    // Reuses the exact SERVE_POS landmarks (base defense zones are
+    // the same physical spots as the serving grid, just assigned by
+    // role instead of by rotation), which is what actually produces
+    // real switching -- the same 6 spots every rotation, with
+    // different roles animating into each one.
     //
-    // 5-1 has a real Opposite role for zone 2. 4-2/6-2 have no
-    // Opposite -- two setters instead -- so "whoever fills the
-    // Opposite's role" there is simply the OTHER setter (the one
-    // without the "setting"/"penetrating" badge): in 6-2 that's the
-    // front-row setter who's "hitting" this rotation, i.e. actually
-    // playing the pin-attacker/opposite job for real; in 4-2 it's the
-    // non-setting back-row setter, standardized into the same slot so
-    // the rule and the resulting switching animation stay consistent
-    // across all three systems.
+    // 5-1 has a real Opposite role paired with its setter. 4-2/6-2
+    // have no Opposite -- two setters instead -- so the "opposing"
+    // half of the pair is simply the OTHER setter (the one without
+    // the "setting"/"penetrating" badge): in 6-2 that's the front-row
+    // setter who's "hitting" this rotation, i.e. actually playing the
+    // pin-attacker/opposite job for real; in 4-2 it's the non-setting
+    // back-row setter, standardized into the same pairing so the rule
+    // and the resulting switching animation stay consistent across
+    // all three systems.
     if (currentMode === "release") {
       var frontMiddleRole = null;
       for (var fmi = 0; fmi < 6; fmi++) {
@@ -1084,8 +1088,18 @@
         // role to a new, fixed zone, so the label needs to match.
         playerEls[role].querySelector(".pos").textContent = "P" + (zoneIdx + 1);
       };
-      placeBase(primarySetterRole, 0);
-      placeBase(opposingRole, 1);
+      // Zone 1 (P1) is the back-row landmark, zone 2 (P2) the
+      // front-row one -- so whichever of the setter/opposing pair is
+      // ACTUALLY back row this rotation goes to zone 1, and whichever
+      // is actually front row goes to zone 2, instead of hardcoding
+      // "setter always zone 1". The setter and its opposing role are
+      // always in opposite rows from each other, so exactly one of
+      // them is front row.
+      var primarySetterIsFront = FRONT_ROW[roles.indexOf(primarySetterRole)];
+      var backRowPairRole = primarySetterIsFront ? opposingRole : primarySetterRole;
+      var frontRowPairRole = primarySetterIsFront ? primarySetterRole : opposingRole;
+      placeBase(backRowPairRole, 0);
+      placeBase(frontRowPairRole, 1);
       placeBase(frontMiddleRole, 2);
       placeBase(frontOHRole, 3);
       if (liberoActive) placeBase("Libero", 4);
