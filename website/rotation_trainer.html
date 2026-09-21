@@ -845,47 +845,50 @@
       }
     }
 
-    // Rotation 3, 5-1 only (Serve Receive): S and OH2 swap (a legal
+    // Rotation 3 (5-1 and 6-2 share this exact zone mapping, same as
+    // Rotations 1-2 -- P2/P5 are the two setter-slot roles in both:
+    // Opp/S in 5-1, S2/S1 in 6-2): the P5 role and OH2 swap (a legal
     // post-serve-contact swap since receive isn't the overlap-rule
     // moment -- the two diagonal players cross to their real jobs
     // once the ball is live). MB2 pushed into the net/left-sideline
-    // corner (8,8, the clip-safe minimum on both axes), with S
-    // dropped into OH2's old front-row spot but pulled over to sit
-    // just below MB2 in the same column (8,24) instead of staying at
-    // OH2's original x -- a 16-wide gap, clear of the ~14-wide
+    // corner (8,8, the clip-safe minimum on both axes), with the P5
+    // role dropped into OH2's old front-row spot but pulled over to
+    // sit just below MB2 in the same column (8,24) instead of staying
+    // at OH2's original x -- a 16-wide gap, clear of the ~14-wide
     // circle-overlap threshold. OH2 pushed lower toward the Zone 5
     // label's x (17) but held at y=64 -- still on a horizontal plane
     // in front of (nearer the net than) the back-row OH1 (68) and the
-    // Libero, same trick as Rotation 2. Opp kept squared to the Zone
-    // 2 label's x but pushed further right toward the sideline (90,
-    // just short of the clip-safe max so it stays fully on court),
-    // and pulled up closer to the 10-foot line (y=26, short of the
-    // attack line's own y=33 but well off the net). The Libero
-    // (subbing MB1) pulled off the Zone 1 label and leveled to sit on
-    // the same horizontal plane as OH1 (y=68), keeping its x=83.
-    // OH1 untouched. Checked: every new x/y stays within the
+    // Libero, same trick as Rotation 2. The P2 role kept squared to
+    // the Zone 2 label's x but pushed further right toward the
+    // sideline (90, just short of the clip-safe max so it stays fully
+    // on court), and pulled up closer to the 10-foot line (y=26,
+    // short of the attack line's own y=33 but well off the net). The
+    // Libero (subbing MB1) pulled off the Zone 1 label and leveled to
+    // sit on the same horizontal plane as OH1 (y=68), keeping its
+    // x=83. OH1 untouched. Checked: every new x/y stays within the
     // 7.1-92.9 clip-safe range, and every pairwise distance among the
     // 6 circles clears the ~14-wide overlap threshold.
-    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 2) {
+    if (currentMode === "receive" && (currentSystem === "5-1" || currentSystem === "6-2") && currentRotation === 2) {
+      var p2Role = roles[1], p5Role = roles[4];
       if (playerEls["MB2"]) {
         posByRole["MB2"] = { x: 8, y: 8 };
         playerEls["MB2"].style.left = "8%";
         playerEls["MB2"].style.top = "8%";
       }
-      if (playerEls["S"]) {
-        posByRole["S"] = { x: 8, y: 24 };
-        playerEls["S"].style.left = "8%";
-        playerEls["S"].style.top = "24%";
+      if (playerEls[p5Role]) {
+        posByRole[p5Role] = { x: 8, y: 24 };
+        playerEls[p5Role].style.left = "8%";
+        playerEls[p5Role].style.top = "24%";
       }
       if (playerEls["OH2"]) {
         posByRole["OH2"] = { x: 17, y: 64 };
         playerEls["OH2"].style.left = "17%";
         playerEls["OH2"].style.top = "64%";
       }
-      if (playerEls["Opp"]) {
-        posByRole["Opp"] = { x: 90, y: 26 };
-        playerEls["Opp"].style.left = "90%";
-        playerEls["Opp"].style.top = "26%";
+      if (playerEls[p2Role]) {
+        posByRole[p2Role] = { x: 90, y: 26 };
+        playerEls[p2Role].style.left = "90%";
+        playerEls[p2Role].style.top = "26%";
       }
       if (playerEls["Libero"]) {
         posByRole["Libero"] = { x: 83, y: 68 };
