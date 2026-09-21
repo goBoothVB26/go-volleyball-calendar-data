@@ -935,8 +935,12 @@
       }
     }
 
-    // Rotation 5, 5-1 only (Serve Receive): Opp shifted to sit
-    // between the Zone 1 (83) and Zone 6 (50) labels (x=67 the
+    // Rotation 5, 5-1 only (Serve Receive): MB2 shifted from the
+    // Zone 2 label's x (83) closer to the right sideline (90, just
+    // short of the clip-safe max) at its clip-fixed net depth (8).
+    // The setter placed between the Zone 3 (50) and Zone 2 (83)
+    // labels (x=67 the midpoint), close to the net (y=8). Opp shifted
+    // to sit between the Zone 1 (83) and Zone 6 (50) labels (x=67 the
     // midpoint) while staying deep (y=92, its own default depth,
     // already clip-safe). OH2 brought in from its default sideline
     // spot (94, itself a clip risk) to vertically align with the
@@ -946,16 +950,19 @@
     // down toward Zone 5's x (17, already its column) but held at
     // y=64 -- above (nearer the net than) the horizontal plane OH2
     // and the Libero now share (68), same trick used in Rotations 2
-    // and 4. MB2's default front-row y=6 nudged to 8 to clear the
-    // top-edge clip the unmodified default was producing. Checked:
-    // every x/y here stays within the 7.1-92.9 clip-safe range, and
-    // every pairwise distance among the 6 circles clears the
-    // ~14-wide circle-overlap threshold.
+    // and 4. Checked: every x/y here stays within the 7.1-92.9
+    // clip-safe range, and every pairwise distance among the 6
+    // circles clears the ~14-wide circle-overlap threshold.
     if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 4) {
       if (playerEls["MB2"]) {
-        posByRole["MB2"] = { x: 83, y: 8 };
-        playerEls["MB2"].style.left = "83%";
+        posByRole["MB2"] = { x: 90, y: 8 };
+        playerEls["MB2"].style.left = "90%";
         playerEls["MB2"].style.top = "8%";
+      }
+      if (playerEls["S"]) {
+        posByRole["S"] = { x: 67, y: 8 };
+        playerEls["S"].style.left = "67%";
+        playerEls["S"].style.top = "8%";
       }
       if (playerEls["OH1"]) {
         posByRole["OH1"] = { x: 17, y: 64 };
