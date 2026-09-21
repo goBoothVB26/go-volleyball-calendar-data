@@ -795,13 +795,15 @@
     // right off its P5 substitution spot to sit at the Zone 6 label
     // (50,80) -- receive is a suggested shape, not the serve-contact
     // overlap rule, so freeing it from its column is fine as long as
-    // it stays clear of every other circle. OH2 dropped from the
-    // front row down into Zone 5 (17,80), nudged further left toward
-    // the sideline (10) so it clears the Libero's new spot. Front-row
-    // x order OH2 n/a (moved out of the front-row shape by request) /
+    // it stays clear of every other circle. OH2 dropped toward Zone 5,
+    // nudged left toward the sideline (10) and pulled up a smidge to
+    // y=64 so it sits in front of (nearer the net than) both the
+    // Libero (80) and OH1's default back-row spot (68). Front-row x
+    // order OH2 n/a (moved out of the front-row shape by request) /
     // Opp(83) < MB1(92) still holds; nearest pairs (Opp/S, S/MB1,
-    // OH2/Libero) all clear the ~14-wide circle-overlap threshold,
-    // and every x/y stays within the 7.1-92.9 clip-safe range.
+    // OH2/Libero, OH2/OH1) all clear the ~14-wide circle-overlap
+    // threshold, and every x/y stays within the 7.1-92.9 clip-safe
+    // range.
     if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 1) {
       if (playerEls["MB1"]) {
         posByRole["MB1"] = { x: 92, y: 33 };
@@ -824,9 +826,9 @@
         playerEls["Libero"].style.top = "80%";
       }
       if (playerEls["OH2"]) {
-        posByRole["OH2"] = { x: 10, y: 80 };
+        posByRole["OH2"] = { x: 10, y: 64 };
         playerEls["OH2"].style.left = "10%";
-        playerEls["OH2"].style.top = "80%";
+        playerEls["OH2"].style.top = "64%";
       }
     }
 
