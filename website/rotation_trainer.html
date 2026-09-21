@@ -779,6 +779,34 @@
       }
     }
 
+    // Rotation 2, 5-1 only (Serve Receive): MB1 dropped to the 10-foot
+    // line (y=33, the attack-line's own top:33% mark) and shifted
+    // right against the right sideline (94). Opp pushed to the net
+    // (2) and squared under the Zone 2 label (83). S pulled up out of
+    // the back row to just left of the Zone 2 label (75), staying
+    // between Opp and MB1 in depth (2 < 18 < 33) so the P3/P6 column
+    // pair (Opp front / S back) still holds front < back. Front-row x
+    // order OH2(17) < Opp(83) < MB1(94) and back-row x order MB2(17)
+    // < S(75) < OH1(94) both hold; nearest pairs (Opp/S, S/MB1) are
+    // well clear of the ~14-wide circle-overlap threshold.
+    if (currentMode === "receive" && currentSystem === "5-1" && currentRotation === 1) {
+      if (playerEls["MB1"]) {
+        posByRole["MB1"] = { x: 94, y: 33 };
+        playerEls["MB1"].style.left = "94%";
+        playerEls["MB1"].style.top = "33%";
+      }
+      if (playerEls["Opp"]) {
+        posByRole["Opp"] = { x: 83, y: 2 };
+        playerEls["Opp"].style.left = "83%";
+        playerEls["Opp"].style.top = "2%";
+      }
+      if (playerEls["S"]) {
+        posByRole["S"] = { x: 75, y: 18 };
+        playerEls["S"].style.left = "75%";
+        playerEls["S"].style.top = "18%";
+      }
+    }
+
     // Base defense (Release mode, all 3 systems): a real, fixed
     // functional layout -- regardless of which rotational zone a role
     // currently occupies, everyone switches to the SAME 6 physical
