@@ -183,10 +183,22 @@
   /* Reserve enough height for each caption's longest possible text
      (measured directly) so switching toggles never reflows/moves the
      court below -- a fixed slot per caption, not a shared one, since
-     they hold very different amounts of text. */
+     they hold very different amounts of text. Suppressed while a
+     caption is collapsed (see .vb-rot-caption-collapsed) so hiding it
+     actually reclaims the space instead of leaving a blank gap. */
   #vb-rot-sub-caption { min-height: 116px; }
   #vb-rot-mode-caption { min-height: 78px; }
   #vb-rot-seam-caption { min-height: 40px; }
+  .vb-rot-caption-collapsed { display: none !important; }
+
+  .vb-rot-caption-toggle {
+    display: block; margin: 0 auto 10px; padding: 2px 4px;
+    background: none; border: none; cursor: pointer;
+    font-size: 12px; font-weight: 600; color: var(--vb-brand);
+    text-decoration: underline; text-align: center;
+  }
+  .vb-rot-caption-toggle:hover { opacity: 0.75; }
+  body.vb-dark-page .vb-rot-caption-toggle { color: var(--vb-dark-brand); }
 
   /* Court */
   .vb-rot-court-wrap {
@@ -385,6 +397,7 @@
   <div class="vb-rot-info" id="vb-rot-info"></div>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-sub-toggle"></div>
+  <button class="vb-rot-caption-toggle" id="vb-rot-sub-caption-toggle" type="button"></button>
   <p class="vb-rot-mode-caption" id="vb-rot-sub-caption"></p>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
@@ -580,6 +593,7 @@
   var currentMode = "serve"; // "serve" | "receive" | "release"
   var currentSubMode = "libero"; // "none" | "libero" | "ds"
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
+  var subCaptionVisible = false; // collapsed by default to keep the sub-toggle row compact
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -587,9 +601,9 @@
     { key: "release", label: "Release" },
   ];
   var MODE_CAPTIONS = {
-    serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule. This is the one legally-required shape.",
-    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes. Real teams add their own lateral hide spots on top of this.",
-    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones: the active setter to zone 1, whoever fills the Opposite's job to zone 2, Middle to zone 3, Outside to zone 4, Libero to zone 5, the other Outside to zone 6 -- the same 6 spots every rotation. In 4-2/6-2 (no real Opposite) the non-setting setter takes zone 2 instead -- in 6-2 that's literally the front-row setter who's \"hitting\" this rotation.",
+    serve: "At the moment of serve, all 6 players must sit in this exact left-right / front-back order &mdash; the overlap rule.",
+    receive: "A common serve-receive shape: outside hitters form a passing arc across the back row while the setter releases to the net and the middles/opposite clear out of the passing lanes.",
+    release: "Once the ball is live, everyone is free to move (the overlap rule only applies at serve contact) and switches to standard base-defense zones.",
   };
 
   var SUB_OPTIONS = [
@@ -600,7 +614,7 @@
   var SUB_CAPTIONS = {
     none: "No specialist substitutions &mdash; the starting lineup plays every rotation as-is, including back-row defense.",
     libero: "The Libero is a back-row defense/passing specialist (distinct jersey) who subs in for the middle blocker every time they rotate to the back row, then subs back out when that middle returns to the front row. Libero swaps are unlimited and free &mdash; they don't count against a team's substitution limit &mdash; but the Libero can never attack the ball above net height.",
-    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a weaker back-row passer &mdash; shown here on the outside hitter, though a DS can just as easily cover the opposite instead (5-1 only, never the setter) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
+    ds: "A Defensive Specialist is an ordinary substitute (no special jersey, no attack restriction) brought in for a back-row passer &mdash; shown here on the outside hitter, though a DS can just as easily cover the opposite instead (5-1 only, never the setter) &mdash; alongside the Libero, then subbed back out at the front row. Unlike the Libero, every DS swap counts against the team's substitution limit (15/set in NCAA Division I and USAV club play, 18/set in NCAA Division II/III and NFHS high school), so teams use it more sparingly.",
   };
 
   function rotationState(systemKey, rotationIndex) {
@@ -1171,6 +1185,8 @@
     });
     document.getElementById("vb-rot-sub-toggle").innerHTML = subHtml;
     document.getElementById("vb-rot-sub-caption").innerHTML = SUB_CAPTIONS[currentSubMode];
+    document.getElementById("vb-rot-sub-caption").classList.toggle("vb-rot-caption-collapsed", !subCaptionVisible);
+    document.getElementById("vb-rot-sub-caption-toggle").textContent = subCaptionVisible ? "Hide Sub Details ▲" : "Show Sub Details ▼";
 
     // Court
     ensurePlayers();
@@ -1242,6 +1258,10 @@
         render();
       };
     }
+    document.getElementById("vb-rot-sub-caption-toggle").onclick = function () {
+      subCaptionVisible = !subCaptionVisible;
+      render();
+    };
     var seamBtns = document.querySelectorAll("#vb-rot-seam-toggle .vb-rot-mode-btn");
     for (var q = 0; q < seamBtns.length; q++) {
       seamBtns[q].onclick = function () {
