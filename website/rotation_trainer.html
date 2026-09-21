@@ -180,14 +180,10 @@
   }
   body.vb-dark-page .vb-rot-mode-caption { color: #999; }
 
-  /* Reserve enough height for each caption's longest possible text
-     (measured directly) so switching toggles never reflows/moves the
-     court below -- a fixed slot per caption, not a shared one, since
-     they hold very different amounts of text. The sub-mode caption is
-     exempt: it now sits behind a show/hide button, so its height
-     tracks its own content instead of reserving a fixed slot. */
-  #vb-rot-mode-caption { min-height: 78px; }
-  #vb-rot-seam-caption { min-height: 40px; }
+  /* Every description box sizes to its own content -- no fixed
+     min-height reserved for any of them, so collapsing/switching a
+     caption reclaims or grows the space instead of leaving a fixed
+     slot behind. */
   .vb-rot-caption-collapsed { display: none !important; }
 
   .vb-rot-caption-toggle {
@@ -377,8 +373,6 @@
     .vb-rot-mode-btn { padding: 6px 12px; font-size: 12px; }
     .vb-rot-seam-zone { height: 30px; }
     .vb-rot-zone-num { font-size: 32px; }
-    #vb-rot-mode-caption { min-height: 134px; }
-    #vb-rot-seam-caption { min-height: 59px; }
   }
 </style>
 
@@ -399,6 +393,7 @@
   <p class="vb-rot-mode-caption" id="vb-rot-sub-caption"></p>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-mode-toggle"></div>
+  <button class="vb-rot-caption-toggle" id="vb-rot-mode-caption-toggle" type="button"></button>
   <p class="vb-rot-mode-caption" id="vb-rot-mode-caption"></p>
 
   <div class="vb-rot-court-wrap">
@@ -592,6 +587,7 @@
   var currentSubMode = "libero"; // "none" | "libero" | "ds"
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
   var subCaptionVisible = false; // collapsed by default to keep the sub-toggle row compact
+  var modeCaptionVisible = false; // collapsed by default to keep the Serving/Receive/Release row compact
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -1174,6 +1170,8 @@
     });
     document.getElementById("vb-rot-mode-toggle").innerHTML = modeHtml;
     document.getElementById("vb-rot-mode-caption").innerHTML = MODE_CAPTIONS[currentMode];
+    document.getElementById("vb-rot-mode-caption").classList.toggle("vb-rot-caption-collapsed", !modeCaptionVisible);
+    document.getElementById("vb-rot-mode-caption-toggle").textContent = modeCaptionVisible ? "Hide Mode Details ▲" : "Show Mode Details ▼";
 
     // Libero / DS substitution toggle
     var subHtml = "";
@@ -1248,6 +1246,10 @@
         render();
       };
     }
+    document.getElementById("vb-rot-mode-caption-toggle").onclick = function () {
+      modeCaptionVisible = !modeCaptionVisible;
+      render();
+    };
     var subBtns = document.querySelectorAll("#vb-rot-sub-toggle .vb-rot-mode-btn");
     for (var n = 0; n < subBtns.length; n++) {
       subBtns[n].onclick = function () {
