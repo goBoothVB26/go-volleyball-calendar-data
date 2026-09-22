@@ -410,6 +410,7 @@
   <p class="vb-rot-mode-caption" id="vb-rot-mode-caption"></p>
 
   <div class="vb-rot-mode-toggle" id="vb-rot-seam-toggle"></div>
+  <button class="vb-rot-caption-toggle" id="vb-rot-seam-caption-toggle" type="button"></button>
   <p class="vb-rot-mode-caption" id="vb-rot-seam-caption"></p>
 
   <div class="vb-rot-controls">
@@ -588,6 +589,7 @@
   var currentSeamIndex = null; // null | 0 | 1 -- which seam (if any) is being "covered"
   var subCaptionVisible = false; // collapsed by default to keep the sub-toggle row compact
   var modeCaptionVisible = false; // collapsed by default to keep the Serving/Receive/Release row compact
+  var seamCaptionVisible = false; // collapsed by default to keep the seam-toggle row compact
 
   var MODES = [
     { key: "serve", label: "Serving" },
@@ -1204,6 +1206,7 @@
 
     // Seam toggle (Serve Receive only -- currentSeams is empty in Serving)
     var seamToggleEl = document.getElementById("vb-rot-seam-toggle");
+    var seamCaptionToggleEl = document.getElementById("vb-rot-seam-caption-toggle");
     var seamCaptionEl = document.getElementById("vb-rot-seam-caption");
     if (currentSeams.length > 0) {
       var seamHtml = "";
@@ -1216,9 +1219,13 @@
       seamToggleEl.style.display = "";
       seamCaptionEl.innerHTML = "A seam is the passing gap between two receivers &mdash; servers aim for it on purpose. Cover one to see the passers pinch in and close the gap (green = covered).";
       seamCaptionEl.style.display = "";
+      seamCaptionEl.classList.toggle("vb-rot-caption-collapsed", !seamCaptionVisible);
+      seamCaptionToggleEl.textContent = seamCaptionVisible ? "Hide Seam Details ▲" : "Show Seam Details ▼";
+      seamCaptionToggleEl.style.display = "";
     } else {
       seamToggleEl.innerHTML = "";
       seamToggleEl.style.display = "none";
+      seamCaptionToggleEl.style.display = "none";
       seamCaptionEl.style.display = "none";
     }
 
@@ -1284,6 +1291,10 @@
         render();
       };
     }
+    document.getElementById("vb-rot-seam-caption-toggle").onclick = function () {
+      seamCaptionVisible = !seamCaptionVisible;
+      render();
+    };
     var dots = document.querySelectorAll(".vb-rot-dot");
     for (var j = 0; j < dots.length; j++) {
       dots[j].onclick = function () {
