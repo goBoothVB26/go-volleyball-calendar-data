@@ -55,4 +55,24 @@ DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
 LOCATION:Trotters Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] Queen Showdown
+DTSTART;TZID=America/New_York:20270814T202600
+DTEND;TZID=America/New_York:20270814T202600
+UID:Volley_Vortex-Queen_Showdown-2027-08-14T20:26:00
+DESCRIPTION:Tournament · Adults · Indoor · 6s\n\nMore info: https://vol
+ leyvortex.volleyballlife.com/events
+LOCATION:Winter Park Volleyball Center
+URL:https://volleyvortex.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] Spiketember Classic
+DTSTART;TZID=America/New_York:20270918T202600
+DTEND;TZID=America/New_York:20270918T202600
+UID:Volley_Vortex-Spiketember_Classic-2027-09-18T20:26:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyvortex.volleyballlife.com/events
+LOCATION:Trotters Park
+URL:https://volleyvortex.volleyballlife.com/events
+END:VEVENT
 END:VCALENDAR

@@ -5338,6 +5338,42 @@
       "price": null,
       "image": null,
       "uid": "Volley_Vortex-Halloween_Spike_Slam-2026-10-31T00:00:00"
+    },
+    {
+      "club": "Volley Vortex",
+      "title": "Queen Showdown",
+      "start": "2027-08-14T20:26:00",
+      "end": "2027-08-14T20:26:00",
+      "location": "Winter Park Volleyball Center",
+      "description": "Tournament \u00b7 Adults \u00b7 Indoor \u00b7 6s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "category": "adult",
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Volley_Vortex-Queen_Showdown-2027-08-14T20:26:00"
+    },
+    {
+      "club": "Volley Vortex",
+      "title": "Spiketember Classic",
+      "start": "2027-09-18T20:26:00",
+      "end": "2027-09-18T20:26:00",
+      "location": "Trotters Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "category": "adult",
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Volley_Vortex-Spiketember_Classic-2027-09-18T20:26:00"
     }
   ],
   "goldenrod_community_park": [
@@ -7857,7 +7893,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png",
+      "image": null,
       "uid": "Volleyball_Life-OVP_Waterside-2026-09-26T00:00:00"
     },
     {
@@ -7965,7 +8001,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png",
       "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00"
     },
     {
