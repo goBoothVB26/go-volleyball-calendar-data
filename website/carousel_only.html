@@ -1129,11 +1129,12 @@
   // is pure upside with no staleness concern.
   var LOGO_BASE = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/";
   var CLUB_LOGOS = {
-    // govc_logo_icon.png (and its identical govc_logo_icon-white.png
-    // twin, so the light/dark carousel swap still resolves) is used
-    // singularly for both light and dark mode -- unlike govb.png's
-    // black-on-transparent original, this new icon reads fine on both
-    // backgrounds as-is, so no separate white silhouette variant.
+    // govc_logo_icon.png is the light-mode (full-color) icon, used
+    // here for the event-detail popup (which handles dark mode with a
+    // white plate behind the logo instead of swapping images -- see
+    // .vbcal-overlay.vb-dark .vbcal-logo). The carousel corner mark
+    // below does a real light/dark image swap using this plus its
+    // white silhouette twin, govc_logo_icon-white.png.
     "Greater Orlando Volleyball Club": LOGO_BASE + "govc_logo_icon.png",
     "WPVC": LOGO_BASE + "wpvc.png",
     "Out Sports League": LOGO_BASE + "outsports.png",
@@ -1157,10 +1158,10 @@
 
   // Every carousel card is a CAROUSEL_CLUB (GOVC) event by definition,
   // so its corner mark is just that one club's logo, resolved once.
-  // Same image file for both light and dark mode -- no separate white
-  // silhouette variant.
+  // Dark mode swaps in the white silhouette twin (see .vbcar-logo-dark
+  // above) so the mark stays legible on a dark card.
   var CAROUSEL_LOGO = CLUB_LOGOS[CAROUSEL_CLUB] || "";
-  var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO;
+  var CAROUSEL_LOGO_DARK = CAROUSEL_LOGO ? LOGO_BASE + "govc_logo_icon-white.png" : "";
 
   // Bracketed prefix shown before every event title, e.g.
   // "[GOVC] August 9th @ Dover Shores". Clubs not listed get an
