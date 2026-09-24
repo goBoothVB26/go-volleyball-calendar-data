@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24T18:05:44",
+  "generated": "2026-09-24T22:51:58",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6626,22 +6626,6 @@
       "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
     },
     {
-      "uid": "Volleyball_Life-1st_Annual_Cashcow_Classic_-_All_wins_payout-2026-09-26T00:00:00",
-      "club": "Volleyball Life",
-      "title": "1st Annual Cashcow Classic - All wins payout",
-      "start": "2026-09-26T00:00:00",
-      "end": "2026-09-27T00:00:00",
-      "all_day": true,
-      "location": "Corona Beach",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40970",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/35bc436a-38b9-4992-b052-a47ec2ac4e78.png"
-    },
-    {
       "uid": "Volleyball_Life-OVP_Waterside-2026-09-26T00:00:00",
       "club": "Volleyball Life",
       "title": "OVP Waterside",
@@ -6655,23 +6639,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "Volleyball_Life-PBOVA_QUADS_GRASS_TOURNAMENT-2026-09-26T00:00:00",
-      "club": "Volleyball Life",
-      "title": "PBOVA QUADS GRASS TOURNAMENT",
-      "start": "2026-09-26T00:00:00",
-      "end": "2026-09-27T00:00:00",
-      "all_day": true,
-      "location": "Greenacres Grass Field",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/41648",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/365bf7b8-a2b1-4e9f-9cbd-2c279850452b.png"
+      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Saturday_Indoor_Volleyball_League_-_Fall_'26-2026-09-26T17:00:00",
@@ -6879,7 +6847,7 @@
       "gym_type": "League",
       "net_height": "Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/61842910-af9f-451e-988b-8a5d99d23fe0.jpg"
     },
     {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-09-30T18:00:00",
@@ -7586,6 +7554,22 @@
       "image": null
     },
     {
+      "uid": "Volleyball_Life-Paradise_Sports_Complex_Fall_Leagues_2026-2026-10-16T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Paradise Sports Complex Fall Leagues 2026",
+      "start": "2026-10-16T00:00:00",
+      "end": "2026-12-05T00:00:00",
+      "all_day": true,
+      "location": "Paradise Coast Sports Complex",
+      "description": "League \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
+      "url": "https://volleyballlife.com/event/40927",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-10-16T18:20:00",
       "club": "Out Sports League",
       "title": "Fridays - Draft/REMIX League (A/B/C/D)",
@@ -7663,6 +7647,22 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 450.0,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Ace_Tournaments_|_Triple_Trouble_'26-2026-10-17T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Ace Tournaments | Triple Trouble '26",
+      "start": "2026-10-17T00:00:00",
+      "end": "2026-10-18T00:00:00",
+      "all_day": true,
+      "location": "Abess Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s/4s",
+      "url": "https://volleyballlife.com/event/41519",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -9039,6 +9039,22 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Women's, Co-ed",
       "price": 8.0,
+      "image": null
+    },
+    {
+      "uid": "NAGVA-President's_Pride_Cup_2026-2026-11-28T00:00:00",
+      "club": "NAGVA",
+      "title": "President's Pride Cup 2026",
+      "start": "2026-11-28T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "Maryland Juniors Sports Center | 8221 Preston Ct suite f, Jessup, MD 20794, USA | Registration",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Trevor Reaves | Trevor Reaves | Divisions\n\nDivisions: Tournament Cap | A1 | BB | B | 70 | 6 | 27 | 27 | C | 10 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 23, 2026 | Payment Deadlines\n\nRegistration: Date/Time | Location | Seeding Party\n\nSeeding Party: Date/Time | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 16, 2026 | November 2, 2026 | November 16, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/presidents-pride-cup-2026",
+      "url": "https://www.nagva.org/tournaments-1/presidents-pride-cup-2026",
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 550.0,
       "image": null
     },
     {
