@@ -4101,7 +4101,7 @@
       "start": "2026-10-10T00:00:00",
       "end": null,
       "location": "Olympus Sports Center | 3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA | Registration",
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Scott Kilburg Joshua Christensen Joshua Williams | Divisions\n\nDivisions: Tournament Cap | B | BB | Open A/AA | 42 | Womens | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 31, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 8, 2026, 12:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | October 9, 2026, 12:00 PM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 15, 2026 | September 26, 2026 | Addl. Player Fee | 525 | 600 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-ball-12",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Dale Agbayani | Scott Kilburg Joshua Christensen Joshua Williams | Divisions\n\nDivisions: Tournament Cap | B | BB | Open A/AA | 42 | Womens | Cancelled (09/25) | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | July 31, 2026 | Payment Deadlines\n\nRegistration: Date/Time | October 8, 2026, 12:00 PM | Location | Seeding Party\n\nSeeding Party: Date/Time | October 9, 2026, 12:00 PM | Location | Banquet/Awards Party\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: August 15, 2026 | September 26, 2026 | Addl. Player Fee | 525 | 600 | 75 | Payment Details\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre | Facilities\n\nMore info: https://www.nagva.org/tournaments-1/fall-ball-12",
       "url": "https://www.nagva.org/tournaments-1/fall-ball-12",
       "category": null,
       "all_day": true,
@@ -8096,21 +8096,21 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "SSOVA's GULFPORT CASH PAYOUT 4v4 Oct 17th, Beach Volleyball Tournament",
+      "title": "Jax Scene Halloween Grass Coed 4s",
       "start": "2026-10-17T00:00:00",
       "end": "2026-10-18T00:00:00",
-      "location": "Gulfport Beach Courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 4s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "location": "Jax Scene courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/event/41491",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
+      "net_height": "Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Oct_17th,_Beach_Volleyball_Tournament-2026-10-17T00:00:00"
+      "uid": "Volleyball_Life-Jax_Scene_Halloween_Grass_Coed_4s-2026-10-17T00:00:00"
     }
   ],
   "ocoee_coed_league": [
