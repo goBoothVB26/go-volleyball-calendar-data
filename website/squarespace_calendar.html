@@ -1225,8 +1225,14 @@
 
   function clubTag(club) {
     if (CLUB_ACRONYMS[club]) return CLUB_ACRONYMS[club];
-    return club.split(/\s+/).map(function (w) { return w.charAt(0); })
-               .join("").toUpperCase().slice(0, 5);
+    var words = club.split(/\s+/).filter(Boolean);
+    // A single-word org name (e.g. someone submitting "CCVL" as-is) is
+    // already its own acronym -- taking "the first letter of each
+    // word" would collapse it to just "C". Only multi-word names get
+    // that initials treatment.
+    if (words.length === 1) return words[0].toUpperCase().slice(0, 5);
+    return words.map(function (w) { return w.charAt(0); })
+                .join("").toUpperCase().slice(0, 5);
   }
   function titled(ev) { return "[" + clubTag(ev.club) + "] " + ev.title; }
 
