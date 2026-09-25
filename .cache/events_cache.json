@@ -8096,12 +8096,12 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Ace Tournaments | Triple Trouble '26",
+      "title": "The Ocala Open",
       "start": "2026-10-17T00:00:00",
       "end": "2026-10-18T00:00:00",
-      "location": "Abess Park",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s/4s",
-      "url": "https://volleyballlife.com/event/41519",
+      "location": "Frank DeLuca YMCA",
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
+      "url": "https://volleyballlife.com/event/40890",
       "category": null,
       "all_day": true,
       "stable_id": null,
@@ -8110,14 +8110,14 @@
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-Ace_Tournaments_|_Triple_Trouble_'26-2026-10-17T00:00:00"
+      "uid": "Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00"
     }
   ],
   "ocoee_coed_league": [
     {
       "club": "Ocoee Coed League",
       "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-09-24T18:30:00",
+      "start": "2026-09-25T18:30:00",
       "end": null,
       "location": "Jim Beech Recreation Center",
       "description": "The Co-ed Volleyball League will feature a 7-game regular season and playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, don't hesitate to email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
@@ -9289,6 +9289,60 @@
       "price": 8.0,
       "image": null,
       "uid": "WPVC-WPVC_Open_Gym-2027-01-01T20:00:00"
+    },
+    {
+      "club": "CCVL",
+      "title": "CCVL 2026 Opener",
+      "start": "2026-09-26T08:00:00",
+      "end": "2026-09-26T19:00:00",
+      "location": "Winter Park Volleyball Club",
+      "description": "CCVL welcomes ALL teams, (Collegiate club, Adult teams, ncaa/naia preseason, club teams etc.) of both GENDERS to come and BASH",
+      "url": "https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": null,
+      "net_height": "Men's, Women's",
+      "price": null,
+      "image": null,
+      "uid": "CCVL-CCVL_2026_Opener-2026-09-26T08:00:00"
+    },
+    {
+      "club": "CCVL",
+      "title": "Black Friday Grass Tournament",
+      "start": "2026-11-27T08:00:00",
+      "end": "2026-11-27T20:00:00",
+      "location": "TBD",
+      "description": "CCVL presents Black Friday Grass Tournament Nov 27th 2026",
+      "url": null,
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's",
+      "price": null,
+      "image": null,
+      "uid": "CCVL-Black_Friday_Grass_Tournament-2026-11-27T08:00:00"
+    },
+    {
+      "club": "CCVL",
+      "title": "WPVC x CCVL Winter Indoor Tournament",
+      "start": "2026-12-26T08:00:00",
+      "end": "2026-12-26T20:00:00",
+      "location": "Winter Park Volleyball Club",
+      "description": "WPVC x CCVL Tournament December 26th 2026",
+      "url": null,
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's",
+      "price": null,
+      "image": null,
+      "uid": "CCVL-WPVC_x_CCVL_Winter_Indoor_Tournament-2026-12-26T08:00:00"
     }
   ],
   "meadow_woods_recreation_center": [
@@ -12173,6 +12227,24 @@
       "price": 5.0,
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-July_19th_@_College_Park-2027-07-19T14:00:00"
+    },
+    {
+      "club": "Greater Orlando Volleyball Club",
+      "title": "July 26th @ College Park",
+      "start": "2027-07-26T14:00:00",
+      "end": "2027-07-26T17:00:00",
+      "location": "College Park Neighborhood Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's, Co-ed",
+      "price": 5.0,
+      "image": null,
+      "uid": "Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2027-07-26T14:00:00"
     }
   ]
 }

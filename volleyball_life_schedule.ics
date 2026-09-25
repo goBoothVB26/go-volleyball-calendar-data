@@ -820,14 +820,13 @@ LOCATION:Paradise Coast Sports Complex
 URL:https://volleyballlife.com/event/40927
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Ace Tournaments | Triple Trouble '26
+SUMMARY:[Volleyball Life] The Ocala Open
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
-UID:Volleyball_Life-Ace_Tournaments_|_Triple_Trouble_'26-2026-10-17T00:00:
- 00
-DESCRIPTION:Tournament · Adults · Grass · 3s/4s\n\nMore info: https://v
- olleyballlife.com/event/41519
-LOCATION:Abess Park
-URL:https://volleyballlife.com/event/41519
+UID:Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
+ tps://volleyballlife.com/event/40890
+LOCATION:Frank DeLuca YMCA
+URL:https://volleyballlife.com/event/40890
 END:VEVENT
 END:VCALENDAR

@@ -1782,4 +1782,16 @@ LOCATION:College Park Neighborhood Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
  summer-series?ngmp_2023_iframe_transition=1
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] July 26th @ College Park
+DTSTART;TZID=America/New_York:20270726T140000
+DTEND;TZID=America/New_York:20270726T170000
+UID:Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2027-07-26T14
+ :00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:College Park Neighborhood Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
