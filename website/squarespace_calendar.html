@@ -1126,13 +1126,16 @@
   // is pure upside with no staleness concern.
   var LOGO_BASE = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/";
   var CLUB_LOGOS = {
-    // govc_logo_icon.png is the light-mode (full-color) icon, used
+    // govc_logo_icon-v2.png is the light-mode (full-color) icon, used
     // here for the event-detail popup (which handles dark mode with a
     // white plate behind the logo instead of swapping images -- see
     // .vbcal-overlay.vb-dark .vbcal-logo). The carousel corner mark
     // below does a real light/dark image swap using this plus its
-    // white silhouette twin, govc_logo_icon-white.png.
-    "Greater Orlando Volleyball Club": LOGO_BASE + "govc_logo_icon.png",
+    // white silhouette twin, govc_logo_icon-white.png. The "-v2" isn't
+    // a real version number -- it's a one-time cache-buster: jsDelivr
+    // had this GOVC icon's original filename cached from before, and
+    // renaming was simpler than waiting out that cache.
+    "Greater Orlando Volleyball Club": LOGO_BASE + "govc_logo_icon-v2.png",
     "WPVC": LOGO_BASE + "wpvc.png",
     "Out Sports League": LOGO_BASE + "outsports.png",
     "Big House Open Gym": LOGO_BASE + "bighouse.png",
