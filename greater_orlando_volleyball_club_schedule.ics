@@ -1723,18 +1723,6 @@ URL:https://goadultsportsleague.leagueapps.com/clubteams/5155534-womens-cl
  ub-tryouts---920
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/27
-DTSTART;TZID=America/New_York:20260927T130000
-DTEND;TZID=America/New_York:20260927T180000
-UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_9/27-2026-09-27
- T13:00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
- s/5155540-womens-club-tryouts---927
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/clubteams/5155540-womens-cl
- ub-tryouts---927
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/20
 DTSTART;TZID=America/New_York:20260920T130000
 DTEND;TZID=America/New_York:20260920T180000
@@ -1745,18 +1733,6 @@ DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
 LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/clubteams/5155541-mens-club
  -tryouts---920
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/27
-DTSTART;TZID=America/New_York:20260927T130000
-DTEND;TZID=America/New_York:20260927T180000
-UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_9/27-2026-09-27T1
- 3:00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
- s/5155542-mens-club-tryouts---927
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/clubteams/5155542-mens-club
- -tryouts---927
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Greater Orlando Volleyball Club] July 12th @ College Park
@@ -1793,5 +1769,77 @@ DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
 LOCATION:College Park Neighborhood Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
  summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/20
+DTSTART;TZID=America/New_York:20260920T133000
+DTEND;TZID=America/New_York:20260920T173000
+UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_9/20-2026-09-20
+ T13:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155534-womens-club-tryouts---920
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155534-womens-cl
+ ub-tryouts---920
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/27
+DTSTART;TZID=America/New_York:20260927T133000
+DTEND;TZID=America/New_York:20260927T173000
+UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_9/27-2026-09-27
+ T13:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155540-womens-club-tryouts---927
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155540-womens-cl
+ ub-tryouts---927
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/20
+DTSTART;TZID=America/New_York:20260920T133000
+DTEND;TZID=America/New_York:20260920T173000
+UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_9/20-2026-09-20T1
+ 3:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155541-mens-club-tryouts---920
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155541-mens-club
+ -tryouts---920
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 9/27
+DTSTART;TZID=America/New_York:20260927T133000
+DTEND;TZID=America/New_York:20260927T173000
+UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_9/27-2026-09-27T1
+ 3:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5155542-mens-club-tryouts---927
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5155542-mens-club
+ -tryouts---927
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Men's Club Tryouts - 10/4
+DTSTART;TZID=America/New_York:20261004T133000
+DTEND;TZID=America/New_York:20261004T173000
+UID:Greater_Orlando_Volleyball_Club-Men's_Club_Tryouts_-_10/4-2026-10-04T1
+ 3:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5173035-mens-club-tryouts---104
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5173035-mens-club
+ -tryouts---104
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 10/4
+DTSTART;TZID=America/New_York:20261004T133000
+DTEND;TZID=America/New_York:20261004T173000
+UID:Greater_Orlando_Volleyball_Club-Women's_Club_Tryouts_-_10/4-2026-10-04
+ T13:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
+ s/5173036-womens-club-tryouts---104
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/clubteams/5173036-womens-cl
+ ub-tryouts---104
 END:VEVENT
 END:VCALENDAR
