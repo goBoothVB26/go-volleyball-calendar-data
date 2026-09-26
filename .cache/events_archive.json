@@ -5778,6 +5778,24 @@
       "price": 8.0,
       "image": null,
       "uid": "WPVC-WPVC_Open_Gym-2026-09-25T20:00:00"
+    },
+    {
+      "club": "CCVL",
+      "title": "CCVL 2026 Opener",
+      "start": "2026-09-26T08:00:00",
+      "end": "2026-09-26T19:00:00",
+      "location": "Winter Park Volleyball Club",
+      "description": "CCVL welcomes ALL teams, (Collegiate club, Adult teams, ncaa/naia preseason, club teams etc.) of both GENDERS to come and BASH",
+      "url": "https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==",
+      "category": null,
+      "all_day": false,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": null,
+      "net_height": "Men's, Women's",
+      "price": null,
+      "image": null,
+      "uid": "CCVL-CCVL_2026_Opener-2026-09-26T08:00:00"
     }
   ],
   "meadow_woods_recreation_center": [
