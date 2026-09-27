@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T13:26:45",
+  "generated": "2026-09-27T18:02:42",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5485,7 +5485,7 @@
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
@@ -5549,7 +5549,7 @@
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
@@ -5949,7 +5949,7 @@
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Women's",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
@@ -6013,7 +6013,7 @@
       "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Men's",
+      "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
     },
@@ -6815,6 +6815,22 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 200.0,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-(C)_September_27_@_Dover_Shores_Community_Center-2026-09-27T15:30:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "(C) September 27 @ Dover Shores Community Center",
+      "start": "2026-09-27T15:30:00",
+      "end": "2026-09-27T17:45:00",
+      "all_day": false,
+      "location": "Dover Shores Community Center",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Men's",
+      "price": null,
       "image": null
     },
     {
@@ -7778,18 +7794,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00",
+      "uid": "Volleyball_Life-Jax_Women\u2019s_Grass_3s-2026-10-17T00:00:00",
       "club": "Volleyball Life",
-      "title": "The Ocala Open",
+      "title": "Jax Women\u2019s Grass 3s",
       "start": "2026-10-17T00:00:00",
       "end": "2026-10-18T00:00:00",
       "all_day": true,
-      "location": "Frank DeLuca YMCA",
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40890",
+      "location": "Jax Scene courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
+      "net_height": "Women's",
       "price": null,
       "image": null
     },

@@ -1842,4 +1842,17 @@ LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/clubteams/5173036-womens-cl
  ub-tryouts---104
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] (C) September 27 @ Dover Shores 
+ Community Center
+DTSTART;TZID=America/New_York:20260927T153000
+DTEND;TZID=America/New_York:20260927T174500
+UID:Greater_Orlando_Volleyball_Club-(C)_September_27_@_Dover_Shores_Commun
+ ity_Center-2026-09-27T15:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
