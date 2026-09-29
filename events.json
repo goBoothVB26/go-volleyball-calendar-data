@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T07:41:46",
+  "generated": "2026-09-29T14:29:04",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -7650,22 +7650,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Paradise_Sports_Complex_Fall_Leagues_2026-2026-10-16T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Paradise Sports Complex Fall Leagues 2026",
-      "start": "2026-10-16T00:00:00",
-      "end": "2026-12-05T00:00:00",
-      "all_day": true,
-      "location": "Paradise Coast Sports Complex",
-      "description": "League \u00b7 Adults \u00b7 Beach \u00b7 2s/4s",
-      "url": "https://volleyballlife.com/event/40927",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-10-16T18:20:00",
       "club": "Out Sports League",
       "title": "Fridays - Draft/REMIX League (A/B/C/D)",
@@ -7806,6 +7790,22 @@
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Jax_Women\u2019s_Grass_3s-2026-10-17T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Jax Women\u2019s Grass 3s",
+      "start": "2026-10-17T00:00:00",
+      "end": "2026-10-18T00:00:00",
+      "all_day": true,
+      "location": "Jax Scene courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Women's",
       "price": null,
       "image": null
     },

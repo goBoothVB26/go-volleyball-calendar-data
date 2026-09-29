@@ -809,17 +809,6 @@ LOCATION:Kenly Park
 URL:https://volleyballlife.com/event/40630
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Paradise Sports Complex Fall Leagues 2026
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261205
-UID:Volleyball_Life-Paradise_Sports_Complex_Fall_Leagues_2026-2026-10-16T0
- 0:00:00
-DESCRIPTION:League · Adults · Beach · 2s/4s\n\nMore info: https://volle
- yballlife.com/event/40927
-LOCATION:Paradise Coast Sports Complex
-URL:https://volleyballlife.com/event/40927
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] SSOVA's GULFPORT CASH PAYOUT 4v4 Oct 17th\, Beac
  h Volleyball Tournament
 DTSTART;VALUE=DATE:20261017
@@ -867,5 +856,17 @@ DESCRIPTION:Tournament · Adults & Juniors · Grass · 2s\n\nMore info: ht
  tps://volleyballlife.com/event/40890
 LOCATION:Frank DeLuca YMCA
 URL:https://volleyballlife.com/event/40890
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Jax Women’s Grass 3s
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+UID:Volleyball_Life-Jax_Women’s_Grass_3s-2026-10-17T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 3s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Jax Scene courts
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
 END:VEVENT
 END:VCALENDAR
