@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T06:23:59",
+  "generated": "2026-09-30T07:41:00",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -7103,7 +7103,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/03e79a6a-1ac9-47e3-9a2c-784a2d18cda9.png"
     },
     {
       "uid": "Volleyball_Life-SSOVA_Fall_College_Club_Nationals_Oct_3/4_Siesta_Key,_Beach_Volleyball_Tournament-2026-10-03T00:00:00",
@@ -7119,7 +7119,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/c87fb0d0-49c0-4ad7-af85-d6d0ff0db582.png"
+      "image": null
     },
     {
       "uid": "SSOVA-SSOVA's_October_Men's/Women's/Coed_Siesta_Key,_Beach_Volleyball_Tournament-2026-10-03T00:00:00",
