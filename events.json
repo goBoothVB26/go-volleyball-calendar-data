@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T20:10:55",
+  "generated": "2026-09-30T21:32:27",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5314,22 +5314,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-04T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-04T20:00:00",
-      "end": "2026-09-04T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club-2026-09-05T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club",
@@ -5695,22 +5679,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 5.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-11T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-11T20:00:00",
-      "end": "2026-09-11T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -6146,22 +6114,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-18T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-18T20:00:00",
-      "end": "2026-09-18T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Steel_City_Classic_2026-2026-09-19T00:00:00",
       "club": "NAGVA",
       "title": "Steel City Classic 2026",
@@ -6578,22 +6530,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-09-25T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-09-25T20:00:00",
-      "end": "2026-09-25T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Splash_Revival-2026-09-26T00:00:00",
       "club": "NAGVA",
       "title": "Splash Revival",
@@ -6669,22 +6605,6 @@
       "url": "https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==",
       "skill_level": "All Levels",
       "gym_type": null,
-      "net_height": "Men's, Women's",
-      "price": null,
-      "image": null
-    },
-    {
-      "uid": "WPVC-CCVL_2026_Opener-2026-09-26T08:00:00",
-      "club": "WPVC",
-      "title": "CCVL 2026 Opener",
-      "start": "2026-09-26T08:00:00",
-      "end": "2026-09-26T19:00:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "CCVL welcomes ALL teams, (Collegiate club, Adult teams, ncaa/naia preseason, club teams etc.) of both GENDERS to come and BASH",
-      "url": "https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
       "net_height": "Men's, Women's",
       "price": null,
       "image": null
@@ -7058,22 +6978,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-02T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-02T20:00:00",
-      "end": "2026-10-02T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Fall_Classic_2026-2026-10-03T00:00:00",
       "club": "NAGVA",
       "title": "Fall Classic 2026",
@@ -7422,22 +7326,6 @@
       "skill_level": "All Levels",
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-09T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-09T20:00:00",
-      "end": "2026-10-09T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
       "price": 8.0,
       "image": null
     },
@@ -7810,22 +7698,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-16T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-16T20:00:00",
-      "end": "2026-10-16T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Game_Point_Volleyball-Mini_Club_Tournament-2026-10-17T00:00:00",
       "club": "Game Point Volleyball",
       "title": "Mini Club Tournament",
@@ -8194,22 +8066,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-23T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-23T20:00:00",
-      "end": "2026-10-23T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-LAVO_Legends_2026-2026-10-24T00:00:00",
       "club": "NAGVA",
       "title": "LAVO Legends 2026",
@@ -8514,22 +8370,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-10-30T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-10-30T20:00:00",
-      "end": "2026-10-30T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-2026_Vegas_Baby!-2026-10-31T00:00:00",
       "club": "NAGVA",
       "title": "2026 Vegas Baby!",
@@ -8783,22 +8623,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 50.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-06T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-06T20:00:00",
-      "end": "2026-11-06T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -9090,22 +8914,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-13T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-13T20:00:00",
-      "end": "2026-11-13T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Golden_&_Green_Apple_2026-2026-11-14T00:00:00",
       "club": "NAGVA",
       "title": "Golden & Green Apple 2026",
@@ -9346,22 +9154,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-20T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-20T20:00:00",
-      "end": "2026-11-20T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-2026_Sactown_Throwdown-2026-11-21T00:00:00",
       "club": "NAGVA",
       "title": "2026 Sactown Throwdown",
@@ -9538,22 +9330,6 @@
       "image": null
     },
     {
-      "uid": "CCVL-Black_Friday_Grass_Tournament-2026-11-27T08:00:00",
-      "club": "CCVL",
-      "title": "Black Friday Grass Tournament",
-      "start": "2026-11-27T08:00:00",
-      "end": "2026-11-27T20:00:00",
-      "all_day": false,
-      "location": "TBD",
-      "description": "WPVC presents Black Friday Grass Tournament Nov 27th 2026",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Out_Sports_League-Fridays_-_Draft/REMIX_League_(A/B/C/D)-2026-11-27T18:20:00",
       "club": "Out Sports League",
       "title": "Fridays - Draft/REMIX League (A/B/C/D)",
@@ -9567,22 +9343,6 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2026-11-27T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-11-27T20:00:00",
-      "end": "2026-11-27T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
@@ -9730,22 +9490,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-04T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-04T20:00:00",
-      "end": "2026-12-04T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-2026_Na_Hoa_Aloha_Volleyball_Invitational-2026-12-05T00:00:00",
       "club": "NAGVA",
       "title": "2026 Na Hoa Aloha Volleyball Invitational",
@@ -9874,22 +9618,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-11T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-11T20:00:00",
-      "end": "2026-12-11T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-12-12T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Volleyball Court B",
@@ -10002,22 +9730,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-18T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-18T20:00:00",
-      "end": "2026-12-18T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-12-19T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Volleyball Court B",
@@ -10114,22 +9826,6 @@
       "image": null
     },
     {
-      "uid": "WPVC-WPVC_Open_Gym-2026-12-25T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2026-12-25T20:00:00",
-      "end": "2026-12-25T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
-      "image": null
-    },
-    {
       "uid": "CCVL-WPVC_x_CCVL_Winter_Indoor_Tournament-2026-12-26T08:00:00",
       "club": "CCVL",
       "title": "WPVC x CCVL Winter Indoor Tournament",
@@ -10191,22 +9887,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "WPVC-WPVC_Open_Gym-2027-01-01T20:00:00",
-      "club": "WPVC",
-      "title": "WPVC Open Gym",
-      "start": "2027-01-01T20:00:00",
-      "end": "2027-01-01T22:30:00",
-      "all_day": false,
-      "location": "Winter Park Volleyball Club",
-      "description": "WPVC Open Gym Friday Nights",
-      "url": null,
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Women's, Co-ed",
-      "price": 8.0,
       "image": null
     },
     {
