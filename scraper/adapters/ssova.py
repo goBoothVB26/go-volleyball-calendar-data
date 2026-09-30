@@ -99,6 +99,7 @@ class SSOVAAdapter(ClubAdapter):
                             all_day=True,
                             image=image,
                             category=category,
+                            recurring_occurrence=True,
                         )
                     )
                 continue

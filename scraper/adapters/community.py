@@ -260,6 +260,13 @@ class CommunityEventsAdapter(ClubAdapter):
                         url=url,
                         price=price,
                         net_height=net_height,
+                        # Multiple days here means this came from the
+                        # recurring-weekday expansion above -- one sheet
+                        # row, not one independently-confirmable row per
+                        # date -- so exempt from cache.py's "future event
+                        # missing from a fresh scrape -> cancelled, drop"
+                        # rule; see Event.recurring_occurrence.
+                        recurring_occurrence=len(days) > 1,
                     )
                 )
 

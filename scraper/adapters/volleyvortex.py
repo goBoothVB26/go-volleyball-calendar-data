@@ -74,6 +74,7 @@ class VolleyVortexAdapter(ClubAdapter):
                             description=type_line or None,
                             url=self.schedule_url,
                             category=category,
+                            recurring_occurrence=True,
                         )
                     )
                 continue

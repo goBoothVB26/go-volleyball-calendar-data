@@ -188,6 +188,7 @@ class VolleyballLifeAdapter(ClubAdapter):
                 url=url,
                 all_day=True,
                 image=image,
+                recurring_occurrence=True,
             )
             for day in weekly_dates(start, end, {weekday})
         ]
