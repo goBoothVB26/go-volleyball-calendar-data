@@ -26,6 +26,21 @@ class Event:
     start date shifts between runs (e.g. "dated today" placeholders) so the
     cache and calendar treat every run's copy as the same single event
     instead of accumulating one copy per distinct date."""
+    recurring_occurrence: bool = False
+    """True for one occurrence of a weekly-expanded recurring series (see
+    scraper/dateparse.py's weekly_dates()) -- one Event per matching
+    weekday, synthesized from a single source listing (one card, one form
+    row) that doesn't independently confirm each individual date.
+
+    This exempts the event from cache.py's "future event missing from a
+    healthy scrape -> treat as cancelled, drop" rule: that rule assumes a
+    missing event means the SOURCE stopped listing it, but here a future
+    occurrence can easily be absent from one run's fresh results (e.g. a
+    rendered page only showing its next ~10 upcoming cards, so a
+    recurring league's card simply isn't among them that particular run)
+    without the series actually being cancelled. Without this flag,
+    scrape flakiness silently deletes legitimate future occurrences one
+    run at a time."""
 
     # Filter tags (see scraper/tagging.py). Adapters may set these
     # explicitly; anything left None is inferred from keywords / per-club

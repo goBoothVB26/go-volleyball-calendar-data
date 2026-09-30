@@ -12,6 +12,15 @@ Each scraper run merges freshly-scraped events with a JSON cache so that:
     phantom event on the calendar. As a safety net, if a scrape returns
     zero events (site down, selector broke) the whole cache for that club
     is kept untouched rather than treated as "everything was cancelled".
+    Exception: an Event with recurring_occurrence=True (one date of a
+    weekly-expanded series synthesized from a single source listing, e.g.
+    volleyballlife.py's recurring-league handling) is never dropped this
+    way, since that single listing -- not each individual occurrence --
+    is what the source actually confirms; a rendered page only showing
+    its next ~N upcoming cards can easily leave a recurring series'
+    listing out of one run's fresh batch without it being cancelled, and
+    without this exception every such run would silently delete that
+    series' still-upcoming dates one run at a time.
 
 ARCHIVE: a second JSON file (events_archive.json) that mirrors every
 PAST event ever seen, independent of the live cache. Every run backs up
@@ -55,6 +64,7 @@ def _event_to_dict(event: Event) -> dict[str, Any]:
         "category": event.category,
         "all_day": event.all_day,
         "stable_id": event.stable_id,
+        "recurring_occurrence": event.recurring_occurrence,
         "skill_level": event.skill_level,
         "gym_type": event.gym_type,
         "net_height": event.net_height,
@@ -76,6 +86,7 @@ def _dict_to_event(d: dict[str, Any]) -> Event:
         category=d.get("category"),
         all_day=d.get("all_day", False),
         stable_id=d.get("stable_id"),
+        recurring_occurrence=d.get("recurring_occurrence", False),
         skill_level=d.get("skill_level"),
         gym_type=d.get("gym_type"),
         net_height=d.get("net_height"),
@@ -192,7 +203,7 @@ def merge(club_slug: str, fresh: list[Event], cache: dict[str, dict[str, dict]])
     merged: dict[str, dict] = {}
     for uid, event_dict in cached_by_uid.items():
         started = datetime.strptime(event_dict["start"], DATETIME_FMT)
-        if uid in fresh_uids or started <= now:
+        if uid in fresh_uids or started <= now or event_dict.get("recurring_occurrence"):
             merged[uid] = event_dict
         # else: future event no longer on the source site → cancelled; drop.
 
