@@ -19,6 +19,11 @@ silently dropping the geo-filter query params `schedule_url` relies on
 -- this drives the page directly and listens for the SAME response the
 page itself triggers when loading `schedule_url`, so whatever
 filtering the frontend actually applies is exactly what we see.
+
+CROSS_POSTED_ORG_PREFIXES below skips events belonging to an org that
+has its own dedicated adapter (e.g. SSOVA), which this main listing
+also surfaces under the generic "Volleyball Life" club -- see that
+constant's comment.
 """
 
 import re
@@ -33,6 +38,18 @@ from ..models import Event
 from .base import ClubAdapter
 
 SUMMARIES_API_MARKER = "api-v8.volleyballlife.com/tournament/summaries"
+
+# Orgs that run their own white-label volleyballlife.com subdomain (and
+# so have their own dedicated adapter, e.g. ssova.py) also get their
+# tournaments cross-posted to this main aggregator listing under the
+# generic "Volleyball Life" club instead of their own name. Skip any
+# card whose title starts with one of these org names here so their
+# dedicated adapter stays the single source for them -- otherwise the
+# same tournament shows up twice, once correctly labeled and once
+# mislabeled "Volleyball Life"/VBL. Confirmed for SSOVA (every scraped
+# SSOVA title is prefixed "SSOVA..."); add another org's prefix here if
+# the same duplication turns up for it.
+CROSS_POSTED_ORG_PREFIXES = ("SSOVA",)
 
 
 class VolleyballLifeAdapter(ClubAdapter):
@@ -55,6 +72,8 @@ class VolleyballLifeAdapter(ClubAdapter):
                 continue
 
             title = title_el.get_text(strip=True)
+            if title.upper().startswith(CROSS_POSTED_ORG_PREFIXES):
+                continue
             location = caption_els[0].get_text(strip=True)
             type_line = caption_els[1].get_text(strip=True) if len(caption_els) > 1 else ""
 
