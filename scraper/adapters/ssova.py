@@ -12,11 +12,11 @@ title text. See volleyballlife.py's module docstring for the full
 rationale.
 
 No ageCat/addr filter on the schedule URL (this org doesn't split by
-age the way the main volleyballlife.com listing does), so -- like
-Volley Vortex -- events could in principle mix adult/youth; category is
-left at the adapter-wide "adult" default since SSOVA is an adult beach
-league, but a per-card override can be added the same way Volley
-Vortex does if that turns out to be wrong once real data comes in.
+age the way the main volleyballlife.com listing does). Confirmed from a
+real scrape that this listing does mix Adult and Juniors events (e.g.
+"Tournament · Juniors · Beach · 2s"), same situation as Volley Vortex,
+so category is set per-card from its own type line rather than the
+adapter-wide "adult" default.
 """
 
 from datetime import datetime, timedelta
@@ -66,6 +66,13 @@ class SSOVAAdapter(ClubAdapter):
 
             all_day_end = (end or start) + timedelta(days=1)
 
+            # Confirmed from real scraped data: this listing mixes Adult
+            # and Juniors events on one page (e.g. "Tournament · Juniors
+            # · Beach · 2s"), same situation as Volley Vortex -- so set
+            # category per-card from its own type line rather than the
+            # adapter-wide default.
+            category = "youth" if "juniors" in type_line.lower() else self.category
+
             events.append(
                 Event(
                     club=self.club_name,
@@ -77,6 +84,7 @@ class SSOVAAdapter(ClubAdapter):
                     url=url,
                     all_day=True,
                     image=image,
+                    category=category,
                 )
             )
 
