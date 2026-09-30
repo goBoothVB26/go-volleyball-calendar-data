@@ -59,7 +59,7 @@ def run(
     failed: list[str] = []
     suspect: list[str] = []
     all_events = []
-    wpvc_adapter_has_events = False
+    wpvc_adapter_dates: set = set()
 
     try:
         for adapter_cls in ALL_ADAPTERS:
@@ -93,25 +93,32 @@ def run(
                 event.skill_level = normalize_skill(event.skill_level)
 
             if adapter.club_name == "WPVC":
-                wpvc_adapter_has_events = bool(events)
+                wpvc_adapter_dates = {e.start.date() for e in events}
             elif adapter.club_name == "Community Submitted":
                 # The WPVC website adapter and the community submission
                 # form can both carry events for WPVC (people submit
-                # sessions the site itself already lists). When the real
-                # WPVCAdapter is currently supplying data, it takes
-                # priority and form-submitted WPVC rows are left out of
-                # the published calendar -- they're still cached/archived,
-                # just not written out here, so they reappear automatically
-                # if the WPVC adapter ever comes back empty.
-                if wpvc_adapter_has_events:
-                    suppressed = [e for e in events if e.club.strip().lower() == "wpvc"]
-                    if suppressed:
-                        print(
-                            f"[{adapter.club_name}] suppressing {len(suppressed)} WPVC "
-                            f"submission(s) -- WPVC adapter already has events this run",
-                            file=sys.stderr,
-                        )
-                    events = [e for e in events if e.club.strip().lower() != "wpvc"]
+                # sessions the site itself already lists). For any DATE
+                # the real WPVCAdapter already has an event on, that
+                # takes priority and the form's WPVC row for that same
+                # date is left out of the published calendar; a form
+                # WPVC row on a date the adapter doesn't cover still
+                # comes through. Suppressed rows stay cached/archived,
+                # just not written out here, so they reappear
+                # automatically if the WPVC adapter ever drops a date.
+                suppressed = [
+                    e for e in events
+                    if e.club.strip().lower() == "wpvc" and e.start.date() in wpvc_adapter_dates
+                ]
+                if suppressed:
+                    print(
+                        f"[{adapter.club_name}] suppressing {len(suppressed)} WPVC "
+                        f"submission(s) -- WPVC adapter already has an event on that date",
+                        file=sys.stderr,
+                    )
+                events = [
+                    e for e in events
+                    if not (e.club.strip().lower() == "wpvc" and e.start.date() in wpvc_adapter_dates)
+                ]
 
             all_events.extend(events)
             # Back up this run's past events into the archive so they
