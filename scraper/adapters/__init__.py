@@ -15,6 +15,7 @@ from .ocoee import OcoeeCoedLeagueAdapter, OcoeeOpenGymAdapter
 from .usavflorida import USAVFloridaRegionAdapter
 from .community import CommunityEventsAdapter
 from .meadowwoods import MeadowWoodsRecreationCenterAdapter
+from .ssova import SSOVAAdapter
 
 ALL_ADAPTERS = [
     GamePointVolleyballAdapter,
@@ -35,4 +36,5 @@ ALL_ADAPTERS = [
     USAVFloridaRegionAdapter,
     CommunityEventsAdapter,
     MeadowWoodsRecreationCenterAdapter,
+    SSOVAAdapter,
 ]

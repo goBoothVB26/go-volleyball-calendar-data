@@ -45,6 +45,7 @@ GYM_TYPE_BY_CLUB = {
     "Ocoee Coed League": "League",
     "Ocoee Open Gym Volleyball": "Open Gym",
     "USAV Florida Region": "Tournament",
+    "SSOVA": "Tournament",
 }
 
 NET_HEIGHT_BY_CLUB = {

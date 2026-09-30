@@ -24,7 +24,7 @@ AES Adult Volleyball (USAV, Florida) · Big House Open Gym · City of
 Sanford Adult Volleyball · Community Submitted (Google Form feed) ·
 Game Point Volleyball · Goldenrod Community Park · Greater Orlando
 Volleyball Club · Meadow Woods Recreation Center · NAGVA · Ocoee Coed
-League · Ocoee Open Gym Volleyball · Out Sports League · OVA ·
+League · Ocoee Open Gym Volleyball · Out Sports League · OVA · SSOVA ·
 USAV Florida Region · Volleyball Life · Volley Vortex · WPVC ·
 YMCA Central Florida
 
