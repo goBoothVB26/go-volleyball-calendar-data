@@ -66,10 +66,6 @@ class SSOVAAdapter(ClubAdapter):
             if start is None:
                 continue
 
-            # Same Vuetify card markup as volleyballlife.py -- reuse its
-            # image-scraping logic rather than duplicate it.
-            image = VolleyballLifeAdapter._card_image(card)
-
             all_day_end = (end or start) + timedelta(days=1)
 
             # Confirmed from real scraped data: this listing mixes Adult
@@ -97,7 +93,6 @@ class SSOVAAdapter(ClubAdapter):
                             description=type_line or None,
                             url=url,
                             all_day=True,
-                            image=image,
                             category=category,
                             recurring_occurrence=True,
                         )
@@ -114,7 +109,6 @@ class SSOVAAdapter(ClubAdapter):
                     description=type_line or None,
                     url=url,
                     all_day=True,
-                    image=image,
                     category=category,
                 )
             )
