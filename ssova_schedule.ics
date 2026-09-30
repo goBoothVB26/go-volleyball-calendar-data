@@ -1,0 +1,189 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Volleyball Schedule Scraper//
+NAME:SSOVA
+X-WR-CALNAME:SSOVA
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's October Men's/Women's/Coed Siesta Key\, Beach Voll
+ eyball Tournament
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+UID:SSOVA-SSOVA's_October_Men's/Women's/Coed_Siesta_Key\,_Beach_Volleyball
+ _Tournament-2026-10-03T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/events
+LOCATION:Siesta Key Beach
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Fall College Club Nationals Oct 3/4 Siesta Key\, Bea
+ ch Volleyball Tournament
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261005
+UID:SSOVA-SSOVA_Fall_College_Club_Nationals_Oct_3/4_Siesta_Key\,_Beach_Vol
+ leyball_Tournament-2026-10-03T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/event/33669
+LOCATION:Siesta Key Beach
+URL:https://ssova.volleyballlife.com/event/33669
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's October Juniors AVP ECC/WCC Qualifier & USAV Regio
+ nal Qualifier SIESTA KEY\, Beach Volleyball Tournament - BRQ
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+UID:SSOVA-SSOVA's_October_Juniors_AVP_ECC/WCC_Qualifier_&_USAV_Regional_Qu
+ alifier_SIESTA_KEY\,_Beach_Volleyball_Tournament_-_BRQ-2026-10-04T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/event/33588
+LOCATION:Siesta Key Beach
+URL:https://ssova.volleyballlife.com/event/33588
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Men's/Women's/Coed’s October ST PETE BEACH\, Beach
+  Volleyball Tournament
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261012
+UID:SSOVA-SSOVA_Men's/Women's/Coed’s_October_ST_PETE_BEACH\,_Beach_Volle
+ yball_Tournament-2026-10-10T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/events
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Juniors AVP 2 STAR ECC/WCC Qualifier & USAV Regional
+  Qualifier October 11th ST PETE BEACH\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+UID:SSOVA-SSOVA_Juniors_AVP_2_STAR_ECC/WCC_Qualifier_&_USAV_Regional_Quali
+ fier_October_11th_ST_PETE_BEACH\,_Beach_Volleyball_Tournament-_BRQ-2026-10
+ -11T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/events
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's October 17/18 GULFPORT Men's/Women's/Coed\, Beach 
+ Volleyball Tournament
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+UID:SSOVA-SSOVA's_October_17/18_GULFPORT_Men's/Women's/Coed\,_Beach_Volley
+ ball_Tournament-2026-10-17T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/events
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's GULFPORT CASH PAYOUT 4v4 Oct 17th\, Beach Volleyba
+ ll Tournament
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+UID:SSOVA-SSOVA's_GULFPORT_CASH_PAYOUT_4v4_Oct_17th\,_Beach_Volleyball_Tou
+ rnament-2026-10-17T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://ssov
+ a.volleyballlife.com/events
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's October 18th GULFPORT Juniors AVP  ECC/WCC Qualifi
+ er & USAV Regional Qualifier Gulfport\, Beach Volleyball Tournament - BRQ
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+UID:SSOVA-SSOVA's_October_18th_GULFPORT_Juniors_AVP__ECC/WCC_Qualifier_&_U
+ SAV_Regional_Qualifier_Gulfport\,_Beach_Volleyball_Tournament_-_BRQ-2026-1
+ 0-18T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/event/38968
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/event/38968
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA's HALLOWEEN THEME MANATEE BEACH Men's/Women's/Coed
+ ’s\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261026
+UID:SSOVA-SSOVA's_HALLOWEEN_THEME_MANATEE_BEACH_Men's/Women's/Coed’s\,_B
+ each_Volleyball_Tournament-2026-10-24T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/event/33592
+LOCATION:Anna Maria Island: Manatee Beach
+URL:https://ssova.volleyballlife.com/event/33592
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA HALLOWEEN THEME MANATEE BEACH Juniors AVP  ECC/WCC Q
+ ualifier & USAV Regional Qualifier\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+UID:SSOVA-SSOVA_HALLOWEEN_THEME_MANATEE_BEACH_Juniors_AVP__ECC/WCC_Qualifi
+ er_&_USAV_Regional_Qualifier\,_Beach_Volleyball_Tournament-2026-10-25T00:0
+ 0:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/events
+LOCATION:Anna Maria Island: Manatee Beach
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Men's/Women's/Coed’s November 7/8 GULFPORT\, Beach
+  Volleyball Tournament
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+UID:SSOVA-SSOVA_Men's/Women's/Coed’s_November_7/8_GULFPORT\,_Beach_Volle
+ yball_Tournament-2026-11-07T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/event/33594
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/event/33594
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] CHARITY VETERANS SSOVA 4's Men's/Women's/Coed’s Vet Spor
+ t's Gulfport\, Beach Volleyball Tournament
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+UID:SSOVA-CHARITY_VETERANS_SSOVA_4's_Men's/Women's/Coed’s_Vet_Sport's_Gu
+ lfport\,_Beach_Volleyball_Tournament-2026-11-07T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://ssov
+ a.volleyballlife.com/events
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Juniors AVP ECC/WCC QUALIFIER & USAV Regional Qualif
+ ier GULFPORT\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+UID:SSOVA-SSOVA_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qualifier_GU
+ LFPORT\,_Beach_Volleyball_Tournament-_BRQ-2026-11-08T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/events
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] CHARITY VETERAN SSOVA Juniors 4's Vet Sports Gulfport Beac
+ h Volleyball Tournament
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+UID:SSOVA-CHARITY_VETERAN_SSOVA_Juniors_4's_Vet_Sports_Gulfport_Beach_Voll
+ eyball_Tournament-2026-11-08T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 4s\n\nMore info: https://sso
+ va.volleyballlife.com/event/33671
+LOCATION:Gulfport Beach Fl
+URL:https://ssova.volleyballlife.com/event/33671
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA November Men's/Women's/Coed’s St Pete Beach\, Beac
+ h Volleyball Tournament
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+UID:SSOVA-SSOVA_November_Men's/Women's/Coed’s_St_Pete_Beach\,_Beach_Voll
+ eyball_Tournament-2026-11-14T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
+ a.volleyballlife.com/event/33596
+LOCATION:Upham Beach Park- St.Pete Beach
+URL:https://ssova.volleyballlife.com/event/33596
+END:VEVENT
+END:VCALENDAR

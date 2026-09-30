@@ -5338,6 +5338,24 @@
       "price": null,
       "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png",
       "uid": "Volleyball_Life-OVP_Waterside-2026-09-26T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "Sand Coed 4's Social League - Wednesdays, Fall 2026",
+      "start": "2026-09-30T00:00:00",
+      "end": "2026-11-19T00:00:00",
+      "location": "Newberry Sand Courts at Jimmy Durden Park",
+      "description": "League \u00b7 Adults \u00b7 Beach \u00b7 1s",
+      "url": "https://volleyballlife.com/event/40960",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": "https://vblimages.blob.core.windows.net/images/61842910-af9f-451e-988b-8a5d99d23fe0.jpg",
+      "uid": "Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays,_Fall_2026-2026-09-30T00:00:00"
     }
   ],
   "ocoee_coed_league": [
@@ -7853,5 +7871,6 @@
       "image": null,
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-09-28T18:00:00"
     }
-  ]
+  ],
+  "ssova": []
 }
