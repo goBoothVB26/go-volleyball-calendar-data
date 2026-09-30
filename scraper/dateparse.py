@@ -78,3 +78,25 @@ def parse_event_date_range(
             end = None
 
     return start, end
+
+
+def weekly_dates(start: date, end: date, weekdays: set[int]) -> list[date]:
+    """Every date from start to end (inclusive) that falls on one of the
+    given weekdays (Mon=0..Sun=6, matching date.weekday()).
+
+    Shared by any adapter that needs to expand a "season start - season
+    end" range into its actual weekly occurrences, e.g. a recurring
+    league whose site only states the series' bounding dates (not each
+    individual date) -- treating that range as one continuous all-day
+    event would otherwise render as covering every day in it, not just
+    the day(s) it actually runs.
+    """
+    if not weekdays or end < start:
+        return []
+    dates = []
+    current = start
+    while current <= end:
+        if current.weekday() in weekdays:
+            dates.append(current)
+        current += timedelta(days=1)
+    return dates

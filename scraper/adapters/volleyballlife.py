@@ -33,21 +33,40 @@ already has its dedicated adapter scraping this exact event
 independently -- relabeling would just create a literal duplicate
 entry, so those are skipped here entirely instead. See
 _club_registry()/_find_club() below.
+
+Recurring weekly leagues: a card like "Sand Coed 4's Social League -
+Wednesdays, Fall 2026" shows a date range that's actually the SEASON's
+bounding dates (e.g. Sep 30 - Nov 19), not one continuous multi-day
+event -- treating it as a single all_day block over that whole range
+renders as the event covering every day in it, not just Wednesdays.
+When the title names a weekday and the type line says "League" (a
+tournament's multi-day span is a real single event and should stay
+one), this expands into one all-day occurrence per matching weekday
+instead, via the same weekly_dates() helper community.py uses for its
+own recurring-event expansion. See _weekday_from_title() below.
 """
 
 import re
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
 from .. import fetch
-from ..dateparse import coerce_upcoming_year
+from ..dateparse import coerce_upcoming_year, weekly_dates
 from ..models import Event
 from .base import ClubAdapter
 
 SUMMARIES_API_MARKER = "api-v8.volleyballlife.com/tournament/summaries"
+
+_WEEKDAY_NAME_TO_INDEX = {
+    "monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
+    "friday": 4, "saturday": 5, "sunday": 6,
+}
+_WEEKDAY_NAME_RE = re.compile(
+    r"\b(" + "|".join(_WEEKDAY_NAME_TO_INDEX) + r")s?\b", re.IGNORECASE
+)
 
 
 class VolleyballLifeAdapter(ClubAdapter):
@@ -103,6 +122,24 @@ class VolleyballLifeAdapter(ClubAdapter):
 
             image = self._card_image(card)
 
+            # A recurring weekly league's card shows its SEASON's
+            # bounding dates, not one continuous event -- expand into
+            # one all-day occurrence per matching weekday instead of a
+            # single block spanning the whole range (see module
+            # docstring). Gated on both a weekday actually being named
+            # in the title AND the type line saying "League", so a
+            # genuine multi-day tournament (no weekday in its title) is
+            # never mistakenly split up.
+            weekday = self._weekday_from_title(title) if end else None
+            if weekday is not None and (end - start).days > 7 and "league" in type_line.lower():
+                events.extend(
+                    self._expand_weekly_league(
+                        club, title, start.date(), end.date(), weekday,
+                        location, type_line, url, image,
+                    )
+                )
+                continue
+
             # iCal all-day DTEND is exclusive, so add 1 day to include
             # the final day fully (e.g. Jul 11-12 → DTEND Jul 13).
             all_day_end = (end or start) + timedelta(days=1)
@@ -122,6 +159,38 @@ class VolleyballLifeAdapter(ClubAdapter):
             )
 
         return events
+
+    @staticmethod
+    def _weekday_from_title(title: str) -> int | None:
+        """The weekday named in a recurring league's title (e.g.
+        "...Wednesdays, Fall 2026" -> 2), or None if it doesn't name
+        one. Matches singular or plural (Mon=0..Sun=6, date.weekday())."""
+        m = _WEEKDAY_NAME_RE.search(title)
+        return _WEEKDAY_NAME_TO_INDEX[m.group(1).lower()] if m else None
+
+    @staticmethod
+    def _expand_weekly_league(
+        club: str, title: str, start: date, end: date, weekday: int,
+        location: str, type_line: str, url: str, image: str | None,
+    ) -> list[Event]:
+        """One all-day Event per date in [start, end] that falls on
+        weekday -- see the "recurring weekly leagues" module docstring
+        note for why this exists instead of one event spanning the
+        whole range."""
+        return [
+            Event(
+                club=club,
+                title=title,
+                start=datetime.combine(day, datetime.min.time()),
+                end=datetime.combine(day, datetime.min.time()) + timedelta(days=1),
+                location=location,
+                description=type_line or None,
+                url=url,
+                all_day=True,
+                image=image,
+            )
+            for day in weekly_dates(start, end, {weekday})
+        ]
 
     @staticmethod
     def _club_registry() -> tuple[list[str], list[str]]:

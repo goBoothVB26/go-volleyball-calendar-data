@@ -17,6 +17,12 @@ real scrape that this listing does mix Adult and Juniors events (e.g.
 "Tournament · Juniors · Beach · 2s"), same situation as Volley Vortex,
 so category is set per-card from its own type line rather than the
 adapter-wide "adult" default.
+
+Recurring weekly leagues: same platform as volleyballlife.py, same
+issue -- a card's date range can be a season's bounding dates rather
+than one continuous event. Reuses that module's weekday-name detection
+and the shared weekly_dates() expansion helper rather than duplicating
+them; see its module docstring for the full rationale.
 """
 
 from datetime import datetime, timedelta
@@ -25,7 +31,7 @@ from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
 from .. import fetch
-from ..dateparse import coerce_upcoming_year
+from ..dateparse import coerce_upcoming_year, weekly_dates
 from ..models import Event
 from .base import ClubAdapter
 from .volleyballlife import VolleyballLifeAdapter
@@ -72,6 +78,30 @@ class SSOVAAdapter(ClubAdapter):
             # category per-card from its own type line rather than the
             # adapter-wide default.
             category = "youth" if "juniors" in type_line.lower() else self.category
+
+            # See module docstring: a recurring weekly league's card
+            # shows its season's bounding dates, not one continuous
+            # event, so expand into one occurrence per matching weekday
+            # instead of a single event spanning the whole range.
+            weekday = VolleyballLifeAdapter._weekday_from_title(title) if end else None
+            if weekday is not None and (end - start).days > 7 and "league" in type_line.lower():
+                for day in weekly_dates(start.date(), end.date(), {weekday}):
+                    occurrence_start = datetime.combine(day, datetime.min.time())
+                    events.append(
+                        Event(
+                            club=self.club_name,
+                            title=title,
+                            start=occurrence_start,
+                            end=occurrence_start + timedelta(days=1),
+                            location=location,
+                            description=type_line or None,
+                            url=url,
+                            all_day=True,
+                            image=image,
+                            category=category,
+                        )
+                    )
+                continue
 
             events.append(
                 Event(
