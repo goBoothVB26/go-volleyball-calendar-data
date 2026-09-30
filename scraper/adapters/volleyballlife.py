@@ -20,14 +20,24 @@ silently dropping the geo-filter query params `schedule_url` relies on
 page itself triggers when loading `schedule_url`, so whatever
 filtering the frontend actually applies is exactly what we see.
 
-CROSS_POSTED_ORG_PREFIXES below skips events belonging to an org that
-has its own dedicated adapter (e.g. SSOVA), which this main listing
-also surfaces under the generic "Volleyball Life" club -- see that
-constant's comment.
+This is also the catch-all for events posted here by clubs that have
+their OWN dedicated adapter elsewhere in this repo: rather than leave
+every such event mislabeled "Volleyball Life", each card's title (then
+its full text, if the title doesn't say it) is checked against every
+other adapter's club_name, and a match re-attributes the event to that
+club instead -- so, say, a GOVC-organized tournament posted here shows
+up under the GOVC filter, not buried in a generic "Volleyball Life"
+umbrella. The one exception: a club running its OWN white-label
+volleyballlife.com subdomain (same platform, e.g. SSOVA, Volley Vortex)
+already has its dedicated adapter scraping this exact event
+independently -- relabeling would just create a literal duplicate
+entry, so those are skipped here entirely instead. See
+_club_registry()/_find_club() below.
 """
 
 import re
 from datetime import datetime, timedelta
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
@@ -38,18 +48,6 @@ from ..models import Event
 from .base import ClubAdapter
 
 SUMMARIES_API_MARKER = "api-v8.volleyballlife.com/tournament/summaries"
-
-# Orgs that run their own white-label volleyballlife.com subdomain (and
-# so have their own dedicated adapter, e.g. ssova.py) also get their
-# tournaments cross-posted to this main aggregator listing under the
-# generic "Volleyball Life" club instead of their own name. Skip any
-# card whose title starts with one of these org names here so their
-# dedicated adapter stays the single source for them -- otherwise the
-# same tournament shows up twice, once correctly labeled and once
-# mislabeled "Volleyball Life"/VBL. Confirmed for SSOVA (every scraped
-# SSOVA title is prefixed "SSOVA..."); add another org's prefix here if
-# the same duplication turns up for it.
-CROSS_POSTED_ORG_PREFIXES = ("SSOVA",)
 
 
 class VolleyballLifeAdapter(ClubAdapter):
@@ -62,6 +60,7 @@ class VolleyballLifeAdapter(ClubAdapter):
 
     def scrape(self) -> list[Event]:
         soup, event_id_by_title = self._fetch_page_and_ids()
+        skip_names, relabel_names = self._club_registry()
         events: list[Event] = []
 
         for card in soup.select(".v-card"):
@@ -72,10 +71,28 @@ class VolleyballLifeAdapter(ClubAdapter):
                 continue
 
             title = title_el.get_text(strip=True)
-            if title.upper().startswith(CROSS_POSTED_ORG_PREFIXES):
+            card_text = card.get_text(" ", strip=True)
+
+            # This event's own platform-sibling adapter (same
+            # {org}.volleyballlife.com white-label site) already scrapes
+            # it independently -- skip here rather than relabel, since
+            # relabeling would just produce a literal duplicate entry.
+            if self._find_club(title, skip_names) or self._find_club(card_text, skip_names):
                 continue
+
             location = caption_els[0].get_text(strip=True)
             type_line = caption_els[1].get_text(strip=True) if len(caption_els) > 1 else ""
+
+            # Title checked first, then the rest of the card's text, for
+            # any OTHER known club's name -- a match means this club
+            # posted its own event here, so attribute it to them instead
+            # of the generic "Volleyball Life" umbrella. No match keeps
+            # the default.
+            club = (
+                self._find_club(title, relabel_names)
+                or self._find_club(card_text, relabel_names)
+                or self.club_name
+            )
 
             event_id = event_id_by_title.get(title)
             url = f"https://volleyballlife.com/event/{event_id}" if event_id else self.schedule_url
@@ -92,7 +109,7 @@ class VolleyballLifeAdapter(ClubAdapter):
 
             events.append(
                 Event(
-                    club=self.club_name,
+                    club=club,
                     title=title,
                     start=start,
                     end=all_day_end,
@@ -105,6 +122,51 @@ class VolleyballLifeAdapter(ClubAdapter):
             )
 
         return events
+
+    @staticmethod
+    def _club_registry() -> tuple[list[str], list[str]]:
+        """Every OTHER adapter's club_name, split into (skip_names,
+        relabel_names) by whether that club runs its own white-label
+        volleyballlife.com subdomain (same platform as this adapter) --
+        see the module docstring for why that split matters. Built from
+        ALL_ADAPTERS so a newly added club is picked up automatically,
+        with no list to hand-maintain here.
+
+        Lazy import: scraper/adapters/__init__.py imports THIS module to
+        build ALL_ADAPTERS, so importing it back at this module's top
+        level would be circular. Safe here since scrape() only runs
+        after the whole adapters package has finished importing.
+        """
+        from . import ALL_ADAPTERS
+
+        skip_names: list[str] = []
+        relabel_names: list[str] = []
+        for adapter_cls in ALL_ADAPTERS:
+            name = adapter_cls.club_name
+            if name in ("Volleyball Life", "Community Submitted"):
+                continue
+            host = urlparse(adapter_cls.schedule_url).hostname or ""
+            if host.endswith(".volleyballlife.com"):
+                skip_names.append(name)
+            else:
+                relabel_names.append(name)
+        return skip_names, relabel_names
+
+    @staticmethod
+    def _find_club(text: str, club_names: list[str]) -> str | None:
+        """First name in club_names that appears as a whole phrase in
+        text (case-insensitive), or None. Boundaried so a short name
+        (e.g. "AES") can't match inside an unrelated word -- using
+        lookarounds rather than \\b on both ends, since \\b requires an
+        actual word/non-word transition and several club names end in
+        punctuation (e.g. the closing paren in "AES Adult Volleyball
+        (USAV, Florida)"), where a following space is non-word on both
+        sides and \\b would never match."""
+        for name in club_names:
+            pattern = r"(?<!\w)" + re.escape(name) + r"(?!\w)"
+            if re.search(pattern, text, re.IGNORECASE):
+                return name
+        return None
 
     def _fetch_page_and_ids(self) -> tuple[BeautifulSoup, dict[str, int]]:
         """Render schedule_url, capturing the page's own call to the
