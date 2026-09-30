@@ -38,12 +38,13 @@ before this was supported.
 import os
 import re
 import sys
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 from typing import Optional
 
 import requests
 from dateutil import parser as dateparser
 
+from ..dateparse import weekly_dates
 from ..models import Event
 from ..tagging import infer_net_heights
 from .base import ClubAdapter
@@ -129,20 +130,6 @@ def _parse_weekdays(text: str) -> set[int]:
     return days
 
 
-def _weekly_dates(start: date, end: date, weekdays: set[int]) -> list[date]:
-    """Every date from start to end (inclusive) that falls on one of the
-    given weekdays."""
-    if not weekdays or end < start:
-        return []
-    dates = []
-    current = start
-    while current <= end:
-        if current.weekday() in weekdays:
-            dates.append(current)
-        current += timedelta(days=1)
-    return dates
-
-
 class CommunityEventsAdapter(ClubAdapter):
     club_name = "Community Submitted"
     category = "adult"
@@ -211,7 +198,7 @@ class CommunityEventsAdapter(ClubAdapter):
                     except (ValueError, OverflowError):
                         pass
                 if end_date and weekdays:
-                    expanded = _weekly_dates(start_date, end_date, weekdays)
+                    expanded = weekly_dates(start_date, end_date, weekdays)
                     if expanded:
                         days = expanded
                     else:
