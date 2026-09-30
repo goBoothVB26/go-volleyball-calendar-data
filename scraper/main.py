@@ -59,6 +59,7 @@ def run(
     failed: list[str] = []
     suspect: list[str] = []
     all_events = []
+    wpvc_adapter_has_events = False
 
     try:
         for adapter_cls in ALL_ADAPTERS:
@@ -90,6 +91,28 @@ def run(
             for event in events:
                 # Cached events may carry pre-consolidation skill labels
                 event.skill_level = normalize_skill(event.skill_level)
+
+            if adapter.club_name == "WPVC":
+                wpvc_adapter_has_events = bool(events)
+            elif adapter.club_name == "Community Submitted":
+                # The WPVC website adapter and the community submission
+                # form can both carry events for WPVC (people submit
+                # sessions the site itself already lists). When the real
+                # WPVCAdapter is currently supplying data, it takes
+                # priority and form-submitted WPVC rows are left out of
+                # the published calendar -- they're still cached/archived,
+                # just not written out here, so they reappear automatically
+                # if the WPVC adapter ever comes back empty.
+                if wpvc_adapter_has_events:
+                    suppressed = [e for e in events if e.club.strip().lower() == "wpvc"]
+                    if suppressed:
+                        print(
+                            f"[{adapter.club_name}] suppressing {len(suppressed)} WPVC "
+                            f"submission(s) -- WPVC adapter already has events this run",
+                            file=sys.stderr,
+                        )
+                    events = [e for e in events if e.club.strip().lower() != "wpvc"]
+
             all_events.extend(events)
             # Back up this run's past events into the archive so they
             # survive even if the live cache is later wiped entirely.
