@@ -2,13 +2,9 @@
 
 Same Vuetify SPA card markup as Volley Vortex (it's the same underlying
 platform), so this uses a rendered fetch with the same `.v-card`
-selectors. The schedule URL filters to Orlando, FL / 200mi via query
-params, but NOT by age category -- schedule_url used to also pin
-ageCat=adult, which silently excluded every Junior/Youth event from
-this listing at the SITE's own backend before the page ever rendered
-them for us to scrape. Dropped that param and added the same
-per-card category split Volley Vortex already does (checked from the
-type line), so both age groups come through now.
+selectors. The schedule URL already filters to Adults / Orlando, FL /
+200mi via query params, so unlike Volley Vortex there's no need for a
+per-event category split here -- everything returned is adult.
 
 Per-event URLs: confirmed by inspecting the live DOM that cards have NO
 `<a href>` anywhere -- clicking one drives client-side routing with no
@@ -75,10 +71,10 @@ _WEEKDAY_NAME_RE = re.compile(
 
 class VolleyballLifeAdapter(ClubAdapter):
     club_name = "Volleyball Life"
-    category = "adult"  # fallback; most cards set their own via type line
+    category = "adult"
     schedule_url = (
         "https://volleyballlife.com/events"
-        "?addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200"
+        "?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200"
     )
 
     def scrape(self) -> list[Event]:
@@ -105,18 +101,6 @@ class VolleyballLifeAdapter(ClubAdapter):
 
             location = caption_els[0].get_text(strip=True)
             type_line = caption_els[1].get_text(strip=True) if len(caption_els) > 1 else ""
-
-            # schedule_url no longer pins ageCat=adult (see module
-            # docstring), so both age groups come through now -- read
-            # which one per card from its own type line, same as Volley
-            # Vortex does. Checks both "youth" and "juniors" since
-            # confirmed real data from this platform's white-label
-            # instances uses each wording in different places (SSOVA's
-            # own listing says "Juniors").
-            category = (
-                "youth" if ("youth" in type_line.lower() or "juniors" in type_line.lower())
-                else self.category
-            )
 
             # Title checked first, then the rest of the card's text, for
             # any OTHER known club's name -- a match means this club
@@ -151,7 +135,7 @@ class VolleyballLifeAdapter(ClubAdapter):
                 events.extend(
                     self._expand_weekly_league(
                         club, title, start.date(), end.date(), weekday,
-                        location, type_line, url, image, category,
+                        location, type_line, url, image,
                     )
                 )
                 continue
@@ -171,7 +155,6 @@ class VolleyballLifeAdapter(ClubAdapter):
                     url=url,
                     all_day=True,
                     image=image,
-                    category=category,
                 )
             )
 
@@ -189,7 +172,6 @@ class VolleyballLifeAdapter(ClubAdapter):
     def _expand_weekly_league(
         club: str, title: str, start: date, end: date, weekday: int,
         location: str, type_line: str, url: str, image: str | None,
-        category: str | None = None,
     ) -> list[Event]:
         """One all-day Event per date in [start, end] that falls on
         weekday -- see the "recurring weekly leagues" module docstring
@@ -207,7 +189,6 @@ class VolleyballLifeAdapter(ClubAdapter):
                 all_day=True,
                 image=image,
                 recurring_occurrence=True,
-                category=category,
             )
             for day in weekly_dates(start, end, {weekday})
         ]
