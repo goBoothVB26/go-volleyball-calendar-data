@@ -111,18 +111,6 @@ LOCATION:Trotwood Park
 URL:https://volleyballlife.com/event/39208
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
- r 2026
-DTSTART;VALUE=DATE:20260729
-DTEND;VALUE=DATE:20260917
-UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
- -2026-07-29T00:00:00
-DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
- lllife.com/event/39830
-LOCATION:Newberry Sand Courts at Jimmy Durden Park
-URL:https://volleyballlife.com/event/39830
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] Beast Coast Volleyball Coed 4’s  (One girl min
  imum)
 DTSTART;VALUE=DATE:20260801
@@ -894,5 +882,101 @@ DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
  lllife.com/event/40960
 LOCATION:Newberry Sand Courts at Jimmy Durden Park
 URL:https://volleyballlife.com/event/40960
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-07-29T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-08-05T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260813
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-08-12T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-08-19T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-08-26T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-09-02T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-09-09T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Sand Coed 4's Social League - Wednesdays\, Summe
+ r 2026
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+UID:Volleyball_Life-Sand_Coed_4's_Social_League_-_Wednesdays\,_Summer_2026
+ -2026-09-16T00:00:00
+DESCRIPTION:League · Adults · Beach · 1s\n\nMore info: https://volleyba
+ lllife.com/event/39830
+LOCATION:Newberry Sand Courts at Jimmy Durden Park
+URL:https://volleyballlife.com/event/39830
 END:VEVENT
 END:VCALENDAR
