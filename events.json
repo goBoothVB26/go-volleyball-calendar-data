@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30T07:41:00",
+  "generated": "2026-09-30T14:26:58",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6914,9 +6914,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-09-30T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-09-30T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-09-30T18:00:00",
       "end": "2026-09-30T20:00:00",
       "all_day": false,
@@ -7314,9 +7314,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-07T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-07T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-10-07T18:00:00",
       "end": "2026-10-07T20:00:00",
       "all_day": false,
@@ -7682,9 +7682,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-14T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-14T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-10-14T18:00:00",
       "end": "2026-10-14T20:00:00",
       "all_day": false,
@@ -8098,9 +8098,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-21T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-21T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-10-21T18:00:00",
       "end": "2026-10-21T20:00:00",
       "all_day": false,
@@ -8386,9 +8386,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-10-28T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-10-28T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-10-28T18:00:00",
       "end": "2026-10-28T20:00:00",
       "all_day": false,
@@ -8642,9 +8642,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-11-04T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-11-04T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-04T18:00:00",
       "end": "2026-11-04T20:00:00",
       "all_day": false,
@@ -8930,9 +8930,9 @@
       "image": null
     },
     {
-      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time_(Cancelled)-2026-11-11T18:00:00",
+      "uid": "Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2026-11-11T18:00:00",
       "club": "Meadow Woods Recreation Center",
-      "title": "Adult Volleyball Member Time (Cancelled)",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-11T18:00:00",
       "end": "2026-11-11T20:00:00",
       "all_day": false,
