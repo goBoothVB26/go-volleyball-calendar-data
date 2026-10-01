@@ -46,10 +46,22 @@
      theme_sync_snippet.html pasted in. -->
 
 <style>
+  /* Centering breakout: margin:0 auto on .vb-blog-rot alone only centers
+     it WITHIN whatever column Squarespace put the code block in -- if
+     that column itself isn't centered on the actual screen (sidebar,
+     asymmetric page grid, etc.), the post looks off-center regardless.
+     This wrapper breaks the block out of that column and re-centers it
+     against the real browser viewport instead, so it's centered on the
+     screen itself at any resolution, 1920px included. */
+  .vb-blog-rot-center {
+    position: relative; left: 50%; width: 100vw; margin-left: -50vw;
+    overflow-x: hidden;
+  }
+
   /* Explicit base text color -- paragraphs below use color: inherit, and
      without this they'd silently inherit Squarespace's own (near-black)
      page text color in dark mode instead of following the toggle. */
-  .vb-blog-rot { max-width: 920px; margin: 0 auto; font-family: inherit; line-height: 1.65; color: #222; transition: color 0.25s; }
+  .vb-blog-rot { max-width: 920px; margin: 0 auto; padding-inline: 16px; font-family: inherit; line-height: 1.65; color: #222; transition: color 0.25s; }
   body.vb-dark-page .vb-blog-rot { color: #e6e6e6; }
 
   /* NATIVE HEADER OVERRIDE: hides Squarespace's own title/date/author/
@@ -182,6 +194,7 @@
   body.vb-dark-page .vb-blog-rot-note { color: #999; }
 </style>
 
+<div class="vb-blog-rot-center">
 <div class="vb-blog-rot">
   <div class="vb-blog-rot-theme-wrap">
     <button class="vb-blog-rot-theme-btn" id="vb-blog-rot-theme" aria-label="Toggle dark mode">
@@ -244,6 +257,7 @@
     <a class="vb-blog-rot-cta" href="/rotations">Try the Rotation Trainer</a>
     <p class="vb-blog-rot-note">Works on desktop and mobile, right in your browser.</p>
   </div>
+</div>
 </div>
 
 <script>
