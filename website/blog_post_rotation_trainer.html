@@ -47,12 +47,19 @@
 
 <style>
   /* Centering breakout: margin:0 auto on .vb-blog-rot alone only centers
-     it WITHIN whatever column Squarespace put the code block in -- if
-     that column itself isn't centered on the actual screen (sidebar,
-     asymmetric page grid, etc.), the post looks off-center regardless.
-     This wrapper breaks the block out of that column and re-centers it
-     against the real browser viewport instead, so it's centered on the
-     screen itself at any resolution, 1920px included. */
+     it WITHIN whatever column Squarespace put the code block in. If
+     that column is itself centered on the page but just narrower than
+     the full viewport (the normal case for a Squarespace blog post),
+     this wrapper breaks the block out to the column's full width and
+     re-centers it against the real browser viewport, fixing the "looks
+     narrow/off-center at 1920" look. NOTE: this specific trick only
+     re-centers correctly when the column it's inside is ALREADY
+     centered (margin:auto) -- if your Blog Page Settings -> Layout is
+     set to a true "Sidebar" layout (a sidebar actually taking up page
+     width, not just a narrow column), the post column itself isn't
+     centered to begin with and this CSS can't fully fix that; switch
+     that setting to a non-sidebar/full-width layout instead, or tell
+     me and I'll swap this for a JS-measured centering approach. */
   .vb-blog-rot-center {
     position: relative; left: 50%; width: 100vw; margin-left: -50vw;
     overflow-x: hidden;
