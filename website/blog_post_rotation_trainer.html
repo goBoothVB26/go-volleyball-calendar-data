@@ -8,26 +8,31 @@
      2. Post Title (the native Squarespace field -- still required for
         the URL/SEO, even though it's not what readers will see):
           Learn Your Rotations with Our New Interactive Rotation Trainer
-        Many templates display this native title/byline ABOVE your
-        post content automatically, which would duplicate the title
-        block below. Check Blog Page Settings -> Layout (or your
-        template's post-header style options) for a way to hide the
-        native title/date/author on this post; if your template has no
-        such option, you'll see the title twice and may prefer to go
-        back to the original version of this file (git history) that
-        used Squarespace's own title instead.
      3. Excerpt / SEO description (Post Settings -> Excerpt / SEO):
           Step through every rotation of the 5-1, 6-2, and 4-2 offenses
           with GOVC's new interactive Rotation Trainer -- see serving
           and serve-receive shapes, libero/DS subs, and seam coverage
           at a glance.
      4. Add a CODE block as the first block in the post body and paste
-        EVERYTHING below this comment into it.
-     5. Edit the ONE placeholder link below (search for "EDIT ME") to
-        point at wherever you published rotation_trainer.html.
-     6. Optional: add an Image block below the code block with a
+        EVERYTHING below this comment into it. The CTA button already
+        links to https://www.govolleyball.org/rotations.
+     5. Optional: add an Image block below the code block with a
         screenshot/GIF of the trainer in action -- a picture of the
         court sells this far better than text alone.
+
+     HIDING SQUARESPACE'S NATIVE TITLE/DATE/HEADER SPACE: see the
+     "NATIVE HEADER OVERRIDE" style block below -- it hides the
+     platform's own title/date/author/category block above your post
+     (which otherwise duplicates the title/byline this code block
+     already renders) and collapses the big empty space that block
+     usually reserves. Squarespace's markup differs by template
+     family, so it targets the most common class names across 7.1
+     Fluid Engine and 7.0 templates; it's scoped to only affect
+     elements inside the blog post wrapper, never the rest of the
+     site. If some header space or the date still shows after adding
+     it, right-click that empty area in your browser -> Inspect,
+     find the actual class name on the leftover element, and send it
+     to me so I can add the exact selector.
 
      Theme toggle: same sitewide pattern as theme_toggle_widget.html --
      reads/writes the SAME localStorage key ("vbcalTheme") the
@@ -41,7 +46,49 @@
      theme_sync_snippet.html pasted in. -->
 
 <style>
-  .vb-blog-rot { max-width: 760px; margin: 0 auto; font-family: inherit; line-height: 1.65; }
+  /* Explicit base text color -- paragraphs below use color: inherit, and
+     without this they'd silently inherit Squarespace's own (near-black)
+     page text color in dark mode instead of following the toggle. */
+  .vb-blog-rot { max-width: 920px; margin: 0 auto; font-family: inherit; line-height: 1.65; color: #222; transition: color 0.25s; }
+  body.vb-dark-page .vb-blog-rot { color: #e6e6e6; }
+
+  /* NATIVE HEADER OVERRIDE: hides Squarespace's own title/date/author/
+     category block above the post (which would otherwise duplicate the
+     title/byline this code block already renders) and collapses the
+     space it reserves. Scoped to the blog post wrapper only -- never
+     touches the rest of the site. Covers the most common class names
+     across 7.1 Fluid Engine and 7.0 template families; if leftover
+     header space or the date still shows, inspect the element and send
+     me the actual class name so I can add the exact selector. */
+  .blog-item-wrapper .blog-title,
+  .blog-item-wrapper .blog-meta,
+  .blog-item-wrapper .blog-meta-item,
+  .blog-item-wrapper .blog-categories,
+  .blog-item-wrapper .blog-item-featured-image,
+  .BlogItem-title,
+  .BlogItem-meta,
+  article.blog-item .entry-header,
+  article.blog-item .entry-title,
+  article.blog-item .entry-meta,
+  article.blog-item .post-header,
+  article.blog-item .post-title,
+  article.blog-item .post-date,
+  article.blog-item .post-meta {
+    display: none !important;
+  }
+  .blog-item-wrapper,
+  article.blog-item {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  /* Widen Squarespace's own post content column to match the 920px
+     column above (best-effort -- template-dependent, see note above). */
+  .blog-item-wrapper .sqs-block-content,
+  .blog-item-wrapper .content-wrapper,
+  article.blog-item .sqs-block-content,
+  article.blog-item .content-wrapper {
+    max-width: 1000px !important;
+  }
 
   /* Theme toggle -- identical look/behavior to theme_toggle_widget.html */
   .vb-blog-rot-theme-wrap { text-align: center; margin: 0 0 18px; }
@@ -194,8 +241,7 @@
   </p>
 
   <div class="vb-blog-rot-cta-wrap">
-    <!-- EDIT ME: point this at wherever rotation_trainer.html is published -->
-    <a class="vb-blog-rot-cta" href="/rotation-trainer">Try the Rotation Trainer</a>
+    <a class="vb-blog-rot-cta" href="/rotations">Try the Rotation Trainer</a>
     <p class="vb-blog-rot-note">Works on desktop and mobile, right in your browser.</p>
   </div>
 </div>
