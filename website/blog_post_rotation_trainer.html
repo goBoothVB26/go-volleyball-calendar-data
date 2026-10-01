@@ -1,9 +1,21 @@
 <!-- Blog post template announcing the Rotation Trainer tool.
+     Self-contained: title, byline, and a light/dark toggle all live
+     INSIDE this code block instead of relying on Squarespace's own
+     post title/byline display or sitewide theme.
 
      HOW TO USE:
      1. In Squarespace: Pages -> Blog -> + New Post.
-     2. Post Title (type into the title field, don't paste it as HTML):
+     2. Post Title (the native Squarespace field -- still required for
+        the URL/SEO, even though it's not what readers will see):
           Learn Your Rotations with Our New Interactive Rotation Trainer
+        Many templates display this native title/byline ABOVE your
+        post content automatically, which would duplicate the title
+        block below. Check Blog Page Settings -> Layout (or your
+        template's post-header style options) for a way to hide the
+        native title/date/author on this post; if your template has no
+        such option, you'll see the title twice and may prefer to go
+        back to the original version of this file (git history) that
+        used Squarespace's own title instead.
      3. Excerpt / SEO description (Post Settings -> Excerpt / SEO):
           Step through every rotation of the 5-1, 6-2, and 4-2 offenses
           with GOVC's new interactive Rotation Trainer -- see serving
@@ -13,22 +25,75 @@
         EVERYTHING below this comment into it.
      5. Edit the ONE placeholder link below (search for "EDIT ME") to
         point at wherever you published rotation_trainer.html.
-     6. Optional: add an Image block above or below the code block with
-        a screenshot/GIF of the trainer in action -- a picture of the
+     6. Optional: add an Image block below the code block with a
+        screenshot/GIF of the trainer in action -- a picture of the
         court sells this far better than text alone.
-     7. This post inherits whatever theme (light/dark) the visitor
-        already chose on the calendar page -- no extra setup needed,
-        Squarespace blog posts render in the main site theme already. -->
+
+     Theme toggle: same sitewide pattern as theme_toggle_widget.html --
+     reads/writes the SAME localStorage key ("vbcalTheme") the
+     calendar's own toggle uses, toggles the SAME body.vb-dark-page
+     class, and expires after 5 minutes of inactivity. So a visitor who
+     already chose dark mode on the calendar page sees this post dark
+     too, and flipping the toggle here carries the choice to other
+     pages, exactly like theme_toggle_widget.html. It's included here
+     (not just a reference to the sitewide snippet) so this post keeps
+     working as a drop-in unit even on a page that doesn't already have
+     theme_sync_snippet.html pasted in. -->
 
 <style>
-  .vb-blog-rot { max-width: 720px; margin: 0 auto; font-family: inherit; line-height: 1.65; }
+  .vb-blog-rot { max-width: 760px; margin: 0 auto; font-family: inherit; line-height: 1.65; }
+
+  /* Theme toggle -- identical look/behavior to theme_toggle_widget.html */
+  .vb-blog-rot-theme-wrap { text-align: center; margin: 0 0 18px; }
+  .vb-blog-rot-theme-btn {
+    position: relative; width: 58px; height: 30px; padding: 0;
+    border: 0; border-radius: 15px; cursor: pointer;
+    background: linear-gradient(90deg, #9EDCFF, #5DB8F0);
+    transition: background 0.3s;
+  }
+  .vb-blog-rot-theme-btn .vb-knob {
+    position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+    border-radius: 50%; background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transition: left 0.3s, background 0.3s;
+  }
+  .vb-blog-rot-theme-btn .vb-knob span {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; line-height: 1;
+    transition: opacity 0.3s;
+  }
+  .vb-blog-rot-theme-btn .vb-sun { opacity: 1; }
+  .vb-blog-rot-theme-btn .vb-moon { opacity: 0; }
+  body.vb-dark-page .vb-blog-rot-theme-btn { background: linear-gradient(90deg, #3A2A66, #55397C); }
+  body.vb-dark-page .vb-blog-rot-theme-btn .vb-knob { left: 31px; background: #10131a; }
+  body.vb-dark-page .vb-blog-rot-theme-btn .vb-sun { opacity: 0; }
+  body.vb-dark-page .vb-blog-rot-theme-btn .vb-moon { opacity: 1; }
+
+  /* Title / byline (replaces Squarespace's native post header) */
+  .vb-blog-rot-meta {
+    text-align: center; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: #8a8678; margin-bottom: 8px; transition: color 0.25s;
+  }
+  body.vb-dark-page .vb-blog-rot-meta { color: #7d8491; }
+  .vb-blog-rot-title {
+    text-align: center; font-size: clamp(26px, 4vw, 34px); font-weight: 700; line-height: 1.2;
+    margin: 0 0 10px; color: #14171c; transition: color 0.25s;
+  }
+  body.vb-dark-page .vb-blog-rot-title { color: #f2f2f2; }
+  .vb-blog-rot-byline {
+    text-align: center; font-size: 14px; color: #5b584f; margin-bottom: 26px;
+    padding-bottom: 22px; border-bottom: 1px solid #e4e1d8; transition: color 0.25s, border-color 0.25s;
+  }
+  body.vb-dark-page .vb-blog-rot-byline { color: #a9a9a9; border-bottom-color: #2a3038; }
+
   .vb-blog-rot p { font-size: 16px; color: inherit; }
   .vb-blog-rot h2 {
-    font-size: 22px; font-weight: 700; color: #0057b8; margin: 28px 0 10px;
+    font-size: 22px; font-weight: 700; color: #0057b8; margin: 28px 0 10px; transition: color 0.25s;
   }
-  .vb-blog-rot .vb-blog-rot-lede {
-    font-size: 18px; font-weight: 500; margin-bottom: 18px;
-  }
+  body.vb-dark-page .vb-blog-rot h2 { color: #FFC425; }
+
+  .vb-blog-rot-lede { font-size: 18px; font-weight: 500; margin-bottom: 18px; }
 
   .vb-blog-rot-grid {
     display: grid; grid-template-columns: 1fr; gap: 14px; margin: 18px 0 24px;
@@ -38,14 +103,15 @@
   }
   .vb-blog-rot-card {
     background: #f4f7fb; border: 1px solid #e2e8f0; border-radius: 12px;
-    padding: 16px 18px;
+    padding: 16px 18px; transition: background-color 0.25s, border-color 0.25s;
   }
+  body.vb-dark-page .vb-blog-rot-card { background: #1b2027; border-color: #2a3038; }
   .vb-blog-rot-card h3 {
-    margin: 0 0 6px; font-size: 15.5px; font-weight: 700; color: #0057b8;
+    margin: 0 0 6px; font-size: 15.5px; font-weight: 700; color: #0057b8; transition: color 0.25s;
   }
-  .vb-blog-rot-card p {
-    margin: 0; font-size: 14px; color: #444;
-  }
+  body.vb-dark-page .vb-blog-rot-card h3 { color: #FFC425; }
+  .vb-blog-rot-card p { margin: 0; font-size: 14px; color: #444; transition: color 0.25s; }
+  body.vb-dark-page .vb-blog-rot-card p { color: #c7c7c7; }
 
   .vb-blog-rot-cta-wrap { text-align: center; margin: 28px 0; }
   .vb-blog-rot-cta {
@@ -60,12 +126,26 @@
     background: #00458f;
     box-shadow: 0 4px 10px rgba(0,0,0,0.22); transform: translateY(-1px);
   }
-  .vb-blog-rot-note {
-    font-size: 13px; color: #777; text-align: center; margin-top: 6px;
+  body.vb-dark-page .vb-blog-rot-cta {
+    background: #FFC425; border-color: #FFC425; color: #1a1a1a !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   }
+  body.vb-dark-page .vb-blog-rot-cta:hover { background: #e6ad0f; }
+  .vb-blog-rot-note { font-size: 13px; color: #777; text-align: center; margin-top: 6px; transition: color 0.25s; }
+  body.vb-dark-page .vb-blog-rot-note { color: #999; }
 </style>
 
 <div class="vb-blog-rot">
+  <div class="vb-blog-rot-theme-wrap">
+    <button class="vb-blog-rot-theme-btn" id="vb-blog-rot-theme" aria-label="Toggle dark mode">
+      <span class="vb-knob"><span class="vb-sun">&#9728;&#65039;</span><span class="vb-moon">&#127761;</span></span>
+    </button>
+  </div>
+
+  <div class="vb-blog-rot-meta">GOVC Blog</div>
+  <h1 class="vb-blog-rot-title">Learn Your Rotations with Our New Interactive Rotation Trainer</h1>
+  <div class="vb-blog-rot-byline">Posted by Greater Orlando Volleyball Club</div>
+
   <p class="vb-blog-rot-lede">
     Ever freeze up trying to remember who should be where after a side-out?
     We just launched the <b>Rotation Trainer</b> -- a free, interactive tool
@@ -119,3 +199,43 @@
     <p class="vb-blog-rot-note">Works on desktop and mobile, right in your browser.</p>
   </div>
 </div>
+
+<script>
+(function () {
+  var THEME_TTL_MS = 5 * 60 * 1000;
+
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function storedTheme() {
+    var stored = localStorage.getItem("vbcalTheme");
+    var ts = +localStorage.getItem("vbcalThemeTS") || 0;
+    if (stored && Date.now() - ts > THEME_TTL_MS) {
+      localStorage.removeItem("vbcalTheme");
+      localStorage.removeItem("vbcalThemeTS");
+      return null;
+    }
+    return stored;
+  }
+  function touchThemeTS() {
+    if (localStorage.getItem("vbcalTheme")) localStorage.setItem("vbcalThemeTS", String(Date.now()));
+  }
+  function currentDark() {
+    var stored = storedTheme();
+    return stored ? stored === "dark" : prefersDark();
+  }
+  function apply(dark) {
+    document.body.classList.toggle("vb-dark-page", dark);
+  }
+  document.getElementById("vb-blog-rot-theme").onclick = function () {
+    var dark = !currentDark();
+    localStorage.setItem("vbcalTheme", dark ? "dark" : "light");
+    localStorage.setItem("vbcalThemeTS", String(Date.now()));
+    apply(dark);
+  };
+  apply(currentDark());  // in case theme_sync_snippet.html isn't also on this page
+  touchThemeTS();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) touchThemeTS(); });
+  setInterval(touchThemeTS, 60000);
+})();
+</script>
