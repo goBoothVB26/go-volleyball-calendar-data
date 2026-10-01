@@ -1,0 +1,121 @@
+<!-- Blog post template announcing the Rotation Trainer tool.
+
+     HOW TO USE:
+     1. In Squarespace: Pages -> Blog -> + New Post.
+     2. Post Title (type into the title field, don't paste it as HTML):
+          Learn Your Rotations with Our New Interactive Rotation Trainer
+     3. Excerpt / SEO description (Post Settings -> Excerpt / SEO):
+          Step through every rotation of the 5-1, 6-2, and 4-2 offenses
+          with GOVC's new interactive Rotation Trainer -- see serving
+          and serve-receive shapes, libero/DS subs, and seam coverage
+          at a glance.
+     4. Add a CODE block as the first block in the post body and paste
+        EVERYTHING below this comment into it.
+     5. Edit the ONE placeholder link below (search for "EDIT ME") to
+        point at wherever you published rotation_trainer.html.
+     6. Optional: add an Image block above or below the code block with
+        a screenshot/GIF of the trainer in action -- a picture of the
+        court sells this far better than text alone.
+     7. This post inherits whatever theme (light/dark) the visitor
+        already chose on the calendar page -- no extra setup needed,
+        Squarespace blog posts render in the main site theme already. -->
+
+<style>
+  .vb-blog-rot { max-width: 720px; margin: 0 auto; font-family: inherit; line-height: 1.65; }
+  .vb-blog-rot p { font-size: 16px; color: inherit; }
+  .vb-blog-rot h2 {
+    font-size: 22px; font-weight: 700; color: #0057b8; margin: 28px 0 10px;
+  }
+  .vb-blog-rot .vb-blog-rot-lede {
+    font-size: 18px; font-weight: 500; margin-bottom: 18px;
+  }
+
+  .vb-blog-rot-grid {
+    display: grid; grid-template-columns: 1fr; gap: 14px; margin: 18px 0 24px;
+  }
+  @media (min-width: 640px) {
+    .vb-blog-rot-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .vb-blog-rot-card {
+    background: #f4f7fb; border: 1px solid #e2e8f0; border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .vb-blog-rot-card h3 {
+    margin: 0 0 6px; font-size: 15.5px; font-weight: 700; color: #0057b8;
+  }
+  .vb-blog-rot-card p {
+    margin: 0; font-size: 14px; color: #444;
+  }
+
+  .vb-blog-rot-cta-wrap { text-align: center; margin: 28px 0; }
+  .vb-blog-rot-cta {
+    display: inline-block; padding: 12px 30px; cursor: pointer;
+    border: 1px solid #0057b8; background: #0057b8; color: #fff !important;
+    border-radius: 12px; font-size: 16px; font-weight: 700;
+    letter-spacing: 0.02em; text-decoration: none !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+  .vb-blog-rot-cta:hover {
+    background: #00458f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22); transform: translateY(-1px);
+  }
+  .vb-blog-rot-note {
+    font-size: 13px; color: #777; text-align: center; margin-top: 6px;
+  }
+</style>
+
+<div class="vb-blog-rot">
+  <p class="vb-blog-rot-lede">
+    Ever freeze up trying to remember who should be where after a side-out?
+    We just launched the <b>Rotation Trainer</b> -- a free, interactive tool
+    that walks you through every rotation of the three most common
+    offensive systems, right in your browser.
+  </p>
+
+  <p>
+    No login, no app to install, nothing to print out. Pick a system, pick a
+    rotation, and watch exactly where every role lines up on the court --
+    whether you're serving or receiving serve.
+  </p>
+
+  <h2>What it covers</h2>
+  <div class="vb-blog-rot-grid">
+    <div class="vb-blog-rot-card">
+      <h3>All 3 systems, all 6 rotations</h3>
+      <p>5-1, 6-2, and 4-2 offenses, each with all six rotations mapped out --
+      including exactly which setter is running the offense (and when
+      they're penetrating from the back row to do it).</p>
+    </div>
+    <div class="vb-blog-rot-card">
+      <h3>Serving vs. Serve Receive</h3>
+      <p>Toggle between the strict overlap-rule serving formation and a
+      realistic serve-receive passing shape, so you can see how the court
+      changes the instant the ball is live.</p>
+    </div>
+    <div class="vb-blog-rot-card">
+      <h3>Libero &amp; Defensive Specialist subs</h3>
+      <p>Switch on libero substitutions, add a defensive specialist, or turn
+      subs off entirely to see every rotation play out exactly how your
+      team runs it.</p>
+    </div>
+    <div class="vb-blog-rot-card">
+      <h3>Seam coverage</h3>
+      <p>Highlight the passing seams between receivers and watch the
+      coverage shrink as neighboring passers close the gap -- a great way
+      to actually see why servers target those spots.</p>
+    </div>
+  </div>
+
+  <p>
+    It's built for players, coaches, and anyone who's ever gotten yelled at
+    for standing in the wrong zone -- whether you're brand new to
+    rotations or just want a quick refresher before a match.
+  </p>
+
+  <div class="vb-blog-rot-cta-wrap">
+    <!-- EDIT ME: point this at wherever rotation_trainer.html is published -->
+    <a class="vb-blog-rot-cta" href="/rotation-trainer">Try the Rotation Trainer</a>
+    <p class="vb-blog-rot-note">Works on desktop and mobile, right in your browser.</p>
+  </div>
+</div>
