@@ -1855,4 +1855,30 @@ LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
  summer-series?ngmp_2023_iframe_transition=1
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Aug 2 @ Dover Shores Community C
+ enter
+DTSTART;TZID=America/New_York:20270802T130000
+DTEND;TZID=America/New_York:20270802T153000
+UID:Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-
+ 2027-08-02T13:00:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Aug 2 @ Dover Shores Community C
+ enter
+DTSTART;TZID=America/New_York:20270802T153000
+DTEND;TZID=America/New_York:20270802T174500
+UID:Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-
+ 2027-08-02T15:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
