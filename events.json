@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T12:52:36",
+  "generated": "2026-10-03T14:55:51",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -7230,6 +7230,22 @@
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "CCVL-Club_v_Club-2026-10-03T10:00:00",
+      "club": "CCVL",
+      "title": "Club v Club",
+      "start": "2026-10-03T10:00:00",
+      "end": "2026-10-03T16:00:00",
+      "all_day": false,
+      "location": "FIU Recreation Center - North Courts",
+      "description": "Club V club tournament today! Located at FIU Recreation Center, North courts",
+      "url": "https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
       "price": null,
       "image": null
     },

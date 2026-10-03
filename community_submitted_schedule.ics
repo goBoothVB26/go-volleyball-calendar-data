@@ -304,4 +304,15 @@ DESCRIPTION:CCVL welcomes ALL teams\, (Collegiate club\, Adult teams\, nca
 LOCATION:Winter Park Volleyball Club
 URL:https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[CCVL] Club v Club
+DTSTART;TZID=America/New_York:20261003T100000
+DTEND;TZID=America/New_York:20261003T160000
+UID:CCVL-Club_v_Club-2026-10-03T10:00:00
+DESCRIPTION:Club V club tournament today! Located at FIU Recreation Center
+ \, North courts\n\nMore info: https://www.instagram.com/ccvl_vb?stkn=MWlyO
+ TZic3h2aWlqag==
+LOCATION:FIU Recreation Center - North Courts
+URL:https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==
+END:VEVENT
 END:VCALENDAR
