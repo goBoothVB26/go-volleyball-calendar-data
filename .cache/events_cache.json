@@ -8367,7 +8367,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/8e0d1a3c-9b91-4d44-991c-d35c3af0613f.jpeg",
+      "image": null,
       "uid": "Volleyball_Life-First_Coast_Volleyball_St_Augustine_Beach_Series_Oct_10-11_'26-2026-10-10T00:00:00"
     },
     {
@@ -8386,7 +8386,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/8e4b5780-d4b5-4c30-8535-b3457b0f075a.png",
+      "image": null,
       "uid": "Volleyball_Life-PreFUDS_Coed_4s_Tournament-2026-10-10T00:00:00"
     },
     {
@@ -8405,7 +8405,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/f8f489fa-e3af-4c34-b590-f057462f263e.png",
       "uid": "Volleyball_Life-Beast_Coast_Volleyball_-_Monster_Smash_Reverse_Coed_Grass_4\u2019s-2026-10-10T00:00:00"
     },
     {
