@@ -974,10 +974,15 @@
         playerEls["OH2"].style.left = "83%";
         playerEls["OH2"].style.top = "64%";
       }
-      if (playerEls[p1Role4]) {
-        posByRole[p1Role4] = { x: 67, y: 92 };
-        playerEls[p1Role4].style.left = "67%";
-        playerEls[p1Role4].style.top = "92%";
+      // DS-for-RS hides p1Role4 (the Opp/opposing-setter role) and
+      // would otherwise land via the generic formula, which collides
+      // with OH2 here -- redirect it to this already-verified spot
+      // instead, since it's sitting empty anyway with that role hidden.
+      var p1Target4 = (dsActive && dsTarget === "Opp") ? "DS" : p1Role4;
+      if (playerEls[p1Target4]) {
+        posByRole[p1Target4] = { x: 67, y: 92 };
+        playerEls[p1Target4].style.left = "67%";
+        playerEls[p1Target4].style.top = "92%";
       }
       if (playerEls["MB2"]) {
         posByRole["MB2"] = { x: 50, y: 8 };
@@ -1033,10 +1038,14 @@
         playerEls["Libero"].style.left = "50%";
         playerEls["Libero"].style.top = "68%";
       }
-      if (playerEls[p6Role5]) {
-        posByRole[p6Role5] = { x: 67, y: 92 };
-        playerEls[p6Role5].style.left = "67%";
-        playerEls[p6Role5].style.top = "92%";
+      // DS-for-RS hides p6Role5 (Opp) and would otherwise land exactly
+      // on top of the Libero via the generic formula -- redirect it to
+      // this already-verified spot instead, same reasoning as Rotation 4.
+      var p6Target5 = (dsActive && dsTarget === "Opp") ? "DS" : p6Role5;
+      if (playerEls[p6Target5]) {
+        posByRole[p6Target5] = { x: 67, y: 92 };
+        playerEls[p6Target5].style.left = "67%";
+        playerEls[p6Target5].style.top = "92%";
       }
     }
 
@@ -1070,10 +1079,15 @@
         playerEls["OH1"].style.left = "17%";
         playerEls["OH1"].style.top = "64%";
       }
-      if (playerEls[p5Role6]) {
-        posByRole[p5Role6] = { x: 34, y: 92 };
-        playerEls[p5Role6].style.left = "34%";
-        playerEls[p5Role6].style.top = "92%";
+      // DS-for-RS hides p5Role6 (Opp) and would otherwise land via the
+      // generic formula, which collides with OH1 here -- redirect it
+      // to this already-verified spot instead, same reasoning as
+      // Rotations 4 and 5.
+      var p5Target6 = (dsActive && dsTarget === "Opp") ? "DS" : p5Role6;
+      if (playerEls[p5Target6]) {
+        posByRole[p5Target6] = { x: 34, y: 92 };
+        playerEls[p5Target6].style.left = "34%";
+        playerEls[p5Target6].style.top = "92%";
       }
       if (playerEls["Libero"]) {
         posByRole["Libero"] = { x: 83, y: 68 };
