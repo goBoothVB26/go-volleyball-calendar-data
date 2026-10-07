@@ -10,31 +10,53 @@
  *    sheet/confirmation entirely and just join the Mailing List below.
  *  - sendReminders: run hourly by a trigger; emails each subscriber
  *    ~5 days and ~24 hours before their event starts.
+ *  - sendWeeklyDigest: run by a Saturday-1pm trigger; emails everyone
+ *    on the Mailing List one roundup of every event happening the
+ *    UPCOMING week (the Sunday right after send day through the
+ *    Saturday after that -- 7 days, not "today + 7"). One-size-fits-all,
+ *    same email to everyone, no per-club/skill filtering. Skips sending
+ *    entirely if that week has zero events.
+ *  - doGet: handles the digest's one-click unsubscribe link
+ *    (?unsubscribe=<email>) -- removes them from the Mailing List AND
+ *    records them in a third "Unsubscribed" sheet so a LATER per-event
+ *    or newsletter signup can never silently re-add them (addToMailingList
+ *    checks it first). Does NOT touch any per-event reminder they
+ *    separately signed up for in the main sheet -- unsubscribing from
+ *    the general digest is deliberately a different thing from
+ *    cancelling a specific event's reminders.
  *
- * ONE-TIME SETUP (about 10 minutes):
+ * ONE-TIME SETUP (about 15 minutes):
  *  1. Go to sheets.google.com -> create a blank spreadsheet named e.g.
  *     "Volleyball Event Signups". Add a header row in row 1:
  *     signed_up | email | uid | title | start | club | url | sent_5day | sent_24hr | extra
  *  2. In the sheet: Extensions -> Apps Script. Delete the sample code,
  *     paste this entire file, and save.
- *  3. Click "Deploy" -> "New deployment" -> type: Web app.
+ *  3. In the Apps Script editor: Project Settings (gear icon) -> Time
+ *     Zone -> set to America/New_York. This is what "Saturday 1pm" and
+ *     the digest's date-range math are computed against.
+ *  4. Click "Deploy" -> "New deployment" -> type: Web app.
  *       - Execute as: Me
  *       - Who has access: Anyone
- *     Click Deploy, authorize it, and COPY THE WEB APP URL.
- *  4. Paste that URL into the widget's NOTIFY_ENDPOINT (in the
+ *     Click Deploy, authorize it (sendWeeklyDigest's UrlFetchApp call to
+ *     fetch events.json triggers an extra permission prompt the first
+ *     time it runs -- approve it the same way), and COPY THE WEB APP URL.
+ *  5. Paste that URL into the widget's NOTIFY_ENDPOINT (in the
  *     Squarespace Code block) and republish the page. Bookmark icons
  *     appear once the URL is set. Paste the SAME URL into
  *     newsletter_signup_button.html's NOTIFY_ENDPOINT too -- both
  *     widgets post to this one script/sheet.
- *  5. Back in Apps Script: left sidebar clock icon (Triggers) ->
- *     Add Trigger -> function sendReminders -> time-driven -> hour timer
- *     -> every hour. Save.
+ *  6. Back in Apps Script: left sidebar clock icon (Triggers) ->
+ *     Add Trigger:
+ *       - function sendReminders -> time-driven -> hour timer -> every hour.
+ *       - function sendWeeklyDigest -> time-driven -> week timer ->
+ *         every Saturday -> 1pm to 2pm window. Save both.
  *
  * Notes:
  *  - Emails send from the Google account that owns the script.
  *  - Free Gmail accounts can send ~100 emails/day via Apps Script
  *    (Workspace accounts ~1500/day). Plenty for a community calendar,
- *    but worth knowing if signups get big.
+ *    but worth knowing if signups get big -- the digest in particular
+ *    sends one email per Mailing List row every single week.
  */
 
 var REMINDER_WINDOWS = [
@@ -149,15 +171,29 @@ function sendSignupConfirmation(data) {
  * complete, already-deduplicated list to read for any bulk send (e.g. a
  * weekly digest) -- no need to merge separate sheets. Created
  * automatically on first use; safe to sort or add columns to.
+ *
+ * Checks the "Unsubscribed" sheet (see doGet's unsubscribe handler)
+ * first and silently no-ops for anyone on it -- otherwise a later
+ * per-event signup for someone who already opted out of the digest
+ * would quietly re-subscribe them to it.
  */
 function addToMailingList(email) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var normalized = String(email).trim().toLowerCase();
+
+  var unsub = ss.getSheetByName("Unsubscribed");
+  if (unsub) {
+    var unsubRows = unsub.getDataRange().getValues();
+    for (var u = 1; u < unsubRows.length; u++) {
+      if (String(unsubRows[u][0]).trim().toLowerCase() === normalized) return;
+    }
+  }
+
   var list = ss.getSheetByName("Mailing List");
   if (!list) {
     list = ss.insertSheet("Mailing List");
     list.appendRow(["email", "first_signed_up"]);
   }
-  var normalized = String(email).trim().toLowerCase();
   var existing = list.getDataRange().getValues();
   for (var i = 1; i < existing.length; i++) {
     if (String(existing[i][0]).trim().toLowerCase() === normalized) return;
@@ -261,6 +297,182 @@ function sendReminders() {
       rows[i][win.column - 1] = new Date();  // don't double-send within this run
     }
   }
+}
+
+// Same CDN URL the website widget itself reads -- see squarespace_calendar.html's
+// own EVENTS_URL comment for why jsDelivr over the raw GitHub URL.
+var EVENTS_JSON_URL = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/events.json";
+
+/**
+ * Weekly digest -- run by a Saturday-1pm trigger (see SETUP above).
+ * One email to everyone on the Mailing List, listing every event
+ * starting in the UPCOMING week: the Sunday right after send day
+ * through the Saturday after that (7 days). Since this always fires
+ * the Saturday BEFORE that week starts, "tomorrow" at send time IS
+ * that week's Sunday -- not today-plus-7.
+ *
+ * One-size-fits-all by design: same event list to every recipient, no
+ * per-club or per-skill-level filtering. Sends nothing at all if that
+ * week has zero events, rather than mailing an empty digest.
+ */
+function sendWeeklyDigest() {
+  var tz = Session.getScriptTimeZone();
+  var today = new Date();
+  var rangeStart = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1); // tomorrow, 00:00
+  var rangeEnd = new Date(rangeStart.getFullYear(), rangeStart.getMonth(), rangeStart.getDate() + 6, 23, 59, 59); // +6 days = 7 total
+
+  var resp = UrlFetchApp.fetch(EVENTS_JSON_URL, { muteHttpExceptions: true });
+  if (resp.getResponseCode() !== 200) return; // site/CDN hiccup -- try again next Saturday rather than erroring loudly
+  var data = JSON.parse(resp.getContentText());
+
+  var events = (data.events || [])
+    .filter(function (ev) {
+      var start = new Date(ev.start);
+      return !isNaN(start) && start >= rangeStart && start <= rangeEnd;
+    })
+    .sort(function (a, b) { return new Date(a.start) - new Date(b.start); });
+  if (!events.length) return;
+
+  var list = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Mailing List");
+  if (!list) return;
+  var rows = list.getDataRange().getValues();
+
+  var subject = "This Week in Orlando Volleyball: " +
+    Utilities.formatDate(rangeStart, tz, "MMM d") + "–" + Utilities.formatDate(rangeEnd, tz, "MMM d");
+  var selfUrl = ScriptApp.getService().getUrl();
+
+  for (var i = 1; i < rows.length; i++) {
+    var email = rows[i][0];
+    if (!email) continue;
+    var unsubUrl = selfUrl + "?unsubscribe=" + encodeURIComponent(email);
+    MailApp.sendEmail(email, subject, buildDigestText(events, tz, unsubUrl), {
+      htmlBody: buildDigestHtml(events, tz, unsubUrl),
+    });
+  }
+}
+
+/**
+ * Digest body: events grouped under a bold day-of-week/date header,
+ * each event a single compact row (time, title, club, location) rather
+ * than the full card treatment buildEventCardEmail uses for one event
+ * at a time -- a full week across every club can easily be a few dozen
+ * events, so this stays scannable instead of turning into a scroll of
+ * giant cards.
+ */
+function buildDigestHtml(events, tz, unsubUrl) {
+  var byDay = {};
+  var dayOrder = [];
+  events.forEach(function (ev) {
+    var start = new Date(ev.start);
+    var dayKey = Utilities.formatDate(start, tz, "yyyy-MM-dd");
+    if (!byDay[dayKey]) { byDay[dayKey] = []; dayOrder.push(dayKey); }
+    byDay[dayKey].push(ev);
+  });
+
+  var sections = dayOrder.map(function (dayKey) {
+    var dayEvents = byDay[dayKey];
+    var dayLabel = Utilities.formatDate(new Date(dayEvents[0].start), tz, "EEEE, MMMM d");
+    var rows = dayEvents.map(function (ev) {
+      var start = new Date(ev.start);
+      var timeText = ev.all_day ? "All day" : Utilities.formatDate(start, tz, "h:mm a");
+      var mapsLink = ev.location
+        ? '<a href="https://www.google.com/maps/search/?api=1&query=' +
+          encodeURIComponent(ev.location) + '" style="color:#0057b8; text-decoration:underline;">' +
+          htmlEsc(ev.location) + "</a>"
+        : "";
+      return (
+        '<tr><td style="padding:8px 0; border-bottom:1px solid #eee; vertical-align:top; width:76px;' +
+        ' color:#666; font-size:12.5px; white-space:nowrap;">' + htmlEsc(timeText) + "</td>" +
+        '<td style="padding:8px 0 8px 12px; border-bottom:1px solid #eee;">' +
+        '<a href="' + htmlEsc(ev.url || "#") + '" style="color:#222; font-weight:bold; font-size:14px;' +
+        ' text-decoration:none;">' + htmlEsc(ev.title) + "</a>" +
+        '<div style="color:#666; font-size:12.5px; margin-top:2px;">' + htmlEsc(ev.club) +
+        (mapsLink ? " &middot; " + mapsLink : "") + "</div></td></tr>"
+      );
+    }).join("");
+
+    return (
+      '<div style="margin-top:18px; font-weight:bold; color:#0057b8; font-size:14px;">' + htmlEsc(dayLabel) + "</div>" +
+      '<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">' + rows + "</table>"
+    );
+  }).join("");
+
+  return (
+    '<div style="font-family:Arial,Helvetica,sans-serif; color:#222; font-size:14px;' +
+    ' max-width:560px; margin:0 auto;">' +
+      "<p>Hi!</p><p>Here's what's coming up this week in Orlando volleyball:</p>" +
+      sections +
+      '<table cellpadding="0" cellspacing="0" style="margin-top:24px;"><tr>' +
+        '<td valign="middle" style="padding-right:10px;">' +
+          '<img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/govc_logo_icon.png"' +
+          ' width="44" alt="GOVC" style="display:block; max-width:44px; height:auto;"></td>' +
+        '<td valign="middle" style="font-family:Arial,Helvetica,sans-serif; font-size:14px;' +
+        ' color:#222; line-height:1.5;">See you on the court,<br>' +
+        "Your Greater Orlando Community Member</td>" +
+      "</tr></table>" +
+      '<p style="color:#999; font-size:11px; margin-top:22px;">You received this because' +
+      ' you signed up on our community calendar site. <a href="' + htmlEsc(unsubUrl) +
+      '" style="color:#999;">Unsubscribe</a></p>' +
+    "</div>"
+  );
+}
+
+/** Plain-text fallback for the digest, same content as buildDigestHtml. */
+function buildDigestText(events, tz, unsubUrl) {
+  var lines = ["Hi!", "", "Here's what's coming up this week in Orlando volleyball:", ""];
+  var lastDay = null;
+  events.forEach(function (ev) {
+    var start = new Date(ev.start);
+    var dayKey = Utilities.formatDate(start, tz, "yyyy-MM-dd");
+    if (dayKey !== lastDay) {
+      lastDay = dayKey;
+      lines.push(Utilities.formatDate(start, tz, "EEEE, MMMM d") + ":");
+    }
+    var timeText = ev.all_day ? "All day" : Utilities.formatDate(start, tz, "h:mm a");
+    lines.push("  " + timeText + " -- " + ev.title + " (" + ev.club + ")" + (ev.location ? " @ " + ev.location : ""));
+  });
+  lines.push("", "See you on the court,", "Your Greater Orlando Community Member", "",
+    "-- ", "You received this because you signed up on our community calendar site.",
+    "Unsubscribe: " + unsubUrl);
+  return lines.join("\n");
+}
+
+/**
+ * Handles the digest's one-click unsubscribe link (?unsubscribe=<email>).
+ * Removes the email from the Mailing List AND records it in a third
+ * "Unsubscribed" sheet (created automatically on first use) so a LATER
+ * per-event or newsletter signup can never silently re-add them --
+ * see addToMailingList's own comment. Deliberately does NOT touch the
+ * main per-event reminder sheet: unsubscribing from the general digest
+ * is a different thing from cancelling a specific event's reminders.
+ */
+function doGet(e) {
+  var email = e.parameter.unsubscribe;
+  if (!email) return ContentService.createTextOutput("ok");
+
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var normalized = String(email).trim().toLowerCase();
+
+  var list = ss.getSheetByName("Mailing List");
+  if (list) {
+    var rows = list.getDataRange().getValues();
+    for (var i = rows.length - 1; i >= 1; i--) {
+      if (String(rows[i][0]).trim().toLowerCase() === normalized) list.deleteRow(i + 1);
+    }
+  }
+
+  var unsub = ss.getSheetByName("Unsubscribed");
+  if (!unsub) {
+    unsub = ss.insertSheet("Unsubscribed");
+    unsub.appendRow(["email", "unsubscribed_at"]);
+  }
+  unsub.appendRow([normalized, new Date()]);
+
+  return HtmlService.createHtmlOutput(
+    '<div style="font-family:Arial,Helvetica,sans-serif; max-width:480px; margin:80px auto;' +
+    ' text-align:center; color:#222;"><h2>You\'re unsubscribed</h2>' +
+    "<p>" + htmlEsc(normalized) + " won't receive the weekly digest anymore. Sorry to see you go!</p></div>"
+  );
 }
 
 /**
