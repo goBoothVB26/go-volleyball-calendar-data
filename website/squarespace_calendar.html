@@ -499,12 +499,24 @@
   }
   .vb-remind-btn.on svg { fill: currentColor; }
 
-  /* Add to Calendar: icon-only, so a square button instead of the
-     usual pill-with-text padding. Same stroke-based glyph style as
-     the bookmark icon above. */
-  .vbcal-modal .btn.vb-addcal-btn { width: 38px; padding: 0; justify-content: center; }
+  /* Add to Calendar: sits in its own row at the very bottom of the
+     card, right-aligned, below everything else (incl. the inline
+     signup section). Bare icon, no border/fill -- same minimal style
+     as the close/share icons up top, just a subtle circular hover
+     highlight, no button chrome. */
+  .vb-addcal-corner { text-align: right; margin-top: 14px; }
+  .vb-addcal-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border: 0; background: none; cursor: pointer;
+    color: #888; border-radius: 50%; text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .vb-addcal-btn:hover { color: var(--vb-brand); background: rgba(0,0,0,0.08); }
+  .vb-addcal-btn:active { background: rgba(0,0,0,0.16); }
+  .vbcal-overlay.vb-dark .vb-addcal-btn:hover { color: var(--vb-dark-brand); background: rgba(255,255,255,0.10); }
+  .vbcal-overlay.vb-dark .vb-addcal-btn:active { background: rgba(255,255,255,0.18); }
   .vb-addcal-btn svg {
-    width: 18px; height: 18px; flex: 0 0 18px;
+    width: 20px; height: 20px; flex: 0 0 20px;
     fill: none; stroke: currentColor; stroke-width: 2;
     stroke-linecap: round; stroke-linejoin: round;
   }
@@ -2011,23 +2023,21 @@
     var plainInfoLink = !mergedFlow && ev.url
       ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>'
       : "";
-    // Add to Calendar: always sits next to whichever primary CTA is
-    // showing (or stands alone if neither applies), for any non-past
-    // event. Reuses the existing .btn.alt "inverted" style (white/
-    // outline instead of solid brand color) so it reads as the
-    // secondary action next to More Info / Register -- this used to
-    // only appear as a fallback when notifications were disabled
-    // sitewide; now it's its own always-present button instead. Icon
-    // only (a common calendar-plus glyph, same stroke style as the
-    // bookmark icon above) with title/aria-label standing in for the
-    // missing visible text.
+    // Add to Calendar: bottom-right corner of the card, below
+    // everything else (including the inline signup section when
+    // present) -- a bare icon with no button chrome at all, same
+    // minimal style as the close/share icons up top (no border/fill,
+    // just a subtle circular hover highlight). Icon is a common
+    // calendar-plus glyph, same stroke style as the bookmark icon;
+    // title/aria-label carry the "Add to Calendar" label since there's
+    // no visible text.
     var addToCalBtn = !isPastEvent(ev)
-      ? '<a class="btn alt vb-addcal-btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener"' +
+      ? '<div class="vb-addcal-corner"><a class="vb-addcal-btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener"' +
         ' title="Add to Calendar" aria-label="Add to Calendar">' +
         '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/>' +
         '<line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>' +
         '<line x1="3" y1="10" x2="21" y2="10"/>' +
-        '<line x1="12" y1="13" x2="12" y2="19"/><line x1="9" y1="16" x2="15" y2="16"/></svg></a>'
+        '<line x1="12" y1="13" x2="12" y2="19"/><line x1="9" y1="16" x2="15" y2="16"/></svg></a></div>'
       : "";
     var html = '<button class="close" id="vb-close">&times;</button>' +
                '<button class="vb-share" data-share-uid="' + ev.uid.replace(/"/g, "&quot;") + '" title="Share this event" aria-label="Share this event">' +
@@ -2045,7 +2055,7 @@
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
                "</div></div>" +
                (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 5000)) + "</div>" : "") +
-               remindBtn + plainInfoLink + addToCalBtn +
+               remindBtn + plainInfoLink +
                // Inline signup section: hidden until "More Info /
                // Register" is pressed, then the popup expands to reveal it
                (mergedFlow
@@ -2064,7 +2074,8 @@
                    ' the event&rsquo;s registration page in a new tab &mdash; check that it loaded, since' +
                    ' email reminders alone don&rsquo;t reserve your spot.</p>' +
                    "</div>"
-                 : "");
+                 : "") +
+               addToCalBtn;
     var modal = $("vb-modal");
     modal.innerHTML = html;
     modal.style.borderLeftColor = clubColors[ev.club] || DEFAULT_COLOR;
