@@ -1997,11 +1997,19 @@
       remindBtn = '<button class="btn vb-remind-btn' + (on ? " on" : "") + '" data-bm-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
         '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>' +
         (on ? "Connected" : "More Info / Register") + "</button>";
-    } else if (!isPastEvent(ev)) {
-      remindBtn = '<a class="btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Google Calendar</a>';
     }
     var plainInfoLink = !mergedFlow && ev.url
       ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>'
+      : "";
+    // Add to Calendar: always sits next to whichever primary CTA is
+    // showing (or stands alone if neither applies), for any non-past
+    // event. Reuses the existing .btn.alt "inverted" style (white/
+    // outline instead of solid brand color) so it reads as the
+    // secondary action next to More Info / Register -- this used to
+    // only appear as a fallback when notifications were disabled
+    // sitewide; now it's its own always-present button instead.
+    var addToCalBtn = !isPastEvent(ev)
+      ? '<a class="btn alt" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Calendar</a>'
       : "";
     var html = '<button class="close" id="vb-close">&times;</button>' +
                '<button class="vb-share" data-share-uid="' + ev.uid.replace(/"/g, "&quot;") + '" title="Share this event" aria-label="Share this event">' +
@@ -2019,7 +2027,7 @@
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
                "</div></div>" +
                (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 5000)) + "</div>" : "") +
-               remindBtn + plainInfoLink +
+               remindBtn + plainInfoLink + addToCalBtn +
                // Inline signup section: hidden until "More Info /
                // Register" is pressed, then the popup expands to reveal it
                (mergedFlow
