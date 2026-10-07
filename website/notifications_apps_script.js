@@ -5,6 +5,9 @@
  *  - doPost: receives "Sign up for Notifications" submissions from the
  *    website widget, appends them to a Google Sheet, and immediately
  *    emails a signup confirmation (same look as the reminder emails).
+ *    Also receives general newsletter signups (no specific event --
+ *    see newsletter_signup_button.html) -- those skip the per-event
+ *    sheet/confirmation entirely and just join the Mailing List below.
  *  - sendReminders: run hourly by a trigger; emails each subscriber
  *    ~5 days and ~24 hours before their event starts.
  *
@@ -20,7 +23,9 @@
  *     Click Deploy, authorize it, and COPY THE WEB APP URL.
  *  4. Paste that URL into the widget's NOTIFY_ENDPOINT (in the
  *     Squarespace Code block) and republish the page. Bookmark icons
- *     appear once the URL is set.
+ *     appear once the URL is set. Paste the SAME URL into
+ *     newsletter_signup_button.html's NOTIFY_ENDPOINT too -- both
+ *     widgets post to this one script/sheet.
  *  5. Back in Apps Script: left sidebar clock icon (Triggers) ->
  *     Add Trigger -> function sendReminders -> time-driven -> hour timer
  *     -> every hour. Save.
@@ -42,7 +47,22 @@ var REMINDER_WINDOWS = [
 
 function doPost(e) {
   var data = JSON.parse(e.postData.contents);
-  if (!data.email || !data.uid || !data.start) {
+  if (!data.email) {
+    return ContentService.createTextOutput("missing fields");
+  }
+
+  // General newsletter signup (website/newsletter_signup_button.html) --
+  // not tied to any one event, so it skips the per-event sheet/dedup/
+  // confirmation below entirely: just join the shared Mailing List and
+  // send a short welcome email instead of the "you'll be reminded about
+  // X" one.
+  if (data.general) {
+    addToMailingList(data.email);
+    sendNewsletterWelcome(data.email);
+    return ContentService.createTextOutput("ok");
+  }
+
+  if (!data.uid || !data.start) {
     return ContentService.createTextOutput("missing fields");
   }
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
@@ -123,7 +143,11 @@ function sendSignupConfirmation(data) {
 
 /**
  * Master mailing list: a second sheet ("Mailing List") holding each
- * distinct email once, with the date it first signed up. Created
+ * distinct email once, with the date it first signed up. Fed by BOTH
+ * per-event signups (doPost above) and general newsletter signups
+ * (website/newsletter_signup_button.html), so this is always the single
+ * complete, already-deduplicated list to read for any bulk send (e.g. a
+ * weekly digest) -- no need to merge separate sheets. Created
  * automatically on first use; safe to sort or add columns to.
  */
 function addToMailingList(email) {
@@ -139,6 +163,38 @@ function addToMailingList(email) {
     if (String(existing[i][0]).trim().toLowerCase() === normalized) return;
   }
   list.appendRow([normalized, new Date()]);
+}
+
+/**
+ * Sent immediately on a general newsletter signup (not tied to any one
+ * event) -- deliberately short, no event card, just confirms they're on
+ * the list and sets expectations for what they'll actually get.
+ */
+function sendNewsletterWelcome(email) {
+  var subject = "You're on the list!";
+  var body =
+    "Hi!\n\nYou're subscribed to the Greater Orlando community volleyball" +
+    " newsletter -- we'll send you a roundup of upcoming local events" +
+    " from time to time.\n\nSee you on the court,\nYour Greater Orlando Community Member" +
+    "\n\n-- \nYou received this because you signed up on our community calendar site.";
+  var html =
+    '<div style="font-family:Arial,Helvetica,sans-serif; color:#222; font-size:14px;' +
+    ' max-width:520px; margin:0 auto;">' +
+      "<p>Hi!</p>" +
+      "<p>You're subscribed to the Greater Orlando community volleyball newsletter --" +
+      " we'll send you a roundup of upcoming local events from time to time.</p>" +
+      '<table cellpadding="0" cellspacing="0" style="margin-top:18px;"><tr>' +
+        '<td valign="middle" style="padding-right:10px;">' +
+          '<img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/logos/govc_logo_icon.png"' +
+          ' width="44" alt="GOVC" style="display:block; max-width:44px; height:auto;"></td>' +
+        '<td valign="middle" style="font-family:Arial,Helvetica,sans-serif; font-size:14px;' +
+        ' color:#222; line-height:1.5;">See you on the court,<br>' +
+        "Your Greater Orlando Community Member</td>" +
+      "</tr></table>" +
+      '<p style="color:#999; font-size:11px; margin-top:22px;">You received this because' +
+      " you signed up on our community calendar site.</p>" +
+    "</div>";
+  MailApp.sendEmail(email, subject, body, { htmlBody: html });
 }
 
 /**
