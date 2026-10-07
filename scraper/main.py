@@ -16,6 +16,7 @@ from .cache import (
     save_archive,
     save_cache,
 )
+from .geocode import geocode_locations
 from .ical import write_ics
 from .jsonexport import write_events_json
 from .tagging import normalize_skill, tag_event
@@ -132,8 +133,11 @@ def run(
         save_cache(cache)
         save_archive(archive)
 
+    unique_locations = {e.location for e in all_events if e.location}
+    geocoded = geocode_locations(unique_locations)
+
     json_path = os.path.join(output_dir, "events.json")
-    write_events_json(all_events, json_path)
+    write_events_json(all_events, json_path, geocoded=geocoded)
     print(f"Wrote {len(all_events)} combined events to {json_path}")
 
     print()
