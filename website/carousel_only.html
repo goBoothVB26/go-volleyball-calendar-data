@@ -254,6 +254,30 @@
   .vbcal-btn.active { background: var(--vb-brand); color: #fff; }
   .vbcal-btn.nav { padding: 8px 14px; font-weight: bold; }
 
+  /* View switcher: one button (Month/Map/List, whichever is active)
+     that opens a small dropdown with the other options -- same pill
+     look as every other .vbcal-btn, just with a chevron that flips. */
+  .vb-view-dd { position: relative; display: inline-block; margin-left: 6px; }
+  .vb-view-dd-btn {
+    margin-left: 0; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .vb-view-dd-chev { transition: transform 0.15s; flex: 0 0 auto; }
+  .vb-view-dd.open .vb-view-dd-chev { transform: rotate(180deg); }
+  .vb-view-dd-menu {
+    display: none; position: absolute; top: calc(100% + 6px); right: 0;
+    min-width: 120px; background: #fff; border: 1px solid var(--vb-brand);
+    border-radius: var(--vb-radius); box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    overflow: hidden; z-index: 20;
+  }
+  .vb-view-dd.open .vb-view-dd-menu { display: block; }
+  .vb-view-dd-item {
+    display: block; width: 100%; text-align: left; padding: 9px 16px;
+    border: 0; background: none; cursor: pointer; font-size: 13.5px;
+    font-weight: 600; color: #444; letter-spacing: 0.03em;
+  }
+  .vb-view-dd-item:hover { background: var(--vb-brand-soft); }
+  .vb-view-dd-item.active { color: var(--vb-brand); }
+
   /* Month grid */
   .vbcal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
   .vbcal-dow { text-align: center; font-size: 12px; font-weight: bold; padding: 4px 0; color: #555; }
@@ -927,6 +951,13 @@
   .vb-dark .vbcal-btn { background: transparent; color: var(--vb-accent); border-color: var(--vb-accent); }
   .vb-dark .vbcal-btn:hover { background: rgba(255, 196, 37, 0.12); }
   .vb-dark .vbcal-btn.active { background: var(--vb-accent); color: #1a1a1a; }
+  .vb-dark .vb-view-dd-menu {
+    background: var(--vb-dark-surface); border-color: var(--vb-dark-brand);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  }
+  .vb-dark .vb-view-dd-item { color: var(--vb-dark-text); }
+  .vb-dark .vb-view-dd-item:hover { background: rgba(255, 196, 37, 0.12); }
+  .vb-dark .vb-view-dd-item.active { color: var(--vb-dark-brand); }
   .vb-dark .vbcal-dow { color: #aab2bd; }
   .vb-dark .vbcal-day {
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
@@ -1086,9 +1117,19 @@
     </div>
     <h3 id="vb-title"></h3>
     <div>
-      <button class="vbcal-btn" id="vb-view-month">Month</button>
-      <button class="vbcal-btn" id="vb-view-list">List</button>
-      <button class="vbcal-btn" id="vb-view-map">Map</button>
+      <div class="vb-view-dd" id="vb-view-dd">
+        <button class="vbcal-btn vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span id="vb-view-dd-label">Month</span>
+          <svg class="vb-view-dd-chev" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="vb-view-dd-menu" id="vb-view-dd-menu">
+          <button class="vb-view-dd-item" type="button" data-view="month">Month</button>
+          <button class="vb-view-dd-item" type="button" data-view="map">Map</button>
+          <button class="vb-view-dd-item" type="button" data-view="list">List</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1303,6 +1344,7 @@
   var allEvents = [], clubColors = {}, current = new Date();
   current = new Date(current.getFullYear(), current.getMonth(), 1);
   var view = "month";  // month view is the default on every device
+  var VIEW_LABELS = { month: "Month", map: "Map", list: "List" };
   var weekFocus = null;      // week-zoom anchor (Sunday), entered from busy days
   var weekTappedKey = null;  // the tapped day, centered on entry (mobile)
 
@@ -1684,9 +1726,10 @@
     var titleText = MONTHS[current.getMonth()].slice(0, 3) + " " + String(current.getFullYear()).slice(-2);
     $("vb-title").textContent = titleText;
     $("vb-title2").textContent = titleText;  // desktop: shown beside "Community Calendar"
-    $("vb-view-month").className = "vbcal-btn" + (view === "month" ? " active" : "");
-    $("vb-view-list").className = "vbcal-btn" + (view === "list" ? " active" : "");
-    $("vb-view-map").className = "vbcal-btn" + (view === "map" ? " active" : "");
+    $("vb-view-dd-label").textContent = VIEW_LABELS[view];
+    Array.prototype.forEach.call($("vb-view-dd-menu").querySelectorAll(".vb-view-dd-item"), function (item) {
+      item.className = "vb-view-dd-item" + (item.getAttribute("data-view") === view ? " active" : "");
+    });
     $("vb-grid").style.display = view === "month" ? "" : "none";
     $("vb-list").style.display = view === "list" ? "block" : "none";
     $("vb-map").style.display = view === "map" ? "block" : "none";
@@ -1695,7 +1738,6 @@
     $("vb-prev").style.display = (zoomed || view === "map") ? "none" : "";
     $("vb-next").style.display = (zoomed || view === "map") ? "none" : "";
     $("vb-week-back").style.display = zoomed ? "" : "none";
-    $("vb-view-month").style.display = zoomed ? "none" : "";
     if (view === "month") {
       if (weekFocus) renderWeek(evs); else renderGrid(evs);
     } else if (view === "list") renderList(evs);
@@ -2477,7 +2519,7 @@
   // web pages, so iPhone users get the visual press-squish (CSS :active
   // rules) instead. One delegated touch listener covers every tappable
   // element in the widget.
-  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vbcal-chip, " +
+  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vb-view-dd-item, .vbcal-chip, " +
     ".vbcal-item, .vb-bm, .vbcar-card, .vbcar-chev, .vb-week-chev, " +
     ".vbcal-day.busy, .vbcal-modal .btn, .vbcal-modal .close, .vb-theme-btn, .vb-share, .vb-share-car";
   document.addEventListener("touchstart", function (e) {
@@ -2613,9 +2655,26 @@
       }
     }, { passive: true });
   });
-  $("vb-view-month").onclick = function () { view = "month"; weekFocus = null; render(); };
-  $("vb-view-list").onclick = function () { view = "list"; weekFocus = null; render(); };
-  $("vb-view-map").onclick = function () { view = "map"; weekFocus = null; render(); };
+  var viewDD = $("vb-view-dd");
+  $("vb-view-dd-btn").onclick = function (e) {
+    e.stopPropagation();
+    var open = viewDD.classList.toggle("open");
+    $("vb-view-dd-btn").setAttribute("aria-expanded", open ? "true" : "false");
+  };
+  Array.prototype.forEach.call($("vb-view-dd-menu").querySelectorAll(".vb-view-dd-item"), function (item) {
+    item.onclick = function (e) {
+      e.stopPropagation();
+      view = item.getAttribute("data-view");
+      weekFocus = null;
+      viewDD.classList.remove("open");
+      $("vb-view-dd-btn").setAttribute("aria-expanded", "false");
+      render();
+    };
+  });
+  document.addEventListener("click", function () {
+    viewDD.classList.remove("open");
+    $("vb-view-dd-btn").setAttribute("aria-expanded", "false");
+  });
   $("vb-toggle-filters").onclick = function () {
     var f = $("vb-filters"), open = f.className.indexOf("open") >= 0;
     f.className = open ? "vbcal-filters" : "vbcal-filters open";
