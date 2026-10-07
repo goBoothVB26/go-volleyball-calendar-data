@@ -499,6 +499,28 @@
   }
   .vb-remind-btn.on svg { fill: currentColor; }
 
+  /* Add to Calendar: sits in its own row at the very bottom of the
+     card, right-aligned, below everything else (incl. the inline
+     signup section). Bare icon, no border/fill -- same minimal style
+     as the close/share icons up top, just a subtle circular hover
+     highlight, no button chrome. */
+  .vb-addcal-corner { text-align: right; margin-top: 14px; }
+  .vb-addcal-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border: 0; background: none; cursor: pointer;
+    color: #888; border-radius: 50%; text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .vb-addcal-btn:hover { color: var(--vb-brand); background: rgba(0,0,0,0.08); }
+  .vb-addcal-btn:active { background: rgba(0,0,0,0.16); }
+  .vbcal-overlay.vb-dark .vb-addcal-btn:hover { color: var(--vb-dark-brand); background: rgba(255,255,255,0.10); }
+  .vbcal-overlay.vb-dark .vb-addcal-btn:active { background: rgba(255,255,255,0.18); }
+  .vb-addcal-btn svg {
+    width: 20px; height: 20px; flex: 0 0 20px;
+    fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+
   /* GOVC upcoming-events carousel */
   .vbcar { margin-bottom: 22px; }
   .vbcar-head { position: relative; text-align: center; margin-bottom: 8px; }
@@ -1997,11 +2019,25 @@
       remindBtn = '<button class="btn vb-remind-btn' + (on ? " on" : "") + '" data-bm-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
         '<svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></svg>' +
         (on ? "Connected" : "More Info / Register") + "</button>";
-    } else if (!isPastEvent(ev)) {
-      remindBtn = '<a class="btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener">Add to Google Calendar</a>';
     }
     var plainInfoLink = !mergedFlow && ev.url
       ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>'
+      : "";
+    // Add to Calendar: bottom-right corner of the card, below
+    // everything else (including the inline signup section when
+    // present) -- a bare icon with no button chrome at all, same
+    // minimal style as the close/share icons up top (no border/fill,
+    // just a subtle circular hover highlight). Icon is a common
+    // calendar-plus glyph, same stroke style as the bookmark icon;
+    // title/aria-label carry the "Add to Calendar" label since there's
+    // no visible text.
+    var addToCalBtn = !isPastEvent(ev)
+      ? '<div class="vb-addcal-corner"><a class="vb-addcal-btn" href="' + gcalUrl(ev) + '" target="_blank" rel="noopener"' +
+        ' title="Add to Calendar" aria-label="Add to Calendar">' +
+        '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/>' +
+        '<line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/>' +
+        '<line x1="3" y1="10" x2="21" y2="10"/>' +
+        '<line x1="12" y1="13" x2="12" y2="19"/><line x1="9" y1="16" x2="15" y2="16"/></svg></a></div>'
       : "";
     var html = '<button class="close" id="vb-close">&times;</button>' +
                '<button class="vb-share" data-share-uid="' + ev.uid.replace(/"/g, "&quot;") + '" title="Share this event" aria-label="Share this event">' +
@@ -2038,7 +2074,8 @@
                    ' the event&rsquo;s registration page in a new tab &mdash; check that it loaded, since' +
                    ' email reminders alone don&rsquo;t reserve your spot.</p>' +
                    "</div>"
-                 : "");
+                 : "") +
+               addToCalBtn;
     var modal = $("vb-modal");
     modal.innerHTML = html;
     modal.style.borderLeftColor = clubColors[ev.club] || DEFAULT_COLOR;
