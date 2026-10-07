@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T14:54:19",
+  "generated": "2026-10-07T23:59:14",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -7938,22 +7938,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Jax_Women\u2019s_Grass_3s-2026-10-17T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Jax Women\u2019s Grass 3s",
-      "start": "2026-10-17T00:00:00",
-      "end": "2026-10-18T00:00:00",
-      "all_day": true,
-      "location": "Jax Scene courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Volleyball_Life-Grass_Dragon_RevCo_Halloween-2026-10-17T00:00:00",
       "club": "Volleyball Life",
       "title": "Grass Dragon RevCo Halloween",
@@ -8334,6 +8318,22 @@
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-2026_AVCA_East_Qualifier_for_Beach_National_Championship_(Women's_Collegiate_Pairs)-2026-10-24T00:00:00",
+      "club": "Volleyball Life",
+      "title": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs)",
+      "start": "2026-10-24T00:00:00",
+      "end": "2026-10-26T00:00:00",
+      "all_day": true,
+      "location": "Hickory Point",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Women's",
       "price": null,
       "image": null
     },

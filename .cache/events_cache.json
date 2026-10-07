@@ -8448,25 +8448,6 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Jax Women\u2019s Grass 3s",
-      "start": "2026-10-17T00:00:00",
-      "end": "2026-10-18T00:00:00",
-      "location": "Jax Scene courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "category": null,
-      "all_day": true,
-      "stable_id": null,
-      "recurring_occurrence": false,
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Women's",
-      "price": null,
-      "image": null,
-      "uid": "Volleyball_Life-Jax_Women\u2019s_Grass_3s-2026-10-17T00:00:00"
-    },
-    {
-      "club": "Volleyball Life",
       "title": "Grass Dragon RevCo Halloween",
       "start": "2026-10-17T00:00:00",
       "end": "2026-10-18T00:00:00",
@@ -8863,6 +8844,25 @@
       "price": null,
       "image": null,
       "uid": "Volleyball_Life-BIG_CASH_GRASS_OPEN-2026-10-17T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs)",
+      "start": "2026-10-24T00:00:00",
+      "end": "2026-10-26T00:00:00",
+      "location": "Hickory Point",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "recurring_occurrence": false,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Women's",
+      "price": null,
+      "image": null,
+      "uid": "Volleyball_Life-2026_AVCA_East_Qualifier_for_Beach_National_Championship_(Women's_Collegiate_Pairs)-2026-10-24T00:00:00"
     }
   ],
   "ocoee_coed_league": [
