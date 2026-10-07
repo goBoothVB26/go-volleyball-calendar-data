@@ -1,0 +1,180 @@
+<!-- "Sign Up for Our Newsletter" button + popup -- paste into its own
+     Squarespace CODE block, wherever you want it (e.g. the homepage).
+
+     Standalone: unlike the per-event "More Info / Register" signup
+     built into the calendar widget, this isn't tied to any specific
+     event -- it's a general newsletter opt-in. It posts to the SAME
+     NOTIFY_ENDPOINT Apps Script as the calendar (see
+     notifications_apps_script.js), flagged `general: true` so the
+     script skips the per-event sheet row/confirmation and just adds
+     the email straight to the shared "Mailing List" sheet -- the same
+     list per-event signups already feed, so there's one single,
+     already-deduplicated list to read for a future digest send, no
+     merging separate sheets required.
+
+     TWO things to edit:
+     1. NOTIFY_ENDPOINT below -- paste the exact same Apps Script web
+        app URL used in squarespace_calendar.html's NOTIFY_ENDPOINT.
+     2. Button copy/placement -- edit the text inside .vb-news-btn if
+        you want something other than "Sign Up for Our Newsletter".
+
+     Dark mode: follows body.vb-dark-page like every other standalone
+     element on the site -- that class only gets set if
+     theme_sync_snippet.html (or the calendar widget itself) is also
+     present somewhere on this same page; paste it alongside this if
+     the page doesn't already have it, or the popup just stays light. -->
+
+<style>
+  .vb-news-btn-wrap { text-align: center; }
+  .vb-news-btn {
+    display: inline-block; padding: 10px 26px; cursor: pointer;
+    border: 1px solid #0057b8; background: #0057b8; color: #fff;
+    border-radius: 12px; font-size: 15px; font-weight: 600;
+    letter-spacing: 0.03em; text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+  .vb-news-btn:hover {
+    background: #00458f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22); transform: translateY(-1px);
+  }
+  body.vb-dark-page .vb-news-btn {
+    background: #FFC425; border-color: #FFC425; color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  body.vb-dark-page .vb-news-btn:hover { background: #e6ad0f; }
+
+  /* Overlay + modal -- same glass-blur look as the calendar's event
+     popup (squarespace_calendar.html's .vbcal-overlay/.vbcal-modal),
+     reimplemented standalone since Squarespace Code blocks don't share
+     scope with each other. */
+  .vb-news-overlay {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    align-items: center; justify-content: center; padding: 16px;
+    background: rgba(20,23,28,0.35);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    backdrop-filter: blur(14px) saturate(160%);
+  }
+  .vb-news-modal {
+    position: relative; width: 100%; max-width: 420px;
+    background: #fff; border-radius: 16px; padding: 28px 26px 24px;
+    box-shadow: 0 18px 50px 10px rgba(0,0,0,0.37);
+    font-family: inherit;
+  }
+  body.vb-dark-page .vb-news-modal { background: #1b2027; color: #e6e6e6; }
+
+  .vb-news-close {
+    position: absolute; top: 10px; right: 10px;
+    width: 32px; height: 32px; border: none; background: none;
+    cursor: pointer; border-radius: 50%; font-size: 18px; color: #888;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .vb-news-close:hover { background: rgba(0,0,0,0.08); }
+  body.vb-dark-page .vb-news-close { color: #aab2bd; }
+  body.vb-dark-page .vb-news-close:hover { background: rgba(255,255,255,0.10); }
+
+  .vb-news-modal h4 { margin: 0 0 8px; font-size: 19px; color: #222; padding-right: 20px; }
+  body.vb-dark-page .vb-news-modal h4 { color: #f0f2f5; }
+  .vb-news-modal p { margin: 0 0 16px; color: #555; font-size: 13.5px; line-height: 1.5; }
+  body.vb-dark-page .vb-news-modal p { color: #aab2bd; }
+
+  .vb-news-modal input[type="email"] {
+    width: 100%; padding: 10px 12px; border: 1px solid #d5d5d5; border-radius: 10px;
+    font-size: 14px; box-sizing: border-box; margin-bottom: 12px; font-family: inherit;
+  }
+  body.vb-dark-page .vb-news-modal input[type="email"] {
+    background: #262c35; border-color: #343c48; color: #e6e6e6;
+  }
+
+  .vb-news-modal .actions { text-align: right; }
+  .vb-news-submit {
+    padding: 9px 22px; cursor: pointer; border: none;
+    background: #0057b8; color: #fff; border-radius: 10px;
+    font-size: 14px; font-weight: 600; font-family: inherit;
+  }
+  .vb-news-submit:hover { background: #00458f; }
+  body.vb-dark-page .vb-news-submit { background: #FFC425; color: #1a1a1a; }
+  body.vb-dark-page .vb-news-submit:hover { background: #e6ad0f; }
+
+  .vb-news-msg { font-size: 13.5px; margin-top: 10px; }
+  .vb-news-msg.ok { color: #2e7d32; }
+  .vb-news-msg.err { color: #c62828; }
+</style>
+
+<div class="vb-news-btn-wrap">
+  <button class="vb-news-btn" id="vb-news-open" type="button">Sign Up for Our Newsletter</button>
+</div>
+
+<div class="vb-news-overlay" id="vb-news-overlay">
+  <div class="vb-news-modal">
+    <button class="vb-news-close" id="vb-news-close" aria-label="Close" type="button">&times;</button>
+    <h4>Stay in the loop</h4>
+    <p>Get a roundup of upcoming Orlando-area volleyball events sent to your inbox from time to time.</p>
+    <input type="email" id="vb-news-email" placeholder="you@email.com" autocomplete="email">
+    <div class="actions">
+      <button class="vb-news-submit" id="vb-news-submit" type="button">Sign Up</button>
+    </div>
+    <div class="vb-news-msg" id="vb-news-msg"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // EDIT ME: same Apps Script web app URL as squarespace_calendar.html's
+  // NOTIFY_ENDPOINT.
+  var NOTIFY_ENDPOINT = "https://script.google.com/macros/s/AKfycbyJVe_q9kPKQqVkkcM5Qdy61RqRcYXrzC7lq6MwtZDJOtZnb5aWkRfUs9MHFm9oOTGiSw/exec";
+
+  var overlay = document.getElementById("vb-news-overlay");
+  var emailInput = document.getElementById("vb-news-email");
+  var msg = document.getElementById("vb-news-msg");
+
+  // Moved to <body> at runtime, same reason as the calendar's own
+  // modal: no page section's own stacking context or overflow can
+  // clip a fixed-position overlay that's still nested inside it.
+  document.body.appendChild(overlay);
+
+  function openModal() {
+    msg.textContent = "";
+    msg.className = "vb-news-msg";
+    // Reuses the calendar widget's own remembered email, if this
+    // visitor has ever used the per-event signup -- same localStorage
+    // key, one less field to retype.
+    try { emailInput.value = localStorage.getItem("vbcalEmail") || ""; } catch (e) {}
+    overlay.style.display = "flex";
+    emailInput.focus();
+  }
+  function closeModal() {
+    overlay.style.display = "none";
+  }
+
+  document.getElementById("vb-news-open").onclick = openModal;
+  document.getElementById("vb-news-close").onclick = closeModal;
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && overlay.style.display === "flex") closeModal();
+  });
+
+  document.getElementById("vb-news-submit").onclick = function () {
+    var email = emailInput.value.trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      msg.textContent = "Please enter a valid email address.";
+      msg.className = "vb-news-msg err";
+      return;
+    }
+
+    fetch(NOTIFY_ENDPOINT, {
+      method: "POST",
+      mode: "no-cors",  // Apps Script web apps don't send CORS headers
+      headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify({ email: email, general: true }),
+    }).catch(function () {});  // fire-and-forget
+
+    try { localStorage.setItem("vbcalEmail", email); } catch (e) {}
+
+    msg.textContent = "You're on the list! Check your inbox for a confirmation.";
+    msg.className = "vb-news-msg ok";
+  };
+})();
+</script>
