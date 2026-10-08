@@ -54,10 +54,14 @@ jobs:
             exit 0
           fi
           git commit -m "Automated calendar update ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-          # Retry the push a few times in case a manual push races us
+          # Retry the push a few times in case a manual push races us.
+          # Every file this commit touches is regenerated wholesale each
+          # run, so if the other push changed one of them too (e.g. an
+          # earlier run's events.json), this run's fresh copy wins
+          # ("theirs" = the commit being replayed, during a rebase).
           for i in 1 2 3; do
             git push && exit 0
-            git pull --rebase
+            git pull --rebase -X theirs
           done
           git push
 
