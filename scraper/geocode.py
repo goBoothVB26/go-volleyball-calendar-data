@@ -13,7 +13,9 @@ one resolves:
    know). Add an entry here whenever a map pin lands in the wrong spot.
 2. Locations with a street address (NAGVA's "Venue | 123 Main St, City,
    ST ..." or USAV's "Venue, Hall A, 9400 Universal Blvd., Orlando, FL")
-   are searched by that address, then by just its city/state.
+   are searched by that address, then by just its city/state. These and
+   the overrides are only nudged toward Florida, not Orlando: an Orlando
+   nudge turned "Newberry, FL" and "Wellington, FL" into local streets.
 3. Bare venue names ("Cady Way Park") are searched inside the Orlando
    metro only, then anywhere in Florida -- never worldwide, which is how
    "Westside Community Center" used to land in Miami and "The Net" in
@@ -98,6 +100,8 @@ LOCATION_OVERRIDES = {
     "The Pit: Frost Park, Dania Beach, Fl": ["Frost Park, Dania Beach, FL", "Dania Beach, FL"],
     "South of Jacksonville Beach Fishing Pier": ["Jacksonville Beach Pier, Jacksonville Beach, FL"],
     "City Courts at Pinellas Park": ["Pinellas Park, FL"],
+    # A city name, which the Orlando-area name search matched to a street
+    "Pompano Beach": ["Pompano Beach, FL"],
     # Unknown venues the name search sent out of state; no pin until
     # someone pins down the real address.
     "Elevate": [],
@@ -114,7 +118,7 @@ def _queries(location: str) -> list[tuple[str, str, bool]]:
     """(query, viewbox, bounded) searches to try for a location, in order."""
     normalized = " ".join(location.split())  # scraped text has stray double/nbsp spaces
     if normalized in LOCATION_OVERRIDES:
-        return [(q, ORLANDO_VIEWBOX, False) for q in LOCATION_OVERRIDES[normalized]]
+        return [(q, FLORIDA_VIEWBOX, False) for q in LOCATION_OVERRIDES[normalized]]
     location = normalized
 
     # NAGVA joins venue/address/next-heading with " | "; USAV joins venue,
@@ -128,23 +132,26 @@ def _queries(location: str) -> list[tuple[str, str, bool]]:
             if _STREET_ADDRESS.match(part):
                 address = ", ".join(parts[i:])
                 city = ", ".join(parts[i + 1:])
-                queries = [(address, ORLANDO_VIEWBOX, False)]
+                queries = [(address, FLORIDA_VIEWBOX, False)]
                 if city:
-                    queries.append((city, ORLANDO_VIEWBOX, False))
+                    queries.append((city, FLORIDA_VIEWBOX, False))
                 return queries
 
-    if not segments:
+    if not segments or location.endswith("| Registration"):
+        # Nothing, or a NAGVA venue name with no address (its scrape
+        # leaked the next "Registration" heading): an out-of-state gym we
+        # can't place, and a Florida search would match the wrong one.
         return []
     name = segments[0]
     if "," in name:
         # Already says where ("Wesley Chapel, Fl", "The Big House, Tavares, FL")
-        return [(name, ORLANDO_VIEWBOX, False)]
+        return [(name, FLORIDA_VIEWBOX, False)]
     # Bare venue name: Orlando metro first, then the rest of Florida.
     return [(name, ORLANDO_VIEWBOX, True), (name, FLORIDA_VIEWBOX, True)]
 
 
 def _cache_key(query: str, viewbox: str, bounded: bool) -> str:
-    return f"{query} @ {viewbox}" if bounded else query
+    return f"{query} @ {viewbox}" if bounded else f"{query} ~ {viewbox}"
 
 
 def load_cache() -> dict:
