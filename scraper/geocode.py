@@ -61,7 +61,8 @@ FLORIDA_VIEWBOX = "-87.7,31.1,-79.8,24.4"
 # An empty list means "never map this one" -- better no pin than a wrong
 # one. Addresses come from each venue's own site or the city's park
 # directory.
-_WPVC = ["2603 Ace Rd, Orlando, FL 32792", "Ace Road, Orlando, FL"]
+_WPVC = ["2603 Ace Rd, Orlando, FL 32792"]
+_GAME_POINT = ["6700 Kingspointe Pkwy, Orlando, FL 32819"]
 LOCATION_OVERRIDES = {
     # City of Sanford: OSM's only "Westside Community Center" is in Miami.
     "Westside Community Center": ["919 S Persimmon Ave, Sanford, FL 32771", "Sanford, FL"],
@@ -70,16 +71,20 @@ LOCATION_OVERRIDES = {
     "Festival Park Volleyball Courts": ["2911 E Robinson St, Orlando, FL 32803"],
     "Englewood Neighborhood Center": ["6123 La Costa Dr, Orlando, FL 32807"],
     # Greater Orlando Volleyball Club
-    "College Park Neighborhood Center": [
-        "College Park Neighborhood Center, Orlando, FL",
-        "2393 Elizabeth Ave, Orlando, FL 32804",
-    ],
+    "College Park Neighborhood Center": ["2393 Elizabeth Ave, Orlando, FL 32804"],
     # Winter Park Volleyball Club, under every name the sources use
     "Winter Park Volleyball Club": _WPVC,
     "Winter Park Volleyball Club Summer Adult Open Gym": _WPVC,
     "Winter Park Volleyball Center": _WPVC,
     "The Annex @ Winter Park Volleyball Club": _WPVC,
     "Winter Park Volleyball Club, 2603 Ace Rd. Orlando, FL 32792": _WPVC,
+    # Volley Vortex
+    "The Well Activity Center": ["110 Athletes Row, Apopka, FL 32703"],
+    # Game Point Events Center. Game Point's own site lists most of its
+    # tournaments only as "Orlando, Fl" (USAV's "Orlando, FL" is a
+    # different, citywide listing and stays a city pin).
+    "Orlando, Fl": _GAME_POINT,
+    "Game Point VBC": _GAME_POINT,
     # Trotters Park (Orlando); "Trotter Park" alone matched one in Texas.
     "Trotters Park": ["2701 Lee Rd, Orlando, FL 32789"],
     "Trotter Park": ["2701 Lee Rd, Orlando, FL 32789"],
@@ -148,6 +153,17 @@ def _queries(location: str) -> list[tuple[str, str, bool]]:
         return [(name, FLORIDA_VIEWBOX, False)]
     # Bare venue name: Orlando metro first, then the rest of Florida.
     return [(name, ORLANDO_VIEWBOX, True), (name, FLORIDA_VIEWBOX, True)]
+
+
+def street_address(location: str) -> str | None:
+    """The street address this location is geocoded from (an override or
+    one pulled out of the scraped text), or None for a bare venue name.
+    Exported with each event so the card's Google Maps link can use it
+    when Nominatim couldn't place a pin."""
+    queries = _queries(location)
+    if not queries or queries[0][2]:  # nothing, or a bounded bare-name search
+        return None
+    return queries[0][0]
 
 
 def _cache_key(query: str, viewbox: str, bounded: bool) -> str:

@@ -10,6 +10,7 @@ import json
 from datetime import datetime
 from typing import Any
 
+from .geocode import street_address
 from .models import Event
 
 DATETIME_FMT = "%Y-%m-%dT%H:%M:%S"
@@ -25,6 +26,7 @@ def _event_to_json(event: Event, geocoded: dict) -> dict[str, Any]:
         "end": event.end.strftime(DATETIME_FMT) if event.end else None,
         "all_day": event.all_day,
         "location": event.location,
+        "address": street_address(event.location) if event.location else None,
         "lat": coords["lat"] if coords else None,
         "lng": coords["lng"] if coords else None,
         "description": event.description,
