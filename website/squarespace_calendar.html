@@ -1992,11 +1992,11 @@
   // The card's location link opens Google Maps on the exact same
   // coordinates as the event's Map view pin, so the two can never
   // disagree. Events without a pin fall back to Google's own search of
-  // the venue text.
+  // the venue's street address (when the scraper knows one) or text.
   function mapsUrl(ev) {
     var query = (typeof ev.lat === "number" && typeof ev.lng === "number")
       ? ev.lat + "," + ev.lng
-      : ev.location;
+      : (ev.address || ev.location);
     return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
   }
 

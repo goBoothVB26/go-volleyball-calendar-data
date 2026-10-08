@@ -379,7 +379,7 @@ function buildDigestHtml(events, tz, unsubUrl) {
       // squarespace_calendar.html); venue-text search only when unpinned.
       var mapsQuery = (typeof ev.lat === "number" && typeof ev.lng === "number")
         ? ev.lat + "," + ev.lng
-        : ev.location;
+        : (ev.address || ev.location);
       var mapsLink = ev.location
         ? '<a href="https://www.google.com/maps/search/?api=1&query=' +
           encodeURIComponent(mapsQuery) + '" style="color:#0057b8; text-decoration:underline;">' +
