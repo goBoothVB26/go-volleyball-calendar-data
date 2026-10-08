@@ -7,6 +7,10 @@
   },
   "Academy Sports Center | 2810 Lincoln Way, Lynnwood, WA 98087, USA | Shorecrest High School | 15343 25th Ave NE, Shoreline, WA 98155, USA | Registration": null,
   "Academy Sports Center | Registration": null,
+  "Alario Center | 2000 Segnette Blvd, Westwego, LA 70094, USA": {
+    "lat": 29.9054733,
+    "lng": -90.1627914
+  },
   "Alario Center | 2000 Segnette Blvd, Westwego, LA 70094, USA | Registration": null,
   "All American Field House | 1 Racquet Ln, Monroeville, PA 15146, USA | Registration": null,
   "Anna Maria Island: Manatee Beach": {
@@ -21,8 +25,10 @@
     "lat": 28.5625927,
     "lng": -81.44217
   },
+  "Bayard Rustin Education Complex | 351 W 18th St, New York, NY 10011, USA": null,
   "Bayard Rustin Education Complex | 351 W 18th St, New York, NY 10011, USA | NYC Lab School | Registration": null,
   "Bayard Rustin Education Complex | 351 W 18th St, New York, NY 10011, USA | Registration": null,
+  "Borinken Coui Dome | 9W6W+3GV, PR-176, San Juan, 00926, Puerto Rico": null,
   "Borinken Coui Dome | 9W6W+3GV, PR-176, San Juan, 00926, Puerto Rico | Registration": null,
   "Boxi Park": {
     "lat": 28.3731892,
@@ -37,13 +43,19 @@
     "lat": 28.5934936,
     "lng": -81.322315
   },
+  "Capital Sports Center | 5209 Luce Ave, McClellan Park, CA 95652, USA": null,
   "Capital Sports Center | 5209 Luce Ave, McClellan Park, CA 95652, USA | Registration": null,
   "Capital Sports Center | Registration": null,
+  "Carolina Legacy Volleyball Club | 641 Granite Vista Dr, Rolesville, NC 27571, USA": null,
   "Carolina Legacy Volleyball Club | 641 Granite Vista Dr, Rolesville, NC 27571, USA | Registration": null,
   "Center Saint Louis | 6727 Langley Ave, St. Louis, MO 63123, USA | Registration": null,
   "Challenge Elite Sports | 14150 Beamer Rd, Friendswood, TX 77546, USA | Spike Sport Volleyball Club | 15250 Hillcroft Ave, Missouri City, TX 77489, USA | Registration": null,
   "City Courts at Pinellas Park": null,
   "College Park Neighborhood Center": null,
+  "College of the Desert | 43500 Monterey Ave, Palm Desert, CA 92260, USA": {
+    "lat": 33.7324667,
+    "lng": -116.3868288
+  },
   "College of the Desert | 43500 Monterey Ave, Palm Desert, CA 92260, USA | Registration": null,
   "College of the Dessert | Registration": null,
   "Columbus, OH": {
@@ -71,9 +83,11 @@
     "lat": 36.2981146,
     "lng": -115.283471
   },
+  "Elite Sports Center Annex | 415 E Grand Ave., South San Francisco, CA 94080, USA": null,
   "Elite Sports Center Annex | 415 E Grand Ave., South San Francisco, CA 94080, USA | Registration": null,
   "Elite Sports Center | 1416 San Mateo Ave, South San Francisco, CA 94080, USA | SF Elite Annex | 415 E Grand Ave., South San Francisco, CA 94080, USA | Registration": null,
   "Energy Sports Complex | 1005 Commerce Ct, Bensenville, IL 60106, USA | Registration": null,
+  "Energy Volleyball Club | 1005 Commerce Ct, Bensenville, IL 60106, USA": null,
   "Energy Volleyball Club | 1005 Commerce Ct, Bensenville, IL 60106, USA | Registration": null,
   "Englewood Neighborhood Center": null,
   "Extraco Events Center | 4601 Bosque Blvd, Waco, TX 76710, USA | Registration": null,
@@ -123,7 +137,9 @@
   "Hickory Point Recreational Facility": null,
   "High Springs Sports Complex": null,
   "Iowa West Field House | Registration": null,
+  "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA": null,
   "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA | Registration": null,
+  "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA | Vegas United Volleyball Club | 3055 S Valley View Blvd, Las Vegas, NV 89102, USA | Vegas Aces Volleyball | 123 Pancho Via Dr, Henderson, NV 89012, USA": null,
   "It's All Volleyball | 530 E Pamalyn Ave, Las Vegas, NV 89119, USA | Vegas United Volleyball Club | 3055 S Valley View Blvd, Las Vegas, NV 89102, USA | Vegas Aces Volleyball | 123 Pancho Via Dr, Henderson, NV 89012, USA | Registration": null,
   "It's All Volleyball | 530 E Pamalyn Ave., Las Vegas, NV 89119 | Vegas Aces Volleyball Club | 123 Pancho Via Dr, Henderson, NV 89012, USA | Registration": null,
   "It's All Volleyball | Registration": null,
@@ -138,6 +154,10 @@
     "lat": 35.5894891,
     "lng": -78.1196824
   },
+  "Langley Events Centre | 7888 200 St, Langley Twp, BC V2Y 3J4, Canada": {
+    "lat": 49.1459933,
+    "lng": -122.6664163
+  },
   "Langley Events Centre | 7888 200 St, Langley Twp, BC V2Y 3J4, Canada | Registration": null,
   "Legacy VTC | 601 Gravois Bluffs Blvd G, Fenton, MO 63026, USA | Registration": null,
   "Lowdermilk Park Naples": {
@@ -145,8 +165,10 @@
     "lng": -81.8101099
   },
   "MAC Volleyball Academy | Registration": null,
+  "MAVS Volleyball | 16501 W 116th St, Lenexa, KS 66219, USA": null,
   "MAVS Volleyball | 16501 W 116th St, Lenexa, KS 66219, USA | Registration": null,
   "MN Select Volleyball Center | Registration": null,
+  "Maryland Juniors Sports Center | 8221 Preston Ct suite f, Jessup, MD 20794, USA": null,
   "Maryland Juniors Sports Center | 8221 Preston Ct suite f, Jessup, MD 20794, USA | Registration": null,
   "Mcdugald Park": null,
   "Meadow Woods Recreation Center": {
@@ -155,11 +177,16 @@
   },
   "MidAmerican Sports Center EAST | 2401 Stanley Gault Pkwy, Louisville, KY 40223, USA | Registration": null,
   "MidAmerican Sports Center | 2401 Stanley Gault Pkwy, Louisville, KY, USA | Registration": null,
+  "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Side Out Courts | 2015 SW Loop 410, Suite 103, San Antonio, TX 78227, USA": null,
   "Mission Concepcion Sports Complex | 714 E Theo Ave, San Antonio, TX 78210, USA | Side Out Courts | 2015 SW Loop 410, Suite 103, San Antonio, TX 78227, USA | Registration": null,
   "Mission Concepcion Sports Complex | 714 East Theo Avenue, San Antonio, TX, USA | Registration": null,
   "Newberry Sand Courts at Jimmy Durden Park": null,
   "OCCC Orlando, Fl": null,
   "Olentangy High School | 675 Lewis Center Rd, Lewis Center, OH 43035, USA | Registration": null,
+  "Olympus Sports Center | 3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA": {
+    "lat": 45.5463996,
+    "lng": -122.9353981
+  },
   "Olympus Sports Center | 3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA | Registration": null,
   "Olympus Sports Center | Registration": null,
   "Orange County Convention Center, North Hall - A, 9400 Universal Blvd., Orlando, FL, 32819": null,
@@ -173,6 +200,7 @@
     "lat": 28.5421218,
     "lng": -81.379045
   },
+  "Palama Settlement, Harry & Jeanette Weinberg Gymnasium | 810 N Vineyard Blvd, Honolulu, HI 96817, USA | 808 Athletic Club | 91-384 Komohana Pl, Kapolei, HI 96707, USA": null,
   "Palama Settlement, Harry & Jeanette Weinberg Gymnasium | 810 N Vineyard Blvd, Honolulu, HI 96817, USA | 808 Athletic Club | 91-384 Komohana Pl, Kapolei, HI 96707, USA | Registration": null,
   "Polideportivo Revolucion | C. Nueva Escocia 1537, Providencia 2a. Secc, 44638 Guadalajara, Jal., Mexico | Registration": null,
   "Polideportivo Revolucion | Calle Nueva Escocia 1537, Providencia 2a. Secc, 44630 Guadalajara, Jalisco, Mexico | Registration": null,
@@ -217,6 +245,7 @@
   "TOA Sports Performance Center | 215 Gothic Court, Franklin, TN 37067, USA | Registration": null,
   "TOA Sports Performance Center | 215 Gothic Ct, Franklin, TN 37067, USA | Registration": null,
   "Tavares Sand Volleyball Courts": null,
+  "The Academy Volleyball Club | 6635 E 30th St ste b, Indianapolis, IN 46219, USA": null,
   "The Academy Volleyball Club | 6635 E 30th St ste b, Indianapolis, IN 46219, USA | Registration": null,
   "The Academy Volleyball Club | Registration": null,
   "The Alario Center | 2000 Segnette Blvd, Westwego, LA 70094, USA | Registration": null,
@@ -249,6 +278,7 @@
     "lng": -80.3667143
   },
   "UCF Memory Mall": null,
+  "Union Volleyball Club, The Koetter Center | 4795 Keystone Blvd, Jeffersonville, IN 47130, USA": null,
   "Union Volleyball Club, The Koetter Center | 4795 Keystone Blvd, Jeffersonville, IN 47130, USA | Registration": null,
   "Upham Beach Park- St. Pete Beach": null,
   "Upham Beach Park- St.Pete Beach": null,
