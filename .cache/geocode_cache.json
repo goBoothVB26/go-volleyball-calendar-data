@@ -1,255 +1,257 @@
 {
   "entries": {
-    "1 Racquet Ln, Monroeville, PA 15146, USA": {
+    "1 Racquet Ln, Monroeville, PA 15146, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 40.4326672,
       "lng": -79.7858424
     },
-    "100 S W Temple St, Salt Lake City, UT 84101, USA": {
+    "100 S W Temple St, Salt Lake City, UT 84101, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "1005 Commerce Ct, Bensenville, IL 60106, USA": {
+    "1005 Commerce Ct, Bensenville, IL 60106, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "1045 19th St, Virginia Beach, VA 23451, USA": {
+    "1045 19th St, Virginia Beach, VA 23451, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 36.8435072,
       "lng": -75.9899812
     },
-    "14150 Beamer Rd, Friendswood, TX 77546, USA": {
+    "110 Athletes Row, Apopka, FL 32703 ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.676393,
+      "lng": -81.5210481
+    },
+    "14150 Beamer Rd, Friendswood, TX 77546, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.5704028,
       "lng": -95.196116
     },
-    "1416 San Mateo Ave, South San Francisco, CA 94080, USA": {
+    "1416 San Mateo Ave, South San Francisco, CA 94080, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 37.6457346,
       "lng": -122.4098656
     },
-    "1422 San Mateo Ave, South San Francisco, CA, USA": {
+    "1422 San Mateo Ave, South San Francisco, CA, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 37.645809,
       "lng": -122.4097368
     },
-    "1501 N Viking Dr, Reedsburg, WI 53959, USA": {
+    "1501 N Viking Dr, Reedsburg, WI 53959, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 43.5465063,
       "lng": -89.9860099
     },
-    "1640 Cambridge St, Cambridge, MA 02138, USA": {
+    "1640 Cambridge St, Cambridge, MA 02138, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 42.3744706,
       "lng": -71.1095646
     },
-    "1640 Cambridge Street, Cambridge, MA 02138, USA": {
+    "1640 Cambridge Street, Cambridge, MA 02138, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 42.3744706,
       "lng": -71.1095646
     },
-    "16501 W 116th St, Lenexa, KS 66219, USA": {
+    "16501 W 116th St, Lenexa, KS 66219, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.9172787,
       "lng": -94.7768345
     },
-    "17185 Valley View Rd, Eden Prairie, MN 55346, USA": {
+    "17185 Valley View Rd, Eden Prairie, MN 55346, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 44.8721288,
       "lng": -93.4927063
     },
-    "1723 Bruton Blvd, Orlando, FL 32805": {
-      "lat": 28.5211097,
-      "lng": -81.4259329
+    "1723 Bruton Blvd, Orlando, FL 32805 ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.5211116,
+      "lng": -81.4259378
     },
-    "1750 NW 80th Ave, Ocala, FL 34482": {
+    "1750 NW 80th Ave, Ocala, FL 34482 ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "18400 Avalon Blvd., Carson, CA 90746": {
+    "18400 Avalon Blvd., Carson, CA 90746 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 33.8623767,
       "lng": -118.2629113
     },
-    "2000 Segnette Blvd, Westwego, LA 70094, USA": {
+    "2000 Segnette Blvd, Westwego, LA 70094, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.9054733,
       "lng": -90.1627914
     },
-    "215 Gothic Court, Franklin, TN 37067, USA": {
+    "215 Gothic Court, Franklin, TN 37067, USA ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 35.9534464,
+      "lng": -86.823152
+    },
+    "215 Gothic Ct, Franklin, TN 37067, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 35.9534484,
       "lng": -86.8231521
     },
-    "215 Gothic Ct, Franklin, TN 37067, USA": {
-      "lat": 35.9534484,
-      "lng": -86.8231521
-    },
-    "2393 Elizabeth Ave, Orlando, FL 32804": {
+    "2393 Elizabeth Ave, Orlando, FL 32804 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.5732148,
       "lng": -81.3843892
     },
-    "2400 Chisholm Trail Rd, Round Rock, TX 78681, USA": {
-      "lat": 30.542513,
-      "lng": -97.6948452
+    "2400 Chisholm Trail Rd, Round Rock, TX 78681, USA ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 30.5446855,
+      "lng": -97.6947456
     },
-    "2400 Pike St, Farmers Branch, TX 75234, USA": {
+    "2400 Pike St, Farmers Branch, TX 75234, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 32.9215886,
       "lng": -96.8985803
     },
-    "2400 Pike Street, Farmers Branch, TX 75234, USA": {
+    "2400 Pike Street, Farmers Branch, TX 75234, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 32.9215886,
       "lng": -96.8985803
     },
-    "2401 Stanley Gault Pkwy, Louisville, KY 40223, USA": {
+    "2401 Stanley Gault Pkwy, Louisville, KY 40223, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.2737816,
       "lng": -85.5130748
     },
-    "2401 Stanley Gault Pkwy, Louisville, KY, USA": {
+    "2401 Stanley Gault Pkwy, Louisville, KY, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.2737816,
       "lng": -85.5130748
     },
-    "2420 Chester Ave, Cleveland, OH 44115, USA": {
+    "2420 Chester Ave, Cleveland, OH 44115, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 41.5039379,
       "lng": -81.672092
     },
-    "2603 Ace Rd, Orlando, FL 32792": {
+    "2603 Ace Rd, Orlando, FL 32792 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.5884872,
       "lng": -81.4141018
     },
-    "2701 Lee Rd, Orlando, FL 32789": {
+    "2701 Lee Rd, Orlando, FL 32789 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.6033012,
       "lng": -81.4074116
     },
-    "2810 Lincoln Way, Lynnwood, WA 98087, USA": {
+    "2810 Lincoln Way, Lynnwood, WA 98087, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "2911 E Robinson St, Orlando, FL 32803": {
+    "2911 E Robinson St, Orlando, FL 32803 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.5460734,
       "lng": -81.3467587
     },
-    "3021 Sports Coast Way, Wesley Chapel, FL 33543": {
+    "3021 Sports Coast Way, Wesley Chapel, FL 33543 ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA": {
+    "3085 NE Brookwood Pkwy, Hillsboro, OR 97124, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 45.5463996,
       "lng": -122.9353981
     },
-    "351 W 18th St, New York, NY 10011, USA": {
+    "351 W 18th St, New York, NY 10011, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 40.7433666,
       "lng": -74.0027637
     },
-    "3899 North Jackson Street Bldg 4, Denver, CO 80205": {
+    "3899 North Jackson Street Bldg 4, Denver, CO 80205 ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "415 E Grand Ave., South San Francisco, CA 94080, USA": {
+    "415 E Grand Ave., South San Francisco, CA 94080, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 37.6517737,
       "lng": -122.3886725
     },
-    "43500 Monterey Ave, Palm Desert, CA 92260, USA": {
+    "43500 Monterey Ave, Palm Desert, CA 92260, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 33.7324667,
       "lng": -116.3868288
     },
-    "44630 Guadalajara, Jalisco, Mexico": {
+    "44630 Guadalajara, Jalisco, Mexico ~ -87.7,31.1,-79.8,24.4": {
       "lat": 20.6977193,
       "lng": -103.3839464
     },
-    "44638 Guadalajara, Jal., Mexico": {
+    "44638 Guadalajara, Jal., Mexico ~ -87.7,31.1,-79.8,24.4": {
       "lat": 20.672827,
       "lng": -103.391553
     },
-    "4490 Rossborough Lane, College Park, MD, USA": {
+    "4490 Rossborough Lane, College Park, MD, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.9860042,
       "lng": -76.9389337
     },
-    "4490 Rossborough Ln, College Park, MD 20742, USA": {
+    "4490 Rossborough Ln, College Park, MD 20742, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.9860042,
       "lng": -76.9389337
     },
-    "4601 Bosque Blvd, Waco, TX 76710, USA": {
+    "4601 Bosque Blvd, Waco, TX 76710, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 31.5384435,
       "lng": -97.1865633
     },
-    "4795 Keystone Blvd, Jeffersonville, IN 47130, USA": {
+    "4795 Keystone Blvd, Jeffersonville, IN 47130, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.3494927,
       "lng": -85.710053
     },
-    "5209 Luce Ave, McClellan Park, CA 95652, USA": {
+    "5209 Luce Ave, McClellan Park, CA 95652, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "5280 OH-741, Mason, OH 45040, USA": {
+    "5280 OH-741, Mason, OH 45040, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "530 E Pamalyn Ave, Las Vegas, NV 89119, USA": {
+    "530 E Pamalyn Ave, Las Vegas, NV 89119, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 36.0661081,
       "lng": -115.1530805
     },
-    "530 E Pamalyn Ave., Las Vegas, NV 89119": {
+    "530 E Pamalyn Ave., Las Vegas, NV 89119 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 36.0661081,
       "lng": -115.1530805
     },
-    "601 Gravois Bluffs Blvd G, Fenton, MO 63026, USA": {
+    "601 Gravois Bluffs Blvd G, Fenton, MO 63026, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.5062019,
       "lng": -90.4329805
     },
-    "6123 La Costa Dr, Orlando, FL 32807": {
-      "lat": 28.5282105,
-      "lng": -81.301371
+    "6123 La Costa Dr, Orlando, FL 32807 ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.5282125,
+      "lng": -81.3013749
     },
-    "641 Granite Vista Dr, Rolesville, NC 27571, USA": {
+    "641 Granite Vista Dr, Rolesville, NC 27571, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 35.9279695,
       "lng": -78.4589684
     },
-    "65-30 Kissena Blvd, Flushing, NY 11367, USA": {
+    "65-30 Kissena Blvd, Flushing, NY 11367, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 40.7564057,
       "lng": -73.8258453
     },
-    "6635 E 30th St ste b, Indianapolis, IN 46219, USA": {
+    "6635 E 30th St ste b, Indianapolis, IN 46219, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "6727 Langley Ave, St. Louis, MO 63123, USA": {
+    "6700 Kingspointe Pkwy, Orlando, FL 32819 ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.456845,
+      "lng": -81.438786
+    },
+    "6727 Langley Ave, St. Louis, MO 63123, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.561033,
       "lng": -90.3288147
     },
-    "675 Lewis Center Rd, Lewis Center, OH 43035, USA": {
+    "675 Lewis Center Rd, Lewis Center, OH 43035, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 40.2001125,
       "lng": -83.0194799
     },
-    "714 E Theo Ave, San Antonio, TX 78210, USA": {
+    "714 E Theo Ave, San Antonio, TX 78210, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.3898106,
       "lng": -98.4979727
     },
-    "714 East Theo Avenue, San Antonio, TX, USA": {
-      "lat": 29.3902788,
-      "lng": -98.495222
+    "714 East Theo Avenue, San Antonio, TX, USA ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 29.3898106,
+      "lng": -98.4979727
     },
-    "7888 200 St, Langley Twp, BC V2Y 3J4, Canada": {
+    "7888 200 St, Langley Twp, BC V2Y 3J4, Canada ~ -87.7,31.1,-79.8,24.4": {
       "lat": 49.1459933,
       "lng": -122.6664163
     },
-    "800 S Rolling Rd, Catonsville, MD 21228, USA": {
+    "800 S Rolling Rd, Catonsville, MD 21228, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.2508199,
       "lng": -76.7368754
     },
-    "810 N Vineyard Blvd, Honolulu, HI 96817, USA": {
-      "lat": 21.3226199,
-      "lng": -157.8643897
+    "810 N Vineyard Blvd, Honolulu, HI 96817, USA ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 21.3228168,
+      "lng": -157.8641004
     },
-    "8221 Preston Ct suite f, Jessup, MD 20794, USA": {
+    "8221 Preston Ct suite f, Jessup, MD 20794, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "8626 Hankins Rd, Charlotte, NC 28269, USA": {
+    "8626 Hankins Rd, Charlotte, NC 28269, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 35.3419059,
       "lng": -80.8337292
     },
-    "91-384 Komohana St, Kapolei, HI 96707, USA": {
+    "91-384 Komohana St, Kapolei, HI 96707, USA ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "919 S Persimmon Ave, Sanford, FL 32771": {
-      "lat": 28.8021313,
-      "lng": -81.288875
+    "919 S Persimmon Ave, Sanford, FL 32771 ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.8083005,
+      "lng": -81.2888822
     },
-    "9400 Universal Blvd., Orlando, FL, 32819": {
+    "9400 Universal Blvd., Orlando, FL, 32819 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.4306159,
       "lng": -81.4634865
     },
-    "9800 International Dr, Orlando, FL 32819": {
+    "9800 International Dr, Orlando, FL 32819 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.4247237,
       "lng": -81.4691963
     },
-    "9800 International Dr., Orlando, FL 32819": {
+    "9800 International Dr., Orlando, FL 32819 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.4247237,
       "lng": -81.4691963
-    },
-    "ALL AMERICAN+ Field House @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "ALL AMERICAN+ Field House @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
     },
     "Abess Park @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
@@ -257,13 +259,6 @@
     "Abess Park @ -87.7,31.1,-79.8,24.4": {
       "lat": 30.3242087,
       "lng": -81.4744359
-    },
-    "Academy Sports Center @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "Academy Sports Center @ -87.7,31.1,-79.8,24.4": {
-      "lat": 28.1942175,
-      "lng": -82.3968506
     },
     "Anna Maria Island: Manatee Beach @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
@@ -280,7 +275,7 @@
       "lat": 28.5625927,
       "lng": -81.44217
     },
-    "Bensenville, IL 60106, USA": {
+    "Bensenville, IL 60106, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 41.9538384,
       "lng": -87.9431781
     },
@@ -305,22 +300,7 @@
       "lat": 28.5934936,
       "lng": -81.322315
     },
-    "Capital Sports Center @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "Capital Sports Center @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "College Park Neighborhood Center, Orlando, FL": {
-      "failed": "2026-10-08"
-    },
-    "College of the Dessert @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "College of the Dessert @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "Columbus, OH": {
+    "Columbus, OH ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.9622601,
       "lng": -83.0007065
     },
@@ -330,7 +310,7 @@
     "Crabby Bill's @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Daytona Beach, FL": {
+    "Daytona Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.2108147,
       "lng": -81.0228331
     },
@@ -341,7 +321,7 @@
       "lat": 26.318342,
       "lng": -80.0996306
     },
-    "Denver, CO 80205": {
+    "Denver, CO 80205 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.7392364,
       "lng": -104.984862
     },
@@ -369,15 +349,15 @@
       "lat": 29.1702255,
       "lng": -82.0915625
     },
-    "Frost Park, Dania Beach, FL": {
+    "Frost Park, Dania Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 26.0550727,
       "lng": -80.1396511
     },
-    "Ft. Myers, Fl": {
+    "Ft. Myers, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 26.640628,
       "lng": -81.8723084
     },
-    "Ft. Pierce, Fl": {
+    "Ft. Pierce, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.4467056,
       "lng": -80.3256056
     },
@@ -387,15 +367,9 @@
     "Future Stars Volleyball Training @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Gainesville, Fl": {
+    "Gainesville, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.6519684,
       "lng": -82.3249846
-    },
-    "Game Point VBC @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "Game Point VBC @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
     },
     "Goldenrod Community Park @ -81.9,29.0,-80.8,28.0": {
       "lat": 28.5811986,
@@ -421,7 +395,7 @@
       "lat": 27.7425942,
       "lng": -82.7078623
     },
-    "Gulfport Beach, Gulfport, FL": {
+    "Gulfport Beach, Gulfport, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.7368175,
       "lng": -82.710498
     },
@@ -433,34 +407,22 @@
       "lat": 28.7453552,
       "lng": -81.7690697
     },
-    "Hickory Point Beach Sand Volleyball Complex, Tavares, FL": {
+    "Hickory Point Beach Sand Volleyball Complex, Tavares, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.7453552,
       "lng": -81.7690697
     },
-    "High Springs Sports Complex, High Springs, FL": {
+    "High Springs Sports Complex, High Springs, FL ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "High Springs, FL": {
+    "High Springs, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.8268319,
       "lng": -82.5968583
     },
-    "Indianapolis, IN 46219, USA": {
+    "Indianapolis, IN 46219, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.7683331,
       "lng": -86.1583502
     },
-    "Iowa West Field House @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "Iowa West Field House @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "It's All Volleyball @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "It's All Volleyball @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "Jacksonville Beach Pier, Jacksonville Beach, FL": {
+    "Jacksonville Beach Pier, Jacksonville Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 30.2935679,
       "lng": -81.3877064
     },
@@ -470,7 +432,7 @@
     "Jax Scene courts @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Jessup, MD 20794, USA": {
+    "Jessup, MD 20794, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.1492746,
       "lng": -76.7752493
     },
@@ -478,10 +440,10 @@
       "lat": 28.5867689,
       "lng": -81.5196927
     },
-    "Jimmy Durden Park, Newberry, FL": {
+    "Jimmy Durden Park, Newberry, FL ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Kapolei, HI 96707, USA": {
+    "Kapolei, HI 96707, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 21.3340079,
       "lng": -158.077849
     },
@@ -499,27 +461,15 @@
       "lat": 26.1629918,
       "lng": -81.8101099
     },
-    "Lynnwood, WA 98087, USA": {
+    "Lynnwood, WA 98087, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 47.8278656,
       "lng": -122.3053932
     },
-    "MAC Volleyball Academy @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "MAC Volleyball Academy @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "MN Select Volleyball Center @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "MN Select Volleyball Center @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "Mason, OH 45040, USA": {
+    "Mason, OH 45040, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 39.3600586,
       "lng": -84.309939
     },
-    "McClellan Park, CA 95652, USA": {
+    "McClellan Park, CA 95652, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 38.6422787,
       "lng": -121.4075631
     },
@@ -533,35 +483,25 @@
       "lat": 28.3800366,
       "lng": -81.355181
     },
-    "Newberry, FL": {
-      "lat": 28.5151479,
-      "lng": -81.3544011
+    "Newberry, FL ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 29.6463535,
+      "lng": -82.6065023
     },
-    "Ocala, FL 34482": {
+    "Ocala, FL 34482 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.1871986,
       "lng": -82.1400923
     },
-    "Olympus Sports Center @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "Olympus Sports Center @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "Orlando, FL": {
+    "Orlando, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.5421218,
       "lng": -81.379045
     },
-    "Orlando, Fl": {
-      "lat": 28.5421218,
-      "lng": -81.379045
-    },
-    "Pinellas Park, FL": {
+    "Pinellas Park, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.8428025,
       "lng": -82.6995444
     },
-    "Pompano Beach @ -81.9,29.0,-80.8,28.0": {
-      "lat": 28.2940672,
-      "lng": -81.4710241
+    "Pompano Beach, FL ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 26.2378597,
+      "lng": -80.1247667
     },
     "Rita Crockett Beach Academy @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
@@ -575,7 +515,7 @@
     "Rita Crockett Beach Sports Academy @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Salt Lake City, UT 84101, USA": {
+    "Salt Lake City, UT 84101, USA ~ -87.7,31.1,-79.8,24.4": {
       "lat": 40.7596198,
       "lng": -111.886797
     },
@@ -600,7 +540,7 @@
       "lat": 29.8526774,
       "lng": -81.2671745
     },
-    "St. Pete Beach, FL": {
+    "St. Pete Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.7253065,
       "lng": -82.741212
     },
@@ -611,21 +551,9 @@
       "lat": 28.4076421,
       "lng": -82.6733142
     },
-    "The Academy Volleyball Club @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "The Academy Volleyball Club @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
-    },
-    "The Big House, Tavares, FL": {
+    "The Big House, Tavares, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.7732462,
       "lng": -81.7439027
-    },
-    "The Well Activity Center @ -81.9,29.0,-80.8,28.0": {
-      "failed": "2026-10-08"
-    },
-    "The Well Activity Center @ -87.7,31.1,-79.8,24.4": {
-      "failed": "2026-10-08"
     },
     "Top Select Volleyball Academy @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
@@ -633,7 +561,7 @@
     "Top Select Volleyball Academy @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Trotwood Park, Winter Springs, FL": {
+    "Trotwood Park, Winter Springs, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.6817408,
       "lng": -81.2611594
     },
@@ -650,14 +578,14 @@
     "UCF Memory Mall @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Upham Beach Park, St. Pete Beach, FL": {
+    "Upham Beach Park, St. Pete Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Upham Beach, St. Pete Beach, FL": {
+    "Upham Beach, St. Pete Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.7361426,
       "lng": -82.7513677
     },
-    "Vero Beach, Fl": {
+    "Vero Beach, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.6387163,
       "lng": -80.3975399
     },
@@ -665,15 +593,15 @@
       "lat": 28.5177135,
       "lng": -81.635694
     },
-    "Wellington, FL": {
-      "lat": 28.316564,
-      "lng": -81.6717091
+    "Wellington, FL ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 26.6549551,
+      "lng": -80.2375279
     },
-    "Wesley Chapel, FL 33543": {
+    "Wesley Chapel, FL 33543 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.1866014,
       "lng": -82.366121
     },
-    "Wesley Chapel, Fl": {
+    "Wesley Chapel, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.1866014,
       "lng": -82.366121
     },
