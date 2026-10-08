@@ -597,6 +597,11 @@
   .vb-dark .vb-map-note { color: var(--vb-dark-muted); }
   .vb-map-popup { min-width: 180px; max-width: 240px; }
   .vb-map-popup h4 { margin: 0 0 6px; font-size: 13px; color: var(--vb-brand); }
+  .vb-map-popup-datehdr {
+    font-weight: bold; font-size: 11.5px; color: #666; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 8px 0 3px; border-bottom: 1px solid #ddd; padding-bottom: 2px;
+  }
+  .vb-map-popup-datehdr:first-of-type { margin-top: 0; }
   .vb-map-popup .vbcal-chip {
     display: block; width: 100%; text-align: left; margin-bottom: 4px;
     white-space: normal;
@@ -604,6 +609,7 @@
   .vb-dark .leaflet-popup-content-wrapper, .vb-dark .leaflet-popup-tip {
     background: var(--vb-dark-surface); color: var(--vb-dark-text);
   }
+  .vb-dark .vb-map-popup-datehdr { color: var(--vb-dark-muted); border-bottom-color: #363d47; }
   .vb-dark .vb-map-popup h4 { color: var(--vb-dark-brand); }
   .vb-dark .leaflet-popup-close-button { color: var(--vb-dark-muted); }
 
@@ -1999,13 +2005,18 @@
       $("vb-map").innerHTML = "<p style='text-align:center;color:#888;padding:20px'>Map failed to load.</p>";
       return;
     }
-    var upcoming = evs.filter(function (ev) { return !isPastEvent(ev); });
+    // Map stays readable by only plotting the near-term: today through
+    // 4 weeks out. Events further out still show in Month/List/the
+    // event's own search -- just not as a pin.
+    var todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
+    var mapCutoff = new Date(todayStart); mapCutoff.setDate(mapCutoff.getDate() + 28);
+    var upcoming = evs.filter(function (ev) { return !isPastEvent(ev) && ev._start < mapCutoff; });
     var mappable = upcoming.filter(function (ev) {
       return typeof ev.lat === "number" && typeof ev.lng === "number";
     });
     var skipped = upcoming.length - mappable.length;
     $("vb-map-note").textContent = skipped > 0
-      ? skipped + " upcoming event" + (skipped === 1 ? "" : "s") + " don't have a mappable location yet."
+      ? skipped + " event" + (skipped === 1 ? "" : "s") + " in the next 4 weeks don't have a mappable location yet."
       : "";
 
     if (!leafletMap) {
@@ -2031,7 +2042,14 @@
       var first = group[0];
       var marker = L.marker([first.lat, first.lng]).addTo(leafletMap);
       var html = '<div class="vb-map-popup"><h4>' + esc(first.location || "") + "</h4>";
+      var lastDateKey = null;
       group.forEach(function (ev) {
+        var dateKey = dkey(ev._start);
+        if (dateKey !== lastDateKey) {
+          html += '<div class="vb-map-popup-datehdr">' + DOWS[ev._start.getDay()] + ", " +
+                  MONTHS[ev._start.getMonth()].slice(0, 3) + " " + ev._start.getDate() + "</div>";
+          lastDateKey = dateKey;
+        }
         html += '<button class="vbcal-chip" style="background:' + clubColors[ev.club] +
                 ';color:' + textOn(clubColors[ev.club]) +
                 '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
