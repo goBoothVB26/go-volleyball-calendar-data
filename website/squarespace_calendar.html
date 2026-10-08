@@ -1231,10 +1231,12 @@
   // Club featured in the card carousel above the calendar. The carousel
   // shows events from CAROUSEL_DAYS_BACK days ago through
   // CAROUSEL_DAYS_AHEAD days from now, scrolled so the next upcoming
-  // event starts front and center.
+  // event starts front and center. CAROUSEL_DAYS_AHEAD matches the
+  // weather forecast's own 7-day lookahead (see WEATHER_URL) so every
+  // card the carousel can show is one the weather icon can cover too.
   var CAROUSEL_CLUB = "Greater Orlando Volleyball Club";
   var CAROUSEL_DAYS_BACK = 7;
-  var CAROUSEL_DAYS_AHEAD = 31;
+  var CAROUSEL_DAYS_AHEAD = 7;
 
   // Club pre-selected in the Club filter on page load ("" = All).
   var DEFAULT_CLUB = "";
