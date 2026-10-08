@@ -5,6 +5,10 @@
      further down for why jsDelivr instead of a raw.githubusercontent.com
      link). -->
 
+<!-- Leaflet: free, no-API-key map tiles (OpenStreetMap) for the Map view. -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <style>
   .vbcal {
     font-family: inherit; max-width: 100%;
@@ -246,6 +250,30 @@
   .vbcal-btn:hover { background: var(--vb-brand-soft); }
   .vbcal-btn.active { background: var(--vb-brand); color: #fff; }
   .vbcal-btn.nav { padding: 8px 14px; font-weight: bold; }
+
+  /* View switcher: one button (Month/Map/List, whichever is active)
+     that opens a small dropdown with the other options -- same pill
+     look as every other .vbcal-btn, just with a chevron that flips. */
+  .vb-view-dd { position: relative; display: inline-block; margin-left: 6px; }
+  .vb-view-dd-btn {
+    margin-left: 0; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .vb-view-dd-chev { transition: transform 0.15s; flex: 0 0 auto; }
+  .vb-view-dd.open .vb-view-dd-chev { transform: rotate(180deg); }
+  .vb-view-dd-menu {
+    display: none; position: absolute; top: calc(100% + 6px); right: 0;
+    min-width: 120px; background: #fff; border: 1px solid var(--vb-brand);
+    border-radius: var(--vb-radius); box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    overflow: hidden; z-index: 20;
+  }
+  .vb-view-dd.open .vb-view-dd-menu { display: block; }
+  .vb-view-dd-item {
+    display: block; width: 100%; text-align: left; padding: 9px 16px;
+    border: 0; background: none; cursor: pointer; font-size: 13.5px;
+    font-weight: 600; color: #444; letter-spacing: 0.03em;
+  }
+  .vb-view-dd-item:hover { background: var(--vb-brand-soft); }
+  .vb-view-dd-item.active { color: var(--vb-brand); }
 
   /* Month grid */
   .vbcal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
@@ -520,6 +548,25 @@
     fill: none; stroke: currentColor; stroke-width: 2;
     stroke-linecap: round; stroke-linejoin: round;
   }
+
+  /* Map view: a pinned Leaflet map, one marker per unique event
+     location. Tiles stay light in both themes (simplest + most
+     reliable); only the popup chrome (our own markup) follows dark
+     mode. */
+  #vb-map { height: 480px; border-radius: var(--vb-radius-lg); overflow: hidden; background: #e5e3df; }
+  .vb-map-note { margin-top: 8px; font-size: 13px; color: #777; }
+  .vb-dark .vb-map-note { color: var(--vb-dark-muted); }
+  .vb-map-popup { min-width: 180px; max-width: 240px; }
+  .vb-map-popup h4 { margin: 0 0 6px; font-size: 13px; color: var(--vb-brand); }
+  .vb-map-popup .vbcal-chip {
+    display: block; width: 100%; text-align: left; margin-bottom: 4px;
+    white-space: normal;
+  }
+  .vb-dark .leaflet-popup-content-wrapper, .vb-dark .leaflet-popup-tip {
+    background: var(--vb-dark-surface); color: var(--vb-dark-text);
+  }
+  .vb-dark .vb-map-popup h4 { color: var(--vb-dark-brand); }
+  .vb-dark .leaflet-popup-close-button { color: var(--vb-dark-muted); }
 
   /* GOVC upcoming-events carousel */
   .vbcar { margin-bottom: 22px; }
@@ -901,6 +948,13 @@
   .vb-dark .vbcal-btn { background: transparent; color: var(--vb-accent); border-color: var(--vb-accent); }
   .vb-dark .vbcal-btn:hover { background: rgba(255, 196, 37, 0.12); }
   .vb-dark .vbcal-btn.active { background: var(--vb-accent); color: #1a1a1a; }
+  .vb-dark .vb-view-dd-menu {
+    background: var(--vb-dark-surface); border-color: var(--vb-dark-brand);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  }
+  .vb-dark .vb-view-dd-item { color: var(--vb-dark-text); }
+  .vb-dark .vb-view-dd-item:hover { background: rgba(255, 196, 37, 0.12); }
+  .vb-dark .vb-view-dd-item.active { color: var(--vb-dark-brand); }
   .vb-dark .vbcal-dow { color: #aab2bd; }
   .vb-dark .vbcal-day {
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
@@ -1060,13 +1114,26 @@
     </div>
     <h3 id="vb-title"></h3>
     <div>
-      <button class="vbcal-btn" id="vb-view-month">Month</button>
-      <button class="vbcal-btn" id="vb-view-list">List</button>
+      <div class="vb-view-dd" id="vb-view-dd">
+        <button class="vbcal-btn vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span id="vb-view-dd-label">Month</span>
+          <svg class="vb-view-dd-chev" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="vb-view-dd-menu" id="vb-view-dd-menu">
+          <button class="vb-view-dd-item" type="button" data-view="month">Month</button>
+          <button class="vb-view-dd-item" type="button" data-view="map">Map</button>
+          <button class="vb-view-dd-item" type="button" data-view="list">List</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <div id="vb-grid"></div>
   <div class="vbcal-list" id="vb-list"></div>
+  <div id="vb-map" style="display:none"></div>
+  <div class="vb-map-note" id="vb-map-note" style="display:none"></div>
 
   <!-- Liquid-glass displacement filter: turbulence noise warps whatever
        shows through the glass, like rippled water. Referenced from
@@ -1274,6 +1341,7 @@
   var allEvents = [], clubColors = {}, current = new Date();
   current = new Date(current.getFullYear(), current.getMonth(), 1);
   var view = "month";  // month view is the default on every device
+  var VIEW_LABELS = { month: "Month", map: "Map", list: "List" };
   var weekFocus = null;      // week-zoom anchor (Sunday), entered from busy days
   var weekTappedKey = null;  // the tapped day, centered on entry (mobile)
 
@@ -1655,18 +1723,22 @@
     var titleText = MONTHS[current.getMonth()].slice(0, 3) + " " + String(current.getFullYear()).slice(-2);
     $("vb-title").textContent = titleText;
     $("vb-title2").textContent = titleText;  // desktop: shown beside "Community Calendar"
-    $("vb-view-month").className = "vbcal-btn" + (view === "month" ? " active" : "");
-    $("vb-view-list").className = "vbcal-btn" + (view === "list" ? " active" : "");
+    $("vb-view-dd-label").textContent = VIEW_LABELS[view];
+    Array.prototype.forEach.call($("vb-view-dd-menu").querySelectorAll(".vb-view-dd-item"), function (item) {
+      item.className = "vb-view-dd-item" + (item.getAttribute("data-view") === view ? " active" : "");
+    });
     $("vb-grid").style.display = view === "month" ? "" : "none";
     $("vb-list").style.display = view === "list" ? "block" : "none";
+    $("vb-map").style.display = view === "map" ? "block" : "none";
+    $("vb-map-note").style.display = view === "map" ? "" : "none";
     var zoomed = view === "month" && weekFocus;
-    $("vb-prev").style.display = zoomed ? "none" : "";
-    $("vb-next").style.display = zoomed ? "none" : "";
+    $("vb-prev").style.display = (zoomed || view === "map") ? "none" : "";
+    $("vb-next").style.display = (zoomed || view === "map") ? "none" : "";
     $("vb-week-back").style.display = zoomed ? "" : "none";
-    $("vb-view-month").style.display = zoomed ? "none" : "";
     if (view === "month") {
       if (weekFocus) renderWeek(evs); else renderGrid(evs);
-    } else renderList(evs);
+    } else if (view === "list") renderList(evs);
+    else renderMap(evs);
   }
 
   function renderGrid(evs) {
@@ -1833,6 +1905,81 @@
 
   function mapsUrl(location) {
     return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location);
+  }
+
+  // ---- Map view: one Leaflet marker per unique event location ----
+  var leafletMap = null, leafletMarkers = [];
+  var ORLANDO_CENTER = [28.5383, -81.3792];
+
+  function renderMap(evs) {
+    if (!window.L) {
+      $("vb-map").innerHTML = "<p style='text-align:center;color:#888;padding:20px'>Map failed to load.</p>";
+      return;
+    }
+    var upcoming = evs.filter(function (ev) { return !isPastEvent(ev); });
+    var mappable = upcoming.filter(function (ev) {
+      return typeof ev.lat === "number" && typeof ev.lng === "number";
+    });
+    var skipped = upcoming.length - mappable.length;
+    $("vb-map-note").textContent = skipped > 0
+      ? skipped + " upcoming event" + (skipped === 1 ? "" : "s") + " don't have a mappable location yet."
+      : "";
+
+    if (!leafletMap) {
+      leafletMap = L.map("vb-map", { scrollWheelZoom: false }).setView(ORLANDO_CENTER, 10);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+      }).addTo(leafletMap);
+    }
+    leafletMap.invalidateSize();
+
+    leafletMarkers.forEach(function (m) { leafletMap.removeLayer(m); });
+    leafletMarkers = [];
+
+    var groups = {};
+    mappable.forEach(function (ev) {
+      var key = ev.lat.toFixed(4) + "," + ev.lng.toFixed(4);
+      (groups[key] = groups[key] || []).push(ev);
+    });
+
+    Object.keys(groups).forEach(function (key) {
+      var group = groups[key].sort(function (a, b) { return a._start - b._start; });
+      var first = group[0];
+      var marker = L.marker([first.lat, first.lng]).addTo(leafletMap);
+      var html = '<div class="vb-map-popup"><h4>' + esc(first.location || "") + "</h4>";
+      group.forEach(function (ev) {
+        html += '<button class="vbcal-chip" style="background:' + clubColors[ev.club] +
+                ';color:' + textOn(clubColors[ev.club]) +
+                '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '">' +
+                (ev.all_day ? "" : fmtTime(ev._start) + " ") + esc(titled(ev)) + "</button>";
+      });
+      html += "</div>";
+      marker.bindPopup(html);
+      // Leaflet popups stop click propagation before it reaches the
+      // page's own delegated [data-uid] listener, so wire the chips
+      // directly each time this popup opens.
+      marker.on("popupopen", function (e) {
+        var root = e.popup.getElement();
+        if (!root) return;
+        Array.prototype.forEach.call(root.querySelectorAll("[data-uid]"), function (chip) {
+          chip.onclick = function (evt) {
+            evt.stopPropagation();
+            var uid = chip.getAttribute("data-uid");
+            var found = allEvents.filter(function (x) { return x.uid === uid; })[0];
+            if (found) openModal(found);
+          };
+        });
+      });
+      leafletMarkers.push(marker);
+    });
+
+    if (leafletMarkers.length) {
+      var bounds = L.latLngBounds(leafletMarkers.map(function (m) { return m.getLatLng(); }));
+      leafletMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 13 });
+    } else {
+      leafletMap.setView(ORLANDO_CENTER, 10);
+    }
   }
 
   // Shareable link back to THIS event: the calendar page's own URL with
@@ -2370,7 +2517,7 @@
   // web pages, so iPhone users get the visual press-squish (CSS :active
   // rules) instead. One delegated touch listener covers every tappable
   // element in the widget.
-  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vbcal-chip, " +
+  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vb-view-dd-item, .vbcal-chip, " +
     ".vbcal-item, .vb-bm, .vbcar-card, .vbcar-chev, .vb-week-chev, " +
     ".vbcal-day.busy, .vbcal-modal .btn, .vbcal-modal .close, .vb-theme-btn, .vb-share, .vb-share-car";
   document.addEventListener("touchstart", function (e) {
@@ -2506,8 +2653,26 @@
       }
     }, { passive: true });
   });
-  $("vb-view-month").onclick = function () { view = "month"; weekFocus = null; render(); };
-  $("vb-view-list").onclick = function () { view = "list"; weekFocus = null; render(); };
+  var viewDD = $("vb-view-dd");
+  $("vb-view-dd-btn").onclick = function (e) {
+    e.stopPropagation();
+    var open = viewDD.classList.toggle("open");
+    $("vb-view-dd-btn").setAttribute("aria-expanded", open ? "true" : "false");
+  };
+  Array.prototype.forEach.call($("vb-view-dd-menu").querySelectorAll(".vb-view-dd-item"), function (item) {
+    item.onclick = function (e) {
+      e.stopPropagation();
+      view = item.getAttribute("data-view");
+      weekFocus = null;
+      viewDD.classList.remove("open");
+      $("vb-view-dd-btn").setAttribute("aria-expanded", "false");
+      render();
+    };
+  });
+  document.addEventListener("click", function () {
+    viewDD.classList.remove("open");
+    $("vb-view-dd-btn").setAttribute("aria-expanded", "false");
+  });
   $("vb-toggle-filters").onclick = function () {
     var f = $("vb-filters"), open = f.className.indexOf("open") >= 0;
     f.className = open ? "vbcal-filters" : "vbcal-filters open";
