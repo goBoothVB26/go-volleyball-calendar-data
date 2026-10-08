@@ -210,6 +210,7 @@
      (the same subtle squish iOS uses on home-screen icons). Android
      devices additionally get a short vibration via buzz() in the JS. */
   .vbcal-btn:active, .vb-dd-field:active, .vb-dd-item:active,
+  .vb-view-dd-btn:active, .vb-view-dd-item:active,
   .vbcal-chip:active, .vbcal-item:active, .vb-bm:active,
   .vbcar-chev:active, .vb-week-chev:active,
   .vbcal-modal .btn:active, .vbcal-modal .close:active, .vb-share:active, .vb-share-car:active {
@@ -251,29 +252,51 @@
   .vbcal-btn.active { background: var(--vb-brand); color: #fff; }
   .vbcal-btn.nav { padding: 8px 14px; font-weight: bold; }
 
-  /* View switcher: one button (Month/Map/List, whichever is active)
-     that opens a small dropdown with the other options -- same pill
-     look as every other .vbcal-btn, just with a chevron that flips. */
+  /* View switcher: one field (Month/Map/List, whichever is active)
+     that opens a small dropdown with the other options -- same bordered
+     field + glass-menu look as the filter dropdowns (.vb-dd-field etc),
+     just under its own class names so it doesn't pick up the filter
+     system's toolbar-specific width:100% rules. */
   .vb-view-dd { position: relative; display: inline-block; margin-left: 6px; }
   .vb-view-dd-btn {
-    margin-left: 0; display: inline-flex; align-items: center; gap: 6px;
+    margin-left: 0; margin-bottom: 0; min-width: 110px;
+    height: 40px; box-sizing: border-box;
+    display: inline-flex; align-items: center; justify-content: flex-start;
+    padding: 10px 34px 10px 14px; border: 1px solid #b8bdc4;
+    border-radius: var(--vb-radius-lg);
+    font-size: 14px; font-weight: 600; background-color: #fff; color: #222;
+    cursor: pointer; user-select: none; -webkit-user-select: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+    transition: background-color 0.12s, border-color 0.12s, box-shadow 0.12s;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .vb-view-dd-chev { transition: transform 0.15s; flex: 0 0 auto; }
-  .vb-view-dd.open .vb-view-dd-chev { transform: rotate(180deg); }
+  .vb-view-dd-btn:hover { background-color: #f5f6f7; border-color: var(--vb-accent); }
+  .vb-view-dd.open .vb-view-dd-btn { border-color: var(--vb-accent); }
   .vb-view-dd-menu {
     display: none; position: absolute; top: calc(100% + 6px); right: 0;
-    min-width: 120px; background: #fff; border: 1px solid var(--vb-brand);
-    border-radius: var(--vb-radius); box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-    overflow: hidden; z-index: 2000;
+    min-width: 100%; z-index: 2000;
+    background:
+      linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.12) 40%),
+      rgba(255,255,255,0.62);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
+    backdrop-filter: blur(16px) saturate(170%);
+    border: 1px solid rgba(255,255,255,0.55);
+    border-radius: var(--vb-radius-lg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.10),
+                inset 6px 6px 0 -6px rgba(255,255,255,0.7),
+                inset 0 0 8px 1px rgba(255,255,255,0.35);
+    padding: 6px 0;
   }
   .vb-view-dd.open .vb-view-dd-menu { display: block; }
   .vb-view-dd-item {
     display: block; width: 100%; text-align: left; padding: 9px 16px;
-    border: 0; background: none; cursor: pointer; font-size: 13.5px;
-    font-weight: 600; color: #444; letter-spacing: 0.03em;
+    border: 0; background: none; cursor: pointer; font-size: 14px;
+    color: #222; white-space: nowrap; transition: background 0.1s;
   }
-  .vb-view-dd-item:hover { background: var(--vb-brand-soft); }
-  .vb-view-dd-item.active { color: var(--vb-brand); }
+  .vb-view-dd-item:hover { background: rgba(60,70,85,0.10); }
+  .vb-view-dd-item.active { background: rgba(255,196,37,0.28); font-weight: 600; }
+  body.vb-warp .vb-view-dd-menu { backdrop-filter: blur(16px) saturate(170%) url(#vbGlassWarp); }
 
   /* Month grid */
   .vbcal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
@@ -952,13 +975,27 @@
   .vb-dark .vbcal-btn { background: transparent; color: var(--vb-accent); border-color: var(--vb-accent); }
   .vb-dark .vbcal-btn:hover { background: rgba(255, 196, 37, 0.12); }
   .vb-dark .vbcal-btn.active { background: var(--vb-accent); color: #1a1a1a; }
-  .vb-dark .vb-view-dd-menu {
-    background: var(--vb-dark-surface); border-color: var(--vb-dark-brand);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  .vb-dark .vb-view-dd-btn {
+    background-color: #1f242c; color: var(--vb-dark-text); border-color: #363d47;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23aab2bd' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
   }
+  .vb-dark .vb-view-dd-btn:hover { background-color: #262c35; border-color: var(--vb-dark-accent); }
+  .vb-dark .vb-view-dd.open .vb-view-dd-btn { border-color: var(--vb-dark-accent); }
+  .vb-dark .vb-view-dd-menu {
+    background:
+      linear-gradient(rgba(255,255,255,0.08), rgba(255,255,255,0.02) 40%),
+      rgba(24, 29, 37, 0.66);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5),
+                inset 6px 6px 0 -6px rgba(255,255,255,0.35),
+                inset 0 0 8px 1px rgba(255,255,255,0.14);
+  }
+  body.vb-warp .vb-dark .vb-view-dd-menu { backdrop-filter: blur(16px) saturate(160%) url(#vbGlassWarp); }
   .vb-dark .vb-view-dd-item { color: var(--vb-dark-text); }
-  .vb-dark .vb-view-dd-item:hover { background: rgba(255, 196, 37, 0.12); }
-  .vb-dark .vb-view-dd-item.active { color: var(--vb-dark-brand); }
+  .vb-dark .vb-view-dd-item:hover { background: rgba(255,255,255,0.08); }
+  .vb-dark .vb-view-dd-item.active { background: rgba(0,87,184,0.32); }
   .vb-dark .vbcal-dow { color: #aab2bd; }
   .vb-dark .vbcal-day {
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
@@ -1119,11 +1156,8 @@
     <h3 id="vb-title"></h3>
     <div>
       <div class="vb-view-dd" id="vb-view-dd">
-        <button class="vbcal-btn vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
+        <button class="vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
           <span id="vb-view-dd-label">Month</span>
-          <svg class="vb-view-dd-chev" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true">
-            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
         </button>
         <div class="vb-view-dd-menu" id="vb-view-dd-menu">
           <button class="vb-view-dd-item" type="button" data-view="month">Month</button>
@@ -2521,7 +2555,7 @@
   // web pages, so iPhone users get the visual press-squish (CSS :active
   // rules) instead. One delegated touch listener covers every tappable
   // element in the widget.
-  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vb-view-dd-item, .vbcal-chip, " +
+  var BUZZ_TARGETS = ".vbcal-btn, .vb-dd-field, .vb-dd-item, .vb-view-dd-btn, .vb-view-dd-item, .vbcal-chip, " +
     ".vbcal-item, .vb-bm, .vbcar-card, .vbcar-chev, .vb-week-chev, " +
     ".vbcal-day.busy, .vbcal-modal .btn, .vbcal-modal .close, .vb-theme-btn, .vb-share, .vb-share-car";
   document.addEventListener("touchstart", function (e) {
