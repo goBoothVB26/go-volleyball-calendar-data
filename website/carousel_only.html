@@ -1986,8 +1986,15 @@
            (details ? "&details=" + encodeURIComponent(details.slice(0, 1500)) : "");
   }
 
-  function mapsUrl(location) {
-    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location);
+  // The card's location link opens Google Maps on the exact same
+  // coordinates as the event's Map view pin, so the two can never
+  // disagree. Events without a pin fall back to Google's own search of
+  // the venue text.
+  function mapsUrl(ev) {
+    var query = (typeof ev.lat === "number" && typeof ev.lng === "number")
+      ? ev.lat + "," + ev.lng
+      : ev.location;
+    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
   }
 
   // ---- Map view: one Leaflet marker per unique event location ----
@@ -2281,7 +2288,7 @@
                '<div class="when">' + when + "</div>" +
                modalWeatherHtml(ev) +
                (ev.location
-                 ? '<div class="loc" style="margin-top:4px">&#128205; <a href="' + mapsUrl(ev.location) +
+                 ? '<div class="loc" style="margin-top:4px">&#128205; <a href="' + mapsUrl(ev) +
                    '" target="_blank" rel="noopener">' + esc(ev.location) + "</a></div>"
                  : "") +
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
@@ -2424,6 +2431,7 @@
         // event card the calendar shows (tags, ribbon color, logo...)
         extra: {
           location: ev.location || "",
+          maps_url: ev.location ? mapsUrl(ev) : "",
           end: ev.end || "",
           tags: eventTags(ev),
           color: clubColors[ev.club] || DEFAULT_COLOR,
