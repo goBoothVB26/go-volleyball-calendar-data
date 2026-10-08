@@ -2547,7 +2547,7 @@
               '" data-uid="' + ev.uid.replace(/"/g, "&quot;") + '" role="button" tabindex="0">' +
               (isPastEvent(ev) ? "" : bookmarkIcon(ev.uid)) +  // reminders allowed through today
               '<div class="t">' + esc(ev.title) + "</div>" +
-              '<div class="d">' + esc(dateText) + "</div>" +
+              '<div class="d">' + esc(dateText) + dayWeatherHtml(dkey(ev._start)) + "</div>" +
               (ev.location ? '<div class="m">' + esc(ev.location) + "</div>" : "") +
               (tagLine ? '<div class="m">' + esc(tagLine) + "</div>" : "") +
               (CAROUSEL_LOGO
@@ -2879,7 +2879,7 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (data) {
       (data.days || []).forEach(function (d) { weatherByDate[d.date] = d; });
-      if (allEvents.length) render();  // init() already ran -- refresh to show icons
+      if (allEvents.length) { render(); renderCarousel(); }  // init() already ran -- refresh to show icons
     })
     .catch(function () { /* no weather badges this load; not worth surfacing */ });
 })();
