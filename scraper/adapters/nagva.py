@@ -52,6 +52,16 @@ def _extract_sections(soup) -> dict[str, str]:
                 continue  # skip plain text nodes
             if el.name == "h1":
                 break  # reached the next section heading
+            # Wix wraps each heading in its own styled container div, and
+            # that WRAPPER (not the bare <h1> inside it) is what a
+            # pre-order walk reaches first -- parents are always yielded
+            # before their children. Without this check, the wrapper's
+            # get_text() pulls in the next heading's own text (e.g. a
+            # Facilities address ending up with a trailing "Registration")
+            # before the loop ever reaches the nested <h1> to break on.
+            nested_heading = el.find("h1")
+            if nested_heading is not None and nested_heading.get_text(strip=True) in SECTION_HEADINGS:
+                break
             if el.get("data-testid") != "richTextElement":
                 continue
             # Leaf rich-text elements only, so nested wrappers don't
