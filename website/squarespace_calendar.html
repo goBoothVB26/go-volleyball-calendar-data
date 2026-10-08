@@ -257,7 +257,13 @@
      field + glass-menu look as the filter dropdowns (.vb-dd-field etc),
      just under its own class names so it doesn't pick up the filter
      system's toolbar-specific width:100% rules. */
-  .vb-view-dd { position: relative; display: inline-block; margin-left: 6px; }
+  .vb-view-dd-wrap { display: flex; flex-direction: column; margin-left: 6px; }
+  .vb-view-dd-hdr {
+    font-size: 11.5px; font-weight: 500; color: #5f6a75; text-align: center;
+    margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .vb-dark .vb-view-dd-hdr { color: #aab2bd; }
+  .vb-view-dd { position: relative; display: inline-block; }
   .vb-view-dd-btn {
     margin-left: 0; margin-bottom: 0; min-width: 110px;
     height: 40px; box-sizing: border-box;
@@ -1155,14 +1161,17 @@
     </div>
     <h3 id="vb-title"></h3>
     <div>
-      <div class="vb-view-dd" id="vb-view-dd">
-        <button class="vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
-          <span id="vb-view-dd-label">Month</span>
-        </button>
-        <div class="vb-view-dd-menu" id="vb-view-dd-menu">
-          <button class="vb-view-dd-item" type="button" data-view="month">Month</button>
-          <button class="vb-view-dd-item" type="button" data-view="map">Map</button>
-          <button class="vb-view-dd-item" type="button" data-view="list">List</button>
+      <div class="vb-view-dd-wrap">
+        <label class="vb-view-dd-hdr" id="vb-view-dd-hdr">View</label>
+        <div class="vb-view-dd" id="vb-view-dd">
+          <button class="vb-view-dd-btn" id="vb-view-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span id="vb-view-dd-label">Month</span>
+          </button>
+          <div class="vb-view-dd-menu" id="vb-view-dd-menu">
+            <button class="vb-view-dd-item" type="button" data-view="month">Month</button>
+            <button class="vb-view-dd-item" type="button" data-view="map">Map</button>
+            <button class="vb-view-dd-item" type="button" data-view="list">List</button>
+          </div>
         </div>
       </div>
     </div>
