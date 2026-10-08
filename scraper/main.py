@@ -20,6 +20,7 @@ from .geocode import geocode_locations
 from .ical import write_ics
 from .jsonexport import write_events_json
 from .tagging import normalize_skill, tag_event
+from .weather import write_weather_json
 
 
 def slugify(club_name: str) -> str:
@@ -139,6 +140,12 @@ def run(
     json_path = os.path.join(output_dir, "events.json")
     write_events_json(all_events, json_path, geocoded=geocoded)
     print(f"Wrote {len(all_events)} combined events to {json_path}")
+
+    weather_path = os.path.join(output_dir, "weather.json")
+    if write_weather_json(weather_path):
+        print(f"Wrote weather forecast to {weather_path}")
+    else:
+        print("Weather forecast fetch failed -- leaving weather.json as-is", file=sys.stderr)
 
     print()
     if failed:

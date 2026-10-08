@@ -317,6 +317,7 @@
   }
   .vbcal-day.other { background: #f3f3f3; opacity: 0.28; }
   .vbcal-day .num { font-size: 11px; color: #888; margin-bottom: 2px; }
+  .vb-wx-day { font-size: 12px; margin-left: 3px; vertical-align: -1px; cursor: default; }
   .vbcal-day.today {
     border: 4px solid var(--vb-brand);
     box-shadow: 0 4px 5px rgba(0,0,0,0.14);  /* +3px lift vs regular cells */
@@ -342,6 +343,7 @@
   .vbcal-day.busy { cursor: pointer; }
   .vbcal-week .vbcal-day { min-height: 240px; cursor: default; }
   .vbcal-week .vbcal-day .num { font-size: 13px; margin-bottom: 5px; }
+  .vbcal-week .vb-wx-day { font-size: 14px; }
   .vbcal-week .vbcal-chip {
     white-space: normal; font-size: 13px; line-height: 1.3;
     padding: 6px 8px; margin-bottom: 5px; border-radius: 6px;
@@ -497,6 +499,7 @@
   }
   @media (max-width: 480px) { .vbcal-logo { width: 64px; flex: 0 0 64px; } }
   .vbcal-modal .when { color: #333; }
+  .vbcal-modal .wx { color: #555; margin-top: 2px; font-size: 14px; }
   /* Both buttons get an identical fixed box with flex-centered content
      so they align perfectly regardless of font-glyph metrics (the ×
      character) vs an SVG icon's own natural box. */
@@ -1085,6 +1088,7 @@
     background: #fff; border: 1px solid var(--vb-dark-border);
   }
   .vbcal-overlay.vb-dark .vbcal-modal .when { color: #d6dce2; }
+  .vbcal-overlay.vb-dark .vbcal-modal .wx { color: #b8bfc7; }
   .vbcal-overlay.vb-dark .vbcal-modal .close { color: var(--vb-dark-muted); }
   .vbcal-overlay.vb-dark .vb-share { color: var(--vb-dark-muted); }
   .vbcal-overlay.vb-dark .vbcal-modal .desc { color: #b8bfc7; }
@@ -1213,6 +1217,12 @@
   // .github/workflows/update-calendar.yml), so this is never more
   // stale than the raw URL was.
   var EVENTS_URL = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/events.json";
+
+  // One shared 8-day (today + next 7 days) forecast for the whole
+  // Orlando area, refreshed on the same schedule as events.json. Never
+  // blocks the calendar: if this fetch fails or hasn't resolved yet,
+  // weather badges are simply left off.
+  var WEATHER_URL = "https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/weather.json";
 
   // Club featured in the card carousel above the calendar. The carousel
   // shows events from CAROUSEL_DAYS_BACK days ago through
@@ -1394,6 +1404,29 @@
   var VIEW_LABELS = { month: "Month", map: "Map", list: "List" };
   var weekFocus = null;      // week-zoom anchor (Sunday), entered from busy days
   var weekTappedKey = null;  // the tapped day, centered on entry (mobile)
+
+  // Populated once weather.json resolves: { "2026-10-08": {high,low,code,category}, ... }
+  var weatherByDate = {};
+  var WEATHER_EMOJI = {
+    clear: "☀️", mostly_clear: "🌤️", partly_cloudy: "🌤️",
+    overcast: "☁️", fog: "🌫️", drizzle: "🌦️",
+    rain: "🌧️", snow: "❄️", storm: "⛈️", unknown: "",
+  };
+  function weatherFor(dateKey) { return weatherByDate[dateKey] || null; }
+  // Small inline icon for a calendar day cell, next to the date number.
+  function dayWeatherHtml(dateKey) {
+    var w = weatherFor(dateKey);
+    if (!w || !WEATHER_EMOJI[w.category]) return "";
+    return '<span class="vb-wx-day" title="High ' + w.high + '° / Low ' + w.low + '°">' +
+      WEATHER_EMOJI[w.category] + "</span>";
+  }
+  // Readable "icon + high/low" line for the event detail card.
+  function modalWeatherHtml(ev) {
+    var w = weatherFor(dkey(ev._start));
+    if (!w || !WEATHER_EMOJI[w.category]) return "";
+    return '<div class="wx">' + WEATHER_EMOJI[w.category] + " High " + w.high +
+      "° / Low " + w.low + "°</div>";
+  }
 
   function $(id) { return document.getElementById(id); }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
@@ -1803,7 +1836,7 @@
       // Tapping any day zooms into its week (no minimum event count)
       html += '<div class="vbcal-day busy' + (inMonth ? "" : " other") + (k === todayKey ? " today" : "") +
               '" data-daykey="' + k + '">';
-      html += '<div class="num">' + d.getDate() + "</div>";
+      html += '<div class="num">' + d.getDate() + dayWeatherHtml(k) + "</div>";
       (map[k] || []).forEach(function (ev) {
         html += '<button class="vbcal-chip' + (k < todayKey ? " pastev" : "") +
                 '" style="background:' + clubColors[ev.club] +
@@ -1827,7 +1860,7 @@
       var k = dkey(d), inMonth = d.getMonth() === current.getMonth();
       html += '<div class="vbcal-day' + (inMonth ? "" : " other") + (k === todayKey ? " today" : "") +
               '" data-daykey="' + k + '">';
-      html += '<div class="num">' + MONTHS[d.getMonth()].slice(0, 3) + " " + d.getDate() + "</div>";
+      html += '<div class="num">' + MONTHS[d.getMonth()].slice(0, 3) + " " + d.getDate() + dayWeatherHtml(k) + "</div>";
       (map[k] || []).forEach(function (ev) {
         html += '<button class="vbcal-chip' + (k < todayKey ? " pastev" : "") +
                 '" style="background:' + clubColors[ev.club] +
@@ -2244,6 +2277,7 @@
                "<h4>" + esc(titled(ev)) + "</h4>" +
                '<div class="clubline">' + esc(ev.club) + "</div>" +
                '<div class="when">' + when + "</div>" +
+               modalWeatherHtml(ev) +
                (ev.location
                  ? '<div class="loc" style="margin-top:4px">&#128205; <a href="' + mapsUrl(ev.location) +
                    '" target="_blank" rel="noopener">' + esc(ev.location) + "</a></div>"
@@ -2809,5 +2843,16 @@
     .catch(function (err) {
       $("vb-count").textContent = "Could not load events (" + err.message + "). Check EVENTS_URL.";
     });
+
+  // Weather is a nice-to-have, fetched independently: never blocks the
+  // calendar on init, and a failure here (API hiccup, offline) just
+  // means no weather badges -- never an error shown to the visitor.
+  fetch(WEATHER_URL)
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (data) {
+      (data.days || []).forEach(function (d) { weatherByDate[d.date] = d; });
+      if (allEvents.length) render();  // init() already ran -- refresh to show icons
+    })
+    .catch(function () { /* no weather badges this load; not worth surfacing */ });
 })();
 </script>
