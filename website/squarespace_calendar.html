@@ -264,7 +264,7 @@
     display: none; position: absolute; top: calc(100% + 6px); right: 0;
     min-width: 120px; background: #fff; border: 1px solid var(--vb-brand);
     border-radius: var(--vb-radius); box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-    overflow: hidden; z-index: 20;
+    overflow: hidden; z-index: 2000;
   }
   .vb-view-dd.open .vb-view-dd-menu { display: block; }
   .vb-view-dd-item {
@@ -553,7 +553,11 @@
      location. Tiles stay light in both themes (simplest + most
      reliable); only the popup chrome (our own markup) follows dark
      mode. */
-  #vb-map { height: 480px; border-radius: var(--vb-radius-lg); overflow: hidden; background: #e5e3df; }
+  /* position+z-index here contains Leaflet's own internal panes/controls
+     (it stacks those up to z-index 1000) so they can never climb above
+     page UI like the view dropdown, no matter what z-index Leaflet uses
+     internally. */
+  #vb-map { height: 480px; border-radius: var(--vb-radius-lg); overflow: hidden; background: #e5e3df; position: relative; z-index: 0; }
   .vb-map-note { margin-top: 8px; font-size: 13px; color: #777; }
   .vb-dark .vb-map-note { color: var(--vb-dark-muted); }
   .vb-map-popup { min-width: 180px; max-width: 240px; }
