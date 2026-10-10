@@ -8961,22 +8961,22 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Volloween 2026 '26",
+      "title": "Jax Scene Halloween Beach Coed 4s",
       "start": "2026-10-31T00:00:00",
       "end": "2026-11-01T00:00:00",
-      "location": "Woodlawn Park Saint Pete",
+      "location": "Jax Scene courts",
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/41933",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "category": null,
       "all_day": true,
       "stable_id": null,
       "recurring_occurrence": false,
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
+      "net_height": "Co-ed",
       "price": null,
       "image": null,
-      "uid": "Volleyball_Life-Volloween_2026_'26-2026-10-31T00:00:00"
+      "uid": "Volleyball_Life-Jax_Scene_Halloween_Beach_Coed_4s-2026-10-31T00:00:00"
     }
   ],
   "ocoee_coed_league": [
