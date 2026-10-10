@@ -378,10 +378,6 @@
       "lat": 29.6519684,
       "lng": -82.3249846
     },
-    "Goldenrod Community Park @ -81.9,29.0,-80.8,28.0": {
-      "lat": 28.5811986,
-      "lng": -81.3030223
-    },
     "Greenacres Freedom Park Beach Courts @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
     },
@@ -486,10 +482,6 @@
     "Mcdugald Park @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-08"
     },
-    "Meadow Woods Recreation Center @ -81.9,29.0,-80.8,28.0": {
-      "lat": 28.3800366,
-      "lng": -81.355181
-    },
     "Newberry, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.6463535,
       "lng": -82.6065023
@@ -546,6 +538,12 @@
     "St Augustine Pier @ -87.7,31.1,-79.8,24.4": {
       "lat": 29.8526774,
       "lng": -81.2671745
+    },
+    "St. Augustine Beach Fishing Pier @ -81.9,29.0,-80.8,28.0": {
+      "failed": "2026-10-10"
+    },
+    "St. Augustine Beach Fishing Pier @ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-10"
     },
     "St. Pete Beach, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 27.7253065,
@@ -611,6 +609,12 @@
     "Wesley Chapel, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.1866014,
       "lng": -82.366121
+    },
+    "Woodlawn Park Saint Pete @ -81.9,29.0,-80.8,28.0": {
+      "failed": "2026-10-10"
+    },
+    "Woodlawn Park Saint Pete @ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-10"
     },
     "wadsworth park @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
