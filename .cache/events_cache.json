@@ -8500,7 +8500,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null,
+      "image": "https://vblimages.blob.core.windows.net/images/2378284e-39d3-492b-8f7c-b1a7b9128b68.png",
       "uid": "Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00"
     },
     {
@@ -8980,25 +8980,6 @@
     },
     {
       "club": "Volleyball Life",
-      "title": "Jax Scene Halloween Beach Coed 4s",
-      "start": "2026-10-31T00:00:00",
-      "end": "2026-11-01T00:00:00",
-      "location": "Jax Scene courts",
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
-      "category": null,
-      "all_day": true,
-      "stable_id": null,
-      "recurring_occurrence": false,
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null,
-      "uid": "Volleyball_Life-Jax_Scene_Halloween_Beach_Coed_4s-2026-10-31T00:00:00"
-    },
-    {
-      "club": "Volleyball Life",
       "title": "Volloween 2026 '26",
       "start": "2026-10-31T00:00:00",
       "end": "2026-11-01T00:00:00",
@@ -9015,6 +8996,25 @@
       "price": null,
       "image": null,
       "uid": "Volleyball_Life-Volloween_2026_'26-2026-10-31T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "Halloween Spike Slam",
+      "start": "2026-10-31T00:00:00",
+      "end": "2026-11-01T00:00:00",
+      "location": "Trotwood Park",
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/4s",
+      "url": "https://volleyballlife.com/event/40730",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "recurring_occurrence": false,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null,
+      "uid": "Volleyball_Life-Halloween_Spike_Slam-2026-10-31T00:00:00"
     }
   ],
   "ocoee_coed_league": [
