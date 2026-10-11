@@ -7,7 +7,6 @@
      events.json (the jsDelivr link -- see the comment above EVENTS_URL
      further down for why jsDelivr instead of a raw.githubusercontent.com
      link). -->
-
 <!-- Leaflet: free, no-API-key map tiles (OpenStreetMap) for the Map view. -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -560,6 +559,7 @@
     width: 15px; height: 15px; flex: 0 0 15px;
     fill: none; stroke: currentColor; stroke-width: 2;
   }
+  .vb-remind-btn.on svg { fill: currentColor; }
 
   /* Add to Calendar: sits in the top button row, between the share
      icon and the close X (close floats right and comes first in the
@@ -583,7 +583,6 @@
     fill: none; stroke: currentColor; stroke-width: 2;
     stroke-linecap: round; stroke-linejoin: round;
   }
-  .vb-remind-btn.on svg { fill: currentColor; }
 
   /* Map view: a pinned Leaflet map, one marker per unique event
      location. Tiles stay light in both themes (simplest + most
@@ -2869,7 +2868,13 @@
   // later sections stack above the popup while scrolling.
   document.body.appendChild($("vb-overlay"));
 
-  fetch(EVENTS_URL)
+  // cache: "no-store" on both fetches below: without it, a visitor's
+  // browser can keep serving its own cached copy of these CDN URLs
+  // (from whenever they first loaded this page) long after jsDelivr's
+  // edge has moved on -- most visibly on weather, which actually
+  // changes day to day, where a stale browser cache makes the badges
+  // look frozen on whatever day they were last fetched.
+  fetch(EVENTS_URL, { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(init)
     .catch(function (err) {
@@ -2879,7 +2884,7 @@
   // Weather is a nice-to-have, fetched independently: never blocks the
   // calendar on init, and a failure here (API hiccup, offline) just
   // means no weather badges -- never an error shown to the visitor.
-  fetch(WEATHER_URL)
+  fetch(WEATHER_URL, { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (data) {
       (data.days || []).forEach(function (d) { weatherByDate[d.date] = d; });

@@ -2866,7 +2866,13 @@
   // later sections stack above the popup while scrolling.
   document.body.appendChild($("vb-overlay"));
 
-  fetch(EVENTS_URL)
+  // cache: "no-store" on both fetches below: without it, a visitor's
+  // browser can keep serving its own cached copy of these CDN URLs
+  // (from whenever they first loaded this page) long after jsDelivr's
+  // edge has moved on -- most visibly on weather, which actually
+  // changes day to day, where a stale browser cache makes the badges
+  // look frozen on whatever day they were last fetched.
+  fetch(EVENTS_URL, { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(init)
     .catch(function (err) {
@@ -2876,7 +2882,7 @@
   // Weather is a nice-to-have, fetched independently: never blocks the
   // calendar on init, and a failure here (API hiccup, offline) just
   // means no weather badges -- never an error shown to the visitor.
-  fetch(WEATHER_URL)
+  fetch(WEATHER_URL, { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (data) {
       (data.days || []).forEach(function (d) { weatherByDate[d.date] = d; });

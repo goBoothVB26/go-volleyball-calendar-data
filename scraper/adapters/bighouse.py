@@ -60,12 +60,20 @@ _TEAM_FEE_RE = re.compile(r"Team Fee\s*-\s*\$\s*(\d+(?:\.\d{2})?)", re.IGNORECAS
 
 
 def _cell_lines(cell) -> list[str]:
-    """A table cell's text, one entry per <br>-separated line, blanks
-    dropped. Formatting tags (<strong>, <font>, ...) collapse to plain
-    text, which is all the date/time parsing below needs."""
+    """A table cell's text, one entry per line, blanks dropped. Formatting
+    tags (<strong>, <font>, ...) collapse to plain text, which is all the
+    date/time parsing below needs.
+
+    Lines are separated by <br> tags on the pasted snapshot of this page,
+    but the live page's raw text also carries literal \\r\\n / bare \\r
+    line breaks inside the same cell (CRLF/CR, not <br> elements) --
+    those have to be normalized to \\n too, or everything after the first
+    one gets glued onto one unparseable line.
+    """
     for br in cell.find_all("br"):
         br.replace_with("\n")
-    return [line.strip() for line in cell.get_text().split("\n") if line.strip()]
+    text = cell.get_text().replace("\r\n", "\n").replace("\r", "\n")
+    return [line.strip() for line in text.split("\n") if line.strip()]
 
 
 def _parse_date_list(cell) -> list[date]:
