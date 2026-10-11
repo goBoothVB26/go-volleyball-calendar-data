@@ -1919,4 +1919,17 @@ LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/clubteams/5190038-womens-pr
  actice-preview---1011
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Skills Training Workout - Oct 11
+DTSTART;TZID=America/New_York:20261011T153000
+DTEND;TZID=America/New_York:20261011T173000
+UID:Greater_Orlando_Volleyball_Club-Skills_Training_Workout_-_Oct_11-2026-
+ 10-11T15:30:00
+DESCRIPTION:Instructor: Coach Khali\n\nMore info: https://goadultsportslea
+ gue.leagueapps.com/classes/5190151-skills-training-workout---fall-26?ngmp_
+ 2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5190151-skills-trai
+ ning-workout---fall-26?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
