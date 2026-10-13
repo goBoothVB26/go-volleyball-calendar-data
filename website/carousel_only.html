@@ -476,10 +476,9 @@
   .vbcal-modal {
     background: #fff; color: #222; border-radius: var(--vb-radius-xl); padding: 20px;
     box-shadow: var(--vb-modal-shadow);
-    border-left: 6px solid transparent;
-    /* border-box so the 20px padding + ribbon border stay INSIDE the
-       width -- without it the card overflowed the screen on phones.
-       16px of backdrop stays visible on each side. */
+    /* border-box so the 20px padding stays INSIDE the width -- without
+       it the card overflowed the screen on phones. 16px of backdrop
+       stays visible on each side. */
     box-sizing: border-box;
     max-width: var(--vb-modal-max-width); width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
     overscroll-behavior: contain;  /* card scroll never chains to the page */
@@ -557,6 +556,11 @@
     display: inline-block; background: #eef3fa; color: var(--vb-brand);
     border-radius: 10px; padding: 2px 9px; font-size: 12px; margin: 0 4px 4px 0;
   }
+  /* Divider between the header block (title/club/date/location/tags)
+     and everything below (description, buttons) -- colored per club
+     via an inline border-top-color (see openModal), same clubColors
+     map and 3px weight as the carousel card's divider. */
+  .vbcal-modal hr { border: 0; border-top: 3px solid #e0e0e0; margin: 14px 0; }
   .vbcal-modal .desc { white-space: pre-wrap; color: #444; font-size: 13px; margin-top: 8px; }
   .vbcal-modal .desc a { color: var(--vb-brand); text-decoration: underline; }
   .vbcal-overlay.vb-dark .vbcal-modal .desc a { color: var(--vb-dark-brand); }
@@ -1122,6 +1126,7 @@
   .vbcal-overlay.vb-dark .vbcal-modal .wx { color: #b8bfc7; }
   .vbcal-overlay.vb-dark .vbcal-modal .close { color: var(--vb-dark-muted); }
   .vbcal-overlay.vb-dark .vb-share { color: var(--vb-dark-muted); }
+  .vbcal-overlay.vb-dark .vbcal-modal hr { border-top-color: var(--vb-dark-border); }
   .vbcal-overlay.vb-dark .vbcal-modal .desc { color: #b8bfc7; }
   .vbcal-overlay.vb-dark .vbcal-modal .loc a { color: var(--vb-dark-brand); }
   .vbcal-overlay.vb-dark .vbcal-tag { background: rgba(255, 196, 37, 0.14); color: var(--vb-accent); }
@@ -2340,6 +2345,7 @@
                  : "") +
                '<div class="vbcal-tagrow">' + tags.map(function (t) { return '<span class="vbcal-tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
                "</div></div>" +
+               '<hr style="border-top-color:' + (clubColors[ev.club] || DEFAULT_COLOR) + '">' +
                (ev.description ? '<div class="desc">' + linkifyContacts(esc(ev.description).slice(0, 5000)) + "</div>" : "") +
                remindBtn + plainInfoLink +
                // Inline signup section: hidden until "More Info /
@@ -2363,7 +2369,6 @@
                  : "");
     var modal = $("vb-modal");
     modal.innerHTML = html;
-    modal.style.borderLeftColor = clubColors[ev.club] || DEFAULT_COLOR;
     $("vb-overlay").style.display = "flex";
     lockPageScroll();
     // Pixel-snap the card via margins: flex centering can land it on a
