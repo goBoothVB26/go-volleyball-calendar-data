@@ -33,8 +33,15 @@
     /* Text sizes */
     --vb-heading-size: 34px;      /* Our Events / Community Calendar */
     --vb-month-size: 24px;        /* "July 2026" toolbar title */
-    --vb-card-title-size: 13px;   /* carousel card event titles */
+    --vb-card-title-size: 15px;   /* carousel card event titles */
     --vb-modal-title-size: 18px;  /* popup event title */
+
+    /* Event popup width: fixed on phones (narrow enough that the popup
+       already reads as nearly full-width there); grows at the
+       breakpoints below so it isn't stuck at the same skinny 480px on
+       a full desktop monitor. See the breakpoint overrides further
+       down for the tablet/laptop/desktop steps. */
+    --vb-modal-max-width: 480px;
 
     /* Shape & depth */
     --vb-radius: 8px;             /* buttons, filters, day cells */
@@ -474,9 +481,24 @@
        width -- without it the card overflowed the screen on phones.
        16px of backdrop stays visible on each side. */
     box-sizing: border-box;
-    max-width: 480px; width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
+    max-width: var(--vb-modal-max-width); width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
     overscroll-behavior: contain;  /* card scroll never chains to the page */
     font-size: 14px; font-family: inherit;
+  }
+  /* Popup width grows with the screen instead of staying capped at the
+     phone-sized 480px: tablet/laptop/desktop each get a bit more room,
+     topping out at 720px so it never gets unreadably wide on an
+     ultra-wide monitor. Below 768px this never applies -- width stays
+     governed by `calc(100% - 32px)` above, which is already the right
+     call on a phone. */
+  @media (min-width: 768px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 560px; }
+  }
+  @media (min-width: 1024px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 640px; }
+  }
+  @media (min-width: 1440px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 720px; }
   }
   .vbcal-modal h4 {
     margin: 0 24px 8px 0; color: #222;
@@ -639,22 +661,24 @@
     font-size: var(--vb-heading-size); color: var(--vb-brand);
   }
   .vbcar-track {
-    flex: 1; display: flex; align-items: stretch; gap: 10px;
+    flex: 1; display: flex; align-items: stretch; gap: 12px;
     /* Enough top/bottom padding that the hover lift (translateY(-4px))
        and its shadow stay inside the scroll clip instead of being cut
        off at the tray edge */
-    overflow-x: auto; padding: 12px 2px 14px;
+    overflow-x: auto; padding: 14px 2px 17px;
     scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
   }
   /* Card styling modeled on Volleyball Life's event cards: title up
      top with a floating bookmark, date line, muted caption lines, then
-     a divider and footer row. */
+     a divider and footer row. Card width/padding/font-sizes below are
+     all ~18% up from their original values (240px -> 283px, etc.), so
+     the card reads bigger as one consistent step, not just wider. */
   .vbcar-card {
-    flex: 0 0 240px; text-align: left; cursor: pointer;
+    flex: 0 0 283px; text-align: left; cursor: pointer;
     display: flex; flex-direction: column;
     background: #fff; border: 1px solid var(--vb-dark-text);
     border-left: 4px solid var(--vb-brand);
-    border-radius: var(--vb-radius-lg); padding: 14px 14px 10px; font-size: 13px;
+    border-radius: var(--vb-radius-lg); padding: 17px 17px 12px; font-size: 15px;
     box-shadow: var(--vb-card-shadow);
     transition: box-shadow 0.18s, transform 0.18s, background-color 0.15s;
   }
@@ -675,17 +699,17 @@
   }
   .vbcar-card.past { opacity: 0.55; border-left-color: #9e9e9e; }
   .vbcar-card .t {
-    font-weight: 700; line-height: 1.3; margin-right: 22px; font-size: var(--vb-card-title-size);
+    font-weight: 700; line-height: 1.3; margin-right: 26px; font-size: var(--vb-card-title-size);
   }
-  .vbcar-card .d { margin-top: 3px; font-size: 12.5px; color: #333; }
-  .vbcar-card .m { color: #757575; font-size: 12px; margin-top: 2px; }
+  .vbcar-card .d { margin-top: 4px; font-size: 15px; color: #333; }
+  .vbcar-card .m { color: #757575; font-size: 14px; margin-top: 2px; }
   .vbcar-card hr {
     border: 0; border-top: 1px solid #e0e0e0;
-    margin: 10px 0 6px; width: 100%; margin-top: auto; padding-top: 10px;
+    margin: 12px 0 7px; width: 100%; margin-top: auto; padding-top: 12px;
   }
   /* Right padding clears the corner logo so the time text never runs
      underneath it */
-  .vbcar-card .f { color: #444; font-size: 12px; padding-right: 40px; }
+  .vbcar-card .f { color: #444; font-size: 14px; padding-right: 47px; }
   .vbcar-empty { color: #888; font-size: 13px; }
 
   /* Bookmark (mailing-list) icon: a fixed circular box so the
@@ -696,7 +720,7 @@
   .vb-bm {
     position: absolute; top: 2px; right: 2px; cursor: pointer;
     background: none; border: 0; padding: 0; line-height: 0;
-    width: 28px; height: 28px;
+    width: 33px; height: 33px;
     display: flex; align-items: center; justify-content: center;
     border-radius: 50%; transition: background 0.15s;
   }
@@ -706,7 +730,7 @@
   .vb-bm:active { background: rgba(0,0,0,0.16); }
   .vb-dark .vb-bm:hover { background: rgba(255,255,255,0.10); }
   .vb-dark .vb-bm:active { background: rgba(255,255,255,0.18); }
-  .vb-bm svg { width: 18px; height: 18px; fill: none; stroke: #9e9e9e; stroke-width: 2; }
+  .vb-bm svg { width: 21px; height: 21px; fill: none; stroke: #9e9e9e; stroke-width: 2; }
   .vb-bm.on svg { fill: var(--vb-brand); stroke: var(--vb-brand); }
 
   /* Share icon: one instance, always in the footer row before the time
@@ -716,7 +740,7 @@
      so it lives only here now on all devices. */
   .vb-share-car {
     cursor: pointer; background: none; border: 0; padding: 0; line-height: 0;
-    width: 26px; height: 26px; flex: 0 0 26px;
+    width: 31px; height: 31px; flex: 0 0 31px;
     display: inline-flex; align-items: center; justify-content: center;
     border-radius: 50%; transition: background 0.15s;
   }
@@ -725,7 +749,7 @@
   .vb-dark .vb-share-car:hover { background: rgba(255,255,255,0.10); }
   .vb-dark .vb-share-car:active { background: rgba(255,255,255,0.18); }
   .vb-share-car svg {
-    width: 18px; height: 18px; fill: none; stroke: #9e9e9e;
+    width: 21px; height: 21px; fill: none; stroke: #9e9e9e;
     stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
   }
   .vb-share-car:hover svg { stroke: var(--vb-brand); }
@@ -738,8 +762,8 @@
      sits bottom-right, vertically centered on the time line ".f" via
      the matching bottom offset below. */
   .vbcar-logo {
-    position: absolute; right: 10px; bottom: 4px;  /* nudge to taste to fine-tune vs the time text */
-    width: 30px; height: 30px; object-fit: contain;
+    position: absolute; right: 12px; bottom: 5px;  /* nudge to taste to fine-tune vs the time text */
+    width: 35px; height: 35px; object-fit: contain;
     pointer-events: none;  /* purely decorative -- clicks pass through to the card */
   }
   /* Light mode shows the normal (dark-colored) logo; dark mode swaps
@@ -857,7 +881,7 @@
     .vbcal-filter-toggle { display: block; }
     .vbcal-filters { display: none; }
     .vbcal-filters.open { display: flex; }
-    .vbcar-card { flex: 0 0 190px; }
+    .vbcar-card { flex: 0 0 224px; }
     .vbcar-chev { display: none; }  /* touch scrolling on phones */
     /* Inset the carousel 4px from each screen edge */
     .vbcar-body { padding: 0 4px; }

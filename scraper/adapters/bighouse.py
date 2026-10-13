@@ -68,11 +68,16 @@ def _cell_lines(cell) -> list[str]:
     but the live page's raw text also carries literal \\r\\n / bare \\r
     line breaks inside the same cell (CRLF/CR, not <br> elements) --
     those have to be normalized to \\n too, or everything after the first
-    one gets glued onto one unparseable line.
+    one gets glued onto one unparseable line. The live page's editor also
+    leaves a zero-width space (U+200B) right after every <br/> -- str.strip()
+    doesn't treat that as whitespace, so left in place it makes every line
+    but the first start with an invisible non-letter character and fail
+    _DATE_LINE_RE's leading-month-name match, silently dropping the line.
     """
     for br in cell.find_all("br"):
         br.replace_with("\n")
     text = cell.get_text().replace("\r\n", "\n").replace("\r", "\n")
+    text = text.replace("​", "")
     return [line.strip() for line in text.split("\n") if line.strip()]
 
 

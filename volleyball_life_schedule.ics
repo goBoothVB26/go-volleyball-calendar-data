@@ -1071,4 +1071,14 @@ LOCATION:Jax Scene courts
 URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
  l=28.5383832,-81.3789269&dist=200
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Halloween Spike Slam
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+UID:Volleyball_Life-Halloween_Spike_Slam-2026-10-31T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
+ olleyballlife.com/event/40730
+LOCATION:Trotwood Park
+URL:https://volleyballlife.com/event/40730
+END:VEVENT
 END:VCALENDAR
