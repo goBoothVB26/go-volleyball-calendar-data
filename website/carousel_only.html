@@ -677,7 +677,6 @@
     flex: 0 0 283px; text-align: left; cursor: pointer;
     display: flex; flex-direction: column;
     background: #fff; border: 1px solid var(--vb-dark-text);
-    border-left: 4px solid var(--vb-brand);
     border-radius: var(--vb-radius-lg); padding: 17px 17px 12px; font-size: 15px;
     box-shadow: var(--vb-card-shadow);
     transition: box-shadow 0.18s, transform 0.18s, background-color 0.15s;
@@ -697,14 +696,18 @@
     transition: transform 0.08s;
     background: #e0e0e0;
   }
-  .vbcar-card.past { opacity: 0.55; border-left-color: #9e9e9e; }
+  .vbcar-card.past { opacity: 0.55; }
   .vbcar-card .t {
     font-weight: 700; line-height: 1.3; margin-right: 26px; font-size: var(--vb-card-title-size);
   }
   .vbcar-card .d { margin-top: 4px; font-size: 15px; color: #333; }
   .vbcar-card .m { color: #757575; font-size: 14px; margin-top: 2px; }
+  /* Divider between the details and the footer row (share icon, time,
+     logo) -- colored per club via an inline border-top-color (see
+     renderCarousel), same clubColors map the event popup's ribbon
+     uses. 3px so the color actually reads as an accent bar. */
   .vbcar-card hr {
-    border: 0; border-top: 1px solid #e0e0e0;
+    border: 0; border-top: 3px solid #e0e0e0;
     margin: 12px 0 7px; width: 100%; margin-top: auto; padding-top: 12px;
   }
   /* Right padding clears the corner logo so the time text never runs
@@ -1056,14 +1059,12 @@
   .vb-dark .vbcal-item .t { color: var(--vb-dark-muted); }
   .vb-dark .vbcar-card {
     background: var(--vb-dark-surface); border-color: var(--vb-dark-border);
-    border-left-color: var(--vb-brand);  /* ribbon stays GOVC blue */
     box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
   }
   /* Inverse of light mode's darkening: dark cards LIGHTEN ~12% toward
      white on hover/press (#1b2027 -> #363b41) */
   .vb-dark .vbcar-card:hover { background: #363b41; }
   .vb-dark .vbcar-card:active { background: #363b41; }
-  .vb-dark .vbcar-card.past { border-left-color: #5a6470; }
   .vb-dark .vbcar-card .d { color: #d6dce2; }
   .vb-dark .vbcar-card .m { color: var(--vb-dark-muted); }
   .vb-dark .vbcar-card .f { color: #c2c9d1; }
@@ -2581,7 +2582,7 @@
                 ? '<img class="vbcar-logo vbcar-logo-light" src="' + CAROUSEL_LOGO + '" alt="" onerror="this.style.display=\'none\'">' +
                   '<img class="vbcar-logo vbcar-logo-dark" src="' + CAROUSEL_LOGO_DARK + '" alt="" onerror="this.style.display=\'none\'">'
                 : "") +
-              "<hr>" +
+              '<hr style="border-top-color:' + (clubColors[ev.club] || DEFAULT_COLOR) + '">' +
               '<div class="f">' + shareIconCar(ev.uid) +
               '<span class="ftime">' + esc(timeText) + "</span></div></div>";
     });
