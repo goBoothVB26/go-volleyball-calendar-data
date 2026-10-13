@@ -34,6 +34,13 @@
     --vb-card-title-size: 15px;   /* carousel card event titles */
     --vb-modal-title-size: 18px;  /* popup event title */
 
+    /* Event popup width: fixed on phones (narrow enough that the popup
+       already reads as nearly full-width there); grows at the
+       breakpoints below so it isn't stuck at the same skinny 480px on
+       a full desktop monitor. See the breakpoint overrides further
+       down for the tablet/laptop/desktop steps. */
+    --vb-modal-max-width: 480px;
+
     /* Shape & depth */
     --vb-radius: 8px;             /* buttons, filters, day cells */
     --vb-radius-lg: 12px;         /* carousel cards */
@@ -472,9 +479,24 @@
        width -- without it the card overflowed the screen on phones.
        16px of backdrop stays visible on each side. */
     box-sizing: border-box;
-    max-width: 480px; width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
+    max-width: var(--vb-modal-max-width); width: calc(100% - 32px); max-height: 80vh; overflow-y: auto;
     overscroll-behavior: contain;  /* card scroll never chains to the page */
     font-size: 14px; font-family: inherit;
+  }
+  /* Popup width grows with the screen instead of staying capped at the
+     phone-sized 480px: tablet/laptop/desktop each get a bit more room,
+     topping out at 720px so it never gets unreadably wide on an
+     ultra-wide monitor. Below 768px this never applies -- width stays
+     governed by `calc(100% - 32px)` above, which is already the right
+     call on a phone. */
+  @media (min-width: 768px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 560px; }
+  }
+  @media (min-width: 1024px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 640px; }
+  }
+  @media (min-width: 1440px) {
+    .vbcal, .vbcal-overlay { --vb-modal-max-width: 720px; }
   }
   .vbcal-modal h4 {
     margin: 0 24px 8px 0; color: #222;
