@@ -220,13 +220,23 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         # FULL rich description from its detail page -- tournament
         # details, formats, entry/prizes, how-to-register, etc. -- via
         # the shared LeagueApps extractor. The terse season label is
-        # appended below it (or used alone if the fetch fails).
+        # appended below it (or used alone if the fetch fails) as its
+        # own "Season: ..." block -- a bare trailing line with no label
+        # would otherwise be the one block that doesn't match the
+        # "Label: value" shape extract_section_blocks() already put
+        # every other block in, which is exactly what the website's
+        # card renderer checks for before laying descriptions out as a
+        # table instead of one long paragraph (see descHtml() in
+        # squarespace_calendar.html) -- one unlabeled line would silently
+        # knock a fully-sectioned description back to plain-paragraph
+        # rendering.
         season = details.get("season")
+        season_block = f"Season: {season}" if season else None
         full_description = self._scrape_full_description(url)
         if full_description:
-            description = full_description + (f"\n\n{season}" if season else "")
+            description = full_description + (f"\n\n{season_block}" if season_block else "")
         else:
-            description = season
+            description = season_block
 
         if fetch_prose or location is None:
             # Events-page programs name their venue in prose ("...at
@@ -238,7 +248,7 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
             if location is None:
                 location = prose_location
             if prose_description and not full_description:
-                description = prose_description + (f"\n\n{season}" if season else "")
+                description = prose_description + (f"\n\n{season_block}" if season_block else "")
 
         return [
             Event(
