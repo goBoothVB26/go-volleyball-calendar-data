@@ -41,6 +41,25 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      - name: TEMP DEBUG - dump GOVC league detail page description markup
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, '.')
+          from scraper.fetch import fetch_static
+          url = 'https://goadultsportsleague.leagueapps.com/leagues/volleyball-(indoor)/4968685-saturday-indoor-volleyball-league---summer?ngmp_2023_iframe_transition=1'
+          soup = fetch_static(url)
+          candidates = soup.select('div.mod') + soup.select('div[class*=\"StyledHTML__StylesContainer\"]')
+          candidates = [el for el in candidates if 'processing fee' not in el.get_text(' ', strip=True).lower() and 'select an option' not in el.get_text(' ', strip=True).lower()]
+          if not candidates:
+              print('NO CANDIDATES FOUND')
+          else:
+              best = max(candidates, key=lambda el: len(el.get_text(strip=True)))
+              print('table count in best candidate:', len(best.select('table')))
+              print('--- RAW HTML (first 6000 chars) ---')
+              print(str(best)[:6000])
+          "
+
       - name: Run scraper
         run: python -m scraper.main --output-dir .
 
