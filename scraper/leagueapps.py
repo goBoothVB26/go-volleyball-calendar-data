@@ -98,6 +98,51 @@ def strip_program_metadata(text: Optional[str]) -> Optional[str]:
     return result or None
 
 
+def extract_section_blocks(el) -> Optional[str]:
+    """Some program write-ups are shaped as repeating `<h2>League
+    Format</h2><ul><li>...</li></ul>` sections (e.g. "League Format /
+    Price / League Perks / Season Schedule / Divisions / Free Agents /
+    Subs") instead of free-flowing prose. flatten_rich_text has no
+    special handling for headings, so that shape used to come out as
+    one run-on paragraph with the heading glued straight onto its list
+    ("Price - $60 early bird, $70 regular, $80 late\n- Payment plans
+    available..."), unreadable and needlessly long on an event card.
+
+    When 2+ h2/h3 headings are found, each is paired with the list
+    items (or paragraph text) that follow it up to the next heading,
+    and the whole thing is returned as "Label: value" blocks separated
+    by blank lines -- the same shape the Big House and NAGVA adapters'
+    descriptions already use, which the website's card renderer knows
+    to lay out as a compact table instead of one long paragraph (see
+    descHtml() in squarespace_calendar.html). Returns None when the
+    content isn't shaped this way (plain prose with no/one heading),
+    so callers fall back to flatten_rich_text as before.
+    """
+    headings = el.find_all(["h2", "h3"])
+    if len(headings) < 2:
+        return None
+    blocks = []
+    for h in headings:
+        label = h.get_text(" ", strip=True)
+        if not label:
+            continue
+        items = []
+        for sib in h.find_next_siblings():
+            if sib.name in ("h2", "h3"):
+                break
+            if sib.name in ("ul", "ol"):
+                items.extend(
+                    li.get_text(" ", strip=True) for li in sib.find_all("li") if li.get_text(strip=True)
+                )
+            else:
+                text = sib.get_text(" ", strip=True)
+                if text:
+                    items.append(text)
+        if items:
+            blocks.append(f"{label}: " + " • ".join(items))
+    return "\n\n".join(blocks) if blocks else None
+
+
 def flatten_rich_text(el) -> Optional[str]:
     """Flatten a rich-text HTML element into readable plain text: <br>
     and <p>/<li> boundaries become real line breaks, while inline
@@ -150,7 +195,7 @@ def extract_rich_description(soup) -> Optional[str]:
     best = max(candidates, key=lambda el: len(el.get_text(strip=True)))
     if len(best.get_text(strip=True)) < 200:
         return None
-    return strip_program_metadata(flatten_rich_text(best))
+    return extract_section_blocks(best) or strip_program_metadata(flatten_rich_text(best))
 
 
 def parse_details(li) -> dict[str, str]:
