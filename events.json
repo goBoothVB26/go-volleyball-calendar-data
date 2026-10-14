@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T18:02:20",
+  "generated": "2026-10-14T04:30:12",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -9198,25 +9198,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-10-13T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "address": null,
-      "lat": 28.5867689,
-      "lng": -81.5196927,
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2026-10-13T20:15:00",
       "club": "Ocoee Open Gym Volleyball",
       "title": "Open Gym Volleyball",
@@ -9253,6 +9234,25 @@
       "net_height": null,
       "price": null,
       "image": "https://vblimages.blob.core.windows.net/images/61842910-af9f-451e-988b-8a5d99d23fe0.jpg"
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-10-14T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
+      "image": null
     },
     {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-10-15T18:00:00",
@@ -9407,25 +9407,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Ace_Tournaments_|_Triple_Trouble_'26-2026-10-17T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Ace Tournaments | Triple Trouble '26",
-      "start": "2026-10-17T00:00:00",
-      "end": "2026-10-18T00:00:00",
-      "all_day": true,
-      "location": "Abess Park",
-      "address": null,
-      "lat": 30.3242087,
-      "lng": -81.4744359,
-      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s/4s",
-      "url": "https://volleyballlife.com/event/41519",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/eba57337-7f98-40b8-a2b2-8eb14fc67d74.png"
-    },
-    {
       "uid": "Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00",
       "club": "Volleyball Life",
       "title": "The Ocala Open",
@@ -9480,7 +9461,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
     },
     {
       "uid": "SSOVA-SSOVA's_October_17/18_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-10-17T00:00:00",
@@ -9996,9 +9977,9 @@
       "image": null
     },
     {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-10-24T18:00:00",
+      "uid": "Greater_Orlando_Volleyball_Club-Oct,_24_@_Dover_Shores_Community_Center-2026-10-24T18:00:00",
       "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
+      "title": "Oct, 24 @ Dover Shores Community Center",
       "start": "2026-10-24T18:00:00",
       "end": "2026-10-24T21:00:00",
       "all_day": false,
@@ -10006,12 +9987,12 @@
       "address": null,
       "lat": 28.5255984,
       "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
+      "net_height": "Men's, Co-ed",
+      "price": 7.0,
       "image": null
     },
     {
@@ -10338,21 +10319,40 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Volloween_2026_'26-2026-10-31T00:00:00",
+      "uid": "Volleyball_Life-Halloween_Spike_Slam-2026-10-31T00:00:00",
       "club": "Volleyball Life",
-      "title": "Volloween 2026 '26",
+      "title": "Halloween Spike Slam",
       "start": "2026-10-31T00:00:00",
       "end": "2026-11-01T00:00:00",
       "all_day": true,
-      "location": "Woodlawn Park Saint Pete",
+      "location": "Trotwood Park",
+      "address": "Trotwood Park, Winter Springs, FL",
+      "lat": 28.6817408,
+      "lng": -81.2611594,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 2s/4s",
+      "url": "https://volleyballlife.com/event/40730",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Jax_Scene_Halloween_Beach_Coed_4s-2026-10-31T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Jax Scene Halloween Beach Coed 4s",
+      "start": "2026-10-31T00:00:00",
+      "end": "2026-11-01T00:00:00",
+      "all_day": true,
+      "location": "Jax Scene courts",
       "address": null,
       "lat": null,
       "lng": null,
       "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/41933",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
+      "net_height": "Co-ed",
       "price": null,
       "image": null
     },
@@ -10376,9 +10376,9 @@
       "image": null
     },
     {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-10-31T18:00:00",
+      "uid": "Greater_Orlando_Volleyball_Club-Oct_31_@_Dover_Shores_Community_Center-2026-10-31T18:00:00",
       "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
+      "title": "Oct 31 @ Dover Shores Community Center",
       "start": "2026-10-31T18:00:00",
       "end": "2026-10-31T21:00:00",
       "all_day": false,
@@ -10386,12 +10386,12 @@
       "address": null,
       "lat": 28.5255984,
       "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
+      "net_height": "Men's, Co-ed",
+      "price": 7.0,
       "image": null
     },
     {
@@ -10696,25 +10696,6 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
-      "image": null
-    },
-    {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-11-07T18:00:00",
-      "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
-      "start": "2026-11-07T18:00:00",
-      "end": "2026-11-07T21:00:00",
-      "all_day": false,
-      "location": "Dover Shores Community Center",
-      "address": null,
-      "lat": 28.5255984,
-      "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
-      "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
       "image": null
     },
     {
@@ -11041,25 +11022,6 @@
       "image": null
     },
     {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-11-14T18:00:00",
-      "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
-      "start": "2026-11-14T18:00:00",
-      "end": "2026-11-14T21:00:00",
-      "all_day": false,
-      "location": "Dover Shores Community Center",
-      "address": null,
-      "lat": 28.5255984,
-      "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
-      "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Volleyball_Court_B-2026-11-14T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Volleyball Court B",
@@ -11383,9 +11345,9 @@
       "image": null
     },
     {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-11-21T18:00:00",
+      "uid": "Greater_Orlando_Volleyball_Club-Nov_21_@_Dover_Shores_Community_Center-2026-11-21T18:00:00",
       "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
+      "title": "Nov 21 @ Dover Shores Community Center",
       "start": "2026-11-21T18:00:00",
       "end": "2026-11-21T21:00:00",
       "all_day": false,
@@ -11393,12 +11355,12 @@
       "address": null,
       "lat": 28.5255984,
       "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
+      "net_height": "Men's, Co-ed",
+      "price": 7.0,
       "image": null
     },
     {
@@ -11649,9 +11611,9 @@
       "image": null
     },
     {
-      "uid": "Greater_Orlando_Volleyball_Club-Coed_Team_Open_Gym-2026-11-28T18:00:00",
+      "uid": "Greater_Orlando_Volleyball_Club-Nov_28_@_Dover_Shores_Community_Center-2026-11-28T18:00:00",
       "club": "Greater Orlando Volleyball Club",
-      "title": "Coed Team Open Gym",
+      "title": "Nov 28 @ Dover Shores Community Center",
       "start": "2026-11-28T18:00:00",
       "end": "2026-11-28T21:00:00",
       "all_day": false,
@@ -11659,12 +11621,12 @@
       "address": null,
       "lat": 28.5255984,
       "lng": -81.3259519,
-      "description": "Select\nName\n\nPrice\n#\nDetails\nDate/Time\nInstructor\n\nOctober\n\nOct, 24 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nOct 31 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nNovember\n\nNov 21 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nUNCATEGORIZED\n\nNov 28 @ Dover Shores Community Center\n\n$ 7.0\n\nCo-Ed\n\nIntermediate\n\nFall 2026\n\n2026-10-24 00:00:00.0\n- 2026-11-28 00:00:00.0\n\nSat\n\nDover Shores Community Center\n\nFall 2026",
-      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym",
-      "skill_level": "B/BB",
+      "description": null,
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5148616-coed-team-open-gym?ngmp_2023_iframe_transition=1",
+      "skill_level": "All Levels",
       "gym_type": "Open Gym",
-      "net_height": "Co-ed",
-      "price": 0.0,
+      "net_height": "Men's, Co-ed",
+      "price": 7.0,
       "image": null
     },
     {
