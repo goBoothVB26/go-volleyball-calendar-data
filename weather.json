@@ -1,26 +1,19 @@
 {
-  "generated": "2026-10-13T23:40:16",
+  "generated": "2026-10-14T05:08:19",
   "days": [
     {
-      "date": "2026-10-13",
-      "high": 91,
-      "low": 68,
+      "date": "2026-10-14",
+      "high": 86,
+      "low": 69,
       "code": 3,
       "category": "overcast"
-    },
-    {
-      "date": "2026-10-14",
-      "high": 87,
-      "low": 70,
-      "code": 2,
-      "category": "partly_cloudy"
     },
     {
       "date": "2026-10-15",
-      "high": 91,
+      "high": 86,
       "low": 68,
-      "code": 3,
-      "category": "overcast"
+      "code": 1,
+      "category": "mostly_clear"
     },
     {
       "date": "2026-10-16",
@@ -54,6 +47,13 @@
       "date": "2026-10-20",
       "high": 85,
       "low": 75,
+      "code": 51,
+      "category": "drizzle"
+    },
+    {
+      "date": "2026-10-21",
+      "high": 84,
+      "low": 73,
       "code": 51,
       "category": "drizzle"
     }
