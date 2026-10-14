@@ -126,18 +126,6 @@ LOCATION:Gulfport Beach Courts
 URL:https://ssova.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[SSOVA] SSOVA Juniors AVP ECC/WCC QUALIFIER & USAV Regional Qualif
- ier GULFPORT\, Beach Volleyball Tournament- BRQ
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-UID:SSOVA-SSOVA_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qualifier_GU
- LFPORT\,_Beach_Volleyball_Tournament-_BRQ-2026-11-08T00:00:00
-DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
- va.volleyballlife.com/events
-LOCATION:Gulfport Beach Courts
-URL:https://ssova.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[SSOVA] CHARITY VETERAN SSOVA Juniors 4's Vet Sports Gulfport Beac
  h Volleyball Tournament
 DTSTART;VALUE=DATE:20261108
@@ -220,5 +208,17 @@ DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
  va.volleyballlife.com/event/33601
 LOCATION:Bilmar Beach Resort
 URL:https://ssova.volleyballlife.com/event/33601
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Juniors AVP 2 STAR & ECC/WCC QUALIFIER & USAV Region
+ al Qualifier GULFPORT\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+UID:SSOVA-SSOVA_Juniors_AVP_2_STAR_&_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
+ lifier_GULFPORT\,_Beach_Volleyball_Tournament-_BRQ-2026-11-08T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/events
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/events
 END:VEVENT
 END:VCALENDAR
