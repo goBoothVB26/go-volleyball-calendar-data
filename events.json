@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T13:00:39",
+  "generated": "2026-10-15T18:00:23",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -9407,25 +9407,6 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-The_Ocala_Open-2026-10-17T00:00:00",
-      "club": "Volleyball Life",
-      "title": "The Ocala Open",
-      "start": "2026-10-17T00:00:00",
-      "end": "2026-10-18T00:00:00",
-      "all_day": true,
-      "location": "Frank DeLuca YMCA",
-      "address": null,
-      "lat": 29.1702255,
-      "lng": -82.0915625,
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40890",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/2378284e-39d3-492b-8f7c-b1a7b9128b68.png"
-    },
-    {
       "uid": "Volleyball_Life-Grass_Dragon_RevCo_Halloween-2026-10-17T00:00:00",
       "club": "Volleyball Life",
       "title": "Grass Dragon RevCo Halloween",
@@ -9461,7 +9442,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/4fd7dd02-db90-4df8-ad31-b6fcfb429fd6.png"
     },
     {
       "uid": "SSOVA-SSOVA's_October_17/18_GULFPORT_Men's/Women's/Coed,_Beach_Volleyball_Tournament-2026-10-17T00:00:00",
@@ -10315,6 +10296,25 @@
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "Volleyball_Life-Jax_Scene_Halloween_Beach_Coed_4s-2026-10-31T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Jax Scene Halloween Beach Coed 4s",
+      "start": "2026-10-31T00:00:00",
+      "end": "2026-11-01T00:00:00",
+      "all_day": true,
+      "location": "Jax Scene courts",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Co-ed",
       "price": null,
       "image": null
     },
