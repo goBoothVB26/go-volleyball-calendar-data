@@ -1522,18 +1522,6 @@ URL:https://goadultsportsleague.leagueapps.com/classes/5150535-skills-trai
  ning-workout---september-26
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] July 5th @ College Park
-DTSTART;TZID=America/New_York:20270705T140000
-DTEND;TZID=America/New_York:20270705T170000
-UID:Greater_Orlando_Volleyball_Club-July_5th_@_College_Park-2027-07-05T14:
- 00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:College Park Neighborhood Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Greater Orlando Volleyball Club] National Volleyball Day Grass Vo
  lleyball\, Potluck and BBQ!
 DTSTART;TZID=America/New_York:20260923T160000
@@ -1571,42 +1559,6 @@ DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/clubteam
 LOCATION:Dover Shores Community Center
 URL:https://goadultsportsleague.leagueapps.com/clubteams/5155541-mens-club
  -tryouts---920
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] July 12th @ College Park
-DTSTART;TZID=America/New_York:20270712T140000
-DTEND;TZID=America/New_York:20270712T170000
-UID:Greater_Orlando_Volleyball_Club-July_12th_@_College_Park-2027-07-12T14
- :00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:College Park Neighborhood Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] July 19th @ College Park
-DTSTART;TZID=America/New_York:20270719T140000
-DTEND;TZID=America/New_York:20270719T170000
-UID:Greater_Orlando_Volleyball_Club-July_19th_@_College_Park-2027-07-19T14
- :00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:College Park Neighborhood Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] July 26th @ College Park
-DTSTART;TZID=America/New_York:20270726T140000
-DTEND;TZID=America/New_York:20270726T170000
-UID:Greater_Orlando_Volleyball_Club-July_26th_@_College_Park-2027-07-26T14
- :00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:College Park Neighborhood Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Greater Orlando Volleyball Club] Women's Club Tryouts - 9/20
@@ -1687,58 +1639,6 @@ DTSTART;TZID=America/New_York:20260927T153000
 DTEND;TZID=America/New_York:20260927T174500
 UID:Greater_Orlando_Volleyball_Club-(C)_September_27_@_Dover_Shores_Commun
  ity_Center-2026-09-27T15:30:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Aug 2 @ Dover Shores Community C
- enter
-DTSTART;TZID=America/New_York:20270802T130000
-DTEND;TZID=America/New_York:20270802T153000
-UID:Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-
- 2027-08-02T13:00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Aug 2 @ Dover Shores Community C
- enter
-DTSTART;TZID=America/New_York:20270802T153000
-DTEND;TZID=America/New_York:20270802T174500
-UID:Greater_Orlando_Volleyball_Club-Aug_2_@_Dover_Shores_Community_Center-
- 2027-08-02T15:30:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Aug 9 @ Dover Shores Community C
- enter
-DTSTART;TZID=America/New_York:20270809T130000
-DTEND;TZID=America/New_York:20270809T153000
-UID:Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-
- 2027-08-09T13:00:00
-DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
- 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
-LOCATION:Dover Shores Community Center
-URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
- summer-series?ngmp_2023_iframe_transition=1
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Greater Orlando Volleyball Club] Aug 9 @ Dover Shores Community C
- enter
-DTSTART;TZID=America/New_York:20270809T153000
-DTEND;TZID=America/New_York:20270809T174500
-UID:Greater_Orlando_Volleyball_Club-Aug_9_@_Dover_Shores_Community_Center-
- 2027-08-09T15:30:00
 DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
  5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
 LOCATION:Dover Shores Community Center
