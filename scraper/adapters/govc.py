@@ -29,13 +29,12 @@ title/description keyword inference).
 """
 
 import re
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional
 
 from dateutil import parser as dateparser
 
 from .. import leagueapps
-from ..dateparse import coerce_upcoming_year
 from ..tagging import infer_gym_type, infer_net_heights
 from ..fetch import fetch_rendered, fetch_static
 from ..models import Event
@@ -465,7 +464,15 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
                 continue
             if event_date is None:
                 continue
-            event_date = coerce_upcoming_year(event_date)
+            if event_date.date() < date.today():
+                # The classes page leaves finished session rows up for a
+                # while instead of archiving them promptly, and with no
+                # year in the markup ("July 5th @ College Park") a
+                # cross-year roll-forward would turn an already-finished
+                # session into a phantom one a year out, re-appearing on
+                # every run instead of just quietly dropping out once the
+                # site actually removes the row.
+                continue
 
             em_texts = [em.get_text(strip=True) for em in row.select(".col-4 em")]
             time_text = next((t for t in em_texts if _TIME_RANGE_RE.search(t)), "")
