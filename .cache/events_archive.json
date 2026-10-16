@@ -6196,6 +6196,25 @@
       "price": null,
       "image": "https://vblimages.blob.core.windows.net/images/8e0d1a3c-9b91-4d44-991c-d35c3af0613f.jpeg",
       "uid": "Volleyball_Life-First_Coast_Volleyball_St_Augustine_Beach_Series_Oct_10-11_'26-2026-10-11T00:00:00"
+    },
+    {
+      "club": "Volleyball Life",
+      "title": "2026 Stetson Fall Tourney",
+      "start": "2026-10-16T00:00:00",
+      "end": "2026-10-18T00:00:00",
+      "location": "Cooper beach volleyball courts",
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://volleyballlife.com/event/41912",
+      "category": null,
+      "all_day": true,
+      "stable_id": null,
+      "recurring_occurrence": false,
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": "https://vblimages.blob.core.windows.net/images/e80b68f8-9d53-4f71-8f59-097f682d6521.png",
+      "uid": "Volleyball_Life-2026_Stetson_Fall_Tourney-2026-10-16T00:00:00"
     }
   ],
   "ocoee_coed_league": [
