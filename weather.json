@@ -1,24 +1,24 @@
 {
-  "generated": "2026-10-17T11:53:17",
+  "generated": "2026-10-17T16:47:57",
   "days": [
     {
       "date": "2026-10-17",
       "high": 78,
-      "low": 62,
+      "low": 64,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-10-18",
-      "high": 77,
-      "low": 59,
-      "code": 55,
-      "category": "drizzle"
+      "high": 79,
+      "low": 61,
+      "code": 3,
+      "category": "overcast"
     },
     {
       "date": "2026-10-19",
       "high": 80,
-      "low": 69,
+      "low": 67,
       "code": 51,
       "category": "drizzle"
     },
