@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T16:47:56",
+  "generated": "2026-10-17T21:53:51",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -12102,6 +12102,25 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Women's, Co-ed",
       "price": 8.0,
+      "image": null
+    },
+    {
+      "uid": "SSOVA-SSOVA_CHRISTMAS_THEME_Men's/Women's/Coed\u2019s_December_ST_PETE_BEACH,_Beach_Volleyball_Tournament-2026-12-19T00:00:00",
+      "club": "SSOVA",
+      "title": "SSOVA CHRISTMAS THEME Men's/Women's/Coed\u2019s December ST PETE BEACH, Beach Volleyball Tournament",
+      "start": "2026-12-19T00:00:00",
+      "end": "2026-12-21T00:00:00",
+      "all_day": true,
+      "location": "Upham Beach Park- St. Pete Beach",
+      "address": "Upham Beach Park, St. Pete Beach, FL",
+      "lat": 27.7253065,
+      "lng": -82.741212,
+      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
+      "url": "https://ssova.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Women's, Co-ed",
+      "price": null,
       "image": null
     },
     {
