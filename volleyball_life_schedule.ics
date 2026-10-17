@@ -1080,4 +1080,37 @@ DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
 LOCATION:Jax Scene courts
 URL:https://volleyballlife.com/event/41491
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] The Ranse Classic 2026
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261109
+UID:Volleyball_Life-The_Ranse_Classic_2026-2026-11-06T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 1s/2s/3s/4s\n\nMore info: htt
+ ps://volleyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.
+ 5383832\,-81.3789269&dist=200
+LOCATION:Lido Key Beach
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Super Girl Pro Series 2026
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+UID:Volleyball_Life-Super_Girl_Pro_Series_2026-2026-11-07T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://volleyballlife.com/event/39933
+LOCATION:Jax Beach
+URL:https://volleyballlife.com/event/39933
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] SPBC North Shore Nights - Coed 2s and 3s
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+UID:Volleyball_Life-SPBC_North_Shore_Nights_-_Coed_2s_and_3s-2026-11-07T00
+ :00:00
+DESCRIPTION:Tournament · Adults · Beach · 1s/2s/3s\n\nMore info: https:
+ //volleyballlife.com/event/42146
+LOCATION:NorthShore Park
+URL:https://volleyballlife.com/event/42146
+END:VEVENT
 END:VCALENDAR
