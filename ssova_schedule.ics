@@ -233,4 +233,16 @@ DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
 LOCATION:Upham Beach Park- St. Pete Beach
 URL:https://ssova.volleyballlife.com/events
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA CHRISTMAS THEME Juniors AVP & USAV Regional Qualifie
+ r ST PETE BEACH\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+UID:SSOVA-SSOVA_CHRISTMAS_THEME_Juniors_AVP_&_USAV_Regional_Qualifier_ST_P
+ ETE_BEACH\,_Beach_Volleyball_Tournament-_BRQ-2026-12-20T00:00:00
+DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
+ va.volleyballlife.com/events
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
 END:VCALENDAR
