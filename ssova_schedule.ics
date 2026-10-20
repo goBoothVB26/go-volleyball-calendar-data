@@ -77,31 +77,6 @@ LOCATION:Gulfport Beach Courts
 URL:https://ssova.volleyballlife.com/event/38968
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[SSOVA] SSOVA's HALLOWEEN THEME MANATEE BEACH Men's/Women's/Coed
- ’s\, Beach Volleyball Tournament
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261026
-UID:SSOVA-SSOVA's_HALLOWEEN_THEME_MANATEE_BEACH_Men's/Women's/Coed’s\,_B
- each_Volleyball_Tournament-2026-10-24T00:00:00
-DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://ssov
- a.volleyballlife.com/event/33592
-LOCATION:Anna Maria Island: Manatee Beach
-URL:https://ssova.volleyballlife.com/event/33592
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[SSOVA] SSOVA HALLOWEEN THEME MANATEE BEACH Juniors AVP  ECC/WCC Q
- ualifier & USAV Regional Qualifier\, Beach Volleyball Tournament
-DTSTART;VALUE=DATE:20261025
-DTEND;VALUE=DATE:20261026
-UID:SSOVA-SSOVA_HALLOWEEN_THEME_MANATEE_BEACH_Juniors_AVP__ECC/WCC_Qualifi
- er_&_USAV_Regional_Qualifier\,_Beach_Volleyball_Tournament-2026-10-25T00:0
- 0:00
-DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
- va.volleyballlife.com/events
-LOCATION:Anna Maria Island: Manatee Beach
-URL:https://ssova.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[SSOVA] SSOVA Men's/Women's/Coed’s November 7/8 GULFPORT\, Beach
   Volleyball Tournament
 DTSTART;VALUE=DATE:20261107
@@ -244,5 +219,17 @@ DESCRIPTION:Tournament · Juniors · Beach · 2s\n\nMore info: https://sso
  va.volleyballlife.com/events
 LOCATION:Upham Beach Park- St. Pete Beach
 URL:https://ssova.volleyballlife.com/events
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA HALLOWEEN THEME Adults & Juniors AVP ECC/WCC Qualifi
+ er
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261026
+UID:SSOVA-SSOVA_HALLOWEEN_THEME_Adults_&_Juniors_AVP_ECC/WCC_Qualifier-202
+ 6-10-24T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/event/33593
+LOCATION:Anna Maria Island: Manatee Beach
+URL:https://ssova.volleyballlife.com/event/33593
 END:VEVENT
 END:VCALENDAR
