@@ -1059,16 +1059,6 @@ LOCATION:Greenacres Grass Field
 URL:https://volleyballlife.com/event/41648
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volleyball Life] Jax Scene Halloween Grass HI-LO
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-UID:Volleyball_Life-Jax_Scene_Halloween_Grass_HI-LO-2026-11-01T00:00:00
-DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
- eyballlife.com/event/41491
-LOCATION:Jax Scene courts
-URL:https://volleyballlife.com/event/41491
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volleyball Life] The Ranse Classic 2026
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261109
@@ -1111,5 +1101,25 @@ DESCRIPTION:Tournament · Adults · Beach · 3s\n\nMore info: https://voll
  eyballlife.com/event/42235
 LOCATION:Woodlawn Park
 URL:https://volleyballlife.com/event/42235
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] JUBVB Alumni Tournament
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+UID:Volleyball_Life-JUBVB_Alumni_Tournament-2026-10-31T00:00:00
+DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
+ eyballlife.com/event/42269
+LOCATION:Jacksonville University
+URL:https://volleyballlife.com/event/42269
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Jax Scene Halloween Grass Revco 4s
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+UID:Volleyball_Life-Jax_Scene_Halloween_Grass_Revco_4s-2026-11-01T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyballlife.com/event/41491
+LOCATION:Jax Scene courts
+URL:https://volleyballlife.com/event/41491
 END:VEVENT
 END:VCALENDAR
