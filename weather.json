@@ -1,19 +1,19 @@
 {
-  "generated": "2026-10-21T16:24:49",
+  "generated": "2026-10-21T17:36:35",
   "days": [
     {
       "date": "2026-10-21",
-      "high": 81,
+      "high": 80,
       "low": 58,
-      "code": 3,
-      "category": "overcast"
+      "code": 55,
+      "category": "drizzle"
     },
     {
       "date": "2026-10-22",
       "high": 79,
-      "low": 57,
-      "code": 3,
-      "category": "overcast"
+      "low": 58,
+      "code": 1,
+      "category": "mostly_clear"
     },
     {
       "date": "2026-10-23",
