@@ -134,7 +134,6 @@ def _parse_weekdays(text: str) -> set[int]:
 
 class CommunityEventsAdapter(ClubAdapter):
     club_name = "Community Submitted"
-    category = "adult"
     schedule_url = COMMUNITY_FEED_URL
 
     def scrape(self) -> list[Event]:

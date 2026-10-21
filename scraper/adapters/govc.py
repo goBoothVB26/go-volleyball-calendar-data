@@ -99,7 +99,6 @@ def _parse_time_range(text: str) -> tuple[Optional[datetime], Optional[datetime]
 
 class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
     club_name = "Greater Orlando Volleyball Club"
-    category = "adult"
     schedule_url = BASE_URL
 
     def __init__(self) -> None:

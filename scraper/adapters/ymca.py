@@ -24,7 +24,6 @@ from .base import ClubAdapter
 
 class YMCACentralFloridaAdapter(ClubAdapter):
     club_name = "YMCA Central Florida"
-    category = "adult"
     schedule_url = "https://ymcacf.org/programs/adultsports/volleyball/"
 
     def scrape(self) -> list[Event]:

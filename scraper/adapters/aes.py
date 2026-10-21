@@ -73,7 +73,6 @@ _OFFICIALS_RE = re.compile(r"officials?\s+only", re.I)
 
 class AESAdapter(ClubAdapter):
     club_name = "AES Adult Volleyball (USAV, Florida)"
-    category = "adult"
     schedule_url = "https://www.advancedeventsystems.com/events"
 
     def scrape(self) -> list[Event]:

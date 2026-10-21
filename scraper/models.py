@@ -14,9 +14,6 @@ class Event:
     location: Optional[str] = None
     description: Optional[str] = None
     url: Optional[str] = None
-    category: Optional[str] = None
-    """Overrides the adapter's category for this one event, for sources
-    that mix categories (e.g. both adult and youth divisions)."""
     all_day: bool = False
     """If True, the event is written as a DATE-only (all-day) iCal event
     instead of a DATETIME event. start/end are still datetime objects but

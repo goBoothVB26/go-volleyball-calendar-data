@@ -7,9 +7,8 @@ all plain text -- no stable IDs, just Vuetify's generated classes. Cards
 don't carry their own detail-page link (clicking opens an in-page
 panel rather than navigating), so `url` just points at the events page.
 
-Adults vs Youth varies per card, so each event's `category` is set
-directly from its type line rather than relying on a fixed adapter-wide
-category.
+Adults vs Youth varies per card (the type line says which), but nothing
+downstream currently splits on it.
 
 Recurring weekly leagues: same platform as volleyballlife.py, same
 issue -- a card's date range can be a season's bounding dates rather
@@ -32,7 +31,6 @@ from .volleyballlife import VolleyballLifeAdapter
 
 class VolleyVortexAdapter(ClubAdapter):
     club_name = "Volley Vortex"
-    category = "adult"  # fallback; most cards set their own via type line
     schedule_url = "https://volleyvortex.volleyballlife.com/events"
 
     def scrape(self) -> list[Event]:
@@ -54,8 +52,6 @@ class VolleyVortexAdapter(ClubAdapter):
             if start is None:
                 continue
 
-            category = "youth" if "youth" in type_line.lower() else "adult"
-
             # See module docstring: a recurring weekly league's card
             # shows its season's bounding dates, not one continuous
             # event, so expand into one occurrence per matching weekday
@@ -74,7 +70,6 @@ class VolleyVortexAdapter(ClubAdapter):
                             location=location,
                             description=type_line or None,
                             url=self.schedule_url,
-                            category=category,
                             recurring_occurrence=True,
                         )
                     )
@@ -95,7 +90,6 @@ class VolleyVortexAdapter(ClubAdapter):
                     location=location,
                     description=type_line or None,
                     url=self.schedule_url,
-                    category=category,
                 )
             )
 

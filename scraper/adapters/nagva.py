@@ -112,7 +112,6 @@ def _build_description(sections: dict[str, str], url: str) -> str:
 
 class NAGVAAdapter(ClubAdapter):
     club_name = "NAGVA"
-    category = "adult"
     schedule_url = "https://www.nagva.org/tournaments"
 
     def scrape(self) -> list[Event]:

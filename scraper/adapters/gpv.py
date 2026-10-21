@@ -25,7 +25,6 @@ from .base import ClubAdapter
 
 class GamePointVolleyballAdapter(ClubAdapter):
     club_name = "Game Point Volleyball"
-    category = "youth"
     schedule_url = "https://www.gamepointevents.com/copy-of-tournament-calendar-2026"
 
     def scrape(self) -> list[Event]:

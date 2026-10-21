@@ -24,7 +24,6 @@ LOOKAHEAD_DAYS = 90
 
 class GoldenrodCommunityParkAdapter(ClubAdapter):
     club_name = "Goldenrod Community Park"
-    category = "adult"
     schedule_url = "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark"
 
     def scrape(self) -> list[Event]:

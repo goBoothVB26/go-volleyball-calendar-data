@@ -16,7 +16,6 @@ from .base import ClubAdapter
 
 class OVAAdapter(ClubAdapter):
     club_name = "OVA"
-    category = "youth"
     schedule_url = "https://www.lvaorlando.com/"  # TODO: point at the actual schedule page
 
     def scrape(self) -> list[Event]:

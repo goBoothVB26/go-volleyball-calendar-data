@@ -28,7 +28,6 @@ WEEKDAY_ABBRS = {"mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat": 5, "su
 
 class SanfordAdultVolleyballAdapter(ClubAdapter):
     club_name = "City of Sanford Adult Volleyball"
-    category = "adult"
     schedule_url = "https://secure.rec1.com/FL/sanford-fl/catalog/index/01268e61f70f8acae7d1913bf1ae0e3b"
 
     def scrape(self) -> list[Event]:

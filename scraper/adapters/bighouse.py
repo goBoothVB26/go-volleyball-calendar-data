@@ -173,7 +173,6 @@ def _parse_team_fee(headers: list[str], rows) -> float | None:
 
 class BigHouseOpenGymAdapter(ClubAdapter):
     club_name = "Big House Open Gym"
-    category = "adult"
     schedule_url = "https://www.bighouseusa.com/store/p228/Big_House_Volleyball_Open_Gym_-_Pick_Your_Date.html"
 
     def scrape(self) -> list[Event]:
