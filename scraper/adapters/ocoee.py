@@ -36,7 +36,6 @@ class OcoeeCoedLeagueAdapter(ClubAdapter):
     """
 
     club_name = "Ocoee Coed League"
-    category = "adult"
     schedule_url = SCHEDULE_URL
 
     WAIVER_URL = "https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724"
@@ -83,7 +82,6 @@ class OcoeeOpenGymAdapter(ClubAdapter):
     """
 
     club_name = "Ocoee Open Gym Volleyball"
-    category = "adult"
     schedule_url = SCHEDULE_URL
 
     REGISTRATION_URL = (

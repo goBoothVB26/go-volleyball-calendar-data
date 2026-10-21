@@ -71,7 +71,6 @@ _WEEKDAY_NAME_RE = re.compile(
 
 class VolleyballLifeAdapter(ClubAdapter):
     club_name = "Volleyball Life"
-    category = "adult"
     schedule_url = (
         "https://volleyballlife.com/events"
         "?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200"

@@ -12,11 +12,9 @@ title text. See volleyballlife.py's module docstring for the full
 rationale.
 
 No ageCat/addr filter on the schedule URL (this org doesn't split by
-age the way the main volleyballlife.com listing does). Confirmed from a
-real scrape that this listing does mix Adult and Juniors events (e.g.
-"Tournament · Juniors · Beach · 2s"), same situation as Volley Vortex,
-so category is set per-card from its own type line rather than the
-adapter-wide "adult" default.
+age the way the main volleyballlife.com listing does); confirmed from a
+real scrape that this listing mixes Adult and Juniors events (e.g.
+"Tournament · Juniors · Beach · 2s") -- nothing distinguishes them here.
 
 Recurring weekly leagues: same platform as volleyballlife.py, same
 issue -- a card's date range can be a season's bounding dates rather
@@ -41,7 +39,6 @@ SUMMARIES_API_MARKER = "api-v8.volleyballlife.com/tournament/summaries"
 
 class SSOVAAdapter(ClubAdapter):
     club_name = "SSOVA"
-    category = "adult"
     schedule_url = "https://ssova.volleyballlife.com/events"
 
     def scrape(self) -> list[Event]:
@@ -68,13 +65,6 @@ class SSOVAAdapter(ClubAdapter):
 
             all_day_end = (end or start) + timedelta(days=1)
 
-            # Confirmed from real scraped data: this listing mixes Adult
-            # and Juniors events on one page (e.g. "Tournament · Juniors
-            # · Beach · 2s"), same situation as Volley Vortex -- so set
-            # category per-card from its own type line rather than the
-            # adapter-wide default.
-            category = "youth" if "juniors" in type_line.lower() else self.category
-
             # See module docstring: a recurring weekly league's card
             # shows its season's bounding dates, not one continuous
             # event, so expand into one occurrence per matching weekday
@@ -93,7 +83,6 @@ class SSOVAAdapter(ClubAdapter):
                             description=type_line or None,
                             url=url,
                             all_day=True,
-                            category=category,
                             recurring_occurrence=True,
                         )
                     )
@@ -109,7 +98,6 @@ class SSOVAAdapter(ClubAdapter):
                     description=type_line or None,
                     url=url,
                     all_day=True,
-                    category=category,
                 )
             )
 

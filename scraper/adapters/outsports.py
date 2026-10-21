@@ -60,7 +60,6 @@ _MAX_RECURSION_DEPTH = 3
 
 class OutSportsLeagueAdapter(ClubAdapter):
     club_name = "Out Sports League"
-    category = "adult"
     schedule_url = LEAGUE_LIST_URLS[0]
 
     def scrape(self) -> list[Event]:

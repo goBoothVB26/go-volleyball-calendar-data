@@ -45,7 +45,6 @@ _CATEGORY_KEYS = (
 
 class MeadowWoodsRecreationCenterAdapter(ClubAdapter):
     club_name = "Meadow Woods Recreation Center"
-    category = "adult"
     schedule_url = "https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&"
 
     def scrape(self) -> list[Event]:

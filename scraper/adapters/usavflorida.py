@@ -31,7 +31,6 @@ MAX_DESCRIPTION_CHARS = 3000
 
 class USAVFloridaRegionAdapter(ClubAdapter):
     club_name = "USAV Florida Region"
-    category = "adult"
     schedule_url = "https://floridavolleyball.org/events/"
 
     def scrape(self) -> list[Event]:

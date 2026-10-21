@@ -21,7 +21,6 @@ from .base import ClubAdapter
 
 class WPVCAdapter(ClubAdapter):
     club_name = "WPVC"
-    category = "adult"
     schedule_url = "https://www.wpvc.org/programs/adults"
 
     def scrape(self) -> list[Event]:
