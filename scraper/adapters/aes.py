@@ -51,10 +51,22 @@ ADULT_VOLLEYBALL_EVENT_TYPE_LABELS = [
 # The site's region filter doesn't reliably exclude everything, so events
 # are also filtered after scraping:
 #   - location must be in Florida (", FL")
-#   - youth events (boys/girls/juniors) are skipped
+#   - youth events (boys/girls/juniors, an explicit age bracket like
+#     "(12-18...)" or "(13-17 OPEN)", or hosted at JJVA) are skipped
 #   - organizer "test" events are skipped
+# The age-bracket and JJVA checks exist because confirmed live: half of
+# AES's "Adult Volleyball" format results were actually junior/club
+# tournaments whose titles never use the words "boys/girls/juniors" at
+# all -- age shows up only as a numeric range in the title ("Tropical
+# Ice Challenge (12-18USA, 12O & 18O)"), or the event is simply hosted
+# at JJVA (Jacksonville, FL), which every other one of those age-bracket
+# events was also hosted at -- strongly suggesting it's a juniors
+# academy venue, even for its own listings that don't state an age
+# range in the title.
 _FLORIDA_RE = re.compile(r",\s*FL\b", re.I)
 _YOUTH_RE = re.compile(r"\b(boys?|girls?|juniors?)\b", re.I)
+_YOUTH_AGE_BRACKET_RE = re.compile(r"\(\s*\d{1,2}\s*-\s*\d{1,2}|\(\s*\d{1,2}[UO]\b", re.I)
+_JJVA_RE = re.compile(r"\bJJVA\b", re.I)
 _TEST_RE = re.compile(r"\btest(ing)?\b", re.I)
 _OFFICIALS_RE = re.compile(r"officials?\s+only", re.I)
 
@@ -122,8 +134,10 @@ class AESAdapter(ClubAdapter):
 
                     if not location or not _FLORIDA_RE.search(location):
                         continue  # outside Florida (or no stated location)
-                    if _YOUTH_RE.search(title):
-                        continue  # boys/girls/juniors event
+                    if _YOUTH_RE.search(title) or _YOUTH_AGE_BRACKET_RE.search(title):
+                        continue  # boys/girls/juniors event, or an explicit age bracket
+                    if _JJVA_RE.search(title) or (location and _JJVA_RE.search(location)):
+                        continue  # hosted at (or run by) JJVA, a juniors academy
                     if _TEST_RE.search(title):
                         continue  # organizer test listing
                     if _OFFICIALS_RE.search(title):
