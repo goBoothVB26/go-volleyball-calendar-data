@@ -33,16 +33,6 @@ DESCRIPTION:Competitive volleyball - Teams are preferred\, but we try to a
 LOCATION:Game Point VBC
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Men's indoor league
-DTSTART;TZID=America/New_York:20260830T110000
-DTEND;TZID=America/New_York:20260830T140000
-UID:Volley_Vortex-Men's_indoor_league-2026-08-30T11:00:00
-DESCRIPTION:Men's indoor league\; social & competitive division\,\n\nMore 
- info: https://www.app.leaguelinq.com/volley-vortex
-LOCATION:The Well Activity Center
-URL:https://www.app.leaguelinq.com/volley-vortex
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Game Point VBC] Game Point Adult Open Gym
 DTSTART;TZID=America/New_York:20260729T193000
 DTEND;TZID=America/New_York:20260729T220000
@@ -71,6 +61,16 @@ DESCRIPTION:Competitive volleyball - Teams are preferred\, but we try to a
  ccommodate single players too.  Must RSVP Via text to Edgar at 321-287-717
  4.
 LOCATION:Game Point VBC
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] Men's indoor league
+DTSTART;TZID=America/New_York:20260830T110000
+DTEND;TZID=America/New_York:20260830T140000
+UID:Volley_Vortex-Men's_indoor_league-2026-08-30T11:00:00
+DESCRIPTION:Men's indoor league\; social & competitive division\,\n\nMore 
+ info: https://www.app.leaguelinq.com/volley-vortex
+LOCATION:The Well Activity Center
+URL:https://www.app.leaguelinq.com/volley-vortex
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Volley Vortex] Men's indoor league
@@ -275,10 +275,10 @@ DESCRIPTION:WPVC Open Gym Friday Nights
 LOCATION:Winter Park Volleyball Club
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[CCVL] CCVL 2026 Opener
+SUMMARY:[WPVC] CCVL 2026 Opener
 DTSTART;TZID=America/New_York:20260926T080000
 DTEND;TZID=America/New_York:20260926T190000
-UID:CCVL-CCVL_2026_Opener-2026-09-26T08:00:00
+UID:WPVC-CCVL_2026_Opener-2026-09-26T08:00:00
 DESCRIPTION:CCVL welcomes ALL teams\, (Collegiate club\, Adult teams\, nca
  a/naia preseason\, club teams etc.) of both GENDERS to come and BASH\n\nMo
  re info: https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==
@@ -292,17 +292,6 @@ DTEND;TZID=America/New_York:20261226T200000
 UID:CCVL-WPVC_x_CCVL_Winter_Indoor_Tournament-2026-12-26T08:00:00
 DESCRIPTION:WPVC x CCVL Tournament December 26th 2026
 LOCATION:Winter Park Volleyball Club
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[WPVC] CCVL 2026 Opener
-DTSTART;TZID=America/New_York:20260926T080000
-DTEND;TZID=America/New_York:20260926T190000
-UID:WPVC-CCVL_2026_Opener-2026-09-26T08:00:00
-DESCRIPTION:CCVL welcomes ALL teams\, (Collegiate club\, Adult teams\, nca
- a/naia preseason\, club teams etc.) of both GENDERS to come and BASH\n\nMo
- re info: https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==
-LOCATION:Winter Park Volleyball Club
-URL:https://www.instagram.com/ccvl_vb?stkn=MWlyOTZic3h2aWlqag==
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[CCVL] Club v Club
