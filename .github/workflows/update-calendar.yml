@@ -50,24 +50,24 @@ jobs:
           from scraper.adapters.ymca import YMCACentralFloridaAdapter
           from scraper import fetch
 
+          print('=== YMCA (run first/alone, isolated from AES resource use) ===')
+          try:
+              events = YMCACentralFloridaAdapter().scrape()
+              print('YMCA events found:', len(events))
+              for e in events:
+                  print(' ', e.start, '|', e.title, '|', e.location)
+          except Exception as e:
+              print('YMCA FAILED:', repr(e))
+
+          print()
           print('=== AES ===')
           try:
               events = AESAdapter().scrape()
               print('AES events found:', len(events))
-              for e in events[:8]:
+              for e in events:
                   print(' ', e.start, '|', e.title, '|', e.location, '|', e.price)
           except Exception as e:
               print('AES FAILED:', repr(e))
-
-          print()
-          print('=== YMCA ===')
-          try:
-              events = YMCACentralFloridaAdapter().scrape()
-              print('YMCA events found:', len(events))
-              for e in events[:8]:
-                  print(' ', e.start, '|', e.title, '|', e.location)
-          except Exception as e:
-              print('YMCA FAILED:', repr(e))
 
           fetch.shutdown()
           "
