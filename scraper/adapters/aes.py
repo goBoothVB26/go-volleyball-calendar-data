@@ -23,15 +23,29 @@ from .base import ClubAdapter
 
 AFFILIATION_USAV = "number:250004"
 
-# "Adult Volleyball" optgroup option values from the Event Type dropdown.
-ADULT_VOLLEYBALL_EVENT_TYPES = [
-    "number:13",  # Festival
-    "number:15",  # Full Day Format
-    "number:16",  # Two Day Format
-    "number:17",  # Three Day Format
-    "number:20",  # National Championships
-    "number:21",  # Other - Full Day
-    "number:26",  # Other - Multi-Day
+# "Adult Volleyball" optgroup labels from the Event Type dropdown,
+# matched by their VISIBLE TEXT rather than the <option value="number:N">
+# the dropdown renders. Those values come from an internal Angular index
+# that isn't stable -- confirmed live: several of this list's original
+# hardcoded values (e.g. "Two Day Format") had quietly stopped existing
+# on the page at all, which made select_option retry until timeout
+# instead of failing fast, while OTHER options had picked up a second,
+# differently-valued duplicate under the same label. Labels are what the
+# site actually guarantees stays put; same reasoning as the region
+# dropdown below, which was already selected by label for exactly this
+# kind of instability. "... - Girls"/"... - Boys" suffixed entries
+# (National Championships/Qualifier/Region Bid) are youth-only and
+# deliberately excluded.
+ADULT_VOLLEYBALL_EVENT_TYPE_LABELS = [
+    "Festival",
+    "Half Day Format",
+    "Full Day Format",
+    "Two Day Format",
+    "Three Day Format",
+    "Four Day Format",
+    "National Championships",
+    "Other - Full Day",
+    "Other - Multi-Day",
 ]
 
 # The site's region filter doesn't reliably exclude everything, so events
@@ -79,8 +93,17 @@ class AESAdapter(ClubAdapter):
                 '[data-test-id="filter-dropdown-region"]', label="Florida (FL)", force=True
             )
 
-            for event_type_value in ADULT_VOLLEYBALL_EVENT_TYPES:
-                page.select_option('[data-test-id="filter-dropdown-event-type"]', event_type_value, force=True)
+            for event_type_label in ADULT_VOLLEYBALL_EVENT_TYPE_LABELS:
+                try:
+                    # Short timeout: a label the site has renamed/removed
+                    # should just be skipped, not stall the whole adapter
+                    # until the full default timeout elapses.
+                    page.select_option(
+                        '[data-test-id="filter-dropdown-event-type"]',
+                        label=event_type_label, force=True, timeout=5000,
+                    )
+                except Exception:
+                    continue
                 page.wait_for_timeout(1500)
 
                 for card in page.query_selector_all("a.aes-card"):

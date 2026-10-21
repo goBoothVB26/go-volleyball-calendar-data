@@ -28,7 +28,14 @@ class YMCACentralFloridaAdapter(ClubAdapter):
     schedule_url = "https://ymcacf.org/programs/adultsports/volleyball/"
 
     def scrape(self) -> list[Event]:
-        soup = fetch_rendered(self.schedule_url, wait_selector=".ymca-event-card")
+        # wait_state="attached": the cards land in the DOM well before
+        # they're CSS-visible (confirmed live -- the page's HTML already
+        # has every .ymca-event-card populated within a few seconds, but
+        # Playwright's default "visible" wait was timing out regardless),
+        # so settle_ms does the real waiting here instead.
+        soup = fetch_rendered(
+            self.schedule_url, wait_selector=".ymca-event-card", wait_state="attached", settle_ms=5000
+        )
         events: list[Event] = []
 
         for card in soup.select(".ymca-event-card"):
