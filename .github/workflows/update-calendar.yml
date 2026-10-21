@@ -41,6 +41,55 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      - name: TEMP DEBUG - inspect AES and YMCA live markup
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, '.')
+          from scraper import fetch
+
+          print('=== AES event-type dropdown options ===')
+          page = fetch.new_page()
+          try:
+              page.goto('https://www.advancedeventsystems.com/events', timeout=30000)
+              page.wait_for_selector('[data-test-id=\"filter-dropdown-affiliation\"]', state='attached', timeout=30000)
+              page.select_option('[data-test-id=\"filter-dropdown-affiliation\"]', 'number:250004', force=True)
+              page.wait_for_selector('[data-test-id=\"filter-dropdown-region\"]', state='attached', timeout=30000)
+              page.wait_for_function(
+                  'document.querySelector(\'[data-test-id=\"filter-dropdown-region\"]\')'
+                  ' && !document.querySelector(\'[data-test-id=\"filter-dropdown-region\"]\').disabled',
+                  timeout=30000,
+              )
+              page.select_option('[data-test-id=\"filter-dropdown-region\"]', label='Florida (FL)', force=True)
+              page.wait_for_timeout(1500)
+              opts = page.query_selector_all('[data-test-id=\"filter-dropdown-event-type\"] option')
+              for o in opts:
+                  print(repr(o.get_attribute('value')), '->', repr(o.inner_text()))
+          except Exception as e:
+              print('AES DEBUG FAILED:', repr(e))
+          finally:
+              page.close()
+
+          print()
+          print('=== YMCA page content ===')
+          try:
+              page2 = fetch.new_page()
+              page2.goto('https://ymcacf.org/programs/adultsports/volleyball/', timeout=30000)
+              page2.wait_for_timeout(5000)
+              html = page2.content()
+              print('page length:', len(html))
+              print('contains ymca-event-card:', 'ymca-event-card' in html)
+              print('contains ymca-events:', 'ymca-events' in html)
+              # dump any class name containing 'event' or 'card' to see what changed
+              import re
+              classes = set(re.findall(r'class=\"([^\"]*)\"', html))
+              interesting = sorted(c for c in classes if 'event' in c.lower() or 'card' in c.lower() or 'volleyball' in c.lower())
+              print('interesting classes found:', interesting[:40])
+              page2.close()
+          except Exception as e:
+              print('YMCA DEBUG FAILED:', repr(e))
+          "
+
       - name: Run scraper
         run: python -m scraper.main --output-dir .
 
