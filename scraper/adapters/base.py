@@ -8,7 +8,6 @@ class ClubAdapter(ABC):
 
     club_name: str
     schedule_url: str
-    category: str  # "youth" or "adult" -- which output calendar this belongs in
 
     @abstractmethod
     def scrape(self) -> list[Event]:
