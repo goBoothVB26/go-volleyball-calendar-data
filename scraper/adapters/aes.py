@@ -23,24 +23,50 @@ from .base import ClubAdapter
 
 AFFILIATION_USAV = "number:250004"
 
-# "Adult Volleyball" optgroup option values from the Event Type dropdown.
-ADULT_VOLLEYBALL_EVENT_TYPES = [
-    "number:13",  # Festival
-    "number:15",  # Full Day Format
-    "number:16",  # Two Day Format
-    "number:17",  # Three Day Format
-    "number:20",  # National Championships
-    "number:21",  # Other - Full Day
-    "number:26",  # Other - Multi-Day
+# "Adult Volleyball" optgroup labels from the Event Type dropdown,
+# matched by their VISIBLE TEXT rather than the <option value="number:N">
+# the dropdown renders. Those values come from an internal Angular index
+# that isn't stable -- confirmed live: several of this list's original
+# hardcoded values (e.g. "Two Day Format") had quietly stopped existing
+# on the page at all, which made select_option retry until timeout
+# instead of failing fast, while OTHER options had picked up a second,
+# differently-valued duplicate under the same label. Labels are what the
+# site actually guarantees stays put; same reasoning as the region
+# dropdown below, which was already selected by label for exactly this
+# kind of instability. "... - Girls"/"... - Boys" suffixed entries
+# (National Championships/Qualifier/Region Bid) are youth-only and
+# deliberately excluded.
+ADULT_VOLLEYBALL_EVENT_TYPE_LABELS = [
+    "Festival",
+    "Half Day Format",
+    "Full Day Format",
+    "Two Day Format",
+    "Three Day Format",
+    "Four Day Format",
+    "National Championships",
+    "Other - Full Day",
+    "Other - Multi-Day",
 ]
 
 # The site's region filter doesn't reliably exclude everything, so events
 # are also filtered after scraping:
 #   - location must be in Florida (", FL")
-#   - youth events (boys/girls/juniors) are skipped
+#   - youth events (boys/girls/juniors, an explicit age bracket like
+#     "(12-18...)" or "(13-17 OPEN)", or hosted at JJVA) are skipped
 #   - organizer "test" events are skipped
+# The age-bracket and JJVA checks exist because confirmed live: half of
+# AES's "Adult Volleyball" format results were actually junior/club
+# tournaments whose titles never use the words "boys/girls/juniors" at
+# all -- age shows up only as a numeric range in the title ("Tropical
+# Ice Challenge (12-18USA, 12O & 18O)"), or the event is simply hosted
+# at JJVA (Jacksonville, FL), which every other one of those age-bracket
+# events was also hosted at -- strongly suggesting it's a juniors
+# academy venue, even for its own listings that don't state an age
+# range in the title.
 _FLORIDA_RE = re.compile(r",\s*FL\b", re.I)
 _YOUTH_RE = re.compile(r"\b(boys?|girls?|juniors?)\b", re.I)
+_YOUTH_AGE_BRACKET_RE = re.compile(r"\(\s*\d{1,2}\s*-\s*\d{1,2}|\(\s*\d{1,2}[UO]\b", re.I)
+_JJVA_RE = re.compile(r"\bJJVA\b", re.I)
 _TEST_RE = re.compile(r"\btest(ing)?\b", re.I)
 _OFFICIALS_RE = re.compile(r"officials?\s+only", re.I)
 
@@ -79,8 +105,17 @@ class AESAdapter(ClubAdapter):
                 '[data-test-id="filter-dropdown-region"]', label="Florida (FL)", force=True
             )
 
-            for event_type_value in ADULT_VOLLEYBALL_EVENT_TYPES:
-                page.select_option('[data-test-id="filter-dropdown-event-type"]', event_type_value, force=True)
+            for event_type_label in ADULT_VOLLEYBALL_EVENT_TYPE_LABELS:
+                try:
+                    # Short timeout: a label the site has renamed/removed
+                    # should just be skipped, not stall the whole adapter
+                    # until the full default timeout elapses.
+                    page.select_option(
+                        '[data-test-id="filter-dropdown-event-type"]',
+                        label=event_type_label, force=True, timeout=5000,
+                    )
+                except Exception:
+                    continue
                 page.wait_for_timeout(1500)
 
                 for card in page.query_selector_all("a.aes-card"):
@@ -99,8 +134,10 @@ class AESAdapter(ClubAdapter):
 
                     if not location or not _FLORIDA_RE.search(location):
                         continue  # outside Florida (or no stated location)
-                    if _YOUTH_RE.search(title):
-                        continue  # boys/girls/juniors event
+                    if _YOUTH_RE.search(title) or _YOUTH_AGE_BRACKET_RE.search(title):
+                        continue  # boys/girls/juniors event, or an explicit age bracket
+                    if _JJVA_RE.search(title) or (location and _JJVA_RE.search(location)):
+                        continue  # hosted at (or run by) JJVA, a juniors academy
                     if _TEST_RE.search(title):
                         continue  # organizer test listing
                     if _OFFICIALS_RE.search(title):

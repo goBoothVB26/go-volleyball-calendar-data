@@ -81,7 +81,11 @@ def fetch_static(url: str, timeout: int = 20) -> BeautifulSoup:
 
 
 def fetch_rendered(
-    url: str, wait_selector: str | None = None, timeout: int = 30000, settle_ms: int = 3000
+    url: str,
+    wait_selector: str | None = None,
+    timeout: int = 30000,
+    settle_ms: int = 3000,
+    wait_state: str = "visible",
 ) -> BeautifulSoup:
     """Render the page with a headless browser, for JS-driven schedule widgets.
 
@@ -90,6 +94,13 @@ def fetch_rendered(
     before the real data populates it, so `wait_for_selector` can resolve
     too early. `settle_ms` gives the page a bit more time after that to
     finish populating before we grab the HTML.
+
+    `wait_state` defaults to "visible" (Playwright's own default), but
+    some sites render the target element into the DOM well before it
+    becomes CSS-visible (an entrance animation, a filter widget that
+    starts hidden, ...) -- pass "attached" for those, same reasoning as
+    `page.select_option(..., force=True)` elsewhere in this codebase for
+    elements that are visually hidden behind a custom widget.
     """
 
     def attempt() -> BeautifulSoup:
@@ -97,7 +108,7 @@ def fetch_rendered(
         try:
             page.goto(url, timeout=timeout)
             if wait_selector:
-                page.wait_for_selector(wait_selector, timeout=timeout)
+                page.wait_for_selector(wait_selector, state=wait_state, timeout=timeout)
             if settle_ms:
                 page.wait_for_timeout(settle_ms)
             html = page.content()

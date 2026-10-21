@@ -28,7 +28,19 @@ class YMCACentralFloridaAdapter(ClubAdapter):
     schedule_url = "https://ymcacf.org/programs/adultsports/volleyball/"
 
     def scrape(self) -> list[Event]:
-        soup = fetch_rendered(self.schedule_url, wait_selector=".ymca-event-card")
+        # wait_state="attached": the cards land in the DOM well before
+        # they're CSS-visible (confirmed live in one test -- the page's
+        # HTML already had every .ymca-event-card populated within a few
+        # seconds, but Playwright's default "visible" wait was timing out
+        # regardless), so settle_ms does the real waiting here instead.
+        # timeout bumped well past the 30s default: even waiting on
+        # "attached" alone was still timing out from the scraper's CI
+        # runner, suggesting the page (or this specific site, from this
+        # network) is just slower to respond than a 30s budget allows.
+        soup = fetch_rendered(
+            self.schedule_url, wait_selector=".ymca-event-card",
+            wait_state="attached", timeout=60000, settle_ms=5000,
+        )
         events: list[Event] = []
 
         for card in soup.select(".ymca-event-card"):
