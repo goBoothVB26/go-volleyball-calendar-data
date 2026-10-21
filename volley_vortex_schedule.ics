@@ -4,30 +4,19 @@ PRODID:-//Volleyball Schedule Scraper//
 NAME:Volley Vortex
 X-WR-CALNAME:Volley Vortex
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Mini Pop Up ( Summer) Mini Madness '26
-DTSTART;TZID=America/New_York:20260726T000000
-DTEND;TZID=America/New_York:20260726T000000
-UID:Volley_Vortex-Mini_Pop_Up_(_Summer)_Mini_Madness_'26-2026-07-26T00:00:
- 00
-DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
- eyvortex.volleyballlife.com/events
+SUMMARY:[Volley Vortex] Halloween Spike Slam
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+UID:Volley_Vortex-Halloween_Spike_Slam-2026-10-31T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
+ olleyvortex.volleyballlife.com/events
 LOCATION:Trotwood Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Beach Spike
-DTSTART;TZID=America/New_York:20260815T000000
-DTEND;TZID=America/New_York:20260816T000000
-UID:Volley_Vortex-Beach_Spike-2026-08-15T00:00:00
-DESCRIPTION:Tournament · Adults · Beach · 2s\n\nMore info: https://voll
- eyvortex.volleyballlife.com/events
-LOCATION:Cady Way Park
-URL:https://volleyvortex.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volley Vortex] Love in Volley
-DTSTART;TZID=America/New_York:20270220T202600
-DTEND;TZID=America/New_York:20270220T202600
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
 UID:Volley_Vortex-Love_in_Volley-2027-02-20T20:26:00
 DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
  eyvortex.volleyballlife.com/events
@@ -36,8 +25,8 @@ URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Volley Vortex] 4s Grass Tournament: Spring Slamdown '27
-DTSTART;TZID=America/New_York:20270424T202600
-DTEND;TZID=America/New_York:20270424T202600
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
 UID:Volley_Vortex-4s_Grass_Tournament:_Spring_Slamdown_'27-2027-04-24T20:2
  6:00
 DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
@@ -46,19 +35,9 @@ LOCATION:Trotters Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Volley Vortex] Halloween Spike Slam
-DTSTART;TZID=America/New_York:20261031T000000
-DTEND;TZID=America/New_York:20261031T000000
-UID:Volley_Vortex-Halloween_Spike_Slam-2026-10-31T00:00:00
-DESCRIPTION:Tournament · Adults · Grass · 2s/4s\n\nMore info: https://v
- olleyvortex.volleyballlife.com/events
-LOCATION:Trotwood Park
-URL:https://volleyvortex.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Volley Vortex] Queen Showdown
-DTSTART;TZID=America/New_York:20270814T202600
-DTEND;TZID=America/New_York:20270814T202600
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
 UID:Volley_Vortex-Queen_Showdown-2027-08-14T20:26:00
 DESCRIPTION:Tournament · Adults · Indoor · 6s\n\nMore info: https://vol
  leyvortex.volleyballlife.com/events
@@ -67,8 +46,8 @@ URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Volley Vortex] Spiketember Classic
-DTSTART;TZID=America/New_York:20270918T202600
-DTEND;TZID=America/New_York:20270918T202600
+DTSTART;VALUE=DATE:20270918
+DTEND;VALUE=DATE:20270919
 UID:Volley_Vortex-Spiketember_Classic-2027-09-18T20:26:00
 DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
  eyvortex.volleyballlife.com/events

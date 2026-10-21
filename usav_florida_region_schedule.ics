@@ -4,78 +4,6 @@ PRODID:-//Volleyball Schedule Scraper//
 NAME:USAV Florida Region
 X-WR-CALNAME:USAV Florida Region
 BEGIN:VEVENT
-SUMMARY:[USAV Florida Region] 25th Annual Florida Region Awards Ceremony
-DTSTART;VALUE=DATE:20260423
-DTEND;VALUE=DATE:20260424
-UID:USAV_Florida_Region-25th_Annual_Florida_Region_Awards_Ceremony-2026-04
- -23T00:00:00
-DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eusti
- s\, Fl 32726\n[email protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Memb
- ership Information\n- Indoor Jr. Bids and Rankings\n- ​Sanction a USAV E
- vent\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- 
- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM\, Mond
- ay-Friday\nClosed on Good Friday\, Memorial Day\, Independence Day\, Labor
-  Day\, Thanksgiving Day\, Thanksgiving Friday\, Christmas Eve through New 
- Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball\, Inc.
-  All Rights Reserved. Designed by StellarBlue.ai\n\nMore info: https://flo
- ridavolleyball.org/blog/event/25th-annual-florida-region-awards-ceremony/
-LOCATION:Orlando\, FL
-URL:https://floridavolleyball.org/blog/event/25th-annual-florida-region-aw
- ards-ceremony/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[USAV Florida Region] 2026 Florida Adult Regional Championships
-DTSTART;VALUE=DATE:20260516
-DTEND;VALUE=DATE:20260517
-UID:USAV_Florida_Region-2026_Florida_Adult_Regional_Championships-2026-05-
- 16T00:00:00
-DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nSATURDAY\, MAY 16\, 2026
-  | WINTER PARK VOLLEYBALL CLUB:\nSign your team up to prepare for the USAV
-  Open Adult National Championships! This event is the Saturday prior to th
- e start of Nationals and will be a great way to get your team ready for na
- tion-wide competition.\n\nTEAM ENTRY IS FREE!:\nDivisions: Men’s Divisio
- n (A/AA): 12 teams max *Minimum of 4 teams required per division Women’s
-  Division (A/AA): 12 teams max *Minimum of 4 teams required per division\n
- Schedule: 8am-8:45am: Team Check in 9am: Pool Play begins 3pm: Bracket Pla
- y begins\n​Prize Money: ​1st place: $1\,000 ​2nd place: $750\nR1 wil
- l be provided (teams will provide remaining positions) USAV Rules and Unif
- orm Requirements will be followed.\n\nDEADLINE TO ENTER - MAY 13TH AT 3PM:
- \nTeams are not required to be registered for USAV Open Adult National Cha
- mpionships\nIf you have any questions about this event\, please reach out 
- to [email protected] or give our office a call at (352) 742-0080\n15010 U
- S Highway 441 Eustis\, Fl 32726\n[email protected]\n(352) 742-0080\n\nHEL
- PFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- 
- ​Sanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Be
- come an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:
- \n9 AM to 5 PM\, Monday-Friday\nClosed on Good Friday\, Memorial Day\, Ind
- ependence Day\, Labor Day\, Thanksgiving Day\, Thanksgiving Friday\, Chris
- tmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of 
- USA Volleyball\, Inc. All Rights Reserved. Designed by StellarBlue.ai\n\nM
- ore info: https://floridavolleyball.org/blog/event/2026-florida-adult-regi
- onal-championships/
-LOCATION:Winter Park Volleyball Club\, 2603 Ace Rd. Orlando\, FL 32792
-URL:https://floridavolleyball.org/blog/event/2026-florida-adult-regional-c
- hampionships/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[USAV Florida Region] USAV All-Stars Championship
-DTSTART;VALUE=DATE:20260723
-DTEND;VALUE=DATE:20260727
-UID:USAV_Florida_Region-USAV_All-Stars_Championship-2026-07-23T00:00:00
-DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eusti
- s\, Fl 32726\n[email protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Memb
- ership Information\n- Indoor Jr. Bids and Rankings\n- ​Sanction a USAV E
- vent\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- 
- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM\, Mond
- ay-Friday\nClosed on Good Friday\, Memorial Day\, Independence Day\, Labor
-  Day\, Thanksgiving Day\, Thanksgiving Friday\, Christmas Eve through New 
- Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball\, Inc.
-  All Rights Reserved. Designed by StellarBlue.ai\n\nMore info: https://flo
- ridavolleyball.org/blog/event/usav-all-stars-championship/
-LOCATION:Columbus\, OH
-URL:https://floridavolleyball.org/blog/event/usav-all-stars-championship/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[USAV Florida Region] 2027 Florida USAV Gold Series
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270111
@@ -238,6 +166,26 @@ URL:https://floridavolleyball.org/blog/event/florida-regional-18s-qualifie
  r/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[USAV Florida Region] 25th Annual Florida Region Awards Ceremony
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260424
+UID:USAV_Florida_Region-25th_Annual_Florida_Region_Awards_Ceremony-2026-04
+ -23T00:00:00
+DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eusti
+ s\, Fl 32726\n[email protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Memb
+ ership Information\n- Indoor Jr. Bids and Rankings\n- ​Sanction a USAV E
+ vent\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- 
+ Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM\, Mond
+ ay-Friday\nClosed on Good Friday\, Memorial Day\, Independence Day\, Labor
+  Day\, Thanksgiving Day\, Thanksgiving Friday\, Christmas Eve through New 
+ Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball\, Inc.
+  All Rights Reserved. Designed by StellarBlue.ai\n\nMore info: https://flo
+ ridavolleyball.org/blog/event/25th-annual-florida-region-awards-ceremony/
+LOCATION:Orlando\, FL
+URL:https://floridavolleyball.org/blog/event/25th-annual-florida-region-aw
+ ards-ceremony/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[USAV Florida Region] 2027 ASICS Florida Volleyball Challenge
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270329
@@ -292,6 +240,39 @@ URL:https://floridavolleyball.org/blog/event/asics-florida-volleyball-chal
  lenge/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[USAV Florida Region] 2027 Florida Adult Regional Championships
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+UID:USAV_Florida_Region-2027_Florida_Adult_Regional_Championships-2027-05-
+ 22T00:00:00
+DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nSATURDAY\, MAY 22\, 2027
+  | WINTER PARK VOLLEYBALL CLUB:\nSign your team up to prepare for the USAV
+  Open Adult National Championships! This event is the Saturday prior to th
+ e start of Nationals and will be a great way to get your team ready for na
+ tion-wide competition.\n\nTEAM ENTRY IS FREE!:\nDivisions: Men’s Divisio
+ n (A/AA): 12 teams max *Minimum of 4 teams required per division Women’s
+  Division (A/AA): 12 teams max *Minimum of 4 teams required per division\n
+ Schedule: 8am-8:45am: Team Check in 9am: Pool Play begins 3pm: Bracket Pla
+ y begins\n​Prize Money: ​1st place: $1\,000 ​2nd place: $750\nR1 wil
+ l be provided (teams will provide remaining positions) USAV Rules and Unif
+ orm Requirements will be followed.\n\nDEADLINE TO REGISTER - MAY 21ST AT 3
+ PM:\nTeams are not required to be registered for USAV Open Adult National 
+ Championships\nIf you have any questions about this event\, please reach o
+ ut to [email protected] or give our office a call at (352) 742-0080\n1501
+ 0 US Highway 441 Eustis\, Fl 32726\n[email protected]\n(352) 742-0080\n\n
+ HELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n
+ - ​Sanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- 
+ Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS
+ :\n9 AM to 5 PM\, Monday-Friday\nClosed on Good Friday\, Memorial Day\, In
+ dependence Day\, Labor Day\, Thanksgiving Day\, Thanksgiving Friday\, Chri
+ stmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of
+  USA Volleyball\, Inc. All Rights Reserved. Designed by StellarBlue.ai\n\n
+ More info: https://floridavolleyball.org/blog/event/adultregionalchampions
+ hips/
+LOCATION:Winter Park Volleyball Club\, 2603 Ace Rd. Orlando\, FL 32792
+URL:https://floridavolleyball.org/blog/event/adultregionalchampionships/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[USAV Florida Region] 2027 Molten Boys Southeastern Championships
 DTSTART;VALUE=DATE:20270605
 DTEND;VALUE=DATE:20270607
@@ -344,38 +325,5 @@ LOCATION:World Equestrian Center - Expo 2\, 1750 NW 80th Ave\, Ocala\, FL
  34482
 URL:https://floridavolleyball.org/blog/event/molten-boys-southeastern-cham
  pionships/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[USAV Florida Region] 2027 Florida Adult Regional Championships
-DTSTART;VALUE=DATE:20270522
-DTEND;VALUE=DATE:20270523
-UID:USAV_Florida_Region-2027_Florida_Adult_Regional_Championships-2027-05-
- 22T00:00:00
-DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nSATURDAY\, MAY 22\, 2027
-  | WINTER PARK VOLLEYBALL CLUB:\nSign your team up to prepare for the USAV
-  Open Adult National Championships! This event is the Saturday prior to th
- e start of Nationals and will be a great way to get your team ready for na
- tion-wide competition.\n\nTEAM ENTRY IS FREE!:\nDivisions: Men’s Divisio
- n (A/AA): 12 teams max *Minimum of 4 teams required per division Women’s
-  Division (A/AA): 12 teams max *Minimum of 4 teams required per division\n
- Schedule: 8am-8:45am: Team Check in 9am: Pool Play begins 3pm: Bracket Pla
- y begins\n​Prize Money: ​1st place: $1\,000 ​2nd place: $750\nR1 wil
- l be provided (teams will provide remaining positions) USAV Rules and Unif
- orm Requirements will be followed.\n\nDEADLINE TO REGISTER - MAY 21ST AT 3
- PM:\nTeams are not required to be registered for USAV Open Adult National 
- Championships\nIf you have any questions about this event\, please reach o
- ut to [email protected] or give our office a call at (352) 742-0080\n1501
- 0 US Highway 441 Eustis\, Fl 32726\n[email protected]\n(352) 742-0080\n\n
- HELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n
- - ​Sanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- 
- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS
- :\n9 AM to 5 PM\, Monday-Friday\nClosed on Good Friday\, Memorial Day\, In
- dependence Day\, Labor Day\, Thanksgiving Day\, Thanksgiving Friday\, Chri
- stmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of
-  USA Volleyball\, Inc. All Rights Reserved. Designed by StellarBlue.ai\n\n
- More info: https://floridavolleyball.org/blog/event/adultregionalchampions
- hips/
-LOCATION:Winter Park Volleyball Club\, 2603 Ace Rd. Orlando\, FL 32792
-URL:https://floridavolleyball.org/blog/event/adultregionalchampionships/
 END:VEVENT
 END:VCALENDAR
