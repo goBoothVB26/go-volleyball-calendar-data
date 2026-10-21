@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T06:44:40",
+  "generated": "2026-10-21T13:19:46",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -12919,25 +12919,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 425.0,
-      "image": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Sunshine Classic",
-      "start": "2027-03-19T00:00:00",
-      "end": "2027-03-21T00:00:00",
-      "all_day": false,
-      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "lat": 28.4247315,
-      "lng": -81.4694962,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46976",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 925.0,
       "image": null
     },
     {
