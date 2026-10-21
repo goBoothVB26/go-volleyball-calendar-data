@@ -15,6 +15,8 @@ repo:
   into Google/Apple/Outlook.
 - `.cache/` — the persistent event cache plus a historical archive, so
   past events survive even after they disappear from the source sites.
+  Not committed to the repo (nothing outside the scraper reads it) --
+  persisted between workflow runs via `actions/cache` instead.
 
 ## Sources
 

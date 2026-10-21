@@ -1,7 +1,10 @@
 # Scheduled scraper run -- designed to live in the PUBLIC data repo
 # (go-volleyball-calendar-data) alongside the scraper/ package, so the
-# outputs (events.json, per-club .ics files, .cache/) are committed
-# straight back into the same repo the website already reads from.
+# outputs (events.json, per-club .ics files) are committed straight back
+# into the same repo the website already reads from. .cache/ (internal
+# bookkeeping -- nothing outside the scraper reads it) is NOT committed;
+# it's persisted between runs via actions/cache instead, so git history
+# doesn't grow by its ~1.6MB every single run forever.
 # See MIGRATION.md for the one-time move.
 #
 # No secrets needed: the workflow pushes with the repo's own
@@ -41,6 +44,19 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      - name: Restore scraper cache
+        # Falls back to the most recent cache with this key prefix when
+        # today's exact key (new every run, via run_id) doesn't exist yet
+        # -- i.e. this always restores last run's .cache/. A miss (first
+        # ever run, or cache evicted) just means a full re-scrape, same
+        # as deleting .cache/ locally always has.
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: scraper-cache-${{ github.run_id }}
+          restore-keys: |
+            scraper-cache-
+
       - name: Run scraper
         run: python -m scraper.main --output-dir .
 
@@ -48,7 +64,7 @@ jobs:
         run: |
           git config user.name "calendar-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add events.json weather.json ./*_schedule.ics .cache
+          git add events.json weather.json ./*_schedule.ics
           if git diff --cached --quiet; then
             echo "No changes -- nothing to commit."
             exit 0

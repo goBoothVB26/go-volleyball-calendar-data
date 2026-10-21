@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 google_service_account.json
 .claude/
+.cache/
