@@ -58,6 +58,13 @@ jobs:
             scraper-cache-
 
       - name: Run scraper
+        env:
+          # Google Apps Script web app URL for the community-submitted
+          # events feed (scraper/adapters/community.py) -- set this repo
+          # secret under Settings > Secrets and variables > Actions. If
+          # unset, that one adapter just skips itself (logs a warning,
+          # contributes zero events) rather than failing the run.
+          COMMUNITY_FEED_URL: ${{ secrets.COMMUNITY_FEED_URL }}
         run: python -m scraper.main --output-dir .
 
       - name: Commit updated data

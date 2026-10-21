@@ -10,8 +10,12 @@ private and the feed URL is an unguessable token.
 SETUP:
  1. Follow the steps at the top of website/community_feed_apps_script.js
     (paste it into the responses sheet's Apps Script, deploy as web app).
- 2. Put the web app URL in COMMUNITY_FEED_URL below, or set the
-    COMMUNITY_FEED_URL environment variable.
+ 2. Set the web app URL as the COMMUNITY_FEED_URL environment variable
+    (a GitHub Actions secret in production). It is NOT hardcoded here --
+    the URL is the only thing standing between the raw response sheet
+    and anyone who has it (the Apps Script serves every column,
+    unfiltered, to any caller), so it must never be committed in plain
+    text to this public repo.
 
 Calendar treatment: each submission's "Organization / club / league
 name" IS the event's club, so every org gets its own entry in the
@@ -49,11 +53,9 @@ from ..models import Event
 from ..tagging import infer_net_heights
 from .base import ClubAdapter
 
-# The Apps Script web app URL (ends in /exec). See module docstring.
-COMMUNITY_FEED_URL = os.environ.get(
-    "COMMUNITY_FEED_URL",
-    "https://script.google.com/macros/s/AKfycbzCPF0KsZeIzJM-7Llg_w_sm0N2rMaetprVUodkUtLzFqHk9MH31Nz6M_bOsktVUpfM/exec",
-)
+# The Apps Script web app URL (ends in /exec). See module docstring --
+# never hardcode this, it's the only thing gating the raw response sheet.
+COMMUNITY_FEED_URL = os.environ.get("COMMUNITY_FEED_URL", "")
 
 # Header keywords -> event field. First header containing any keyword
 # (case-insensitive) wins for that field. More specific keywords are
