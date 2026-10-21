@@ -12,7 +12,7 @@ selection, and dedupe by event URL.
 """
 
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 from dateutil import parser as dateparser
@@ -151,7 +151,12 @@ class AESAdapter(ClubAdapter):
                         club=self.club_name,
                         title=title,
                         start=start,
-                        end=end,
+                        # all-day dtend is exclusive (one day past the
+                        # real last day) -- without all_day=True and this
+                        # +1, a tournament rendered as a zero-duration
+                        # event at midnight instead of spanning its day(s).
+                        end=end + timedelta(days=1) if end else None,
+                        all_day=True,
                         location=location,
                         url=f"https://www.advancedeventsystems.com{href}",
                     )
