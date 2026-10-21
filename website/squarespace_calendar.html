@@ -2326,7 +2326,7 @@
                (ev.all_day ? " (all day)" : " · " + fmtTime(ev._start) + (ev._end ? " – " + fmtTime(ev._end) : ""));
     // Per-event image from the source site (e.g. Volleyball Life host
     // avatars) wins over the club-level logo when present
-    var logoUrl = ev.image || CLUB_LOGOS[ev.club];
+    var logoUrl = (ev.image || CLUB_LOGOS[ev.club] || "").replace(/"/g, "&quot;");
     var logoImg = logoUrl
       ? '<img class="vbcal-logo" src="' + logoUrl + '" alt="" ' +
         'onerror="this.style.display=\'none\'">'
