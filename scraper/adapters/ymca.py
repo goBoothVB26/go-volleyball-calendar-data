@@ -12,7 +12,7 @@ weekday in the range via `leagueapps.weekly_dates`, with no start/end time
 set.
 """
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from dateutil import parser as dateparser
 
@@ -61,12 +61,18 @@ class YMCACentralFloridaAdapter(ClubAdapter):
                 continue
 
             for day in leagueapps.weekly_dates(start_date, end_date, weekdays):
+                # No time is given, only a day -- all_day=True + a +1-day
+                # end makes this a proper all-day event instead of a
+                # zero-duration midnight marker (same fix as gpv.py/
+                # volleyvortex.py/aes.py for the same date-only shape).
+                occurrence_start = datetime.combine(day, datetime.min.time())
                 events.append(
                     Event(
                         club=self.club_name,
                         title=title,
-                        start=datetime.combine(day, datetime.min.time()),
-                        end=None,
+                        start=occurrence_start,
+                        end=occurrence_start + timedelta(days=1),
+                        all_day=True,
                         location=location,
                         url=self.schedule_url,
                     )

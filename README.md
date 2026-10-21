@@ -15,6 +15,8 @@ repo:
   into Google/Apple/Outlook.
 - `.cache/` — the persistent event cache plus a historical archive, so
   past events survive even after they disappear from the source sites.
+  Not committed to the repo (nothing outside the scraper reads it) --
+  persisted between workflow runs via `actions/cache` instead.
 
 ## Sources
 
@@ -30,7 +32,9 @@ YMCA Central Florida
 
 All adapters are live except **OVA** (`scraper/adapters/ova.py`), which
 still has placeholder selectors — its schedule page hasn't been mapped
-yet.
+yet — and **YMCA Central Florida** (`scraper/adapters/ymca.py`), disabled
+in `ALL_ADAPTERS` because its page never finished rendering within a
+reasonable timeout, even in isolation; re-enable once that's root-caused.
 
 "Community Submitted" isn't a website scrape: people submit events
 through a Google Form, and a small Apps Script web app

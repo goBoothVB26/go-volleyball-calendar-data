@@ -17,6 +17,7 @@ page. Detail pages are also Wix SPA pages so they also need `fetch_rendered`.
 """
 
 import re
+from datetime import timedelta
 
 from ..dateparse import parse_event_date_range
 from ..fetch import fetch_rendered
@@ -131,6 +132,14 @@ class NAGVAAdapter(ClubAdapter):
             start, end = parse_event_date_range(date_text)
             if start is None:
                 continue
+            # All-day dtend is exclusive (one day past the real last day) --
+            # same convention ssova.py/usavflorida.py/volleyballlife.py
+            # already apply; parse_event_date_range returns the inclusive
+            # last day ("June 15-16" -> end=June 16), so it needs the same
+            # +1 here or a multi-day tournament's last day would silently
+            # drop off subscribers' calendars.
+            if end:
+                end += timedelta(days=1)
 
             title_el = card.select_one('p[class*="wixui-rich-text"] a')
             title = title_el.get_text(strip=True) if title_el else date_text

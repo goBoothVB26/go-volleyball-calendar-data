@@ -15,7 +15,7 @@ Wix renders this client-side, so `fetch_static` may return an empty
 shell with no `listitem` elements — if so, switch to `fetch_rendered`.
 """
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from ..dateparse import parse_event_date_range
 from ..fetch import fetch_rendered
@@ -64,7 +64,14 @@ class GamePointVolleyballAdapter(ClubAdapter):
                     club=self.club_name,
                     title=title,
                     start=start,
-                    end=end,
+                    # parse_event_date_range's end is the inclusive last
+                    # day ("Jan 3-4" -> end=Jan 4); all-day dtend is
+                    # exclusive, so without all_day=True and this +1 a
+                    # single-day event rendered as a zero-duration
+                    # midnight marker, and a multi-day one silently
+                    # dropped its last day.
+                    end=end + timedelta(days=1) if end else None,
+                    all_day=True,
                     location=location,
                     description=age_group,
                     url=url,

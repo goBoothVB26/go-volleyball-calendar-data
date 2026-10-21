@@ -70,6 +70,7 @@ class VolleyVortexAdapter(ClubAdapter):
                             title=title,
                             start=occurrence_start,
                             end=occurrence_start + timedelta(days=1),
+                            all_day=True,
                             location=location,
                             description=type_line or None,
                             url=self.schedule_url,
@@ -84,7 +85,13 @@ class VolleyVortexAdapter(ClubAdapter):
                     club=self.club_name,
                     title=title,
                     start=start,
-                    end=end,
+                    # _parse_date_range's end is the inclusive last day;
+                    # all-day dtend is exclusive, so without all_day=True
+                    # and this +1 a single-day card (start==end) rendered
+                    # as a zero-duration midnight event instead of
+                    # spanning the day.
+                    end=end + timedelta(days=1) if end else None,
+                    all_day=True,
                     location=location,
                     description=type_line or None,
                     url=self.schedule_url,
