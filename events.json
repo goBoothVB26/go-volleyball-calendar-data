@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T03:49:26",
+  "generated": "2026-10-21T04:07:18",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -1988,7 +1988,7 @@
       "address": "Orlando, FL",
       "lat": 28.5421218,
       "lng": -81.379045,
-      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
+      "description": null,
       "url": "https://floridavolleyball.org/blog/event/25th-annual-florida-region-awards-ceremony/",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
@@ -9917,7 +9917,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/9cfbe6cb-9a1e-4a55-869f-68ab24af470c.png"
+      "image": null
     },
     {
       "uid": "SSOVA-SSOVA_HALLOWEEN_THEME_Adults_&_Juniors_AVP_ECC/WCC_Qualifier-2026-10-24T00:00:00",
@@ -12580,25 +12580,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tropical_Ice_Challenge_(12-18USA,_12O_&_18O)-2027-01-09T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Tropical Ice Challenge (12-18USA, 12O & 18O)",
-      "start": "2027-01-09T00:00:00",
-      "end": "2027-01-10T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46177",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 525.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-2027_Florida_USAV_Gold_Series-2027-01-09T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida USAV Gold Series",
@@ -12732,25 +12713,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tropical_Ice_Challenge_(13-17_OPEN)_-_Week_#2-2027-01-16T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Tropical Ice Challenge (13-17 OPEN) - Week #2",
-      "start": "2027-01-16T00:00:00",
-      "end": "2027-01-18T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46206",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 725.0,
-      "image": null
-    },
-    {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-USAV_International_Winter_Classic_2027-2027-01-16T00:00:00",
       "club": "AES Adult Volleyball (USAV, Florida)",
       "title": "USAV International Winter Classic 2027",
@@ -12865,25 +12827,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Tropical_Ice_Challenge_(12-18_Club)_-_Week_#3-2027-01-23T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Tropical Ice Challenge (12-18 Club) - Week #3",
-      "start": "2027-01-23T00:00:00",
-      "end": "2027-01-24T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46236",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 525.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-2027_Florida\u00a0Fest_Junior_National_Qualifier-2027-01-23T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida\u00a0Fest Junior National Qualifier",
@@ -12979,25 +12922,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_Jax_Jam_Invitational-2027-02-27T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 JJVA Jax Jam Invitational",
-      "start": "2027-02-27T00:00:00",
-      "end": "2027-02-28T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46277",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 500.0,
-      "image": null
-    },
-    {
       "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_USA_Wellington_Open_Powered_by_LOVB-2027-02-27T00:00:00",
       "club": "AES Adult Volleyball (USAV, Florida)",
       "title": "2027 USA Wellington Open Powered by LOVB",
@@ -13033,25 +12957,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 425.0,
-      "image": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Sunshine Classic",
-      "start": "2027-03-19T00:00:00",
-      "end": "2027-03-21T00:00:00",
-      "all_day": false,
-      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "lat": 28.4247315,
-      "lng": -81.4694962,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46976",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 925.0,
       "image": null
     },
     {
@@ -13112,25 +13017,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_First_Coast_Festival-2027-04-17T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 JJVA First Coast Festival",
-      "start": "2027-04-17T00:00:00",
-      "end": "2027-04-18T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46312",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 525.0,
-      "image": null
-    },
-    {
       "uid": "Volley_Vortex-4s_Grass_Tournament:_Spring_Slamdown_'27-2027-04-24T20:26:00",
       "club": "Volley Vortex",
       "title": "4s Grass Tournament: Spring Slamdown '27",
@@ -13150,41 +13036,22 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_JJVA_Spring_Classic-2027-05-01T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 JJVA Spring Classic",
-      "start": "2027-05-01T00:00:00",
-      "end": "2027-05-02T00:00:00",
-      "all_day": false,
-      "location": "Jacksonville, FL - JJVA",
-      "address": "Jacksonville, FL - JJVA",
-      "lat": null,
-      "lng": null,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46322",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 500.0,
-      "image": null
-    },
-    {
       "uid": "USAV_Florida_Region-2027_Florida_Adult_Regional_Championships-2027-05-22T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida Adult Regional Championships",
       "start": "2027-05-22T00:00:00",
       "end": "2027-05-23T00:00:00",
       "all_day": true,
-      "location": "Winter Park Volleyball Club, 2603 Ace Rd. Orlando, FL 32792",
-      "address": "2603 Ace Rd, Orlando, FL 32792",
-      "lat": 28.5884872,
-      "lng": -81.4141018,
-      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nSATURDAY, MAY 22, 2027 | WINTER PARK VOLLEYBALL CLUB:\nSign your team up to prepare for the USAV Open Adult National Championships! This event is the Saturday prior to the start of Nationals and will be a great way to get your team ready for nation-wide competition.\n\nTEAM ENTRY IS FREE!:\nDivisions: Men\u2019s Division (A/AA): 12 teams max *Minimum of 4 teams required per division Women\u2019s Division (A/AA): 12 teams max *Minimum of 4 teams required per division\nSchedule: 8am-8:45am: Team Check in 9am: Pool Play begins 3pm: Bracket Play begins\n\u200bPrize Money: \u200b1st place: $1,000 \u200b2nd place: $750\nR1 will be provided (teams will provide remaining positions) USAV Rules and Uniform Requirements will be followed.\n\nDEADLINE TO REGISTER - MAY 21ST AT 3PM:\nTeams are not required to be registered for USAV Open Adult National Championships\nIf you have any questions about this event, please reach out to [email\u00a0protected] or give our office a call at (352) 742-0080\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
+      "location": "Orlando, FL",
+      "address": "Orlando, FL",
+      "lat": 28.5421218,
+      "lng": -81.379045,
+      "description": null,
       "url": "https://floridavolleyball.org/blog/event/adultregionalchampionships/",
-      "skill_level": "A/AA",
+      "skill_level": "All Levels",
       "gym_type": "Tournament",
-      "net_height": "Men's, Women's",
-      "price": 1.0,
+      "net_height": "Men's, Co-ed",
+      "price": null,
       "image": null
     },
     {
