@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T03:36:27",
+  "generated": "2026-10-21T03:49:26",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -9917,7 +9917,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/9cfbe6cb-9a1e-4a55-869f-68ab24af470c.png"
     },
     {
       "uid": "SSOVA-SSOVA_HALLOWEEN_THEME_Adults_&_Juniors_AVP_ECC/WCC_Qualifier-2026-10-24T00:00:00",
