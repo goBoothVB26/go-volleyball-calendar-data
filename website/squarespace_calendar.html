@@ -2348,7 +2348,7 @@
         (on ? "Connected" : "More Info / Register") + "</button>";
     }
     var plainInfoLink = !mergedFlow && ev.url
-      ? '<a class="btn alt" href="' + ev.url + '" target="_blank" rel="noopener">More info / Register</a>'
+      ? '<a class="btn alt" href="' + ev.url.replace(/"/g, "&quot;") + '" target="_blank" rel="noopener">More info / Register</a>'
       : "";
     // Add to Calendar: sits in the top button row, between the share
     // icon and the close X -- a bare icon with no button chrome at
