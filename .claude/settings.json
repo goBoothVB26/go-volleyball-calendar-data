@@ -1,9 +1,9 @@
 {
   "extraKnownMarketplaces": {
-    "claude-plugins-official": {
+    "superpowers-marketplace": {
       "source": {
         "source": "github",
-        "repo": "anthropics/claude-plugins-official"
+        "repo": "obra/superpowers-marketplace"
       }
     },
     "ponytail": {
@@ -14,7 +14,7 @@
     }
   },
   "enabledPlugins": {
-    "superpowers@claude-plugins-official": true,
+    "superpowers@superpowers-marketplace": true,
     "ponytail@ponytail": true
   }
 }
