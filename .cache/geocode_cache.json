@@ -348,6 +348,10 @@
     "FIU Recreation Center - North Courts @ -87.7,31.1,-79.8,24.4": {
       "failed": "2026-10-18"
     },
+    "Fort Lauderdale, FL - Broward County Convention Center ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 26.0998927,
+      "lng": -80.1280107
+    },
     "Frank DeLuca YMCA @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-08"
     },
@@ -520,6 +524,9 @@
       "lat": 29.6463535,
       "lng": -82.6065023
     },
+    "North Venice, FL - GSI Headquarters ~ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-21"
+    },
     "NorthShore Park @ -81.9,29.0,-80.8,28.0": {
       "failed": "2026-10-17"
     },
@@ -529,6 +536,10 @@
     "Ocala, FL 34482 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 29.1871986,
       "lng": -82.1400923
+    },
+    "Orlando, FL - Orange County Convention Center - West Concourse ~ -87.7,31.1,-79.8,24.4": {
+      "lat": 28.4247315,
+      "lng": -81.4694962
     },
     "Orlando, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.5421218,
@@ -638,9 +649,15 @@
       "lat": 28.5177135,
       "lng": -81.635694
     },
+    "Wellington, FL - Wellington Sports Academy ~ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-21"
+    },
     "Wellington, FL ~ -87.7,31.1,-79.8,24.4": {
       "lat": 26.6549551,
       "lng": -80.2375279
+    },
+    "Wesley Chapel, FL - Wiregrass Ranch Sports Complex ~ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-21"
     },
     "Wesley Chapel, FL 33543 ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.1866014,
@@ -649,6 +666,9 @@
     "Wesley Chapel, Fl ~ -87.7,31.1,-79.8,24.4": {
       "lat": 28.1866014,
       "lng": -82.366121
+    },
+    "Wesley Chapel,, FL - Wiregrass Ranch Sports Complex ~ -87.7,31.1,-79.8,24.4": {
+      "failed": "2026-10-21"
     },
     "Woodlawn Park @ -81.9,29.0,-80.8,28.0": {
       "lat": 28.5364682,
