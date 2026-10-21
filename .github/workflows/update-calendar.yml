@@ -41,37 +41,6 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
-      - name: TEMP DEBUG - verify AES/YMCA adapter fixes end to end
-        run: |
-          python -c "
-          import sys
-          sys.path.insert(0, '.')
-          from scraper.adapters.aes import AESAdapter
-          from scraper.adapters.ymca import YMCACentralFloridaAdapter
-          from scraper import fetch
-
-          print('=== YMCA (run first/alone, isolated from AES resource use) ===')
-          try:
-              events = YMCACentralFloridaAdapter().scrape()
-              print('YMCA events found:', len(events))
-              for e in events:
-                  print(' ', e.start, '|', e.title, '|', e.location)
-          except Exception as e:
-              print('YMCA FAILED:', repr(e))
-
-          print()
-          print('=== AES ===')
-          try:
-              events = AESAdapter().scrape()
-              print('AES events found:', len(events))
-              for e in events:
-                  print(' ', e.start, '|', e.title, '|', e.location, '|', e.price)
-          except Exception as e:
-              print('AES FAILED:', repr(e))
-
-          fetch.shutdown()
-          "
-
       - name: Run scraper
         run: python -m scraper.main --output-dir .
 
