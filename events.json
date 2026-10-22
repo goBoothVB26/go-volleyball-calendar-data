@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T22:54:18",
+  "generated": "2026-10-22T06:47:58",
   "events": [
     {
       "uid": "Game_Point_Volleyball-South_Florida_Season_opener-2026-01-03T00:00:00",
@@ -2149,25 +2149,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-10-21T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "address": null,
-      "lat": 28.5867689,
-      "lng": -81.5196927,
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-10-22T18:00:00",
       "club": "Goldenrod Community Park",
       "title": "Adult Member Time: Volleyball",
@@ -2203,6 +2184,25 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": 70.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-10-22T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates to be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate in this league. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -2336,7 +2336,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/97269daa-ad53-4668-82e9-1fe2274c87d7.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-2026_AVCA_East_Qualifier_for_Beach_National_Championship_(Women's_Collegiate_Pairs)-2026-10-24T00:00:00",
@@ -5341,6 +5341,25 @@
       "image": null
     },
     {
+      "uid": "Ocoee_Open_Gym_Volleyball-Open_Gym_Volleyball-2027-01-19T20:15:00",
+      "club": "Ocoee Open Gym Volleyball",
+      "title": "Open Gym Volleyball",
+      "start": "2027-01-19T20:15:00",
+      "end": "2027-01-19T22:30:00",
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "Join us every Tuesday night from 8:15 pm to 10:30 pm for open gym volleyball. Our open gym format allows players of all skill levels to enjoy open-court time\u2014no teams, no rosters, no pressure . Whether you\u2019re new to the sport, working on technique, or looking for regular volleyball fun with others, our gym is ready for you. All participants must have an active daily membership. Register for Open Gym Volleyball Here .\n\nRegister: https://secure.rec1.com/FL/ocoee-parks-recreation-fl/catalog/index/0679b20b7684e99b55b7c87a01b6acfc?filter=c2VhcmNoPSZjYXRlZ29yeSU1QjMyNDg3JTVEPTE=",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "Open Gym",
+      "net_height": "Co-ed",
+      "price": 3.0,
+      "image": null
+    },
+    {
       "uid": "USAV_Florida_Region-2027_Florida\u00a0Fest_Junior_National_Qualifier-2027-01-23T00:00:00",
       "club": "USAV Florida Region",
       "title": "2027 Florida\u00a0Fest Junior National Qualifier",
@@ -5471,25 +5490,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 425.0,
-      "image": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Sunshine Classic",
-      "start": "2027-03-19T00:00:00",
-      "end": "2027-03-22T00:00:00",
-      "all_day": true,
-      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "lat": 28.4247315,
-      "lng": -81.4694962,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46976",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 925.0,
       "image": null
     },
     {
