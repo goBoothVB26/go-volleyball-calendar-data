@@ -75,7 +75,8 @@ _HEADER_KEYWORDS = {
     "weekdays": ["which day"],
     "start_time": ["start time", "begins", "from"],
     "end_time": ["end time", "ends", "until", "to"],
-    "location": ["location", "venue", "address", "where"],
+    "location": ["location", "venue", "where"],
+    "street_address": ["street address", "address"],
     "description": ["description", "details", "about", "additional info", "notes"],
     "price": ["price", "cost", "fee"],
     "url": ["registration", "sign up link", "link", "url", "website"],
@@ -228,7 +229,13 @@ class CommunityEventsAdapter(ClubAdapter):
             start_text = cell(row, "start_time")
             end_text = cell(row, "end_time")
             organization = cell(row, "organization")
-            location = cell(row, "location") or None
+            # Comma-joined venue + street address, the same shape USAV's
+            # adapter already produces ("Venue, Hall A, 9400 Universal
+            # Blvd., Orlando, FL") -- geocode.py's _queries() already
+            # knows to pull the digit-leading segment onward out of a
+            # comma-joined location as the address to search, so this
+            # needs no changes there to start getting geocoded.
+            location = ", ".join(p for p in (cell(row, "location"), cell(row, "street_address")) if p) or None
             description = cell(row, "description") or None
             url = _normalize_url(cell(row, "url"))
             price = _parse_price(cell(row, "price"))
