@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T16:43:54",
+  "generated": "2026-10-22T18:26:07",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -3723,7 +3723,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/97269daa-ad53-4668-82e9-1fe2274c87d7.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-2026_AVCA_East_Qualifier_for_Beach_National_Championship_(Women's_Collegiate_Pairs)-2026-10-24T00:00:00",
@@ -3761,7 +3761,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/9cfbe6cb-9a1e-4a55-869f-68ab24af470c.png"
     },
     {
       "uid": "SSOVA-SSOVA_HALLOWEEN_THEME_Adults_&_Juniors_AVP_ECC/WCC_Qualifier-2026-10-24T00:00:00",
@@ -6896,6 +6896,25 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 425.0,
+      "image": null
+    },
+    {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 Sunshine Classic",
+      "start": "2027-03-19T00:00:00",
+      "end": "2027-03-22T00:00:00",
+      "all_day": true,
+      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "lat": 28.4247315,
+      "lng": -81.4694962,
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46976",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 925.0,
       "image": null
     },
     {
