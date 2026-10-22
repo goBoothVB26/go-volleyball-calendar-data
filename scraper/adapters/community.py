@@ -27,7 +27,12 @@ wording doesn't need to match exactly ("Event Name", "Name of event",
 and "Title" all map to the title). Rows missing a title or an
 unparseable date are skipped with a warning. If the sheet gains an
 "Approved" column, only rows marked yes/true/approved are ingested.
-The submitter-email column is never read.
+"Public contact email"/"Public contact phone" (meant to be shown
+publicly, unlike a private submitter-email column), the registration
+link, cost, "Website or social link", and "Anything else we should
+know?" all get folded into the description text, since none of them
+have their own structured Event field besides url/price (which are
+restated here too, for visibility without clicking through).
 
 Recurring events: the form's "Is this a one-time or recurring event?"
 question, combined with "If recurring, which day(s)?" and "End date",
@@ -70,12 +75,17 @@ _HEADER_KEYWORDS = {
     "weekdays": ["which day"],
     "start_time": ["start time", "begins", "from"],
     "end_time": ["end time", "ends", "until", "to"],
-    "location": ["location", "venue", "address", "where"],
+    "location": ["location", "venue", "where"],
+    "street_address": ["street address", "address"],
     "description": ["description", "details", "about", "additional info", "notes"],
     "price": ["price", "cost", "fee"],
     "url": ["registration", "sign up link", "link", "url", "website"],
     "organization": ["organization", "club", "group", "host", "team name"],
     "division": ["division"],
+    "contact_email": ["public contact email", "contact email"],
+    "contact_phone": ["public contact phone", "contact phone"],
+    "social_link": ["website or social", "social link", "social media"],
+    "extra_notes": ["anything else", "else we should know"],
     "approved": ["approved", "approval", "reviewed"],
 }
 
@@ -219,10 +229,45 @@ class CommunityEventsAdapter(ClubAdapter):
             start_text = cell(row, "start_time")
             end_text = cell(row, "end_time")
             organization = cell(row, "organization")
-            location = cell(row, "location") or None
+            # Comma-joined venue + street address, the same shape USAV's
+            # adapter already produces ("Venue, Hall A, 9400 Universal
+            # Blvd., Orlando, FL") -- geocode.py's _queries() already
+            # knows to pull the digit-leading segment onward out of a
+            # comma-joined location as the address to search, so this
+            # needs no changes there to start getting geocoded.
+            location = ", ".join(p for p in (cell(row, "location"), cell(row, "street_address")) if p) or None
             description = cell(row, "description") or None
             url = _normalize_url(cell(row, "url"))
             price = _parse_price(cell(row, "price"))
+            social_link = _normalize_url(cell(row, "social_link"))
+
+            # Fold the organizer's public contact info, the registration
+            # link/price (already structured fields, but also stated here
+            # so they're visible even without clicking the register
+            # button/price badge), the social link, and any free-form
+            # "anything else" note into the description -- none of these
+            # have their own structured Event field, except url/price
+            # which get restated for visibility. Each piece is its own
+            # blank-line-separated "Label: value" paragraph (same shape
+            # GOVC/Big House/NAGVA/USAV descriptions already use) so the
+            # website's descHtml() renders it as a label/value table
+            # instead of one run-on paragraph.
+            desc_blocks = []
+            if description:
+                desc_blocks.append(("Description", description))
+            contact_bits = [b for b in (cell(row, "contact_email"), cell(row, "contact_phone")) if b]
+            if contact_bits:
+                desc_blocks.append(("Contact", " / ".join(contact_bits)))
+            if url:
+                desc_blocks.append(("Registration", url))
+            if price is not None:
+                desc_blocks.append(("Cost", "Free" if price == 0 else f"${price:g}"))
+            if social_link:
+                desc_blocks.append(("Website/social", social_link))
+            extra_notes = cell(row, "extra_notes")
+            if extra_notes:
+                desc_blocks.append(("Notes", extra_notes))
+            description = "\n\n".join(f"{label}: {value}" for label, value in desc_blocks) or None
 
             # The form's "Division(s)" answer states the men's/women's/
             # coed allocation directly, so it drives net_height. Setting
