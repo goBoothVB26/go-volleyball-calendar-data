@@ -27,7 +27,12 @@ wording doesn't need to match exactly ("Event Name", "Name of event",
 and "Title" all map to the title). Rows missing a title or an
 unparseable date are skipped with a warning. If the sheet gains an
 "Approved" column, only rows marked yes/true/approved are ingested.
-The submitter-email column is never read.
+"Public contact email"/"Public contact phone" (meant to be shown
+publicly, unlike a private submitter-email column), the registration
+link, cost, "Website or social link", and "Anything else we should
+know?" all get folded into the description text, since none of them
+have their own structured Event field besides url/price (which are
+restated here too, for visibility without clicking through).
 
 Recurring events: the form's "Is this a one-time or recurring event?"
 question, combined with "If recurring, which day(s)?" and "End date",
@@ -76,6 +81,10 @@ _HEADER_KEYWORDS = {
     "url": ["registration", "sign up link", "link", "url", "website"],
     "organization": ["organization", "club", "group", "host", "team name"],
     "division": ["division"],
+    "contact_email": ["public contact email", "contact email"],
+    "contact_phone": ["public contact phone", "contact phone"],
+    "social_link": ["website or social", "social link", "social media"],
+    "extra_notes": ["anything else", "else we should know"],
     "approved": ["approved", "approval", "reviewed"],
 }
 
@@ -223,6 +232,30 @@ class CommunityEventsAdapter(ClubAdapter):
             description = cell(row, "description") or None
             url = _normalize_url(cell(row, "url"))
             price = _parse_price(cell(row, "price"))
+            social_link = _normalize_url(cell(row, "social_link"))
+
+            # Fold the organizer's public contact info, the registration
+            # link/price (already structured fields, but also stated here
+            # so they're visible even without clicking the register
+            # button/price badge), the social link, and any free-form
+            # "anything else" note into the description text -- none of
+            # these have their own structured Event field, except url/
+            # price which get restated for visibility.
+            extra_lines = []
+            contact_bits = [b for b in (cell(row, "contact_email"), cell(row, "contact_phone")) if b]
+            if contact_bits:
+                extra_lines.append("Contact: " + " / ".join(contact_bits))
+            if url:
+                extra_lines.append("Registration: " + url)
+            if price is not None:
+                extra_lines.append("Cost: " + ("Free" if price == 0 else f"${price:g}"))
+            if social_link:
+                extra_lines.append("Website/social: " + social_link)
+            extra_notes = cell(row, "extra_notes")
+            if extra_notes:
+                extra_lines.append("Notes: " + extra_notes)
+            if extra_lines:
+                description = (description + "\n\n" if description else "") + "\n".join(extra_lines)
 
             # The form's "Division(s)" answer states the men's/women's/
             # coed allocation directly, so it drives net_height. Setting
