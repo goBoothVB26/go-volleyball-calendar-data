@@ -99,4 +99,28 @@ DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
 LOCATION:Upham Beach Park- St. Pete Beach
 URL:https://ssova.volleyballlife.com/events
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER & USAV Region
+ al Qualifier\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270111
+UID:SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
+ lifier\,_Beach_Volleyball_Tournament-_BRQ-2027-01-09T20:26:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/event/42137
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://ssova.volleyballlife.com/event/42137
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER & USAV Region
+ al Qualifier\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270118
+UID:SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
+ lifier\,_Beach_Volleyball_Tournament-_BRQ-2027-01-16T20:26:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/event/42137
+LOCATION:Upham Beach Park- St. Pete Beach
+URL:https://ssova.volleyballlife.com/event/42137
+END:VEVENT
 END:VCALENDAR
