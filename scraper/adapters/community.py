@@ -238,24 +238,29 @@ class CommunityEventsAdapter(ClubAdapter):
             # link/price (already structured fields, but also stated here
             # so they're visible even without clicking the register
             # button/price badge), the social link, and any free-form
-            # "anything else" note into the description text -- none of
-            # these have their own structured Event field, except url/
-            # price which get restated for visibility.
-            extra_lines = []
+            # "anything else" note into the description -- none of these
+            # have their own structured Event field, except url/price
+            # which get restated for visibility. Each piece is its own
+            # blank-line-separated "Label: value" paragraph (same shape
+            # GOVC/Big House/NAGVA/USAV descriptions already use) so the
+            # website's descHtml() renders it as a label/value table
+            # instead of one run-on paragraph.
+            desc_blocks = []
+            if description:
+                desc_blocks.append(("Description", description))
             contact_bits = [b for b in (cell(row, "contact_email"), cell(row, "contact_phone")) if b]
             if contact_bits:
-                extra_lines.append("Contact: " + " / ".join(contact_bits))
+                desc_blocks.append(("Contact", " / ".join(contact_bits)))
             if url:
-                extra_lines.append("Registration: " + url)
+                desc_blocks.append(("Registration", url))
             if price is not None:
-                extra_lines.append("Cost: " + ("Free" if price == 0 else f"${price:g}"))
+                desc_blocks.append(("Cost", "Free" if price == 0 else f"${price:g}"))
             if social_link:
-                extra_lines.append("Website/social: " + social_link)
+                desc_blocks.append(("Website/social", social_link))
             extra_notes = cell(row, "extra_notes")
             if extra_notes:
-                extra_lines.append("Notes: " + extra_notes)
-            if extra_lines:
-                description = (description + "\n\n" if description else "") + "\n".join(extra_lines)
+                desc_blocks.append(("Notes", extra_notes))
+            description = "\n\n".join(f"{label}: {value}" for label, value in desc_blocks) or None
 
             # The form's "Division(s)" answer states the men's/women's/
             # coed allocation directly, so it drives net_height. Setting
