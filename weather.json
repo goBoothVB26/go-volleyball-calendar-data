@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T12:57:59",
+  "generated": "2026-10-23T18:03:09",
   "days": [
     {
       "date": "2026-10-23",
@@ -11,50 +11,50 @@
     {
       "date": "2026-10-24",
       "high": 80,
-      "low": 60,
-      "code": 3,
-      "category": "overcast"
+      "low": 61,
+      "code": 51,
+      "category": "drizzle"
     },
     {
       "date": "2026-10-25",
       "high": 80,
-      "low": 69,
+      "low": 66,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-10-26",
-      "high": 81,
-      "low": 71,
+      "high": 82,
+      "low": 70,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-10-27",
-      "high": 84,
+      "high": 83,
       "low": 70,
       "code": 3,
       "category": "overcast"
     },
     {
       "date": "2026-10-28",
-      "high": 83,
+      "high": 84,
       "low": 67,
-      "code": 3,
-      "category": "overcast"
+      "code": 1,
+      "category": "mostly_clear"
     },
     {
       "date": "2026-10-29",
-      "high": 84,
-      "low": 71,
+      "high": 81,
+      "low": 70,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-10-30",
-      "high": 82,
+      "high": 81,
       "low": 70,
-      "code": 53,
+      "code": 51,
       "category": "drizzle"
     }
   ]

@@ -149,4 +149,16 @@ DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
 LOCATION:Jax Beach
 URL:https://volleyballlife.com/event/39933
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] 2026 winter beach tournament\, $5500 total purse
+  '24 COPY
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+UID:Volleyball_Life-2026_winter_beach_tournament\,_$5500_total_purse_'24_C
+ OPY-2026-11-07T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://volleyballlife.com/event/42318
+LOCATION:Lori Wilson Park 27341 SR-19 Tavares\, FL 32778
+URL:https://volleyballlife.com/event/42318
+END:VEVENT
 END:VCALENDAR
