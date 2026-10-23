@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T18:03:08",
+  "generated": "2026-10-23T22:45:05",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -3821,9 +3821,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-10-24T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-10-24T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-10-24T18:00:00",
       "end": "2026-10-24T20:00:00",
       "all_day": false,
@@ -3992,9 +3992,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-10-29T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-10-29T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-10-29T18:00:00",
       "end": "2026-10-29T20:00:00",
       "all_day": false,
@@ -4220,9 +4220,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-10-31T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-10-31T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-10-31T18:00:00",
       "end": "2026-10-31T20:00:00",
       "all_day": false,
@@ -4372,9 +4372,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-11-05T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-11-05T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-05T18:00:00",
       "end": "2026-11-05T20:00:00",
       "all_day": false,
@@ -4619,9 +4619,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-11-07T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-11-07T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-11-07T18:00:00",
       "end": "2026-11-07T20:00:00",
       "all_day": false,
@@ -4771,9 +4771,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-11-12T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-11-12T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-12T18:00:00",
       "end": "2026-11-12T20:00:00",
       "all_day": false,
@@ -4923,9 +4923,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-11-14T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-11-14T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-11-14T18:00:00",
       "end": "2026-11-14T20:00:00",
       "all_day": false,
@@ -5075,9 +5075,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-11-19T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-11-19T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-19T18:00:00",
       "end": "2026-11-19T20:00:00",
       "all_day": false,
@@ -5246,9 +5246,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-11-21T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-11-21T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-11-21T18:00:00",
       "end": "2026-11-21T20:00:00",
       "all_day": false,
@@ -5398,9 +5398,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-11-26T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-11-26T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-11-26T18:00:00",
       "end": "2026-11-26T20:00:00",
       "all_day": false,
@@ -5512,9 +5512,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-11-28T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-11-28T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-11-28T18:00:00",
       "end": "2026-11-28T20:00:00",
       "all_day": false,
@@ -5645,9 +5645,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-12-03T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-12-03T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-12-03T18:00:00",
       "end": "2026-12-03T20:00:00",
       "all_day": false,
@@ -5759,9 +5759,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-12-05T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-12-05T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-12-05T18:00:00",
       "end": "2026-12-05T20:00:00",
       "all_day": false,
@@ -5892,9 +5892,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-12-10T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-12-10T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-12-10T18:00:00",
       "end": "2026-12-10T20:00:00",
       "all_day": false,
@@ -5930,9 +5930,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-12-12T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-12-12T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-12-12T18:00:00",
       "end": "2026-12-12T20:00:00",
       "all_day": false,
@@ -6063,9 +6063,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-12-17T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time-2026-12-17T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
+      "title": "Adult Volleyball Member Time",
       "start": "2026-12-17T18:00:00",
       "end": "2026-12-17T20:00:00",
       "all_day": false,
@@ -6139,9 +6139,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-12-19T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-12-19T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-12-19T18:00:00",
       "end": "2026-12-19T20:00:00",
       "all_day": false,
@@ -6234,25 +6234,6 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball-2026-12-25T18:00:00",
-      "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball",
-      "start": "2026-12-25T18:00:00",
-      "end": "2026-12-25T20:00:00",
-      "all_day": false,
-      "location": "Goldenrod Community Park",
-      "address": null,
-      "lat": 28.5811986,
-      "lng": -81.3030223,
-      "description": null,
-      "url": "https://www.calendarwiz.com/mobile.html?crd=goldenrodcommunitypark",
-      "skill_level": "All Levels",
-      "gym_type": "Open Gym",
-      "net_height": "Men's, Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "WPVC-WPVC_Open_Gym-2026-12-25T20:00:00",
       "club": "WPVC",
       "title": "WPVC Open Gym",
@@ -6291,9 +6272,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2026-12-26T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2026-12-26T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2026-12-26T18:00:00",
       "end": "2026-12-26T20:00:00",
       "all_day": false,
@@ -6405,9 +6386,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2027-01-02T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2027-01-02T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2027-01-02T18:00:00",
       "end": "2027-01-02T20:00:00",
       "all_day": false,
@@ -6538,9 +6519,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2027-01-09T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2027-01-09T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2027-01-09T18:00:00",
       "end": "2027-01-09T20:00:00",
       "all_day": false,
@@ -6728,9 +6709,9 @@
       "image": null
     },
     {
-      "uid": "Goldenrod_Community_Park-Adult_Member_Time:_Volleyball_Court_B-2027-01-16T18:00:00",
+      "uid": "Goldenrod_Community_Park-Adult_Volleyball_Member_Time_Court_B-2027-01-16T18:00:00",
       "club": "Goldenrod Community Park",
-      "title": "Adult Member Time: Volleyball Court B",
+      "title": "Adult Volleyball Member Time Court B",
       "start": "2027-01-16T18:00:00",
       "end": "2027-01-16T20:00:00",
       "all_day": false,
