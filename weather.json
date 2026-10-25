@@ -1,26 +1,26 @@
 {
-  "generated": "2026-10-25T12:51:38",
+  "generated": "2026-10-25T17:20:40",
   "days": [
     {
       "date": "2026-10-25",
-      "high": 83,
+      "high": 81,
       "low": 68,
-      "code": 53,
-      "category": "drizzle"
-    },
-    {
-      "date": "2026-10-26",
-      "high": 77,
-      "low": 67,
       "code": 65,
       "category": "rain"
     },
     {
+      "date": "2026-10-26",
+      "high": 79,
+      "low": 66,
+      "code": 3,
+      "category": "overcast"
+    },
+    {
       "date": "2026-10-27",
       "high": 84,
-      "low": 70,
-      "code": 51,
-      "category": "drizzle"
+      "low": 68,
+      "code": 3,
+      "category": "overcast"
     },
     {
       "date": "2026-10-28",
