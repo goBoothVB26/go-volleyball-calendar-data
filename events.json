@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T13:56:23",
+  "generated": "2026-10-27T19:04:49",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -3935,6 +3935,25 @@
       "image": null
     },
     {
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-10-27T18:20:00",
+      "club": "Out Sports League",
+      "title": "Tuesdays - Recreational (C/D)",
+      "start": "2026-10-27T18:20:00",
+      "end": "2026-10-27T21:00:00",
+      "all_day": false,
+      "location": "Dr. James R. Smith Center",
+      "address": "1723 Bruton Blvd, Orlando, FL 32805",
+      "lat": 28.5211116,
+      "lng": -81.4259378,
+      "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
+      "skill_level": "A/AA, B/BB, All Levels",
+      "gym_type": "Clinics/Training",
+      "net_height": "Men's, Co-ed",
+      "price": 70.0,
+      "image": null
+    },
+    {
       "uid": "Big_House_Open_Gym-Big_House_League_Play-2026-10-27T18:30:00",
       "club": "Big House Open Gym",
       "title": "Big House League Play",
@@ -4353,9 +4372,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-11-03T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-11-03T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-11-03T18:20:00",
       "end": "2026-11-03T21:00:00",
       "all_day": false,
@@ -4364,7 +4383,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -4578,7 +4597,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/6ac917f9-0b35-4445-9833-40af9556242f.jpg"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-Super_Girl_Pro_Series_2026-2026-11-07T00:00:00",
@@ -4597,7 +4616,7 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/5c326e35-a31d-4267-93b0-c52c5420614e.png"
     },
     {
       "uid": "Volleyball_Life-2026_winter_beach_tournament,_$5500_total_purse_'24_COPY-2026-11-07T00:00:00",
@@ -4771,9 +4790,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-11-10T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-11-10T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-11-10T18:20:00",
       "end": "2026-11-10T21:00:00",
       "all_day": false,
@@ -4782,7 +4801,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -5170,9 +5189,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-11-17T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-11-17T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-11-17T18:20:00",
       "end": "2026-11-17T21:00:00",
       "all_day": false,
@@ -5181,7 +5200,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -5417,6 +5436,25 @@
       "image": null
     },
     {
+      "uid": "Volleyball_Life-Quake_At_The_Lake-2026-11-21T00:00:00",
+      "club": "Volleyball Life",
+      "title": "Quake At The Lake",
+      "start": "2026-11-21T00:00:00",
+      "end": "2026-11-22T00:00:00",
+      "all_day": true,
+      "location": "Lake Swan Christian Camp Melrose Florida",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/event/40892",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
       "uid": "SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER,_Beach_Volleyball_Tournament-_BRQ-2026-11-21T00:00:00",
       "club": "SSOVA",
       "title": "SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER, Beach Volleyball Tournament- BRQ",
@@ -5531,9 +5569,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-11-24T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-11-24T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-11-24T18:20:00",
       "end": "2026-11-24T21:00:00",
       "all_day": false,
@@ -5542,7 +5580,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -5797,9 +5835,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-12-01T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-12-01T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-12-01T18:20:00",
       "end": "2026-12-01T21:00:00",
       "all_day": false,
@@ -5808,7 +5846,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -6044,9 +6082,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-12-08T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-12-08T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-12-08T18:20:00",
       "end": "2026-12-08T21:00:00",
       "all_day": false,
@@ -6055,7 +6093,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -6215,9 +6253,9 @@
       "image": null
     },
     {
-      "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-12-15T18:20:00",
+      "uid": "Out_Sports_League-Tuesdays_-_Recreational_(C/D)-2026-12-15T18:20:00",
       "club": "Out Sports League",
-      "title": "Tuedays - Recreational (C/D)",
+      "title": "Tuesdays - Recreational (C/D)",
       "start": "2026-12-15T18:20:00",
       "end": "2026-12-15T21:00:00",
       "all_day": false,
@@ -6226,7 +6264,7 @@
       "lat": 28.5211116,
       "lng": -81.4259378,
       "description": "TUESDAY NIGHTS: RECREATIONAL LEAGUE\n*There is one week (11/11) where games will be on a Wednesday instead!\n\nWelcome to our new Tuesday Night Recreational Indoor Volleyball League, this is a Recreational league for players of the following skill levels:\n\nC \u2013 Lower Intermediate. Improving players who inconsistently perform 3 hits and can't spike with power.\nD \u2013 Novice / Beginner. Recreational players who are learning the rules and basic skills of the game.\n\nIf you're a competitive player please register for our Thursday or Friday night leagues.\u00a0\n\nOUT Sports League provides fun, recreation, and social sports league to Central Florida's LGBTQ+ community. Our Indoor Volleyball league is designed to be inclusive of people of skill levels and backgrounds. All of our leagues offer a great opportunity to meet other people in our community in a fun, friendly, and accepting atmosphere. Following the games we'll go to District Dive where you'll get a FREE DRINK ticket every week. This season is sponsored by Pineapple Healthcare.\n\nCreate a TEAM! On Wednesdays you can become a TEAM CAPTAIN and have your players register as TEAM PLAYERS. Please note our leagues have a fixed capacity of 100 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nDon't have a Team? Register as a FREE AGENT and we will place you on a team. Free agents can also name a FRIEND(S) that they want to play with and the league will place you together.\n\n\u2764\ufe0f \ud83e\udde1 \ud83d\udc9b \ud83d\udc9a \ud83d\udc99 \ud83d\udc9c\ud83d\udda4\n\nLEAGUE INFORMATION\n\n8 Week Indoor Volleyball Season\nTuesdays from October 20 - December 15\nWeek 4 games will take place on\u00a0Wednesday, November 11\nMatches will start at 6:20, 7:10 and 8:00pm\n\n- Players must be Beginner, Novice or Lower Intermediate Skill Levels (C/D).\n- 10 Teams Maximum.\u00a0Recreational Teams must have 9 players.\n- 6v6 matches with standard rotating rules, no libero players and rally scoring.\n- Games are to 21 (win by 2 or first to 25). Always play all 3 games.\n- All games are refereed. Each team is required to contribute line judges.\n\nGames are played at:\nDr James R Smith Center\n1723 Bruton Blvd, Orlando, FL 32805\n\nWeekly after parties at:\nDistrict Dive\n2401 E South St, Orlando, FL 32803\n\nREGISTRATION INFORMATION\n\n$70 per Player\nLeague Fee Covers - T-Shirt, Fields, Equipment, Umpires, Photos, Awards, and Weekly After Party!\n\nTEAM CAPTAIN* - Create a team of 9+ and invite your friends!\nTEAM PLAYER - Join an existing team (please only join if invited to a team)\nFREE AGENT - Don't have a team? No problem! Register without a team and you can list friends you want to play with. When league registration closes you will placed on a team.\n\nWant to play with a few friends?\nIf you have a buddy or a small group of friends who want to play together you can all register as Free Agents. During registration you will be prompted to list player(s) that you'd like to play with. Everyone should register separately and the league will then place you and your friends together on a team.\n\n* Please note the league has a fixed capacity of 90 players, if your team is incomplete when registration closes or capacity is reached the league will add free agents to your team.\n\nFAQ\n\nI don't have a team, can I still play?\nYes, register as an Individual and we will place you with a team.\n\nI will miss a few weeks, can I still play?\nYes, all teams have extra players on them just in case you're absent on a given week. Teams can also use substitute players.\n\nHow do I make sure my friend and I play on the same team?\nDuring registration there is a field where you can list the friend(s) you want to play with and the league will place you together.\n\nI don't know how to play or don't think I'll be very good, should I play?\nYes, join our Wednesday or Friday Night leagues aimed at new and developing players\u00a0and you will learn the basics in a fun, encouraging environment.\n\nI'm not LGBTQ+, can I still play?\nYes, we are accepting to all people as long as you consider yourself an ally to our community.",
-      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuedays---recreational-cd",
+      "url": "https://outsportsleague.leagueapps.com/leagues/volleyball-(indoor)/5151697-tuesdays---recreational-cd",
       "skill_level": "A/AA, B/BB, All Levels",
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
@@ -6320,7 +6358,7 @@
       "address": "714 E Theo Ave, San Antonio, TX 78210, USA",
       "lat": 29.3898106,
       "lng": -98.4979727,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Richard Sucre Brian Starks Andrew Crawford Anwar Johnson Bronson Young\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | December 2, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Richard Sucre Brian Starks Andrew Crawford Anwar Johnson Bronson Young\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 3, 2026 | December 1, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -7346,7 +7384,7 @@
       "address": "7888 200 St, Langley Twp, BC V2Y 3J4, Canada",
       "lat": 49.1459933,
       "lng": -122.6664163,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Dan Vano | Simon Kwok\n\nDivisions: Tournament Cap | B | BB | BB3 | 50 | 24 | 16 | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | January 8, 2027\n\nRegistration: Date/Time | 3/19/2027 7:00pm - 9:00pm at Numbers Cabaret | Location | 1042 Davie St, Vancouver, BC V6E 1M3, Canada\n\nSeeding Party: Date/Time | 3/20/2027 7:30pm - 10:00pm at PumpJacks Pub | Location | 1167 Davie St, Vancouver, BC V6E 1N2, Canada\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 7, 2027 | February 11, 2027 | March 1, 2027 | Addl. Player Fee | 800 CAD | 850 CAD | 900 CAD | 90 CAD\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/great-canadian-classic-26",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Dan Vano | Simon Kwok\n\nDivisions: Tournament Cap | B | BB | BB3 | 50 | 24 | 16 | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | January 7, 2027\n\nRegistration: Date/Time | 3/19/2027 7:00pm - 9:00pm at Numbers Cabaret | Location | 1042 Davie St, Vancouver, BC V6E 1M3, Canada\n\nSeeding Party: Date/Time | 3/20/2027 7:30pm - 10:00pm at PumpJacks Pub | Location | 1167 Davie St, Vancouver, BC V6E 1N2, Canada\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 7, 2027 | February 11, 2027 | March 1, 2027 | Addl. Player Fee | 800 CAD | 850 CAD | 900 CAD | 90 CAD\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/great-canadian-classic-26",
       "url": "https://www.nagva.org/tournaments-1/great-canadian-classic-26",
       "skill_level": "B/BB",
       "gym_type": "Tournament",

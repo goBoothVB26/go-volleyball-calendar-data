@@ -193,4 +193,14 @@ DESCRIPTION:Tournament · Adults · Beach · 3s\n\nMore info: https://voll
 LOCATION:North Shore Beach Volleyball St Pete
 URL:https://volleyballlife.com/event/41695
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Quake At The Lake
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+UID:Volleyball_Life-Quake_At_The_Lake-2026-11-21T00:00:00
+DESCRIPTION:Tournament · Adults & Juniors · Grass · 4s\n\nMore info: ht
+ tps://volleyballlife.com/event/40892
+LOCATION:Lake Swan Christian Camp Melrose Florida
+URL:https://volleyballlife.com/event/40892
+END:VEVENT
 END:VCALENDAR
