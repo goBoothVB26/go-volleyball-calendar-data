@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T19:04:49",
+  "generated": "2026-10-27T23:20:49",
   "days": [
     {
       "date": "2026-10-27",
@@ -10,14 +10,14 @@
     },
     {
       "date": "2026-10-28",
-      "high": 80,
-      "low": 68,
-      "code": 80,
+      "high": 81,
+      "low": 69,
+      "code": 82,
       "category": "rain"
     },
     {
       "date": "2026-10-29",
-      "high": 88,
+      "high": 87,
       "low": 72,
       "code": 95,
       "category": "storm"

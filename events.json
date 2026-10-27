@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T19:04:49",
+  "generated": "2026-10-27T23:20:47",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -4572,7 +4572,7 @@
       "address": "415 E Grand Ave., South San Francisco, CA 94080, USA",
       "lat": 37.6506737,
       "lng": -122.3858227,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Mark Salzer | Bronson Young Lew Smith\n\nDivisions: Tournament Cap | Legends B1 | Legends BB1 | C1 | 30 | 18 | 18 | 0 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026\n\nRegistration: Date/Time | Location | None\n\nSeeding Party: Date/Time | Location | None\n\nBanquet/Awards Party: Date/Time | Location | None | Tournament News\n\nPayment Deadlines: October 23, 2026 | Addl. Player Fee | 525 | 75\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre\n\nMore info: https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Richard Sucre | Mark Salzer | Bronson Young Lew Smith\n\nDivisions: Tournament Cap | Legends B1 | Legends BB1 | C1 | 30 | 18 | 18 | 0 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | September 30, 2026\n\nRegistration: Date/Time | Friday, November 6th from 6:30pm to 8:30pm | Location | The Detour, 2200A Market St, San Francisco, CA 94114, USA\n\nSeeding Party: Date/Time | Location | None\n\nBanquet/Awards Party: Date/Time | Location | Awards after Conclusion of Play | Tournament News\n\nPayment Deadlines: October 23, 2026 | Addl. Player Fee | 525 | 75\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo | @RichSucre\n\nMore info: https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
       "url": "https://www.nagva.org/tournaments-1/legendary-%26-new-blow-out--",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
@@ -5433,25 +5433,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 500.0,
-      "image": null
-    },
-    {
-      "uid": "Volleyball_Life-Quake_At_The_Lake-2026-11-21T00:00:00",
-      "club": "Volleyball Life",
-      "title": "Quake At The Lake",
-      "start": "2026-11-21T00:00:00",
-      "end": "2026-11-22T00:00:00",
-      "all_day": true,
-      "location": "Lake Swan Christian Camp Melrose Florida",
-      "address": null,
-      "lat": null,
-      "lng": null,
-      "description": "Tournament \u00b7 Adults & Juniors \u00b7 Grass \u00b7 4s",
-      "url": "https://volleyballlife.com/event/40892",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": null,
       "image": null
     },
     {
@@ -6358,7 +6339,7 @@
       "address": "714 E Theo Ave, San Antonio, TX 78210, USA",
       "lat": 29.3898106,
       "lng": -98.4979727,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Richard Sucre Brian Starks Andrew Crawford Anwar Johnson Bronson Young\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 3, 2026 | December 1, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Brian Gonzalez | Brian Gonzalez | Richard Sucre Brian Starks Andrew Crawford Anwar Johnson Bronson Young\n\nDivisions: Tournament Cap | A1 | BB | B | 84 | 12 | 24 | 36 | Women's | 12 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | December 16, 2026\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | December 2, 2026 | Addl. Player Fee | 550 | 600 | 650 | 50\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @brian-gonzalez-51\n\nMore info: https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "url": "https://www.nagva.org/tournaments-1/battle-of-the-alamo-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -7374,6 +7355,25 @@
       "image": null
     },
     {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 Sunshine Classic",
+      "start": "2027-03-19T00:00:00",
+      "end": "2027-03-22T00:00:00",
+      "all_day": true,
+      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "lat": 28.4247315,
+      "lng": -81.4694962,
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46976",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 925.0,
+      "image": null
+    },
+    {
       "uid": "NAGVA-Great_Canadian_Classic_'27-2027-03-20T00:00:00",
       "club": "NAGVA",
       "title": "Great Canadian Classic '27",
@@ -7384,7 +7384,7 @@
       "address": "7888 200 St, Langley Twp, BC V2Y 3J4, Canada",
       "lat": 49.1459933,
       "lng": -122.6664163,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Dan Vano | Simon Kwok\n\nDivisions: Tournament Cap | B | BB | BB3 | 50 | 24 | 16 | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | January 7, 2027\n\nRegistration: Date/Time | 3/19/2027 7:00pm - 9:00pm at Numbers Cabaret | Location | 1042 Davie St, Vancouver, BC V6E 1M3, Canada\n\nSeeding Party: Date/Time | 3/20/2027 7:30pm - 10:00pm at PumpJacks Pub | Location | 1167 Davie St, Vancouver, BC V6E 1N2, Canada\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 7, 2027 | February 11, 2027 | March 1, 2027 | Addl. Player Fee | 800 CAD | 850 CAD | 900 CAD | 90 CAD\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/great-canadian-classic-26",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Dan Vano | Simon Kwok\n\nDivisions: Tournament Cap | B | BB | BB3 | 50 | 24 | 16 | 8 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | January 8, 2027\n\nRegistration: Date/Time | 3/19/2027 7:00pm - 9:00pm at Numbers Cabaret | Location | 1042 Davie St, Vancouver, BC V6E 1M3, Canada\n\nSeeding Party: Date/Time | 3/20/2027 7:30pm - 10:00pm at PumpJacks Pub | Location | 1167 Davie St, Vancouver, BC V6E 1N2, Canada\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 7, 2027 | February 11, 2027 | March 1, 2027 | Addl. Player Fee | 800 CAD | 850 CAD | 900 CAD | 90 CAD\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/great-canadian-classic-26",
       "url": "https://www.nagva.org/tournaments-1/great-canadian-classic-26",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
