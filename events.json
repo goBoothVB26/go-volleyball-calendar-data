@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T23:27:42",
+  "generated": "2026-10-27T07:04:48",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -3916,25 +3916,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-10-26T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "address": null,
-      "lat": 28.5867689,
-      "lng": -81.5196927,
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Out_Sports_League-Tuedays_-_Recreational_(C/D)-2026-10-27T18:20:00",
       "club": "Out Sports League",
       "title": "Tuedays - Recreational (C/D)",
@@ -3970,6 +3951,25 @@
       "gym_type": "League",
       "net_height": "Men's, Co-ed",
       "price": 640.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-10-27T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -5959,7 +5959,7 @@
       "address": "4795 Keystone Blvd, Jeffersonville, IN 47130, USA",
       "lat": 38.3494927,
       "lng": -85.710053,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | John McEwen | John McEwen | Joshua Christensen Joshua Williams\n\nDivisions: Tournament Cap | B | BB | A1 | 40 | 15 | 15 | 10 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 4, 2026 | Addl. Player Fee | 475 | 550 | 65\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @John-McEwen12\n\nMore info: https://www.nagva.org/tournaments-1/louisville-lava-classic-xvi",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | John McEwen | John McEwen | Joshua Christensen Joshua Williams\n\nDivisions: Tournament Cap | B | BB | A1 | 40 | 15 | 15 | 10 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: October 5, 2026 | November 5, 2026 | Addl. Player Fee | 475 | 550 | 65\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @John-McEwen12\n\nMore info: https://www.nagva.org/tournaments-1/louisville-lava-classic-xvi",
       "url": "https://www.nagva.org/tournaments-1/louisville-lava-classic-xvi",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -7355,25 +7355,6 @@
       "image": null
     },
     {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Sunshine Classic",
-      "start": "2027-03-19T00:00:00",
-      "end": "2027-03-22T00:00:00",
-      "all_day": true,
-      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "lat": 28.4247315,
-      "lng": -81.4694962,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46976",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 925.0,
-      "image": null
-    },
-    {
       "uid": "NAGVA-Great_Canadian_Classic_'27-2027-03-20T00:00:00",
       "club": "NAGVA",
       "title": "Great Canadian Classic '27",
@@ -7460,7 +7441,7 @@
       "address": "10455 Pomerado Rd, San Diego, CA 92131, USA",
       "lat": 32.8966666,
       "lng": -117.0938567,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Ray Robles | Roman Guerrero\n\nDivisions: Tournament Cap | Mod A1 | BB | B | 72 | 12 | 24 | 24 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: December 31, 2026 | February 15, 2027 | April 18, 2027 | Addl. Player Fee | 525 | 575 | 625 | 70\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/lavo-spring-challenge",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Ray Robles | Roman Guerrero\n\nDivisions: Tournament Cap | Mod A1 | BB | B | 72 | 12 | 24 | 24 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 1, 2027 | February 16, 2027 | April 18, 2027 | Addl. Player Fee | 525 | 575 | 625 | 70\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/lavo-spring-challenge",
       "url": "https://www.nagva.org/tournaments-1/lavo-spring-challenge",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
