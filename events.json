@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T23:20:47",
+  "generated": "2026-10-28T07:41:28",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -3973,25 +3973,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-10-27T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "address": null,
-      "lat": 28.5867689,
-      "lng": -81.5196927,
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-10-27T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -4027,6 +4008,25 @@
       "gym_type": "Open Gym",
       "net_height": "Co-ed",
       "price": 3.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-10-28T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -4597,7 +4597,7 @@
       "gym_type": "Tournament",
       "net_height": "Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/6ac917f9-0b35-4445-9833-40af9556242f.jpg"
     },
     {
       "uid": "Volleyball_Life-Super_Girl_Pro_Series_2026-2026-11-07T00:00:00",
@@ -4616,7 +4616,7 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/5c326e35-a31d-4267-93b0-c52c5420614e.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-2026_winter_beach_tournament,_$5500_total_purse_'24_COPY-2026-11-07T00:00:00",
@@ -5070,6 +5070,25 @@
       "url": "https://volleyballlife.com/event/41695",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
+      "image": null
+    },
+    {
+      "uid": "USAV_Florida_Region-Coaches_Clinic-2026-11-14T00:00:00",
+      "club": "USAV Florida Region",
+      "title": "Coaches Clinic",
+      "start": "2026-11-14T00:00:00",
+      "end": "2026-11-15T00:00:00",
+      "all_day": true,
+      "location": "Lake-Sumter State College, 9501 US-441, Leesburg, FL 34788",
+      "address": "9501 US-441, Leesburg, FL 34788",
+      "lat": 28.8274955,
+      "lng": -81.797028,
+      "description": "EVENT BEGINS IN:\n\nEVENT SPONSOR:\nLearn. Connect. Level Up. Join the Florida Region for a full day dedicated to becoming a stronger, more effective volleyball coach. Combine classroom learning with on-court sessions, connect with fellow coaches, and bring fresh ideas back to your team.\n\nINVEST IN YOUR COACHING:\nJoin us Saturday, November 14, 2026, at Lake-Sumter State College in Leesburg, Florida, for an in-person USA Volleyball Coaches Clinic. Spend the day learning alongside fellow coaches through classroom instruction and on-court participation. Come ready to ask questions, share ideas, and grow your coaching knowledge. A working lunch will be provided by USAV Florida Region.\n\nLEARN FROM AN OUTSTANDING LINEUP:\nJohn Kessel Jenny Johnson \u2014 American Sport Education (ASE) Erin Olson \u2014 Assistant Coach, Orlando Valkyries Positive Coaching Alliance\n\nINVITATION SCHEDULE:\n- 8:30 AM Doors Open & Check in Begins\n- 9:30 AM Clinic sessions begin\n- 5:00 PM Dismissal\n\nVENUE:\nLake-Sumter State College: 9501 US-441, Leesburg, FL 34788\n15010 US Highway 441 Eustis, Fl 32726\n[email\u00a0protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Membership Information\n- Indoor Jr. Bids and Rankings\n- \u200bSanction a USAV Event\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM, Monday-Friday\nClosed on Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Thanksgiving Friday, Christmas Eve through New Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball, Inc. All Rights Reserved. Designed by StellarBlue.ai",
+      "url": "https://floridavolleyball.org/blog/event/coaches-clinic/",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
       "image": null
