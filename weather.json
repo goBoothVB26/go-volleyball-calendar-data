@@ -1,61 +1,61 @@
 {
-  "generated": "2026-10-28T23:43:48",
+  "generated": "2026-10-29T07:48:09",
   "days": [
     {
-      "date": "2026-10-28",
-      "high": 82,
-      "low": 72,
-      "code": 51,
-      "category": "drizzle"
-    },
-    {
       "date": "2026-10-29",
-      "high": 84,
+      "high": 85,
       "low": 71,
-      "code": 53,
-      "category": "drizzle"
+      "code": 3,
+      "category": "overcast"
     },
     {
       "date": "2026-10-30",
-      "high": 86,
-      "low": 71,
-      "code": 51,
-      "category": "drizzle"
+      "high": 84,
+      "low": 72,
+      "code": 63,
+      "category": "rain"
     },
     {
       "date": "2026-10-31",
-      "high": 84,
+      "high": 85,
       "low": 74,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-11-01",
-      "high": 80,
-      "low": 72,
+      "high": 78,
+      "low": 70,
       "code": 95,
       "category": "storm"
     },
     {
       "date": "2026-11-02",
-      "high": 87,
-      "low": 71,
-      "code": 80,
-      "category": "rain"
+      "high": 73,
+      "low": 70,
+      "code": 55,
+      "category": "drizzle"
     },
     {
       "date": "2026-11-03",
-      "high": 89,
-      "low": 72,
+      "high": 85,
+      "low": 69,
       "code": 51,
       "category": "drizzle"
     },
     {
       "date": "2026-11-04",
-      "high": 88,
+      "high": 82,
       "low": 73,
-      "code": 53,
-      "category": "drizzle"
+      "code": 95,
+      "category": "storm"
+    },
+    {
+      "date": "2026-11-05",
+      "high": 87,
+      "low": 72,
+      "code": 3,
+      "category": "overcast"
     }
   ]
 }
