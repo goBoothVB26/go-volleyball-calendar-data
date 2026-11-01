@@ -1,26 +1,26 @@
 {
-  "generated": "2026-11-01T18:41:49",
+  "generated": "2026-11-01T23:18:20",
   "days": [
     {
       "date": "2026-11-01",
       "high": 85,
-      "low": 70,
-      "code": 63,
+      "low": 71,
+      "code": 81,
       "category": "rain"
     },
     {
       "date": "2026-11-02",
       "high": 78,
       "low": 68,
-      "code": 65,
+      "code": 63,
       "category": "rain"
     },
     {
       "date": "2026-11-03",
       "high": 83,
-      "low": 70,
-      "code": 80,
-      "category": "rain"
+      "low": 69,
+      "code": 95,
+      "category": "storm"
     },
     {
       "date": "2026-11-04",
