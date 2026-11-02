@@ -25,8 +25,9 @@ CLUB_COLORS map). Rows without one fall back to "Community Submitted".
 Column handling: headers are matched by keyword, so the form's question
 wording doesn't need to match exactly ("Event Name", "Name of event",
 and "Title" all map to the title). Rows missing a title or an
-unparseable date are skipped with a warning. If the sheet gains an
-"Approved" column, only rows marked yes/true/approved are ingested.
+unparseable date are skipped with a warning. "Permission to publish"
+(or an "Approved"/"Approval"/"Reviewed" column) gates publication --
+only rows marked yes/true/approved are ingested.
 "Public contact email"/"Public contact phone" (meant to be shown
 publicly, unlike a private submitter-email column), the registration
 link, cost, "Website or social link", and "Anything else we should
@@ -86,7 +87,7 @@ _HEADER_KEYWORDS = {
     "contact_phone": ["public contact phone", "contact phone"],
     "social_link": ["website or social", "social link", "social media"],
     "extra_notes": ["anything else", "else we should know"],
-    "approved": ["approved", "approval", "reviewed"],
+    "approved": ["permission to publish", "approved", "approval", "reviewed"],
 }
 
 _APPROVED_RE = re.compile(r"^\s*(yes|y|true|approved|ok|1)\s*$", re.I)

@@ -29,7 +29,7 @@ title/description keyword inference).
 """
 
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import Optional
 
 from dateutil import parser as dateparser
@@ -41,6 +41,11 @@ from ..models import Event
 from .base import ClubAdapter
 
 BASE_URL = "https://goadultsportsleague.leagueapps.com"
+
+# How far ahead to expand a program that has no "Ends:" field (an
+# ongoing/indefinite weekly game) -- same horizon goldenrod.py's
+# open-ended calendar already uses.
+LOOKAHEAD_DAYS = 90
 
 LIST_PAGE_URLS = [
     f"{BASE_URL}/tournaments?ngmp_2023_iframe_transition=1",
@@ -196,8 +201,19 @@ class GreaterOrlandoVolleyballClubAdapter(ClubAdapter):
         details = leagueapps.parse_details(li)
         start_date = leagueapps.parse_date(details.get("starts"))
         end_date = leagueapps.parse_date(details.get("ends"))
-        if start_date is None or end_date is None:
+        if start_date is None:
             return []
+        if end_date is None:
+            # Some programs (e.g. an ongoing weekly pickup game) have no
+            # "Ends:" field at all -- LeagueApps shows them as running
+            # indefinitely. Without this, the missing end date made the
+            # whole program return zero events (confirmed live: GOVC's
+            # "Grass Pick Up", a real Mon/Wed weekly game, silently
+            # vanished this way). Expand a near-term window instead of
+            # the whole season, same LOOKAHEAD_DAYS horizon goldenrod.py's
+            # own open-ended calendar already uses.
+            start_date = max(start_date, datetime.now())
+            end_date = start_date + timedelta(days=LOOKAHEAD_DAYS)
 
         start_time, end_time = leagueapps.parse_time_range(li)
         price = leagueapps.parse_fee(li)
