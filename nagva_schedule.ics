@@ -104,7 +104,7 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Josh
  e caps shown on this page are subject to change at ANY time. | Waitlist Da
  te | October 1\, 2026\n\nRegistration: Date/Time | Location\n\nSeeding Par
  ty: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | T
- ournament News\n\nPayment Deadlines: November 2\, 2026 | Addl. Player Fee 
+ ournament News\n\nPayment Deadlines: November 1\, 2026 | Addl. Player Fee 
  | 500 | 75\n\nPayment Details: Personal Check | Cashier's Check | Payment 
  Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/golden-%26-
  green-apple-2026\n\nMore info: https://www.nagva.org/tournaments-1/golden-
@@ -2259,5 +2259,27 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Ray
 LOCATION:Sol City Sports Center at Alliant | 10455 Pomerado Rd\, San Diego
  \, CA 92131\, USA
 URL:https://www.nagva.org/tournaments-1/lavo-spring-challenge
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] NorCal Classic XXXIX
+DTSTART;VALUE=DATE:20270213
+UID:NAGVA-NorCal_Classic_XXXIX-2027-02-13T00:00:00
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Rich
+ ard Sucre | Mark Salzer\n\nDivisions: Tournament Cap | A1 | BB | B | 75 | 
+ 9 | 26 | 26 | Womens | 14 | Waitlist Priority | Divisional Caps will not b
+ e changed until [WAITLIST DATE BELOW]. If a division does not fill by that
+  date\, waitlisted teams from other divisions will be confirmed for the to
+ urnament in the displayed waitlist order. | Waitlist Date | January 2\, 20
+ 27\n\nRegistration: Date/Time | Location | TBD\n\nSeeding Party: Date/Time
+  | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament New
+ s\n\nPayment Deadlines: January 2\, 2027 | Addl. Player Fee | 540 | 70\n\n
+ Payment Details: Personal Check | Cashier's Check | Payment Link | Venmo |
+  @RichSucre\n\nMore info: https://www.nagva.org/tournaments-1/norcal-class
+ ic-xxxix\n\nMore info: https://www.nagva.org/tournaments-1/norcal-classic-
+ xxxix
+LOCATION:SF Elite Volleyball Club | 1422 San Mateo Ave\, South San Francis
+ co\, CA 94080\, USA | SF Elite Annex | 415 E Grand Ave.\, South San Franci
+ sco\, CA 94080\, USA
+URL:https://www.nagva.org/tournaments-1/norcal-classic-xxxix
 END:VEVENT
 END:VCALENDAR
