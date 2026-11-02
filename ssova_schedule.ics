@@ -22,34 +22,10 @@ DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261109
 UID:SSOVA-SSOVA's_VETSPORTS_CHARITY\,_Adults_&_Juniors_AVP_2_STAR_&_ECC/WC
  C_QUALIFIER_Beach_Volleyball_Tournament-2026-11-07T00:00:00
-DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
- tps://ssova.volleyballlife.com/event/33595
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s/4s\n\nMore info:
+  https://ssova.volleyballlife.com/event/33595
 LOCATION:Gulfport Beach Courts
 URL:https://ssova.volleyballlife.com/event/33595
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[SSOVA] CHARITY VETERANS SSOVA 4's Men's/Women's/Coed’s Vet Spor
- t's Gulfport\, Beach Volleyball Tournament
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
-UID:SSOVA-CHARITY_VETERANS_SSOVA_4's_Men's/Women's/Coed’s_Vet_Sport's_Gu
- lfport\,_Beach_Volleyball_Tournament-2026-11-07T00:00:00
-DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://ssov
- a.volleyballlife.com/events
-LOCATION:Gulfport Beach Courts
-URL:https://ssova.volleyballlife.com/events
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[SSOVA] CHARITY VETERAN SSOVA Juniors 4's Vet Sports Gulfport Beac
- h Volleyball Tournament
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
-UID:SSOVA-CHARITY_VETERAN_SSOVA_Juniors_4's_Vet_Sports_Gulfport_Beach_Voll
- eyball_Tournament-2026-11-08T00:00:00
-DESCRIPTION:Tournament · Juniors · Beach · 4s\n\nMore info: https://sso
- va.volleyballlife.com/event/33671
-LOCATION:Gulfport Beach Fl
-URL:https://ssova.volleyballlife.com/event/33671
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[SSOVA] SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER\, Beach Volle
@@ -193,6 +169,30 @@ UID:SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
 DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
  tps://ssova.volleyballlife.com/event/42507
 LOCATION:Crabby Bill's
+URL:https://ssova.volleyballlife.com/event/42507
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER & USAV Region
+ al Qualifier\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270322
+UID:SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
+ lifier\,_Beach_Volleyball_Tournament-_BRQ-2027-03-20T20:26:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/event/42507
+LOCATION:Crabby Bill's
+URL:https://ssova.volleyballlife.com/event/42507
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA Adults & Juniors AVP ECC/WCC QUALIFIER & USAV Region
+ al Qualifier\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270405
+UID:SSOVA-SSOVA_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_&_USAV_Regional_Qua
+ lifier\,_Beach_Volleyball_Tournament-_BRQ-2027-04-03T20:26:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/event/42507
+LOCATION:Anna Maria Island (Coquina Beach)
 URL:https://ssova.volleyballlife.com/event/42507
 END:VEVENT
 END:VCALENDAR
