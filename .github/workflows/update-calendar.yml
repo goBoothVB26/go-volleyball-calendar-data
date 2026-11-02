@@ -57,6 +57,16 @@ jobs:
           restore-keys: |
             scraper-cache-
 
+      - name: TEMP debug -- GOVC grass league investigation
+        # Diagnostic only -- will be reverted. User reports a Monday/
+        # Wednesday grass league that isn't coming through from GOVC.
+        # Dumps every baseevent program title across tournaments/leagues/
+        # events/classes plus its weekday-resolution result, so a program
+        # silently dropped by resolve_weekdays() (empty weekday set ->
+        # _parse_baseevent_li returns []) is visible instead of just
+        # missing with no trace.
+        run: python debug_grass.py
+
       - name: Run scraper
         env:
           # Google Apps Script web app URL for the community-submitted
