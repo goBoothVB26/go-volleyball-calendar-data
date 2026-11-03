@@ -358,4 +358,24 @@ DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n\nSATURDAY\, MAY 22\, 2027
 LOCATION:Winter Park Volleyball Club\, 2603 Ace Rd. Orlando\, FL 32792
 URL:https://floridavolleyball.org/blog/event/adultregionalchampionships/
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[USAV Florida Region] 25th Annual Florida Region Awards Ceremony
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+UID:USAV_Florida_Region-25th_Annual_Florida_Region_Awards_Ceremony-2027-03
+ -25T00:00:00
+DESCRIPTION:EVENT BEGINS IN:\n\nEVENT SPONSOR:\n15010 US Highway 441 Eusti
+ s\, Fl 32726\n[email protected]\n(352) 742-0080\n\nHELPFUL LINKS:\n- Memb
+ ership Information\n- Indoor Jr. Bids and Rankings\n- ​Sanction a USAV E
+ vent\n- Find a Club\n- Events and Event Schedule\n- Become an Official\n- 
+ Request COI\n- Policies & Procedures\n\nOFFICE HOURS:\n9 AM to 5 PM\, Mond
+ ay-Friday\nClosed on Good Friday\, Memorial Day\, Independence Day\, Labor
+  Day\, Thanksgiving Day\, Thanksgiving Friday\, Christmas Eve through New 
+ Years Day\nCopyright (c) 1982-2025 Florida Region of USA Volleyball\, Inc.
+  All Rights Reserved. Designed by StellarBlue.ai\n\nMore info: https://flo
+ ridavolleyball.org/blog/event/25th-annual-florida-region-awards-ceremony/
+LOCATION:Orlando\, FL
+URL:https://floridavolleyball.org/blog/event/25th-annual-florida-region-aw
+ ards-ceremony/
+END:VEVENT
 END:VCALENDAR
