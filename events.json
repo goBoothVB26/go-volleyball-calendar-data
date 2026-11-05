@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T08:42:18",
+  "generated": "2026-11-05T21:04:01",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5626,21 +5626,21 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-NCF_Beach_High_School/Transfer_2027s_and_2028s_Camp-2026-11-21T00:00:00",
+      "uid": "Volleyball_Life-Beast_Coast_Volleyball_Coed_4\u2019s__(One_girl_minimum)-2026-11-21T00:00:00",
       "club": "Volleyball Life",
-      "title": "NCF Beach High School/Transfer 2027s and 2028s Camp",
+      "title": "Beast Coast Volleyball Coed 4\u2019s  (One girl minimum)",
       "start": "2026-11-21T00:00:00",
       "end": "2026-11-22T00:00:00",
       "all_day": true,
-      "location": "Banyan Beach- New College of Florida",
+      "location": "Kenly Park",
       "address": null,
-      "lat": null,
-      "lng": null,
-      "description": "Clinic \u00b7 Adults & Juniors \u00b7 Beach \u00b7 1s",
-      "url": "https://volleyballlife.com/event/41774",
+      "lat": 27.9698629,
+      "lng": -82.3807216,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&ll=28.5383832,-81.3789269&dist=200",
       "skill_level": "All Levels",
-      "gym_type": "Clinics/Training",
-      "net_height": "Men's, Co-ed",
+      "gym_type": "Tournament",
+      "net_height": "Women's, Co-ed",
       "price": null,
       "image": null
     },
