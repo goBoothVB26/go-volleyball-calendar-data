@@ -864,4 +864,19 @@ LOCATION:Cady Way Park
 URL:https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-u
  p
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] Grass Pick Up
+DTSTART;TZID=America/New_York:20270203T180000
+DTEND;TZID=America/New_York:20270203T210000
+UID:Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2027-02-03T18:00:00
+DESCRIPTION:Come play grass with us at Cady Way Park on Mondays & Wednesda
+ ys\n\n- Mondays is open community 4v4\n- Wednesdays is intermediate+ 2s\, 
+ 3s\, or RevCo doubles\n\nJoin the group chat to keep up with polls and res
+ erve your spots - https://chat.whatsapp.com/LDhu93SNuVXFL9ZEB2t9Kz\n\n252
+ 9 Cady WayWinter Park\, FL 32792\n\nSeason: Fall 2026\n\nMore info: https:
+ //goadultsportsleague.leagueapps.com/events/5080545-grass-pick-up
+LOCATION:Cady Way Park
+URL:https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-u
+ p
+END:VEVENT
 END:VCALENDAR
