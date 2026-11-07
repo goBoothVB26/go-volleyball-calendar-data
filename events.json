@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T07:57:16",
+  "generated": "2026-11-07T14:30:31",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5129,7 +5129,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/4124d206-e60e-4a7c-9e5c-d88fc35cbf63.png"
+      "image": null
     },
     {
       "uid": "Volleyball_Life-November_14th_GVT_3s_Tournament-2026-11-14T00:00:00",
@@ -6668,6 +6668,25 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Women's, Co-ed",
       "price": 8.0,
+      "image": null
+    },
+    {
+      "uid": "Volley_Vortex-Holiday_Madness_Showdown-2026-12-12T00:00:00",
+      "club": "Volley Vortex",
+      "title": "Holiday Madness Showdown",
+      "start": "2026-12-12T00:00:00",
+      "end": "2026-12-14T00:00:00",
+      "all_day": true,
+      "location": "Trotters Park",
+      "address": "2701 Lee Rd, Orlando, FL 32789",
+      "lat": 28.6033012,
+      "lng": -81.4074116,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 4s",
+      "url": "https://volleyvortex.volleyballlife.com/events",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": null,
       "image": null
     },
     {

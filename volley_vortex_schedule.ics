@@ -54,4 +54,14 @@ DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
 LOCATION:Trotters Park
 URL:https://volleyvortex.volleyballlife.com/events
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volley Vortex] Holiday Madness Showdown
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261214
+UID:Volley_Vortex-Holiday_Madness_Showdown-2026-12-12T00:00:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyvortex.volleyballlife.com/events
+LOCATION:Trotters Park
+URL:https://volleyvortex.volleyballlife.com/events
+END:VEVENT
 END:VCALENDAR
