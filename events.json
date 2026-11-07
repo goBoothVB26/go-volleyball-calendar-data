@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T14:30:31",
+  "generated": "2026-11-07T23:13:12",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -4828,6 +4828,25 @@
       "image": null
     },
     {
+      "uid": "Greater_Orlando_Volleyball_Club-Skills_Training_Workout-2026-11-08T15:45:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Skills Training Workout",
+      "start": "2026-11-08T15:45:00",
+      "end": "2026-11-08T17:45:00",
+      "all_day": false,
+      "location": "Dover Shores Community Center",
+      "address": null,
+      "lat": 28.5255984,
+      "lng": -81.3259519,
+      "description": "High Intensity Ball Control & Conditioning Clinic\n\nGet more touches, move faster, and stay sharp when you\u2019re tired. This high-energy clinic combines ball-control work with volleyball-specific conditioning, so you build clean technique and the stamina to hold it through long rallies and deep tournament days.\n\nAll sessions will be lead by Coach Khali and will take place at Dover Shores Community Center from 3:45 - 5:45 PM on Sundays Nov 8, 15 and 22.\n\nSeason: Fall 2026",
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5225072-skills-training-workout",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
+      "net_height": "Men's, Co-ed",
+      "price": 0.0,
+      "image": null
+    },
+    {
       "uid": "Greater_Orlando_Volleyball_Club-Grass_Pick_Up-2026-11-09T18:00:00",
       "club": "Greater Orlando Volleyball Club",
       "title": "Grass Pick Up",
@@ -5129,7 +5148,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/4124d206-e60e-4a7c-9e5c-d88fc35cbf63.png"
     },
     {
       "uid": "Volleyball_Life-November_14th_GVT_3s_Tournament-2026-11-14T00:00:00",
@@ -5167,7 +5186,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/8e0d1a3c-9b91-4d44-991c-d35c3af0613f.jpeg"
+      "image": null
     },
     {
       "uid": "USAV_Florida_Region-Coaches_Clinic-2026-11-14T00:00:00",
@@ -5300,6 +5319,25 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-Skills_Training_Workout-2026-11-15T15:45:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Skills Training Workout",
+      "start": "2026-11-15T15:45:00",
+      "end": "2026-11-15T17:45:00",
+      "all_day": false,
+      "location": "Dover Shores Community Center",
+      "address": null,
+      "lat": 28.5255984,
+      "lng": -81.3259519,
+      "description": "High Intensity Ball Control & Conditioning Clinic\n\nGet more touches, move faster, and stay sharp when you\u2019re tired. This high-energy clinic combines ball-control work with volleyball-specific conditioning, so you build clean technique and the stamina to hold it through long rallies and deep tournament days.\n\nAll sessions will be lead by Coach Khali and will take place at Dover Shores Community Center from 3:45 - 5:45 PM on Sundays Nov 8, 15 and 22.\n\nSeason: Fall 2026",
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5225072-skills-training-workout",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
+      "net_height": "Men's, Co-ed",
+      "price": 0.0,
       "image": null
     },
     {
@@ -5775,6 +5813,25 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": null,
+      "image": null
+    },
+    {
+      "uid": "Greater_Orlando_Volleyball_Club-Skills_Training_Workout-2026-11-22T15:45:00",
+      "club": "Greater Orlando Volleyball Club",
+      "title": "Skills Training Workout",
+      "start": "2026-11-22T15:45:00",
+      "end": "2026-11-22T17:45:00",
+      "all_day": false,
+      "location": "Dover Shores Community Center",
+      "address": null,
+      "lat": 28.5255984,
+      "lng": -81.3259519,
+      "description": "High Intensity Ball Control & Conditioning Clinic\n\nGet more touches, move faster, and stay sharp when you\u2019re tired. This high-energy clinic combines ball-control work with volleyball-specific conditioning, so you build clean technique and the stamina to hold it through long rallies and deep tournament days.\n\nAll sessions will be lead by Coach Khali and will take place at Dover Shores Community Center from 3:45 - 5:45 PM on Sundays Nov 8, 15 and 22.\n\nSeason: Fall 2026",
+      "url": "https://goadultsportsleague.leagueapps.com/classes/5225072-skills-training-workout",
+      "skill_level": "All Levels",
+      "gym_type": "Clinics/Training",
+      "net_height": "Men's, Co-ed",
+      "price": 0.0,
       "image": null
     },
     {
@@ -6405,18 +6462,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Florida_Dinosaur_Doubles_-_Fall_2026-2026-12-05T00:00:00",
+      "uid": "Volleyball_Life-Copa_Del_Sur_-_Winter_Heat-2026-12-05T00:00:00",
       "club": "Volleyball Life",
-      "title": "Florida Dinosaur Doubles - Fall 2026",
+      "title": "Copa Del Sur - Winter Heat",
       "start": "2026-12-05T00:00:00",
-      "end": "2026-12-07T00:00:00",
+      "end": "2026-12-06T00:00:00",
       "all_day": true,
-      "location": "10650 Gulf Blvd.  Treasure Island",
-      "address": null,
-      "lat": 27.7685872,
-      "lng": -82.769089,
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40796",
+      "location": "Trotters Park",
+      "address": "2701 Lee Rd, Orlando, FL 32789",
+      "lat": 28.6033012,
+      "lng": -81.4074116,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
+      "url": "https://volleyballlife.com/event/42201",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
