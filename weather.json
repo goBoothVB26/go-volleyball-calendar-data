@@ -1,24 +1,24 @@
 {
-  "generated": "2026-11-08T18:36:07",
+  "generated": "2026-11-08T23:17:49",
   "days": [
     {
       "date": "2026-11-08",
-      "high": 82,
+      "high": 86,
       "low": 56,
       "code": 3,
       "category": "overcast"
     },
     {
       "date": "2026-11-09",
-      "high": 81,
-      "low": 58,
-      "code": 45,
-      "category": "fog"
+      "high": 82,
+      "low": 59,
+      "code": 3,
+      "category": "overcast"
     },
     {
       "date": "2026-11-10",
       "high": 84,
-      "low": 61,
+      "low": 60,
       "code": 3,
       "category": "overcast"
     },
@@ -26,8 +26,8 @@
       "date": "2026-11-11",
       "high": 83,
       "low": 70,
-      "code": 95,
-      "category": "storm"
+      "code": 81,
+      "category": "rain"
     },
     {
       "date": "2026-11-12",

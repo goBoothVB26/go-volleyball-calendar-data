@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08T18:36:07",
+  "generated": "2026-11-08T23:17:49",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -6462,18 +6462,18 @@
       "image": null
     },
     {
-      "uid": "Volleyball_Life-Florida_Dinosaur_Doubles_-_Fall_2026-2026-12-05T00:00:00",
+      "uid": "Volleyball_Life-Copa_Del_Sur_-_Winter_Heat-2026-12-05T00:00:00",
       "club": "Volleyball Life",
-      "title": "Florida Dinosaur Doubles - Fall 2026",
+      "title": "Copa Del Sur - Winter Heat",
       "start": "2026-12-05T00:00:00",
-      "end": "2026-12-07T00:00:00",
+      "end": "2026-12-06T00:00:00",
       "all_day": true,
-      "location": "10650 Gulf Blvd.  Treasure Island",
-      "address": null,
-      "lat": 27.7685872,
-      "lng": -82.769089,
-      "description": "Tournament \u00b7 Adults \u00b7 Beach \u00b7 2s",
-      "url": "https://volleyballlife.com/event/40796",
+      "location": "Trotters Park",
+      "address": "2701 Lee Rd, Orlando, FL 32789",
+      "lat": 28.6033012,
+      "lng": -81.4074116,
+      "description": "Tournament \u00b7 Adults \u00b7 Grass \u00b7 3s",
+      "url": "https://volleyballlife.com/event/42201",
       "skill_level": "All Levels",
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
