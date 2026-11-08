@@ -69,14 +69,4 @@ DESCRIPTION:More info: https://www.advancedeventsystems.com/events/46283
 LOCATION:Wellington\, FL - Wellington Sports Academy
 URL:https://www.advancedeventsystems.com/events/46283
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[AES Adult Volleyball (USAV\, Florida)] 2027 Sunshine Classic
-DTSTART;VALUE=DATE:20270319
-DTEND;VALUE=DATE:20270322
-UID:AES_Adult_Volleyball_(USAV\,_Florida)-2027_Sunshine_Classic-2027-03-19
- T00:00:00
-DESCRIPTION:More info: https://www.advancedeventsystems.com/events/46976
-LOCATION:Orlando\, FL - Orange County Convention Center - West Concourse
-URL:https://www.advancedeventsystems.com/events/46976
-END:VEVENT
 END:VCALENDAR
