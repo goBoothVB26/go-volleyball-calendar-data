@@ -198,4 +198,17 @@ DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
 LOCATION:Crabby Bill's
 URL:https://ssova.volleyballlife.com/events
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] SSOVA SPACE/SCI-FI THEME Adults & Juniors AVP ECC/WCC QUAL
+ IFIER & USAV Regional Qualifier\, Beach Volleyball Tournament- BRQ
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270405
+UID:SSOVA-SSOVA_SPACE/SCI-FI_THEME_Adults_&_Juniors_AVP_ECC/WCC_QUALIFIER_
+ &_USAV_Regional_Qualifier\,_Beach_Volleyball_Tournament-_BRQ-2027-04-03T20
+ :26:00
+DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
+ tps://ssova.volleyballlife.com/events
+LOCATION:Anna Maria Island (Coquina Beach)
+URL:https://ssova.volleyballlife.com/events
+END:VEVENT
 END:VCALENDAR
