@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T20:41:31",
+  "generated": "2026-11-11T08:34:04",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -4885,25 +4885,6 @@
       "image": null
     },
     {
-      "uid": "ocoee_coed_league-season-tbd-placeholder",
-      "club": "Ocoee Coed League",
-      "title": "Co-Ed Volleyball League (season dates TBD)",
-      "start": "2026-11-10T18:30:00",
-      "end": null,
-      "all_day": false,
-      "location": "Jim Beech Recreation Center",
-      "address": null,
-      "lat": 28.5867689,
-      "lng": -81.5196927,
-      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
-      "url": "https://www.ocoee.org/171/Adult-Programs",
-      "skill_level": "All Levels",
-      "gym_type": "League",
-      "net_height": "Co-ed",
-      "price": null,
-      "image": null
-    },
-    {
       "uid": "Big_House_Open_Gym-Big_House_Open_Gym-2026-11-10T20:15:00",
       "club": "Big House Open Gym",
       "title": "Big House Open Gym",
@@ -4958,6 +4939,25 @@
       "gym_type": "Open Gym",
       "net_height": "Men's, Co-ed",
       "price": 0.0,
+      "image": null
+    },
+    {
+      "uid": "ocoee_coed_league-season-tbd-placeholder",
+      "club": "Ocoee Coed League",
+      "title": "Co-Ed Volleyball League (season dates TBD)",
+      "start": "2026-11-11T18:30:00",
+      "end": null,
+      "all_day": false,
+      "location": "Jim Beech Recreation Center",
+      "address": null,
+      "lat": 28.5867689,
+      "lng": -81.5196927,
+      "description": "The Co-ed Volleyball League will feature a 7-game regular season, followed by playoffs for qualifying teams. Games are played on Tuesday nights at 6:30 pm, 7:30 pm, and 8:30 pm. Upcoming league season dates will be announced. Games are played at Jim Beech Recreation Center. Players must be at least 18 years old to participate. Volleyball Participation Waiver Required. If interested, please email Alex Gonzalez or call Parks and Leisure Services at 407-905-3180 .\n\nVolleyball Participation Waiver: https://ocoee-recreation-parks-and-rec.app.transform.civicplus.com/forms/35724\n\nEmail contact: agonzalez@ocoee.org\n\nCall Parks and Recreation Leisure Services: 407-905-3180",
+      "url": "https://www.ocoee.org/171/Adult-Programs",
+      "skill_level": "All Levels",
+      "gym_type": "League",
+      "net_height": "Co-ed",
+      "price": null,
       "image": null
     },
     {
@@ -5129,7 +5129,7 @@
       "gym_type": "Clinics/Training",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/8e0d1a3c-9b91-4d44-991c-d35c3af0613f.jpeg"
     },
     {
       "uid": "USAV_Florida_Region-Coaches_Clinic-2026-11-14T00:00:00",
