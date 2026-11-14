@@ -2302,4 +2302,24 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Thom
 LOCATION:Sports Express | 5280 OH-741\, Mason\, OH 45040\, USA
 URL:https://www.nagva.org/tournaments-1/queen-city-ball-2026
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] Saint Louis Invitational XXXVI
+DTSTART;VALUE=DATE:20270214
+UID:NAGVA-Saint_Louis_Invitational_XXXVI-2027-02-14T00:00:00
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Lew 
+ Smith | Lew Smith\n\nDivisions: Tournament Cap | A1 | BB | B | 60 | 12 | 2
+ 4 | 24 | Waitlist Priority | Divisional Caps will not be changed until [WA
+ ITLIST DATE BELOW]. If a division does not fill by that date\, waitlisted 
+ teams from other divisions will be confirmed for the tournament in the dis
+ played waitlist order. | Waitlist Date | January 9\, 2027\n\nRegistration:
+  Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Aw
+ ards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: J
+ anuary 4\, 2027 | 475 | January 18\, 2027 | Addl. Player Fee | 525 | 65\n
+ \nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo
+  | @Alice-Tejada\n\nMore info: https://www.nagva.org/tournaments-1/saint-l
+ ouis-invitational-xxxvi\n\nMore info: https://www.nagva.org/tournaments-1/
+ saint-louis-invitational-xxxvi
+LOCATION:Center St. Louis | 6727 Langley Ave\, St. Louis\, MO 63123\, USA
+URL:https://www.nagva.org/tournaments-1/saint-louis-invitational-xxxvi
+END:VEVENT
 END:VCALENDAR
