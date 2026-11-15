@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T19:31:58",
+  "generated": "2026-11-15T23:40:52",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5522,7 +5522,7 @@
       "address": null,
       "lat": null,
       "lng": null,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Steven Acosta Andrew Crawford\n\nDivisions: Tournament Cap | B | BB | A1 | 36 | 12 | 18 | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026\n\nRegistration: Date/Time | November 20, 2026, 6:00 PM to 9:00 PM @ El Colmado | Location | 365 C. Tetu\u00e1n, San Juan, 00901, Puerto Rico\n\nSeeding Party: Date/Time | November 21, 2026, 6:00pm - 2:00am @ La Sombrilla Rosa | Location | 154 C. de San Sebasti\u00e1n, San Juan, 00901, Puerto Rico\n\nBanquet/Awards Party: Date/Time | November 22, 2026, 6:00pm @ Meet Macarena | Location | 247 Av. Eleanor Roosevelt, San Juan, 00918, Puerto Rico | Tournament News\n\nPayment Deadlines: July 15, 2026 | 500 | August 30, 2026 | November 5, 2026 | Addl. Player Fee | 550 | 600 | 80\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Felix Roman Hernandez | Felix Roman Hernandez | Steven Acosta Lew Smith\n\nDivisions: Tournament Cap | B | BB | A1 | 36 | 12 | 18 | 6 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | October 15, 2026\n\nRegistration: Date/Time | November 20, 2026, 6:00 PM to 9:00 PM @ El Colmado | Location | 365 C. Tetu\u00e1n, San Juan, 00901, Puerto Rico\n\nSeeding Party: Date/Time | November 21, 2026, 6:00pm - 2:00am @ La Sombrilla Rosa | Location | 154 C. de San Sebasti\u00e1n, San Juan, 00901, Puerto Rico\n\nBanquet/Awards Party: Date/Time | November 22, 2026, 6:00pm @ Meet Macarena | Location | 247 Av. Eleanor Roosevelt, San Juan, 00918, Puerto Rico | Tournament News\n\nPayment Deadlines: July 15, 2026 | 500 | August 30, 2026 | November 5, 2026 | Addl. Player Fee | 550 | 600 | 80\n\nPayment Details: Personal Check | Cashier's Check | false | false | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "url": "https://www.nagva.org/tournaments-1/caribbean-cup-2026",
       "skill_level": "B/BB",
       "gym_type": "Tournament",
@@ -8410,9 +8410,9 @@
       "address": "6727 Langley Ave, St. Louis, MO 63123, USA",
       "lat": 38.561033,
       "lng": -90.3288147,
-      "description": "Contacts: Director | Registrar | Regional Commissioners | Lew Smith | Lew Smith\n\nDivisions: Tournament Cap | A1 | BB | B | 60 | 12 | 24 | 24 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | January 9, 2027\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 4, 2027 | 475 | January 18, 2027 | Addl. Player Fee | 525 | 65\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @Alice-Tejada\n\nMore info: https://www.nagva.org/tournaments-1/saint-louis-invitational-xxxvi",
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Lew Smith | Lew Smith\n\nDivisions: Tournament Cap | Open A/AA | BB | B | 60 | 12 | 24 | 24 | Waitlist Priority | Divisional Caps will not be changed until [WAITLIST DATE BELOW]. If a division does not fill by that date, waitlisted teams from other divisions will be confirmed for the tournament in the displayed waitlist order. | Waitlist Date | January 8, 2027\n\nRegistration: Date/Time | Location\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: January 4, 2027 | 475 | January 18, 2027 | Addl. Player Fee | 525 | 65\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo | @Alice-Tejada\n\nMore info: https://www.nagva.org/tournaments-1/saint-louis-invitational-xxxvi",
       "url": "https://www.nagva.org/tournaments-1/saint-louis-invitational-xxxvi",
-      "skill_level": "A/AA, B/BB",
+      "skill_level": "Open, A/AA, B/BB",
       "gym_type": "Tournament",
       "net_height": "Men's",
       "price": 475.0,
@@ -8704,6 +8704,25 @@
       "image": null
     },
     {
+      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
+      "club": "AES Adult Volleyball (USAV, Florida)",
+      "title": "2027 Sunshine Classic",
+      "start": "2027-03-19T00:00:00",
+      "end": "2027-03-22T00:00:00",
+      "all_day": true,
+      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
+      "lat": 28.4247315,
+      "lng": -81.4694962,
+      "description": null,
+      "url": "https://www.advancedeventsystems.com/events/46976",
+      "skill_level": "All Levels",
+      "gym_type": "Tournament",
+      "net_height": "Men's, Co-ed",
+      "price": 925.0,
+      "image": null
+    },
+    {
       "uid": "NAGVA-Great_Canadian_Classic_'27-2027-03-20T00:00:00",
       "club": "NAGVA",
       "title": "Great Canadian Classic '27",
@@ -8815,6 +8834,25 @@
       "gym_type": "Tournament",
       "net_height": "Women's",
       "price": 450.0,
+      "image": null
+    },
+    {
+      "uid": "NAGVA-Big_Apple_XLI-2027-04-03T00:00:00",
+      "club": "NAGVA",
+      "title": "Big Apple XLI",
+      "start": "2027-04-03T00:00:00",
+      "end": null,
+      "all_day": true,
+      "location": "Queens College Fitzgerald Gymnasium | 65-30 Kissena Blvd, Flushing, NY 11367, USA",
+      "address": "65-30 Kissena Blvd, Flushing, NY 11367, USA",
+      "lat": 40.7564057,
+      "lng": -73.8258453,
+      "description": "Contacts: Director | Registrar | Regional Commissioners | Joshua Christensen | Andrew Dowdye\n\nDivisions: Tournament Cap | A1 | BB | B | 56 | 8 | 24 | 24 | Waitlist Priority | Teams will be confirmed as they pay, and the divisional caps will be changed accordingly. The caps shown on this page are subject to change at ANY time. | Waitlist Date | March 15, 2027\n\nRegistration: Date/Time | Location | 167 8th Ave, New York, NY 10011, USA\n\nSeeding Party: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: February 2, 2027 | 630 | March 15, 2027 | Addl. Player Fee | 700 | 90\n\nPayment Details: Personal Check | Cashier's Check | Payment Link | Venmo\n\nMore info: https://www.nagva.org/tournaments-1/big-apple-xli",
+      "url": "https://www.nagva.org/tournaments-1/big-apple-xli",
+      "skill_level": "B/BB",
+      "gym_type": "Tournament",
+      "net_height": "Men's",
+      "price": 630.0,
       "image": null
     },
     {
