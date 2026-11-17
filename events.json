@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T09:52:50",
+  "generated": "2026-11-17T21:59:49",
   "events": [
     {
       "uid": "NAGVA-San_Francisco_Red,_White_&_Blue_Ball_13-2024-07-05T00:00:00",
@@ -5851,7 +5851,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
+      "image": "https://vblimages.blob.core.windows.net/images/97269daa-ad53-4668-82e9-1fe2274c87d7.png"
     },
     {
       "uid": "WPVC-WPVC_x_CCVL_Black_Friday_Grass_Tournament-2026-11-27T00:00:00",
@@ -5870,7 +5870,7 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": "https://vblimages.blob.core.windows.net/images/fb9b3ae7-23e2-4c6a-bf48-484ea9ddbc3c.png"
+      "image": null
     },
     {
       "uid": "WPVC-WPVC_Open_Gym-2026-11-27T20:00:00",
@@ -8777,25 +8777,6 @@
       "gym_type": "Tournament",
       "net_height": "Men's, Co-ed",
       "price": null,
-      "image": null
-    },
-    {
-      "uid": "AES_Adult_Volleyball_(USAV,_Florida)-2027_Sunshine_Classic-2027-03-19T00:00:00",
-      "club": "AES Adult Volleyball (USAV, Florida)",
-      "title": "2027 Sunshine Classic",
-      "start": "2027-03-19T00:00:00",
-      "end": "2027-03-22T00:00:00",
-      "all_day": true,
-      "location": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "address": "Orlando, FL - Orange County Convention Center - West Concourse",
-      "lat": 28.4247315,
-      "lng": -81.4694962,
-      "description": null,
-      "url": "https://www.advancedeventsystems.com/events/46976",
-      "skill_level": "All Levels",
-      "gym_type": "Tournament",
-      "net_height": "Men's, Co-ed",
-      "price": 925.0,
       "image": null
     },
     {
