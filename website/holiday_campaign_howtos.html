@@ -56,8 +56,25 @@
   .vb-howto ol { margin: 0; padding: 4px 20px 20px 44px; }
   .vb-howto li { margin: 0 0 12px; font-size: 15.5px; line-height: 1.5; }
   .vb-howto li:last-child { margin-bottom: 0; }
-  .vb-howto a { color: #0057b8; overflow-wrap: anywhere; }
-  body.vb-dark-page .vb-howto a { color: #FFC425; }
+  .vb-howto a.vb-howto-btn {
+    display: inline-block; margin: 2px 0 2px 4px; padding: 7px 18px;
+    border: 1px solid #0057b8; background: #0057b8; color: #fff;
+    border-radius: 12px; font-size: 14.5px; font-weight: 600;
+    letter-spacing: 0.03em; text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+  .vb-howto a.vb-howto-btn:hover {
+    background: #00458f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.22); transform: translateY(-1px);
+  }
+  .vb-howto a.vb-howto-btn:focus-visible { outline: 2px solid #0057b8; outline-offset: 2px; }
+  body.vb-dark-page .vb-howto a.vb-howto-btn {
+    background: #FFC425; border-color: #FFC425; color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  body.vb-dark-page .vb-howto a.vb-howto-btn:hover { background: #e6ad0f; }
+  body.vb-dark-page .vb-howto a.vb-howto-btn:focus-visible { outline-color: #FFC425; }
 
   .vb-howto-shots { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
   .vb-howto-shots img {
@@ -73,19 +90,19 @@
   <details>
     <summary>Create A Fundraising Team</summary>
     <ol>
-      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
-      <li>Click &ldquo;Fundraise&rdquo;
+      <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
+      <li>Click <strong>&ldquo;Fundraise&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/fundraise-button.png" width="742" height="617" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Fundraise button highlighted">
         </div>
       </li>
-      <li>Make sure &ldquo;Create a team&rdquo; is selected
+      <li>Make sure <strong>&ldquo;Create a team&rdquo;</strong> is selected
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/create-team-tab.png" width="618" height="635" loading="lazy" alt="Become a fundraiser form with the Create a team tab highlighted">
         </div>
       </li>
       <li>Input your team name and your details</li>
-      <li>Make sure &ldquo;I will be joining the team&rdquo; is selected</li>
+      <li>Make sure <strong>&ldquo;I will be joining the team&rdquo;</strong> is selected</li>
       <li>Click Create team
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/create-team-form.png" width="616" height="632" loading="lazy" alt="Completed team form with the I will be joining the team checkbox and the Create team button highlighted">
@@ -103,13 +120,13 @@
   <details>
     <summary>Join A Team</summary>
     <ol>
-      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
-      <li>Click &ldquo;Fundraise&rdquo;
+      <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
+      <li>Click <strong>&ldquo;Fundraise&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/fundraise-button.png" width="742" height="617" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Fundraise button highlighted">
         </div>
       </li>
-      <li>Select &ldquo;Join a team&rdquo;
+      <li>Select <strong>&ldquo;Join a team&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-tab.png" width="617" height="599" loading="lazy" alt="Become a fundraiser form with the Join a team tab highlighted">
         </div>
@@ -119,12 +136,12 @@
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-select.png" width="618" height="600" loading="lazy" alt="Join a team dropdown open with the list of teams highlighted">
         </div>
       </li>
-      <li>Input your details and click &ldquo;Join team&rdquo;
+      <li>Input your details and click <strong>&ldquo;Join team&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-form.png" width="614" height="597" loading="lazy" alt="Completed join form with the Join team button highlighted">
         </div>
       </li>
-      <li>Click &ldquo;Share campaign&rdquo; to copy your link and share your donation page with family and friends!
+      <li>Click <strong>&ldquo;Share campaign&rdquo;</strong> to copy your link and share your donation page with family and friends!
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/share-campaign.png" width="571" height="386" loading="lazy" alt="Personal fundraiser page with the Share campaign button highlighted">
         </div>
@@ -135,8 +152,8 @@
   <details>
     <summary>Donate directly to GOVC</summary>
     <ol>
-      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
-      <li>To donate directly click &ldquo;Donate&rdquo;
+      <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
+      <li>To donate directly click <strong>&ldquo;Donate&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-button.png" width="766" height="602" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Donate button highlighted">
         </div>
@@ -146,8 +163,8 @@
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-choose-campaign.png" width="722" height="600" loading="lazy" alt="Choose a campaign to donate to, with the general GOVC Holiday Fundraiser campaign highlighted">
         </div>
       </li>
-      <li>Choose your donation type and amount, then click &ldquo;Continue&rdquo;</li>
-      <li>Complete the donation form and click &ldquo;Donate&rdquo;
+      <li>Choose your donation type and amount, then click <strong>&ldquo;Continue&rdquo;</strong></li>
+      <li>Complete the donation form and click <strong>&ldquo;Donate&rdquo;</strong>
         <div class="vb-howto-shots">
           <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-form.png" width="753" height="496" loading="lazy" alt="Donation form with the Donate button highlighted">
         </div>
