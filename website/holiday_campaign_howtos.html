@@ -1,0 +1,165 @@
+<!-- GOVC Holiday Campaign how-tos: three dropdown sections (create a
+     fundraising team / join a team / donate directly), each opening to
+     its numbered directions and screenshots.
+
+     Paste this ENTIRE file into a single CODE block on the page (not
+     Embed). No JavaScript -- the dropdowns are native <details>
+     elements, so they work with keyboard and screen readers as-is.
+
+     TWO things to edit if they ever change:
+     1. The Zeffy campaign link -- search this file for "zeffy.com"
+        (it appears once per section).
+     2. Screenshots -- they live in this repo's images/holiday-campaign/
+        folder and load through jsDelivr from the main branch. To swap
+        one, replace the file there under the same name.
+
+     Dark mode: follows body.vb-dark-page like every other standalone
+     element on the site -- that class only gets set if
+     theme_sync_snippet.html (or the calendar widget itself) is also
+     present somewhere on this same page; paste it alongside this if
+     the page doesn't already have it, or this just stays light. -->
+
+<style>
+  .vb-howto {
+    max-width: 720px; margin: 0 auto; padding: 16px;
+    font-family: inherit;
+  }
+  .vb-howto h2 {
+    margin: 0 0 18px; text-align: center;
+    font-size: 28px; font-weight: 700; color: #0057b8;
+  }
+  body.vb-dark-page .vb-howto h2 { color: #FFC425; }
+
+  .vb-howto details {
+    margin-bottom: 12px; border-radius: 14px;
+    background: #fff; border: 1px solid #ececec;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05);
+  }
+  body.vb-dark-page .vb-howto details {
+    background: #1b2027; border-color: #2a3038; color: #e6e6e6;
+    box-shadow: 0 2px 10px 3px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .vb-howto summary {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; padding: 16px 20px; cursor: pointer; border-radius: 14px;
+    font-size: 18px; font-weight: 700; color: #0057b8;
+    list-style: none;
+  }
+  .vb-howto summary::-webkit-details-marker { display: none; }
+  .vb-howto summary::after {
+    content: ""; flex: none; width: 9px; height: 9px;
+    border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+    transform: rotate(45deg); transition: transform 0.15s;
+  }
+  .vb-howto details[open] > summary::after { transform: rotate(-135deg); }
+  .vb-howto summary:hover { background: rgba(0,87,184,0.06); }
+  .vb-howto summary:focus-visible { outline: 2px solid #0057b8; outline-offset: 2px; }
+  body.vb-dark-page .vb-howto summary { color: #FFC425; }
+  body.vb-dark-page .vb-howto summary:hover { background: rgba(255,196,37,0.08); }
+  body.vb-dark-page .vb-howto summary:focus-visible { outline-color: #FFC425; }
+
+  .vb-howto ol { margin: 0; padding: 4px 20px 20px 44px; }
+  .vb-howto li { margin: 0 0 12px; font-size: 15.5px; line-height: 1.5; }
+  .vb-howto li:last-child { margin-bottom: 0; }
+  .vb-howto a { color: #0057b8; overflow-wrap: anywhere; }
+  body.vb-dark-page .vb-howto a { color: #FFC425; }
+
+  .vb-howto-shots { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .vb-howto-shots img {
+    display: block; max-width: min(100%, 460px); height: auto;
+    border-radius: 10px; border: 1px solid #dfe5ec;
+  }
+  body.vb-dark-page .vb-howto-shots img { border-color: #343c48; }
+  /* Two screenshots for one step: side by side, stacking on phones */
+  .vb-howto-pair img { flex: 1 1 230px; min-width: 0; max-width: 320px; }
+</style>
+
+<div class="vb-howto">
+  <h2>GOVC Holiday Campaign How-tos</h2>
+
+  <details>
+    <summary>Create A Fundraising Team</summary>
+    <ol>
+      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
+      <li>Click &ldquo;Fundraise&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/fundraise-button.png" width="742" height="617" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Fundraise button highlighted">
+        </div>
+      </li>
+      <li>Make sure &ldquo;Create a team&rdquo; is selected
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/create-team-tab.png" width="618" height="635" loading="lazy" alt="Become a fundraiser form with the Create a team tab highlighted">
+        </div>
+      </li>
+      <li>Input your team name and your details</li>
+      <li>Make sure &ldquo;I will be joining the team&rdquo; is selected</li>
+      <li>Click Create team
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/create-team-form.png" width="616" height="632" loading="lazy" alt="Completed team form with the I will be joining the team checkbox and the Create team button highlighted">
+        </div>
+      </li>
+      <li>On your team page, copy the share link to share your page with friends and family or edit your campaign to customize your page!
+        <div class="vb-howto-shots vb-howto-pair">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/team-share-link.png" width="405" height="340" loading="lazy" alt="Team page with the Edit campaign and Copy share link buttons highlighted">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/style-campaign.png" width="914" height="771" loading="lazy" alt="Style your campaign screen with color, mode and background options next to a phone preview">
+        </div>
+      </li>
+    </ol>
+  </details>
+
+  <details>
+    <summary>Join A Team</summary>
+    <ol>
+      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
+      <li>Click &ldquo;Fundraise&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/fundraise-button.png" width="742" height="617" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Fundraise button highlighted">
+        </div>
+      </li>
+      <li>Select &ldquo;Join a team&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-tab.png" width="617" height="599" loading="lazy" alt="Become a fundraiser form with the Join a team tab highlighted">
+        </div>
+      </li>
+      <li>Select your desired team
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-select.png" width="618" height="600" loading="lazy" alt="Join a team dropdown open with the list of teams highlighted">
+        </div>
+      </li>
+      <li>Input your details and click &ldquo;Join team&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/join-team-form.png" width="614" height="597" loading="lazy" alt="Completed join form with the Join team button highlighted">
+        </div>
+      </li>
+      <li>Click &ldquo;Share campaign&rdquo; to copy your link and share your donation page with family and friends!
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/share-campaign.png" width="571" height="386" loading="lazy" alt="Personal fundraiser page with the Share campaign button highlighted">
+        </div>
+      </li>
+    </ol>
+  </details>
+
+  <details>
+    <summary>Donate directly to GOVC</summary>
+    <ol>
+      <li>Go to <a href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser</a></li>
+      <li>To donate directly click &ldquo;Donate&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-button.png" width="766" height="602" loading="lazy" alt="GOVC Holiday Fundraiser campaign page with the Donate button highlighted">
+        </div>
+      </li>
+      <li>Click the GOVC campaign
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-choose-campaign.png" width="722" height="600" loading="lazy" alt="Choose a campaign to donate to, with the general GOVC Holiday Fundraiser campaign highlighted">
+        </div>
+      </li>
+      <li>Choose your donation type and amount, then click &ldquo;Continue&rdquo;</li>
+      <li>Complete the donation form and click &ldquo;Donate&rdquo;
+        <div class="vb-howto-shots">
+          <img src="https://cdn.jsdelivr.net/gh/goBoothVB26/go-volleyball-calendar-data@main/images/holiday-campaign/donate-form.png" width="753" height="496" loading="lazy" alt="Donation form with the Donate button highlighted">
+        </div>
+      </li>
+    </ol>
+  </details>
+</div>
