@@ -13,6 +13,10 @@
         folder and load through jsDelivr from the main branch. To swap
         one, replace the file there under the same name.
 
+     Icons: the three dropdown icons are Microsoft's Fluent UI System
+     Icons (people_add, person_arrow_right, gift -- filled, 24px),
+     MIT license: https://github.com/microsoft/fluentui-system-icons
+
      Dark mode: follows body.vb-dark-page like every other standalone
      element on the site -- that class only gets set if
      theme_sync_snippet.html (or the calendar widget itself) is also
@@ -49,10 +53,7 @@
     flex: none; width: 38px; height: 38px; border-radius: 11px;
     display: flex; align-items: center; justify-content: center;
   }
-  .vb-howto-ico svg {
-    width: 24px; height: 24px; fill: none; stroke: currentColor;
-    stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-  }
+  .vb-howto-ico svg { width: 24px; height: 24px; fill: currentColor; }
   .vb-ico-team { color: #0057b8; background: rgba(0,87,184,0.12); }
   .vb-ico-join { color: #1b8a4b; background: rgba(27,138,75,0.13); }
   .vb-ico-gift { color: #c62828; background: rgba(198,40,40,0.11); }
@@ -106,7 +107,7 @@
 
 <div class="vb-howto">
   <details>
-    <summary><span class="vb-howto-ico vb-ico-team"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8.5" cy="9" r="3"/><path d="M2.8 20v-1a4.8 4.8 0 0 1 4.8-4.8h1.8a4.8 4.8 0 0 1 4.8 4.8v1"/><path d="M13.6 6.4a3 3 0 0 1 .6 5.6"/><path d="M16 14.4a4.8 4.8 0 0 1 4.2 4.6v1"/><path d="M19.5 2.6v5.8M16.6 5.5h5.8"/></svg></span><span class="vb-howto-title">Create A Fundraising Team</span></summary>
+    <summary><span class="vb-howto-ico vb-ico-team"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8m9 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6M4.25 13C3.01 13 2 14 2 15.25v.25S2 20 8 20a8 8 0 0 0 3.28-.61 6.5 6.5 0 0 1 1.36-6.2 2 2 0 0 0-.89-.19zM23 17.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0m-5 .5v2.5a.5.5 0 1 1-1 0V18h-2.5a.5.5 0 0 1 0-1H17v-2.5a.5.5 0 1 1 1 0V17h2.5a.5.5 0 0 1 0 1z"/></svg></span><span class="vb-howto-title">Create A Fundraising Team</span></summary>
     <ol>
       <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
       <li>Click <strong>&ldquo;Fundraise&rdquo;</strong>
@@ -136,7 +137,7 @@
   </details>
 
   <details>
-    <summary><span class="vb-howto-ico vb-ico-join"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1.5 12h8.2M6.8 8.8 10 12l-3.2 3.2"/><circle cx="16.6" cy="8.2" r="3.2"/><path d="M11.2 20.5v-1a4.6 4.6 0 0 1 4.6-4.6h1.6a4.6 4.6 0 0 1 4.6 4.6v1"/></svg></span><span class="vb-howto-title">Join A Team</span></summary>
+    <summary><span class="vb-howto-ico vb-ico-join"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 17.5c0-1.29.38-2.49 1.02-3.5H4.25C3.01 14 2 15 2 16.25v.92q0 .88.51 1.6Q4.85 22 10 22q1.4 0 2.6-.24A6.5 6.5 0 0 1 11 17.5M10 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10m13 15.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0m-4.65-2.85a.5.5 0 0 0-.7.7L19.29 17H15a.5.5 0 1 0 0 1h4.3l-1.65 1.65a.5.5 0 0 0 .7.7l2.5-2.5a.5.5 0 0 0 .15-.34v-.01a.5.5 0 0 0-.15-.36z"/></svg></span><span class="vb-howto-title">Join A Team</span></summary>
     <ol>
       <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
       <li>Click <strong>&ldquo;Fundraise&rdquo;</strong>
@@ -168,7 +169,7 @@
   </details>
 
   <details>
-    <summary><span class="vb-howto-ico vb-ico-gift"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12v9H4v-9"/><rect x="2.5" y="7.5" width="19" height="4.5" rx="1"/><path d="M12 21V7.5"/><path d="M12 7.5H8a2.5 2.5 0 1 1 0-5c2.6 0 4 2.6 4 5Z"/><path d="M12 7.5h4a2.5 2.5 0 1 0 0-5c-2.6 0-4 2.6-4 5Z"/></svg></span><span class="vb-howto-title">Donate directly to GOVC</span></summary>
+    <summary><span class="vb-howto-ico vb-ico-gift"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.25 13v9h-4A3.25 3.25 0 0 1 4 18.75V13zM20 13v5.75c0 1.8-1.46 3.25-3.25 3.25h-4v-9zM14.5 2a3.25 3.25 0 0 1 2.74 5h2.51c.69 0 1.25.47 1.25 1.04v2.92c0 .57-.56 1.04-1.25 1.04h-7V7h-1.5v5h-7C3.56 12 3 11.53 3 10.96V8.04C3 7.47 3.56 7 4.25 7h2.51q-.5-.76-.51-1.75A3.25 3.25 0 0 1 12 3.17C12.6 2.46 13.5 2 14.5 2m-5 1.5A1.75 1.75 0 0 0 9.36 7h1.89V5.11c-.08-.9-.83-1.61-1.75-1.61m5 0c-.97 0-1.75.78-1.75 1.75V7h1.75a1.75 1.75 0 1 0 0-3.5"/></svg></span><span class="vb-howto-title">Donate directly to GOVC</span></summary>
     <ol>
       <li>Go to <a class="vb-howto-btn" href="https://www.zeffy.com/en-US/peer-to-peer/govc-holiday-fundraiser" target="_blank" rel="noopener">GOVC Holiday Fundraiser &#8599;</a></li>
       <li>To donate directly click <strong>&ldquo;Donate&rdquo;</strong>
