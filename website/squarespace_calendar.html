@@ -337,11 +337,13 @@
   /* Hovering a chip lets the title wrap onto extra lines -- growing
      only vertically, inside the day cell, so the grid never reflows
      horizontally. A little extra padding tallens the click target.
-     Mouse-only: on a touch screen :hover sticks after a tap, which left
-     the chip stuck expanded and shoved the events below it around, so
-     phones/tablets keep the compact single-line chip (tap opens the
+     Desktop mouse only: on a touch screen :hover sticks after a tap, which
+     left the chip stuck expanded and shoved the events below it around,
+     and the phone layout (under 768px, this file's mobile breakpoint)
+     never gets it even when previewed with a mouse, since the chips are
+     tiny there. Both keep the compact single-line chip (tap opens the
      event popup as before). */
-  @media (hover: hover) and (pointer: fine) {
+  @media (min-width: 768px) and (hover: hover) and (pointer: fine) {
     .vbcal-chip:hover {
       white-space: normal;
       padding-top: 4px; padding-bottom: 4px;
