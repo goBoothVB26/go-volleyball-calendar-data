@@ -338,11 +338,17 @@
   }
   /* Hovering a chip lets the title wrap onto extra lines -- growing
      only vertically, inside the day cell, so the grid never reflows
-     horizontally. A little extra padding tallens the click target. */
-  .vbcal-chip:hover {
-    white-space: normal;
-    padding-top: 4px; padding-bottom: 4px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.28);
+     horizontally. A little extra padding tallens the click target.
+     Mouse-only: on a touch screen :hover sticks after a tap, which left
+     the chip stuck expanded and shoved the events below it around, so
+     phones/tablets keep the compact single-line chip (tap opens the
+     event popup as before). */
+  @media (hover: hover) and (pointer: fine) {
+    .vbcal-chip:hover {
+      white-space: normal;
+      padding-top: 4px; padding-bottom: 4px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.28);
+    }
   }
 
   /* Week zoom: entered by tapping a day with 3+ events */
