@@ -1018,4 +1018,17 @@ LOCATION:Cady Way Park
 URL:https://goadultsportsleague.leagueapps.com/events/5080545-grass-pick-u
  p
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Greater Orlando Volleyball Club] (C) November 22 @ Dover Shores C
+ ommunity Center
+DTSTART;TZID=America/New_York:20261122T133000
+DTEND;TZID=America/New_York:20261122T173000
+UID:Greater_Orlando_Volleyball_Club-(C)_November_22_@_Dover_Shores_Communi
+ ty_Center-2026-11-22T13:30:00
+DESCRIPTION:More info: https://goadultsportsleague.leagueapps.com/classes/
+ 5064743-open-gym---summer-series?ngmp_2023_iframe_transition=1
+LOCATION:Dover Shores Community Center
+URL:https://goadultsportsleague.leagueapps.com/classes/5064743-open-gym---
+ summer-series?ngmp_2023_iframe_transition=1
+END:VEVENT
 END:VCALENDAR
