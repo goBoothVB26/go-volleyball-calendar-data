@@ -224,4 +224,16 @@ DESCRIPTION:Tournament · Adults & Juniors · Beach · 2s\n\nMore info: ht
 LOCATION:Gulfport Beach Courts
 URL:https://ssova.volleyballlife.com/event/42513
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[SSOVA] CHARITY VETERANS SSOVA 4's Men's/Women's/Coed’s Beach Vo
+ lleyball Tournament
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+UID:SSOVA-CHARITY_VETERANS_SSOVA_4's_Men's/Women's/Coed’s_Beach_Volleyba
+ ll_Tournament-2027-04-10T20:26:00
+DESCRIPTION:Tournament · Adults · Beach · 4s\n\nMore info: https://ssov
+ a.volleyballlife.com/event/42514
+LOCATION:Gulfport Beach Courts
+URL:https://ssova.volleyballlife.com/event/42514
+END:VEVENT
 END:VCALENDAR

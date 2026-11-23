@@ -476,4 +476,26 @@ DESCRIPTION:More info: https://www.calendarwiz.com/calendars/calendar.php?
 LOCATION:Meadow Woods Recreation Center
 URL:https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Meadow Woods Recreation Center] Youth Volleyball Member Time
+DTSTART;TZID=America/New_York:20270221T130000
+DTEND;TZID=America/New_York:20270221T150000
+UID:Meadow_Woods_Recreation_Center-Youth_Volleyball_Member_Time-2027-02-21
+ T13:00:00
+DESCRIPTION:More info: https://www.calendarwiz.com/calendars/calendar.php?
+ crd=meadowwoods&
+LOCATION:Meadow Woods Recreation Center
+URL:https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Meadow Woods Recreation Center] Adult Volleyball Member Time
+DTSTART;TZID=America/New_York:20270221T150000
+DTEND;TZID=America/New_York:20270221T173000
+UID:Meadow_Woods_Recreation_Center-Adult_Volleyball_Member_Time-2027-02-21
+ T15:00:00
+DESCRIPTION:More info: https://www.calendarwiz.com/calendars/calendar.php?
+ crd=meadowwoods&
+LOCATION:Meadow Woods Recreation Center
+URL:https://www.calendarwiz.com/calendars/calendar.php?crd=meadowwoods&
+END:VEVENT
 END:VCALENDAR

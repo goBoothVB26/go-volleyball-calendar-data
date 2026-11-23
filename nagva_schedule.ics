@@ -255,18 +255,18 @@ DTSTART;VALUE=DATE:20270116
 UID:NAGVA-LAVO_Sin_City_Classic_2027-2027-01-16T00:00:00
 DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Ray 
  Robles | Michael Waters | Bronson Young\n\nDivisions: Tournament Cap | A3 
- | BB | B | 108 | 12 | 30 | 24 | C | 12 | Legends B | 12 | 12 | Waitlist Pr
- iority | Teams will be confirmed as they pay\, and the divisional caps wil
- l be changed accordingly. The caps shown on this page are subject to chang
- e at ANY time. | Waitlist Date\n\nRegistration: Date/Time | January 15\, 2
- 027\, 6-900pm\, Horseshoe Casino | Location | 3645 Las Vegas Blvd S\, Las 
- Vegas\, NV 89109\, USA\n\nSeeding Party: Date/Time | Location\n\nBanquet/A
- wards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: 
- September 15\, 2026 | 550 | November 15\, 2026 | January 15\, 2027 | Addl.
-  Player Fee | 600 | 650 | 70\n\nPayment Details: Personal Check | Cashier'
- s Check | false | false | Payment Link | Venmo\n\nMore info: https://www.n
- agva.org/tournaments-1/lavo-sin-city-classic-2027\n\nMore info: https://ww
- w.nagva.org/tournaments-1/lavo-sin-city-classic-2027
+ | BB | B | 108 | 12 | 24 | 36 | C | 12 | Legends B | 6 | 12 | Waitlist Pri
+ ority | Teams will be confirmed as they pay\, and the divisional caps will
+  be changed accordingly. The caps shown on this page are subject to change
+  at ANY time. | Waitlist Date\n\nRegistration: Date/Time | January 15\, 20
+ 27\, 6-900pm\, Horseshoe Casino | Location | 3645 Las Vegas Blvd S\, Las V
+ egas\, NV 89109\, USA\n\nSeeding Party: Date/Time | Location\n\nBanquet/Aw
+ ards Party: Date/Time | Location | Tournament News\n\nPayment Deadlines: S
+ eptember 15\, 2026 | 550 | November 15\, 2026 | January 15\, 2027 | Addl. 
+ Player Fee | 600 | 650 | 70\n\nPayment Details: Personal Check | Cashier's
+  Check | false | false | Payment Link | Venmo\n\nMore info: https://www.na
+ gva.org/tournaments-1/lavo-sin-city-classic-2027\n\nMore info: https://www
+ .nagva.org/tournaments-1/lavo-sin-city-classic-2027
 LOCATION:It's All Volleyball | 530 E Pamalyn Ave\, Las Vegas\, NV 89119\, 
  USA | Vegas United Volleyball Club | 3055 S Valley View Blvd\, Las Vegas\,
   NV 89102\, USA | Vegas Aces Volleyball | 123 Pancho Via Dr\, Henderson\, 
@@ -2342,5 +2342,25 @@ DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Josh
 LOCATION:Queens College Fitzgerald Gymnasium | 65-30 Kissena Blvd\, Flushi
  ng\, NY 11367\, USA
 URL:https://www.nagva.org/tournaments-1/big-apple-xli
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[NAGVA] Windy City Open Spring '27
+DTSTART;VALUE=DATE:20270410
+UID:NAGVA-Windy_City_Open_Spring_'27-2027-04-10T00:00:00
+DESCRIPTION:Contacts: Director | Registrar | Regional Commissioners | Wesl
+ ey Smith | Tim Martin\n\nDivisions: Tournament Cap | A1 | BB | B | 60 | 12
+  | 18 | 12 | C | 6 | Legends B | 12 | Waitlist Priority | Teams will be co
+ nfirmed as they pay\, and the divisional caps will be changed accordingly.
+  The caps shown on this page are subject to change at ANY time. | Waitlist
+  Date | March 19\, 2027\n\nRegistration: Date/Time | Location\n\nSeeding P
+ arty: Date/Time | Location\n\nBanquet/Awards Party: Date/Time | Location |
+  Tournament News\n\nPayment Deadlines: February 1\, 2027 | 600 | March 19
+ \, 2027 | Addl. Player Fee | 650 | 65\n\nPayment Details: Personal Check |
+  Cashier's Check | Payment Link | Venmo\n\nMore info: https://www.nagva.or
+ g/tournaments-1/windy-city-open-spring-27\n\nMore info: https://www.nagva.
+ org/tournaments-1/windy-city-open-spring-27
+LOCATION:Energy Volleyball Club | 1005 Commerce Ct\, Bensenville\, IL 6010
+ 6\, USA
+URL:https://www.nagva.org/tournaments-1/windy-city-open-spring-27
 END:VEVENT
 END:VCALENDAR
