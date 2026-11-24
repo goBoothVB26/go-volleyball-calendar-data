@@ -375,14 +375,8 @@ function buildDigestHtml(events, tz, unsubUrl) {
     var rows = dayEvents.map(function (ev) {
       var start = new Date(ev.start);
       var timeText = ev.all_day ? "All day" : Utilities.formatDate(start, tz, "h:mm a");
-      // Same spot as the calendar's map pin (see mapsUrl in
-      // squarespace_calendar.html); venue-text search only when unpinned.
-      var mapsQuery = (typeof ev.lat === "number" && typeof ev.lng === "number")
-        ? ev.lat + "," + ev.lng
-        : (ev.address || ev.location);
       var mapsLink = ev.location
-        ? '<a href="https://www.google.com/maps/search/?api=1&query=' +
-          encodeURIComponent(mapsQuery) + '" style="color:#0057b8; text-decoration:underline;">' +
+        ? '<a href="' + htmlEsc(mapsSearchUrl(ev.location)) + '" style="color:#0057b8; text-decoration:underline;">' +
           htmlEsc(ev.location) + "</a>"
         : "";
       return (
@@ -524,6 +518,17 @@ function buildInviteIcs(title, start, end, location, url, uid, email, sequence) 
   return Utilities.newBlob(ics, "text/calendar; charset=UTF-8; method=REQUEST", "invite.ics");
 }
 
+/**
+ * Google Maps search link for an event's location text -- the same rule as
+ * mapsUrl() in squarespace_calendar.html. Some listings join several venues
+ * as "Venue | Address | Venue | Address"; only the first venue and its
+ * address are searched, since one link opens one place.
+ */
+function mapsSearchUrl(location) {
+  var shown = String(location).split(" | ").slice(0, 2).join(", ");
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(shown);
+}
+
 function htmlEsc(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
                   .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -550,10 +555,10 @@ function buildEventCardEmail(title, club, url, whenText, introHtml, extra) {
            htmlEsc(t) + "</span>";
   }).join("");
 
-  // maps_url is the calendar's own link (pinned to the map view's
-  // coordinates); older signups without it fall back to a text search.
-  var mapsLink = extra.maps_url ||
-    (extra.location ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(extra.location) : "");
+  // Built from the location text here, not the maps_url saved at signup:
+  // older signups stored a coordinate link, which Maps labels with raw
+  // lat/lng numbers instead of the address.
+  var mapsLink = extra.location ? mapsSearchUrl(extra.location) : "";
 
   var logoCell = extra.logo
     ? '<td valign="top" style="padding:16px 0 16px 16px; width:84px;">' +
