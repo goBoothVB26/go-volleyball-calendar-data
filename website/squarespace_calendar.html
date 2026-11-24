@@ -2047,15 +2047,15 @@
            (details ? "&details=" + encodeURIComponent(details.slice(0, 1500)) : "");
   }
 
-  // The card's location link opens Google Maps on the exact same
-  // coordinates as the event's Map view pin, so the two can never
-  // disagree. Events without a pin fall back to Google's own search of
-  // the venue's street address (when the scraper knows one) or text.
+  // The card's location link searches Google Maps for the location text
+  // the card shows, so Maps lands on that venue/address -- NOT a bare
+  // coordinate pin, which Maps labels with raw lat/lng numbers. Some
+  // listings join several venues as "Venue | Address | Venue | Address";
+  // only the first venue and its address are sent, since one link opens
+  // one place. Callers only use this when ev.location is set.
   function mapsUrl(ev) {
-    var query = (typeof ev.lat === "number" && typeof ev.lng === "number")
-      ? ev.lat + "," + ev.lng
-      : (ev.address || ev.location);
-    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
+    var shown = ev.location.split(" | ").slice(0, 2).join(", ");
+    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(shown);
   }
 
   // ---- Map view: one Leaflet marker per unique event location ----
