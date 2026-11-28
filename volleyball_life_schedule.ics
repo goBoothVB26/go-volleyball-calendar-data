@@ -480,4 +480,27 @@ DESCRIPTION:Tournament · Adults · Grass · 6s\n\nMore info: https://voll
 LOCATION:Robarts Arena
 URL:https://volleyballlife.com/event/41269
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[WPVC] Winter Open Air Series - WPVC Grass Tournament '27
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+UID:WPVC-Winter_Open_Air_Series_-_WPVC_Grass_Tournament_'27-2027-01-02T20:
+ 26:00
+DESCRIPTION:Tournament · Adults & Juniors · Grass · 4s/6s\n\nMore info:
+  https://volleyballlife.com/event/42709
+LOCATION:Trotter's Park Grass Fields
+URL:https://volleyballlife.com/event/42709
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Volleyball Life] Jax Scene New Years Beach Coed 4s
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+UID:Volleyball_Life-Jax_Scene_New_Years_Beach_Coed_4s-2027-01-02T20:26:00
+DESCRIPTION:Tournament · Adults · Grass · 4s\n\nMore info: https://voll
+ eyballlife.com/events?ageCat=adult&addr=Orlando\,+FL\,+USA&ll=28.5383832\,
+ -81.3789269&dist=200
+LOCATION:Jax Scene courts
+URL:https://volleyballlife.com/events?ageCat=adult&addr=Orlando,+FL,+USA&l
+ l=28.5383832,-81.3789269&dist=200
+END:VEVENT
 END:VCALENDAR
